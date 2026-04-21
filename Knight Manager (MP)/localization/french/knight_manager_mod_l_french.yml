@@ -1,0 +1,35 @@
+﻿l_french:
+
+ km_knight_manager: "Chevalier Manager"
+ km_knight_manager_usage_tt: "Décochez les cases pour interdire à certains groupes de personnages de servir de chevalier. Lorsqu'elle est décochée, tous les personnages de ce groupe ne seront plus des chevaliers et n'apparaîtront plus non plus dans la liste. Si vous souhaitez autoriser manuellement un personnage spécifique de ce groupe à servir de chevalier, décochez sa case KM avant d'interdire à ses groupes de servir de chevalier.\n\nCes paramètres sont liés à votre personnage actuel, donc si vous changez pour une raison quelconque, il faut refaire les réglages!"
+  
+ km_toggle_kin_cannot_be_knight: "Ma dynastie"
+ km_toggle_kin_cannot_be_knight_tt: "Si coché, les personnages de ma dynastie peuvent servir de chevalier."
+ 
+ km_toggle_children_cannot_be_knight: "Ma progéniture"
+ km_toggle_children_cannot_be_knight_tt: "Si coché, mes enfants et petits-enfants peuvent servir comme chevaliers."
+ 
+ km_toggle_family_spouses_cannot_be_knight: "Conjoints de la famille"
+ km_toggle_family_spouses_cannot_be_knight_tt: "Si coché, mon conjoint et les conjoints de ma progéniture peuvent servir de chevaliers."
+ 
+ km_toggle_councillors_cannot_be_knight: "[council]/[court_positions]"
+ km_toggle_councillors_cannot_be_knight_tt: "Si coché, mes #E [councillors]#! et mes #E [court_positions]#! peuvent servir de #E [knights]#!. N'affecte pas la position Bodyguard et Garuda, car ils vous soutiendront au combat. "
+ 
+ km_toggle_my_lovers_cannot_be_knight: "Mes amoureux"
+ km_toggle_my_lovers_cannot_be_knight_tt: "Si coché, mes amants peuvent servir de chevalier."
+ 
+ km_toggle_my_heir_cannot_be_knight: "Mon héritier"
+ km_toggle_my_heir_cannot_be_knight_tt: "Si coché, mon joueur héritier peut servir de chevalier."
+ 
+ km_toggle_bad_fighters_cannot_be_knight: "Mauvais combattants"
+ km_toggle_bad_fighters_cannot_be_knight_tt: "Si coché, les mauvais combattants (0 à 5 [prowess_i]) peuvent servir de chevaliers."
+ 
+ km_toggle_average_fighters_cannot_be_knight: "Combattants moyens"
+ km_toggle_average_fighters_cannot_be_knight_tt: "Si coché, pas que de grands combattants (6 à 12 [prowess_i]) peuvent servir de chevaliers."
+ 
+ knight_manager_mod_vassals_label: "Mes vassaux"
+ knight_manager_mod_vassals_tooltip: "Si coché, mes vassaux peuvent servir de chevalier."
+ 
+ km_toggle_exclude_label_tt: "Si #S n'est pas coché# !, le personnage est exclu des paramètres du gestionnaire de chevaliers et peut être un chevalier."
+ km_toggle_exclude_label: "K.M." 
+ 

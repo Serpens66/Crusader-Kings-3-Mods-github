@@ -1,0 +1,13 @@
+﻿# just needed for UniUI compatibilty
+# suppressoin of the error : Variable '<your_mod_name>_is_loaded' is set but is never used
+
+namespace = knight_manager_mod_error_suppression
+
+knight_manager_mod_error_suppression.0001 = {
+    hidden = yes
+    orphan = yes
+    trigger = {
+        exists = global_var:KnightManager_is_loaded
+    }
+}
+

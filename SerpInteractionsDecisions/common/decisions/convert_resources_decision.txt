@@ -1,0 +1,23 @@
+﻿convert_resources_decision = {
+	picture = "gfx/interface/illustrations/decisions/decision_realm.dds"
+	title = convert_resources_decision_t
+    desc = convert_resources_decision_desc
+    selection_tooltip = convert_resources_decision_tt
+    confirm_text = convert_resources_decision_confirm
+
+	cooldown = { 
+		days = 365
+	}
+
+	effect = {
+		custom_tooltip = convert_resources_decision_effect_tt
+		trigger_event = {
+			id = convert_resources_events.01
+		}
+	}
+    
+    ai_will_do = {
+		base = 0 #The AI should never do this!
+	}
+	ai_check_interval = 0
+}

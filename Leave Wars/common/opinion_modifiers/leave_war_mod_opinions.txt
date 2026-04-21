@@ -1,0 +1,13 @@
+﻿left_my_war_opinion_modifier = {
+	# opinion = -80 # is set with script value in event script
+	years = 30
+	decaying = yes
+	stacking = yes
+}
+
+left_participating_war_opinion_modifier = {
+	# opinion = -30 # is set with script value in event script
+	years = 20
+	decaying = yes
+	stacking = yes
+}

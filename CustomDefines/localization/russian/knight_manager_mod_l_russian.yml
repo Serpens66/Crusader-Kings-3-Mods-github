@@ -1,0 +1,35 @@
+﻿l_russian:
+
+ knight_manager_mod_base_label: "Управление Рыцарями"
+ knight_manager_mod_base_tooltip: "Снимите флажки, чтобы запретить определенным группам персонажей становиться рыцарями. Если флажок снят, все персонажи выбранной группы больше не будут рыцарями, а также не будут отображаться в списке. Если вы хотите вручную разрешить определенному персонажу этой группы служить рыцарем, снимите флажок У.Р., прежде чем запретить его группе становиться рыцарями."
+ 
+ knight_manager_mod_dynasty_label: "Моя династия"
+ knight_manager_mod_dynasty_tooltip: "Если включено, персонажи моей династии могут служить рыцарями."
+ 
+ knight_manager_mod_offspring_label: "Мои потомки"
+ knight_manager_mod_offspring_tooltip: "Если включено, мои дети и внуки могут служить рыцарями."
+ 
+ knight_manager_mod_spouses_label: "Семья - Супруги"
+ knight_manager_mod_spouses_tooltip: "Если включено, мой супруг и супруги моих детей могут служить рыцарями."
+ 
+ knight_manager_mod_council_label: "совет / [court_positions]"
+ knight_manager_mod_council_tooltip: "Если включено, мои советники и мой врач могут служить рыцарями. Не влияет на позицию Телохранителя и Гаруда, так как они будут поддерживать вас в бою. "
+ 
+ knight_manager_mod_lovers_label: "Мои любовники"
+ knight_manager_mod_lovers_tooltip: "Если включено, мои любовники и родственные души могут служить рыцарями."
+ 
+ knight_manager_mod_heir_label: "Мой наследник"
+ knight_manager_mod_heir_tooltip: "Если включено, мой наследник может служить рыцарем."
+ 
+ knight_manager_mod_badfighters_label: "Неумелые бойцы"
+ knight_manager_mod_badfighters_tooltip: "Если включено, неумелые бойцы (доблесть ниже 6) могут служить рыцарями."
+ 
+ knight_manager_mod_avfighters_label: "Обычные бойцы"
+ knight_manager_mod_avfighters_tooltip: "Если включено, то обычные бойцы (доблесть ниже 13) могут служить рыцарями."
+ 
+ knight_manager_mod_exclude_tooltip: "Если выключено, персонаж исключается из настроек Управления Рыцарями и может стать рыцарем."
+ knight_manager_mod_exclude_label: "У.Р."
+ 
+ # google translate
+ knight_manager_mod_vassals_label: "Мои вассалы"
+ knight_manager_mod_vassals_tooltip: "Если включено, мои вассалы могут служить рыцарем."

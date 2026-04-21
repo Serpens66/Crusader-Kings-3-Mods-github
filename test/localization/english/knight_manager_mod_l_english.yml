@@ -1,0 +1,35 @@
+﻿l_english:
+
+ km_knight_manager: "Knight Manager"
+ km_knight_manager_usage_tt: "Uncheck the checkboxes to disallow certain character groups from serving as #E [knight]#!. When unchecked, all characters of that group will no longer be #E [knights]#! and also will not show up in the list anymore. If you want to manually allow a specific character of that group to serve as #E [knight]#!, uncheck his K.M checkbox before disallowing his groups from serving as #E [knight]#!.\n\nThese Settings are bound to your current character, so if you switch for whatever reason, you have to do the settings again!"
+ 
+ km_toggle_kin_cannot_be_knight: "My Dynasty"
+ km_toggle_kin_cannot_be_knight_tt: "If checked, characters of my #E [dynasty]#! can serve as #E [knights]#!."
+ 
+ km_toggle_children_cannot_be_knight: "My Offspring"
+ km_toggle_children_cannot_be_knight_tt: "If checked, my #E [children]#! and grandchildren can serve as #E [knights]#!."
+ 
+ km_toggle_family_spouses_cannot_be_knight: "Family Spouses"
+ km_toggle_family_spouses_cannot_be_knight_tt: "If checked, my #E [spouse]#! and the #E [spouses]#! of my offspring can serve as #E [knights]#!."
+ 
+ km_toggle_councillors_cannot_be_knight: "Council/[court_positions]"
+ km_toggle_councillors_cannot_be_knight_tt: "If checked, my #E [councillors]#! and my #E [court_positions]#! can serve as #E [knights]#!. Does not affect the Bodyguard and Garuda position, as they will support you in battle."
+ 
+ km_toggle_my_lovers_cannot_be_knight: "My Lovers"
+ km_toggle_my_lovers_cannot_be_knight_tt: "If checked, my #E [lovers]#! and #E [soulmates]#! can serve as #E [knights]#!."
+ 
+ km_toggle_my_heir_cannot_be_knight: "My Heir"
+ km_toggle_my_heir_cannot_be_knight_tt: "If checked, my #E [player_heir]#! can serve as #E [knight]#!."
+ 
+ km_toggle_bad_fighters_cannot_be_knight: "Bad Fighters"
+ km_toggle_bad_fighters_cannot_be_knight_tt: "If checked, bad fighters (0 to 5 [prowess_i]) can serve as #E [knights]#!."
+ 
+ km_toggle_average_fighters_cannot_be_knight: "Average Fighters"
+ km_toggle_average_fighters_cannot_be_knight_tt: "If checked, not that great fighters (6 to 12 [prowess_i]) can serve as #E [knights]#!."
+ 
+ knight_manager_mod_vassals_label: "My Vassals"
+ knight_manager_mod_vassals_tooltip: "If checked, my #E [vassals]#! can serve as #E [knights]#!."
+ 
+ km_toggle_exclude_label_tt: "If #S unchecked#!, the character is excluded from the Knight Manager Settings and can be a #E [knight]#!."
+ km_toggle_exclude_label: "K.M."
+ 

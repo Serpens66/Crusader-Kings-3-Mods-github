@@ -1,0 +1,35 @@
+﻿l_french:
+
+ knight_manager_mod_base_label: "Chevalier Manager"
+ knight_manager_mod_base_tooltip: "Décochez les cases pour interdire à certains groupes de personnages de servir de chevalier. Lorsqu'elle est décochée, tous les personnages de ce groupe ne seront plus des chevaliers et n'apparaîtront plus non plus dans la liste. Si vous souhaitez autoriser manuellement un personnage spécifique de ce groupe à servir de chevalier, décochez sa case KM avant d'interdire à ses groupes de servir de chevalier.\n\nCes paramètres sont liés à votre personnage actuel, donc si vous changez pour une raison quelconque, il faut refaire les réglages!"
+  
+ knight_manager_mod_dynasty_label: "Ma dynastie"
+ knight_manager_mod_dynasty_tooltip: "Si coché, les personnages de ma dynastie peuvent servir de chevalier."
+ 
+ knight_manager_mod_offspring_label: "Ma progéniture"
+ knight_manager_mod_offspring_tooltip: "Si coché, mes enfants et petits-enfants peuvent servir comme chevaliers."
+ 
+ knight_manager_mod_spouses_label: "Conjoints de la famille"
+ knight_manager_mod_spouses_tooltip: "Si coché, mon conjoint et les conjoints de ma progéniture peuvent servir de chevaliers."
+ 
+ knight_manager_mod_council_label: "[council]/[court_positions]"
+ knight_manager_mod_council_tooltip: "Si coché, mes #E [councillors]#! et mes #E [court_positions]#! peuvent servir de #E [knights]#!. N'affecte pas la position Bodyguard et Garuda, car ils vous soutiendront au combat. "
+ 
+ knight_manager_mod_lovers_label: "Mes amoureux"
+ knight_manager_mod_lovers_tooltip: "Si coché, mes amants peuvent servir de chevalier."
+ 
+ knight_manager_mod_heir_label: "Mon héritier"
+ knight_manager_mod_heir_tooltip: "Si coché, mon joueur héritier peut servir de chevalier."
+ 
+ knight_manager_mod_badfighters_label: "Mauvais combattants"
+ knight_manager_mod_badfighters_tooltip: "Si coché, les mauvais combattants (0 à 5 [prowess_i]) peuvent servir de chevaliers."
+ 
+ knight_manager_mod_avfighters_label: "Combattants moyens"
+ knight_manager_mod_avfighters_tooltip: "Si coché, pas que de grands combattants (6 à 12 [prowess_i]) peuvent servir de chevaliers."
+ 
+ knight_manager_mod_vassals_label: "Mes vassaux"
+ knight_manager_mod_vassals_tooltip: "Si coché, mes vassaux peuvent servir de chevalier."
+ 
+ knight_manager_mod_exclude_tooltip: "Si #S n'est pas coché# !, le personnage est exclu des paramètres du gestionnaire de chevaliers et peut être un chevalier."
+ knight_manager_mod_exclude_label: "K.M." 
+ 

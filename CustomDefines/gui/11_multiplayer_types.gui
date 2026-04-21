@@ -1,0 +1,119 @@
+# the numer 11_ in file title is to make sure that it is loaded before the file from the game. Because the game will not overwrite sth that is already there in this case
+
+types JominiMultiplayerLobby
+{
+	
+	# Module for preparation specific stuff
+	type JominiLobbyViewPreparation = vbox {
+		#visible = "[IsPreparationLobby]"
+		alwaystransparent = no
+		filter_mouse = left|right
+		layoutpolicy_horizontal = expanding
+		margin_left = 10
+		margin_bottom = 10
+
+
+		background = {
+			using = JominiLobbyViewModuleBackground
+		}
+
+		JominiMultiplayerTextbox = {
+			layoutpolicy_horizontal = expanding
+			visible = "[And(LobbyView.IsReady,Not(PlayerIsHost))]"
+			name = "ready_info"
+			minimumsize = { 0 45 }
+			multiline = yes
+			align = center|center
+			text = "JOMINI_MULTIPLAYER_GUI_WAIT_HOST_START"
+		}
+
+		button_standard = {
+			size = { 380 45 }
+			datacontext = "[LobbyView.GetSelectedPlayable.GetCharacter]"
+			visible = "[Not( IsPreparationLobby )]"
+
+            # MOD Serp diesable this line, so wen can design ruler even after game has started 
+			# enabled = "[LobbyView.CanTryStartRulerDesigning( Character.Self )]"
+			
+			onclick = "[TryStartRulerDesigning( Character.Self )]"		
+
+			tooltip = "[LobbyView.GetTryStartRulerDesigningDesc( Character.Self )]"
+			text = "RULER_DESIGNER_OPEN"
+
+			icon = {
+				visible = "[And( ShouldPromptForRulerDesigner, LobbyView.CanTryStartRulerDesigning( Character.Self ) )]"
+				size = { 100% 100% }
+				texture = "gfx/interface/component_masks/mask_fade_circle.dds"
+				using = Color_Bright_Yellow
+				alpha = 0
+
+				state = {
+					name = a
+					next = b
+					trigger_on_create = yes
+
+					alpha = 0.3
+					duration = 1
+					using = Animation_Curve_Default
+				}
+
+				state = {
+					name = b
+					next = a
+
+					alpha = 0
+					duration = 2
+					using = Animation_Curve_Default
+				}
+			}
+
+			button_edit_text = {
+				size = { 30 30 }
+				parentanchor = left|vcenter
+				position = { 5 0 }
+				alwaystransparent = yes
+			}
+		}
+
+		spacer = {
+			size = { 10 10 }
+		}
+
+		button_primary_big = {
+			size = { 380 50 }
+			visible = "[And( IsPreparationLobby, PlayerIsHost )]"
+			onclick = "[LobbyView.Start]"
+			enabled = "[LobbyView.CanStart]"
+			tooltip = "[LobbyView.StartToolTip]"
+			text = "JOMINI_MULTIPLAYER_GUI_START"
+
+			oversound = "event:/SFX/UI/Generic/sfx_ui_generic_pointer_over"
+
+			state = {
+				name = _mouse_press
+				start_sound = {
+					soundeffect = "event:/SFX/UI/Generic/sfx_ui_generic_pointer_press"
+				}
+			}
+
+			state = {
+				name = _mouse_release
+				start_sound = {
+					soundeffect = "event:/SFX/UI/Generic/sfx_ui_generic_start_game"
+				}
+			}
+		}
+
+		button_primary_big = {
+			size = { 380 50 }
+			visible = "[Not( IsPreparationLobby )]"
+			text = "JOMINI_MULTIPLAYER_GUI_START"
+
+			onclick = "[LobbyView.ControlSelected]"
+			onclick = "[LobbyView.Ready]"
+			enabled = "[LobbyView.CanControlSelected]"
+
+			tooltip = "[LobbyView.GetControlToolTip]"
+		}
+	}
+}

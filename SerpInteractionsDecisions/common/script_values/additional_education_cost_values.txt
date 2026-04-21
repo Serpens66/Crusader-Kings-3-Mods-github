@@ -1,0 +1,55 @@
+﻿
+
+AE_costs_based_on_diplomacy_skill = {
+	scope:recipient = {
+        value = 5
+        multiply = {
+            value = diplomacy
+        }
+    }    
+}
+
+AE_costs_based_on_martial_skill = {
+	scope:recipient = {
+        value = 5
+        multiply = {
+            value = martial
+        }
+    }    
+}
+
+AE_costs_based_on_stewardship_skill = {
+	scope:recipient = {
+        value = 5
+        multiply = {
+            value = stewardship
+        }
+    }    
+}
+
+AE_costs_based_on_learning_skill = {
+	scope:recipient = {
+        value = 5
+        multiply = {
+            value = learning
+        }
+    }    
+}
+
+AE_costs_based_on_intrigue_skill = {
+	scope:recipient = {
+        value = 5
+        multiply = {
+            value = intrigue
+        }
+    }    
+}
+
+AE_costs_based_on_prowess_skill = {
+	scope:recipient = {
+        value = 4
+        multiply = {
+            value = prowess
+        }
+    }    
+}

@@ -1,0 +1,466 @@
+kmc_toggle_dynasty_cannot_be_knight = {
+    scope = character
+    is_shown = {
+        NOT = {
+            has_character_flag = kmc_dynasty_cannot_be_knight
+        }
+    }
+    effect = {
+        if = {
+            limit = {
+                NOT = {
+                    has_character_flag = kmc_dynasty_cannot_be_knight
+                }
+            }
+            add_character_flag = kmc_dynasty_cannot_be_knight
+        }
+        else = {
+            remove_character_flag  =  kmc_dynasty_cannot_be_knight
+        }
+
+    }
+}
+
+kmc_toggle_house_cannot_be_knight = {
+    scope = character
+    is_shown = {
+        NOT = {
+            has_character_flag = kmc_house_cannot_be_knight
+        }
+    }
+    effect = {
+        if = {
+            limit = {
+                NOT = {
+                    has_character_flag = kmc_house_cannot_be_knight
+                }
+            }
+            add_character_flag = kmc_house_cannot_be_knight
+        }
+        else = {
+            remove_character_flag  =  kmc_house_cannot_be_knight
+        }
+
+    }
+}
+
+kmc_toggle_spouses_cannot_be_knight = {
+    scope = character
+    is_shown = {
+        NOT = {
+            has_character_flag = kmc_spouses_cannot_be_knight
+        }
+    }
+    effect = {
+        if = {
+            limit = {
+                NOT = {
+                    has_character_flag = kmc_spouses_cannot_be_knight
+                }
+            }
+            add_character_flag = kmc_spouses_cannot_be_knight
+        }
+        else = {
+            remove_character_flag  =  kmc_spouses_cannot_be_knight
+        }
+    }
+}
+
+kmc_toggle_children_cannot_be_knight = {
+    scope = character
+    is_shown = {
+        NOT = {
+            has_character_flag = kmc_children_cannot_be_knight
+        }
+    }
+    effect = {
+        if = {
+            limit = {
+                NOT = {
+                    has_character_flag = kmc_children_cannot_be_knight
+                }
+            }
+            add_character_flag = kmc_children_cannot_be_knight
+        }
+        else = {
+            remove_character_flag  = kmc_children_cannot_be_knight
+        }
+
+    }
+}
+
+kmc_toggle_child_spouses_cannot_be_knight = {
+    scope = character
+    is_shown = {
+        NOT = {
+            has_character_flag = kmc_child_spouses_cannot_be_knight
+        }
+    }
+    effect = {
+        if = {
+            limit = {
+                NOT = {
+                    has_character_flag = kmc_child_spouses_cannot_be_knight
+                }
+            }
+            add_character_flag = kmc_child_spouses_cannot_be_knight
+        }
+        else = {
+            remove_character_flag  =  kmc_child_spouses_cannot_be_knight
+        }
+    }
+}
+
+kmc_toggle_player_heir_cannot_be_knight = {
+    scope = character
+    is_shown = {
+        NOT = {
+            has_character_flag = kmc_player_heir_cannot_be_knight
+        }
+    }
+    effect = {
+        if = {
+            limit = {
+                NOT = {
+                    has_character_flag = kmc_player_heir_cannot_be_knight
+                }
+            }
+            add_character_flag = kmc_player_heir_cannot_be_knight
+        }
+        else = {
+            remove_character_flag  =  kmc_player_heir_cannot_be_knight
+        }
+    }
+}
+
+kmc_toggle_lover_cannot_be_knight = {
+    scope = character
+    is_shown = {
+        NOT = {
+            has_character_flag = kmc_lover_cannot_be_knight
+        }
+    }
+    effect = {
+        if = {
+            limit = {
+                NOT = {
+                    has_character_flag = kmc_lover_cannot_be_knight
+                }
+            }
+            add_character_flag = kmc_lover_cannot_be_knight
+        }
+        else = {
+            remove_character_flag  =  kmc_lover_cannot_be_knight
+        }
+    }
+}
+
+kmc_toggle_councillors_cannot_be_knight = {
+    scope = character
+    is_shown = {
+        NOT = {
+            has_character_flag = kmc_councillors_cannot_be_knight
+        }
+    }
+    effect = {
+        if = {
+            limit = {
+                NOT = {
+                    has_character_flag = kmc_councillors_cannot_be_knight
+                }
+            }
+            add_character_flag = kmc_councillors_cannot_be_knight
+        }
+        else = {
+            remove_character_flag  =  kmc_councillors_cannot_be_knight
+        }
+    }
+}
+
+kmc_toggle_court_position_cannot_be_knight = {
+    scope = character
+    is_shown = {
+        NOT = {
+            has_character_flag = kmc_court_position_cannot_be_knight
+        }
+    }
+    effect = {
+        if = {
+            limit = {
+                NOT = {
+                    has_character_flag = kmc_court_position_cannot_be_knight
+                }
+            }
+            add_character_flag = kmc_court_position_cannot_be_knight
+        }
+        else = {
+            remove_character_flag  =  kmc_court_position_cannot_be_knight
+        }
+    }
+}
+
+kmc_toggle_unlanded_cannot_be_knight = {
+    scope = character
+    is_shown = {
+        NOT = {
+            has_character_flag = kmc_unlanded_cannot_be_knight
+        }
+    }
+    effect = {
+        if = {
+            limit = {
+                NOT = {
+                    has_character_flag = kmc_unlanded_cannot_be_knight
+                }
+            }
+            add_character_flag = kmc_unlanded_cannot_be_knight
+        }
+        else = {
+            remove_character_flag  =  kmc_unlanded_cannot_be_knight
+        }
+    }
+}
+
+kmc_toggle_highborn_cannot_be_knight = {
+    scope = character
+    is_shown = {
+        NOT = {
+            has_character_flag = kmc_highborn_cannot_be_knight
+        }
+    }
+    effect = {
+        if = {
+            limit = {
+                NOT = {
+                    has_character_flag = kmc_highborn_cannot_be_knight
+                }
+            }
+            add_character_flag = kmc_highborn_cannot_be_knight
+        }
+        else = {
+            remove_character_flag  =  kmc_highborn_cannot_be_knight
+        }
+    }
+}
+
+kmc_toggle_lowborn_cannot_be_knight = {
+    scope = character
+    is_shown = {
+        NOT = {
+            has_character_flag = kmc_lowborn_cannot_be_knight
+        }
+    }
+    effect = {
+        if = {
+            limit = {
+                NOT = {
+                    has_character_flag = kmc_lowborn_cannot_be_knight
+                }
+            }
+            add_character_flag = kmc_lowborn_cannot_be_knight
+        }
+        else = {
+            remove_character_flag  =  kmc_lowborn_cannot_be_knight
+        }
+    }
+}
+
+kmc_toggle_landed_cannot_be_knight = {
+    scope = character
+    is_shown = {
+        NOT = {
+            has_character_flag = kmc_landed_cannot_be_knight
+        }
+    }
+    effect = {
+        if = {
+            limit = {
+                NOT = {
+                    has_character_flag = kmc_landed_cannot_be_knight
+                }
+            }
+            add_character_flag = kmc_landed_cannot_be_knight
+        }
+        else = {
+            remove_character_flag  =  kmc_landed_cannot_be_knight
+        }
+    }
+}
+
+kmc_toggle_barons_cannot_be_knight = {
+    scope = character
+    is_shown = {
+        NOT = {
+            has_character_flag = kmc_barons_cannot_be_knight
+        }
+    }
+    effect = {
+        if = {
+            limit = {
+                NOT = {
+                    has_character_flag = kmc_barons_cannot_be_knight
+                }
+            }
+            add_character_flag = kmc_barons_cannot_be_knight
+        }
+        else = {
+            remove_character_flag  =  kmc_barons_cannot_be_knight
+        }
+    }
+}
+
+kmc_toggle_terrible_fighters_cannot_be_knight = {
+    scope = character
+    is_shown = {
+        NOT = {
+            has_character_flag = kmc_terrible_fighter_cannot_be_knight
+        }
+    }
+    effect = {
+        if = {
+            limit = {
+                NOT = {
+                    has_character_flag = kmc_terrible_fighter_cannot_be_knight
+                }
+            }
+            add_character_flag = kmc_terrible_fighter_cannot_be_knight
+        }
+        else = {
+            remove_character_flag  =  kmc_terrible_fighter_cannot_be_knight
+        }
+    }
+}
+
+kmc_toggle_poor_fighters_cannot_be_knight = {
+    scope = character
+    is_shown = {
+        NOT = {
+            has_character_flag = kmc_poor_fighter_cannot_be_knight
+        }
+    }
+    effect = {
+        if = {
+            limit = {
+                NOT = {
+                    has_character_flag = kmc_poor_fighter_cannot_be_knight
+                }
+            }
+            add_character_flag = kmc_poor_fighter_cannot_be_knight
+        }
+        else = {
+            remove_character_flag  =  kmc_poor_fighter_cannot_be_knight
+        }
+    }
+}
+
+kmc_toggle_average_fighters_cannot_be_knight = {
+    scope = character
+    is_shown = {
+        NOT = {
+            has_character_flag = kmc_average_fighter_cannot_be_knight
+        }
+    }
+    effect = {
+        if = {
+            limit = {
+                NOT = {
+                    has_character_flag = kmc_average_fighter_cannot_be_knight
+                }
+            }
+            add_character_flag = kmc_average_fighter_cannot_be_knight
+        }
+        else = {
+            remove_character_flag  =  kmc_average_fighter_cannot_be_knight
+        }
+    }
+}
+
+kmc_toggle_good_fighters_cannot_be_knight = {
+    scope = character
+    is_shown = {
+        NOT = {
+            has_character_flag = kmc_good_fighter_cannot_be_knight
+        }
+    }
+    effect = {
+        if = {
+            limit = {
+                NOT = {
+                    has_character_flag = kmc_good_fighter_cannot_be_knight
+                }
+            }
+            add_character_flag = kmc_good_fighter_cannot_be_knight
+        }
+        else = {
+            remove_character_flag  =  kmc_good_fighter_cannot_be_knight
+        }
+    }
+}
+
+kmc_toggle_excellent_fighters_cannot_be_knight = {
+    scope = character
+    is_shown = {
+        NOT = {
+            has_character_flag = kmc_excellent_fighter_cannot_be_knight
+        }
+    }
+    effect = {
+        if = {
+            limit = {
+                NOT = {
+                    has_character_flag = kmc_excellent_fighter_cannot_be_knight
+                }
+            }
+            add_character_flag = kmc_excellent_fighter_cannot_be_knight
+        }
+        else = {
+            remove_character_flag  =  kmc_excellent_fighter_cannot_be_knight
+        }
+    }
+}
+
+kmc_toggle_wounded_cannot_be_knight = {
+    scope = character
+    is_shown = {
+        NOT = {
+            has_character_flag = kmc_wounded_cannot_be_knight
+        }
+    }
+    effect = {
+        if = {
+            limit = {
+                NOT = {
+                    has_character_flag = kmc_wounded_cannot_be_knight
+                }
+            }
+            add_character_flag = kmc_wounded_cannot_be_knight
+        }
+        else = {
+            remove_character_flag  =  kmc_wounded_cannot_be_knight
+        }
+    }
+}
+
+# the following uses variable, not global variable, these are also shared between all players, but attached to a scope, so basically the same like characterflag, while the latter can only be attached to characters.
+ # it makes sense that this is already used here, because when your character changes, you want to reset the manual filter, since you will get totally different people. 
+ # so no need to replace it with characterflag
+#Manually allowed
+kmc_toggle_manually_allowed = {
+    scope = character
+    is_shown = {
+        NOT = {
+            has_variable = kmc_manually_allowed
+        }
+    }
+    effect = {
+        if = {
+            limit = {
+                has_variable = kmc_manually_allowed
+            }
+            remove_variable = kmc_manually_allowed
+        }
+        else = {
+            set_variable  =  kmc_manually_allowed
+        }
+    }
+}

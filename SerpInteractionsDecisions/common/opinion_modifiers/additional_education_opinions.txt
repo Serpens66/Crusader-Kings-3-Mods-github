@@ -1,0 +1,7 @@
+﻿payed_studies_opinion = {
+	opinion = 15
+	years = 15
+	delay_years = 5
+	decaying = yes
+	stacking = yes
+}

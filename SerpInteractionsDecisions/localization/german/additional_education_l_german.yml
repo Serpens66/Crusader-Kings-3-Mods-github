@@ -1,0 +1,50 @@
+﻿l_german:
+
+ additional_education_interaction:0 "Studieren lassen"
+ additional_education_interaction_desc:0 "Zahlt [gold_i] und [prestige_i] um die Werte von [recipient.GetFirstName] zu verbessern. Möglich für alle Erwachsenen an Eurem Hof, nahe Verwandte und direkte Vasallen."
+ additional_education_interaction_0.tooltip:0 "Könnte [gold_i] und [prestige_i] für das Studium zahlen. Die Höhe basiert auf den aktuellen Werten des Studierenden."
+ additional_education_interaction_1.tooltip:0 "Könnte für 1 Jahr studieren.\nWährend dieser Zeit erhält der jeweilige Wert einen #N Malus#! und [recipient.GetFirstNameNoTooltip] wird leichter #N gestresst#!. Aber nach einem Jahr wird [recipient.GetFirstNameNoTooltip] deutlich #P besser#! in diesem Bereich sein."
+ 
+ additional_education.0001.t:0 "Wählt Studienthema"
+ additional_education.0001.desc:0 "Wenn Ihr Euch die Kosten leisten könnt, wählt das Studienthema für [recipient.GetFirstName].\nDadurch wird der jeweilige Wert #P +5 (+10[prowess_i])#! steigen und #P +10%#! [experience] für den dazugehörigen Lebenswandel generieren. Doch während des Studiums wird [recipient.GetFirstNameNoTooltip] #N gestresst#! und ein wenig schlechter #N -3 (-5)#! in dem Wert sein."
+ 
+ additional_education.0002.name:0 "Kriegskunst [martial_i]"
+ additional_education.0002.tooltip:0 "[recipient.GetFirstName] #P erreicht +5 [martial_i] und +10%#! [experience] #N nach 1 Jahr#! Studium"
+ additional_education.0003.name:0 "Verwaltung [stewardship_i]"
+ additional_education.0003.tooltip:0 "[recipient.GetFirstName] #P erreicht +5 [stewardship_i] und +10%#! [experience] #N nach 1 Jahr#! Studium"
+ additional_education.0004.name:0 "Kampfgeschick [prowess_i]"
+ additional_education.0004.tooltip:0 "[recipient.GetFirstName] #P erreicht +10 [prowess_i] und +10%#! [experience] #N nach 1 Jahr#! Training"
+ additional_education.0005.name:0 "Vielleicht ein ander mal ..."
+ additional_education.0005.tooltip:0 "Aktuell kommt kein Studium in Frage."
+
+ additional_education.0006.name:0 "Ränkespiel [intrigue_i]"
+ additional_education.0006.tooltip:0 "[recipient.GetFirstName] #P erreicht +5 [intrigue_i] und +10%#! [experience] #N nach 1 Jahr#! Studium"
+ additional_education.0007.name:0 "Diplomatie [diplomacy_i]"
+ additional_education.0007.tooltip:0 "[recipient.GetFirstName] #P erreicht +5 [diplomacy_i] und +10%#! [experience] #N nach 1 Jahr#! Studium"
+ additional_education.0008.name:0 "Bildung [learning_i]"
+ additional_education.0008.tooltip:0 "[recipient.GetFirstName] #P erreicht +5 [learning_i] und +10%#! [experience] #N nach 1 Jahr#! Studium"
+
+ additional_education.1001.t:0 "[recipient.GetFirstNameNoTooltip] hat Studium abgeschlossen!"
+ additional_education.1001.desc:0 "Herzlichen Glückwunsch, [recipient.GetRelationToString( GetPlayer )] [recipient.GetName|U] hat das Studium abgeschlossen und seine Werte verbessert."
+ additional_education.1001.name:0 "Großartig!"
+ 
+ 
+ additional_education_prowess_modifier: "Absolviertes Hartes Training Kampfgeschick"
+ additional_education_study_prowess_modifier: "Laufendes Hartes Training Kampfgeschick"
+ 
+ additional_education_martial_modifier: "Absolviertes Hartes Studium Kriegskunst"
+ additional_education_study_martial_modifier: "Laufendes Hartes Studium Kriegskunst"
+ 
+ additional_education_stewardship_modifier: "Absolviertes Hartes Studium Verwaltung"
+ additional_education_study_stewardship_modifier: "Laufendes Hartes Studium Verwaltung"
+ 
+ additional_education_intrigue_modifier: "Absolviertes Hartes Studium Ränkespiel"
+ additional_education_study_intrigue_modifier: "Laufendes Hartes Studium Ränkespiel"
+ 
+ additional_education_diplomacy_modifier: "Absolviertes Hartes Studium Diplomatie"
+ additional_education_study_diplomacy_modifier: "Laufendes Hartes Studium Diplomatie"
+ 
+ additional_education_learning_modifier: "Absolvierte Hartes Studium Bildung"
+ additional_education_study_learning_modifier: "Laufendes Hartes Studium Bildung"
+ 
+ payed_studies_opinion: "Hat mein Studium bezahlt"

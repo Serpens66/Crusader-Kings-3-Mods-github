@@ -1,0 +1,22 @@
+﻿# Obwohl .info example es behauptet, funktionieren defines in game_rules nicht... deswegen geht das leider nicht so, sondern wir müssen hier Werte hardcoden.
+
+
+# hoehere Todesrate im Hauptkampf (weniger fliehen -> weniger katz udn maus spiel).
+NCombat = { # 0.3
+    BASE_RATIO_CASUALTIES_CONVERSION = 0.5
+}
+
+# double research speed
+# man muesste dann eig auch noch die Jahres-bedingungen abändern, ab denen ein Zeitalter erlaubt ist, ist in common\culture\eras\00_culture_eras.txt definiert
+# ich mach das dennoch erstmal aus. dann muessen wir halt mal ein spiel durchziehen und 500 jahre (100 stunden) spielen und nicht ständig von vorne anfangen
+# NCulture = {
+    # INNOVATION_PROGRESS_GAIN_BASE = 0.6 # 0.3
+    # INNOVATION_PROGRESS_GAIN_PER_AVERAGE_DEVELOPMENT_LEVEL = 0.04 # 0.02
+    # INNOVATION_PROGRESS_GAIN_PER_ERA_AHEAD = 0.4 # 0.2
+# }
+
+NDynasty = {
+	MAX_MONTHLY_PRESTIGE_GAIN_FROM_ALIVE_MEMBERS = 4 # Cap the above number. orig was 2
+	MONTHLY_PRESTIGE_GAIN_MULT_FOR_VASSALS_OF_SAME_DYNASTY = 0.25	# Dynasty members who are vassal of below of someone of the same dynasty have their prestige contribution multiplied with this. 0 disables their prestige contribution entirely
+	MONTHLY_PRESTIGE_GAIN_MULT_FOR_VASSALS_OF_SAME_DYNASTY_SPOUSE = 0.1	# Dynasty members whose spouse are vassal of below of someone of the same dynasty have their prestige contribution multiplied with this. 0 disables their prestige contribution entirely
+}

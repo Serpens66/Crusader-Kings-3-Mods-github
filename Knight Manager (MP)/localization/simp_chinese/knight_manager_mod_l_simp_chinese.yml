@@ -1,0 +1,36 @@
+﻿l_simp_chinese:
+
+ km_knight_manager: "组别分类"
+ km_knight_manager_usage_tt: "取消勾选复选框将禁止某些组别充当骑士。取消勾选时，该组中的所有人物将不再是骑士，也不会显示在列表中。如果想手动允许该组中的某个特定人物担任骑士，请在不允许他的组别担任骑士之前取消选中他的K.M复选框。"
+ 
+ km_toggle_kin_cannot_be_knight: "家族成员"
+ km_toggle_kin_cannot_be_knight_tt: "勾选后，家族成员可以成为骑士。"
+ 
+ km_toggle_children_cannot_be_knight: "直系后代"
+ km_toggle_children_cannot_be_knight_tt: "勾选后，子女可以成为骑士"
+ 
+ km_toggle_family_spouses_cannot_be_knight: "家庭配偶"
+ km_toggle_family_spouses_cannot_be_knight_tt: "勾选后，配偶和后代的配偶可以成为骑士。"
+ 
+ km_toggle_councillors_cannot_be_knight: "宫廷成员 / [court_positions]"
+ km_toggle_councillors_cannot_be_knight_tt: "勾选后，宫廷成员和宫廷医生可以成为骑士。 不影响保镖和嘉鲁达的位置，因为他们会在战斗中支持你。"
+ 
+ km_toggle_my_lovers_cannot_be_knight: "为爱而战"
+ km_toggle_my_lovers_cannot_be_knight_tt: "勾选后，情人和灵魂伴侣可以成为骑士。"
+ 
+ km_toggle_bad_fighters_cannot_be_knight: "战五渣渣"
+ km_toggle_bad_fighters_cannot_be_knight_tt: "勾选后，弱小的战士（勇武低于6）可以充当骑士。"
+ 
+ km_toggle_average_fighters_cannot_be_knight: "普通战士"
+ km_toggle_average_fighters_cannot_be_knight_tt: "勾选后，弱小的战士（勇武低于13）可以充当骑士。"
+ 
+ km_toggle_exclude_label_tt: "未勾选时，人物将从骑士管理器设置中排除，可单独选择是否成为骑士。"
+ km_toggle_exclude_label: "K.M."
+ 
+ # google translate
+ km_toggle_my_heir_cannot_be_knight: "我的继承人"
+ km_toggle_my_heir_cannot_be_knight_tt: "勾选后，我的玩家继承人可以担任骑士。"
+ 
+ knight_manager_mod_vassals_label: "我的封臣 "
+ knight_manager_mod_vassals_tooltip: "勾选后，我的封臣可以担任骑士。"
+ 

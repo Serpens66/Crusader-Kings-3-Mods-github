@@ -1,0 +1,3 @@
+﻿leave_war_mod_remove_participant = {
+	third = leave_war_mod_REMOVE_PARTICIPANT_EFFECT_THIRD
+}

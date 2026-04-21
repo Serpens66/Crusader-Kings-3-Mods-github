@@ -1,0 +1,34 @@
+﻿abdicate_decision = {
+	picture = "gfx/interface/illustrations/decisions/decision_dynasty_house.dds"
+	desc = abdicate_decision_desc
+
+	cost = {
+		gold = {
+			value = 20 # per title tier
+            multiply = highest_held_title_tier
+		}
+	}
+
+	effect = {
+		custom_tooltip = abdicate_decision_effect_text
+        if = {
+            limit = {
+                exists = dynasty
+            }
+            save_temporary_scope_as = current_character
+            dynasty = {
+                add_dynasty_prestige = {
+                    value = minor_dynasty_prestige_loss # 50 per title tier
+                    multiply = scope:current_character.highest_held_title_tier
+                }
+            }
+        }
+        depose = yes
+    }
+		
+
+	ai_will_do = {
+		base = 0 #The AI should never do this!
+	}
+    ai_check_interval = 0
+}

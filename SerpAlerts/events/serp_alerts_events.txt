@@ -1,0 +1,21 @@
+﻿namespace = serp_alerts
+
+
+serp_alerts.0001 = {
+	type = character_event
+	hidden = yes
+
+	immediate = {
+        send_interface_message = {
+            type = serp_notify_character_has_died
+            title = serp_msg_on_death_vassal
+            desc = serp_msg_on_death_vassal_message
+            left_icon = scope:dead_character
+            right_icon = scope:dead_character.killer
+            # right_icon = scope:dead_character.primary_title # not needed, dead characters still "have" their title, so you can look it up on their portrait if you want to know the titles
+        }
+    }
+	
+	
+}
+

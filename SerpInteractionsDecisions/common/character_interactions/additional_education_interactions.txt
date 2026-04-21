@@ -1,0 +1,61 @@
+﻿additional_education_interaction = {
+	category = interaction_category_friendly
+	desc = additional_education_interaction_desc
+	
+	auto_accept = yes
+	
+	is_shown = {
+        OR = {
+            scope:recipient = scope:actor
+            scope:recipient = {
+                OR = {
+                    is_courtier_of = scope:actor
+                    is_vassal_of = scope:actor
+                    is_councillor_of = scope:actor
+                    is_close_family_of = scope:actor
+                    is_heir_of = scope:actor # need to mention them explicit, because they are not always at the same court
+                    is_spouse_of = scope:actor
+                }
+            }
+        }
+	}
+    
+    is_valid_showing_failures_only = {
+		NOT = {
+            OR = {
+                scope:actor = {
+                    is_imprisoned = yes
+                }
+                scope:recipient = {is_imprisoned = yes}
+            }
+        }
+		scope:recipient = {	age >= 16}
+	}
+	
+
+	ai_will_do = {
+		base = 0 #The AI should never do this!
+	}
+		
+    extra_icon = "gfx/interface/icons/character_interactions/_missing_interaction.dds"
+        
+    on_accept = {
+		
+		scope:actor = {
+			custom_tooltip = additional_education_interaction_0.tooltip
+		}
+        scope:recipient = {
+            custom_tooltip = additional_education_interaction_1.tooltip
+        }
+				
+	}
+
+	on_send = {
+		scope:actor  = {
+			trigger_event = {
+				id = additional_education.0001
+			}
+		}
+		
+	}	
+}

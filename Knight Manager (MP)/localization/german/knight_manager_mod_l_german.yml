@@ -1,0 +1,37 @@
+﻿l_german:
+
+ km_knight_manager: "Ritter Manager"
+ km_knight_manager_usage_tt: "Entfernt das Häckchen um entsprechende Charaktergruppen als #E [knight]#! auszuschließen, sie werden dann nicht mehr in der Liste angezeigt. Mit dem \"R.M\" Kästchen neben jedem Charakter, können diese von den Manager Regeln ausgenommen werden - aktiviere es, bevor du die entsprechende Gruppe ausschließt.\n\nDiese Einstellungen sind an den einstellenden Charakter gebunden, müssen bei einem Charakterwechsel also erneut vorgenommen werden!"
+ 
+ km_toggle_kin_cannot_be_knight: "Meine Dynastie"
+ km_toggle_kin_cannot_be_knight_tt: "Wenn angekreuzt: Charaktere meiner #E [dynasty]#! können als #E [knights]#! dienen."
+ 
+ km_toggle_children_cannot_be_knight: "Mein Nachwuchs"
+ km_toggle_children_cannot_be_knight_tt: "Wenn angekreuzt: Meine #E [children]#! und Enkel können als #E [knights]#! dienen."
+ 
+ km_toggle_family_spouses_cannot_be_knight: "Familien Ehepartner"
+ km_toggle_family_spouses_cannot_be_knight_tt: "Wenn angekreuzt: Mein #E [spouse]#! und #E [spouses]#! von meinem Nachwuchs können als #E [knights]#! dienen."
+ 
+ km_toggle_councillors_cannot_be_knight: "Mein Rat/[court_positions]"
+ km_toggle_councillors_cannot_be_knight_tt: "Wenn angekreuzt: Meine #E [councillors]#! und meine #E [court_positions]#! können als #E [knights]#! dienen. Betrifft nicht die Position Bodyguard und Garuda, da diese Euch in der Schlacht unterstützen."
+ 
+ km_toggle_my_lovers_cannot_be_knight: "Meine Geliebten"
+ km_toggle_my_lovers_cannot_be_knight_tt: "Wenn angekreuzt: Meine #E [lovers]#! und #E [soulmates]#! können als #E [knights]#! dienen."
+ 
+ km_toggle_my_heir_cannot_be_knight: "Mein Spielererbe"
+ km_toggle_my_heir_cannot_be_knight_tt: "Wenn angekreuzt: Mein #E [player_heir]#! kann als #E [knight]#! dienen."
+ 
+ km_toggle_bad_fighters_cannot_be_knight: "Schlechte Kämpfer"
+ km_toggle_bad_fighters_cannot_be_knight_tt: "Wenn angekreuzt: Schlechte Kämpfer (0 bis 5 [prowess_i]) können als #E [knights]#! dienen."
+ 
+ km_toggle_average_fighters_cannot_be_knight: "Mittelmäßige Kämpfer"
+ km_toggle_average_fighters_cannot_be_knight_tt: "Wenn angekreuzt: Mittelmäßige Kämpfer (6 bis 12 [prowess_i]) können als #E [knights]#! dienen."
+ 
+ knight_manager_mod_vassals_label: "Meine Vassals"
+ knight_manager_mod_vassals_tooltip: "Wenn angekreuzt: Meine #E [vassals]#! können als #E [knights]#! dienen."
+ 
+ km_toggle_exclude_label_tt: "Wenn #S nicht#! angekreuzt: Der Charakter wird von den Manager Einstellungen nicht beeinflusst."
+ km_toggle_exclude_label: "R.M."
+ 
+ 
+ 

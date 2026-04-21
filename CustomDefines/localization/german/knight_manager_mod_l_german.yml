@@ -1,0 +1,37 @@
+﻿l_german:
+
+ knight_manager_mod_base_label: "Ritter Manager"
+ knight_manager_mod_base_tooltip: "Entfernt das Häckchen um entsprechende Charaktergruppen als #E [knight]#! auszuschließen, sie werden dann nicht mehr in der Liste angezeigt. Mit dem \"R.M\" Kästchen neben jedem Charakter, können diese von den Manager Regeln ausgenommen werden - aktiviere es, bevor du die entsprechende Gruppe ausschließt.\n\nDiese Einstellungen sind an den einstellenden Charakter gebunden, müssen bei einem Charakterwechsel also erneut vorgenommen werden!"
+ 
+ knight_manager_mod_dynasty_label: "Meine Dynastie"
+ knight_manager_mod_dynasty_tooltip: "Wenn angekreuzt: Charaktere meiner #E [dynasty]#! können als #E [knights]#! dienen."
+ 
+ knight_manager_mod_offspring_label: "Mein Nachwuchs"
+ knight_manager_mod_offspring_tooltip: "Wenn angekreuzt: Meine #E [children]#! und Enkel können als #E [knights]#! dienen."
+ 
+ knight_manager_mod_spouses_label: "Familien Ehepartner"
+ knight_manager_mod_spouses_tooltip: "Wenn angekreuzt: Mein #E [spouse]#! und #E [spouses]#! von meinem Nachwuchs können als #E [knights]#! dienen."
+ 
+ knight_manager_mod_council_label: "Mein Rat/[court_positions]"
+ knight_manager_mod_council_tooltip: "Wenn angekreuzt: Meine #E [councillors]#! und meine #E [court_positions]#! können als #E [knights]#! dienen. Betrifft nicht die Position Bodyguard und Garuda, da diese Euch in der Schlacht unterstützen."
+ 
+ knight_manager_mod_lovers_label: "Meine Geliebten"
+ knight_manager_mod_lovers_tooltip: "Wenn angekreuzt: Meine #E [lovers]#! und #E [soulmates]#! können als #E [knights]#! dienen."
+ 
+ knight_manager_mod_heir_label: "Mein Spielererbe"
+ knight_manager_mod_heir_tooltip: "Wenn angekreuzt: Mein #E [player_heir]#! kann als #E [knight]#! dienen."
+ 
+ knight_manager_mod_badfighters_label: "Schlechte Kämpfer"
+ knight_manager_mod_badfighters_tooltip: "Wenn angekreuzt: Schlechte Kämpfer (0 bis 5 [prowess_i]) können als #E [knights]#! dienen."
+ 
+ knight_manager_mod_avfighters_label: "Mittelmäßige Kämpfer"
+ knight_manager_mod_avfighters_tooltip: "Wenn angekreuzt: Mittelmäßige Kämpfer (6 bis 12 [prowess_i]) können als #E [knights]#! dienen."
+ 
+ knight_manager_mod_vassals_label: "Meine Vassals"
+ knight_manager_mod_vassals_tooltip: "Wenn angekreuzt: Meine #E [vassals]#! können als #E [knights]#! dienen."
+ 
+ knight_manager_mod_exclude_tooltip: "Wenn #S nicht#! angekreuzt: Der Charakter wird von den Manager Einstellungen nicht beeinflusst."
+ knight_manager_mod_exclude_label: "R.M."
+ 
+ 
+ 

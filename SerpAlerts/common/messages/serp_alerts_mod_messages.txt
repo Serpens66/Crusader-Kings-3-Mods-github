@@ -1,0 +1,20 @@
+﻿serp_notify_war_neutral_message = {
+	icon = "war.dds"
+	title = event_message_title
+	desc = event_message_text
+	style = neutral
+}
+
+serp_notify_war_bad_message = {
+	icon = "war.dds"
+	title = event_message_title
+	desc = event_message_text
+	style = bad
+}
+
+serp_notify_character_has_died = {
+	icon = "death_murder"
+	title = event_message_title
+	desc = event_message_text_and_effect
+	style = bad
+}

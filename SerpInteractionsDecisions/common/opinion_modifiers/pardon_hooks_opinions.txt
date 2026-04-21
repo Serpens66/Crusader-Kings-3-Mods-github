@@ -1,0 +1,8 @@
+﻿pardoned_hook_opinion = {
+	opinion = 20
+	years = 10
+	delay_years = 1
+	decaying = yes
+	stacking = yes
+	max = 75
+}

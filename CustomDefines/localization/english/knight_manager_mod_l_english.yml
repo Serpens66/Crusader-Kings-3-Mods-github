@@ -1,0 +1,35 @@
+﻿l_english:
+
+ knight_manager_mod_base_label: "Knight Manager"
+ knight_manager_mod_base_tooltip: "Uncheck the checkboxes to disallow certain character groups from serving as #E [knight]#!. When unchecked, all characters of that group will no longer be #E [knights]#! and also will not show up in the list anymore. If you want to manually allow a specific character of that group to serve as #E [knight]#!, uncheck his K.M checkbox before disallowing his groups from serving as #E [knight]#!.\n\nThese Settings are bound to your current character, so if you switch for whatever reason, you have to do the settings again!"
+ 
+ knight_manager_mod_dynasty_label: "My Dynasty"
+ knight_manager_mod_dynasty_tooltip: "If checked, characters of my #E [dynasty]#! can serve as #E [knights]#!."
+ 
+ knight_manager_mod_offspring_label: "My Offspring"
+ knight_manager_mod_offspring_tooltip: "If checked, my #E [children]#! and grandchildren can serve as #E [knights]#!."
+ 
+ knight_manager_mod_spouses_label: "Family Spouses"
+ knight_manager_mod_spouses_tooltip: "If checked, my #E [spouse]#! and the #E [spouses]#! of my offspring can serve as #E [knights]#!."
+ 
+ knight_manager_mod_council_label: "Council/[court_positions]"
+ knight_manager_mod_council_tooltip: "If checked, my #E [councillors]#! and my #E [court_positions]#! can serve as #E [knights]#!. Does not affect the Bodyguard and Garuda position, as they will support you in battle."
+ 
+ knight_manager_mod_lovers_label: "My Lovers"
+ knight_manager_mod_lovers_tooltip: "If checked, my #E [lovers]#! and #E [soulmates]#! can serve as #E [knights]#!."
+ 
+ knight_manager_mod_heir_label: "My Heir"
+ knight_manager_mod_heir_tooltip: "If checked, my #E [player_heir]#! can serve as #E [knight]#!."
+ 
+ knight_manager_mod_badfighters_label: "Bad Fighters"
+ knight_manager_mod_badfighters_tooltip: "If checked, bad fighters (0 to 5 [prowess_i]) can serve as #E [knights]#!."
+ 
+ knight_manager_mod_avfighters_label: "Average Fighters"
+ knight_manager_mod_avfighters_tooltip: "If checked, not that great fighters (6 to 12 [prowess_i]) can serve as #E [knights]#!."
+ 
+ knight_manager_mod_vassals_label: "My Vassals"
+ knight_manager_mod_vassals_tooltip: "If checked, my #E [vassals]#! can serve as #E [knights]#!."
+ 
+ knight_manager_mod_exclude_tooltip: "If #S unchecked#!, the character is excluded from the Knight Manager Settings and can be a #E [knight]#!."
+ knight_manager_mod_exclude_label: "K.M."
+ 

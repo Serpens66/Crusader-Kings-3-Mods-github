@@ -1,0 +1,4 @@
+﻿l_english:
+ pardon_hook_interaction:0 "Pardon Hook"
+ pardon_hook_interaction_desc:0 "Pardon a hook i have on [recipient.GetShortUINameNoTooltip]."
+ pardoned_hook_opinion:0 "Pardoned a Hook they had on Me"

@@ -1,0 +1,281 @@
+﻿# called when a war is started.
+# same scopes are available in these events as in the CBs' on_declaration, this just fires for all CBs instead of a specific CB.
+
+on_war_started = {
+	on_actions = { # an on_action can only have a single effect, we would overwrite the vanilla one when defining effects here. But we can have multiple on_actions, so we create our own one and call it here
+        serp_additional_on_war_started
+    }
+}
+
+
+
+
+serp_additional_on_war_started = {
+    effect = {
+        scope:attacker = {
+            every_close_family_member = { add_to_temporary_list = attacker_receivers } # create and fill a list named attacker_receivers
+            every_spouse = { add_to_temporary_list = attacker_receivers }
+            every_heir = { add_to_temporary_list = attacker_receivers }
+            every_heir_to_title = { 
+                limit = {
+                    exists = holder
+                }
+                holder = { add_to_temporary_list = attacker_receivers }
+            } # notify every current holder of a title the person will heir
+            every_pinning_character = { add_to_temporary_list = attacker_receivers }
+            every_councillor = { add_to_temporary_list = attacker_receivers }
+            every_in_list = {
+                list = attacker_receivers # the list we build above
+                limit = {
+                    is_ai = no # nicht noetig, man kann auch messages zur KI schicken, aber so ists sauberer
+                    NOT = { this = scope:defender }
+                }
+                send_interface_message = {
+                    type = serp_notify_war_neutral_message
+                    title = serp_msg_war_declared_by_related
+                    desc = serp_msg_war_declared_by_related_message
+                    left_icon = scope:attacker
+                    right_icon = scope:defender
+                }
+            }
+            every_ally = { add_to_temporary_list = attacker_receivers_special } # in special list, because we do not care for allied 2 vasalls declaring war on each other. But we do care about eg. close family vasall declaring another vasall war.
+            every_liege_or_above = { add_to_temporary_list = attacker_receivers_special }
+            every_in_list = {
+                list = attacker_receivers_special # the list we build above
+                limit = {
+                    is_ai = no # nicht noetig, man kann auch messages zur KI schicken, aber so ists sauberer
+                    NOR = { 
+                        this = scope:defender 
+                        is_in_list = attacker_receivers
+                        AND = {
+                            is_liege_or_above_of = scope:defender # if person is liege or above of defender AND attacker, then only send a message, if he is also on list attacker_receivers (we sent that message above, so no new message here)
+                            is_liege_or_above_of = scope:attacker
+                        }
+                    }
+                }
+                send_interface_message = {
+                    type = serp_notify_war_neutral_message
+                    title = serp_msg_war_declared_by_related
+                    desc = serp_msg_war_declared_by_related_message
+                    left_icon = scope:attacker
+                    right_icon = scope:defender
+                }
+            } 
+        }
+        scope:defender = {
+            every_close_family_member = { add_to_temporary_list = defender_receivers } # create and fill a list named defender_receivers
+            every_spouse = { add_to_temporary_list = defender_receivers }
+            every_heir = { add_to_temporary_list = defender_receivers }
+            every_heir_to_title = { 
+                limit = {
+                    exists = holder
+                }
+                holder = { add_to_temporary_list = defender_receivers }
+            } # notify every current holder of a title the person will heir
+            every_pinning_character = { add_to_temporary_list = defender_receivers }
+            every_councillor = { add_to_temporary_list = defender_receivers }
+            every_in_list = {
+                list = defender_receivers # the list we build above
+                limit = {
+                    is_ai = no # nicht noetig, man kann auch messages zur KI schicken, aber so ists sauberer
+                    NOR = { 
+                        this = scope:attacker 
+                        
+                        is_in_list = attacker_receivers # no message, if we already sent one for this war above
+                        is_in_list = attacker_receivers_special 
+                    }
+                }
+                send_interface_message = {
+                    type = serp_notify_war_bad_message
+                    title = serp_msg_war_declared_on_related
+                    desc = serp_msg_war_declared_on_related_message
+                    left_icon = scope:defender
+                    right_icon = scope:attacker
+                }
+            }
+            every_ally = { add_to_temporary_list = defender_receivers_special } # in special list, because we do not care for allied 2 vasalls declaring war on each other. But we do care about eg. close family vasall declaring another vasall war.
+            every_liege_or_above = { add_to_temporary_list = defender_receivers_special }
+            every_in_list = {
+                list = defender_receivers_special # the list we build above
+                limit = {
+                    is_ai = no # nicht noetig, man kann auch messages zur KI schicken, aber so ists sauberer
+                    NOR = { 
+                        this = scope:attacker 
+                        is_in_list = defender_receivers
+                        AND = {
+                            is_liege_or_above_of = scope:defender # if person is liege or above of defender AND attacker, then only send a message, if he is also on list defender_receivers (we sent that message above, so no new message here)
+                            is_liege_or_above_of = scope:attacker
+                        }
+                        
+                        is_in_list = attacker_receivers # no message, if we already sent one for this war above
+                        is_in_list = attacker_receivers_special 
+                    }
+                }
+                send_interface_message = {
+                    type = serp_notify_war_bad_message
+                    title = serp_msg_war_declared_on_related
+                    desc = serp_msg_war_declared_on_related_message
+                    left_icon = scope:defender
+                    right_icon = scope:attacker
+                }
+            }
+        }
+    }
+}
+
+##############################
+
+# root joined the scope:war
+on_join_war_as_secondary = {
+	on_actions = { # an on_action can only have a single effect, we would overwrite the vanilla one when defining effects here. But we can have multiple on_actions, so we create our own one and call it here
+        serp_additional_on_join_war_as_secondary
+    }
+}
+
+serp_additional_on_join_war_as_secondary = {
+    effect = {
+        root = {
+            every_close_family_member = { add_to_temporary_list = receivers } # create and fill a list named receivers
+            every_spouse = { add_to_temporary_list = receivers }
+            every_heir = { add_to_temporary_list = receivers }
+            every_heir_to_title = { 
+                limit = {
+                    exists = holder
+                }
+                holder = { add_to_temporary_list = receivers }
+            } # notify every current holder of a title the person will heir
+            every_pinning_character = { add_to_temporary_list = receivers }
+            every_councillor = { add_to_temporary_list = receivers }
+            every_in_list = {
+                list = receivers # the list we build above
+                limit = {
+                    is_ai = no # nicht noetig, man kann auch messages zur KI schicken, aber so ists sauberer
+                    NOR = {
+                        is_defender_in_war = scope:war # only send a message, if the receivers is not already in the same war (then he will get a message from the game)
+                        is_attacker_in_war = scope:war
+                    }
+                }
+                send_interface_message = {
+                    type = serp_notify_war_neutral_message
+                    title = serp_msg_on_joined_war_vassal
+                    desc = serp_msg_on_joined_war_vassal_message
+                    right_icon = root
+                }
+            }
+            # we do not care for vasalls and allies joining any war, unless they are also one of the above
+        }
+    }
+}
+
+###########
+
+on_death = {
+    on_actions = { # an on_action can only have a single effect, we would overwrite the vanilla one when defining effects here. But we can have multiple on_actions, so we create our own one and call it here
+        serp_additional_on_death
+    }
+}
+
+# game already send messages on_death for:
+# councillor, ally, pinnend
+# for close_family_member heir and spouse the game does not sent a message and only sometimes a event box, so we will include them here
+
+serp_additional_on_death = {
+    effect = {
+        root = {
+            # every_ally = { add_to_temporary_list = receivers } # there is already a death message for them
+            every_close_family_member = { add_to_temporary_list = receivers }
+            every_spouse = { add_to_temporary_list = receivers }
+            every_heir = { add_to_temporary_list = receivers } # notify the heirs
+            every_heir_to_title = { 
+                limit = {
+                    exists = holder
+                }
+                holder = { add_to_temporary_list = receivers }
+            } # notify every current holder of a title the person will heir
+            every_pinning_character = { add_to_temporary_list = receivers } # there is already a death message for them
+            if = {
+                limit = { 
+                    exists = liege
+                    is_independent_ruler = no # independend rulers are their own liege, so do not send a message for himself
+                }
+                liege = { add_to_temporary_list = receivers } # add the liege of current scope to the list
+            }
+            save_scope_as = dead_character
+            if = {
+                limit = { 
+                    exists = scope:dead_character.location
+                }
+                scope:dead_character.location = {
+                    save_scope_as = dying_location # save the location prior to finally dying
+                }
+            }
+            every_in_list = {
+                list = receivers # the list we build above
+                limit = {
+                    is_ai = no # nicht noetig, man kann auch messages zur KI schicken, aber so ists sauberer
+                }
+                # trigger_event = {
+                    # id = serp_alerts.0001 # trigger an delayed event instead of sending the notification directly, because we need to wait after the character finally died to get eg. DeathReason
+                    # delayed = yes
+                # }
+                send_interface_message = { # sending it directly without delay works better with RelationToMe, because after death the character is eg. no vassal/councilor anymore. So if we have to decide between this and deathreason, I choose this.
+                    type = serp_notify_character_has_died
+                    title = serp_msg_on_death_vassal
+                    desc = serp_msg_on_death_vassal_message
+                    left_icon = scope:dead_character
+                    right_icon = scope:dead_character.killer
+                }
+            }
+        }
+    }
+}
+
+###################
+
+on_leave_court = { # courtier leaves
+    on_actions = { # an on_action can only have a single effect, we would overwrite the vanilla one when defining effects here. But we can have multiple on_actions, so we create our own one and call it here
+        serp_additional_on_leave_court
+    }
+}
+serp_additional_on_leave_court = { # inform the old employer
+    trigger = { scope:old_employer = { is_ai = no } }
+    effect = {
+        save_scope_as = leaving_courtier
+        scope:old_employer = {
+			send_interface_message = {
+				type = character_has_left
+				title = msg_courtier_left_court_interaction_title
+				desc = msg_courtier_left_court_interaction_title
+				left_icon = scope:leaving_courtier
+			}
+		}
+    }
+}
+
+
+# on_guest_arrived_from_pool = { # new guest in court
+    # on_actions = { # an on_action can only have a single effect, we would overwrite the vanilla one when defining effects here. But we can have multiple on_actions, so we create our own one and call it here
+        # serp_additional_on_guest_arrived_from_pool
+    # }
+# }
+# serp_additional_on_guest_arrived_from_pool = { # a message to host for every new guest in court.. I think this is not so important, so comment it out
+    # trigger = { scope:host = { is_ai = no } }
+    # effect = {
+        # every_in_list = {
+            # list = characters # list of all characters moving together. Includes the root character.
+            # save_scope_as = exceptional_guest
+
+            # scope:host = {
+                # send_interface_message = {
+                    # type = character_arrived
+                    # left_icon = scope:exceptional_guest
+                    # title = courtier_guest_management.1001.t
+                    # desc = courtier_guest_management.1001.t
+                # }
+            # }
+        # }
+    # }
+# }
+
+
+

@@ -1,0 +1,6 @@
+﻿l_english:
+ temp_excommunicate_interaction:0 "Sinner $excommunicate_interaction$"
+ temp_excommunicate_interaction_wcooldown:0 "$excommunicate_interaction$"
+
+ temp_request_excommunication_interaction:0 "$request_excommunication_interaction$"
+ recipient_secondary_temp_request_excommunication_interaction:0 "$recipient_secondary_request_excommunication_interaction$"

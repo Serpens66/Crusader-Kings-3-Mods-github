@@ -1,0 +1,169 @@
+﻿KM_is_loaded = { always = yes }
+
+# Using structure "$ARMY_OWNER$ = ..." because we need to check the ARMY_OWNER characterflags (while SP mod only needs to check a global variable)
+ # maybe this also makes sure it exists or so?
+ # ?= check makes sure it exists, eg. any_spouse or dynasty "$ARMY_OWNER$.dynasty ?= dynasty" (while every human has a dynasty, so existance check here should not be needed)
+KM_can_be_knight_trigger = {
+	OR = {
+		$ARMY_OWNER$ = {
+			is_ai = yes
+		}
+		is_acclaimed = yes
+		has_variable = kmc_manually_allowed
+		NOR = {
+			AND = {
+				dynasty = $ARMY_OWNER$.dynasty
+				$ARMY_OWNER$ = { has_character_flag = kmc_dynasty_cannot_be_knight }
+			}
+			AND = {
+				house = $ARMY_OWNER$.house
+				$ARMY_OWNER$ = { has_character_flag = kmc_house_cannot_be_knight }
+			}
+			AND = {
+				is_spouse_of = $ARMY_OWNER$
+				$ARMY_OWNER$ = { has_character_flag = kmc_spouses_cannot_be_knight }
+			}
+			AND = {
+				OR = {
+					is_child_of = $ARMY_OWNER$
+					is_grandchild_of = $ARMY_OWNER$
+				}
+				$ARMY_OWNER$ = { has_character_flag = kmc_children_cannot_be_knight }
+			}
+			AND = {
+				any_spouse ?= {
+					OR = {
+						is_child_of = $ARMY_OWNER$
+						is_grandchild_of = $ARMY_OWNER$
+					}
+
+				}
+				$ARMY_OWNER$ = { has_character_flag = kmc_child_spouses_cannot_be_knight }
+			}
+			AND = {
+				is_player_heir_of = $ARMY_OWNER$
+				$ARMY_OWNER$ = { has_character_flag = kmc_player_heir_cannot_be_knight }
+			}
+			AND = {
+				OR = {
+					has_relation_lover = $ARMY_OWNER$
+					has_relation_soulmate = $ARMY_OWNER$
+					has_secret_relation_lover = $ARMY_OWNER$
+					has_secret_relation_soulmate = $ARMY_OWNER$
+				}
+				$ARMY_OWNER$ = { has_character_flag = kmc_lover_cannot_be_knight }
+			}
+			AND = {
+				OR = {
+					is_councillor_of = $ARMY_OWNER$
+				}
+				$ARMY_OWNER$ = { has_character_flag = kmc_councillors_cannot_be_knight }
+			}
+			AND = {
+				has_any_court_position = yes
+				NOR = {
+					has_court_position = bodyguard_court_position
+					has_court_position = garuda_court_position
+				}
+				$ARMY_OWNER$ = { has_character_flag = kmc_court_position_cannot_be_knight }
+			}
+			AND = {
+				is_landed = no
+				$ARMY_OWNER$ = { has_character_flag = kmc_unlanded_cannot_be_knight }
+			}
+			AND = {
+				is_lowborn = no
+				$ARMY_OWNER$ = { has_character_flag = kmc_highborn_cannot_be_knight }
+			}
+			AND = {
+				is_lowborn = yes
+				$ARMY_OWNER$ = { has_character_flag = kmc_lowborn_cannot_be_knight }
+			}
+			AND = {
+				#is_ruler = yes
+				is_landed = yes
+				highest_held_title_tier > tier_barony
+				$ARMY_OWNER$ = { has_character_flag = kmc_landed_cannot_be_knight }
+			}
+			AND = {
+				is_landed = yes
+				highest_held_title_tier <= tier_barony
+				$ARMY_OWNER$ = { has_character_flag = kmc_barons_cannot_be_knight }
+			}
+			AND = {
+				prowess < 5
+				$ARMY_OWNER$ = { has_character_flag = kmc_terrible_fighter_cannot_be_knight }
+			}
+			AND = {
+				prowess >= 5
+				prowess <= 8
+				$ARMY_OWNER$ = { has_character_flag = kmc_poor_fighter_cannot_be_knight }
+			}
+			AND = {
+				prowess >= 9
+				prowess <= 12
+				$ARMY_OWNER$ = { has_character_flag = kmc_average_fighter_cannot_be_knight }
+			}
+			AND = {
+				prowess >= 13
+				prowess <= 16
+				$ARMY_OWNER$ = { has_character_flag = kmc_good_fighter_cannot_be_knight }
+			}
+			AND = {
+				prowess > 16
+				$ARMY_OWNER$ = { has_character_flag = kmc_excellent_fighter_cannot_be_knight }
+			}
+			AND = {
+				has_trait = wounded
+				$ARMY_OWNER$ = { has_character_flag = kmc_wounded_cannot_be_knight }
+			}
+		}
+	}
+}
+
+can_be_knight_trigger = {
+	is_hostage = no
+	trigger_if = {
+		limit = {
+			$ARMY_OWNER$.culture = {
+				has_cultural_parameter = minimum_prowess_for_knights
+			}
+		}
+		prowess >= 12
+	}
+	can_be_warrior_trigger = { ARMY_OWNER = $ARMY_OWNER$ }
+	trigger_if = {
+		limit = {
+			OR = {
+				has_trait = devoted
+				is_clergy = yes
+			}
+		}
+		OR = {
+			faith = { has_doctrine_parameter = clergy_can_fight }
+			culture = { has_cultural_parameter = culture_clergy_can_fight }
+			AND = {
+				$ARMY_OWNER$.culture = {
+					has_cultural_parameter = high_prowess_ignores_knight_restrictions
+				}
+				prowess >= 10
+			}
+		}
+	}
+	OR = {
+		AND = {
+			$ARMY_OWNER$.culture = {
+				has_cultural_parameter = high_prowess_ignores_knight_restrictions
+			}
+			prowess >= 10
+		}
+		has_trait = order_member # Order Members will fight for their faith even if their faith says no
+		NOR = {
+			has_trait = blind
+			has_court_position = master_assassin_court_position #FP3 addition
+		}
+	}
+	is_ai = yes
+	#KMC Conditions
+	KM_can_be_knight_trigger = { ARMY_OWNER = $ARMY_OWNER$ }
+}

@@ -1,0 +1,933 @@
+﻿# info: wenn ich mal die genauen taschverhaeltnisse,werte ändern will, dann waere es evlt sinnvoll fuer diese script_values zu nutzen, sodass ich die werte nur an einer stelle aendern muss und alle andern skripte sie dann automatisch uebernehmen
+
+namespace = convert_resources_events
+
+convert_resources_events.01 = {
+	type = character_event
+	title = convert_resources_events.01.t
+	desc = convert_resources_events.01.desc
+	
+	theme = bastardy
+	
+	left_portrait = {
+		character = root
+		animation = personality_rational
+	}
+
+	option = {
+		name = convert_resources_events.01.a
+		custom_tooltip = convert_resources_events.01.a.tt
+		trigger_event = {
+			id = convert_resources_events.02
+		}
+	}
+	
+	option = {
+		name = convert_resources_events.01.b
+		custom_tooltip = convert_resources_events.01.b.tt
+		trigger_event = {
+			id = convert_resources_events.03
+		}
+	}
+	
+	option = {
+		trigger = {
+			age < 50
+			health >= 3
+		}
+		name = convert_resources_events.01.c
+		custom_tooltip = convert_resources_events.01.c.tt
+		trigger_event = {
+			id = convert_resources_events.04
+		}
+	}
+	
+	option = {
+		trigger = {
+			OR = {
+				AND = {
+					age >= 50
+					health >= 3
+				}
+				AND = {
+					age < 50
+					health < 3
+				}
+			}
+		}
+		name = convert_resources_events.01.d
+		custom_tooltip = convert_resources_events.01.d.tt
+		trigger_event = {
+			id = convert_resources_events.05
+		}
+	}
+	
+	option = {
+		trigger = {
+			age >= 50
+			health < 3
+		}
+		name = convert_resources_events.01.e
+		custom_tooltip = convert_resources_events.01.e.tt
+		trigger_event = {
+			id = convert_resources_events.08
+		}
+	}
+	
+	option = {
+		name = convert_resources_events.01.f
+		custom_tooltip = convert_resources_events.01.f.tt
+		trigger_event = {
+			id = convert_resources_events.06
+		}
+	}
+	
+	option = {
+		name = convert_resources_events.01.g
+		custom_tooltip = convert_resources_events.01.g.tt
+		trigger_event = {
+			id = convert_resources_events.07
+		}
+	}
+	
+	option = {
+		name = convert_resources_events.01.h
+		custom_tooltip = convert_resources_events.01.h.tt
+	}
+}
+
+convert_resources_events.02 = {
+	type = character_event
+	title = convert_resources_events.02.t
+	desc = convert_resources_events.02.desc
+	
+	theme = stewardship_duty_focus
+	
+	left_portrait = {
+		character = root
+		animation = personality_honorable
+	}
+	
+	right_portrait = {
+		character = cp:councillor_chancellor
+		animation = personality_content
+	}
+
+	option = {
+        trigger = {
+			AND = {
+                prestige >= 300
+                NOT = {
+                    has_character_modifier = crmod_prestige_small_income_modifier
+                }
+            }
+		}
+        show_as_unavailable = {
+			OR = {
+                prestige < 300
+                has_character_modifier = crmod_prestige_small_income_modifier
+            }
+            
+		}
+        name = convert_resources_events.02.a
+		add_gold = 75
+		add_prestige = -300
+        add_character_modifier = {
+			modifier = crmod_prestige_small_income_modifier # a part of the gold as income instead
+			years = 5
+		}
+	}
+	
+	option = {
+		trigger = {
+			AND = {
+                prestige >= 500
+                NOT = {
+                    has_character_modifier = crmod_prestige_reasonable_income_modifier
+                }
+            }
+		}
+        show_as_unavailable = {
+			OR = {
+                prestige < 500
+                has_character_modifier = crmod_prestige_reasonable_income_modifier
+            }
+            
+		}
+		name = convert_resources_events.02.b
+		add_gold = 150
+		add_prestige = -500
+        add_character_modifier = {
+			modifier = crmod_prestige_reasonable_income_modifier # a part of the gold as income instead
+			years = 5
+		}
+	}
+	
+	option = {
+		trigger = {
+			AND = {
+                prestige >= 1000
+                NOT = {
+                    has_character_modifier = crmod_prestige_considerable_income_modifier
+                }
+            }
+		}
+        show_as_unavailable = {
+			OR = {
+                prestige < 1000
+                has_character_modifier = crmod_prestige_considerable_income_modifier
+            }
+            
+		}
+		name = convert_resources_events.02.c
+		add_gold = 325
+		add_prestige = -1000
+        add_character_modifier = {
+			modifier = crmod_prestige_considerable_income_modifier # a part of the gold as income instead
+			years = 5
+		}
+	}
+	
+	option = {
+		trigger = {
+			AND = {
+                prestige >= 1500
+                NOT = {
+                    has_character_modifier = crmod_prestige_large_income_modifier
+                }
+            }
+		}
+        show_as_unavailable = {
+			OR = {
+                prestige < 1500
+                has_character_modifier = crmod_prestige_large_income_modifier
+            }
+            
+		}
+		name = convert_resources_events.02.d
+		add_gold = 500
+		add_prestige = -1500
+        add_character_modifier = {
+			modifier = crmod_prestige_large_income_modifier # a part of the gold as income instead
+			years = 5
+		}
+	}
+	
+	option = {
+		name = convert_resources_events.02.e
+		custom_tooltip = convert_resources_events.02.e.tt
+		trigger_event = {
+			id = convert_resources_events.01
+		}
+	}
+}
+
+convert_resources_events.03 = {
+	type = character_event
+	title = convert_resources_events.03.t
+	desc = convert_resources_events.03.desc
+	
+	theme = learning_theology_focus
+	
+	left_portrait = {
+		character = root
+		animation = personality_honorable
+	}
+	
+	right_portrait = {
+		character = cp:councillor_court_chaplain
+		animation = personality_zealous
+	}
+
+	option = {
+		trigger = {
+			AND = {
+                piety >= 300
+                NOT = {
+                    has_character_modifier = crmod_piety_small_income_modifier
+                }
+            }
+		}
+        show_as_unavailable = {
+			OR = {
+                piety < 300
+                has_character_modifier = crmod_piety_small_income_modifier
+            }
+            
+		}
+        name = convert_resources_events.03.a
+		add_gold = 75
+		add_piety = -300
+        add_character_modifier = {
+			modifier = crmod_piety_small_income_modifier # a part of the gold as income instead
+			years = 5
+		}
+	}
+	
+	option = {
+		trigger = {
+			AND = {
+                piety >= 500
+                NOT = {
+                    has_character_modifier = crmod_piety_reasonable_income_modifier
+                }
+            }
+		}
+        show_as_unavailable = {
+			OR = {
+                piety < 500
+                has_character_modifier = crmod_piety_reasonable_income_modifier
+            }
+            
+		}
+		name = convert_resources_events.03.b
+		add_gold = 150
+		add_piety = -500
+        add_character_modifier = {
+			modifier = crmod_piety_reasonable_income_modifier # a part of the gold as income instead
+			years = 5
+		}
+	}
+	
+	option = {
+		trigger = {
+			AND = {
+                piety >= 1000
+                NOT = {
+                    has_character_modifier = crmod_piety_considerable_income_modifier
+                }
+            }
+		}
+        show_as_unavailable = {
+			OR = {
+                piety < 1000
+                has_character_modifier = crmod_piety_considerable_income_modifier
+            }
+            
+		}
+		name = convert_resources_events.03.c
+		add_gold = 325
+		add_piety = -1000
+        add_character_modifier = {
+			modifier = crmod_piety_considerable_income_modifier # a part of the gold as income instead
+			years = 5
+		}
+	}
+	
+	option = {
+		trigger = {
+			AND = {
+                piety >= 1500
+                NOT = {
+                    has_character_modifier = crmod_piety_large_income_modifier
+                }
+            }
+		}
+        show_as_unavailable = {
+			OR = {
+                piety < 1500
+                has_character_modifier = crmod_piety_large_income_modifier
+            }
+            
+		}
+		name = convert_resources_events.03.d
+		add_gold = 500
+		add_piety = -1500
+        add_character_modifier = {
+			modifier = crmod_piety_large_income_modifier # a part of the gold as income instead
+			years = 5
+		}
+	}
+	
+	option = {
+		name = convert_resources_events.03.e
+		custom_tooltip = convert_resources_events.03.e.tt
+		trigger_event = {
+			id = convert_resources_events.01
+		}
+	}
+}
+
+convert_resources_events.04 = {
+	type = character_event
+	title = convert_resources_events.04.t
+	desc = convert_resources_events.04.desc
+	
+	theme = stewardship_wealth_focus
+	
+	left_portrait = {
+		character = root
+		animation = personality_greedy
+	}
+	
+	right_portrait = {
+		character = cp:councillor_steward
+		animation = personality_forgiving
+	}
+
+	option = {
+		trigger = {
+			NOT = {
+				has_character_modifier = pay_back_small_loan
+			}
+		}
+        show_as_unavailable = {
+			has_character_modifier = pay_back_small_loan
+		}
+		name = convert_resources_events.04.a
+		add_gold = 150
+		add_character_modifier = {
+			modifier = pay_back_small_loan
+			years = 5
+		}
+	}
+
+	option = {
+		trigger = {
+			NOT = {
+				has_character_modifier = pay_back_reasonable_loan
+			}
+		}
+        show_as_unavailable = {
+			has_character_modifier = pay_back_reasonable_loan
+		}
+		name = convert_resources_events.04.b
+		add_gold = 300
+		add_character_modifier = {
+			modifier = pay_back_reasonable_loan
+			years = 6
+		}
+	}
+	
+	option = {
+		trigger = {
+			NOT = {
+				has_character_modifier = pay_back_considerable_loan
+			}
+		}
+        show_as_unavailable = {
+			has_character_modifier = pay_back_considerable_loan
+		}
+		name = convert_resources_events.04.c
+		add_gold = 500
+		add_character_modifier = {
+			modifier = pay_back_considerable_loan
+			years = 10
+		}
+	}
+	
+	option = {
+		trigger = {
+			NOT = {
+				has_character_modifier = pay_back_large_loan
+			}
+		}
+        show_as_unavailable = {
+			has_character_modifier = pay_back_large_loan
+		}
+		name = convert_resources_events.04.d
+		add_gold = 1000
+		add_character_modifier = {
+			modifier = pay_back_large_loan
+			years = 15
+		}
+	}
+	
+	option = {
+		name = convert_resources_events.04.e
+		custom_tooltip = convert_resources_events.04.e.tt
+		trigger_event = {
+			id = convert_resources_events.01
+		}
+	}
+}
+
+convert_resources_events.05 = {
+	type = character_event
+	title = convert_resources_events.05.t
+	desc = convert_resources_events.05.desc
+	
+	theme = stewardship_wealth_focus
+	
+	left_portrait = {
+		character = root
+		animation = personality_greedy
+	}
+	
+	right_portrait = {
+		character = cp:councillor_steward
+		animation = personality_forgiving
+	}
+
+	option = {
+		trigger = {
+			NOT = {
+				has_character_modifier = pay_back_small_loan_expensive
+			}
+		}
+        show_as_unavailable = {
+			has_character_modifier = pay_back_small_loan_expensive
+		}
+		name = convert_resources_events.05.a
+		add_gold = 150
+		add_character_modifier = {
+			modifier = pay_back_small_loan_expensive
+			years = 3
+		}
+	}
+
+	option = {
+		trigger = {
+			NOT = {
+				has_character_modifier = pay_back_reasonable_loan_expensive
+			}
+		}
+        show_as_unavailable = {
+			has_character_modifier = pay_back_reasonable_loan_expensive
+		}
+		name = convert_resources_events.05.b
+		add_gold = 300
+		add_character_modifier = {
+			modifier = pay_back_reasonable_loan_expensive
+			years = 4
+		}
+	}
+	
+	option = {
+		trigger = {
+			NOT = {
+				has_character_modifier = pay_back_considerable_loan_expensive
+			}
+		}
+        show_as_unavailable = {
+			has_character_modifier = pay_back_considerable_loan_expensive
+		}
+		name = convert_resources_events.05.c
+		add_gold = 500
+		add_character_modifier = {
+			modifier = pay_back_considerable_loan_expensive
+			years = 8
+		}
+	}
+	
+	option = {
+		trigger = {
+			NOT = {
+				has_character_modifier = pay_back_large_loan_expensive
+			}
+		}
+        show_as_unavailable = {
+			has_character_modifier = pay_back_large_loan_expensive
+		}
+		name = convert_resources_events.05.d
+		add_gold = 1000
+		add_character_modifier = {
+			modifier = pay_back_large_loan_expensive
+			years = 10
+		}
+        # capital_province = { # give it to the capital instead of the character, so it also works after succession ... BUT: you can change the capital anytime and then give the county to a vassal ... so no good solution -.-
+            # add_province_modifier = {
+                # modifier = pay_back_large_loan_expensive
+                # years = 10
+            # }
+        # }
+	}
+	
+	option = {
+		name = convert_resources_events.05.e
+		custom_tooltip = convert_resources_events.05.e.tt
+		trigger_event = {
+			id = convert_resources_events.01
+		}
+	}
+}
+
+convert_resources_events.06 = {
+	type = character_event
+	title = convert_resources_events.06.t
+	desc = convert_resources_events.06.desc
+	
+	theme = dungeon
+	
+	left_portrait = {
+		character = root
+		animation = personality_cynical
+	}
+	
+	right_portrait = {
+		character = cp:councillor_marshal
+		animation = personality_vengeful
+	}
+
+	option = {
+		trigger = {
+                NOT = { # solange beide modifier dieselbe Laufzeit haben, brauch ich hier nur einen davon pruefen
+                    has_character_modifier = crmod_forced_payment_small_opinion_modifier
+                }
+		}
+        show_as_unavailable = {
+			has_character_modifier = crmod_forced_payment_small_opinion_modifier
+		}
+        name = convert_resources_events.06.a
+		add_gold = 75
+		add_dread = 10
+		add_tyranny = 30
+        add_character_modifier = {
+			modifier = crmod_forced_payment_small_opinion_modifier # tyranny is not enough, because it can be lowered easily
+			years = 5
+		}
+        add_character_modifier = {
+			modifier = crmod_forced_payment_small_income_modifier # also higher income for same amount of time
+			years = 5
+		}
+        every_courtier = { add_to_list = to_wound_people }
+        every_councillor = { add_to_list = to_wound_people }
+        every_vassal = { add_to_list = to_wound_people }
+        every_in_list = {
+            list = to_wound_people
+            limit = {
+                age >= 16
+                NOR = {
+                    is_spouse_of = root
+                    is_player_heir_of = root
+                }
+            }
+            random = {
+                chance = 10
+                increase_wounds_effect = { REASON = beaten }
+            }
+        }
+	}
+
+	option = {
+		trigger = {
+                NOT = {
+                    has_character_modifier = crmod_forced_payment_reasonable_opinion_modifier
+                }
+		}
+        show_as_unavailable = {
+			has_character_modifier = crmod_forced_payment_reasonable_opinion_modifier
+		}
+        name = convert_resources_events.06.b
+		add_gold = 150
+		add_dread = 20
+		add_tyranny = 60
+        add_character_modifier = {
+			modifier = crmod_forced_payment_reasonable_opinion_modifier # tyranny is not enough, because it can be lowered easily
+			years = 5
+		}
+        add_character_modifier = {
+			modifier = crmod_forced_payment_reasonable_income_modifier # also higher income for same amount of time
+			years = 5
+		}
+        every_courtier = { add_to_list = to_wound_people }
+        every_councillor = { add_to_list = to_wound_people }
+        every_vassal = { add_to_list = to_wound_people }
+        every_in_list = {
+            list = to_wound_people
+            limit = {
+                age >= 16
+                NOR = {
+                    is_spouse_of = root
+                    is_player_heir_of = root
+                }
+            }
+            random = {
+                chance = 15
+                increase_wounds_effect = { REASON = beaten }
+            }
+        }
+	}
+	
+	option = {
+		trigger = {
+                NOT = {
+                    has_character_modifier = crmod_forced_payment_considerable_opinion_modifier
+                }
+		}
+        show_as_unavailable = {
+			has_character_modifier = crmod_forced_payment_considerable_opinion_modifier
+		}
+        name = convert_resources_events.06.c
+		add_gold = 250
+		add_dread = 30
+		add_tyranny = 105
+        add_character_modifier = {
+			modifier = crmod_forced_payment_considerable_opinion_modifier # tyranny is not enough, because it can be lowered easily
+			years = 5
+		}
+        add_character_modifier = {
+			modifier = crmod_forced_payment_considerable_income_modifier # also higher income for same amount of time
+			years = 5
+		}
+        every_courtier = { add_to_list = to_wound_people }
+        every_councillor = { add_to_list = to_wound_people }
+        every_vassal = { add_to_list = to_wound_people }
+        every_in_list = {
+            list = to_wound_people
+            limit = {
+                age >= 16
+                NOR = {
+                    is_spouse_of = root
+                    is_player_heir_of = root
+                }
+            }
+            random = {
+                chance = 20
+                increase_wounds_effect = { REASON = beaten }
+            }
+        }
+	}
+	
+	option = {
+		trigger = {
+                NOT = {
+                    has_character_modifier = crmod_forced_payment_large_opinion_modifier
+                }
+		}
+        show_as_unavailable = {
+			has_character_modifier = crmod_forced_payment_large_opinion_modifier
+		}
+        name = convert_resources_events.06.d
+		add_gold = 500
+		add_dread = 50
+		add_tyranny = 180
+        add_character_modifier = {
+			modifier = crmod_forced_payment_large_opinion_modifier # tyranny is not enough, because it can be lowered easily
+			years = 5
+		}
+        add_character_modifier = {
+			modifier = crmod_forced_payment_large_income_modifier # also higher income for same amount of time
+			years = 5
+		}
+        every_courtier = { add_to_list = to_wound_people }
+        every_councillor = { add_to_list = to_wound_people }
+        every_vassal = { add_to_list = to_wound_people }
+        every_in_list = {
+            list = to_wound_people
+            limit = {
+                age >= 16
+                NOR = {
+                    is_spouse_of = root
+                    is_player_heir_of = root
+                }
+            }
+            random = {
+                chance = 30
+                increase_wounds_effect = { REASON = beaten }
+            }
+        }
+	}
+	
+	option = {
+		name = convert_resources_events.06.e
+		custom_tooltip = convert_resources_events.05.e.tt
+		trigger_event = {
+			id = convert_resources_events.01
+		}
+	}
+}
+
+convert_resources_events.07 = {
+	type = character_event
+	title = convert_resources_events.07.t
+	desc = convert_resources_events.07.desc
+	
+	theme = stewardship_wealth_focus
+	
+	left_portrait = {
+		character = root
+		animation = personality_callous
+	}
+	
+	right_portrait = {
+		character = cp:councillor_steward
+		animation = personality_forgiving
+	}
+
+	option = {
+		trigger = {
+			gold >= 150
+            NOT = {
+				has_character_modifier = gain_from_small_loan
+			}
+		}
+        show_as_unavailable = {
+			OR = {
+                gold < 150
+                has_character_modifier = gain_from_small_loan
+            }
+		}
+		name = convert_resources_events.07.a
+		remove_short_term_gold = 150
+		add_character_modifier = {
+			modifier = gain_from_small_loan
+			years = 5
+		}
+	}
+
+	option = {
+		name = convert_resources_events.07.b
+		trigger = {
+			gold >= 300
+			NOT = {
+				has_character_modifier = gain_from_reasonable_loan
+			}
+		}
+        show_as_unavailable = {
+			OR = {
+                gold < 300
+                has_character_modifier = gain_from_reasonable_loan
+            }
+		}
+		remove_short_term_gold = 300
+		add_character_modifier = {
+			modifier = gain_from_reasonable_loan
+			years = 6
+		}
+	}
+	
+	option = {
+		name = convert_resources_events.07.c
+		trigger = {
+			gold >= 500
+			NOT = {
+				has_character_modifier = gain_from_considerable_loan
+			}
+		}
+        show_as_unavailable = {
+			OR = {
+                gold < 300
+                has_character_modifier = gain_from_considerable_loan
+            }
+		}
+		remove_short_term_gold = 500
+		add_character_modifier = {
+			modifier = gain_from_considerable_loan
+			years = 8
+		}
+	}
+	
+	option = {
+		name = convert_resources_events.07.d
+		trigger = {
+			gold >= 1000
+			NOT = {
+				has_character_modifier = gain_from_large_loan
+			}
+		}
+        show_as_unavailable = {
+			OR = {
+                gold < 1000
+                has_character_modifier = gain_from_large_loan
+            }
+		}
+		remove_short_term_gold = 1000
+		add_character_modifier = {
+			modifier = gain_from_large_loan
+			years = 14
+		}
+	}
+	
+	option = {
+		name = convert_resources_events.07.e
+		custom_tooltip = convert_resources_events.07.e.tt
+		trigger_event = {
+			id = convert_resources_events.01
+		}
+	}
+}
+
+convert_resources_events.08 = {
+	type = character_event
+	title = convert_resources_events.08.t
+	desc = convert_resources_events.08.desc
+	
+	theme = stewardship_wealth_focus
+	
+	left_portrait = {
+		character = root
+		animation = personality_greedy
+	}
+	
+	right_portrait = {
+		character = cp:councillor_steward
+		animation = personality_forgiving
+	}
+
+	option = {
+		trigger = {
+			NOT = {
+				has_character_modifier = pay_back_small_loan_very_expensive
+			}
+		}
+        show_as_unavailable = {
+			has_character_modifier = pay_back_small_loan_very_expensive
+		}
+		name = convert_resources_events.08.a
+		add_gold = 150
+		add_character_modifier = {
+			modifier = pay_back_small_loan_very_expensive
+			years = 2
+		}
+	}
+
+	option = {
+		trigger = {
+			NOT = {
+				has_character_modifier = pay_back_reasonable_loan_very_expensive
+			}
+		}
+        show_as_unavailable = {
+			has_character_modifier = pay_back_reasonable_loan_very_expensive
+		}
+		name = convert_resources_events.08.b
+		add_gold = 300
+		add_character_modifier = {
+			modifier = pay_back_reasonable_loan_very_expensive
+			years = 3
+		}
+	}
+	
+	option = {
+		trigger = {
+			NOT = {
+				has_character_modifier = pay_back_considerable_loan_very_expensive
+			}
+		}
+        show_as_unavailable = {
+			has_character_modifier = pay_back_considerable_loan_very_expensive
+		}
+		name = convert_resources_events.08.c
+		add_gold = 500
+		add_character_modifier = {
+			modifier = pay_back_considerable_loan_very_expensive
+			years = 4
+		}
+	}
+	
+	option = {
+		trigger = {
+			NOT = {
+				has_character_modifier = pay_back_large_loan_very_expensive
+			}
+		}
+        show_as_unavailable = {
+			has_character_modifier = pay_back_large_loan_very_expensive
+		}
+		name = convert_resources_events.08.d
+		add_gold = 1000
+		add_character_modifier = {
+			modifier = pay_back_large_loan_very_expensive
+			years = 6
+		}
+	}
+	
+	option = {
+		name = convert_resources_events.08.e
+		custom_tooltip = convert_resources_events.08.e.tt
+		trigger_event = {
+			id = convert_resources_events.01
+		}
+	}
+}

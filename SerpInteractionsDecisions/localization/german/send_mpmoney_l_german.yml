@@ -1,0 +1,6 @@
+﻿l_german:
+ send_mpmoney_small_interaction: "Geld schenken: 50 [gold_i]"
+ send_mpmoney_medium_interaction: "Geld schenken: 100 [gold_i]"
+ send_mpmoney_big_interaction: "Geld schenken: 250 [gold_i]"
+ send_mpmoney_verybig_interaction: "Geld schenken: 500 [gold_i]"
+ send_mpmoney_interaction_desc: "Verschenkt Geld, ohne Gegenleistung, ohne Meinungszuwachs."

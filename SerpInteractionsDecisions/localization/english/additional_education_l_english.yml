@@ -1,0 +1,50 @@
+﻿l_english:
+
+ additional_education_interaction:0 "Further Education"
+ additional_education_interaction_desc:0 "Pay [gold_i] and [prestige_i] to improve the skills of [recipient.GetFirstName]. Possible for all adults at your court, close relatives and direct vassals."
+ additional_education_interaction_0.tooltip:0 "May pay [gold_i] and [prestige_i] for the education. The sum depends on the current skillvalues of the student."
+ additional_education_interaction_1.tooltip:0 "May receive education for 1 year.\nDuring this time the chosen skill will have a #N malus#! and [recipient.GetFirstNameNoTooltip] will be easier #N stressed#!. But after that year [recipient.GetFirstNameNoTooltip] will be much #P better#! in that skill."
+ 
+ additional_education.0001.t:0 "Choose Studies"
+ additional_education.0001.desc:0 "If you can afford the costs, choose the kind of studies for [recipient.GetFirstName].\nIt will increase the chosen skill by #P +5 (+10[prowess_i])#! and provide #P +10%#! [experience] for the appropriate lifestyle. But during the time of studies, [recipient.GetFirstName] will be #N stressed#! and will be a bit worse #N -3 (-5)#! in that skill."
+ 
+ additional_education.0002.name:0 "Martial [martial_i]"
+ additional_education.0002.tooltip:0 "[recipient.GetFirstName] #P gets +5 [martial_i] and +10%#! [experience] #N after 1 year#! of studies"
+ additional_education.0003.name:0 "Stewardship [stewardship_i]"
+ additional_education.0003.tooltip:0 "[recipient.GetFirstName] #P gets +5 [stewardship_i] and +10%#! [experience] #N after 1 year#! of studies"
+ additional_education.0004.name:0 "Prowess [prowess_i]"
+ additional_education.0004.tooltip:0 "[recipient.GetFirstName] #P gets +10 [prowess_i] and +10%#! [experience] #N after 1 year#! of training"
+ additional_education.0005.name:0 "Maybe another time..."
+ additional_education.0005.tooltip:0 "No further education for now."
+
+ additional_education.0006.name:0 "Intrigue [intrigue_i]"
+ additional_education.0006.tooltip:0 "[recipient.GetFirstName] #P gets +5 [intrigue_i] and +10%#! [experience] #N after 1 year#! of studies"
+ additional_education.0007.name:0 "Diplomacy [diplomacy_i]"
+ additional_education.0007.tooltip:0 "[recipient.GetFirstName] #P gets +5 [diplomacy_i] and +10%#! [experience] #N after 1 year#! of studies"
+ additional_education.0008.name:0 "Learning [learning_i]"
+ additional_education.0008.tooltip:0 "[recipient.GetFirstName] #P gets +5 [learning_i] and +10%#! [experience] #N after 1 year#! of studies"
+
+ additional_education.1001.t:0 "[recipient.GetFirstNameNoTooltip] completed Studies!"
+ additional_education.1001.desc:0 "Congratulations, [recipient.GetRelationToString( GetPlayer )] [recipient.GetName|U] completed the educational program and received additional skills."
+ additional_education.1001.name:0 "Great!"
+ 
+ 
+ additional_education_prowess_modifier: "Absolved hard training Prowess"
+ additional_education_study_prowess_modifier: "Ongoing hard training Prowess"
+ 
+ additional_education_martial_modifier: "Absolved hard studies Martial"
+ additional_education_study_martial_modifier: "Ongoing hard studies Martial"
+ 
+ additional_education_stewardship_modifier: "Absolved hard studies Stewardship"
+ additional_education_study_stewardship_modifier: "Ongoing hard studies Stewardship"
+ 
+ additional_education_intrigue_modifier: "Absolved hard studies Intrigue"
+ additional_education_study_intrigue_modifier: "Ongoing hard studies Intrigue"
+ 
+ additional_education_diplomacy_modifier: "Absolved hard studies Diplomacy"
+ additional_education_study_diplomacy_modifier: "Ongoing hard studies Diplomacy"
+ 
+ additional_education_learning_modifier: "Absolved hard studies Learning"
+ additional_education_study_learning_modifier: "Ongoing hard studies Learning"
+ 
+ payed_studies_opinion: "Paid for my studies"

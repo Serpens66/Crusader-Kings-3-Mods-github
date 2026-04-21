@@ -1,0 +1,35 @@
+﻿l_polish:
+
+ km_knight_manager: "Menedżer Rycerzy"
+ km_knight_manager_usage_tt: "#S Odznacz#! pola wyboru, aby uniemożliwić poszczególnym grupom postaci służenia jako [Concept( 'knight', 'rycerze' )|E]. W momencie odznaczenia pola wszystkie postacie z danej grupy nie będą już [Concept( 'knights', 'rycerzami' )|E], a także nie będą się już pojawiać na liście rycerzy. Jeśli chcesz ręcznie zezwolić określonej postaci z tej grupy na pełnienie roli [Concept( 'knight', 'rycerza' )|E], odznacz na liście rycerzy jego pole wyboru oznaczone jako \"M.R.\" przed uniemożliwieniem jego grupom pełnienia funkcji [Concept( 'knight', 'rycerza' )|E].\n\nTe ustawienia powiązane są z twoją obecną postacią, tak więc jeżeli z jakiegoś powodu ją zmienisz, będziesz musiał skonfigurować je ponownie!"
+
+ km_toggle_kin_cannot_be_knight: "Moja dynastia"
+ km_toggle_kin_cannot_be_knight_tt: "Zaznacz aby postacie z twojej [Concept( 'dynasty', 'dynastii' )|E] mogły służyć jako [Concept( 'knights', 'rycerze' )|E]."
+ 
+ km_toggle_children_cannot_be_knight: "Moi potomkowie"
+ km_toggle_children_cannot_be_knight_tt: "Zaznacz aby twoje [Concept( 'children', 'dzieci' )|E] i wnuki mogły służyć jako [Concept( 'knights', 'rycerze' )|E]."
+ 
+ km_toggle_family_spouses_cannot_be_knight: "Małżonkowie rodziny"
+ km_toggle_family_spouses_cannot_be_knight_tt: "Zaznacz aby twój [Concept( 'spouse', 'małżonek' )|E] oraz [Concept( 'spouses', 'małżonkowie' )|E] twoich potomków mogli służyć jako [Concept( 'knights', 'rycerze' )|E]."
+ 
+ km_toggle_councillors_cannot_be_knight: "Radni i urzędnicy"
+ km_toggle_councillors_cannot_be_knight_tt: "Zaznacz aby twoi [Concept( 'councillors', 'radni' )|E] i [Concept( 'court_positions', 'urzędnicy dworscy' )|E] mogli służyć jako [Concept( 'knights', 'rycerze' )|E]."
+ 
+ km_toggle_my_lovers_cannot_be_knight: "Moi kochankowie"
+ km_toggle_my_lovers_cannot_be_knight_tt: "Zaznacz aby twoje [Concept( 'soulmate', 'bratnie dusze' )|E] oraz [Concept( 'lovers', 'kochankowie' )|E] mogli służyć jako [Concept( 'knights', 'rycerze' )|E]."
+ 
+ km_toggle_my_heir_cannot_be_knight: "Mój dziedzic"
+ km_toggle_my_heir_cannot_be_knight_tt: "Zaznacz aby twój [Concept( 'player_heir', 'dziedzic' )|E] mógł służyć jako [Concept( 'knights', 'rycerz' )|E]."
+ 
+ km_toggle_bad_fighters_cannot_be_knight: "Źli wojacy"
+ km_toggle_bad_fighters_cannot_be_knight_tt: "Zaznacz aby źli wojacy (0 do 5[prowess_i]) mogli służyć jako [Concept( 'knights', 'rycerze' )|E]."
+ 
+ km_toggle_average_fighters_cannot_be_knight: "Przeciętni wojacy"
+ km_toggle_average_fighters_cannot_be_knight_tt: "Zaznacz aby przeciętni wojacy (6 do 12[prowess_i]) mogli służyć jako [Concept( 'knights', 'rycerze' )|E]."
+ 
+ knight_manager_mod_vassals_label: "Moi wasale"
+ knight_manager_mod_vassals_tooltip: "Zaznacz aby twoi [Concept( 'vassals', 'wasale' )|E] mogli służyć jako [Concept( 'knights', 'rycerze' )|E]."
+ 
+ km_toggle_exclude_label_tt: "Jeśli #S odznaczysz#!, postać zostanie wykluczona z ustawień Menedżera Rycerzy i będzie mogła służyć jako [Concept( 'knights', 'rycerz' )|E]."
+ km_toggle_exclude_label: "M.R."
+ 

@@ -1,0 +1,7 @@
+﻿l_german:
+ abdicate_decision:0 "Abdanken"
+ abdicate_decision_tooltip:0 "Dankt ab und setzt als euer Erbe fort"
+ abdicate_decision_desc:0 "Meine Zeit als [ROOT.Char.GetTitleAsNameNoTooltip] von [ROOT.Char.GetPrimaryTitle.GetNameNoTierNoTooltip] mag bereits gekommen sein. Ich weiß das Reich bei meinem Erben in guten Händen."
+ abdicate_decision_effect_text:0 "Ihr dankt ab und könnt als Euer Erbe fortfahren."
+ abdicate_decision_confirm:0 "Es ist Zeit"
+

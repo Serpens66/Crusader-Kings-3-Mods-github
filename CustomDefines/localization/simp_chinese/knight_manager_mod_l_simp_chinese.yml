@@ -1,0 +1,36 @@
+﻿l_simp_chinese:
+
+ knight_manager_mod_base_label: "组别分类"
+ knight_manager_mod_base_tooltip: "取消勾选复选框将禁止某些组别充当骑士。取消勾选时，该组中的所有人物将不再是骑士，也不会显示在列表中。如果想手动允许该组中的某个特定人物担任骑士，请在不允许他的组别担任骑士之前取消选中他的K.M复选框。"
+ 
+ knight_manager_mod_dynasty_label: "家族成员"
+ knight_manager_mod_dynasty_tooltip: "勾选后，家族成员可以成为骑士。"
+ 
+ knight_manager_mod_offspring_label: "直系后代"
+ knight_manager_mod_offspring_tooltip: "勾选后，子女可以成为骑士"
+ 
+ knight_manager_mod_spouses_label: "家庭配偶"
+ knight_manager_mod_spouses_tooltip: "勾选后，配偶和后代的配偶可以成为骑士。"
+ 
+ knight_manager_mod_council_label: "宫廷成员 / [court_positions]"
+ knight_manager_mod_council_tooltip: "勾选后，宫廷成员和宫廷医生可以成为骑士。 不影响保镖和嘉鲁达的位置，因为他们会在战斗中支持你。"
+ 
+ knight_manager_mod_lovers_label: "为爱而战"
+ knight_manager_mod_lovers_tooltip: "勾选后，情人和灵魂伴侣可以成为骑士。"
+ 
+ knight_manager_mod_badfighters_label: "战五渣渣"
+ knight_manager_mod_badfighters_tooltip: "勾选后，弱小的战士（勇武低于6）可以充当骑士。"
+ 
+ knight_manager_mod_avfighters_label: "普通战士"
+ knight_manager_mod_avfighters_tooltip: "勾选后，弱小的战士（勇武低于13）可以充当骑士。"
+ 
+ knight_manager_mod_exclude_tooltip: "未勾选时，人物将从骑士管理器设置中排除，可单独选择是否成为骑士。"
+ knight_manager_mod_exclude_label: "K.M."
+ 
+ # google translate
+ knight_manager_mod_heir_label: "我的继承人"
+ knight_manager_mod_heir_tooltip: "勾选后，我的玩家继承人可以担任骑士。"
+ 
+ knight_manager_mod_vassals_label: "我的封臣 "
+ knight_manager_mod_vassals_tooltip: "勾选后，我的封臣可以担任骑士。"
+ 

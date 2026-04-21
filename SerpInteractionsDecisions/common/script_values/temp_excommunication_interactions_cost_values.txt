@@ -1,0 +1,79 @@
+﻿
+# cost depending on piety_level and traits of recipient
+temp_excommunication_cost = {
+	scope:recipient = {
+        value = 200
+        multiply = {
+            value = piety_level # per piety_level
+        }
+        
+        subtract = {
+            value = 50
+            multiply = {
+                value = num_sinful_traits
+            }
+        }
+        add = {
+            value = 50
+            multiply = {
+                value = num_virtuous_traits
+            }
+        }
+        
+        # make it cheaper for criminal/shunned "actions"
+        if = {
+            limit = {
+                has_trait = kinslayer_3
+                trait_is_shunned_or_criminal_in_faith_trigger = { FAITH = faith TRAIT = kinslayer_3 GENDER_CHARACTER = scope:recipient }
+            }
+            subtract = 200
+        }
+        if = {
+            limit = {
+                OR = {
+                    AND = {
+                        has_trait = kinslayer_2
+                        trait_is_shunned_or_criminal_in_faith_trigger = { FAITH = faith TRAIT = kinslayer_2 GENDER_CHARACTER = scope:recipient }
+                    }
+                    AND = {
+                        has_trait = witch
+                        trait_is_shunned_or_criminal_in_faith_trigger = { FAITH = faith TRAIT = witch GENDER_CHARACTER = scope:recipient }
+                    }
+                    AND = {
+                        has_trait = deviant
+                        trait_is_shunned_or_criminal_in_faith_trigger = { FAITH = faith TRAIT = deviant GENDER_CHARACTER = scope:recipient }
+                    }
+                    AND = {
+                        has_trait = sodomite
+                        trait_is_shunned_or_criminal_in_faith_trigger = { FAITH = faith TRAIT = sodomite GENDER_CHARACTER = scope:recipient }
+                    }
+                }
+            }
+            subtract = 150
+        }
+        if = {
+            limit = {
+                OR = {
+                    AND = {
+                        has_trait = kinslayer_1
+                        trait_is_shunned_or_criminal_in_faith_trigger = { FAITH = faith TRAIT = kinslayer_1 GENDER_CHARACTER = scope:recipient }
+                    }
+                    AND = {
+                        has_trait = fornicator
+                        trait_is_shunned_or_criminal_in_faith_trigger = { FAITH = faith TRAIT = fornicator GENDER_CHARACTER = scope:recipient }
+                    }
+                    AND = {
+                        has_trait = adulterer
+                        trait_is_shunned_or_criminal_in_faith_trigger = { FAITH = faith TRAIT = adulterer GENDER_CHARACTER = scope:recipient }
+                    }
+                }
+            }
+            subtract = 50
+        }
+        
+        
+        min = 50 # not cheaper in total than this
+    }    
+}
+
+

@@ -1,0 +1,132 @@
+﻿# send money to other human players only
+send_mpmoney_small_interaction = {
+	category = interaction_category_friendly
+	use_diplomatic_range = no
+	
+    desc = send_mpmoney_interaction_desc
+    
+	auto_accept = yes
+    
+    ai_will_do = {
+		base = 0 #The AI should never do this!
+	}
+	
+    is_shown = {
+        scope:recipient = { is_ai = no }
+        NOT = {scope:recipient = scope:actor}
+    }
+	is_valid_showing_failures_only = {
+        scope:recipient = { is_ai = no }
+        NOT = {scope:recipient = scope:actor}
+        scope:actor = {
+            gold >= 50
+        }
+	}	
+	on_accept = {
+		scope:actor = {
+			pay_short_term_gold = {
+                gold = 50
+                target = scope:recipient
+            }
+		}
+	}
+}
+
+send_mpmoney_medium_interaction = {
+	category = interaction_category_friendly
+	use_diplomatic_range = no
+	
+    desc = send_mpmoney_interaction_desc
+    
+	auto_accept = yes
+    
+    ai_will_do = {
+		base = 0 #The AI should never do this!
+	}
+	
+    is_shown = {
+        scope:recipient = { is_ai = no }
+        NOT = {scope:recipient = scope:actor}
+    }
+	is_valid_showing_failures_only = {
+        scope:recipient = { is_ai = no }
+        NOT = {scope:recipient = scope:actor}
+        scope:actor = {
+            gold >= 100
+        }
+	}	
+	on_accept = {
+		scope:actor = {
+			pay_short_term_gold = {
+                gold = 100
+                target = scope:recipient
+            }
+		}
+	}
+}
+
+send_mpmoney_big_interaction = {
+	category = interaction_category_friendly
+	use_diplomatic_range = no
+	
+    desc = send_mpmoney_interaction_desc
+    
+	auto_accept = yes
+    
+    ai_will_do = {
+		base = 0 #The AI should never do this!
+	}
+	
+    is_shown = {
+        # scope:recipient = { is_ai = no } # outcommented to also allow to send to AI, since sometimes it is needed to help them. just dont expect anything in return (just for 250 to not spam the actions and it is mostly for making the AI able to hire mercanaries)
+        NOT = {scope:recipient = scope:actor}
+    }
+	is_valid_showing_failures_only = {
+        # scope:recipient = { is_ai = no } # outcommented to also allow to send to AI, since sometimes it is needed to help them. just dont expect anything in return (just for 250 to not spam the actions and it is mostly for making the AI able to hire mercanaries)
+        NOT = {scope:recipient = scope:actor}
+        scope:actor = {
+            gold >= 250
+        }
+	}	
+	on_accept = {
+		scope:actor = {
+			pay_short_term_gold = {
+                gold = 250
+                target = scope:recipient
+            }
+		}
+	}
+}
+
+send_mpmoney_verybig_interaction = {
+	category = interaction_category_friendly
+	use_diplomatic_range = no
+	
+    desc = send_mpmoney_interaction_desc
+    
+	auto_accept = yes
+    
+    ai_will_do = {
+		base = 0 #The AI should never do this!
+	}
+	
+    is_shown = {
+        scope:recipient = { is_ai = no }
+        NOT = {scope:recipient = scope:actor}
+    }
+	is_valid_showing_failures_only = {
+        scope:recipient = { is_ai = no }
+        NOT = {scope:recipient = scope:actor}
+        scope:actor = {
+            gold >= 500
+        }
+	}	
+	on_accept = {
+		scope:actor = {
+			pay_short_term_gold = {
+                gold = 500
+                target = scope:recipient
+            }
+		}
+	}
+}

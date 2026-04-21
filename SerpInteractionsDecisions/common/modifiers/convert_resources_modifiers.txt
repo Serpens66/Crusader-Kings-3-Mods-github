@@ -1,0 +1,169 @@
+﻿##############################################
+# Modifiers for Convert Resources
+##############################################
+
+crmod_prestige_small_income_modifier = {
+	icon = stewardship_positive
+    monthly_income = 1.25
+}
+crmod_prestige_reasonable_income_modifier = {
+	icon = stewardship_positive
+    monthly_income = 2.5
+}
+crmod_prestige_considerable_income_modifier = {
+	icon = stewardship_positive
+    monthly_income = 5.4
+}
+
+crmod_prestige_large_income_modifier = {
+	icon = stewardship_positive
+    monthly_income = 8.3
+}
+
+###
+
+crmod_piety_small_income_modifier = {
+	icon = stewardship_positive
+    monthly_income = 1.25
+}
+crmod_piety_reasonable_income_modifier = {
+	icon = stewardship_positive
+    monthly_income = 2.5
+}
+crmod_piety_considerable_income_modifier = {
+	icon = stewardship_positive
+    monthly_income = 5.4
+}
+
+crmod_piety_large_income_modifier = {
+	icon = stewardship_positive
+    monthly_income = 8.3
+}
+
+####
+
+crmod_forced_payment_small_income_modifier = {
+	icon = stewardship_positive
+    monthly_income = 1.25
+}
+crmod_forced_payment_reasonable_income_modifier = {
+	icon = stewardship_positive
+    monthly_income = 2.5
+}
+crmod_forced_payment_considerable_income_modifier = {
+	icon = stewardship_positive
+    monthly_income = 4.15
+}
+
+crmod_forced_payment_large_income_modifier = {
+	icon = stewardship_positive
+    monthly_income = 8.3
+}
+
+
+crmod_forced_payment_small_opinion_modifier = {
+	icon = social_negative
+	general_opinion = -3
+    county_opinion_add = -5
+}
+crmod_forced_payment_reasonable_opinion_modifier = {
+	icon = social_negative
+	general_opinion = -6
+    county_opinion_add = -10
+}
+crmod_forced_payment_considerable_opinion_modifier = {
+	icon = social_negative
+	general_opinion = -9
+    county_opinion_add = -15
+}
+
+crmod_forced_payment_large_opinion_modifier = {
+	icon = social_negative
+	general_opinion = -15
+    county_opinion_add = -25
+}
+################
+
+### Pay back normal loan
+pay_back_small_loan = {
+	icon = stewardship_negative
+	monthly_income = -3.3
+}
+
+pay_back_reasonable_loan = {
+	icon = stewardship_negative
+	monthly_income = -4.9
+}
+
+pay_back_considerable_loan = {
+	icon = stewardship_negative
+	monthly_income = -5.2
+}
+
+pay_back_large_loan = {
+	icon = stewardship_negative
+	monthly_income = -6.9
+}
+
+### Pay back expensive loan
+pay_back_small_loan_expensive = {
+	icon = stewardship_negative
+	monthly_income = -5.6
+}
+
+pay_back_reasonable_loan_expensive = {
+	icon = stewardship_negative
+	monthly_income = -7.8
+}
+
+pay_back_considerable_loan_expensive = {
+	icon = stewardship_negative
+	monthly_income = -6.8
+}
+
+pay_back_large_loan_expensive = {
+	icon = stewardship_negative
+	monthly_income = -10.8
+}
+
+### Pay back very expensive loan
+pay_back_small_loan_very_expensive = {
+	icon = stewardship_negative
+	monthly_income = -8.8
+}
+
+pay_back_reasonable_loan_very_expensive = {
+	icon = stewardship_negative
+	monthly_income = -10.7
+}
+
+pay_back_considerable_loan_very_expensive = {
+	icon = stewardship_negative
+	monthly_income = -13.9
+}
+
+pay_back_large_loan_very_expensive = {
+	icon = stewardship_negative
+	monthly_income = -18.1
+}
+
+### Gain back from loan
+gain_from_small_loan = {
+	icon = stewardship_positive
+	monthly_income = 3.8
+}
+
+gain_from_reasonable_loan = {
+	icon = stewardship_positive
+	monthly_income = 5.6
+}
+
+gain_from_considerable_loan = {
+	icon = stewardship_positive
+	monthly_income = 6.8
+}
+
+gain_from_large_loan = {
+	icon = stewardship_positive
+	monthly_income = 7.7
+}

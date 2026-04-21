@@ -1,0 +1,18 @@
+﻿# for whatever reason it does not work without title/desc and using the message type name as localization. because then the character and war is unknown for whatever reason...
+serp_msg_war_ally_removed = {
+	icon = "alliance"
+    title = event_message_title
+	desc = event_message_text_and_effect
+	style = bad
+}
+serp_msg_war_enemy_removed = {
+	icon = "alliance"
+    title = event_message_title
+	desc = event_message_text_and_effect
+	style = good
+}
+serp_msg_war_player_removed = {
+	icon = "alliance"
+    title = event_message_title
+	desc = event_message_text_and_effect
+}

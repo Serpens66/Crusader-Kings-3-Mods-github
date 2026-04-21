@@ -1,0 +1,658 @@
+﻿namespace = additional_education
+
+
+additional_education.0001 = {
+	type = character_event
+	title = additional_education.0001.t
+	desc = additional_education.0001.desc	
+	theme = education
+	
+	left_portrait= {
+		character = scope:actor
+		animation = idle
+	}
+
+	right_portrait = {
+		character = scope:recipient
+		animation = personality_zealous
+	}	
+	
+	option = {
+		trigger = {
+            gold >= AE_costs_based_on_diplomacy_skill
+            prestige >= AE_costs_based_on_diplomacy_skill
+            scope:recipient = {
+                NOR = {
+                    has_character_modifier = additional_education_study_martial_modifier
+                    has_character_modifier = additional_education_study_stewardship_modifier
+                    has_character_modifier = additional_education_study_intrigue_modifier
+                    has_character_modifier = additional_education_study_diplomacy_modifier
+                    has_character_modifier = additional_education_study_learning_modifier
+                    has_character_modifier = additional_education_study_prowess_modifier
+                    
+                    has_character_modifier = additional_education_diplomacy_modifier
+                }
+            }
+		}
+        show_as_unavailable = {
+            OR = {
+                gold < AE_costs_based_on_diplomacy_skill
+                prestige < AE_costs_based_on_diplomacy_skill
+                scope:recipient = {
+                    OR = {
+                        has_character_modifier = additional_education_study_martial_modifier
+                        has_character_modifier = additional_education_study_stewardship_modifier
+                        has_character_modifier = additional_education_study_intrigue_modifier
+                        has_character_modifier = additional_education_study_diplomacy_modifier
+                        has_character_modifier = additional_education_study_learning_modifier
+                        has_character_modifier = additional_education_study_prowess_modifier
+                        
+                        has_character_modifier = additional_education_diplomacy_modifier
+                    }
+                }
+            }
+		}
+        scope:actor = {
+            add_stress = 10 # we as actor also get a bit of stress, so we can not use it too often at too many people at once
+            remove_short_term_gold = AE_costs_based_on_diplomacy_skill
+            add_prestige = { subtract = AE_costs_based_on_diplomacy_skill }
+		}
+        name = additional_education.0007.name		#"Diplomacy"
+		custom_tooltip = additional_education.0007.tooltip
+		scope:recipient = {
+			add_stress = 35
+            add_character_modifier = {
+                modifier = additional_education_study_diplomacy_modifier
+                days = 367
+            }
+            add_opinion = { 
+                modifier = payed_studies_opinion 
+                target = scope:actor 
+            }
+            if = {
+                limit = {
+                    NOT = { scope:recipient = scope:actor } # if they are not the same, trigger also an event for the recipient itself, so they gain the bonus even if the actor dies
+                }
+                trigger_event = {
+                    id = additional_education.0010
+                    days = 365
+                }
+            }
+		}
+		trigger_event = {
+			id =  additional_education.0003	
+			days = 366
+		}
+	}
+    
+    option = {	
+		trigger = {
+			gold >= AE_costs_based_on_martial_skill
+            prestige >= AE_costs_based_on_martial_skill
+            scope:recipient = {
+                NOR = {
+                    has_character_modifier = additional_education_study_martial_modifier
+                    has_character_modifier = additional_education_study_stewardship_modifier
+                    has_character_modifier = additional_education_study_intrigue_modifier
+                    has_character_modifier = additional_education_study_diplomacy_modifier
+                    has_character_modifier = additional_education_study_learning_modifier
+                    has_character_modifier = additional_education_study_prowess_modifier
+                    
+                    has_character_modifier = additional_education_martial_modifier
+                }
+            }
+		}
+        show_as_unavailable = {
+            OR = {
+                gold < AE_costs_based_on_martial_skill
+                prestige < AE_costs_based_on_martial_skill
+                scope:recipient = {
+                    OR = {
+                        has_character_modifier = additional_education_study_martial_modifier
+                        has_character_modifier = additional_education_study_stewardship_modifier
+                        has_character_modifier = additional_education_study_intrigue_modifier
+                        has_character_modifier = additional_education_study_diplomacy_modifier
+                        has_character_modifier = additional_education_study_learning_modifier
+                        has_character_modifier = additional_education_study_prowess_modifier
+                        
+                        has_character_modifier = additional_education_martial_modifier
+                    }
+                }
+            }
+		}
+        scope:actor = {
+			add_stress = 10 # we as actor also get a bit of stress, so we can not use it too often at too many people at once
+            remove_short_term_gold = AE_costs_based_on_martial_skill
+            add_prestige = { subtract = AE_costs_based_on_martial_skill }
+		}
+        name = additional_education.0002.name		#"Martial"
+		custom_tooltip = additional_education.0002.tooltip
+        scope:recipient = {
+			add_stress = 35
+            add_character_modifier = {
+                modifier = additional_education_study_martial_modifier
+                days = 367
+            }
+            add_opinion = { 
+                modifier = payed_studies_opinion 
+                target = scope:actor 
+            }
+            if = {
+                limit = {
+                    NOT = { scope:recipient = scope:actor } # if they are not the same, trigger also an event for the recipient itself, so they gain the bonus even if the actor dies
+                }
+                trigger_event = {
+                    id = additional_education.0010
+                    days = 365
+                }
+            }
+		}
+		trigger_event = {
+			id =  additional_education.0003	
+			days = 366
+		}
+	}
+
+	option = {	
+		trigger = {
+			gold >= AE_costs_based_on_stewardship_skill
+            prestige >= AE_costs_based_on_stewardship_skill
+            scope:recipient = {
+                NOR = {
+                    has_character_modifier = additional_education_study_martial_modifier
+                    has_character_modifier = additional_education_study_stewardship_modifier
+                    has_character_modifier = additional_education_study_intrigue_modifier
+                    has_character_modifier = additional_education_study_diplomacy_modifier
+                    has_character_modifier = additional_education_study_learning_modifier
+                    has_character_modifier = additional_education_study_prowess_modifier
+                    
+                    has_character_modifier = additional_education_stewardship_modifier
+                }
+            }
+		}
+        show_as_unavailable = {
+            OR = {
+                gold < AE_costs_based_on_stewardship_skill
+                prestige < AE_costs_based_on_stewardship_skill
+                scope:recipient = {
+                    OR = {
+                        has_character_modifier = additional_education_study_martial_modifier
+                        has_character_modifier = additional_education_study_stewardship_modifier
+                        has_character_modifier = additional_education_study_intrigue_modifier
+                        has_character_modifier = additional_education_study_diplomacy_modifier
+                        has_character_modifier = additional_education_study_learning_modifier
+                        has_character_modifier = additional_education_study_prowess_modifier
+                        
+                        has_character_modifier = additional_education_stewardship_modifier
+                    }
+                }
+            }
+		}
+        scope:actor = {
+			add_stress = 10 # we as actor also get a bit of stress, so we can not use it too often at too many people at once
+            remove_short_term_gold = AE_costs_based_on_stewardship_skill
+            add_prestige = { subtract = AE_costs_based_on_stewardship_skill }
+		}
+        name = additional_education.0003.name		#"Stewardship"
+		custom_tooltip = additional_education.0003.tooltip
+		scope:recipient = {
+			add_stress = 35
+            add_character_modifier = {
+                modifier = additional_education_study_stewardship_modifier
+                days = 367
+            }
+            add_opinion = { 
+                modifier = payed_studies_opinion 
+                target = scope:actor 
+            }
+            if = {
+                limit = {
+                    NOT = { scope:recipient = scope:actor } # if they are not the same, trigger also an event for the recipient itself, so they gain the bonus even if the actor dies
+                }
+                trigger_event = {
+                    id = additional_education.0010
+                    days = 365
+                }
+            }
+		}
+		trigger_event = {
+			id =  additional_education.0003	
+			days = 366
+		}
+	}
+
+	option = {	
+		trigger = {
+			gold >= AE_costs_based_on_intrigue_skill
+            prestige >= AE_costs_based_on_intrigue_skill
+            scope:recipient = {
+                NOR = {
+                    has_character_modifier = additional_education_study_martial_modifier
+                    has_character_modifier = additional_education_study_stewardship_modifier
+                    has_character_modifier = additional_education_study_intrigue_modifier
+                    has_character_modifier = additional_education_study_diplomacy_modifier
+                    has_character_modifier = additional_education_study_learning_modifier
+                    has_character_modifier = additional_education_study_prowess_modifier
+                    
+                    has_character_modifier = additional_education_intrigue_modifier
+                }
+            }
+		}
+        show_as_unavailable = {
+            OR = {
+                gold < AE_costs_based_on_intrigue_skill
+                prestige < AE_costs_based_on_intrigue_skill
+                scope:recipient = {
+                    OR = {
+                        has_character_modifier = additional_education_study_martial_modifier
+                        has_character_modifier = additional_education_study_stewardship_modifier
+                        has_character_modifier = additional_education_study_intrigue_modifier
+                        has_character_modifier = additional_education_study_diplomacy_modifier
+                        has_character_modifier = additional_education_study_learning_modifier
+                        has_character_modifier = additional_education_study_prowess_modifier
+                        
+                        has_character_modifier = additional_education_intrigue_modifier
+                    }
+                }
+            }
+		}
+        scope:actor = {
+			add_stress = 10 # we as actor also get a bit of stress, so we can not use it too often at too many people at once
+            remove_short_term_gold = AE_costs_based_on_intrigue_skill
+            add_prestige = { subtract = AE_costs_based_on_intrigue_skill }
+		}
+        name = additional_education.0006.name		#"Intrigue"
+		custom_tooltip = additional_education.0006.tooltip
+		scope:recipient = {
+			add_stress = 35
+            add_character_modifier = {
+                modifier = additional_education_study_intrigue_modifier
+                days = 367
+            }
+            add_opinion = { 
+                modifier = payed_studies_opinion 
+                target = scope:actor 
+            }
+            if = {
+                limit = {
+                    NOT = { scope:recipient = scope:actor } # if they are not the same, trigger also an event for the recipient itself, so they gain the bonus even if the actor dies
+                }
+                trigger_event = {
+                    id = additional_education.0010
+                    days = 365
+                }
+            }
+		}
+		trigger_event = {
+			id =  additional_education.0003	
+			days = 366
+		}
+	}
+
+	option = {	
+		trigger = {
+			gold >= AE_costs_based_on_learning_skill
+            prestige >= AE_costs_based_on_learning_skill
+            scope:recipient = {
+                NOR = {
+                    has_character_modifier = additional_education_study_martial_modifier
+                    has_character_modifier = additional_education_study_stewardship_modifier
+                    has_character_modifier = additional_education_study_intrigue_modifier
+                    has_character_modifier = additional_education_study_diplomacy_modifier
+                    has_character_modifier = additional_education_study_learning_modifier
+                    has_character_modifier = additional_education_study_prowess_modifier
+                    
+                    has_character_modifier = additional_education_learning_modifier
+                }
+            }
+		}
+        show_as_unavailable = {
+            OR = {
+                gold < AE_costs_based_on_learning_skill
+                prestige < AE_costs_based_on_learning_skill
+                scope:recipient = {
+                    OR = {
+                        has_character_modifier = additional_education_study_martial_modifier
+                        has_character_modifier = additional_education_study_stewardship_modifier
+                        has_character_modifier = additional_education_study_intrigue_modifier
+                        has_character_modifier = additional_education_study_diplomacy_modifier
+                        has_character_modifier = additional_education_study_learning_modifier
+                        has_character_modifier = additional_education_study_prowess_modifier
+                        
+                        has_character_modifier = additional_education_learning_modifier
+                    }
+                }
+            }
+		}
+        scope:actor = {
+			add_stress = 10 # we as actor also get a bit of stress, so we can not use it too often at too many people at once
+            remove_short_term_gold = AE_costs_based_on_learning_skill
+            add_prestige = { subtract = AE_costs_based_on_learning_skill }
+		}
+        name = additional_education.0008.name		#"Learning"
+		custom_tooltip = additional_education.0008.tooltip
+		scope:recipient = {
+			add_stress = 35
+            add_character_modifier = {
+                modifier = additional_education_study_learning_modifier
+                days = 367
+            }
+            add_opinion = { 
+                modifier = payed_studies_opinion 
+                target = scope:actor 
+            }
+            if = {
+                limit = {
+                    NOT = { scope:recipient = scope:actor } # if they are not the same, trigger also an event for the recipient itself, so they gain the bonus even if the actor dies
+                }
+                trigger_event = {
+                    id = additional_education.0010
+                    days = 365
+                }
+            }
+		}
+		trigger_event = {
+			id =  additional_education.0003	
+			days = 366
+		}
+	}	
+    
+    option = {	
+		trigger = {
+			gold >= AE_costs_based_on_prowess_skill
+            prestige >= AE_costs_based_on_prowess_skill
+            scope:recipient = {
+                NOR = {
+                    has_character_modifier = additional_education_study_martial_modifier
+                    has_character_modifier = additional_education_study_stewardship_modifier
+                    has_character_modifier = additional_education_study_intrigue_modifier
+                    has_character_modifier = additional_education_study_diplomacy_modifier
+                    has_character_modifier = additional_education_study_learning_modifier
+                    has_character_modifier = additional_education_study_prowess_modifier
+                    
+                    has_character_modifier = additional_education_prowess_modifier
+                }
+            }
+		}
+        show_as_unavailable = {
+            OR = {
+                gold < AE_costs_based_on_prowess_skill
+                prestige < AE_costs_based_on_prowess_skill
+                scope:recipient = {
+                    OR = {
+                        has_character_modifier = additional_education_study_martial_modifier
+                        has_character_modifier = additional_education_study_stewardship_modifier
+                        has_character_modifier = additional_education_study_intrigue_modifier
+                        has_character_modifier = additional_education_study_diplomacy_modifier
+                        has_character_modifier = additional_education_study_learning_modifier
+                        has_character_modifier = additional_education_study_prowess_modifier
+                        
+                        has_character_modifier = additional_education_prowess_modifier
+                    }
+                }
+            }
+		}
+        scope:actor = {
+			add_stress = 10 # we as actor also get a bit of stress, so we can not use it too often at too many people at once
+            remove_short_term_gold = AE_costs_based_on_prowess_skill
+            add_prestige = { subtract = AE_costs_based_on_prowess_skill }
+		}
+        name = additional_education.0004.name		#"prowess"
+		custom_tooltip = additional_education.0004.tooltip
+		scope:recipient = {
+			add_stress = 35
+            add_character_modifier = {
+                modifier = additional_education_study_prowess_modifier
+                days = 367
+            }
+            add_opinion = { 
+                modifier = payed_studies_opinion 
+                target = scope:actor 
+            }
+            if = {
+                limit = {
+                    NOT = { scope:recipient = scope:actor } # if they are not the same, trigger also an event for the recipient itself, so they gain the bonus even if the actor dies
+                }
+                trigger_event = {
+                    id = additional_education.0010
+                    days = 365
+                }
+            }
+		}
+        trigger_event = {
+			id =  additional_education.0003	
+			days = 366
+		}
+	}
+
+	option = {	
+		name = additional_education.0005.name		#"Cancel"
+		custom_tooltip = additional_education.0005.tooltip
+	}	
+}
+
+
+
+additional_education.0003 = {
+	type = character_event
+	title = additional_education.1001.t
+	desc = additional_education.1001.desc	
+	theme = education
+	
+	left_portrait = {
+		character = scope:actor
+		animation = idle
+	}
+
+	right_portrait = {
+		character = scope:recipient
+		animation = personality_zealous
+	}
+    
+    immediate = {
+		# Martial        
+				
+		if = {
+			limit = {
+				scope:recipient = {
+                    has_character_modifier = additional_education_study_martial_modifier
+				}
+			}
+			scope:recipient = {
+				add_character_modifier = {
+                    modifier = additional_education_martial_modifier
+                }
+                remove_character_modifier = additional_education_study_martial_modifier
+			}
+		}
+
+		# Stewardship
+
+		else_if = {
+			limit = {
+				scope:recipient = {
+                    has_character_modifier = additional_education_study_stewardship_modifier
+				}
+			}
+			scope:recipient = {
+				add_character_modifier = {
+                    modifier = additional_education_stewardship_modifier
+                }
+                remove_character_modifier = additional_education_study_stewardship_modifier
+			}
+		}
+
+
+		# Intrigue
+
+		else_if = {
+			limit = {
+				scope:recipient = {
+                    has_character_modifier = additional_education_study_intrigue_modifier
+				}
+			}
+			scope:recipient = {
+				add_character_modifier = {
+                    modifier = additional_education_intrigue_modifier
+                }
+                remove_character_modifier = additional_education_study_intrigue_modifier
+			}
+		}
+
+		# Diplomacy
+
+		else_if = {
+			limit = {
+				scope:recipient = {
+                    has_character_modifier = additional_education_study_diplomacy_modifier
+				}
+			}
+			scope:recipient = {
+				add_character_modifier = {
+                    modifier = additional_education_diplomacy_modifier
+                }
+                remove_character_modifier = additional_education_study_diplomacy_modifier
+			}
+		}	
+
+
+		# Learning
+
+		else_if = {
+			limit = {
+				scope:recipient = {
+                    has_character_modifier = additional_education_study_learning_modifier
+				}
+			}
+			scope:recipient = {
+				add_character_modifier = {
+                    modifier = additional_education_learning_modifier
+                }
+                remove_character_modifier = additional_education_study_learning_modifier
+			}
+		}
+        
+        # prowess
+
+		else_if = {
+			limit = {
+				scope:recipient = {
+                    has_character_modifier = additional_education_study_prowess_modifier
+				}
+			}
+			scope:recipient = {
+				add_character_modifier = {
+                    modifier = additional_education_prowess_modifier
+                }
+                remove_character_modifier = additional_education_study_prowess_modifier
+			}
+		}
+	}
+    
+	option = {	
+		name = additional_education.1001.name # just confirm what already happend
+    }
+	
+}
+
+# event that is triggered for the student itself, so it is not based on if the actor is still alive or not
+additional_education.0010 = {
+	type = character_event
+	title = additional_education.1001.t
+	desc = additional_education.1001.desc	
+	theme = education
+    
+    left_portrait = {
+		character = scope:actor
+		animation = idle
+	}
+
+	right_portrait = {
+		character = scope:recipient
+		animation = personality_zealous
+	}
+
+    
+	immediate = {	
+
+		# Martial        
+				
+		if = {
+			limit = {
+                has_character_modifier = additional_education_study_martial_modifier
+			}
+            add_character_modifier = {
+                modifier = additional_education_martial_modifier
+            }
+            remove_character_modifier = additional_education_study_martial_modifier
+		}
+
+		# Stewardship
+
+		else_if = {
+			limit = {
+                has_character_modifier = additional_education_study_stewardship_modifier
+			}
+            add_character_modifier = {
+                modifier = additional_education_stewardship_modifier
+            }
+            remove_character_modifier = additional_education_study_stewardship_modifier
+		}
+
+
+		# Intrigue
+
+		else_if = {
+			limit = {
+                has_character_modifier = additional_education_study_intrigue_modifier
+			}
+            add_character_modifier = {
+                modifier = additional_education_intrigue_modifier
+            }
+            remove_character_modifier = additional_education_study_intrigue_modifier
+		}
+
+		# Diplomacy
+
+		else_if = {
+			limit = {
+                has_character_modifier = additional_education_study_diplomacy_modifier
+			}
+            add_character_modifier = {
+                modifier = additional_education_diplomacy_modifier
+            }
+            remove_character_modifier = additional_education_study_diplomacy_modifier
+		}	
+
+
+		# Learning
+
+		else_if = {
+			limit = {
+                has_character_modifier = additional_education_study_learning_modifier
+			}
+            add_character_modifier = {
+                modifier = additional_education_learning_modifier
+            }
+            remove_character_modifier = additional_education_study_learning_modifier
+		}
+        
+        # prowess
+
+		else_if = {
+			limit = {
+                has_character_modifier = additional_education_study_prowess_modifier
+			}
+            add_character_modifier = {
+                modifier = additional_education_prowess_modifier
+            }
+            remove_character_modifier = additional_education_study_prowess_modifier
+		}
+
+    }
+    
+    option = {	
+		name = additional_education.1001.name	
+    }
+	
+}

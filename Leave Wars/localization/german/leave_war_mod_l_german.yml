@@ -1,0 +1,54 @@
+﻿l_german:
+ 
+ leave_war_interaction_mod: "Krieg verlassen"
+ leave_war_interaction_mod_desc: "Ihr könnt [recipient.GetName|U] um einen Kriegsaustritt ersuchen."
+
+ leave_war_mod_event_desc: "\"Was möchtet Ihr mit mir besprechen?\"\n\nErmöglicht das Verlassen eines Krieges von [recipient.GetName|U] an dem Ihr aktuell teilnehmt.\nDies bricht ein eventuell vorhandenes Bündnis und auch andere Kriegsteilnehmer werden Euch dies übel nehmen."
+
+ left_my_war_opinion_modifier: "Verließ einen Krieg von mir"
+ left_participating_war_opinion_modifier: "Verließ einen Krieg an dem ich teilnahm"
+ 
+ leave_war_mod_cancelname: "Schon gut."
+ leave_war_mod_canceltooltip: "Keinen Krieg verlassen"
+ 
+ leave_war_mod_optionname_1: "Verlassen: [leaving_war_1.GetName|V]"
+ leave_war_mod_optionname_2: "Verlassen: [leaving_war_2.GetName|V]"
+ leave_war_mod_optionname_3: "Verlassen: [leaving_war_3.GetName|V]"
+ leave_war_mod_optionname_4: "Verlassen: [leaving_war_4.GetName|V]"
+ leave_war_mod_optionname_5: "Verlassen: [leaving_war_5.GetName|V]"
+ leave_war_mod_optionname_6: "Verlassen: [leaving_war_6.GetName|V]"
+ leave_war_mod_optionname_7: "Verlassen: [leaving_war_7.GetName|V]"
+ leave_war_mod_optionname_8: "Verlassen: [leaving_war_8.GetName|V]"
+ leave_war_mod_optionname_9: "Verlassen: [leaving_war_9.GetName|V]"
+ leave_war_mod_optionname_10: "Verlassen: [leaving_war_10.GetName|V]"
+ 
+ 
+ # copied messages from "messages_l_german.yml" from game files, but with "actor" instead of "LEFT_CHARACTER" and "leaving_war" instead of "WAR", so they work in non GUI context.
+ serp_serp_msg_war_ally_removed: "Verbündeter tritt aus Krieg aus: [actor.GetShortUINameNoTooltip]"
+ serp_serp_msg_war_ally_removed_desc: "[actor.GetUINameNoTooltip] ist aus Krieg ausgetreten ([leaving_war.GetName|V])"
+ serp_serp_msg_war_enemy_removed: "Feinde treten aus Krieg aus"
+ serp_serp_msg_war_enemy_removed_desc: "[actor.GetUINameNoTooltip] ist aus Krieg ausgetreten ([leaving_war.GetName|V])"
+ serp_serp_msg_war_player_removed: "Ihr tretet aus dem Krieg aus"
+ serp_serp_msg_war_player_removed_desc: "Ihr seid aus dem Krieg ausgetreten ([leaving_war.GetName|V])"
+ 
+ # PREVENT error.log spam because of bug within the game
+ # for whatever reason remove_participant triggers "REMOVE_PARTICIPANT_EFFECT_THIRD" (from effects_l_german.yml) instead of "REMOVE_PARTICIPANT_EFFECT_FIRST" in the tooltip of event, causing ALOT of error.log entries about missing CHARACTER. WAR is known, but CHARACTER not. I think this is a bug somewhere in the devs code that triggers the wrong tooltip.
+ # copied from "effects_l_german.yml" from game files. REMOVE_PARTICIPANT_EFFECT_THIRD gets the string from REMOVE_PARTICIPANT_EFFECT_FIRST, because a bug from the game makes it use "third" instead of "first"
+ leave_war_mod_REMOVE_PARTICIPANT_EFFECT_THIRD: "Ihr verlasst den Krieg ([WAR.GetName|V])"
+ 
+ 
+ # RULES:
+ rule_leave_war_mod_costs: "Leave War #P Mod#! Kosten"
+ leave_war_mod_costs_description: "Ändere die Kosten zum Verlassen eines Krieges"
+ setting_leave_war_mod_costs_nothing: "Kostenlos"
+ setting_leave_war_mod_costs_nothing_desc: "Kosten: Nichts, nichteinmal Meinung"
+ setting_leave_war_mod_costs_only_opinion: "Meinung"
+ setting_leave_war_mod_costs_only_opinion_desc: "Kosten: Nur Meinung"
+ setting_leave_war_mod_costs_only_prestigehonorgold: "Keine Meinung"
+ setting_leave_war_mod_costs_only_prestigehonorgold_desc: "Kosten: Gold, Prestige und Ruhm"
+ setting_leave_war_mod_costs_default: "Default"
+ setting_leave_war_mod_costs_default_desc: "Kosten: Meinung, Gold, Prestige und Ruhm"
+ setting_leave_war_mod_costs_half: "Hälfte"
+ setting_leave_war_mod_costs_half_desc: "Halbierte Kosten: Meinung, Gold, Prestige und Ruhm"
+ setting_leave_war_mod_costs_double: "Doppelt"
+ setting_leave_war_mod_costs_double_desc: "Doppelte Kosten: Meinung, Gold, Prestige und Ruhm"

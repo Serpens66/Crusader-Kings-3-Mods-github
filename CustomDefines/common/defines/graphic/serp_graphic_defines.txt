@@ -1,0 +1,26 @@
+﻿NGui = {
+    EVENT_OPTIONS_SHOWN_HIDE_UNAVAILABLE = 8 # 3 How many options can be shown before unavailable options are not shown anymore (can lead to none/only some unavailable options being shown according to their order in the event)
+}
+
+NMapIcon = {
+	FORT_VISIBLE_ZOOM_STEPS = { 0 12 }
+	STRAITS_VISIBLE_ZOOM_STEPS = { 0 11 }
+	HOLDING_VISIBLE_ZOOM_STEPS = { 0 7 }
+	HOLDING_SMALL_VISIBLE_ZOOM_STEPS = { 5 11 }
+	REALM_CAPITAL_VISIBLE_ZOOM_STEPS = { 0 22 }
+	TITLE_CAPITAL_VISIBLE_ZOOM_STEPS = { 0 19 }
+	DYNASTY_HOUSES_VISIBLE_ZOOM_STEPS = { 5 13 }
+	RALLY_POINT_VISIBLE_ZOOM_STEPS = { 0 11 }
+	UNIT_VISIBLE_ZOOM_STEPS = { 0 22 }
+	UNIT_NEUTRAL_VISIBLE_ZOOM_STEPS = { 0 16 }
+	COMBAT_VISIBLE_ZOOM_STEPS = { 0 19 }
+	COMBAT_NEUTRAL_VISIBLE_ZOOM_STEPS = { 0 11 }
+	COMBAT_PREDICITON_VISIBLE_ZOOM_STEPS = { 0 11 }
+	COUNCIL_TASK_VISIBLE_ZOOM_STEPS = { 0 11 }
+	PROVINCE_VISIBLE_ZOOM_STEPS = { 0 22 }
+    COURT_LANGUAGE_VISIBLE_ZOOM_STEPS = { 0 22 }
+}
+
+NMapName = {
+	LARGE_NAMES_ZOOM_STEP = 12		# At which zoom steps are large map names shown
+}

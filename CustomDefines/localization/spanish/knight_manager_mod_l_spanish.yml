@@ -1,0 +1,36 @@
+﻿l_spanish:
+
+ knight_manager_mod_avfighters_label: "Luchadores decentes"
+ knight_manager_mod_avfighters_tooltip: "Al marcar, los luchadores intermedios pueden servir como caballeros (con destreza por debajo de 13)."
+ 
+ knight_manager_mod_badfighters_label: "Luchadores ineptos"
+ knight_manager_mod_badfighters_tooltip: "Al marcar, los malos luchadores pueden servir como caballeros (con destreza por debajo de 6)."
+ 
+ knight_manager_mod_exclude_label: "K.M."
+ knight_manager_mod_exclude_tooltip: "Si no está marcado, el personaje se excluye de la configuración de Knight Manager y puede ser un caballero."
+ 
+ knight_manager_mod_spouses_label: "Cónyuges de familia"
+ knight_manager_mod_spouses_tooltip: "Al marcar, mi cónyuge y los cónyuges de mi descendencia pueden servir como caballeros."
+ 
+ knight_manager_mod_base_label: "Knight Manager"
+ knight_manager_mod_base_tooltip: "Desmarque las casillas de verificación para no permitir que ciertos grupos de personajes sirvan como caballeros. Cuando se está desmarcado, todos los personajes de ese grupo ya no serán caballeros y tampoco aparecerán más en la lista. Si desea permitir manualmente un personaje específico de ese grupo para servir como caballero, desmarque su casilla de verificación KM, antes de no permitir que sus grupos sirvan como caballero."
+ 
+ knight_manager_mod_council_label: "Consejo/[court_positions]"
+ knight_manager_mod_council_tooltip: "Al marcar, mis consejeros y el médico de la corte, podrán servir como caballeros. No afecta la posición de Guardaespaldas y Garuda, ya que te apoyarán en la batalla. "
+ 
+ knight_manager_mod_dynasty_label: "Dinastía"
+ knight_manager_mod_dynasty_tooltip: "Al marcar, los personajes de mi dinastía pueden servir como caballeros."
+ 
+ knight_manager_mod_heir_label: "Heredero"
+ knight_manager_mod_heir_tooltip: "Al marcar, mi heredero puede servir como caballero."
+ 
+ knight_manager_mod_lovers_label: "Amante"
+ knight_manager_mod_lovers_tooltip: "Al marcas, mis amantes pueden servir como caballeros."
+ 
+ knight_manager_mod_offspring_label: "Descendencia"
+ knight_manager_mod_offspring_tooltip: "Al marcar, mis hijos pueden servir como caballeros." 
+ 
+ knight_manager_mod_vassals_label: "Vasallos"
+ knight_manager_mod_vassals_tooltip: "Al marcar, mis vasallos pueden servir como caballeros."
+
+ 

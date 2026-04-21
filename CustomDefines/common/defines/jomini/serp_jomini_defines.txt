@@ -1,0 +1,3 @@
+﻿NFogOfWar = {
+	FADE_OUT_ZOOM_STEP = 16
+}

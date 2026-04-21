@@ -1,0 +1,86 @@
+﻿l_english:
+ 
+ serp_msg_on_death_vassal: "R.P. died: [GetPlayer.Custom2('RelationToMeShort', dead_character)|U] #high [dead_character.GetFirstNameNoTooltip]#!"
+ serp_msg_on_death_vassal_message: "[dead_character.GetRelationToString( GetPlayer )] [dead_character.GetName|U] died in [dying_location.GetName|U]. [dead_character.GetDeathReason|U]."
+ 
+ serp_msg_on_joined_war_vassal: "R.P. Joins War: [GetPlayer.Custom2('RelationToMeShort', ROOT.Char)|U] #high [ROOT.Char.GetFirstNameNoTooltip]#!"
+ serp_msg_on_joined_war_vassal_message: "[ROOT.Char.GetRelationToString( GetPlayer )] [ROOT.Char.GetName|U] joins a war: [war.GetName|V]"
+ 
+ serp_msg_war_declared_by_related: "R.P. Attacks: [GetPlayer.Custom2('RelationToMeShort', attacker)|U] #high [attacker.GetFirstNameNoTooltip]#!"
+ serp_msg_war_declared_by_related_message: "[attacker.GetRelationToString( GetPlayer )] [attacker.GetName|U] attacks [defender.GetRelationToString( GetPlayer )] [defender.GetName|U]. \nWar: [war.GetName|V]"
+ 
+ serp_msg_war_declared_on_related: "R.P. Under Attack: [GetPlayer.Custom2('RelationToMeShort', defender)|U] #high [defender.GetFirstNameNoTooltip]#!"
+ serp_msg_war_declared_on_related_message: "[defender.GetRelationToString( GetPlayer )] [defender.GetName|U] is under attack from [attacker.GetRelationToString( GetPlayer )] [attacker.GetName|U]. \nWar: [war.GetName|V]"
+ 
+ serp_action_empty_physician_position:0 "No [court_physician|E]"
+ serp_action_empty_physician_position_label:0 "You should find a [court_physician|E]"
+ serp_action_empty_physician_position_desc:0 "$game_concept_court_physician_desc$"
+ serp_action_empty_physician_position_click:0 "#I Click to find a Court Physician#!"
+ 
+ 
+ 
+ 
+ serp_action_can_stop_attacker_vassal_war:0 "\"$stop_attacker_vassal_war_interaction$\": [recipient.GetRelationToString( GetPlayer )] [recipient.GetUIName]"
+ serp_action_can_stop_defender_vassal_war:0 "\"$stop_defender_vassal_war_interaction$\": [recipient.GetRelationToString( GetPlayer )] [recipient.GetUIName]"
+ serp_action_can_stop_attacker_vassal_war_label:0 "\"$stop_attacker_vassal_war_interaction$\" $ACHIEVEMENT_FILTER_BUTTON_POSSIBLE$: [GetPlayer.Custom2('RelationToMeShort', recipient)|U] [recipient.GetShortUINameNoTooltip]"
+ serp_action_can_stop_defender_vassal_war_label:0 "\"$stop_defender_vassal_war_interaction$\" $ACHIEVEMENT_FILTER_BUTTON_POSSIBLE$: [GetPlayer.Custom2('RelationToMeShort', recipient)|U] [recipient.GetShortUINameNoTooltip]"
+ serp_action_can_stop_attacker_vassal_war_combined_group_label:0 "\"$stop_attacker_vassal_war_interaction$\" $ACHIEVEMENT_FILTER_BUTTON_POSSIBLE$:"
+ serp_action_can_stop_defender_vassal_war_combined_group_label:0 "\"$stop_defender_vassal_war_interaction$\" $ACHIEVEMENT_FILTER_BUTTON_POSSIBLE$:"
+ serp_action_can_stop_attacker_vassal_war_combined_label:0 "[GetPlayer.Custom2('RelationToMeShort', recipient)|U] [recipient.GetShortUINameNoTooltip]"
+ serp_action_can_stop_defender_vassal_war_combined_label:0 "[GetPlayer.Custom2('RelationToMeShort', recipient)|U] [recipient.GetShortUINameNoTooltip]"
+ serp_action_can_stop_attacker_vassal_war_combined_group_name:0 "$stop_attacker_vassal_war_interaction$"
+ serp_action_can_stop_defender_vassal_war_combined_group_name:0 "$stop_defender_vassal_war_interaction$"
+ serp_action_can_stop_attacker_vassal_war_combined_group_description:0 "$stop_attacker_vassal_war_interaction$"
+ serp_action_can_stop_defender_vassal_war_combined_group_description:0 "$stop_defender_vassal_war_interaction$"
+ serp_action_can_stop_attacker_vassal_war_desc:"$stop_vassal_war_negotiation$"
+ serp_action_can_stop_defender_vassal_war_desc:"$stop_vassal_war_negotiation$"
+ serp_action_can_stop_attacker_vassal_war_click:0 "$CLICK_TO_VIEW$"
+ serp_action_can_stop_defender_vassal_war_click:0 "$CLICK_TO_VIEW$"
+
+ serp_action_can_join_war:0 "\"$join_war_interaction$\": [recipient.GetRelationToString( GetPlayer )] [recipient.GetUIName]"
+ serp_action_can_join_war_label:0 "\"$join_war_interaction$\" $ACHIEVEMENT_FILTER_BUTTON_POSSIBLE$: [GetPlayer.Custom2('RelationToMeShort', recipient)|U] [recipient.GetShortUINameNoTooltip]"
+ serp_action_can_join_war_combined_group_label:0 "\"$join_war_interaction$\" $ACHIEVEMENT_FILTER_BUTTON_POSSIBLE$:"
+ serp_action_can_join_war_combined_label:0 "[GetPlayer.Custom2('RelationToMeShort', recipient)|U] [recipient.GetShortUINameNoTooltip]"
+ serp_action_can_join_war_combined_group_name:0 "$join_war_interaction$"
+ serp_action_can_join_war_combined_group_description:0 "$join_war_interaction_desc$"
+ serp_action_can_join_war_desc:"$join_war_interaction_desc$"
+ serp_action_can_join_war_click:0 "$CLICK_TO_VIEW$"
+ 
+ serp_action_set_education_child:0 "$EDUCATION_FOCUS_VIEW_TITLE$: [recipient.GetRelationToString( GetPlayer )] [recipient.GetUIName]"
+ serp_action_set_education_child_label:0 "$EDUCATION_FOCUS_VIEW_TITLE$ $ACHIEVEMENT_FILTER_BUTTON_POSSIBLE$: [recipient.GetRelationToString( GetPlayer )] [recipient.GetShortUINameNoTooltip]"
+ serp_action_set_education_child_combined_group_label:0 "$EDUCATION_FOCUS_VIEW_TITLE$ $ACHIEVEMENT_FILTER_BUTTON_POSSIBLE$:"
+ serp_action_set_education_child_combined_label:0 "[recipient.GetRelationToString( GetPlayer )] [recipient.GetShortUINameNoTooltip]"
+ serp_action_set_education_child_combined_group_name:0 "$EDUCATION_FOCUS_VIEW_TITLE$"
+ serp_action_set_education_child_combined_group_description:0 "$game_concept_education_focus_desc$"
+ serp_action_set_education_child_desc:"$game_concept_education_focus_desc$"
+ serp_action_set_education_child_click:0 "$CHARACTER_WINDOW_CHOOSE_EDUCATION_FOCUS$"
+ 
+ serp_action_demand_conversion_vassal:0 "$game_concept_demand_conversion$: [recipient.GetUIName] ([recipient.GetFaith.GetNameNoTooltip])"
+ serp_action_demand_conversion_vassal_label:0 "\"$game_concept_demand_conversion$\" $ACHIEVEMENT_FILTER_BUTTON_POSSIBLE$: $game_concept_vassals$: [recipient.GetShortUINameNoTooltip] ([recipient.GetFaith.GetNameNoTooltip])"
+ serp_action_demand_conversion_vassal_combined_group_label:0 ""$game_concept_demand_conversion$\" $ACHIEVEMENT_FILTER_BUTTON_POSSIBLE$: $game_concept_vassals$:"
+ serp_action_demand_conversion_vassal_combined_label:0 "[recipient.GetShortUINameNoTooltip] ([recipient.GetFaith.GetNameNoTooltip])"
+ serp_action_demand_conversion_vassal_combined_group_name:0 "$game_concept_demand_conversion$"
+ serp_action_demand_conversion_vassal_combined_group_description:0 "$game_concept_demand_conversion_desc$"
+ serp_action_demand_conversion_vassal_desc:"$ask_for_conversion_interaction_desc$"
+ serp_action_demand_conversion_vassal_click:0 "$CLICK_TO_VIEW$"
+ 
+ serp_action_demand_conversion_courtier:0 "$game_concept_demand_conversion$: [recipient.GetUIName] ([recipient.GetFaith.GetNameNoTooltip])"
+ serp_action_demand_conversion_courtier_label:0 "\"$game_concept_demand_conversion$\" $ACHIEVEMENT_FILTER_BUTTON_POSSIBLE$: $game_concept_courtiers$: [recipient.GetShortUINameNoTooltip] ([recipient.GetFaith.GetNameNoTooltip])"
+ serp_action_demand_conversion_courtier_combined_group_label:0 "\"$game_concept_demand_conversion$\" $ACHIEVEMENT_FILTER_BUTTON_POSSIBLE$: $game_concept_courtiers$:"
+ serp_action_demand_conversion_courtier_combined_label:0 "[recipient.GetShortUINameNoTooltip] ([recipient.GetFaith.GetNameNoTooltip])"
+ serp_action_demand_conversion_courtier_combined_group_name:0 "$game_concept_demand_conversion$"
+ serp_action_demand_conversion_courtier_combined_group_description:0 "$game_concept_demand_conversion_desc$"
+ serp_action_demand_conversion_courtier_desc:"$ask_for_conversion_interaction_desc$"
+ serp_action_demand_conversion_courtier_click:0 "$CLICK_TO_VIEW$"
+ 
+ serp_action_demand_conversion_house:0 "$game_concept_demand_conversion$: [recipient.GetUIName] ([recipient.GetFaith.GetNameNoTooltip])"
+ serp_action_demand_conversion_house_label:0 "\"$game_concept_demand_conversion$\" $ACHIEVEMENT_FILTER_BUTTON_POSSIBLE$: $game_concept_house$: [recipient.GetShortUINameNoTooltip] ([recipient.GetFaith.GetNameNoTooltip])"
+ serp_action_demand_conversion_house_combined_group_label:0 "\"$game_concept_demand_conversion$\" $ACHIEVEMENT_FILTER_BUTTON_POSSIBLE$: $game_concept_house$:"
+ serp_action_demand_conversion_house_combined_label:0 "[recipient.GetShortUINameNoTooltip] ([recipient.GetFaith.GetNameNoTooltip])"
+ serp_action_demand_conversion_house_combined_group_name:0 "$game_concept_demand_conversion$"
+ serp_action_demand_conversion_house_combined_group_description:0 "$game_concept_demand_conversion_desc$"
+ serp_action_demand_conversion_house_desc:"$demand_conversion_interaction_desc$"
+ serp_action_demand_conversion_house_click:0 "$CLICK_TO_VIEW$"
+ 
+ 
+ 

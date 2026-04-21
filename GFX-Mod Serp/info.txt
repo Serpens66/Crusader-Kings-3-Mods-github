@@ -1,0 +1,22 @@
+﻿Bei den andern, besonders bei Matin sind die neuen intensiveren Farben offenbar
+nicht gut dargestellt? Wird jedenfalls als störend empfunden.
+
+Deswegen wird bei dem normalen GFX Mod der auch bei Steam hochgeladen ist
+einiges davon rausgenommen, während ich hioer alles drin lasse.
+
+Ich kann den hochgeladenen mod bei steam mit weniger inhalt lassen
+und dann in meine lokale version des steam mods (2637472200) den gfx ordner
+von diesem vollständigeren mod einfügen, ohne dass checksumme sich ändert.
+-> ich kann grafische verbesserungen nutzen und andere brauchen es nciht.
+
+Wobei ich auch für mich selbst entferne:
+Sleek Marriage icons
+
+
+Braucht evlt updates weil komplette Datei überschrieben:
+game/gfx/map\post_effects/posteffect_volumes.txt um papermap dunkler zu machen (https://steamcommunity.com/sharedfiles/filedetails/?id=2747297320)
+  (sofern sich was anderes ändert als flatmap posteffect_value saturation_scale oder exposure)
+falls map sich mal ändert: https://steamcommunity.com/sharedfiles/filedetails/?id=2542054854
+                    oder: https://steamcommunity.com/sharedfiles/filedetails/?id=2449634219
+
+

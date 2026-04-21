@@ -1,0 +1,206 @@
+# the numer 11_ in file title is to make sure that it is loaded before the file from the game. Because the game will not overwrite sth that is already there in this case
+
+types GameRuleTypes
+{
+    type hbox_ironman_achievements_info = hbox {
+		layoutpolicy_horizontal = expanding
+		margin = { 30 6 }
+		spacing = 10  # serp make things a bit tighter
+
+		hbox = {
+			name = "ironman"
+			margin = { 10 10 }
+			margin_right = 20
+			margin_bottom = 10
+			tooltip = "IRONMAN_PAUSE_MENU_TOOLTIP"
+
+			background = {
+				using = Background_Frame
+			}
+
+			hbox = {
+				margin = { 5 5 }
+				name = "buttons"
+				visible = "[Not( HasGameStartedForTheFirstTime )]"
+
+				button_standard = {
+					name = "enable"
+					text = "ENABLE_IRONMAN"
+					visible = "[Not( IsIronmanEnabled )]"
+					enabled = "[Not( IsIronmanEnabled )]"
+					onclick = "[SetIronmanEnabledStatus( '(bool)yes' )]"
+					onclick = "[JominiGameRules.SetIronman( '(bool)yes' )]"
+                    onclick = "[ExecuteConsoleCommand('FogOfWar.Enable')]"
+
+					size = { 80 30 }
+				}
+
+				button_standard = {
+					name = "disable"
+					text = "DISABLE_IRONMAN"
+					visible = "[IsIronmanEnabled]"
+					enabled = "[IsIronmanEnabled]"
+					onclick = "[SetIronmanEnabledStatus( '(bool)no' )]"
+					onclick = "[JominiGameRules.SetIronman( '(bool)no' )]"
+                    onclick = "[ExecuteConsoleCommand('FogOfWar.Enable( (bool)no )')]"
+
+					size = { 80 30 }
+				}
+
+			}
+
+
+			hbox = {
+
+				widget = {
+					size = { 40 40 }
+
+					ironman_disabled_icon = {
+						visible = "[Not( IsIronmanEnabled )]"
+					}
+
+					ironman_save_icon = {
+						visible = "[IsIronmanEnabled]"
+					}
+				}
+
+				vbox = {
+					margin_left = 10
+
+					text_single = {
+						text = "IRONMAN_LABEL"
+						max_width = 150
+						align = left|nobaseline
+					}
+
+					text_single = {
+						text = "[SelectLocalization( IsIronmanEnabled, 'IRONMAN_ENABLED_NO_HEADER', 'IRONMAN_DISABLED_NO_HEADER' )]"
+						default_format = "#warning"
+						max_width = 150
+						min_width = 60
+						align = left|nobaseline
+						layoutpolicy_horizontal = expanding
+					}
+				}
+			}
+		}
+
+		hbox_achievements_info = {}
+
+		expand = {}
+
+		hbox = {
+
+			visible = "[And( IsHost, Not( HasGameStartedForTheFirstTime ) )]"
+			spacing = 5 # serp make things a bit tighter
+			dropdown_menu_standard = {
+				blockoverride "dropdown_properties"
+				{
+					datamodel = "[JominiGameRules.GetRulePresets]"
+					onselectionchanged = "[JominiGameRules.OnSelectPreset]"
+					onselectionchanged = "[SetIronmanEnabledStatus(JominiGameRules.GetSelectedPreset.IsIronmanEnabled)]"
+				}
+                
+                # serp make the dropdown button smaller
+                blockoverride "dropdown_size"
+                {
+                    size = { 100 32 }
+                }
+                
+				blockoverride "dropdown_active_item_properties"
+				{
+					text = "[SelectLocalization( JominiGameRules.HasValidPresetSelected, JominiGameRules.GetSelectedPreset.GetName, 'GAME_RULES_PRESET_DROPDOWN_NO_SELECTED' )]"
+				}
+                
+				blockoverride "dropdown_item_properties"
+                {
+                    widget = {
+						size = { 100% 100% }
+						
+                        hbox = {
+							margin_right = 10
+							
+                            text_single = {
+                                layoutpolicy_horizontal = expanding
+								max_width = 145
+								margin_left = 4
+								default_format = "#clickable"
+								text = "[GuiGameRulePreset.GetName]"
+                            }
+    
+                            achievements_enabled_icon = {
+								visible = "[And( GuiGameRulePreset.IsIronmanEnabled, Not( GuiGameRulePreset.HasRuleWithFlag('blocks_achievements') ) )]"
+								size = { 20 20 }
+                            }
+        
+                            achievements_disabled_icon = {
+                                visible = "[Or( Not( GuiGameRulePreset.IsIronmanEnabled ), GuiGameRulePreset.HasRuleWithFlag('blocks_achievements') )]"
+                                size = { 20 20 }
+                            }
+                        }  
+                    }
+                }
+
+				blockoverride "dropdown_list_properties"
+				{
+					minimumsize = { 192 50 }
+					hbox = {
+						visible = "[IsDataModelEmpty(JominiGameRules.GetRulePresets)]"
+						textbox = {
+							text = "GAME_RULES_PRESET_DROPDOWN_NO_SELECTED_BODY"
+							align = center
+						}
+					}
+				}
+			}
+
+
+			button_standard = {
+				size = { 100 30 }
+
+				onclick = "[JominiGameRules.ShowPresetWindow]"
+				onclick = "[JominiGameRules.SetPresetSaveName]"
+
+				text = "SAVE"
+				tooltip = "SAVE_PRESET_BUTTON_TOOLTIP"
+			}
+
+			button_standard = {
+				size = { 100 30 }
+
+				enabled = "[JominiGameRules.HasValidPresetSelected]"
+				onclick = "[JominiGameRules.DeletePresetAtIndex( JominiGameRules.GetSelectedPresetIndex )]"
+
+				text = "DELETE"
+				tooltip = "DELETE_SELECTED_PRESET_BUTTON_TOOLTIP"
+			}
+		}
+        
+        hbox = {
+            # visible = "[And( IsHost, HasGameStartedForTheFirstTime )]" # if this line is enabled, we can see the button only after starting the game
+			name = "Fog of War"
+			margin = { 0 0 }  # serp make things a bit tighter
+			margin_right = 0
+			margin_bottom = 0
+			spacing = 10
+			tooltip = "Change Fog of War Settings"
+
+			background = {
+				using = Background_Frame
+			}
+
+			hbox = {
+				name = "buttons"
+
+				button_standard = {
+					name = "enable"
+					text = "Change Fog"
+					onclick = "[ExecuteConsoleCommand('tweak FogOfWar.Enable')]"
+
+					size = { 80 30 }
+				}
+
+			}
+		}
+	}
+}

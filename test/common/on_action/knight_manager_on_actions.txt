@@ -1,0 +1,15 @@
+﻿# just needed for UniUI compatibilty
+
+on_game_start = {
+    on_actions = {
+        on_KnightManager_start
+    }
+}
+on_KnightManager_start = {
+    effect = {
+        set_global_variable = { # global variable will be the same for all players in multiplayer, but that is not a problem, because most mods must be enabled for all players anyway.
+            name = KnightManager_is_loaded
+            value = yes
+        }
+    }
+}

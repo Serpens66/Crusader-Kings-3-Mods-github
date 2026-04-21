@@ -1,0 +1,4 @@
+﻿l_german:
+ pardon_hook_interaction:0 "Druckmittel aufgeben"
+ pardon_hook_interaction_desc:0 "Ein Druckmittel, dass ich gegen [recipient.GetShortUINameNoTooltip] habe, aufgeben."
+ pardoned_hook_opinion:0 "Gab ein Druckmittel mir gegenüber auf" 

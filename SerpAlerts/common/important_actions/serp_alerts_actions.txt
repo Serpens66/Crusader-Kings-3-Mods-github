@@ -1,0 +1,529 @@
+﻿
+
+# not 100% save that there is really a war you can join, since the interactions do not check all possibilities and I also can not check any possibility manually here
+# the gamecode is missing a simple "can_join_war" check...
+serp_action_can_join_war= {
+	priority = 1000
+	combine_into_one = yes
+	check_create_action = {
+		
+        # every_ally = { add_to_temporary_list = to_joiners } # does not allow to create a list here... so we have to copy the very same code over and over again -.- (add_to_list and also add_to_temporary_list result in: [13:49:13][jomini_effect.cpp:543]: Error: Reading a non-interface effect '' in forbidden area in file: "common/important_actions/serp_alerts_actions.txt" near line: 30)
+        # every_liege_or_above = { add_to_temporary_list = to_joiners } 
+        # every_vassal_or_below = { add_to_temporary_list = to_joiners }
+        # if = {
+            # limit = {
+                # exists = root.faith
+            # }
+            # root.faith = {
+                # every_faith_ruler = { add_to_temporary_list = to_joiners }
+            # }
+        # }
+        
+        every_ally = {
+			save_temporary_scope_as = to_joiner
+			if = {
+				limit = {
+					AND = {
+                        root = {
+                            is_character_interaction_valid = {
+                                recipient = scope:to_joiner
+                                interaction = join_war_interaction
+                            }
+                        }
+                        is_character_interaction_valid = {
+                            recipient = root
+                            interaction = call_ally_interaction
+                        }
+                        # OR = { # checking call_ally_interaction should be enough, right?
+                            # any_character_war = {
+                                # save_temporary_scope_as = thewar
+                                # AND = {
+                                    # scope:to_joiner = {
+                                        # is_leader_in_war = scope:thewar
+                                    # }
+                                    # NOR = {
+                                        # root = {
+                                            # is_participant_in_war = scope:thewar
+                                        # }
+                                        # was_called = root
+                                    # }
+                                # }
+                            # }
+                        # }
+                    }
+				}
+				try_create_important_action = {
+					important_action_type = serp_action_can_join_war
+					actor = root
+					recipient = scope:to_joiner
+				}
+			}
+		}
+        
+        every_liege_or_above = { 
+			save_temporary_scope_as = to_joiner
+			if = {
+				limit = {
+					AND = {
+                        root = {
+                            is_character_interaction_valid = {
+                                recipient = scope:to_joiner
+                                interaction = join_war_interaction
+                            }
+                        }
+                        OR = { # if we are not part of any war of the person where he is leader
+                            any_character_war = {
+                                save_temporary_scope_as = thewar
+                                AND = {
+                                    scope:to_joiner = {
+                                        is_leader_in_war = scope:thewar
+                                    }
+                                    NOR = {
+                                        root = {
+                                            is_participant_in_war = scope:thewar
+                                        }
+                                        was_called = root
+                                    }
+                                }
+                            }
+                        }
+                    }
+				}
+				try_create_important_action = {
+					important_action_type = serp_action_can_join_war
+					actor = root
+					recipient = scope:to_joiner
+				}
+			}
+		}
+        
+        every_vassal_or_below = { 
+			save_temporary_scope_as = to_joiner
+			if = {
+				limit = {
+					AND = {
+                        root = {
+                            is_character_interaction_valid = {
+                                recipient = scope:to_joiner
+                                interaction = join_war_interaction
+                            }
+                        }
+                        OR = { # if we are not part of any war of the person where he is leader
+                            any_character_war = {
+                                save_temporary_scope_as = thewar
+                                AND = {
+                                    scope:to_joiner = {
+                                        is_leader_in_war = scope:thewar
+                                    }
+                                    NOR = {
+                                        root = {
+                                            is_participant_in_war = scope:thewar
+                                        }
+                                        was_called = root
+                                    }
+                                }
+                            }
+                        }
+                    }
+				}
+				try_create_important_action = {
+					important_action_type = serp_action_can_join_war
+					actor = root
+					recipient = scope:to_joiner
+				}
+			}
+		}
+        
+        if = {
+            limit = {
+                exists = root.house
+            }
+            root.house = {
+                every_house_member = {
+                    save_temporary_scope_as = to_joiner
+                    if = {
+                        limit = {
+                            AND = {
+                                root = {
+                                    is_character_interaction_valid = {
+                                        recipient = scope:to_joiner
+                                        interaction = join_war_interaction
+                                    }
+                                }
+                                is_character_interaction_valid = {
+                                    recipient = root
+                                    interaction = call_house_member_to_war_interaction
+                                }
+                                # OR = { # checking call_house_member_to_war_interaction should be enough, right?
+                                    # any_character_war = {
+                                        # save_temporary_scope_as = thewar
+                                        # AND = {
+                                            # scope:to_joiner = {
+                                                # is_leader_in_war = scope:thewar
+                                            # }
+                                            # NOR = {
+                                                # root = {
+                                                    # is_participant_in_war = scope:thewar
+                                                # }
+                                                # was_called = root
+                                            # }
+                                        # }
+                                    # }
+                                # }
+                            }
+                        }
+                        try_create_important_action = {
+                            important_action_type = serp_action_can_join_war
+                            actor = root
+                            recipient = scope:to_joiner
+                        }
+                    }
+                }
+            }
+        }
+        
+        if = {
+            limit = {
+                exists = root.dynasty
+            }
+            root.dynasty = {
+                every_dynasty_member = {
+                    save_temporary_scope_as = to_joiner
+                    if = {
+                        limit = {
+                            AND = {
+                                root = {
+                                    is_character_interaction_valid = {
+                                        recipient = scope:to_joiner
+                                        interaction = join_war_interaction
+                                    }
+                                }
+                                is_character_interaction_valid = {
+                                    recipient = root
+                                    interaction = call_dynasty_member_to_war_interaction
+                                }
+                                # OR = { # checking call_dynasty_member_to_war_interaction should be enough, right?
+                                    # any_character_war = {
+                                        # save_temporary_scope_as = thewar
+                                        # AND = {
+                                            # scope:to_joiner = {
+                                                # is_leader_in_war = scope:thewar
+                                            # }
+                                            # NOR = {
+                                                # root = {
+                                                    # is_participant_in_war = scope:thewar
+                                                # }
+                                                # was_called = root
+                                            # }
+                                        # }
+                                    # }
+                                # }
+                            }
+                        }
+                        try_create_important_action = {
+                            important_action_type = serp_action_can_join_war
+                            actor = root
+                            recipient = scope:to_joiner
+                        }
+                    }
+                }
+            }
+        }
+
+        if = { # religious wars
+            limit = {
+                exists = root.faith
+            }
+            root.faith = {
+                every_faith_ruler = {
+                    save_temporary_scope_as = to_joiner
+                    if = {
+                        limit = {
+                            AND = {
+                                root = {
+                                    is_character_interaction_valid = {
+                                        recipient = scope:to_joiner
+                                        interaction = join_war_interaction
+                                    }
+                                }
+                                OR = { # if we are not part of any war of the person where he is leader
+                                    any_character_war = {
+                                        save_temporary_scope_as = thewar
+                                        AND = {
+                                            OR = { # only for religious wars
+                                                using_cb = religious_war # duchy
+                                                using_cb = minor_religious_war # county
+                                                using_cb = major_religious_war # kingdom
+                                            }
+                                            scope:to_joiner = {
+                                                is_leader_in_war = scope:thewar
+                                                is_defender_in_war = scope:thewar # can only join defending religious wars
+                                            }
+                                            NOR = {
+                                                root = {
+                                                    is_participant_in_war = scope:thewar
+                                                }
+                                                was_called = root
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        try_create_important_action = {
+                            important_action_type = serp_action_can_join_war
+                            actor = root
+                            recipient = scope:to_joiner
+                        }
+                    }
+                }
+                
+            }
+        }
+        
+	}
+	
+	effect = {
+		open_interaction_window = {
+			interaction = join_war_interaction
+			actor = scope:actor
+			recipient = scope:recipient
+		}
+	}
+}
+
+
+serp_action_can_stop_attacker_vassal_war = {
+	priority = 1000
+	combine_into_one = yes
+	check_create_action = {
+        every_vassal_or_below = {
+			save_temporary_scope_as = to_ender_att
+            if = {
+                limit = {
+                    prev = {
+                        is_character_interaction_valid = {
+                            recipient = scope:to_ender_att
+                            interaction = stop_attacker_vassal_war_interaction
+                        }
+                    }
+                }
+                try_create_important_action = {
+                    important_action_type = serp_action_can_stop_attacker_vassal_war
+                    actor = root
+                    recipient = scope:to_ender_att
+                }
+            }
+        }
+	}
+	
+	effect = {
+        open_interaction_window = {
+            interaction = stop_attacker_vassal_war_interaction
+			actor = scope:actor
+			recipient = scope:recipient
+		}
+	}
+}
+
+serp_action_can_stop_defender_vassal_war = {
+	priority = 1000
+	combine_into_one = yes
+	check_create_action = {
+        every_vassal_or_below = {
+			save_temporary_scope_as = to_ender_def
+            if = {
+                limit = {
+                    prev = {
+                        is_character_interaction_valid = {
+                            recipient = scope:to_ender_def
+                            interaction = stop_defender_vassal_war_interaction
+                        }
+                    }
+                }
+                try_create_important_action = {
+                    important_action_type = serp_action_can_stop_defender_vassal_war
+                    actor = root
+                    recipient = scope:to_ender_def
+                }
+            }
+        }
+	}
+	
+	effect = {
+        open_interaction_window = {
+            interaction = stop_defender_vassal_war_interaction
+			actor = scope:actor
+			recipient = scope:recipient
+		}
+	}
+}
+
+#####
+# an alert for all childs you can define education focus, if not already done
+serp_action_set_education_child = {
+    combine_into_one = yes
+	check_create_action = {
+        every_child = { # even if they are not on my court or my ward, I can choose focus for them
+            if = {
+                limit = {
+                    is_adult = no
+                    age >= childhood_personality_age # only at this age, you know what they are best in
+                    # age < childhood_education_start_age # until that age you can change it, although this rule is not always valid it seams...
+                    has_any_focus = no # if no focus was set already
+                }
+                save_temporary_scope_as = the_child
+                try_create_important_action = {
+                    important_action_type = serp_action_set_education_child
+                    actor = root
+                    recipient = scope:the_child
+                }
+             }
+        }
+        every_courtier_or_guest = { # even if they are not my child, I can choose focus for them
+            if = {
+                limit = {
+                    is_adult = no
+                    age >= childhood_personality_age # only at this age, you know what they are best in
+                    # age < childhood_education_start_age # until that age you can change it, although this rule is not always valid it seams...
+                    has_any_focus = no # if no focus was set already
+                }
+                save_temporary_scope_as = the_child
+                try_create_important_action = {
+                    important_action_type = serp_action_set_education_child
+                    actor = root
+                    recipient = scope:the_child
+                }
+            }
+        }
+	}
+	effect = {
+		scope:recipient = {
+            open_view_data = {
+				view = character_focus # open focus window (for childs it is education)
+                player = root
+			}
+        }
+        scope:recipient = {
+            open_view_data = {
+				view = character # open character window
+                player = root
+			}
+        }
+	}
+}
+
+#################
+# demand conversion. for vassals we can not check the chances. But for courtiers only show who will accept
+serp_action_demand_conversion_vassal = {
+	combine_into_one = yes
+    priority = 15
+	check_create_action = {
+        save_temporary_scope_as = actor
+		every_vassal_or_below = {
+			save_temporary_scope_as = recipient
+            if = {
+                limit = {
+                    root = {
+                        is_character_interaction_potentially_accepted = {
+                            recipient = prev
+                            interaction = demand_conversion_vassal_ruler_interaction
+                        }
+                    }
+                    # demand_conversion_likelihood_calculation > 99 # is not the same like the shown percentage... but both, this and the percentage are not very accurate anyway it seems, so we will display everyone instead.
+                }
+                try_create_important_action = {
+                    important_action_type = serp_action_demand_conversion_vassal
+                    actor = root
+                    recipient = this
+                    secondary_recipient = this
+                }
+            }
+		}
+	}
+
+	effect = {
+		open_interaction_window = {
+			interaction = demand_conversion_vassal_ruler_interaction
+			actor = scope:actor
+			recipient = scope:recipient
+			secondary_recipient = scope:secondary_recipient
+		}
+	}
+}
+
+serp_action_demand_conversion_courtier = {
+	combine_into_one = yes
+    priority = 15
+	check_create_action = {
+        every_courtier = {
+			if = {
+                limit = {
+                    root = {
+                        is_character_interaction_potentially_accepted = {
+                            recipient = prev
+                            interaction = ask_for_conversion_courtier_interaction
+                        }
+                    }
+                }
+                try_create_important_action = {
+                    important_action_type = serp_action_demand_conversion_courtier
+                    actor = root
+                    recipient = this
+                    secondary_recipient = this
+                }
+            }
+		}
+	}
+
+	effect = {
+		open_interaction_window = {
+			interaction = ask_for_conversion_courtier_interaction
+			actor = scope:actor
+			recipient = scope:recipient
+			secondary_recipient = scope:secondary_recipient
+		}
+	}
+}
+
+serp_action_demand_conversion_house = {
+	combine_into_one = yes
+    priority = 15
+	check_create_action = {
+        if = {
+			limit = {
+				exists = house
+			}
+            house = {
+                every_house_member = {
+                    if = {
+                        limit = {
+                            root = {
+                                is_character_interaction_potentially_accepted = {
+                                    recipient = prev
+                                    interaction = demand_conversion_interaction
+                                }
+                            }
+                        }
+                        try_create_important_action = {
+                            important_action_type = serp_action_demand_conversion_house
+                            actor = root
+                            recipient = this
+                            secondary_recipient = this
+                        }
+                    }
+                }
+            }
+        }
+	}
+
+	effect = {
+		open_interaction_window = {
+			interaction = demand_conversion_interaction
+			actor = scope:actor
+			recipient = scope:recipient
+			secondary_recipient = scope:secondary_recipient
+		}
+	}
+}
+

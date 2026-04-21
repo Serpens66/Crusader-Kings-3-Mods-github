@@ -1,0 +1,6 @@
+﻿l_english:
+ send_mpmoney_small_interaction: "Gift money: 50 [gold_i]"
+ send_mpmoney_medium_interaction: "Gift money: 100 [gold_i]"
+ send_mpmoney_big_interaction: "Gift money: 250 [gold_i]"
+ send_mpmoney_verybig_interaction: "Gift money: 500 [gold_i]"
+ 
