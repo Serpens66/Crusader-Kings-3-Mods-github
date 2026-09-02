@@ -5,5 +5,5 @@ tags={
 }
 name="SerpInteractionsDecisions"
 supported_version="1.5.*"
-path="C:/Users/Serpens66/Documents/Paradox Interactive/Crusader Kings III/mod/SerpInteractionsDecisions"
+path="D:/CDesktopLink/Unterlagen/Mods/CK3/Crusader Kings 3 Mods github/SerpInteractionsDecisions"
 remote_file_id="2638425673"

@@ -4,5 +4,5 @@ tags={
 }
 name="SerpAlerts"
 supported_version="1.5.*"
-path="C:/Users/Serpens66/Documents/Paradox Interactive/Crusader Kings III/mod/SerpAlerts"
+path="D:/CDesktopLink/Unterlagen/Mods/CK3/Crusader Kings 3 Mods github/SerpAlerts"
 remote_file_id="2637852159"

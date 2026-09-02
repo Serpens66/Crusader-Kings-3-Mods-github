@@ -4,5 +4,5 @@ tags={
 }
 name="GFX-Mod"
 supported_version="1.7.*"
-path="C:/Users/Serpens66/Documents/Paradox Interactive/Crusader Kings III/mod/GFX-Mod"
+path="D:/CDesktopLink/Unterlagen/Mods/CK3/Crusader Kings 3 Mods github/GFX-Mod"
 remote_file_id="2637472200"

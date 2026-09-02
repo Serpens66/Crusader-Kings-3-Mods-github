@@ -4,4 +4,4 @@ tags={
 }
 name="test"
 supported_version="1.5.*"
-path="C:/Users/Serpens66/Documents/Paradox Interactive/Crusader Kings III/mod/test"
+path="D:/CDesktopLink/Unterlagen/Mods/CK3/Crusader Kings 3 Mods github/test"

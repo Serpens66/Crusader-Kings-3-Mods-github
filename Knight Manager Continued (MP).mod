@@ -6,5 +6,5 @@ tags={
 }
 name="Knight Manager Continued (MP)"
 supported_version="1.12.*"
-path="C:/Users/Serpens66/Documents/Paradox Interactive/Crusader Kings III/mod/Knight Manager Continued (MP)"
+path="D:/CDesktopLink/Unterlagen/Mods/CK3/Crusader Kings 3 Mods github/Knight Manager Continued (MP)"
 remote_file_id="3084278890"

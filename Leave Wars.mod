@@ -4,5 +4,5 @@ tags={
 }
 name="Leave Wars"
 supported_version="1.6.*"
-path="C:/Users/Serpens66/Documents/Paradox Interactive/Crusader Kings III/mod/Leave Wars"
+path="D:/CDesktopLink/Unterlagen/Mods/CK3/Crusader Kings 3 Mods github/Leave Wars"
 remote_file_id="2643946956"

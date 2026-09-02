@@ -5,6 +5,6 @@ tags={
 	"Utilities"
 }
 name="Mass Demand Conversion"
-supported_version="1.18.*"
-path="C:/Users/Serpens66/Documents/Paradox Interactive/Crusader Kings III/mod/Mass Demand Conversion"
+supported_version="1.19.*"
+path="D:/CDesktopLink/Unterlagen/Mods/CK3/Crusader Kings 3 Mods github/Mass Demand Conversion"
 remote_file_id="2753176859"

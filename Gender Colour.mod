@@ -5,5 +5,5 @@ tags={
 name="Gender Colour"
 picture="thumbnail.png"
 supported_version="1.5.*"
-path="C:/Users/Serpens66/Documents/Paradox Interactive/Crusader Kings III/mod/Gender Colour"
+path="D:/CDesktopLink/Unterlagen/Mods/CK3/Crusader Kings 3 Mods github/Gender Colour"
 remote_file_id="2602590291"
