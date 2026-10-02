@@ -1,0 +1,21 @@
+
+# Top-level local tool/config directories such as .agents, .codex, etc.
+/.*/
+!/.github/
+!/.github/workflows/
+!/.github/workflows/*.yml
+/AGENTS.md
+
+# Build outputs
+**/bin/
+**/obj/
+/.release-output/
+/release.local.json
+
+# IDE and OS files
+.vs/
+.vscode/
+*.user
+*.suo
+Thumbs.db
+Desktop.ini

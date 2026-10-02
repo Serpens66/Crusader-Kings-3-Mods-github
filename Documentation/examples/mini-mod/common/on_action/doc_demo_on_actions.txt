@@ -1,0 +1,6 @@
+﻿# Extend the native hook with a unique child; preserve its existing effects.
+on_birthday = { on_actions = { doc_demo_birthday } }
+doc_demo_birthday = {
+    trigger = { is_ai = no }
+    effect = { debug_log = "doc_demo player birthday hook executed" }
+}

@@ -1,0 +1,7 @@
+﻿# The GUI caller must build a character root.
+doc_demo_request_gui = {
+    scope = character
+    is_shown = { is_ai = no }
+    is_valid = { doc_demo_can_request_trigger = yes }
+    effect = { doc_demo_request_effect = yes }
+}

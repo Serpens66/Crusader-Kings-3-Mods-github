@@ -1,0 +1,8 @@
+﻿l_english:
+ doc_demo_decision:0 "Request a demonstration"
+ doc_demo_decision_desc:0 "Receive 2 gold after one day. This is a documentation example."
+ doc_demo_decision_tooltip:0 "Start the example event chain."
+ doc_demo_decision_confirm:0 "Request"
+ doc_demo_transfer_interaction:0 "Send demonstration payment"
+ doc_demo_transfer_interaction_desc:0 "Transfer 5 gold to this character."
+ doc_demo_gui_button:0 "Request demonstration"

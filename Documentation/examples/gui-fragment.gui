@@ -1,0 +1,10 @@
+# INSERTION FRAGMENT ONLY: needs a compatible existing window/widget context.
+# This file is outside mini-mod/gui intentionally and is not a complete window.
+button = {
+    name = "doc_demo_request_button"
+    size = { 260 40 }
+    text = "doc_demo_gui_button"
+    visible = "[GetScriptedGui('doc_demo_request_gui').IsShown( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+    enabled = "[GetScriptedGui('doc_demo_request_gui').IsValid( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+    onclick = "[GetScriptedGui('doc_demo_request_gui').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+}

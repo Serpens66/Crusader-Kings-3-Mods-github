@@ -1,0 +1,10 @@
+﻿doc_demo_reward_value = 2
+doc_demo_payment_value = 5
+
+# Pure arithmetic: ((2 * 3) capped to 5) + 1 = 6.
+doc_demo_arithmetic_value = {
+    value = 2
+    multiply = 3
+    max = 5
+    add = 1
+}

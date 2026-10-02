@@ -1,0 +1,539 @@
+{
+  "retrieval_date": "2026-10-03",
+  "sources": [
+    {
+      "id": "W01",
+      "title": "Modding",
+      "original_url": "https://ck3.paradoxwikis.com/Modding",
+      "accessed_url": "https://raw.githubusercontent.com/jesec/ck3-modding-wiki/master/wiki_pages/Modding.md",
+      "retrieval_date": "2026-10-03",
+      "status": "mirror consulted",
+      "version_note": "Mixed historical statements; conflicts recorded",
+      "topics": "Overall mod workflow, load/override guidance and tools"
+    },
+    {
+      "id": "W02",
+      "title": "Mod structure",
+      "original_url": "https://ck3.paradoxwikis.com/Mod_structure",
+      "accessed_url": "https://raw.githubusercontent.com/jesec/ck3-modding-wiki/master/wiki_pages/Mod_structure.md",
+      "retrieval_date": "2026-10-03",
+      "status": "mirror consulted",
+      "version_note": "Page says last verified 1.1",
+      "topics": "Descriptors and directory layout"
+    },
+    {
+      "id": "W03",
+      "title": "Scripting",
+      "original_url": "https://ck3.paradoxwikis.com/Scripting",
+      "accessed_url": "https://raw.githubusercontent.com/jesec/ck3-modding-wiki/master/wiki_pages/Scripting.md",
+      "retrieval_date": "2026-10-03",
+      "status": "mirror consulted",
+      "version_note": "No current-installation certification",
+      "topics": "Language overview and context terminology"
+    },
+    {
+      "id": "W04",
+      "title": "Scopes",
+      "original_url": "https://ck3.paradoxwikis.com/Scopes",
+      "accessed_url": "https://raw.githubusercontent.com/jesec/ck3-modding-wiki/master/wiki_pages/Scopes.md",
+      "retrieval_date": "2026-10-03",
+      "status": "mirror consulted",
+      "version_note": "Page says last verified 1.1",
+      "topics": "Scope types, chaining and named targets"
+    },
+    {
+      "id": "W05",
+      "title": "Triggers",
+      "original_url": "https://ck3.paradoxwikis.com/Triggers",
+      "accessed_url": "https://raw.githubusercontent.com/jesec/ck3-modding-wiki/master/wiki_pages/Triggers.md",
+      "retrieval_date": "2026-10-03",
+      "status": "mirror consulted",
+      "version_note": "No current-installation certification",
+      "topics": "Conditional and reusable predicates"
+    },
+    {
+      "id": "W06",
+      "title": "Effects",
+      "original_url": "https://ck3.paradoxwikis.com/Effects",
+      "accessed_url": "https://raw.githubusercontent.com/jesec/ck3-modding-wiki/master/wiki_pages/Effects.md",
+      "retrieval_date": "2026-10-03",
+      "status": "mirror consulted",
+      "version_note": "No current-installation certification",
+      "topics": "Effect contexts, control and helper forms"
+    },
+    {
+      "id": "W07",
+      "title": "Variables",
+      "original_url": "https://ck3.paradoxwikis.com/Variables",
+      "accessed_url": "https://raw.githubusercontent.com/jesec/ck3-modding-wiki/master/wiki_pages/Variables.md",
+      "retrieval_date": "2026-10-03",
+      "status": "mirror consulted",
+      "version_note": "No current-installation certification",
+      "topics": "Storage ownership and variable operations"
+    },
+    {
+      "id": "W08",
+      "title": "Lists",
+      "original_url": "https://ck3.paradoxwikis.com/Lists",
+      "accessed_url": "https://raw.githubusercontent.com/jesec/ck3-modding-wiki/master/wiki_pages/Lists.md",
+      "retrieval_date": "2026-10-03",
+      "status": "mirror consulted",
+      "version_note": "Contains an explicitly historical 1.4.4 caveat",
+      "topics": "Engine/scripted/custom list forms"
+    },
+    {
+      "id": "W09",
+      "title": "Script values",
+      "original_url": "https://ck3.paradoxwikis.com/Script_values",
+      "accessed_url": "https://raw.githubusercontent.com/jesec/ck3-modding-wiki/master/wiki_pages/Script_values.md",
+      "retrieval_date": "2026-10-03",
+      "status": "mirror consulted",
+      "version_note": "Cross-checked with local .info",
+      "topics": "Numeric formulas, inlining and GUI use"
+    },
+    {
+      "id": "W10",
+      "title": "Weight modifier",
+      "original_url": "https://ck3.paradoxwikis.com/Weight_modifier",
+      "accessed_url": "https://raw.githubusercontent.com/jesec/ck3-modding-wiki/master/wiki_pages/Weight_modifier.md",
+      "retrieval_date": "2026-10-03",
+      "status": "mirror consulted",
+      "version_note": "Not the numeric formula reader",
+      "topics": "Weight syntax and scripted weight helpers"
+    },
+    {
+      "id": "W11",
+      "title": "Scripted effects",
+      "original_url": "https://ck3.paradoxwikis.com/Scripted_effects",
+      "accessed_url": "https://raw.githubusercontent.com/jesec/ck3-modding-wiki/master/wiki_pages/Scripted_effects.md",
+      "retrieval_date": "2026-10-03",
+      "status": "mirror consulted",
+      "version_note": "Short orientation",
+      "topics": "Reusable effect entry points"
+    },
+    {
+      "id": "W12",
+      "title": "Event modding",
+      "original_url": "https://ck3.paradoxwikis.com/Event_modding",
+      "accessed_url": "https://raw.githubusercontent.com/jesec/ck3-modding-wiki/master/wiki_pages/Event_modding.md",
+      "retrieval_date": "2026-10-03",
+      "status": "mirror consulted",
+      "version_note": "Cross-check against current event .info",
+      "topics": "Events, delivery and presentation"
+    },
+    {
+      "id": "W13",
+      "title": "Decisions modding",
+      "original_url": "https://ck3.paradoxwikis.com/Decisions_modding",
+      "accessed_url": "https://raw.githubusercontent.com/jesec/ck3-modding-wiki/master/wiki_pages/Decisions_modding.md",
+      "retrieval_date": "2026-10-03",
+      "status": "mirror consulted",
+      "version_note": "Cross-check against current decision .info",
+      "topics": "Decision fields, widgets and text"
+    },
+    {
+      "id": "W14",
+      "title": "Interactions modding",
+      "original_url": "https://ck3.paradoxwikis.com/Interactions_modding",
+      "accessed_url": "https://raw.githubusercontent.com/jesec/ck3-modding-wiki/master/wiki_pages/Interactions_modding.md",
+      "retrieval_date": "2026-10-03",
+      "status": "mirror consulted",
+      "version_note": "Short page points to native .info",
+      "topics": "Actor/recipient and outcome orientation"
+    },
+    {
+      "id": "W15",
+      "title": "Localization",
+      "original_url": "https://ck3.paradoxwikis.com/Localization",
+      "accessed_url": "https://raw.githubusercontent.com/jesec/ck3-modding-wiki/master/wiki_pages/Localization.md",
+      "retrieval_date": "2026-10-03",
+      "status": "mirror consulted",
+      "version_note": "Page says last verified 1.4",
+      "topics": "Language files, formatting and data calls"
+    },
+    {
+      "id": "W16",
+      "title": "Interface",
+      "original_url": "https://ck3.paradoxwikis.com/Interface",
+      "accessed_url": "https://raw.githubusercontent.com/jesec/ck3-modding-wiki/master/wiki_pages/Interface.md",
+      "retrieval_date": "2026-10-03",
+      "status": "mirror consulted",
+      "version_note": "Current signatures require dump/native caller",
+      "topics": "GUI, data context and scripted GUI bridge"
+    },
+    {
+      "id": "W17",
+      "title": "Modifier list",
+      "original_url": "https://ck3.paradoxwikis.com/Modifier_list",
+      "accessed_url": "https://raw.githubusercontent.com/jesec/ck3-modding-wiki/master/wiki_pages/Modifier_list.md",
+      "retrieval_date": "2026-10-03",
+      "status": "mirror consulted",
+      "version_note": "Table is not a full current engine dump",
+      "topics": "Modifier types and properties"
+    },
+    {
+      "id": "W18",
+      "title": "Defines",
+      "original_url": "https://ck3.paradoxwikis.com/Defines",
+      "accessed_url": "https://raw.githubusercontent.com/jesec/ck3-modding-wiki/master/wiki_pages/Defines.md",
+      "retrieval_date": "2026-10-03",
+      "status": "mirror consulted",
+      "version_note": "Use actual local defaults and comments",
+      "topics": "Engine-exposed constants"
+    },
+    {
+      "id": "W19",
+      "title": "Mod compatibility",
+      "original_url": "https://ck3.paradoxwikis.com/Mod_compatibility",
+      "accessed_url": "https://raw.githubusercontent.com/jesec/ck3-modding-wiki/master/wiki_pages/Mod_compatibility.md",
+      "retrieval_date": "2026-10-03",
+      "status": "mirror consulted",
+      "version_note": "General design guidance",
+      "topics": "Footprint and interoperability"
+    },
+    {
+      "id": "W20",
+      "title": "Mod troubleshooting",
+      "original_url": "https://ck3.paradoxwikis.com/Mod_troubleshooting",
+      "accessed_url": "https://raw.githubusercontent.com/jesec/ck3-modding-wiki/master/wiki_pages/Mod_troubleshooting.md",
+      "retrieval_date": "2026-10-03",
+      "status": "mirror consulted",
+      "version_note": "Not proof of current launcher bugs",
+      "topics": "Logs and debugging"
+    },
+    {
+      "id": "W21",
+      "title": "Modding tools",
+      "original_url": "https://ck3.paradoxwikis.com/Modding_tools",
+      "accessed_url": "https://raw.githubusercontent.com/jesec/ck3-modding-wiki/master/wiki_pages/Modding_tools.md",
+      "retrieval_date": "2026-10-03",
+      "status": "mirror consulted",
+      "version_note": "Verify each tool separately",
+      "topics": "Tool discovery"
+    },
+    {
+      "id": "W22",
+      "title": "Trait modding",
+      "original_url": "https://ck3.paradoxwikis.com/Trait_modding",
+      "accessed_url": "https://raw.githubusercontent.com/jesec/ck3-modding-wiki/master/wiki_pages/Trait_modding.md",
+      "retrieval_date": "2026-10-03",
+      "status": "mirror consulted",
+      "version_note": "Page says last verified 1.0; track guide needed",
+      "topics": "Trait schema and assets"
+    },
+    {
+      "id": "W23",
+      "title": "Culture modding",
+      "original_url": "https://ck3.paradoxwikis.com/Culture_modding",
+      "accessed_url": "https://raw.githubusercontent.com/jesec/ck3-modding-wiki/master/wiki_pages/Culture_modding.md",
+      "retrieval_date": "2026-10-03",
+      "status": "mirror consulted",
+      "version_note": "Local pillars/traditions govern current schema",
+      "topics": "Culture definition orientation"
+    },
+    {
+      "id": "W24",
+      "title": "Religions modding",
+      "original_url": "https://ck3.paradoxwikis.com/Religions_modding",
+      "accessed_url": "https://raw.githubusercontent.com/jesec/ck3-modding-wiki/master/wiki_pages/Religions_modding.md",
+      "retrieval_date": "2026-10-03",
+      "status": "mirror consulted",
+      "version_note": "Page says last verified 1.0; contradicted by local type/rite schema",
+      "topics": "Historical religion and faith structures"
+    },
+    {
+      "id": "W25",
+      "title": "Title modding",
+      "original_url": "https://ck3.paradoxwikis.com/Title_modding",
+      "accessed_url": "https://raw.githubusercontent.com/jesec/ck3-modding-wiki/master/wiki_pages/Title_modding.md",
+      "retrieval_date": "2026-10-03",
+      "status": "mirror consulted",
+      "version_note": "Local hierarchy remains primary",
+      "topics": "Title structure/history/localization"
+    },
+    {
+      "id": "W26",
+      "title": "Characters modding",
+      "original_url": "https://ck3.paradoxwikis.com/Characters_modding",
+      "accessed_url": "https://raw.githubusercontent.com/jesec/ck3-modding-wiki/master/wiki_pages/Characters_modding.md",
+      "retrieval_date": "2026-10-03",
+      "status": "mirror consulted",
+      "version_note": "Local history override contract remains primary",
+      "topics": "Character history and appearance"
+    },
+    {
+      "id": "W27",
+      "title": "Dynasties modding",
+      "original_url": "https://ck3.paradoxwikis.com/Dynasties_modding",
+      "accessed_url": "https://raw.githubusercontent.com/jesec/ck3-modding-wiki/master/wiki_pages/Dynasties_modding.md",
+      "retrieval_date": "2026-10-03",
+      "status": "mirror consulted",
+      "version_note": "Date-independent claim still needs local checks",
+      "topics": "Dynasties, houses and coats of arms"
+    },
+    {
+      "id": "W28",
+      "title": "Bookmarks modding",
+      "original_url": "https://ck3.paradoxwikis.com/Bookmarks_modding",
+      "accessed_url": "https://raw.githubusercontent.com/jesec/ck3-modding-wiki/master/wiki_pages/Bookmarks_modding.md",
+      "retrieval_date": "2026-10-03",
+      "status": "mirror consulted",
+      "version_note": "Feature-specific testing remains necessary",
+      "topics": "Start-date setup"
+    },
+    {
+      "id": "W29",
+      "title": "Lifestyles modding",
+      "original_url": "https://ck3.paradoxwikis.com/Lifestyles_modding",
+      "accessed_url": "https://raw.githubusercontent.com/jesec/ck3-modding-wiki/master/wiki_pages/Lifestyles_modding.md",
+      "retrieval_date": "2026-10-03",
+      "status": "mirror consulted",
+      "version_note": "Restrictions need current validation",
+      "topics": "Lifestyles/focuses/perks and early-load cautions"
+    },
+    {
+      "id": "W30",
+      "title": "Regiments modding",
+      "original_url": "https://ck3.paradoxwikis.com/Regiments_modding",
+      "accessed_url": "https://raw.githubusercontent.com/jesec/ck3-modding-wiki/master/wiki_pages/Regiments_modding.md",
+      "retrieval_date": "2026-10-03",
+      "status": "mirror consulted",
+      "version_note": "No engine/battle algorithm guarantee",
+      "topics": "Men-at-arms types"
+    },
+    {
+      "id": "W31",
+      "title": "Artifact modding",
+      "original_url": "https://ck3.paradoxwikis.com/Artifact_modding",
+      "accessed_url": "https://raw.githubusercontent.com/jesec/ck3-modding-wiki/master/wiki_pages/Artifact_modding.md",
+      "retrieval_date": "2026-10-03",
+      "status": "mirror consulted",
+      "version_note": "Local template/visual/slot references primary",
+      "topics": "Artifact definitions and creation orientation"
+    },
+    {
+      "id": "W32",
+      "title": "Map modding",
+      "original_url": "https://ck3.paradoxwikis.com/Map_modding",
+      "accessed_url": "https://raw.githubusercontent.com/jesec/ck3-modding-wiki/master/wiki_pages/Map_modding.md",
+      "retrieval_date": "2026-10-03",
+      "status": "mirror consulted",
+      "version_note": "No replacement map tested",
+      "topics": "Coordinated map assets/editor workflow"
+    },
+    {
+      "id": "W33",
+      "title": "3D models",
+      "original_url": "https://ck3.paradoxwikis.com/3D_models",
+      "accessed_url": "https://raw.githubusercontent.com/jesec/ck3-modding-wiki/master/wiki_pages/3D_models.md",
+      "retrieval_date": "2026-10-03",
+      "status": "mirror consulted",
+      "version_note": "No exporter/model validation performed",
+      "topics": "Model and texture pipeline"
+    },
+    {
+      "id": "W34",
+      "title": "Coat of arms modding",
+      "original_url": "https://ck3.paradoxwikis.com/Coat_of_arms_modding",
+      "accessed_url": "https://raw.githubusercontent.com/jesec/ck3-modding-wiki/master/wiki_pages/Coat_of_arms_modding.md",
+      "retrieval_date": "2026-10-03",
+      "status": "mirror consulted",
+      "version_note": "No rendered custom coat of arms tested",
+      "topics": "Coat-of-arms assets and definitions"
+    },
+    {
+      "id": "W35",
+      "title": "Music modding",
+      "original_url": "https://ck3.paradoxwikis.com/Music_modding",
+      "accessed_url": "https://raw.githubusercontent.com/jesec/ck3-modding-wiki/master/wiki_pages/Music_modding.md",
+      "retrieval_date": "2026-10-03",
+      "status": "mirror consulted",
+      "version_note": "No custom audio tested",
+      "topics": "Music files and definitions"
+    },
+    {
+      "id": "W36",
+      "title": "Sound modding",
+      "original_url": "https://ck3.paradoxwikis.com/Sound_modding",
+      "accessed_url": "https://raw.githubusercontent.com/jesec/ck3-modding-wiki/master/wiki_pages/Sound_modding.md",
+      "retrieval_date": "2026-10-03",
+      "status": "mirror consulted",
+      "version_note": "Brief source; full pipeline unresolved",
+      "topics": "Sound-system orientation"
+    },
+    {
+      "id": "W37",
+      "title": "Console commands",
+      "original_url": "https://ck3.paradoxwikis.com/Console_commands",
+      "accessed_url": "https://raw.githubusercontent.com/jesec/ck3-modding-wiki/master/wiki_pages/Console_commands.md",
+      "retrieval_date": "2026-10-03",
+      "status": "mirror consulted",
+      "version_note": "Commands must be confirmed in actual build",
+      "topics": "Console/debug discovery"
+    },
+    {
+      "id": "W38",
+      "title": "Effects list",
+      "original_url": "https://ck3.paradoxwikis.com/Effects_list",
+      "accessed_url": "https://raw.githubusercontent.com/jesec/ck3-modding-wiki/master/wiki_pages/Effects_list.md",
+      "retrieval_date": "2026-10-03",
+      "status": "mirror consulted",
+      "version_note": "Source explicitly warns table is outdated",
+      "topics": "Historical engine effect signature discovery"
+    },
+    {
+      "id": "W39",
+      "title": "Triggers list",
+      "original_url": "https://ck3.paradoxwikis.com/Triggers_list",
+      "accessed_url": "https://raw.githubusercontent.com/jesec/ck3-modding-wiki/master/wiki_pages/Triggers_list.md",
+      "retrieval_date": "2026-10-03",
+      "status": "mirror consulted",
+      "version_note": "Source explicitly warns table is outdated",
+      "topics": "Historical engine trigger signature discovery"
+    },
+    {
+      "id": "W40",
+      "title": "Scopes list",
+      "original_url": "https://ck3.paradoxwikis.com/Scopes_list",
+      "accessed_url": "https://raw.githubusercontent.com/jesec/ck3-modding-wiki/master/wiki_pages/Scopes_list.md",
+      "retrieval_date": "2026-10-03",
+      "status": "mirror consulted",
+      "version_note": "Regenerate after updates",
+      "topics": "Scope/target documentation discovery"
+    },
+    {
+      "id": "W41",
+      "title": "Data types",
+      "original_url": "https://ck3.paradoxwikis.com/Data_types",
+      "accessed_url": "https://raw.githubusercontent.com/jesec/ck3-modding-wiki/master/wiki_pages/Data_types.md",
+      "retrieval_date": "2026-10-03",
+      "status": "mirror consulted",
+      "version_note": "No current local dump; do not assume complete signatures",
+      "topics": "UI function/type discovery"
+    },
+    {
+      "id": "P01",
+      "title": "Dev Diary 30: Event Scripting",
+      "original_url": "https://forum.paradoxplaza.com/forum/developer-diary/crusader-kings-3-dev-diary-30-event-scripting.1397140/",
+      "accessed_url": "https://forum.paradoxplaza.com/forum/developer-diary/crusader-kings-3-dev-diary-30-event-scripting.1397140/",
+      "retrieval_date": "2026-10-03",
+      "status": "consulted",
+      "version_note": "2020-06-09; historical developer explanation",
+      "topics": "Event structure, dynamic text and dispatch"
+    },
+    {
+      "id": "P02",
+      "title": "Dev Diary 37: Making Mods",
+      "original_url": "https://forum.paradoxplaza.com/forum/developer-diary/ck3-dev-diary-37-making-mods.1410656/",
+      "accessed_url": "https://forum.paradoxplaza.com/forum/developer-diary/ck3-dev-diary-37-making-mods.1410656/",
+      "retrieval_date": "2026-10-03",
+      "status": "consulted",
+      "version_note": "2020-08-11; historical developer explanation",
+      "topics": "Jomini layer, interfaces, hardcoded links"
+    },
+    {
+      "id": "P03",
+      "title": "Dev Diary 126: Modding Activities",
+      "original_url": "https://forum.paradoxplaza.com/forum/developer-diary/dev-diary-126-modding-activities.1580680/",
+      "accessed_url": "https://forum.paradoxplaza.com/forum/developer-diary/dev-diary-126-modding-activities.1580680/",
+      "retrieval_date": "2026-10-03",
+      "status": "consulted",
+      "version_note": "2023-05-02; Tours and Tournaments/1.9 context",
+      "topics": "Activities, traits, data models and conditional scope changes"
+    },
+    {
+      "id": "P04",
+      "title": "Grand Jomini Modding Information Manuscript",
+      "original_url": "https://forum.paradoxplaza.com/forum/threads/grand-jomini-modding-information-manuscript.1170261/",
+      "accessed_url": "https://forum.paradoxplaza.com/forum/threads/grand-jomini-modding-information-manuscript.1170261/",
+      "retrieval_date": "2026-10-03",
+      "status": "consulted",
+      "version_note": "2019-04-25; shared Jomini/Imperator examples, not CK3 APIs",
+      "topics": "Scope/list/variable/helper concepts"
+    },
+    {
+      "id": "T01",
+      "title": "Tiger upstream README",
+      "original_url": "https://github.com/amtep/tiger",
+      "accessed_url": "https://github.com/amtep/tiger",
+      "retrieval_date": "2026-10-03",
+      "status": "consulted",
+      "version_note": "Upstream documentation consulted; no binary installed/run",
+      "topics": "Validation, command line, update lag and false positives"
+    },
+    {
+      "id": "T02",
+      "title": "OldEnt versioned engine documentation",
+      "original_url": "https://github.com/OldEnt/crusader-kings-3-triggers-modifiers-effects-event-scopes-targets-on-actions-code-revisions-list",
+      "accessed_url": "https://github.com/OldEnt/crusader-kings-3-triggers-modifiers-effects-event-scopes-targets-on-actions-code-revisions-list",
+      "retrieval_date": "2026-10-03",
+      "status": "consulted",
+      "version_note": "Repository catalogue consulted; matching 1.20 dump not established",
+      "topics": "API dump discovery and version comparison"
+    },
+    {
+      "id": "A01",
+      "title": "CK3-Modding Documentation",
+      "original_url": "https://github.com/CK3-Modding/Documentation",
+      "accessed_url": "https://github.com/CK3-Modding/Documentation",
+      "retrieval_date": "2026-10-03",
+      "status": "consulted",
+      "version_note": "Archived 2023-06-21; historical discovery source",
+      "topics": "Older fundamentals/reference/tutorial catalogue"
+    },
+    {
+      "id": "A02",
+      "title": "Wiki mirror repository",
+      "original_url": "https://github.com/jesec/ck3-modding-wiki",
+      "accessed_url": "https://github.com/jesec/ck3-modding-wiki",
+      "retrieval_date": "2026-10-03",
+      "status": "consulted",
+      "version_note": "Maintainer describes daily synchronization; exact upstream revision not independently verified",
+      "topics": "Wiki access fallback, README and table of contents"
+    },
+    {
+      "id": "A03",
+      "title": "Wiki mirror license",
+      "original_url": "https://github.com/jesec/ck3-modding-wiki/blob/master/LICENSE",
+      "accessed_url": "https://github.com/jesec/ck3-modding-wiki/blob/master/LICENSE",
+      "retrieval_date": "2026-10-03",
+      "status": "consulted",
+      "version_note": "Repository declares MIT; underlying Wiki content rights not automatically settled",
+      "topics": "No wholesale text archive created"
+    }
+  ],
+  "access_limitations": [
+    {
+      "url": "https://ck3.paradoxwikis.com/Modding",
+      "reason": "Direct fetch rejected/unavailable (401 on first attempt); mirror used"
+    },
+    {
+      "url": "https://forum.paradoxplaza.com/forum/developer-diary/ck3-dev-diary-87-royal-modding.1507899/",
+      "reason": "Client challenge; not used as accessible primary evidence"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/jesec/ck3-modding-wiki/master/wiki_pages/Building_modding.md",
+      "reason": "Unavailable guessed name; native building .info used"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/jesec/ck3-modding-wiki/master/wiki_pages/Casus_belli_modding.md",
+      "reason": "Unavailable guessed name; native CB .info used"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/jesec/ck3-modding-wiki/master/wiki_pages/Schemes_modding.md",
+      "reason": "Unavailable guessed name; native scheme references used"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/jesec/ck3-modding-wiki/master/wiki_pages/Story_cycles.md",
+      "reason": "Unavailable guessed name; native story references used"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/jesec/ck3-modding-wiki/master/wiki_pages/Customizable_localization.md",
+      "reason": "Fetch unavailable despite catalogue entry; native custom localization .info used"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/jesec/ck3-modding-wiki/master/wiki_pages/Game_rules_modding.md",
+      "reason": "Unavailable guessed name; native game-rule .info used"
+    }
+  ]
+}

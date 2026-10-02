@@ -1,0 +1,12 @@
+﻿# Character caller. This helper has no persistent side effects.
+doc_demo_can_request_trigger = {
+    is_alive = yes
+    is_adult = yes
+    is_ai = no
+    NOT = { has_variable = doc_demo_pending }
+}
+
+# Parameterized trigger: AMOUNT must be a numeric value or valid numeric reference.
+doc_demo_has_gold_trigger = {
+    gold >= $AMOUNT$
+}

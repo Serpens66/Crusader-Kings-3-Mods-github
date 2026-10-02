@@ -1,0 +1,34 @@
+﻿doc_demo_transfer_interaction = {
+    category = interaction_category_friendly
+    icon = icon_gold
+    desc = doc_demo_transfer_interaction_desc
+    use_diplomatic_range = yes
+    auto_accept = yes
+    # is_available has actor as root in the installed native interaction contract.
+    is_available = { is_ai = no }
+    is_shown = {
+        scope:actor = { NOT = { this = scope:recipient } }
+        scope:recipient = { is_alive = yes }
+    }
+    is_valid_showing_failures_only = {
+        scope:actor = {
+            doc_demo_has_gold_trigger = { AMOUNT = doc_demo_payment_value }
+        }
+    }
+    on_accept = {
+        # Explicitly enter the payer; do not depend on an implicit effect root.
+        scope:actor = {
+            if = {
+                limit = {
+                    doc_demo_has_gold_trigger = { AMOUNT = doc_demo_payment_value }
+                    scope:recipient = { is_alive = yes }
+                }
+                pay_short_term_gold = {
+                    target = scope:recipient
+                    gold = doc_demo_payment_value
+                }
+            }
+        }
+    }
+    ai_will_do = { base = 0 }
+}

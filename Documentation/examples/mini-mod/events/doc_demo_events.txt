@@ -1,0 +1,32 @@
+﻿namespace = doc_demo
+
+# Entry: a character selected by the decision/scripted GUI or console.
+doc_demo.0001 = {
+    type = character_event
+    hidden = yes
+    trigger = { doc_demo_can_request_trigger = yes }
+    immediate = {
+        # Keep this owner pointer only within the explicitly dispatched chain.
+        save_scope_as = doc_demo_requester
+        # Expiry prevents a failed delayed event from blocking requests forever.
+        set_variable = { name = doc_demo_pending value = yes days = 30 }
+        trigger_event = { id = doc_demo.0002 days = 1 }
+    }
+}
+
+# Delay validation and saved-scope propagation require a real gameplay test.
+doc_demo.0002 = {
+    type = character_event
+    hidden = yes
+    trigger = {
+        is_alive = yes
+        has_variable = doc_demo_pending
+        exists = scope:doc_demo_requester
+        this = scope:doc_demo_requester
+    }
+    immediate = {
+        doc_demo_grant_gold_effect = { AMOUNT = doc_demo_reward_value }
+        remove_variable = doc_demo_pending
+        debug_log = "doc_demo delayed reward executed"
+    }
+}

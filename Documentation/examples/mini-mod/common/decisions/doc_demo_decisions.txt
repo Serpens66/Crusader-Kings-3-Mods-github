@@ -1,0 +1,15 @@
+﻿doc_demo_decision = {
+    picture = {
+        reference = "gfx/interface/illustrations/decisions/decision_personal_religious.dds"
+    }
+    desc = doc_demo_decision_desc
+    selection_tooltip = doc_demo_decision_tooltip
+    confirm_text = doc_demo_decision_confirm
+    is_shown = { is_ai = no }
+    is_valid = { doc_demo_can_request_trigger = yes }
+    effect = { doc_demo_request_effect = yes }
+    cooldown = { days = 7 }
+    ai_potential = { always = no }
+    ai_will_do = { base = 0 }
+    ai_check_interval = 0
+}

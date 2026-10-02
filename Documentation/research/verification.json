@@ -1,0 +1,20 @@
+{
+  "date": "2026-10-03",
+  "status": "passed",
+  "checks": {
+    "internal_links": 85,
+    "text_files": 42,
+    "fixture_structures": 10,
+    "workspace_hashes": 157,
+    "audit_source_hashes": 694,
+    "fixture_identifiers": 13
+  },
+  "issues": [],
+  "limits": [
+    "No CK3 execution",
+    "No external Tiger run",
+    "No GUI rendering",
+    "No full grammar/type validation",
+    "Workspace preservation check covers initially indexed text/reference files; no writes were made outside Documentation."
+  ]
+}

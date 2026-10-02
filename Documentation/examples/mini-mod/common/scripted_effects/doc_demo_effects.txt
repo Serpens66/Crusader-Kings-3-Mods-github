@@ -1,0 +1,12 @@
+﻿# Character caller. Recheck eligibility to handle state changes before execution.
+doc_demo_request_effect = {
+    if = {
+        limit = { doc_demo_can_request_trigger = yes }
+        trigger_event = { id = doc_demo.0001 }
+    }
+}
+
+# This creates gold; it is deliberately not a transfer/payment helper.
+doc_demo_grant_gold_effect = {
+    add_gold = $AMOUNT$
+}
