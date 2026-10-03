@@ -1,0 +1,1373 @@
+{
+  "url": "https://github.com/jesec/ck3-mod-more-legacies",
+  "commit": "6a30f714cfb6dcaf3811ea3e912b7f7e0cdc8cac",
+  "commit_info": [
+    "2026-07-05T00:53:41-07:00",
+    "compat-bump: keep .github identical to master in diff commit"
+  ],
+  "bare": "true",
+  "origin": "https://github.com/jesec/ck3-mod-more-legacies.git",
+  "tree_entries": 48748,
+  "relevant_files": {
+    "CLAUDE.md": {
+      "mode": "100644",
+      "blob": "3533dd8a2f7541b0685d70593bee6b46635d8ca0",
+      "sha256": "fe97ea409ad9c99570de2ee96ca424fff211b8b7800a06092e7d8a5521c28886",
+      "bytes": 68970,
+      "lines": 2556,
+      "full_file_read": true,
+      "definitions": [
+        {
+          "name": "invigorated_modifier",
+          "line": 136
+        },
+        {
+          "name": "scriptorium_01",
+          "line": 225
+        },
+        {
+          "name": "monthly_piety_gain_mult",
+          "line": 324
+        }
+      ]
+    },
+    "README.md": {
+      "mode": "100644",
+      "blob": "bbc5ec1a2c2e62080f83e62ab2c29ff936c9e7d0",
+      "sha256": "6f2c1c8dcfa5aee7e0423a07b1334e5ab9dd024a126f7a11fcac3e80366099c1",
+      "bytes": 6377,
+      "lines": 180,
+      "full_file_read": true,
+      "definitions": []
+    },
+    "base/game/common/dynasty_legacies/82_tgp_legacies.txt": {
+      "mode": "100644",
+      "blob": "c6dc3b8fe204348d9aa6e3a819e96d72e982643a",
+      "sha256": "47799cd72b8ad370b8ba1f1d1cce397963cf20746cd078c4b0122ebae5f99acb",
+      "bytes": 1302,
+      "lines": 52,
+      "full_file_read": true,
+      "definitions": [
+        {
+          "name": "tgp_southeast_asia_legacy_track",
+          "line": 1
+        },
+        {
+          "name": "tgp_japan_legacy_track",
+          "line": 19
+        },
+        {
+          "name": "tgp_china_legacy_track",
+          "line": 37
+        }
+      ],
+      "compared_versions": {
+        "1.19.0.6": "byte-identical",
+        "1.20.0.3": "byte-identical"
+      }
+    },
+    "base/game/common/dynasty_legacies/83_ep3_legacies.txt": {
+      "mode": "100644",
+      "blob": "0d875004583c22ec360dcaaac674fd650ade43b4",
+      "sha256": "f1a90802b230a64f3dfe0b8a3eae82dc337449db15271c4a49b088355dc2be5a",
+      "bytes": 393,
+      "lines": 16,
+      "full_file_read": true,
+      "definitions": [
+        {
+          "name": "ep3_administrative_legacy_track",
+          "line": 1
+        }
+      ],
+      "compared_versions": {
+        "1.19.0.6": "byte-identical",
+        "1.20.0.3": "different blob"
+      }
+    },
+    "base/game/common/dynasty_legacies/92_mpo_legacies.txt": {
+      "mode": "100644",
+      "blob": "104b022805b752a05c1369ee87e3dcbb89e0a39d",
+      "sha256": "7b1267d1b730c49be48b7fd412ef5eb770109332b16377df1ed36be0c64d6db2",
+      "bytes": 373,
+      "lines": 16,
+      "full_file_read": true,
+      "definitions": [
+        {
+          "name": "mpo_nomad_legacy_track",
+          "line": 1
+        }
+      ],
+      "compared_versions": {
+        "1.19.0.6": "byte-identical",
+        "1.20.0.3": "byte-identical"
+      }
+    },
+    "base/game/common/dynasty_legacies/94_ce1_legacies.txt": {
+      "mode": "100644",
+      "blob": "0afc433a17aca9b632e24126ece04624f4914ff2",
+      "sha256": "45dcbaf15938887424e9dc93becd114d6a5e418a149e55497f25050eae831f48",
+      "bytes": 162,
+      "lines": 11,
+      "full_file_read": true,
+      "definitions": [
+        {
+          "name": "ce1_heroic_track",
+          "line": 1
+        },
+        {
+          "name": "ce1_legitimacy_legacy_track",
+          "line": 7
+        }
+      ],
+      "compared_versions": {
+        "1.19.0.6": "byte-identical",
+        "1.20.0.3": "byte-identical"
+      }
+    },
+    "base/game/common/dynasty_legacies/95_fp3_legacies.txt": {
+      "mode": "100644",
+      "blob": "f7e2180b2d9f54051b8f3c1e253e5e3d3993c397",
+      "sha256": "0b4bcc0394263cbd572ef150c0d89c8a66129ae536e96775419eb4130a13edea",
+      "bytes": 579,
+      "lines": 27,
+      "full_file_read": true,
+      "definitions": [
+        {
+          "name": "fp3_khvarenah_legacy_track",
+          "line": 1
+        }
+      ],
+      "compared_versions": {
+        "1.19.0.6": "byte-identical",
+        "1.20.0.3": "byte-identical"
+      }
+    },
+    "base/game/common/dynasty_legacies/96_fp2_legacies.txt": {
+      "mode": "100644",
+      "blob": "1d4f37d2480a33eb273642e9eee88913b1764284",
+      "sha256": "c197dbd98a3b780a5bbe603ea7c52b0863d5ed651b3a92ff62182804eeb669d9",
+      "bytes": 1540,
+      "lines": 65,
+      "full_file_read": true,
+      "definitions": [
+        {
+          "name": "fp2_urbanism_legacy_track",
+          "line": 2
+        },
+        {
+          "name": "fp2_coterie_legacy_track",
+          "line": 35
+        }
+      ],
+      "compared_versions": {
+        "1.19.0.6": "byte-identical",
+        "1.20.0.3": "different blob"
+      }
+    },
+    "base/game/common/dynasty_legacies/97_ep1_legacies.txt": {
+      "mode": "100644",
+      "blob": "157de218fc66f039b8f5ebc70e8f5238268d12c8",
+      "sha256": "930f56d534822b20285fbfc639bba56b82f2d529e9d4853b8bc28873f8445a2e",
+      "bytes": 94,
+      "lines": 5,
+      "full_file_read": true,
+      "definitions": [],
+      "compared_versions": {
+        "1.19.0.6": "byte-identical",
+        "1.20.0.3": "byte-identical"
+      }
+    },
+    "base/game/common/dynasty_legacies/98_fp1_legacies.txt": {
+      "mode": "100644",
+      "blob": "b5b76ad7268a42540cd73f6a7a0e2df649165003",
+      "sha256": "12bda4429aeeabb757b626a81370ec1cc76e5afb5a954606fbb72798489ecdee",
+      "bytes": 1026,
+      "lines": 55,
+      "full_file_read": true,
+      "definitions": [
+        {
+          "name": "fp1_adventure_legacy_track",
+          "line": 1
+        },
+        {
+          "name": "fp1_pillage_legacy_track",
+          "line": 29
+        }
+      ],
+      "compared_versions": {
+        "1.19.0.6": "byte-identical",
+        "1.20.0.3": "byte-identical"
+      }
+    },
+    "base/game/common/dynasty_legacies/99_legacies.txt": {
+      "mode": "100644",
+      "blob": "292e26ac9709e88666c83bbc72e0b317792446ec",
+      "sha256": "777c805c9b419795aeba5a04a5c687c78038dc2f4793826e3d04315c064829f8",
+      "bytes": 375,
+      "lines": 35,
+      "full_file_read": true,
+      "definitions": [
+        {
+          "name": "ep1_culture_legacy_track",
+          "line": 1
+        },
+        {
+          "name": "ep2_activities_legacy_track",
+          "line": 5
+        },
+        {
+          "name": "warfare_legacy_track",
+          "line": 9
+        },
+        {
+          "name": "law_legacy_track",
+          "line": 13
+        },
+        {
+          "name": "guile_legacy_track",
+          "line": 17
+        },
+        {
+          "name": "blood_legacy_track",
+          "line": 21
+        },
+        {
+          "name": "erudition_legacy_track",
+          "line": 25
+        },
+        {
+          "name": "glory_legacy_track",
+          "line": 29
+        },
+        {
+          "name": "kin_legacy_track",
+          "line": 33
+        }
+      ],
+      "compared_versions": {
+        "1.19.0.6": "byte-identical",
+        "1.20.0.3": "byte-identical"
+      }
+    },
+    "base/game/common/dynasty_legacies/_dynasty_legacies.info": {
+      "mode": "100644",
+      "blob": "17b10626094e6dcc3d9cb57ff26020cda7a30620",
+      "sha256": "f5c567d168479a8be7d8f2adbdb13fb242bd79ee9ff604cfd1cd63ec6cb42e49",
+      "bytes": 707,
+      "lines": 19,
+      "full_file_read": true,
+      "definitions": [
+        {
+          "name": "key",
+          "line": 3
+        }
+      ],
+      "compared_versions": {
+        "1.19.0.6": "byte-identical",
+        "1.20.0.3": "byte-identical"
+      }
+    },
+    "base/game/common/dynasty_perks/00_dynasty_perks.txt": {
+      "mode": "100644",
+      "blob": "200eec64be651058aea3e2b5d0d2edad8310fb20",
+      "sha256": "663f4bb65eba9921bcfe5509632f56d12d83e47c09e2156bc81acb59ba5412c1",
+      "bytes": 9279,
+      "lines": 536,
+      "full_file_read": true,
+      "definitions": [
+        {
+          "name": "blood_legacy_1",
+          "line": 3
+        },
+        {
+          "name": "blood_legacy_2",
+          "line": 23
+        },
+        {
+          "name": "blood_legacy_3",
+          "line": 31
+        },
+        {
+          "name": "blood_legacy_4",
+          "line": 42
+        },
+        {
+          "name": "blood_legacy_5",
+          "line": 64
+        },
+        {
+          "name": "warfare_legacy_1",
+          "line": 74
+        },
+        {
+          "name": "warfare_legacy_2",
+          "line": 94
+        },
+        {
+          "name": "warfare_legacy_3",
+          "line": 109
+        },
+        {
+          "name": "warfare_legacy_4",
+          "line": 123
+        },
+        {
+          "name": "warfare_legacy_5",
+          "line": 132
+        },
+        {
+          "name": "law_legacy_1",
+          "line": 150
+        },
+        {
+          "name": "law_legacy_2",
+          "line": 174
+        },
+        {
+          "name": "law_legacy_3",
+          "line": 184
+        },
+        {
+          "name": "law_legacy_4",
+          "line": 194
+        },
+        {
+          "name": "law_legacy_5",
+          "line": 205
+        },
+        {
+          "name": "guile_legacy_1",
+          "line": 217
+        },
+        {
+          "name": "guile_legacy_2",
+          "line": 236
+        },
+        {
+          "name": "guile_legacy_3",
+          "line": 251
+        },
+        {
+          "name": "guile_legacy_4",
+          "line": 260
+        },
+        {
+          "name": "guile_legacy_5",
+          "line": 270
+        },
+        {
+          "name": "erudition_legacy_1",
+          "line": 282
+        },
+        {
+          "name": "erudition_legacy_2",
+          "line": 307
+        },
+        {
+          "name": "erudition_legacy_3",
+          "line": 327
+        },
+        {
+          "name": "erudition_legacy_4",
+          "line": 337
+        },
+        {
+          "name": "erudition_legacy_5",
+          "line": 367
+        },
+        {
+          "name": "glory_legacy_1",
+          "line": 383
+        },
+        {
+          "name": "glory_legacy_2",
+          "line": 408
+        },
+        {
+          "name": "glory_legacy_3",
+          "line": 421
+        },
+        {
+          "name": "glory_legacy_4",
+          "line": 430
+        },
+        {
+          "name": "glory_legacy_5",
+          "line": 446
+        },
+        {
+          "name": "kin_legacy_1",
+          "line": 458
+        },
+        {
+          "name": "kin_legacy_2",
+          "line": 477
+        },
+        {
+          "name": "kin_legacy_3",
+          "line": 491
+        },
+        {
+          "name": "kin_legacy_4",
+          "line": 506
+        },
+        {
+          "name": "kin_legacy_5",
+          "line": 524
+        }
+      ],
+      "compared_versions": {
+        "1.19.0.6": "byte-identical",
+        "1.20.0.3": "different blob"
+      }
+    },
+    "base/game/common/dynasty_perks/01_ep1_dynasty_perks.txt": {
+      "mode": "100644",
+      "blob": "4b41fcc82931023fff963ee57d01162b544a0355",
+      "sha256": "f2dc7cf0fe1841bf2360392ca67cc451f15b1c754ff8ca8e7b2c084f68b86226",
+      "bytes": 2155,
+      "lines": 94,
+      "full_file_read": true,
+      "definitions": [
+        {
+          "name": "ep1_culture_legacy_1",
+          "line": 3
+        },
+        {
+          "name": "ep1_culture_legacy_2",
+          "line": 44
+        },
+        {
+          "name": "ep1_culture_legacy_3",
+          "line": 58
+        },
+        {
+          "name": "ep1_culture_legacy_4",
+          "line": 72
+        },
+        {
+          "name": "ep1_culture_legacy_5",
+          "line": 86
+        }
+      ],
+      "compared_versions": {
+        "1.19.0.6": "byte-identical",
+        "1.20.0.3": "byte-identical"
+      }
+    },
+    "base/game/common/dynasty_perks/01_ep2_dynasty_perks.txt": {
+      "mode": "100644",
+      "blob": "aa5c65ffc6afb04b834b12f9642daa9cddf2b09f",
+      "sha256": "30759c437ec3ebdb532b06019fba32286481fc2a660968f7742654fe877a813b",
+      "bytes": 3190,
+      "lines": 124,
+      "full_file_read": true,
+      "definitions": [
+        {
+          "name": "ep2_activities_legacy_2",
+          "line": 4
+        },
+        {
+          "name": "ep2_activities_legacy_1",
+          "line": 29
+        },
+        {
+          "name": "ep2_activities_legacy_3",
+          "line": 55
+        },
+        {
+          "name": "ep2_activities_legacy_4",
+          "line": 77
+        },
+        {
+          "name": "ep2_activities_legacy_5",
+          "line": 102
+        }
+      ],
+      "compared_versions": {
+        "1.19.0.6": "byte-identical",
+        "1.20.0.3": "byte-identical"
+      }
+    },
+    "base/game/common/dynasty_perks/01_fp1_dynasty_perks.txt": {
+      "mode": "100644",
+      "blob": "ec16b4a4d2dc29f2751c33e1505edd1282e17578",
+      "sha256": "2e4ba5493dbd7b89e2aeb56182b8137f4349e26b3f3575dd9101ffface7a2895",
+      "bytes": 4172,
+      "lines": 187,
+      "full_file_read": true,
+      "definitions": [
+        {
+          "name": "fp1_adventure_legacy_1",
+          "line": 3
+        },
+        {
+          "name": "fp1_adventure_legacy_2",
+          "line": 38
+        },
+        {
+          "name": "fp1_adventure_legacy_3",
+          "line": 48
+        },
+        {
+          "name": "fp1_adventure_legacy_4",
+          "line": 63
+        },
+        {
+          "name": "fp1_adventure_legacy_5",
+          "line": 73
+        },
+        {
+          "name": "fp1_pillage_legacy_1",
+          "line": 109
+        },
+        {
+          "name": "fp1_pillage_legacy_2",
+          "line": 142
+        },
+        {
+          "name": "fp1_pillage_legacy_3",
+          "line": 152
+        },
+        {
+          "name": "fp1_pillage_legacy_4",
+          "line": 161
+        },
+        {
+          "name": "fp1_pillage_legacy_5",
+          "line": 175
+        }
+      ],
+      "compared_versions": {
+        "1.19.0.6": "byte-identical",
+        "1.20.0.3": "byte-identical"
+      }
+    },
+    "base/game/common/dynasty_perks/03_fp2_dynasty_perks.txt": {
+      "mode": "100644",
+      "blob": "ae469aff6fd908fcd8210229fbebd494694dc445",
+      "sha256": "f0ef5c3dad2c1766be9d39b93558c4be854b2243cecc137c0de99c18ce8f67d7",
+      "bytes": 3466,
+      "lines": 178,
+      "full_file_read": true,
+      "definitions": [
+        {
+          "name": "fp2_urbanism_legacy_1",
+          "line": 3
+        },
+        {
+          "name": "fp2_urbanism_legacy_2",
+          "line": 36
+        },
+        {
+          "name": "fp2_urbanism_legacy_3",
+          "line": 50
+        },
+        {
+          "name": "fp2_urbanism_legacy_4",
+          "line": 69
+        },
+        {
+          "name": "fp2_urbanism_legacy_5",
+          "line": 82
+        },
+        {
+          "name": "fp2_coterie_legacy_1",
+          "line": 96
+        },
+        {
+          "name": "fp2_coterie_legacy_2",
+          "line": 128
+        },
+        {
+          "name": "fp2_coterie_legacy_3",
+          "line": 140
+        },
+        {
+          "name": "fp2_coterie_legacy_4",
+          "line": 155
+        },
+        {
+          "name": "fp2_coterie_legacy_5",
+          "line": 167
+        }
+      ],
+      "compared_versions": {
+        "1.19.0.6": "byte-identical",
+        "1.20.0.3": "byte-identical"
+      }
+    },
+    "base/game/common/dynasty_perks/03_fp3_dynasty_perks.txt": {
+      "mode": "100644",
+      "blob": "212321101dec5cb783904782750a7082285192ae",
+      "sha256": "2a42eeade7c9dcf5cc0253ab63afe485c188a08fc57d350bd0604c945c460432",
+      "bytes": 2551,
+      "lines": 115,
+      "full_file_read": true,
+      "definitions": [
+        {
+          "name": "fp3_khvarenah_legacy_1",
+          "line": 1
+        },
+        {
+          "name": "fp3_khvarenah_legacy_2",
+          "line": 31
+        },
+        {
+          "name": "fp3_khvarenah_legacy_3",
+          "line": 51
+        },
+        {
+          "name": "fp3_khvarenah_legacy_4",
+          "line": 75
+        },
+        {
+          "name": "fp3_khvarenah_legacy_5",
+          "line": 101
+        }
+      ],
+      "compared_versions": {
+        "1.19.0.6": "byte-identical",
+        "1.20.0.3": "byte-identical"
+      }
+    },
+    "base/game/common/dynasty_perks/05_ce1_dynasty_perks.txt": {
+      "mode": "100644",
+      "blob": "8980d7bb86141b5fb4e37cd339853fe66997e286",
+      "sha256": "20b48d5a8c0a33868cc89d21ed99bfa55f3f958d0f51f474542a46a718ee042f",
+      "bytes": 3881,
+      "lines": 199,
+      "full_file_read": true,
+      "definitions": [
+        {
+          "name": "ce1_heroic_legacy_1",
+          "line": 3
+        },
+        {
+          "name": "ce1_heroic_legacy_2",
+          "line": 45
+        },
+        {
+          "name": "ce1_heroic_legacy_3",
+          "line": 58
+        },
+        {
+          "name": "ce1_heroic_legacy_4",
+          "line": 75
+        },
+        {
+          "name": "ce1_heroic_legacy_5",
+          "line": 92
+        },
+        {
+          "name": "ce1_legitimacy_legacy_1",
+          "line": 109
+        },
+        {
+          "name": "ce1_legitimacy_legacy_2",
+          "line": 140
+        },
+        {
+          "name": "ce1_legitimacy_legacy_3",
+          "line": 152
+        },
+        {
+          "name": "ce1_legitimacy_legacy_4",
+          "line": 168
+        },
+        {
+          "name": "ce1_legitimacy_legacy_5",
+          "line": 180
+        }
+      ],
+      "compared_versions": {
+        "1.19.0.6": "byte-identical",
+        "1.20.0.3": "different blob"
+      }
+    },
+    "base/game/common/dynasty_perks/06_ep3_dynasty_perks.txt": {
+      "mode": "100644",
+      "blob": "959b592db0d2c989fbcbb879a8ae638e1ec922b8",
+      "sha256": "261875dbe32442a667715d6542fc5599f35e6d213f63d9b35120b6b07b98bf2f",
+      "bytes": 2264,
+      "lines": 85,
+      "full_file_read": true,
+      "definitions": [
+        {
+          "name": "ep3_administrative_legacy_1",
+          "line": 1
+        },
+        {
+          "name": "ep3_administrative_legacy_2",
+          "line": 32
+        },
+        {
+          "name": "ep3_administrative_legacy_3",
+          "line": 46
+        },
+        {
+          "name": "ep3_administrative_legacy_4",
+          "line": 61
+        },
+        {
+          "name": "ep3_administrative_legacy_5",
+          "line": 76
+        }
+      ],
+      "compared_versions": {
+        "1.19.0.6": "byte-identical",
+        "1.20.0.3": "different blob"
+      }
+    },
+    "base/game/common/dynasty_perks/07_mpo_dynasty_perks.txt": {
+      "mode": "100644",
+      "blob": "767032dfd2cde05b0cf922101ac0cf46c2aeb1eb",
+      "sha256": "46f1eef04b60edb2954ab3dbf500cb9025f231d2730e21284d5412829a03ef86",
+      "bytes": 1985,
+      "lines": 90,
+      "full_file_read": true,
+      "definitions": [
+        {
+          "name": "mpo_nomad_legacy_1",
+          "line": 1
+        },
+        {
+          "name": "mpo_nomad_legacy_2",
+          "line": 28
+        },
+        {
+          "name": "mpo_nomad_legacy_3",
+          "line": 42
+        },
+        {
+          "name": "mpo_nomad_legacy_4",
+          "line": 58
+        },
+        {
+          "name": "mpo_nomad_legacy_5",
+          "line": 76
+        }
+      ],
+      "compared_versions": {
+        "1.19.0.6": "byte-identical",
+        "1.20.0.3": "byte-identical"
+      }
+    },
+    "base/game/common/dynasty_perks/08_tgp_dynasty_perks.txt": {
+      "mode": "100644",
+      "blob": "77b7b8155b31d4578e80b1b09131f1945e93ad80",
+      "sha256": "705f29b3f23e3ab613f9f402b46196afc36b4df5239f7cabcf4623b278e2f97d",
+      "bytes": 8075,
+      "lines": 363,
+      "full_file_read": true,
+      "definitions": [
+        {
+          "name": "tgp_chinese_legacy_1",
+          "line": 4
+        },
+        {
+          "name": "tgp_chinese_legacy_2",
+          "line": 36
+        },
+        {
+          "name": "tgp_chinese_legacy_3",
+          "line": 58
+        },
+        {
+          "name": "tgp_chinese_legacy_4",
+          "line": 75
+        },
+        {
+          "name": "tgp_chinese_legacy_5",
+          "line": 113
+        },
+        {
+          "name": "tgp_japan_legacy_1",
+          "line": 138
+        },
+        {
+          "name": "tgp_japan_legacy_2",
+          "line": 171
+        },
+        {
+          "name": "tgp_japan_legacy_3",
+          "line": 190
+        },
+        {
+          "name": "tgp_japan_legacy_4",
+          "line": 208
+        },
+        {
+          "name": "tgp_japan_legacy_5",
+          "line": 226
+        },
+        {
+          "name": "tgp_sea_legacy_1",
+          "line": 246
+        },
+        {
+          "name": "tgp_sea_legacy_2",
+          "line": 285
+        },
+        {
+          "name": "tgp_sea_legacy_3",
+          "line": 305
+        },
+        {
+          "name": "tgp_sea_legacy_4",
+          "line": 330
+        },
+        {
+          "name": "tgp_sea_legacy_5",
+          "line": 348
+        }
+      ],
+      "compared_versions": {
+        "1.19.0.6": "byte-identical",
+        "1.20.0.3": "byte-identical"
+      }
+    },
+    "base/game/common/dynasty_perks/_dynasty_perks.info": {
+      "mode": "100644",
+      "blob": "160926fd63162180db3813a42616fc104ad7cd58",
+      "sha256": "97b2d8ebfc39c201b15c1506a237afc0bbc51e4d5fe4e39d126b491ef46f8535",
+      "bytes": 1074,
+      "lines": 24,
+      "full_file_read": true,
+      "definitions": [
+        {
+          "name": "key",
+          "line": 4
+        }
+      ],
+      "compared_versions": {
+        "1.19.0.6": "byte-identical",
+        "1.20.0.3": "different blob"
+      }
+    },
+    "base/game/gui/window_dynasty_house.gui": {
+      "mode": "100644",
+      "blob": "8d0f34763c02541a04d675506e0fefd6ebe17eae",
+      "read_status": "binary asset metadata; not copied"
+    },
+    "mod/CHANGELOG": {
+      "mode": "100644",
+      "blob": "68076100edea8c429840492d4dfdd5d22b875be3",
+      "sha256": "bc3ac761260acb690da9bab7fe2e9ae860e1e615b50db2e13807b75425dfed5e",
+      "bytes": 2607,
+      "lines": 61,
+      "full_file_read": true,
+      "definitions": []
+    },
+    "mod/README.md": {
+      "mode": "100644",
+      "blob": "a60bb066516e2e9319a96b71a0973e0e838b50c0",
+      "sha256": "1c4328f4c5737efe27a9cc0bbe5495139b3c7d691770af344a67344c729b7d86",
+      "bytes": 7432,
+      "lines": 173,
+      "full_file_read": true,
+      "definitions": []
+    },
+    "mod/common/dynasty_legacies/more_legacies.txt": {
+      "mode": "100755",
+      "blob": "a6d1c92703c67a1f5b32f4e4f3caea0a178efc48",
+      "sha256": "60c9013a5d07e8045963a9ef4e0e30a7b7f52ca77ce5959d2299eff1ddf6f30f",
+      "bytes": 4390,
+      "lines": 150,
+      "full_file_read": true,
+      "definitions": [
+        {
+          "name": "bld_chivalry_legacy_track",
+          "line": 1
+        },
+        {
+          "name": "bld_devotion_legacy_track",
+          "line": 22
+        },
+        {
+          "name": "bld_dominance_legacy_track",
+          "line": 26
+        },
+        {
+          "name": "bld_industry_legacy_track",
+          "line": 56
+        },
+        {
+          "name": "bld_influence_legacy_track",
+          "line": 60
+        },
+        {
+          "name": "bld_mercantile_legacy_track",
+          "line": 64
+        },
+        {
+          "name": "bld_seafaring_legacy_track",
+          "line": 86
+        },
+        {
+          "name": "bld_temptation_legacy_track",
+          "line": 107
+        },
+        {
+          "name": "bld_tradition_legacy_track",
+          "line": 111
+        },
+        {
+          "name": "bld_witchcraft_legacy_track",
+          "line": 135
+        }
+      ]
+    },
+    "mod/common/dynasty_perks/more_dynasty_perks.txt": {
+      "mode": "100755",
+      "blob": "73e8e5a8e158ea93c31e118f1bd3ce9efe45ada5",
+      "sha256": "5c03fb5c3cea8e3ad240e781a46ca7d4c0a14fec1ae59fa7303b8136f978f538",
+      "bytes": 12041,
+      "lines": 592,
+      "full_file_read": true,
+      "definitions": [
+        {
+          "name": "bld_chivalry_legacy_1",
+          "line": 3
+        },
+        {
+          "name": "bld_chivalry_legacy_2",
+          "line": 22
+        },
+        {
+          "name": "bld_chivalry_legacy_3",
+          "line": 31
+        },
+        {
+          "name": "bld_chivalry_legacy_4",
+          "line": 42
+        },
+        {
+          "name": "bld_chivalry_legacy_5",
+          "line": 52
+        },
+        {
+          "name": "bld_devotion_legacy_1",
+          "line": 63
+        },
+        {
+          "name": "bld_devotion_legacy_2",
+          "line": 82
+        },
+        {
+          "name": "bld_devotion_legacy_3",
+          "line": 90
+        },
+        {
+          "name": "bld_devotion_legacy_4",
+          "line": 101
+        },
+        {
+          "name": "bld_devotion_legacy_5",
+          "line": 110
+        },
+        {
+          "name": "bld_dominance_legacy_1",
+          "line": 121
+        },
+        {
+          "name": "bld_dominance_legacy_2",
+          "line": 141
+        },
+        {
+          "name": "bld_dominance_legacy_3",
+          "line": 150
+        },
+        {
+          "name": "bld_dominance_legacy_4",
+          "line": 159
+        },
+        {
+          "name": "bld_dominance_legacy_5",
+          "line": 169
+        },
+        {
+          "name": "bld_industry_legacy_1",
+          "line": 180
+        },
+        {
+          "name": "bld_industry_legacy_2",
+          "line": 199
+        },
+        {
+          "name": "bld_industry_legacy_3",
+          "line": 208
+        },
+        {
+          "name": "bld_industry_legacy_4",
+          "line": 217
+        },
+        {
+          "name": "bld_industry_legacy_5",
+          "line": 226
+        },
+        {
+          "name": "bld_influence_legacy_1",
+          "line": 238
+        },
+        {
+          "name": "bld_influence_legacy_2",
+          "line": 260
+        },
+        {
+          "name": "bld_influence_legacy_3",
+          "line": 269
+        },
+        {
+          "name": "bld_influence_legacy_4",
+          "line": 279
+        },
+        {
+          "name": "bld_influence_legacy_5",
+          "line": 288
+        },
+        {
+          "name": "bld_mercantile_legacy_1",
+          "line": 298
+        },
+        {
+          "name": "bld_mercantile_legacy_2",
+          "line": 318
+        },
+        {
+          "name": "bld_mercantile_legacy_3",
+          "line": 328
+        },
+        {
+          "name": "bld_mercantile_legacy_4",
+          "line": 338
+        },
+        {
+          "name": "bld_mercantile_legacy_5",
+          "line": 346
+        },
+        {
+          "name": "bld_seafaring_legacy_1",
+          "line": 358
+        },
+        {
+          "name": "bld_seafaring_legacy_2",
+          "line": 378
+        },
+        {
+          "name": "bld_seafaring_legacy_3",
+          "line": 387
+        },
+        {
+          "name": "bld_seafaring_legacy_4",
+          "line": 397
+        },
+        {
+          "name": "bld_seafaring_legacy_5",
+          "line": 406
+        },
+        {
+          "name": "bld_temptation_legacy_1",
+          "line": 418
+        },
+        {
+          "name": "bld_temptation_legacy_2",
+          "line": 437
+        },
+        {
+          "name": "bld_temptation_legacy_3",
+          "line": 447
+        },
+        {
+          "name": "bld_temptation_legacy_4",
+          "line": 457
+        },
+        {
+          "name": "bld_temptation_legacy_5",
+          "line": 467
+        },
+        {
+          "name": "bld_tradition_legacy_1",
+          "line": 478
+        },
+        {
+          "name": "bld_tradition_legacy_2",
+          "line": 498
+        },
+        {
+          "name": "bld_tradition_legacy_3",
+          "line": 509
+        },
+        {
+          "name": "bld_tradition_legacy_4",
+          "line": 518
+        },
+        {
+          "name": "bld_tradition_legacy_5",
+          "line": 529
+        },
+        {
+          "name": "bld_witchcraft_legacy_1",
+          "line": 540
+        },
+        {
+          "name": "bld_witchcraft_legacy_2",
+          "line": 559
+        },
+        {
+          "name": "bld_witchcraft_legacy_3",
+          "line": 568
+        },
+        {
+          "name": "bld_witchcraft_legacy_4",
+          "line": 577
+        },
+        {
+          "name": "bld_witchcraft_legacy_5",
+          "line": 586
+        }
+      ]
+    },
+    "mod/descriptor.mod": {
+      "mode": "100644",
+      "blob": "d19213d5fa26f33bbf2ac2a55f40f5c8c49ce680",
+      "sha256": "6d4869bd267742d36b6192dcbf125e7e16add3f6628bc8d2e90945b0ab07f55d",
+      "bytes": 106,
+      "lines": 7,
+      "full_file_read": true,
+      "definitions": [
+        {
+          "name": "tags",
+          "line": 4
+        }
+      ]
+    },
+    "mod/gfx/interface/icons/dynasty/bld_chivalry_legacy_track.dds": {
+      "mode": "100755",
+      "blob": "6b8efae3bd7e8cd1a40c03dfa56734857eb769da",
+      "read_status": "binary asset metadata; not copied"
+    },
+    "mod/gfx/interface/icons/dynasty/bld_devotion_legacy_track.dds": {
+      "mode": "100755",
+      "blob": "6d50dbf5d0f6472a1b3381ae14e62112a5de1f0a",
+      "read_status": "binary asset metadata; not copied"
+    },
+    "mod/gfx/interface/icons/dynasty/bld_dominance_legacy_track.dds": {
+      "mode": "100755",
+      "blob": "02234cfac6c3ae97d966d3f9f3d586f3ff0fe29d",
+      "read_status": "binary asset metadata; not copied"
+    },
+    "mod/gfx/interface/icons/dynasty/bld_industry_legacy_track.dds": {
+      "mode": "100755",
+      "blob": "25f43d5e8dcc3aa2cd3d40d86cc88a1b991d8ca9",
+      "read_status": "binary asset metadata; not copied"
+    },
+    "mod/gfx/interface/icons/dynasty/bld_influence_legacy_track.dds": {
+      "mode": "100755",
+      "blob": "8f69f6c4e57d2eb0b1f9a1f333651690459c611c",
+      "read_status": "binary asset metadata; not copied"
+    },
+    "mod/gfx/interface/icons/dynasty/bld_mercantile_legacy_track.dds": {
+      "mode": "100755",
+      "blob": "3f86e510e8e4bcc295b49dcbb99126de23e3cb95",
+      "read_status": "binary asset metadata; not copied"
+    },
+    "mod/gfx/interface/icons/dynasty/bld_seafaring_legacy_track.dds": {
+      "mode": "100755",
+      "blob": "cf9321f905dd3c32d5de4a45ac79794dcd6b1dd8",
+      "read_status": "binary asset metadata; not copied"
+    },
+    "mod/gfx/interface/icons/dynasty/bld_temptation_legacy_track.dds": {
+      "mode": "100755",
+      "blob": "5886c8ea77a9380c8c2a46e1d9406a5d7999e56c",
+      "read_status": "binary asset metadata; not copied"
+    },
+    "mod/gfx/interface/icons/dynasty/bld_tradition_legacy_track.dds": {
+      "mode": "100755",
+      "blob": "bd25de9931a3897ec355faf363192ceb4501f743",
+      "read_status": "binary asset metadata; not copied"
+    },
+    "mod/gfx/interface/icons/dynasty/bld_witchcraft_legacy_track.dds": {
+      "mode": "100755",
+      "blob": "8c6413ef125db08c3a37f339b07616ed39944cea",
+      "read_status": "binary asset metadata; not copied"
+    },
+    "mod/gfx/interface/illustrations/legacy_tracks/bld_chivalry_legacy_track.dds": {
+      "mode": "100755",
+      "blob": "644ce5af1dcf98457ecf87f480b141a98753eea4",
+      "read_status": "binary asset metadata; not copied"
+    },
+    "mod/gfx/interface/illustrations/legacy_tracks/bld_devotion_legacy_track.dds": {
+      "mode": "100755",
+      "blob": "b510f6d0a1e3bfde8ac4927a5f8dcd21e44c3494",
+      "read_status": "binary asset metadata; not copied"
+    },
+    "mod/gfx/interface/illustrations/legacy_tracks/bld_dominance_legacy_track.dds": {
+      "mode": "100755",
+      "blob": "256fc7bbfd8f669b4dbc1e601c1f6986fc1eafa5",
+      "read_status": "binary asset metadata; not copied"
+    },
+    "mod/gfx/interface/illustrations/legacy_tracks/bld_industry_legacy_track.dds": {
+      "mode": "100755",
+      "blob": "9434d515ba3245e3433989c3c759eea738f8139e",
+      "read_status": "binary asset metadata; not copied"
+    },
+    "mod/gfx/interface/illustrations/legacy_tracks/bld_influence_legacy_track.dds": {
+      "mode": "100755",
+      "blob": "528eac1c9b732f85145d9b0b5548c269d63f6e67",
+      "read_status": "binary asset metadata; not copied"
+    },
+    "mod/gfx/interface/illustrations/legacy_tracks/bld_mercantile_legacy_track.dds": {
+      "mode": "100755",
+      "blob": "03506adf448859ca8d6bb1b8feec878b07c63b58",
+      "read_status": "binary asset metadata; not copied"
+    },
+    "mod/gfx/interface/illustrations/legacy_tracks/bld_seafaring_legacy_track.dds": {
+      "mode": "100755",
+      "blob": "7edca9748ed0dc1708e88b2613c4e8c924cab0f4",
+      "read_status": "binary asset metadata; not copied"
+    },
+    "mod/gfx/interface/illustrations/legacy_tracks/bld_temptation_legacy_track.dds": {
+      "mode": "100755",
+      "blob": "bebcf48a70d4a29519a5dae9e2ed63f421ee3fad",
+      "read_status": "binary asset metadata; not copied"
+    },
+    "mod/gfx/interface/illustrations/legacy_tracks/bld_tradition_legacy_track.dds": {
+      "mode": "100755",
+      "blob": "d79059a6a27cf203b2bd0dc3c6eba7068d5bf88e",
+      "read_status": "binary asset metadata; not copied"
+    },
+    "mod/gfx/interface/illustrations/legacy_tracks/bld_witchcraft_legacy_track.dds": {
+      "mode": "100755",
+      "blob": "77cf2c986a45d5b2c28e83806ddc2bbd539d7adc",
+      "read_status": "binary asset metadata; not copied"
+    },
+    "mod/localization/english/dynasty_legacies/more_legacies_l_english.yml": {
+      "mode": "100755",
+      "blob": "70791db86ccb893ed7d550834266cf211ef77c30",
+      "sha256": "3f06dae5db5b35b8bf9fba4238a68b59720a71e3b2dc4bcd5a63f6a289f0b038",
+      "bytes": 3995,
+      "lines": 94,
+      "full_file_read": true,
+      "definitions": []
+    },
+    "mod/localization/french/dynasty_legacies/more_legacies_l_french.yml": {
+      "mode": "100755",
+      "blob": "913fbd00657787eabc0f27dbcd6dcff383b1be11",
+      "sha256": "2a934ac94324446e86200c00b761b74b64405e946a49c7b4e816dda04e6aac8b",
+      "bytes": 4146,
+      "lines": 94,
+      "full_file_read": true,
+      "definitions": []
+    },
+    "mod/localization/german/dynasty_legacies/more_legacies_l_german.yml": {
+      "mode": "100755",
+      "blob": "535f79d1f198a9897afd103fc861863f5ddd96eb",
+      "sha256": "e51f5a89a71a2c218456da2723d7b7dd77f188d60db8714ea35e1788fe4571ef",
+      "bytes": 4148,
+      "lines": 94,
+      "full_file_read": true,
+      "definitions": []
+    },
+    "mod/localization/japanese/dynasty_legacies/more_legacies_l_japanese.yml": {
+      "mode": "100755",
+      "blob": "8ae5909ef2feabda9efde95324801f588febccf1",
+      "sha256": "cb10d21d32b21a77eec18e8ae99f7a2d1fbbe13ab72468a243345aac955c0f87",
+      "bytes": 3962,
+      "lines": 94,
+      "full_file_read": true,
+      "definitions": []
+    },
+    "mod/localization/korean/dynasty_legacies/more_legacies_l_korean.yml": {
+      "mode": "100755",
+      "blob": "cb73d15cca6fe7fcadd70f11f3ca1a61899dded4",
+      "sha256": "a540467947abb852abf1e245d6640eb1a2b4acdbd61bb438f3203f0109a6feb3",
+      "bytes": 4095,
+      "lines": 94,
+      "full_file_read": true,
+      "definitions": []
+    },
+    "mod/localization/polish/dynasty_legacies/more_legacies_l_polish.yml": {
+      "mode": "100755",
+      "blob": "b0d1a7631ab6946b9eeb05e695305770e03b65bd",
+      "sha256": "8d6f1734516992fa6ecf612675fb148e14f39a1ce787f9f072aeec55831b95ba",
+      "bytes": 4105,
+      "lines": 94,
+      "full_file_read": true,
+      "definitions": []
+    },
+    "mod/localization/russian/dynasty_legacies/more_legacies_l_russian.yml": {
+      "mode": "100755",
+      "blob": "38461d419a43b5c2c2beb4418a281d2f193476a7",
+      "sha256": "1d040f665729865986904e2c0009337444ecfa7433c6e31eb7500b23c5a682a4",
+      "bytes": 5280,
+      "lines": 94,
+      "full_file_read": true,
+      "definitions": []
+    },
+    "mod/localization/simp_chinese/dynasty_legacies/more_legacies_l_simp_chinese.yml": {
+      "mode": "100755",
+      "blob": "40f6b1b3603933145578384ea0659c3b81f224f9",
+      "sha256": "cd28361a4c84a2e3afd753a2c9900d44ea06a434459b876d6414e9350e21ddb5",
+      "bytes": 3943,
+      "lines": 94,
+      "full_file_read": true,
+      "definitions": []
+    },
+    "mod/localization/spanish/dynasty_legacies/more_legacies_l_spanish.yml": {
+      "mode": "100755",
+      "blob": "dd52ac2e6823db0c63c82ba05d5aa0fe37777dc8",
+      "sha256": "516229eb4d698d9dfef0f82d327c6c45fececd4ea0c6b8305a35bf1fee48a024",
+      "bytes": 4228,
+      "lines": 94,
+      "full_file_read": true,
+      "definitions": []
+    },
+    "mod/thumbnail.png": {
+      "mode": "100644",
+      "blob": "3ec6c2224c774f2a8f97b86f0b7fc08a48662ab9",
+      "read_status": "binary asset metadata; not copied"
+    },
+    "base/LICENSE": {
+      "mode": "100644",
+      "blob": "c60dba0a3759e5e9c4d045ae1ac173e6864eae4e",
+      "sha256": "b4d36c4a88ae3289877f1c6ee19a1ebf920d5765a91a9b2a765840017a1c420c",
+      "bytes": 1389,
+      "lines": 31,
+      "full_file_read": true
+    },
+    "base/LICENSE-GAME-CONTENT": {
+      "mode": "100644",
+      "blob": "3d8b4b7e6af8099c29755f5d6fd7ffe741f24deb",
+      "sha256": "cb7f9db337d9be48ad33af224b1cd22f80def9c90a79fff2a9290e0060f0f9c0",
+      "bytes": 1908,
+      "lines": 51,
+      "full_file_read": true
+    }
+  },
+  "current_mod_game_patches": [],
+  "deleted_vs_11906": [],
+  "descriptor": "version=\"2.0.4\"\nsupported_version=\"1.19.*\"\nname=\"More Legacies\"\ntags={\n\t\"Gameplay\"\n\t\"Character Focuses\"\n}\n",
+  "historical_changes": [
+    "cdec7d92215478ba05a6e611c0afe67a5bb92784\t2026-07-05T00:46:00-07:00\tBump mod version to 2.0.4 for CK3 1.19.0.6",
+    "466fa89781ac1f406c5b097687b769006ee6d260\t2026-04-29T07:26:13-07:00\tMerge base/1.19.0.4 — compatibility bump to CK3 1.19.0.4 hotfix",
+    "789e2228ce965b45521afdc539493ceb90367fc9\t2026-04-20T10:05:48-07:00\tMerge base/1.19.0.3 — compatibility bump to CK3 1.19 \"Scribe\"",
+    "6f512a060be0f5d0149fec567ef77f018d098bec\t2026-04-20T13:35:37Z\tVersion 1.19.0.3 (Scribe)",
+    "feb7b89c3a6865496087cc512110f90f177c45bc\t2026-04-19T08:02:16-07:00\tMerge base/1.18.4 — compatibility bump to CK3 1.18.4",
+    "27abc8e8321bed42de8a079fd42d4da72f425891\t2025-12-11T18:27:35Z\tVersion 1.18.2 (Crane)",
+    "0e4a74f953234112140850a8cf3352e12e6f832a\t2025-11-16T00:58:35-08:00\tInitial commit: More Legacies v2.0 for CK3 1.18.*",
+    "c6ec9f95db8cd7e6db8cea02616c8430b723eb14\t2025-11-12T16:58:25Z\tVersion 1.18.1 (Crane)",
+    "c5c84f13b19c82f9b32f6bc58e3611784630f627\t2025-11-07T03:45:21-08:00\tAdd mod development infrastructure and documentation",
+    "4dde28f6051269c52245d73c01a6688db1be3d82\t2025-11-06T20:04:42-08:00\tVersion 1.18.0.1 (Crane)",
+    "d878f86d13f15d77595b3888d4797ca47172420a\t2025-11-06T20:04:40-08:00\tVersion 1.17.0.1 (Ascendant)",
+    "b2b156e43169955316569d23fba77cdadf8c7421\t2025-11-06T20:04:39-08:00\tVersion 1.16.0.2 (Chamfron)",
+    "a154c37aa579b3ff75b9aea67b7cd02e005b41e6\t2025-11-06T20:04:37-08:00\tVersion 1.13.2 (Basileus)",
+    "2a07a97489c3407f8524150b439aba05a7bbb1fe\t2025-11-06T20:04:37-08:00\tVersion 1.13.1.1 (Basileus)",
+    "ab8b0d800cdb885067d287598e119f6f521b964a\t2025-11-06T20:04:37-08:00\tVersion 1.13.0.4 (Basileus)",
+    "37febdac53e8dc669f627e76e9d645b0f6056c31\t2025-11-06T20:04:35-08:00\tVersion 1.12.3 (Scythe)",
+    "5dea79f8487c31144157c8438b515141f1537f90\t2025-11-06T20:04:13-08:00\tVersion 1.12.1 (Scythe)",
+    "f85282c17e5a120145358cad98d8346f3acd32a8\t2025-11-06T19:47:00-08:00\tVersion 1.11.3 (Peacock)",
+    "c5f8c7166d57a9ec436b2106b42452a13ca42940\t2025-11-06T19:46:58-08:00\tVersion 1.11.0.1 (Peacock)",
+    "3da3da71feb3a0bbd075a75ac5601915df3ad2f0\t2025-11-06T19:44:43-08:00\tVersion 1.10.0.1 (Quill)"
+  ]
+}

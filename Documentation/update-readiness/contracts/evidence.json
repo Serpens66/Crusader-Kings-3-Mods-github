@@ -15825,13 +15825,17 @@
         "is_character_interaction_valid"
       ],
       "unresolved_names": [],
-      "behavior_gate": "Query validity/context and count/send equality",
+      "behavior_gate": "G01/G02/G04: query initialization/default response, validity/cooldown/pending checks and snapshot count context",
       "runtime": "not run",
       "source_root": "Mass Demand Conversion",
       "native_source_register": "../evidence/feature-source-closure.json",
       "context": "Decision root is requester; iterator this is candidate; entering root makes candidate available through prev at that caller.",
       "policy": "Preview/count and dispatch must use the same category policy. Native query and dispatch initialization need separate tracing.",
-      "validation_focus": "Actor/puppet/redirect setup, duplicate memberships, protection/authority/rite rules, consent and native consequences require full branch audit and tests."
+      "validation_focus": "Actor/puppet/redirect setup, duplicate memberships, protection/authority/rite rules, consent and native consequences require full branch audit and tests.",
+      "historical_behavior_gate_before_mc_supplement": "Query validity/context and count/send equality",
+      "source_audit_supplement": "../mods/mass-demand-conversion-audit.md",
+      "native_test_matrix": "../mods/mass-demand-conversion-tests.md",
+      "supplemental_evidence": "../evidence/mass-conversion-audit-20261003.json"
     },
     {
       "id": "MC-DISPATCH",
@@ -15846,13 +15850,17 @@
         "run_interaction"
       ],
       "unresolved_names": [],
-      "behavior_gate": "Native actor initialization, consent, cooldown and consequence audit",
+      "behavior_gate": "G01/G02/G03/G05: dispatch/options initialization, native consequences and delayed/list/MP lifecycle",
       "runtime": "not run",
       "source_root": "Mass Demand Conversion",
       "native_source_register": "../evidence/feature-source-closure.json",
       "context": "Decision root is requester; iterator this is candidate; entering root makes candidate available through prev at that caller.",
       "policy": "Preview/count and dispatch must use the same category policy. Native query and dispatch initialization need separate tracing.",
-      "validation_focus": "Actor/puppet/redirect setup, duplicate memberships, protection/authority/rite rules, consent and native consequences require full branch audit and tests."
+      "validation_focus": "Actor/puppet/redirect setup, duplicate memberships, protection/authority/rite rules, consent and native consequences require full branch audit and tests.",
+      "historical_behavior_gate_before_mc_supplement": "Native actor initialization, consent, cooldown and consequence audit",
+      "source_audit_supplement": "../mods/mass-demand-conversion-audit.md",
+      "native_test_matrix": "../mods/mass-demand-conversion-tests.md",
+      "supplemental_evidence": "../evidence/mass-conversion-audit-20261003.json"
     },
     {
       "id": "MC-VARIANTS",
@@ -15865,13 +15873,17 @@
         "run_interaction"
       ],
       "unresolved_names": [],
-      "behavior_gate": "Port verified standalone behavior to bundle; keep categories scoped",
+      "behavior_gate": "After MC gates: verify corresponding standalone/bundle routes and radio selection; retain distribution identity",
       "runtime": "not run",
       "source_root": "Mass Demand Conversion",
       "native_source_register": "../evidence/feature-source-closure.json",
       "context": "Decision root is requester; iterator this is candidate; entering root makes candidate available through prev at that caller.",
       "policy": "Preview/count and dispatch must use the same category policy. Native query and dispatch initialization need separate tracing.",
-      "validation_focus": "Actor/puppet/redirect setup, duplicate memberships, protection/authority/rite rules, consent and native consequences require full branch audit and tests."
+      "validation_focus": "Actor/puppet/redirect setup, duplicate memberships, protection/authority/rite rules, consent and native consequences require full branch audit and tests.",
+      "historical_behavior_gate_before_mc_supplement": "Port verified standalone behavior to bundle; keep categories scoped",
+      "source_audit_supplement": "../mods/mass-demand-conversion-audit.md",
+      "native_test_matrix": "../mods/mass-demand-conversion-tests.md",
+      "supplemental_evidence": "../evidence/mass-conversion-audit-20261003.json"
     },
     {
       "id": "SA-JOIN",

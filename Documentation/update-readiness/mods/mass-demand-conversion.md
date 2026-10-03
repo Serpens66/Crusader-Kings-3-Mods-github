@@ -26,7 +26,7 @@ Rite/faith changes and new religious consequences are relevant because dispatch 
 
 ## Tests with expected outcomes
 
-- Each category separately: displayed count equals the eligible send set at execution time; changed state is rechecked. Selection behaves as a radio choice and no other category is processed.
+- Each category separately: at unchanged state, displayed count matches the query-positive execution candidate set. If state changes between display and execution, record both snapshots and recheck candidates. Record actual deliveries and conversions separately; family outcomes are not extra mod requests. Selection behaves as a radio choice and no other category is processed.
 - Same faith, protected direct vassal, protected indirect vassal, tributary, courtier, house ruler, house member who is also vassal, prisoner, missing house and active cooldown. No invalid or duplicate request.
 - AI accepts, refuses or requests a concession/study-faith step. Native outcomes, prices and later events remain available; `send_threshold` must not be interpreted as forced acceptance.
 - Current faith/rite, domicile, diarch, government and DLC cases where available. Verify generated scope errors and correct actor/recipient identity for query and actual send.
@@ -35,7 +35,7 @@ Rite/faith changes and new religious consequences are relevant because dispatch 
 
 ## Blocker resolution
 
-Obtain current command signatures and run a minimal actor/recipient comparison between the UI's manual interaction and the script query/dispatch. Capture scope diagnostics, cooldown, validity, consent and side effects. Finish the native initialization/caller audit before choosing a shared helper implementation. Until then MC-DISPATCH blocks behavioral changes; modern picture syntax and inactive-event classification are independently source-confirmed.
+Current command signatures have been obtained; their full forms and documented limits are in the [dated audit supplement](mass-demand-conversion-audit.md). Compare native manual interaction with script query/dispatch using the [native test matrix](mass-demand-conversion-tests.md). The missing puppet_or_actor fallback is source-confirmed in later conversion effects; earlier query/dispatch initialization, option flags and full cooldown/pending validation remain unknown. Finish remaining caller/engine contracts before choosing a shared helper. MC-DISPATCH still blocks behavioral changes; no compatibility status was promoted.
 
 ## Current-export reconciliation (2026-10-03)
 
@@ -46,3 +46,11 @@ Declarations are available separately from remaining semantic/runtime gates. Ori
 | MC-CANDIDATES | export declarations available | [Card](../contracts/MC-CANDIDATES.md) |
 | MC-DISPATCH | export declarations available | [Card](../contracts/MC-DISPATCH.md) |
 | MC-VARIANTS | export declarations available | [Card](../contracts/MC-VARIANTS.md) |
+
+## Dated source-audit supplement (2026-10-03)
+
+[Audit and source hashes](mass-demand-conversion-audit.md) · [22 native acceptance cases](mass-demand-conversion-tests.md) · [Machine evidence](../evidence/mass-conversion-audit-20261003.json). This supplement records category-specific eligibility, conditional costs, response/family/secret-faith/study chains and actual macro bindings. It distinguishes five remaining gates G01–G05. The study completion relationship guard requires special indirect-vassal/tributary coverage. All gameplay/GUI/MP tests remain **not run**; the Vanilla feature audit is not declared complete.
+
+## Subsequent caller and Internet recheck (2026-10-03)
+
+See the [follow-up research](mass-demand-conversion-recheck.md) for a current official developer explanation and native query/dispatch callers. General actor/puppet meaning and native requester/query patterns are now sourced; script-entry option/default/validation behavior remains narrower G01/G02 work. Earlier search failures are historical and do not establish absence of an explanation. All runtime statuses remain unchanged.

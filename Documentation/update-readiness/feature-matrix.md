@@ -28,9 +28,9 @@ Every row has an authored sheet containing original intent, local evidence, plan
 | LW-SELECT | [Sheet](mods/leave-wars.md) | blocked contract | Relevant: current secondary participation | War predicates, saved context and selection-time revalidation |
 | LW-EXIT | [Sheet](mods/leave-wars.md) | blocked contract | Relevant: modern native war removal | Removal/cleanup/alliance/payment/experience contracts |
 | LW-RULES | [Sheet](mods/leave-wars.md) | blocked contract | Relevant: new title tiers and notifications | Rule arithmetic verified; accounting/duplicates need current engine tests |
-| MC-CANDIDATES | [Sheet](mods/mass-demand-conversion.md) | blocked contract | Relevant: tributaries, domicile, diarch, faith/rite | Query validity/context and count/send equality |
-| MC-DISPATCH | [Sheet](mods/mass-demand-conversion.md) | blocked contract | Relevant: current conversion consequences | Native actor initialization, consent, cooldown and consequence audit |
-| MC-VARIANTS | [Sheet](mods/mass-demand-conversion.md) | plan ready after MC gates | Relevant: current schema and standalone categories | Port verified standalone behavior to bundle; keep categories scoped |
+| MC-CANDIDATES | [Sheet](mods/mass-demand-conversion.md) | blocked contract | Relevant: tributaries, domicile, diarch, faith/rite | G01/G02/G04: query initialization/default response, validity/cooldown/pending checks and snapshot count context |
+| MC-DISPATCH | [Sheet](mods/mass-demand-conversion.md) | blocked contract | Relevant: current conversion consequences | G01/G02/G03/G05: dispatch/options initialization, native consequences and delayed/list/MP lifecycle |
+| MC-VARIANTS | [Sheet](mods/mass-demand-conversion.md) | plan ready after MC gates | Relevant: current schema and standalone categories | After MC gates: verify corresponding standalone/bundle routes and radio selection; retain distribution identity |
 | SA-JOIN | [Sheet](mods/serp-alerts.md) | blocked contract | Relevant: current war/diarch constraints | Target-specific query and native scope:target contract |
 | SA-STOP | [Sheet](mods/serp-alerts.md) | blocked contract | Relevant: current vassal-war authority | Current selectable war and correct leader query context |
 | SA-EDUCATION | [Sheet](mods/serp-alerts.md) | blocked contract | Relevant: current child/court eligibility | Editing permission and current education view binding |
@@ -59,3 +59,7 @@ A gate is resolved only by the specific source/export/test observation stated he
 ## Export reconciliation and state contracts
 
 The [43 cards](contracts/README.md) and [function guide](../workspace/function-contracts.md) add declaration evidence and owner/lifetime gates. Current exports are integrated; old rows requesting signatures are historical combined gates, not evidence that exports are still missing. Remaining caller, permission and runtime questions are retained explicitly in each card. Feature tests remain not run.
+
+## Mass conversion source supplement — 2026-10-03
+
+The [focused audit](mods/mass-demand-conversion-audit.md) and [native tests](mods/mass-demand-conversion-tests.md) refine MC gates without changing compatibility status. Export signatures are present; engine initialization, query defaults, lifecycle and runtime evidence remain unresolved. General own-interaction fixture runs do not certify native conversion.

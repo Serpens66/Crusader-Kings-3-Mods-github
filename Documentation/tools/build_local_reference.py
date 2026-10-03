@@ -10,6 +10,7 @@ import hashlib
 import json
 import re
 from pathlib import Path
+from workspace_walk import workspace_files
 
 OUT = Path(__file__).resolve().parents[1]
 TEXT_EXT = {'.txt', '.info', '.gui', '.yml', '.mod', '.asset'}
@@ -47,7 +48,7 @@ def main():
         raise SystemExit('Game input must not be Documentation.')
     native, mods, infos, errors = [], [], [], []
     for root, dest in [(game, native), (workspace, mods)]:
-        for p in sorted(root.rglob('*')):
+        for p in sorted(workspace_files(root) if root == workspace else root.rglob('*')):
             if not p.is_file() or p.suffix.lower() not in TEXT_EXT:
                 continue
             if root == workspace and (OUT in p.parents or any(part.startswith('.') for part in p.relative_to(root).parts)):

@@ -56,3 +56,19 @@ No unanswered user preference blocks this documentation. Access failures, unavai
 | GUI/frame/container | Additive package and six hashed unmodified assets | Type/registration/asset evidence | B01–B05/C03 required |
 
 See [completion report](completion-report.md). No runtime fixture result is manufactured.
+
+## General Crozier source supplement — 2026-10-03
+
+The [Crozier coverage ledger](crozier-source-coverage.md) assigns 60 discovery topics to current chapters with evidence limits. [Local source evidence](general-120-evidence.json) and a [new verification report](general-120-verification.json) preserve this operation separately from historical research. Integrated schema/declaration notes do not establish runtime correctness.
+
+## Additional jesec repository coverage — 2026-10-03
+
+| Topic | Research and native/source audit | Static example/reference | Remaining gate |
+|---|---|---|---|
+| Wiki archive | 57/57 subject pages mapped; version/license conflicts recorded | [Page ledger](jesec-wiki-coverage.md), existing chapters and new guide | Historical orientation is not complete current validation for map/model/font/audio/council/struggle features |
+| More Legacies | All ten tracks/fifty perks, languages and asset metadata; complete relevant current native schema/callers/helpers | [Source map](jesec/more-legacies-map.md), original untested sketch | AI policy, generated modifier DLC/units, actual unlock and member application, visual render, MP |
+| Less Restrictive | All twelve full-file patches against exact historical baseline; original patch history and current gates | [Legacy contract](../systems/dynasty-legacies.md) | Benefits outside native government, current override merge, purchase/runtime tests |
+| Scrollable | Original GUI and removal/native snapshots; current zero game delta | Container/data-binding explanation, current native windows | Exact initial release attribution; rendered scaling/performance/save safety remain untested |
+| Base integration | Existing locked reference reused, checkout and reports preserved | Existing history/lookup CLI | Historical sources do not override installed contracts |
+
+See [new verification](jesec/integration-verification.json). Existing 43 function sheets and runtime blockers are unchanged; this supplement adds research evidence, not successful game tests.

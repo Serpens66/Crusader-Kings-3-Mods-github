@@ -61,7 +61,7 @@ The original Wiki was unavailable through direct fetching. The mirror provides a
 | T02 | [OldEnt versioned engine documentation](https://github.com/OldEnt/crusader-kings-3-triggers-modifiers-effects-event-scopes-targets-on-actions-code-revisions-list) | API dump discovery and version comparison | Repository catalogue consulted; matching 1.20 dump not established |
 | A01 | [CK3-Modding Documentation](https://github.com/CK3-Modding/Documentation) | Older fundamentals/reference/tutorial catalogue | Archived 2023-06-21; historical discovery source |
 | A02 | [Wiki mirror repository](https://github.com/jesec/ck3-modding-wiki) | Wiki access fallback, README and table of contents | Maintainer describes daily synchronization; exact upstream revision not independently verified |
-| A03 | [Wiki mirror license](https://github.com/jesec/ck3-modding-wiki/blob/master/LICENSE) | No wholesale text archive created | Repository declares MIT; underlying Wiki content rights not automatically settled |
+| A03 | [Wiki mirror license](https://github.com/jesec/ck3-modding-wiki/blob/db66965014483aa1a0e0905e5a922be9ee3b9a2f/LICENSE) | No wholesale text archive created | Pinned LICENSE declares Wiki articles CC BY-SA 3.0; individual images and game content have separate rights (earlier MIT attribution corrected) |
 
 Original Wiki URLs, accessed URLs, dates, statuses and access limitations are retained in [sources.json](sources.json).
 
@@ -101,3 +101,11 @@ Record the new installation and source dates, regenerate local indexes, then rev
 Installed baseline 1.20.0.3 and engine commit are supported by the [runtime intake](../update-readiness/evidence/runtime-intake.json), including both original export sessions and their different crash/exit results. All eleven raw sources are listed with path, timestamp, SHA and decoding candidate in [engine index](../reference/engine-1.20.0.3.json). Recipe source paths, full-read line counts and hashes are in [native recipe audit](../examples/native-recipe-audit.json); exact asset originals/hashes in [fixture manifest](../examples/fixture-assets.json).
 
 Rechecked [Tiger primary repository](https://github.com/amtep/tiger) and [Wiki archive primary repository](https://github.com/jesec/ck3-modding-wiki) on 2026-10-03. Tiger describes validation scope and possible false positives/update lag; no installed Tiger executable was found and target-build support is not established here. No installation or validation run was performed. Historical wiki/OldEnt references remain discovery aids; current installed exports and native callers take priority for this baseline. These pages are summarized, not mirrored.
+
+## General Crozier source supplement — 2026-10-03
+
+New general research uses the official [Steam announcement feed](https://store.steampowered.com/news/posts/?appids=1158310&feed=steam_community_announcements): diary #8 (2026-09-29), release (2026-09-30), and 1.20.0.3 hotfix (2026-10-01). Native schema/API detail is independently sourced in [evidence](general-120-evidence.json), not transcribed from a changelog. The [coverage ledger](crozier-source-coverage.md) states included/excluded sections. Tiger [trigger](https://docs.rs/tiger-lib/latest/src/tiger_lib/ck3/tables/triggers.rs.html) and [effect](https://docs.rs/tiger-lib/latest/src/tiger_lib/ck3/tables/effects.rs.html) tables are validator schemas; the trigger header states 1.18.1, and the effect header is malformed. Filter/annotation guides are linked in the [tools chapter](../systems/crozier-gui-tools.md). The Wiki mirrors remain historical declaration discovery, not evidence for omitted defaults.
+
+## Additional jesec sources — 2026-10-03
+
+J01–J04 pin the Wiki, More, Less Restrictive and Scrollable repositories in the [source report](jesec-repositories.md). W01–W41 are preserved; newly discovered Wiki pages receive additional W IDs in [the complete ledger](jesec-wiki-coverage.md) and `sources.json`. A03 is corrected from the pinned Wiki license; the separate Base tooling/game notices are unchanged. All four repositories have independent inventories, source dates and license qualifications. No new runtime compatibility result is implied.

@@ -92,3 +92,7 @@ For decisions: hidden, visible but invalid, affordable/unaffordable, one executi
 The [current engine reference](../reference/engine-reference.md) now indexes six script and five data-type exports with exact raw line ranges and checksums. Historical statements above about absent generated dumps describe the initial research stage. Use [lookup](../tools/lookup.py) for both engine declarations and existing local definitions/callers. Missing optionality, argument types, scope lifetime, permissions and multiplayer routing remain unknown where the export does not specify them.
 
 See [workspace function contracts](../workspace/function-contracts.md) for owner/caller/state distinctions and [isolated tests](../examples/test-runs.md) for runtime acceptance. The user completed export sessions, but no example gameplay/GUI/MP tests have been performed.
+
+## General Crozier source supplement — 2026-10-03
+
+See [dynamic object selection](puppets-and-selection.md) for rootless setup/default/AI selection blocks versus item-root weighting/validity. The [hook table](crozier-migration.md) preserves native root/target headers separately from inconsistent export labels, creation versus birth, county Rite versus Faith conversion, and death timing.

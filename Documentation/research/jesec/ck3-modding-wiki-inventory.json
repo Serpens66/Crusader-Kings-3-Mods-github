@@ -1,0 +1,1833 @@
+{
+  "url": "https://github.com/jesec/ck3-modding-wiki",
+  "commit": "db66965014483aa1a0e0905e5a922be9ee3b9a2f",
+  "commit_info": [
+    "2026-08-06T05:47:05Z",
+    "chore: bump version to 1.20260806.0"
+  ],
+  "bare": "true",
+  "origin": "https://github.com/jesec/ck3-modding-wiki.git",
+  "tree_entries": 356,
+  "relevant_files": {
+    "CLAUDE.md": {
+      "mode": "100644",
+      "blob": "a2cc5dc168683fc949584f93e344f4502b01a279",
+      "sha256": "65ccd87ca3bf618fee9dde315133b428bffa37f26a78fba774c81218b26aaed6",
+      "bytes": 7339,
+      "lines": 174,
+      "full_file_read": true,
+      "definitions": []
+    },
+    "LICENSE": {
+      "mode": "100644",
+      "blob": "48dd2d8521d93f983ae672e1106d5f29a9487451",
+      "sha256": "e77ccb77df336dcc6be22a5e7b72d4938a47beabc51c68d89baf186a700007a5",
+      "bytes": 1370,
+      "lines": 35,
+      "full_file_read": true,
+      "definitions": []
+    },
+    "README.md": {
+      "mode": "100644",
+      "blob": "1201af3c73a34209c0cd89b0fd7ab4e3ac0e0bea",
+      "sha256": "6333719dcc725d5fa8deef94ce29a5cd4aaf7d4c44d16b9e9541536dd1db81cd",
+      "bytes": 8656,
+      "lines": 186,
+      "full_file_read": true,
+      "definitions": []
+    },
+    "wiki_pages/3D_models.md": {
+      "mode": "100644",
+      "blob": "69a4dff71dad006169f50671bda1f772dbc0cc30",
+      "sha256": "e136b8da5fcdaf28b2d298a24f33682d4d96317d1bf347be62a2e2d75043457b",
+      "bytes": 13303,
+      "lines": 266,
+      "full_file_read": true,
+      "definitions": [
+        {
+          "name": "locator",
+          "line": 227
+        },
+        {
+          "name": "locator",
+          "line": 228
+        },
+        {
+          "name": "locator",
+          "line": 229
+        },
+        {
+          "name": "locator",
+          "line": 230
+        },
+        {
+          "name": "attach",
+          "line": 231
+        },
+        {
+          "name": "attach",
+          "line": 232
+        },
+        {
+          "name": "attach",
+          "line": 233
+        },
+        {
+          "name": "attach",
+          "line": 234
+        },
+        {
+          "name": "asset",
+          "line": 244
+        }
+      ]
+    },
+    "wiki_pages/AI_modding.md": {
+      "mode": "100644",
+      "blob": "1a4d6b564b401cbdbd9ca537c8b682218cb10c46",
+      "sha256": "690c9fb78ab5435190a0ddf9bc09a3f23a324ba68bd0bedbaf90a47f3de166b7",
+      "bytes": 3526,
+      "lines": 132,
+      "full_file_read": true,
+      "definitions": [
+        {
+          "name": "ai_chance",
+          "line": 39
+        }
+      ]
+    },
+    "wiki_pages/Artifact_modding.md": {
+      "mode": "100644",
+      "blob": "0cd046c8bc5d9a1ef122d7f8ba490afdee2a465d",
+      "sha256": "21bfeba36bab8c0e214347c21cd40f6b824ffe0e582eaf304388f7914ecb3279",
+      "bytes": 9306,
+      "lines": 252,
+      "full_file_read": true,
+      "definitions": [
+        {
+          "name": "example_template",
+          "line": 37
+        },
+        {
+          "name": "example",
+          "line": 113
+        },
+        {
+          "name": "create_artifact_papal_tiara_effect",
+          "line": 167
+        },
+        {
+          "name": "on_game_start",
+          "line": 220
+        },
+        {
+          "name": "special_art_gen.1",
+          "line": 229
+        }
+      ]
+    },
+    "wiki_pages/Bookmarks_modding.md": {
+      "mode": "100644",
+      "blob": "401b8b54771e0d6359655b2e6815470cb94f0305",
+      "sha256": "53063219c444c2afe6d27048f18082df50f1e1c0f74a9ce215d284d7649a337a",
+      "bytes": 6728,
+      "lines": 137,
+      "full_file_read": true,
+      "definitions": [
+        {
+          "name": "size",
+          "line": 108
+        }
+      ]
+    },
+    "wiki_pages/Characters_modding.md": {
+      "mode": "100644",
+      "blob": "8294084194807642fa18c102aadf1e380c567c48",
+      "sha256": "650ce834424a29d403b5ea84e687dd6cbfa5eb7e1fbe5133c4dedebc02dfb7d1",
+      "bytes": 14371,
+      "lines": 307,
+      "full_file_read": true,
+      "definitions": [
+        {
+          "name": "dna_change_example_modifier",
+          "line": 29
+        },
+        {
+          "name": "add_character_flag",
+          "line": 65
+        },
+        {
+          "name": "right_portrait",
+          "line": 91
+        },
+        {
+          "name": "right_portrait",
+          "line": 107
+        },
+        {
+          "name": "deal_with_it_sunglasses",
+          "line": 145
+        },
+        {
+          "name": "modifier",
+          "line": 275
+        }
+      ]
+    },
+    "wiki_pages/Coat_of_arms_modding.md": {
+      "mode": "100644",
+      "blob": "26bec22cf14666ba9041c05f326ff8690a5cd88d",
+      "sha256": "79868e3d672b8d30fb1c7ea93a223b0e2ae48929e7da3f2490d4e8ab12adb91d",
+      "bytes": 17292,
+      "lines": 340,
+      "full_file_read": true,
+      "definitions": [
+        {
+          "name": "coat_of_arms_name",
+          "line": 14
+        },
+        {
+          "name": "flag_with_emblem",
+          "line": 68
+        },
+        {
+          "name": "flag_with_culled_emblem",
+          "line": 81
+        },
+        {
+          "name": "two_emblems_scaled_and_positioned",
+          "line": 95
+        },
+        {
+          "name": "a",
+          "line": 119
+        },
+        {
+          "name": "b",
+          "line": 125
+        },
+        {
+          "name": "a",
+          "line": 138
+        },
+        {
+          "name": "b",
+          "line": 149
+        },
+        {
+          "name": "daddy",
+          "line": 177
+        },
+        {
+          "name": "child",
+          "line": 188
+        },
+        {
+          "name": "daddy",
+          "line": 207
+        },
+        {
+          "name": "child",
+          "line": 213
+        },
+        {
+          "name": "grand_dad",
+          "line": 231
+        },
+        {
+          "name": "daddy",
+          "line": 236
+        },
+        {
+          "name": "child",
+          "line": 243
+        },
+        {
+          "name": "k_england_and_france",
+          "line": 260
+        },
+        {
+          "name": "title_name",
+          "line": 282
+        }
+      ]
+    },
+    "wiki_pages/Commands.md": {
+      "mode": "100644",
+      "blob": "e2aad18df0529c28a67d76abc268f30540abdc84",
+      "sha256": "3cf472ba95ffd2192ab4c3c61874765e869dd1ecf86952b12d025271e4b3c8d4",
+      "bytes": 51147,
+      "lines": 328,
+      "full_file_read": true,
+      "definitions": []
+    },
+    "wiki_pages/Console_commands.md": {
+      "mode": "100644",
+      "blob": "278fc7b43868332a97eedc10152beaef3fe5c0e0",
+      "sha256": "3f74e2e69726142b8b6cbf31542d78dc2f122dfff3ecdc4f860e46ac8de4cabb",
+      "bytes": 55600,
+      "lines": 649,
+      "full_file_read": true,
+      "definitions": []
+    },
+    "wiki_pages/Council_modding.md": {
+      "mode": "100644",
+      "blob": "b94a89c766c3d2a5c722c14963174282f2979e68",
+      "sha256": "ca750fbb377efeaaa8b0a654452846d5d3400a6351f039e9b44f100004914d5f",
+      "bytes": 4062,
+      "lines": 85,
+      "full_file_read": true,
+      "definitions": [
+        {
+          "name": "name_of_the_position",
+          "line": 17
+        }
+      ]
+    },
+    "wiki_pages/Culture_modding.md": {
+      "mode": "100644",
+      "blob": "0ffe22572f17baba97002ef8b64e72adac5b7fba",
+      "sha256": "88979397fecf73113dbe94fe696ad6eaf7ab7d6f3d6179c6eb99deb2ffe4f366",
+      "bytes": 12469,
+      "lines": 211,
+      "full_file_read": true,
+      "definitions": [
+        {
+          "name": "name_of_culture_group",
+          "line": 20
+        },
+        {
+          "name": "name_of_culture_group",
+          "line": 57
+        }
+      ]
+    },
+    "wiki_pages/Customizable_localization.md": {
+      "mode": "100644",
+      "blob": "2bbd55bce2a8b0f24d538a083ade5c9fbc0c0833",
+      "sha256": "476af61f85e6b268f6bc9541b9f59d2ed29d178370ba28885b1908ab10fbef0d",
+      "bytes": 2477,
+      "lines": 60,
+      "full_file_read": true,
+      "definitions": [
+        {
+          "name": "MyCustomLocalization",
+          "line": 20
+        }
+      ]
+    },
+    "wiki_pages/Data_types.md": {
+      "mode": "100644",
+      "blob": "03d34e597a65f962a88278939829293b6f8873f0",
+      "sha256": "969f8b64b9c844effd7666d535d1e655bd04f6600cb08e7bcdfd85340df8e88d",
+      "bytes": 93760,
+      "lines": 2568,
+      "full_file_read": true,
+      "definitions": []
+    },
+    "wiki_pages/Decisions_modding.md": {
+      "mode": "100644",
+      "blob": "40afd4ff97dfe93a1d9e27ed8454297f0a24cde6",
+      "sha256": "cbfb94dc72889b99bc0df8c9186bd743d06f86930db7810abb41dbe0cede97a4",
+      "bytes": 13393,
+      "lines": 257,
+      "full_file_read": true,
+      "definitions": [
+        {
+          "name": "my_decision",
+          "line": 33
+        },
+        {
+          "name": "custom_decision",
+          "line": 50
+        },
+        {
+          "name": "sale_of_titles_decision",
+          "line": 134
+        }
+      ]
+    },
+    "wiki_pages/Defines.md": {
+      "mode": "100644",
+      "blob": "c65fd87623b05afe39a05aa2cdd13aa3be803edc",
+      "sha256": "2f043a71a40286b85da1cf3da5b45b41e90adb193cbe8bb8c16fb883f1ff01aa",
+      "bytes": 18051,
+      "lines": 207,
+      "full_file_read": true,
+      "definitions": [
+        {
+          "name": "NGame",
+          "line": 25
+        }
+      ]
+    },
+    "wiki_pages/Dynasties_modding.md": {
+      "mode": "100644",
+      "blob": "2dc7ff04e62d8650e23a0f36e92517ff042594cd",
+      "sha256": "4dac7526aa0be2cd4f337b87cd17f75b667fbb85462ff21ba7ce58ed83f14db2",
+      "bytes": 3832,
+      "lines": 137,
+      "full_file_read": true,
+      "definitions": [
+        {
+          "name": "house_lyon",
+          "line": 121
+        }
+      ]
+    },
+    "wiki_pages/Effects.md": {
+      "mode": "100644",
+      "blob": "24a69293fbb7fe1ae272b42d9bfdffc8f5891539",
+      "sha256": "2636d2962d81ee29c52af7be1945659703bcd13e578defaeee765ce237d67987",
+      "bytes": 292107,
+      "lines": 1469,
+      "full_file_read": true,
+      "definitions": [
+        {
+          "name": "option",
+          "line": 38
+        },
+        {
+          "name": "imprison",
+          "line": 114
+        },
+        {
+          "name": "give_gold_prestige_piety",
+          "line": 149
+        },
+        {
+          "name": "give_gold_prestige_piety",
+          "line": 184
+        },
+        {
+          "name": "give_gold_prestige_piety",
+          "line": 195
+        },
+        {
+          "name": "give_gold",
+          "line": 205
+        },
+        {
+          "name": "give_gold",
+          "line": 219
+        },
+        {
+          "name": "give_gold",
+          "line": 230
+        },
+        {
+          "name": "give_gold",
+          "line": 246
+        }
+      ]
+    },
+    "wiki_pages/Effects_list.md": {
+      "mode": "100644",
+      "blob": "9914c7aa57b784081ff04ad8f63a54bdb8cb80e3",
+      "sha256": "edaea18b9c2cc91838b90e5d1f55ebb8197c3a1d8e5972c369394e2f3c5f73bd",
+      "bytes": 280437,
+      "lines": 1177,
+      "full_file_read": true,
+      "definitions": []
+    },
+    "wiki_pages/Event_modding.md": {
+      "mode": "100644",
+      "blob": "14d64c761e35dea4bff564a84fe1267d5f47726c",
+      "sha256": "33e8061841cd93a3f5947b3ef28f9eb3f28135a8c69c4be9ee3b810134f7fe64",
+      "bytes": 71200,
+      "lines": 912,
+      "full_file_read": true,
+      "definitions": [
+        {
+          "name": "example.1",
+          "line": 100
+        },
+        {
+          "name": "superexample.1337",
+          "line": 114
+        },
+        {
+          "name": "example_event.1001",
+          "line": 175
+        },
+        {
+          "name": "trigger",
+          "line": 345
+        },
+        {
+          "name": "trigger",
+          "line": 358
+        },
+        {
+          "name": "trigger",
+          "line": 380
+        },
+        {
+          "name": "my_event.0001",
+          "line": 398
+        },
+        {
+          "name": "desc",
+          "line": 410
+        },
+        {
+          "name": "desc",
+          "line": 441
+        },
+        {
+          "name": "desc",
+          "line": 471
+        },
+        {
+          "name": "option",
+          "line": 505
+        },
+        {
+          "name": "name",
+          "line": 525
+        },
+        {
+          "name": "flavor",
+          "line": 534
+        },
+        {
+          "name": "immediate",
+          "line": 554
+        },
+        {
+          "name": "example.1",
+          "line": 564
+        },
+        {
+          "name": "option",
+          "line": 579
+        },
+        {
+          "name": "after",
+          "line": 637
+        },
+        {
+          "name": "on_birth_child",
+          "line": 662
+        },
+        {
+          "name": "on_actions",
+          "line": 693
+        },
+        {
+          "name": "on_birth_child",
+          "line": 717
+        },
+        {
+          "name": "my_on_action",
+          "line": 722
+        },
+        {
+          "name": "on_birth_child",
+          "line": 730
+        },
+        {
+          "name": "five_year_playable_pulse",
+          "line": 893
+        },
+        {
+          "name": "my_five_year_playable_pulse",
+          "line": 896
+        }
+      ]
+    },
+    "wiki_pages/Exporters.md": {
+      "mode": "100644",
+      "blob": "12d13dfd998225d2a5f79ad68c4b3ecaf80f89d2",
+      "sha256": "e5d926f3a09a2546f8f0a728361562dcf6b25faa02051850cd53ec5065a58583",
+      "bytes": 3436,
+      "lines": 95,
+      "full_file_read": true,
+      "definitions": []
+    },
+    "wiki_pages/Flavorization.md": {
+      "mode": "100644",
+      "blob": "23dae96cb8f03b71a7dbbaff8ed4fb302b7ac1ad",
+      "sha256": "0b6aec65ebf0fd373304c81378b5fbf097739880161e45db070adbab48ecf033",
+      "bytes": 9674,
+      "lines": 200,
+      "full_file_read": true,
+      "definitions": [
+        {
+          "name": "prince_male_roman",
+          "line": 19
+        },
+        {
+          "name": "king_robot",
+          "line": 70
+        },
+        {
+          "name": "queen_robot",
+          "line": 80
+        },
+        {
+          "name": "county_robot",
+          "line": 90
+        },
+        {
+          "name": "king_robot",
+          "line": 142
+        },
+        {
+          "name": "king_robot",
+          "line": 151
+        }
+      ]
+    },
+    "wiki_pages/Fonts.md": {
+      "mode": "100644",
+      "blob": "8ef8c7f113004a62419667680e6e4ec3f1913295",
+      "sha256": "6f27395aaef9d67997c1460108ce4e214928ec57e39e63bbc3f6f94a97035f0f",
+      "bytes": 4198,
+      "lines": 73,
+      "full_file_read": true,
+      "definitions": []
+    },
+    "wiki_pages/Governments_modding.md": {
+      "mode": "100644",
+      "blob": "c85f40c13d57fc191036dc29a0141abed767f558",
+      "sha256": "d7bb20b648700bfa89a54f6e57f2286c07891e914aa2b0498c0fa3d8b44ec72a",
+      "bytes": 2594,
+      "lines": 61,
+      "full_file_read": true,
+      "definitions": []
+    },
+    "wiki_pages/Graphical_assets.md": {
+      "mode": "100644",
+      "blob": "491ecb69cbf49fe9dce453786c41651c7c993773",
+      "sha256": "f0e861abbe016035201fa3a090102ec6da730ca7d405e364d48beec27da3e879",
+      "bytes": 485,
+      "lines": 28,
+      "full_file_read": true,
+      "definitions": []
+    },
+    "wiki_pages/History_modding.md": {
+      "mode": "100644",
+      "blob": "00c8256579e615fabf6acb941e36cab8d135c723",
+      "sha256": "3d5e1470a2e9da12c7134e457cefb9ea688516e37fec70f21355ac557227d78c",
+      "bytes": 9014,
+      "lines": 280,
+      "full_file_read": true,
+      "definitions": [
+        {
+          "name": "c_lyon",
+          "line": 20
+        },
+        {
+          "name": "k_england",
+          "line": 263
+        }
+      ]
+    },
+    "wiki_pages/Holdings_modding.md": {
+      "mode": "100644",
+      "blob": "3531ae3c722c0c29579dfe31c7a51ca838794cb8",
+      "sha256": "fd4484e3c64ccf43b035884af76b3adad3127fdc66f1b34d0421ce09424849df",
+      "bytes": 10534,
+      "lines": 330,
+      "full_file_read": true,
+      "definitions": [
+        {
+          "name": "my_holding",
+          "line": 23
+        },
+        {
+          "name": "my_holding",
+          "line": 53
+        },
+        {
+          "name": "my_modifier",
+          "line": 69
+        },
+        {
+          "name": "name_of_the_building",
+          "line": 105
+        },
+        {
+          "name": "my_building",
+          "line": 288
+        }
+      ]
+    },
+    "wiki_pages/Interactions_modding.md": {
+      "mode": "100644",
+      "blob": "d792433bf2dadf64569a030478744967e5e5a30d",
+      "sha256": "3b2ff2c08510a33e97744c425e8937d7ac9e0ba9b424fd3dcbc054ba09ec3833",
+      "bytes": 1463,
+      "lines": 52,
+      "full_file_read": true,
+      "definitions": [
+        {
+          "name": "basic_interaction",
+          "line": 15
+        }
+      ]
+    },
+    "wiki_pages/Interface.md": {
+      "mode": "100644",
+      "blob": "4353f74b25cb509d539e0d8b1be9b4e53583b031",
+      "sha256": "fb984bafe2de94fe90afad74594e7636b6b5bc7621d222b7b961cce91a65b6bf",
+      "bytes": 60378,
+      "lines": 1494,
+      "full_file_read": true,
+      "definitions": [
+        {
+          "name": "widget",
+          "line": 253
+        },
+        {
+          "name": "NumberToString",
+          "line": 306
+        },
+        {
+          "name": "macro",
+          "line": 334
+        },
+        {
+          "name": "state",
+          "line": 499
+        },
+        {
+          "name": "text_single",
+          "line": 622
+        },
+        {
+          "name": "datacontext_from_model",
+          "line": 718
+        },
+        {
+          "name": "my_sgui",
+          "line": 762
+        },
+        {
+          "name": "gui_name",
+          "line": 783
+        },
+        {
+          "name": "effect",
+          "line": 904
+        },
+        {
+          "name": "dynamicgridbox",
+          "line": 927
+        },
+        {
+          "name": "window",
+          "line": 967
+        },
+        {
+          "name": "toggle_my_window",
+          "line": 1023
+        },
+        {
+          "name": "show_my_window",
+          "line": 1053
+        },
+        {
+          "name": "container",
+          "line": 1093
+        },
+        {
+          "name": "container",
+          "line": 1143
+        },
+        {
+          "name": "container",
+          "line": 1235
+        },
+        {
+          "name": "container",
+          "line": 1256
+        },
+        {
+          "name": "button",
+          "line": 1286
+        },
+        {
+          "name": "state",
+          "line": 1297
+        },
+        {
+          "name": "container",
+          "line": 1308
+        },
+        {
+          "name": "window",
+          "line": 1353
+        },
+        {
+          "name": "button",
+          "line": 1369
+        },
+        {
+          "name": "button",
+          "line": 1379
+        },
+        {
+          "name": "button",
+          "line": 1391
+        }
+      ]
+    },
+    "wiki_pages/Lifestyles_modding.md": {
+      "mode": "100644",
+      "blob": "91295d1887b252a3d87265a7535d11b9b5433c0d",
+      "sha256": "cd69a5987efc9e6e2846542d75925c391f99e7408935be0b30cfbaa5b152817c",
+      "bytes": 23621,
+      "lines": 299,
+      "full_file_read": true,
+      "definitions": [
+        {
+          "name": "learning_lifestyle",
+          "line": 25
+        },
+        {
+          "name": "learning_scholarship_focus",
+          "line": 115
+        },
+        {
+          "name": "scholarly_circles_perk",
+          "line": 205
+        }
+      ]
+    },
+    "wiki_pages/List_of_baronies.md": {
+      "mode": "100644",
+      "blob": "f3980125dd7dc81c3220f1a1c657a13e8bb36cae",
+      "sha256": "d5d69a6be327f2ed0fb390216d8dcb2eb4a37dec614ad1bced891e631973904f",
+      "bytes": 58569,
+      "lines": 795,
+      "full_file_read": true,
+      "definitions": []
+    },
+    "wiki_pages/Lists.md": {
+      "mode": "100644",
+      "blob": "6d25f62d415ec7a73f5e3569591fe1a51fba339c",
+      "sha256": "1356df129a9e4a03d9dee42fde7c87e805496f71956723477796e1c20040f4cb",
+      "bytes": 3647,
+      "lines": 152,
+      "full_file_read": true,
+      "definitions": [
+        {
+          "name": "every_child",
+          "line": 31
+        },
+        {
+          "name": "every_relation",
+          "line": 46
+        },
+        {
+          "name": "adult_unlanded_child",
+          "line": 64
+        },
+        {
+          "name": "every_adult_unlanded_child",
+          "line": 78
+        },
+        {
+          "name": "every_in_list",
+          "line": 108
+        },
+        {
+          "name": "add_to_variable_list",
+          "line": 125
+        },
+        {
+          "name": "every_in_list",
+          "line": 138
+        }
+      ]
+    },
+    "wiki_pages/Localization.md": {
+      "mode": "100644",
+      "blob": "2180d918460212be84473dac434561e3bccd1094",
+      "sha256": "5a6118f35aa14b001dcee1100a0e8858babc490f9584c766f14f2aecad922890",
+      "bytes": 24599,
+      "lines": 574,
+      "full_file_read": true,
+      "definitions": [
+        {
+          "name": "my_custom_concept",
+          "line": 377
+        },
+        {
+          "name": "event_name.100",
+          "line": 526
+        }
+      ]
+    },
+    "wiki_pages/Map_modding.md": {
+      "mode": "100644",
+      "blob": "acb0a06a55d4c954f79673a2fa6314018c3108f3",
+      "sha256": "3f80eacf4a8dfc77e05f6cf93cacd7882929892b2ed918a2e18179407c197e4f",
+      "bytes": 35190,
+      "lines": 653,
+      "full_file_read": true,
+      "definitions": [
+        {
+          "name": "d_map_base_color",
+          "line": 472
+        },
+        {
+          "name": "d_map_color_red",
+          "line": 476
+        },
+        {
+          "name": "d_map_color_green",
+          "line": 480
+        },
+        {
+          "name": "d_map_color_blue",
+          "line": 484
+        },
+        {
+          "name": "d_map_color_cyan",
+          "line": 488
+        },
+        {
+          "name": "d_map_color_yellow",
+          "line": 492
+        },
+        {
+          "name": "d_map_color_orange",
+          "line": 496
+        },
+        {
+          "name": "d_map_color_pink",
+          "line": 500
+        },
+        {
+          "name": "custom_mapmode",
+          "line": 513
+        },
+        {
+          "name": "highlight_special_buildings_map",
+          "line": 556
+        },
+        {
+          "name": "text_single",
+          "line": 612
+        },
+        {
+          "name": "button_tertiary",
+          "line": 625
+        }
+      ]
+    },
+    "wiki_pages/Mod_compatibility.md": {
+      "mode": "100644",
+      "blob": "221a41131a1e4b2bd7bab313b69eb9a3eb820618",
+      "sha256": "4b302b91d6998a66ed126bf851f0e6ba09592299fbe812bcd2b5fe297ecd1ad6",
+      "bytes": 9616,
+      "lines": 134,
+      "full_file_read": true,
+      "definitions": [
+        {
+          "name": "erre_fire_shotgun_wedding_effect",
+          "line": 55
+        },
+        {
+          "name": "erre_fire_shotgun_wedding_effect",
+          "line": 68
+        },
+        {
+          "name": "on_game_start",
+          "line": 94
+        },
+        {
+          "name": "shrek_compatibility_on_game_start",
+          "line": 95
+        },
+        {
+          "name": "shrek_is_loaded",
+          "line": 113
+        },
+        {
+          "name": "shrek_is_loaded",
+          "line": 122
+        }
+      ]
+    },
+    "wiki_pages/Mod_structure.md": {
+      "mode": "100644",
+      "blob": "7fdab267c70438802e4012e7a5d89d6be9efb186",
+      "sha256": "e0339bac7c4065a28466d1db3218d93a8725d8c84d9869970c37e8ea20bc2f57",
+      "bytes": 7824,
+      "lines": 143,
+      "full_file_read": true,
+      "definitions": [
+        {
+          "name": "list",
+          "line": 73
+        },
+        {
+          "name": "tags",
+          "line": 105
+        }
+      ]
+    },
+    "wiki_pages/Mod_troubleshooting.md": {
+      "mode": "100644",
+      "blob": "aba66f7047a21054075468b12556dadcf19c0e3f",
+      "sha256": "7c33443de8aee79fe06dcbed8f078b65607503a00e2c2fd170aea76f65d9dab6",
+      "bytes": 10955,
+      "lines": 173,
+      "full_file_read": true,
+      "definitions": [
+        {
+          "name": "create_title_and_vassal_change",
+          "line": 139
+        },
+        {
+          "name": "every_in_list",
+          "line": 144
+        },
+        {
+          "name": "add_hook",
+          "line": 156
+        },
+        {
+          "name": "root",
+          "line": 161
+        }
+      ]
+    },
+    "wiki_pages/Modding.md": {
+      "mode": "100644",
+      "blob": "f9aed4357a81c094fa01b1e18eef4fd35e0c8476",
+      "sha256": "51ea1d39247d12154af2a2e9760d49b05e6907ad71487a622ddf8bb42532f32b",
+      "bytes": 43285,
+      "lines": 614,
+      "full_file_read": true,
+      "definitions": [
+        {
+          "name": "can_raid_trigger",
+          "line": 316
+        },
+        {
+          "name": "NCharacter",
+          "line": 338
+        },
+        {
+          "name": "on_birth",
+          "line": 360
+        },
+        {
+          "name": "my_mod_on_birth",
+          "line": 361
+        },
+        {
+          "name": "on_birth",
+          "line": 368
+        }
+      ]
+    },
+    "wiki_pages/Modding_tools.md": {
+      "mode": "100644",
+      "blob": "afd3f19f88901a32e469e04070d7236419201f36",
+      "sha256": "22d494730339f80f656aa9572395050efd2f17aea1f779f4dbbf71dcaaf0cece",
+      "bytes": 6239,
+      "lines": 46,
+      "full_file_read": true,
+      "definitions": []
+    },
+    "wiki_pages/Modifier_list.md": {
+      "mode": "100644",
+      "blob": "0566f53965cf08f677ce6064720ee302326b0a17",
+      "sha256": "117b48eb607be4fd5e2c5e82269da37d95f7c49da1ff5fe855377c9e906b422f",
+      "bytes": 39948,
+      "lines": 619,
+      "full_file_read": true,
+      "definitions": [
+        {
+          "name": "my_new_modifier",
+          "line": 32
+        }
+      ]
+    },
+    "wiki_pages/Music_modding.md": {
+      "mode": "100644",
+      "blob": "2a919c1a9349f861f784e57c4dc432d6e3c30214",
+      "sha256": "2a150907b5ab21edceeac0d5fead3fbdfb891742de7b052c835a4c668889ff1f",
+      "bytes": 2048,
+      "lines": 86,
+      "full_file_read": true,
+      "definitions": [
+        {
+          "name": "mx_raid",
+          "line": 29
+        },
+        {
+          "name": "category",
+          "line": 40
+        },
+        {
+          "name": "mx_raid",
+          "line": 74
+        }
+      ]
+    },
+    "wiki_pages/Regiments_modding.md": {
+      "mode": "100644",
+      "blob": "7dc56be56881040ee27663d97a1bc7c84b7f9557",
+      "sha256": "eeed17f0f7a1e68f4352c3a7de7b57c7b2d38fe6c911d29acf307bc6965a4ad0",
+      "bytes": 4944,
+      "lines": 156,
+      "full_file_read": true,
+      "definitions": [
+        {
+          "name": "example_maa",
+          "line": 22
+        },
+        {
+          "name": "maa_upgrade",
+          "line": 94
+        },
+        {
+          "name": "tradition_example",
+          "line": 114
+        },
+        {
+          "name": "my_maa",
+          "line": 130
+        }
+      ]
+    },
+    "wiki_pages/Religions_modding.md": {
+      "mode": "100644",
+      "blob": "68cdff38a3b17a79ecf3c5fd7365153be29e6194",
+      "sha256": "fba7f0ef79b08cb5d53a8c6fce392970173edce64c52f6b33f9d4ab2b8af0ad2",
+      "bytes": 17420,
+      "lines": 380,
+      "full_file_read": true,
+      "definitions": [
+        {
+          "name": "rf_abrahamic",
+          "line": 28
+        },
+        {
+          "name": "sea_cults",
+          "line": 54
+        },
+        {
+          "name": "faiths",
+          "line": 148
+        },
+        {
+          "name": "jerusalem",
+          "line": 320
+        }
+      ]
+    },
+    "wiki_pages/Resources_modding.md": {
+      "mode": "100644",
+      "blob": "7426354820b952f96bdbb6e921f4e59c30a90d76",
+      "sha256": "b513be0a194f631e05a6e1a1364ee98aec314033d7742af7564c3cf7175cdcff",
+      "bytes": 773,
+      "lines": 33,
+      "full_file_read": true,
+      "definitions": []
+    },
+    "wiki_pages/Scopes.md": {
+      "mode": "100644",
+      "blob": "92b7fcb08535478fe6a14ea6e672ecbba7a9167b",
+      "sha256": "fda9447b63428224238d11aac2c01fe68e3c6281d06b19965e8ccf58b08e360c",
+      "bytes": 18858,
+      "lines": 544,
+      "full_file_read": true,
+      "definitions": [
+        {
+          "name": "immediate",
+          "line": 110
+        },
+        {
+          "name": "immediate",
+          "line": 128
+        },
+        {
+          "name": "immediate",
+          "line": 143
+        },
+        {
+          "name": "every_child",
+          "line": 297
+        },
+        {
+          "name": "every_child",
+          "line": 310
+        },
+        {
+          "name": "every_child",
+          "line": 324
+        },
+        {
+          "name": "every_child",
+          "line": 338
+        },
+        {
+          "name": "random_child",
+          "line": 355
+        },
+        {
+          "name": "random_child",
+          "line": 368
+        },
+        {
+          "name": "random_child",
+          "line": 382
+        },
+        {
+          "name": "ordered_child",
+          "line": 402
+        },
+        {
+          "name": "ordered_child",
+          "line": 414
+        },
+        {
+          "name": "ordered_child",
+          "line": 427
+        },
+        {
+          "name": "ordered_child",
+          "line": 440
+        },
+        {
+          "name": "any_child",
+          "line": 457
+        },
+        {
+          "name": "any_child",
+          "line": 468
+        },
+        {
+          "name": "any_child",
+          "line": 480
+        },
+        {
+          "name": "any_child",
+          "line": 492
+        },
+        {
+          "name": "any_child",
+          "line": 505
+        },
+        {
+          "name": "save_scope_value_as",
+          "line": 525
+        }
+      ]
+    },
+    "wiki_pages/Scopes_list.md": {
+      "mode": "100644",
+      "blob": "ba64c36bb4eea3ad49e8adfbff28b72359136b89",
+      "sha256": "54411fe9246eff310d6de295bf726267d875688fcefbee47200ffe1885a78cf1",
+      "bytes": 10337,
+      "lines": 341,
+      "full_file_read": true,
+      "definitions": []
+    },
+    "wiki_pages/Script_values.md": {
+      "mode": "100644",
+      "blob": "893b56157265c29051a54470df7a7ce7cc9f8e8a",
+      "sha256": "66f62f3ac03a8c1fc03cb6d4a59a9422250076cb30b1adf7b557d55b60357fb2",
+      "bytes": 5348,
+      "lines": 227,
+      "full_file_read": true,
+      "definitions": [
+        {
+          "name": "sum_of_all_skills_value",
+          "line": 18
+        },
+        {
+          "name": "name_of_scripted_value",
+          "line": 32
+        },
+        {
+          "name": "value",
+          "line": 84
+        },
+        {
+          "name": "add_gold",
+          "line": 103
+        },
+        {
+          "name": "example_age",
+          "line": 117
+        },
+        {
+          "name": "add_gold",
+          "line": 124
+        },
+        {
+          "name": "add_gold",
+          "line": 150
+        },
+        {
+          "name": "add_gold",
+          "line": 166
+        },
+        {
+          "name": "temp",
+          "line": 181
+        },
+        {
+          "name": "text_single",
+          "line": 200
+        }
+      ]
+    },
+    "wiki_pages/Scripted_effects.md": {
+      "mode": "100644",
+      "blob": "4f55c33dc2f6bd4cf66e8d5df23c41aefc2da97b",
+      "sha256": "4149947783c5b7e0445f4110308e994ddc62af85500f3ad2f340738ded282eaa",
+      "bytes": 1557,
+      "lines": 48,
+      "full_file_read": true,
+      "definitions": [
+        {
+          "name": "mana_power_increase",
+          "line": 14
+        },
+        {
+          "name": "mana_power_increase",
+          "line": 33
+        }
+      ]
+    },
+    "wiki_pages/Scripting.md": {
+      "mode": "100644",
+      "blob": "13959f0ea0d7016cbab4310c6be21fbb84d0975e",
+      "sha256": "7ed28df1561fd60b3515b1ed5d50afe56c7afa1101cc4efd9ae1f32638e40067",
+      "bytes": 25924,
+      "lines": 942,
+      "full_file_read": true,
+      "definitions": [
+        {
+          "name": "x",
+          "line": 136
+        },
+        {
+          "name": "primary_heir",
+          "line": 193
+        },
+        {
+          "name": "on_death",
+          "line": 231
+        },
+        {
+          "name": "primary_heir",
+          "line": 254
+        },
+        {
+          "name": "county.holder",
+          "line": 272
+        },
+        {
+          "name": "OR",
+          "line": 292
+        },
+        {
+          "name": "primary_heir",
+          "line": 346
+        },
+        {
+          "name": "save_scope_value_as",
+          "line": 355
+        },
+        {
+          "name": "save_scope_value_as",
+          "line": 364
+        },
+        {
+          "name": "if",
+          "line": 368
+        },
+        {
+          "name": "set_variable",
+          "line": 401
+        },
+        {
+          "name": "set_variable",
+          "line": 426
+        },
+        {
+          "name": "if",
+          "line": 486
+        },
+        {
+          "name": "if",
+          "line": 497
+        },
+        {
+          "name": "else_if",
+          "line": 504
+        },
+        {
+          "name": "else",
+          "line": 508
+        },
+        {
+          "name": "switch",
+          "line": 529
+        },
+        {
+          "name": "switch",
+          "line": 539
+        },
+        {
+          "name": "if",
+          "line": 549
+        },
+        {
+          "name": "else_if",
+          "line": 553
+        },
+        {
+          "name": "else_if",
+          "line": 557
+        },
+        {
+          "name": "while",
+          "line": 573
+        },
+        {
+          "name": "while",
+          "line": 578
+        },
+        {
+          "name": "trigger_if",
+          "line": 595
+        },
+        {
+          "name": "trigger_if",
+          "line": 604
+        },
+        {
+          "name": "trigger_else_if",
+          "line": 608
+        },
+        {
+          "name": "trigger_else_if",
+          "line": 612
+        },
+        {
+          "name": "trigger_else",
+          "line": 616
+        },
+        {
+          "name": "every_ruler",
+          "line": 666
+        },
+        {
+          "name": "every_ruler",
+          "line": 709
+        },
+        {
+          "name": "any_living_character",
+          "line": 740
+        },
+        {
+          "name": "my_value",
+          "line": 874
+        }
+      ]
+    },
+    "wiki_pages/Sound_modding.md": {
+      "mode": "100644",
+      "blob": "6898f9ebf4a7a20a4e1482ccb696284ceafce7d1",
+      "sha256": "5fce0c9192b260d856c97e2071d77165681b0916e7c1d5da9e6b223d10afc193",
+      "bytes": 13489,
+      "lines": 321,
+      "full_file_read": true,
+      "definitions": [
+        {
+          "name": "state",
+          "line": 159
+        },
+        {
+          "name": "asset",
+          "line": 179
+        },
+        {
+          "name": "state",
+          "line": 187
+        },
+        {
+          "name": "start_sound",
+          "line": 287
+        }
+      ]
+    },
+    "wiki_pages/Story_cycles_modding.md": {
+      "mode": "100644",
+      "blob": "7a691dfe69f5adfe878236ff91cc2327b4f73d56",
+      "sha256": "a00853c1662d43784f1d84c375599503df229f08aad95fbf7e02f430591ab993",
+      "bytes": 3047,
+      "lines": 98,
+      "full_file_read": true,
+      "definitions": [
+        {
+          "name": "story_cycle_name",
+          "line": 25
+        },
+        {
+          "name": "effect_group",
+          "line": 77
+        }
+      ]
+    },
+    "wiki_pages/Struggle_modding.md": {
+      "mode": "100644",
+      "blob": "662702e72265416d192d3eb2d13948eabba1d11a",
+      "sha256": "90838c5d3420d28a871ed66b8032c7501de29b16601ba9735f419e9a7430304f",
+      "bytes": 19154,
+      "lines": 472,
+      "full_file_read": true,
+      "definitions": [
+        {
+          "name": "cultures",
+          "line": 38
+        },
+        {
+          "name": "faiths",
+          "line": 46
+        },
+        {
+          "name": "regions",
+          "line": 62
+        },
+        {
+          "name": "custom_struggle",
+          "line": 100
+        },
+        {
+          "name": "struggle_phase_custom_1",
+          "line": 106
+        },
+        {
+          "name": "texticon",
+          "line": 115
+        },
+        {
+          "name": "on_start",
+          "line": 133
+        },
+        {
+          "name": "enable_custom_struggle_effect",
+          "line": 174
+        },
+        {
+          "name": "on_game_start",
+          "line": 188
+        },
+        {
+          "name": "phase_list",
+          "line": 204
+        },
+        {
+          "name": "phase_list",
+          "line": 252
+        },
+        {
+          "name": "following_phase",
+          "line": 429
+        },
+        {
+          "name": "struggle_iberia_phase_hostility",
+          "line": 456
+        }
+      ]
+    },
+    "wiki_pages/Terrain_modding.md": {
+      "mode": "100644",
+      "blob": "95d9bf52aec4f6ff76350998f45d40a686446ca7",
+      "sha256": "7f112e4ba079d1cb36ac9fab752461ed5544c28d35ddaf3e283ea1cf95795966",
+      "bytes": 8486,
+      "lines": 186,
+      "full_file_read": true,
+      "definitions": [
+        {
+          "name": "forest",
+          "line": 46
+        },
+        {
+          "name": "defender_combat_effects",
+          "line": 151
+        }
+      ]
+    },
+    "wiki_pages/Title_modding.md": {
+      "mode": "100644",
+      "blob": "ab3e71b9dbd8dc5ef3d311c4ddf0834670736cc6",
+      "sha256": "ab8b8bd620c093cc8fa7405d1e4071a0c1f99e54bd06c35745884b82b4bc6f4f",
+      "bytes": 12079,
+      "lines": 217,
+      "full_file_read": true,
+      "definitions": [
+        {
+          "name": "k_titular_kingdom_name",
+          "line": 40
+        },
+        {
+          "name": "h_my_hegemony",
+          "line": 52
+        },
+        {
+          "name": "e_my_empire",
+          "line": 56
+        },
+        {
+          "name": "k_my_kingdom",
+          "line": 61
+        },
+        {
+          "name": "d_my_duchy",
+          "line": 66
+        },
+        {
+          "name": "c_my_county",
+          "line": 72
+        },
+        {
+          "name": "b_my_barony",
+          "line": 78
+        },
+        {
+          "name": "d_my_another_duchy",
+          "line": 84
+        },
+        {
+          "name": "d_NAME",
+          "line": 161
+        },
+        {
+          "name": "k_titular_kingdom_name",
+          "line": 204
+        }
+      ]
+    },
+    "wiki_pages/Trait_modding.md": {
+      "mode": "100644",
+      "blob": "74e77984dae040c886d205f5a8383ca3b960a3f8",
+      "sha256": "2b355feb18396c7da943d11dcd639e241766c16dde4d9f282e9fe126a33ddc6a",
+      "bytes": 15073,
+      "lines": 205,
+      "full_file_read": true,
+      "definitions": [
+        {
+          "name": "my_new_trait",
+          "line": 65
+        },
+        {
+          "name": "name",
+          "line": 163
+        },
+        {
+          "name": "icon",
+          "line": 176
+        }
+      ]
+    },
+    "wiki_pages/Triggers.md": {
+      "mode": "100644",
+      "blob": "b7422dfedc342131598db92b8d9c521a1ce612a3",
+      "sha256": "49102465f1d9839e234a4b078c73182d87299b1dc8cdfdf4f7fbc9f7dc7a8b08",
+      "bytes": 15109,
+      "lines": 512,
+      "full_file_read": true,
+      "definitions": [
+        {
+          "name": "modifier",
+          "line": 65
+        },
+        {
+          "name": "trigger",
+          "line": 87
+        },
+        {
+          "name": "trigger",
+          "line": 102
+        },
+        {
+          "name": "AND",
+          "line": 121
+        },
+        {
+          "name": "OR",
+          "line": 135
+        },
+        {
+          "name": "NOT",
+          "line": 149
+        },
+        {
+          "name": "NAND",
+          "line": 159
+        },
+        {
+          "name": "NOR",
+          "line": 170
+        },
+        {
+          "name": "if",
+          "line": 193
+        },
+        {
+          "name": "every_child",
+          "line": 207
+        },
+        {
+          "name": "trigger_if",
+          "line": 225
+        },
+        {
+          "name": "trigger",
+          "line": 238
+        },
+        {
+          "name": "trigger_if",
+          "line": 249
+        },
+        {
+          "name": "is_scheming_against",
+          "line": 360
+        },
+        {
+          "name": "distance_to_liege_sval",
+          "line": 378
+        },
+        {
+          "name": "is_rich_adult_independent_ruler",
+          "line": 418
+        },
+        {
+          "name": "NOT",
+          "line": 441
+        },
+        {
+          "name": "is_related_vassal_of",
+          "line": 465
+        },
+        {
+          "name": "is_related_vassal_of",
+          "line": 476
+        }
+      ]
+    },
+    "wiki_pages/Triggers_list.md": {
+      "mode": "100644",
+      "blob": "90d9514f7315a4cec7f7ca8a62d5408ff0eeced0",
+      "sha256": "6d93788cfcfe520bc5659c56a6cae3eedbaf6ea4248b040cbe6d7437d67b1f71",
+      "bytes": 180712,
+      "lines": 1097,
+      "full_file_read": true,
+      "definitions": []
+    },
+    "wiki_pages/Variables.md": {
+      "mode": "100644",
+      "blob": "a046361cb406d6a891b5b3c7d0569af1cbe42eac",
+      "sha256": "5999a7d76afe60a9246036dace738b3b3fec50ac73e2e8f3feeaa3156e0eb926",
+      "bytes": 5512,
+      "lines": 236,
+      "full_file_read": true,
+      "definitions": [
+        {
+          "name": "set_variable",
+          "line": 21
+        },
+        {
+          "name": "set_variable",
+          "line": 44
+        },
+        {
+          "name": "set_variable",
+          "line": 64
+        },
+        {
+          "name": "set_variable",
+          "line": 74
+        },
+        {
+          "name": "set_variable",
+          "line": 88
+        },
+        {
+          "name": "set_variable",
+          "line": 99
+        },
+        {
+          "name": "set_variable",
+          "line": 103
+        },
+        {
+          "name": "set_variable",
+          "line": 115
+        },
+        {
+          "name": "set_variable",
+          "line": 127
+        },
+        {
+          "name": "change_variable",
+          "line": 151
+        }
+      ]
+    },
+    "wiki_pages/Weight_modifier.md": {
+      "mode": "100644",
+      "blob": "8e8ffe53c17f1873ee1de31bd73162e0a4aa5a13",
+      "sha256": "03ef9aa1e860e82e6ca083c3b3f4e9a40683688acb9dd0e093a1e995fd009c16",
+      "bytes": 3542,
+      "lines": 157,
+      "full_file_read": true,
+      "definitions": [
+        {
+          "name": "modifier",
+          "line": 29
+        },
+        {
+          "name": "modifier",
+          "line": 44
+        },
+        {
+          "name": "modifier",
+          "line": 47
+        },
+        {
+          "name": "modifier",
+          "line": 59
+        },
+        {
+          "name": "modifier",
+          "line": 63
+        },
+        {
+          "name": "age_and_gender_modifier",
+          "line": 87
+        },
+        {
+          "name": "modifier",
+          "line": 116
+        },
+        {
+          "name": "rich_vassal_modifier",
+          "line": 128
+        },
+        {
+          "name": "rich_vassal_modifier",
+          "line": 143
+        }
+      ]
+    }
+  },
+  "current_mod_game_patches": [],
+  "deleted_vs_11906": [],
+  "descriptor": "",
+  "historical_changes": []
+}

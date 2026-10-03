@@ -1,5 +1,7 @@
 # Searching and refreshing the local reference
 
+For historical versions, use the separate [full Vanilla Git clone](vanilla-history.md). Its ignored cache is excluded from mod inventories and preservation scans; ordinary lookup continues to use the installed-game and workspace indexes. Explicit version comparisons read pinned Git blobs and do not require switching the checkout.
+
 ## Files
 
 | Reference | Contents | Limit |

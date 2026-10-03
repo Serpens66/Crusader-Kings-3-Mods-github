@@ -18,19 +18,20 @@ This is a working reference for building new Crusader Kings III mods in this wor
 | Player-facing text and buttons | [Localization and GUI](systems/localization-and-gui.md) |
 | Traits, modifiers and balance | [Traits, modifiers and defines](systems/traits-modifiers-defines.md) |
 | Other game systems | [Subsystem guide](systems/subsystem-guide.md) |
+| Religion and clerical systems in 1.20 | [Religion and rites](systems/religion-rites.md) |
+| Puppets and dynamic decision lists | [Puppets and selection](systems/puppets-and-selection.md) |
+| Current schema and hook migrations | [Crozier migration](systems/crozier-migration.md) |
+| New GUI, asset and diagnostic facilities | [Crozier GUI/tools](systems/crozier-gui-tools.md) |
+| Coverage of current source findings | [Crozier source ledger](research/crozier-source-coverage.md) |
 | Start from concrete files | [Examples and test scenarios](examples/README.md) |
 | Learn from existing work | [Workspace case studies](workspace/case-studies.md) and [inventory](reference/workspace-inventory.md) |
 | Current engine declarations | [Versioned engine reference](reference/engine-reference.md) |
 | Detailed function/state contracts | [Function guide](workspace/function-contracts.md), [43 cards](update-readiness/contracts/README.md), [Knight variants](workspace/knight-manager-contracts.md) |
 | Complete fixture acceptance runs | [Three-run manual](examples/test-runs.md), [completion status](research/completion-report.md) |
-| Current engine declarations | [Versioned engine reference](reference/engine-reference.md) |
-| Detailed function/state contracts | [Function guide](workspace/function-contracts.md), [43 cards](update-readiness/contracts/README.md), [Knight variants](workspace/knight-manager-contracts.md) |
-| Complete fixture acceptance runs | [Three-run manual](examples/test-runs.md), [completion status](research/completion-report.md) |
-| Current engine declarations | [Versioned engine reference](reference/engine-reference.md) |
-| Detailed function/state contracts | [Function guide](workspace/function-contracts.md), [43 cards](update-readiness/contracts/README.md), [Knight variants](workspace/knight-manager-contracts.md) |
-| Complete fixture acceptance runs | [Three-run manual](examples/test-runs.md), [completion status](research/completion-report.md) |
 | Find a function or an object | [Command quick reference](reference/commands.md), [local lookup](reference/index-guide.md) |
+| Compare historical Vanilla versions | [Full local Git reference and commands](reference/vanilla-history.md), [initial 1.19→1.20 findings](research/vanilla-history-20261003.md) |
 | Prepare existing mods for the installed version | [Update readiness and per-mod packages](update-readiness/README.md) |
+| Investigate Mass Demand Conversion | [Focused source audit](update-readiness/mods/mass-demand-conversion-audit.md), [native acceptance matrix](update-readiness/mods/mass-demand-conversion-tests.md) |
 | Assess readiness against the existing mods | [Documentation readiness audit](research/documentation-readiness.md) |
 | Check confidence and gaps | [Audit findings](research/vanilla-audit.md), [coverage](research/coverage.md), [sources](research/sources.md) |
 
@@ -57,3 +58,7 @@ See the [static verification report](research/verification.md) for checked links
 ## Maintaining this reference
 
 See [index tools](reference/index-guide.md). Regenerate indexes after a patch, compare the relevant hashes and review affected teaching statements. Update source dates and coverage explicitly; a new index alone does not revalidate the handbook. No recurring upkeep or automatic game launch is configured.
+
+## Additional jesec research — 2026-10-03
+
+Read [Dynasty legacy contracts](systems/dynasty-legacies.md) for current track/perk scopes, all additional content, relaxed eligibility and the historical/current GUI distinction. The [repository report](research/jesec-repositories.md), [57-page Wiki ledger](research/jesec-wiki-coverage.md) and [additional Wiki guidance](reference/wiki-extensions.md) integrate with the existing Vanilla-history lock and Crozier chapters. Source pins and new static reports are kept separately; existing gameplay/GUI/MP blockers remain.

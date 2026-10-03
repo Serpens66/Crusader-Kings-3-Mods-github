@@ -93,3 +93,7 @@ For each operation, record current type, target type, source of each name, lifet
 The [current engine reference](../reference/engine-reference.md) now indexes six script and five data-type exports with exact raw line ranges and checksums. Historical statements above about absent generated dumps describe the initial research stage. Use [lookup](../tools/lookup.py) for both engine declarations and existing local definitions/callers. Missing optionality, argument types, scope lifetime, permissions and multiplayer routing remain unknown where the export does not specify them.
 
 See [workspace function contracts](../workspace/function-contracts.md) for owner/caller/state distinctions and [isolated tests](../examples/test-runs.md) for runtime acceptance. The user completed export sessions, but no example gameplay/GUI/MP tests have been performed.
+
+## General Crozier source supplement — 2026-10-03
+
+Puppet interactions distinguish actor, effective actor and puppeteer; puppet decisions have a different root. See [Puppets and selection](../systems/puppets-and-selection.md). Several on-action exports say `none` while native headers document a character/title root; see the explicit discrepancies in [lifecycle contracts](../systems/crozier-migration.md).

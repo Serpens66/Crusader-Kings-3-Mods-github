@@ -495,11 +495,215 @@
       "id": "A03",
       "title": "Wiki mirror license",
       "original_url": "https://github.com/jesec/ck3-modding-wiki/blob/master/LICENSE",
-      "accessed_url": "https://github.com/jesec/ck3-modding-wiki/blob/master/LICENSE",
+      "accessed_url": "https://github.com/jesec/ck3-modding-wiki/blob/db66965014483aa1a0e0905e5a922be9ee3b9a2f/LICENSE",
       "retrieval_date": "2026-10-03",
-      "status": "consulted",
-      "version_note": "Repository declares MIT; underlying Wiki content rights not automatically settled",
+      "status": "pinned LICENSE read",
+      "version_note": "Pinned LICENSE: Wiki articles CC BY-SA 3.0 Unported; individual images and Paradox game content separate. Earlier MIT attribution corrected.",
       "topics": "No wholesale text archive created"
+    },
+    {
+      "id": "W42",
+      "title": "AI modding",
+      "original_url": "https://ck3.paradoxwikis.com/AI_modding",
+      "accessed_url": "https://github.com/jesec/ck3-modding-wiki/blob/db66965014483aa1a0e0905e5a922be9ee3b9a2f/wiki_pages/AI_modding.md",
+      "retrieval_date": "2026-10-03",
+      "status": "pinned mirror read; historical orientation",
+      "version_note": "No exact current-installation label",
+      "topics": "New AI reader/personality/conqueror research pointers; hardcoded-army claim not certified for Crozier."
+    },
+    {
+      "id": "W43",
+      "title": "Commands",
+      "original_url": "https://ck3.paradoxwikis.com/Commands",
+      "accessed_url": "https://github.com/jesec/ck3-modding-wiki/blob/db66965014483aa1a0e0905e5a922be9ee3b9a2f/wiki_pages/Commands.md",
+      "retrieval_date": "2026-10-03",
+      "status": "pinned mirror read; historical orientation",
+      "version_note": "1.0",
+      "topics": "Historical 1.0 list; current effect declarations replace API table. Console commands kept separate."
+    },
+    {
+      "id": "W44",
+      "title": "Council modding",
+      "original_url": "https://ck3.paradoxwikis.com/Council_modding",
+      "accessed_url": "https://github.com/jesec/ck3-modding-wiki/blob/db66965014483aa1a0e0905e5a922be9ee3b9a2f/wiki_pages/Council_modding.md",
+      "retrieval_date": "2026-10-03",
+      "status": "pinned mirror read; historical orientation",
+      "version_note": "No exact current-installation label",
+      "topics": "New position/task distinction; historical missing-task crash/new-game claim retained as a test gate."
+    },
+    {
+      "id": "W45",
+      "title": "Customizable localization",
+      "original_url": "https://ck3.paradoxwikis.com/Customizable_localization",
+      "accessed_url": "https://github.com/jesec/ck3-modding-wiki/blob/db66965014483aa1a0e0905e5a922be9ee3b9a2f/wiki_pages/Customizable_localization.md",
+      "retrieval_date": "2026-10-03",
+      "status": "pinned mirror read; historical orientation",
+      "version_note": "No exact current-installation label",
+      "topics": "See complete page ledger; feature-specific current audit remains necessary."
+    },
+    {
+      "id": "W46",
+      "title": "Exporters",
+      "original_url": "https://ck3.paradoxwikis.com/Exporters",
+      "accessed_url": "https://github.com/jesec/ck3-modding-wiki/blob/db66965014483aa1a0e0905e5a922be9ee3b9a2f/wiki_pages/Exporters.md",
+      "retrieval_date": "2026-10-03",
+      "status": "pinned mirror read; historical orientation",
+      "version_note": "Archive says timeless; not certified",
+      "topics": "New historical Maya/Photoshop pipeline map; tool/version/deployment availability unresolved; nothing installed."
+    },
+    {
+      "id": "W47",
+      "title": "Flavorization",
+      "original_url": "https://ck3.paradoxwikis.com/Flavorization",
+      "accessed_url": "https://github.com/jesec/ck3-modding-wiki/blob/db66965014483aa1a0e0905e5a922be9ee3b9a2f/wiki_pages/Flavorization.md",
+      "retrieval_date": "2026-10-03",
+      "status": "pinned mirror read; historical orientation",
+      "version_note": "No exact current-installation label",
+      "topics": "New eligibility/priority/custom localization orientation; current priority/consumer audit required."
+    },
+    {
+      "id": "W48",
+      "title": "Fonts",
+      "original_url": "https://ck3.paradoxwikis.com/Fonts",
+      "accessed_url": "https://github.com/jesec/ck3-modding-wiki/blob/db66965014483aa1a0e0905e5a922be9ee3b9a2f/wiki_pages/Fonts.md",
+      "retrieval_date": "2026-10-03",
+      "status": "pinned mirror read; historical orientation",
+      "version_note": "No exact current-installation label",
+      "topics": "New format/asset/license review path; rename-as-conversion shortcut not adopted or tested."
+    },
+    {
+      "id": "W49",
+      "title": "Governments modding",
+      "original_url": "https://ck3.paradoxwikis.com/Governments_modding",
+      "accessed_url": "https://github.com/jesec/ck3-modding-wiki/blob/db66965014483aa1a0e0905e5a922be9ee3b9a2f/wiki_pages/Governments_modding.md",
+      "retrieval_date": "2026-10-03",
+      "status": "pinned mirror read; historical orientation",
+      "version_note": "No exact current-installation label",
+      "topics": "Short pointer already surpassed by Crozier mechanic schema; no complete modern contract in Wiki."
+    },
+    {
+      "id": "W50",
+      "title": "Graphical assets",
+      "original_url": "https://ck3.paradoxwikis.com/Graphical_assets",
+      "accessed_url": "https://github.com/jesec/ck3-modding-wiki/blob/db66965014483aa1a0e0905e5a922be9ee3b9a2f/wiki_pages/Graphical_assets.md",
+      "retrieval_date": "2026-10-03",
+      "status": "pinned mirror read; historical orientation",
+      "version_note": "Archive says timeless; not certified",
+      "topics": "New palette-specific formats separated from GUI frames/icons; no pixel/render audit."
+    },
+    {
+      "id": "W51",
+      "title": "History modding",
+      "original_url": "https://ck3.paradoxwikis.com/History_modding",
+      "accessed_url": "https://github.com/jesec/ck3-modding-wiki/blob/db66965014483aa1a0e0905e5a922be9ee3b9a2f/wiki_pages/History_modding.md",
+      "retrieval_date": "2026-10-03",
+      "status": "pinned mirror read; historical orientation",
+      "version_note": "1.1",
+      "topics": "New consolidated date/holder/liege/bookmark orientation; exact merge behavior needs feature audit."
+    },
+    {
+      "id": "W52",
+      "title": "Holdings modding",
+      "original_url": "https://ck3.paradoxwikis.com/Holdings_modding",
+      "accessed_url": "https://github.com/jesec/ck3-modding-wiki/blob/db66965014483aa1a0e0905e5a922be9ee3b9a2f/wiki_pages/Holdings_modding.md",
+      "retrieval_date": "2026-10-03",
+      "status": "pinned mirror read; historical orientation",
+      "version_note": "1.3",
+      "topics": "New generated holding modifier orientation; repeated game/game paths and DDS concept path unreliable."
+    },
+    {
+      "id": "W53",
+      "title": "List of baronies",
+      "original_url": "https://ck3.paradoxwikis.com/List_of_baronies",
+      "accessed_url": "https://github.com/jesec/ck3-modding-wiki/blob/db66965014483aa1a0e0905e5a922be9ee3b9a2f/wiki_pages/List_of_baronies.md",
+      "retrieval_date": "2026-10-03",
+      "status": "pinned mirror read; historical orientation",
+      "version_note": "No exact current-installation label",
+      "topics": "Historical ID catalogue; current title/history/province sources remain authoritative."
+    },
+    {
+      "id": "W54",
+      "title": "Resources modding",
+      "original_url": "https://ck3.paradoxwikis.com/Resources_modding",
+      "accessed_url": "https://github.com/jesec/ck3-modding-wiki/blob/db66965014483aa1a0e0905e5a922be9ee3b9a2f/wiki_pages/Resources_modding.md",
+      "retrieval_date": "2026-10-03",
+      "status": "pinned mirror read; historical orientation",
+      "version_note": "1.2",
+      "topics": "New piety value/helper/cost distinction; exact current payment contracts already more detailed."
+    },
+    {
+      "id": "W55",
+      "title": "Story cycles modding",
+      "original_url": "https://ck3.paradoxwikis.com/Story_cycles_modding",
+      "accessed_url": "https://github.com/jesec/ck3-modding-wiki/blob/db66965014483aa1a0e0905e5a922be9ee3b9a2f/wiki_pages/Story_cycles_modding.md",
+      "retrieval_date": "2026-10-03",
+      "status": "pinned mirror read; historical orientation",
+      "version_note": "Archive says timeless; not certified",
+      "topics": "New state/recurring-cycle guide plus current .info hooks; owner lifetime and exactly-once tests pending."
+    },
+    {
+      "id": "W56",
+      "title": "Struggle modding",
+      "original_url": "https://ck3.paradoxwikis.com/Struggle_modding",
+      "accessed_url": "https://github.com/jesec/ck3-modding-wiki/blob/db66965014483aa1a0e0905e5a922be9ee3b9a2f/wiki_pages/Struggle_modding.md",
+      "retrieval_date": "2026-10-03",
+      "status": "pinned mirror read; historical orientation",
+      "version_note": "Archive says timeless; not certified",
+      "topics": "New phase/catalyst/parameter-consumer map; three/four-category inconsistency; placeholder example incomplete."
+    },
+    {
+      "id": "W57",
+      "title": "Terrain modding",
+      "original_url": "https://ck3.paradoxwikis.com/Terrain_modding",
+      "accessed_url": "https://github.com/jesec/ck3-modding-wiki/blob/db66965014483aa1a0e0905e5a922be9ee3b9a2f/wiki_pages/Terrain_modding.md",
+      "retrieval_date": "2026-10-03",
+      "status": "pinned mirror read; historical orientation",
+      "version_note": "Archive says timeless; not certified",
+      "topics": "New terrain/travel/fertility/initialization orientation; no independent map feature/audit/render test."
+    },
+    {
+      "id": "J01",
+      "title": "ck3-modding-wiki",
+      "original_url": "https://github.com/jesec/ck3-modding-wiki",
+      "accessed_url": "https://github.com/jesec/ck3-modding-wiki/tree/db66965014483aa1a0e0905e5a922be9ee3b9a2f",
+      "commit": "db66965014483aa1a0e0905e5a922be9ee3b9a2f",
+      "retrieval_date": "2026-10-03",
+      "status": "bare clone; full relevant source investigation",
+      "version_note": "Pinned archive",
+      "topics": "See research/jesec-repositories.md; detailed source/coverage inventories"
+    },
+    {
+      "id": "J02",
+      "title": "ck3-mod-more-legacies",
+      "original_url": "https://github.com/jesec/ck3-mod-more-legacies",
+      "accessed_url": "https://github.com/jesec/ck3-mod-more-legacies/tree/6a30f714cfb6dcaf3811ea3e912b7f7e0cdc8cac",
+      "commit": "6a30f714cfb6dcaf3811ea3e912b7f7e0cdc8cac",
+      "retrieval_date": "2026-10-03",
+      "status": "bare clone; full relevant source investigation",
+      "version_note": "Descriptor 1.19.*; source delta compared with locked 1.19.0.6; current audit 1.20.0.3",
+      "topics": "See research/jesec-repositories.md; detailed source/coverage inventories"
+    },
+    {
+      "id": "J03",
+      "title": "ck3-mod-less-restrictive-legacies",
+      "original_url": "https://github.com/jesec/ck3-mod-less-restrictive-legacies",
+      "accessed_url": "https://github.com/jesec/ck3-mod-less-restrictive-legacies/tree/79494e84c4ff5eaba6e49dc3edaad71bf5814fa4",
+      "commit": "79494e84c4ff5eaba6e49dc3edaad71bf5814fa4",
+      "retrieval_date": "2026-10-03",
+      "status": "bare clone; full relevant source investigation",
+      "version_note": "Descriptor 1.19.*; source delta compared with locked 1.19.0.6; current audit 1.20.0.3",
+      "topics": "See research/jesec-repositories.md; detailed source/coverage inventories"
+    },
+    {
+      "id": "J04",
+      "title": "ck3-mod-scrollable-legacies",
+      "original_url": "https://github.com/jesec/ck3-mod-scrollable-legacies",
+      "accessed_url": "https://github.com/jesec/ck3-mod-scrollable-legacies/tree/754cc0ed5863e9db37eba092d66cd5487317f7d9",
+      "commit": "754cc0ed5863e9db37eba092d66cd5487317f7d9",
+      "retrieval_date": "2026-10-03",
+      "status": "bare clone; full relevant source investigation",
+      "version_note": "Descriptor 1.19.*; source delta compared with locked 1.19.0.6; current audit 1.20.0.3",
+      "topics": "See research/jesec-repositories.md; detailed source/coverage inventories"
     }
   ],
   "access_limitations": [
@@ -646,5 +850,13 @@
       "Historical web pages do not override installed declarations",
       "No Tiger run or asserted 1.20.0.3 support"
     ]
+  },
+  "jesec_supplement": {
+    "report": "research/jesec-repositories.md",
+    "evidence": "research/jesec/evidence.json",
+    "feature_audit": "research/jesec/feature-audit.json",
+    "wiki_pages": "research/jesec/wiki-page-coverage.json",
+    "base_lock_preserved": true,
+    "runtime_tests": "not run"
   }
 }

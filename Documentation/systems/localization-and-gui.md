@@ -60,3 +60,11 @@ Check correct language/header, every referenced key, long and multiline strings,
 The [current engine reference](../reference/engine-reference.md) now indexes six script and five data-type exports with exact raw line ranges and checksums. Historical statements above about absent generated dumps describe the initial research stage. Use [lookup](../tools/lookup.py) for both engine declarations and existing local definitions/callers. Missing optionality, argument types, scope lifetime, permissions and multiplayer routing remain unknown where the export does not specify them.
 
 See [workspace function contracts](../workspace/function-contracts.md) for owner/caller/state distinctions and [isolated tests](../examples/test-runs.md) for runtime acceptance. The user completed export sessions, but no example gameplay/GUI/MP tests have been performed.
+
+## General Crozier source supplement — 2026-10-03
+
+See [Crozier GUI/tools](crozier-gui-tools.md) for data-model joining, database localization, morpheme rules, portrait packs/sets and the unresolved `IS_LAST_ITEM` versus `IS_LAST_INDEX` token discrepancy. [Dynamic decision selection](puppets-and-selection.md) requires a matching controller and item data context.
+
+## Legacy containers and historical overrides
+
+The [legacy GUI audit](dynasty-legacies.md) traces `DynastyHouseView.GetLegacies`, item contexts, framed progress and separate `GetIcon`/`GetTrackIcon` consumers. The historical Scrollable replacement is superseded in the examined native snapshots; do not transplant its full window into Crozier. Twenty custom asset object IDs and nine localization key sets are inventoried, without claiming rendering or path-resolution success.

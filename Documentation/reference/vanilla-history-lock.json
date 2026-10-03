@@ -1,0 +1,15 @@
+{
+  "url": "https://github.com/jesec/ck3-mod-base.git",
+  "recorded_date": "2026-10-03",
+  "cache": ".reference-cache/ck3-mod-base",
+  "versions": {
+    "1.19.0.6": {
+      "tag": "base/1.19.0.6",
+      "commit": "85e1ca4fcee5a1e2238b9db13c70a335fa94dac8"
+    },
+    "1.20.0.3": {
+      "tag": "base/1.20.0.3",
+      "commit": "0ec13350cde9e410b37a46d3616966838f4ba994"
+    }
+  }
+}

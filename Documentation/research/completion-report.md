@@ -29,3 +29,11 @@ The [three-run manual](../examples/test-runs.md) tells the user exactly which pa
 ## Next acceptance boundary
 
 Complete runs A/B/C, record exact deltas and new diagnostics, then correct only proven fixture failures and rerun affected cases. Decide [original behavior questions](../update-readiness/behavior-decisions.md) before any dependent mod update. A successful own interaction probe does not close native conversion's puppet/authority contract; a +2 gold GUI click does not establish ruler-designer permission. Mod update work remains separate and must satisfy the per-feature gates.
+
+## Mass conversion supplement — 2026-10-03
+
+A [focused source audit](../update-readiness/mods/mass-demand-conversion-audit.md), [native acceptance matrix](../update-readiness/mods/mass-demand-conversion-tests.md) and [fresh supplemental evidence](../update-readiness/evidence/mass-conversion-audit-20261003.json) now refine the original MC gates. Conditional costs, effect fallback and delayed study routes are source-confirmed; G01–G05 remain open. This adds no completed gameplay/GUI/MP test and no mod update or compatibility declaration. Historical preservation/export records are unchanged.
+
+## General Crozier source supplement — 2026-10-03
+
+The [general Crozier supplement](crozier-source-coverage.md) integrates religion/rites, puppets/selection, lifecycle migration and GUI/tools independently of Mass Demand Conversion. It corrects character-history priority spelling and retains declaration discrepancies. [New verification](general-120-verification.json) checks links, encodings and preservation; all gameplay/GUI/MP/Tiger statuses remain not run. This is coverage of the identified source topics, not a completed semantic audit of all game features.

@@ -60,3 +60,7 @@ Workshop metadata and launcher UI can change. Check the current publishing workf
 ## Handling a game update
 
 Recheck launcher version, regenerate local references, compare hashes of overridden definitions and inspect changed API dumps. Review behavior, not just parsing. Existing workspace descriptors mostly advertise much older versions; their patterns are useful but their compatibility needs fresh validation.
+
+## General Crozier source supplement — 2026-10-03
+
+Use the [Crozier migration contracts](../systems/crozier-migration.md), [diagnostic/reload boundaries](../systems/crozier-gui-tools.md), and [coverage ledger](../research/crozier-source-coverage.md) for current schema changes. Event and character-history priority fields are distinct. No new diagnostic launch or tool installation was performed.

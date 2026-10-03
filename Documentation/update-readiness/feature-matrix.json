@@ -324,7 +324,7 @@
       "sheet": "mods/mass-demand-conversion.md",
       "status": "blocked contract",
       "mechanics": "Relevant: tributaries, domicile, diarch, faith/rite",
-      "resolution": "Query validity/context and count/send equality",
+      "resolution": "G01/G02/G04: query initialization/default response, validity/cooldown/pending checks and snapshot count context",
       "runtime": "not run",
       "signature_status": "export declarations available",
       "signature_symbols_available": [
@@ -334,14 +334,18 @@
         "is_character_interaction_valid"
       ],
       "behavior_status": "specific source/caller/runtime gate retained",
-      "contract_card": "contracts/MC-CANDIDATES.md"
+      "contract_card": "contracts/MC-CANDIDATES.md",
+      "historical_resolution_before_mc_supplement": "Query validity/context and count/send equality",
+      "source_audit_supplement": "mods/mass-demand-conversion-audit.md",
+      "native_test_matrix": "mods/mass-demand-conversion-tests.md",
+      "source_audit_status": "partial; engine-context and runtime gates remain"
     },
     {
       "id": "MC-DISPATCH",
       "sheet": "mods/mass-demand-conversion.md",
       "status": "blocked contract",
       "mechanics": "Relevant: current conversion consequences",
-      "resolution": "Native actor initialization, consent, cooldown and consequence audit",
+      "resolution": "G01/G02/G03/G05: dispatch/options initialization, native consequences and delayed/list/MP lifecycle",
       "runtime": "not run",
       "signature_status": "export declarations available",
       "signature_symbols_available": [
@@ -349,21 +353,29 @@
         "run_interaction"
       ],
       "behavior_status": "specific source/caller/runtime gate retained",
-      "contract_card": "contracts/MC-DISPATCH.md"
+      "contract_card": "contracts/MC-DISPATCH.md",
+      "historical_resolution_before_mc_supplement": "Native actor initialization, consent, cooldown and consequence audit",
+      "source_audit_supplement": "mods/mass-demand-conversion-audit.md",
+      "native_test_matrix": "mods/mass-demand-conversion-tests.md",
+      "source_audit_status": "partial; engine-context and runtime gates remain"
     },
     {
       "id": "MC-VARIANTS",
       "sheet": "mods/mass-demand-conversion.md",
       "status": "plan ready after MC gates",
       "mechanics": "Relevant: current schema and standalone categories",
-      "resolution": "Port verified standalone behavior to bundle; keep categories scoped",
+      "resolution": "After MC gates: verify corresponding standalone/bundle routes and radio selection; retain distribution identity",
       "runtime": "not run",
       "signature_status": "export declarations available",
       "signature_symbols_available": [
         "run_interaction"
       ],
       "behavior_status": "specific source/caller/runtime gate retained",
-      "contract_card": "contracts/MC-VARIANTS.md"
+      "contract_card": "contracts/MC-VARIANTS.md",
+      "historical_resolution_before_mc_supplement": "Port verified standalone behavior to bundle; keep categories scoped",
+      "source_audit_supplement": "mods/mass-demand-conversion-audit.md",
+      "native_test_matrix": "mods/mass-demand-conversion-tests.md",
+      "source_audit_status": "partial; engine-context and runtime gates remain"
     },
     {
       "id": "SA-JOIN",

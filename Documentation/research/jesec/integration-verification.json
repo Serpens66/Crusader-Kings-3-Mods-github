@@ -1,0 +1,34 @@
+{
+  "date": "2026-10-03",
+  "status": "passed",
+  "checks": {
+    "repositories": 4,
+    "source_hashes": 153,
+    "source_paths": 179,
+    "wiki_pages": 57,
+    "language_name_key_checks": 540,
+    "historical_gui_hashes": 3,
+    "historical_origin_changes": 3,
+    "perk_override_files_checked": 6
+  },
+  "existing_verifier_checks": {
+    "internal_links": 1027,
+    "text_files": 226,
+    "fixture_structures": 25,
+    "workspace_hashes": 157,
+    "audit_source_hashes": 694,
+    "fixture_identifiers": 13,
+    "binary_fixture_hashes": 6
+  },
+  "issues": [],
+  "preexisting_index_differences": [],
+  "source_inventory": "evidence.json; individual inventory files include subsequent license reads",
+  "feature_audit": "feature-audit.json",
+  "preservation": "preservation-after.json",
+  "runtime_tests": "not run; existing user-run exports are a different evidence class",
+  "limits": [
+    "No pixel, GUI, performance, startup, gameplay, save/load, DLC or multiplayer test",
+    "Lexical discovery is not full semantic approval of every native caller",
+    "No Tiger installation/run or automatic descriptor compatibility update"
+  ]
+}

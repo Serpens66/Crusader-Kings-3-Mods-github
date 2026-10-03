@@ -56,3 +56,7 @@ The workspace `CustomDefines` includes gameplay, graphical and Jomini define gro
 Avoid copying every native define merely to change one constant. Audit the current loader's field-merging/override behavior for the group and use a minimal override only where that behavior is established. Do not promise that all namespaces and databases merge identically.
 
 Test unit/range boundaries, startup versus hot reload and any multiplayer/checksum implications of the actual change. Historical claims about a graphics-only mod's checksum do not establish the status of new asset, GUI or gameplay edits in the current build.
+
+## General Crozier source supplement — 2026-10-03
+
+See [Crozier lifecycle contracts](crozier-migration.md) for trait hooks/recursion, secular inheritance blocking, standalone currency modifiers and government flags; [Religion and rites](religion-rites.md) covers personal-tenet modifiers and spiritual-fulfillment levels. No new balance or gameplay result is claimed.

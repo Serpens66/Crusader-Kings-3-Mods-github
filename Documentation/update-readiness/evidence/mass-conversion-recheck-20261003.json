@@ -1,0 +1,713 @@
+{
+  "date": "2026-10-03",
+  "version": "1.20.0.3",
+  "status": "partial source audit; runtime not run",
+  "game_root": "E:\\ProgrammeE\\Steam\\steamapps\\common\\Crusader Kings III\\game",
+  "sources": {
+    "common/important_actions/00_personal_actions.txt": {
+      "sha256": "62f2f8e27ceccee5d973fcadea1dc246d4488c3452206bf72a32bfb483d4c8e9",
+      "lines": 692
+    },
+    "common/script_values/tutorial_values.txt": {
+      "sha256": "45885b1166e7b68d1ed19c65385e0df1e604dab64e9553b1b3c2392603cd3c39",
+      "lines": 112
+    },
+    "common/scripted_triggers/pam_scripted_triggers.txt": {
+      "sha256": "0ad98f123b6739593b9ab2c170d0e8c9b3d9d941baa9d3580296dd2139b2ea6e",
+      "lines": 6937
+    },
+    "common/customizable_localization/pam_sway_to_rite_custom_loc.txt": {
+      "sha256": "111cd99b3a75e5929c37f1f7314d857634054f2b08a47a034abd9919c298cf66",
+      "lines": 121
+    },
+    "common/important_actions/pam_actions.txt": {
+      "sha256": "ec8d868ee521618220ab019d8c488d4c14bc44e8509c820f090ef880941fbea5",
+      "lines": 1574
+    },
+    "common/character_interactions/pam_interactions.txt": {
+      "sha256": "2db73b0da8572e218f1a677a91ff4281a890ade115e6dc40e696ecb59c0b1049",
+      "lines": 28989
+    },
+    "common/scripted_effects/10_dlc_tgp_scripted_effects.txt": {
+      "sha256": "5bc38625f0e64a1965c59d814f2b3f3d35058ce102e52f8653e9445cbba9cf57",
+      "lines": 9499
+    },
+    "common/character_interactions/10_tgp_interactions.txt": {
+      "sha256": "b45eda8597c55ea6994e1c4fe65ad28796f1e0bd8351ac2930ef9d5f7e359f34",
+      "lines": 11957
+    },
+    "events/dlc/ep3/ep3_interactions_events.txt": {
+      "sha256": "5a3105c67c55b4370b80f96bef59f2f4aa678126932bc011242cc2f36950e574",
+      "lines": 4733
+    },
+    "events/dlc/ep3/ep3_roman_restoration_events.txt": {
+      "sha256": "03a104b4063cde43d031b1e359ea6e359abcc5eb3960bb9c37b642c96aeb31d3",
+      "lines": 564
+    },
+    "common/important_actions/00_diarchy_actions.txt": {
+      "sha256": "66c46c0424845b619d88c97f77beaf141a370d7e3f374c336a5f1986c327aa0e",
+      "lines": 615
+    }
+  },
+  "search_boundary": "All game .txt files; command assignments before hash comments. Lexical inventory only; no complete semantic-audit claim.",
+  "native_callsites": [
+    {
+      "path": "common/character_interactions/00_religious_interactions.txt",
+      "line": 8577,
+      "command": "is_character_interaction_potentially_accepted"
+    },
+    {
+      "path": "common/character_interactions/00_vassal_interactions.txt",
+      "line": 2471,
+      "command": "is_character_interaction_potentially_accepted"
+    },
+    {
+      "path": "common/character_interactions/06_ep3_laamp_interactions.txt",
+      "line": 3493,
+      "command": "is_character_interaction_potentially_accepted"
+    },
+    {
+      "path": "common/character_interactions/10_tgp_interactions.txt",
+      "line": 11684,
+      "command": "is_character_interaction_potentially_accepted"
+    },
+    {
+      "path": "common/character_interactions/pam_interactions.txt",
+      "line": 5927,
+      "command": "is_character_interaction_potentially_accepted"
+    },
+    {
+      "path": "common/decisions/tutorial_decisions.txt",
+      "line": 127,
+      "command": "is_character_interaction_potentially_accepted"
+    },
+    {
+      "path": "common/decisions/tutorial_decisions.txt",
+      "line": 137,
+      "command": "is_character_interaction_potentially_accepted"
+    },
+    {
+      "path": "common/decisions/tutorial_decisions.txt",
+      "line": 252,
+      "command": "is_character_interaction_potentially_accepted"
+    },
+    {
+      "path": "common/decisions/tutorial_decisions.txt",
+      "line": 262,
+      "command": "is_character_interaction_potentially_accepted"
+    },
+    {
+      "path": "common/decisions/tutorial_decisions.txt",
+      "line": 317,
+      "command": "is_character_interaction_potentially_accepted"
+    },
+    {
+      "path": "common/decisions/tutorial_decisions.txt",
+      "line": 457,
+      "command": "is_character_interaction_potentially_accepted"
+    },
+    {
+      "path": "common/decisions/tutorial_decisions.txt",
+      "line": 574,
+      "command": "is_character_interaction_potentially_accepted"
+    },
+    {
+      "path": "common/decisions/tutorial_decisions.txt",
+      "line": 580,
+      "command": "is_character_interaction_potentially_accepted"
+    },
+    {
+      "path": "common/decisions/tutorial_decisions.txt",
+      "line": 660,
+      "command": "is_character_interaction_potentially_accepted"
+    },
+    {
+      "path": "common/decisions/tutorial_decisions.txt",
+      "line": 666,
+      "command": "is_character_interaction_potentially_accepted"
+    },
+    {
+      "path": "common/important_actions/00_diarchy_actions.txt",
+      "line": 39,
+      "command": "is_character_interaction_potentially_accepted"
+    },
+    {
+      "path": "common/important_actions/00_diarchy_actions.txt",
+      "line": 49,
+      "command": "is_character_interaction_potentially_accepted"
+    },
+    {
+      "path": "common/important_actions/00_personal_actions.txt",
+      "line": 147,
+      "command": "is_character_interaction_potentially_accepted"
+    },
+    {
+      "path": "common/important_actions/00_personal_actions.txt",
+      "line": 258,
+      "command": "is_character_interaction_potentially_accepted"
+    },
+    {
+      "path": "common/important_actions/00_personal_actions.txt",
+      "line": 291,
+      "command": "is_character_interaction_potentially_accepted"
+    },
+    {
+      "path": "common/important_actions/00_personal_actions.txt",
+      "line": 307,
+      "command": "is_character_interaction_potentially_accepted"
+    },
+    {
+      "path": "common/important_actions/00_personal_actions.txt",
+      "line": 356,
+      "command": "is_character_interaction_potentially_accepted"
+    },
+    {
+      "path": "common/important_actions/00_personal_actions.txt",
+      "line": 378,
+      "command": "is_character_interaction_potentially_accepted"
+    },
+    {
+      "path": "common/important_actions/00_personal_actions.txt",
+      "line": 421,
+      "command": "is_character_interaction_potentially_accepted"
+    },
+    {
+      "path": "common/important_actions/00_personal_actions.txt",
+      "line": 453,
+      "command": "is_character_interaction_potentially_accepted"
+    },
+    {
+      "path": "common/important_actions/00_personal_actions.txt",
+      "line": 496,
+      "command": "is_character_interaction_potentially_accepted"
+    },
+    {
+      "path": "common/important_actions/00_personal_actions.txt",
+      "line": 509,
+      "command": "is_character_interaction_potentially_accepted"
+    },
+    {
+      "path": "common/important_actions/00_personal_actions.txt",
+      "line": 536,
+      "command": "is_character_interaction_potentially_accepted"
+    },
+    {
+      "path": "common/important_actions/00_personal_actions.txt",
+      "line": 553,
+      "command": "is_character_interaction_potentially_accepted"
+    },
+    {
+      "path": "common/important_actions/00_personal_actions.txt",
+      "line": 578,
+      "command": "is_character_interaction_potentially_accepted"
+    },
+    {
+      "path": "common/important_actions/00_personal_actions.txt",
+      "line": 593,
+      "command": "is_character_interaction_potentially_accepted"
+    },
+    {
+      "path": "common/important_actions/00_personal_actions.txt",
+      "line": 618,
+      "command": "is_character_interaction_potentially_accepted"
+    },
+    {
+      "path": "common/important_actions/00_personal_actions.txt",
+      "line": 633,
+      "command": "is_character_interaction_potentially_accepted"
+    },
+    {
+      "path": "common/important_actions/01_fp1_actions.txt",
+      "line": 21,
+      "command": "is_character_interaction_potentially_accepted"
+    },
+    {
+      "path": "common/important_actions/01_fp1_actions.txt",
+      "line": 40,
+      "command": "is_character_interaction_potentially_accepted"
+    },
+    {
+      "path": "common/important_actions/01_fp1_actions.txt",
+      "line": 57,
+      "command": "is_character_interaction_potentially_accepted"
+    },
+    {
+      "path": "common/important_actions/01_fp1_actions.txt",
+      "line": 97,
+      "command": "is_character_interaction_potentially_accepted"
+    },
+    {
+      "path": "common/important_actions/03_fp2_actions.txt",
+      "line": 43,
+      "command": "is_character_interaction_potentially_accepted"
+    },
+    {
+      "path": "common/important_actions/03_fp2_actions.txt",
+      "line": 106,
+      "command": "is_character_interaction_potentially_accepted"
+    },
+    {
+      "path": "common/important_actions/05_bp2_actions.txt",
+      "line": 101,
+      "command": "is_character_interaction_potentially_accepted"
+    },
+    {
+      "path": "common/important_actions/05_bp2_actions.txt",
+      "line": 208,
+      "command": "is_character_interaction_potentially_accepted"
+    },
+    {
+      "path": "common/important_actions/05_bp2_actions.txt",
+      "line": 334,
+      "command": "is_character_interaction_potentially_accepted"
+    },
+    {
+      "path": "common/important_actions/07_ep3_actions.txt",
+      "line": 135,
+      "command": "is_character_interaction_potentially_accepted"
+    },
+    {
+      "path": "common/important_actions/09_mpo_actions.txt",
+      "line": 193,
+      "command": "is_character_interaction_potentially_accepted"
+    },
+    {
+      "path": "common/important_actions/09_mpo_actions.txt",
+      "line": 215,
+      "command": "is_character_interaction_potentially_accepted"
+    },
+    {
+      "path": "common/important_actions/09_mpo_actions.txt",
+      "line": 294,
+      "command": "is_character_interaction_potentially_accepted"
+    },
+    {
+      "path": "common/important_actions/09_mpo_actions.txt",
+      "line": 562,
+      "command": "is_character_interaction_potentially_accepted"
+    },
+    {
+      "path": "common/important_actions/09_mpo_actions.txt",
+      "line": 594,
+      "command": "is_character_interaction_potentially_accepted"
+    },
+    {
+      "path": "common/important_actions/09_mpo_actions.txt",
+      "line": 607,
+      "command": "is_character_interaction_potentially_accepted"
+    },
+    {
+      "path": "common/important_actions/contract_actions.txt",
+      "line": 381,
+      "command": "is_character_interaction_potentially_accepted"
+    },
+    {
+      "path": "common/important_actions/pam_actions.txt",
+      "line": 353,
+      "command": "is_character_interaction_potentially_accepted"
+    },
+    {
+      "path": "common/important_actions/pam_actions.txt",
+      "line": 469,
+      "command": "is_character_interaction_potentially_accepted"
+    },
+    {
+      "path": "common/important_actions/pam_actions.txt",
+      "line": 487,
+      "command": "is_character_interaction_potentially_accepted"
+    },
+    {
+      "path": "common/important_actions/pam_actions.txt",
+      "line": 555,
+      "command": "is_character_interaction_potentially_accepted"
+    },
+    {
+      "path": "common/important_actions/pam_actions.txt",
+      "line": 646,
+      "command": "is_character_interaction_potentially_accepted"
+    },
+    {
+      "path": "common/important_actions/pam_actions.txt",
+      "line": 785,
+      "command": "is_character_interaction_potentially_accepted"
+    },
+    {
+      "path": "common/important_actions/pam_actions.txt",
+      "line": 975,
+      "command": "is_character_interaction_potentially_accepted"
+    },
+    {
+      "path": "common/important_actions/pam_actions.txt",
+      "line": 1060,
+      "command": "is_character_interaction_potentially_accepted"
+    },
+    {
+      "path": "common/important_actions/pam_actions.txt",
+      "line": 1136,
+      "command": "is_character_interaction_potentially_accepted"
+    },
+    {
+      "path": "common/important_actions/pam_actions.txt",
+      "line": 1313,
+      "command": "is_character_interaction_potentially_accepted"
+    },
+    {
+      "path": "common/important_actions/tgp_actions.txt",
+      "line": 527,
+      "command": "is_character_interaction_potentially_accepted"
+    },
+    {
+      "path": "common/important_actions/tgp_actions.txt",
+      "line": 799,
+      "command": "is_character_interaction_potentially_accepted"
+    },
+    {
+      "path": "common/important_actions/tgp_actions.txt",
+      "line": 811,
+      "command": "is_character_interaction_potentially_accepted"
+    },
+    {
+      "path": "common/important_actions/tgp_actions.txt",
+      "line": 829,
+      "command": "is_character_interaction_potentially_accepted"
+    },
+    {
+      "path": "common/important_actions/tgp_actions.txt",
+      "line": 844,
+      "command": "is_character_interaction_potentially_accepted"
+    },
+    {
+      "path": "common/important_actions/tgp_actions.txt",
+      "line": 902,
+      "command": "is_character_interaction_potentially_accepted"
+    },
+    {
+      "path": "common/important_actions/tgp_actions.txt",
+      "line": 964,
+      "command": "is_character_interaction_potentially_accepted"
+    },
+    {
+      "path": "common/important_actions/tgp_actions.txt",
+      "line": 988,
+      "command": "is_character_interaction_potentially_accepted"
+    },
+    {
+      "path": "common/important_actions/tgp_actions.txt",
+      "line": 1017,
+      "command": "is_character_interaction_potentially_accepted"
+    },
+    {
+      "path": "common/important_actions/tgp_actions.txt",
+      "line": 1052,
+      "command": "is_character_interaction_potentially_accepted"
+    },
+    {
+      "path": "common/important_actions/tgp_actions.txt",
+      "line": 1069,
+      "command": "is_character_interaction_potentially_accepted"
+    },
+    {
+      "path": "common/important_actions/tgp_actions.txt",
+      "line": 1101,
+      "command": "is_character_interaction_potentially_accepted"
+    },
+    {
+      "path": "common/important_actions/tgp_actions.txt",
+      "line": 1384,
+      "command": "is_character_interaction_potentially_accepted"
+    },
+    {
+      "path": "common/important_actions/tgp_actions.txt",
+      "line": 1554,
+      "command": "is_character_interaction_potentially_accepted"
+    },
+    {
+      "path": "common/on_action/yearly_on_actions.txt",
+      "line": 1956,
+      "command": "run_interaction"
+    },
+    {
+      "path": "common/on_action/yearly_on_actions.txt",
+      "line": 1973,
+      "command": "run_interaction"
+    },
+    {
+      "path": "common/ruler_objective_advice_types/00_tutorial_advice.txt",
+      "line": 132,
+      "command": "is_character_interaction_potentially_accepted"
+    },
+    {
+      "path": "common/scripted_effects/00_culture_effects.txt",
+      "line": 966,
+      "command": "run_interaction"
+    },
+    {
+      "path": "common/scripted_effects/00_holy_order_effects.txt",
+      "line": 6135,
+      "command": "run_interaction"
+    },
+    {
+      "path": "common/scripted_effects/01_dlc_fp3_scripted_effects.txt",
+      "line": 761,
+      "command": "run_interaction"
+    },
+    {
+      "path": "common/scripted_effects/01_dlc_fp3_scripted_effects.txt",
+      "line": 775,
+      "command": "run_interaction"
+    },
+    {
+      "path": "common/scripted_effects/09_mpo_greatest_of_khans_effects.txt",
+      "line": 8338,
+      "command": "run_interaction"
+    },
+    {
+      "path": "common/scripted_effects/09_mpo_greatest_of_khans_effects.txt",
+      "line": 8353,
+      "command": "run_interaction"
+    },
+    {
+      "path": "common/scripted_effects/10_dlc_tgp_scripted_effects.txt",
+      "line": 451,
+      "command": "run_interaction"
+    },
+    {
+      "path": "common/scripted_effects/10_dlc_tgp_scripted_effects.txt",
+      "line": 473,
+      "command": "run_interaction"
+    },
+    {
+      "path": "common/scripted_effects/10_dlc_tgp_scripted_effects.txt",
+      "line": 495,
+      "command": "run_interaction"
+    },
+    {
+      "path": "common/scripted_effects/10_dlc_tgp_scripted_effects.txt",
+      "line": 517,
+      "command": "run_interaction"
+    },
+    {
+      "path": "common/scripted_effects/tgp_mandala_scripted_effects.txt",
+      "line": 3726,
+      "command": "is_character_interaction_potentially_accepted"
+    },
+    {
+      "path": "common/scripted_effects/tgp_tribute_mission_scripted_effects.txt",
+      "line": 127,
+      "command": "run_interaction"
+    },
+    {
+      "path": "common/scripted_effects/tgp_tribute_mission_scripted_effects.txt",
+      "line": 135,
+      "command": "run_interaction"
+    },
+    {
+      "path": "common/scripted_effects/tgp_tribute_mission_scripted_effects.txt",
+      "line": 170,
+      "command": "run_interaction"
+    },
+    {
+      "path": "common/scripted_effects/tgp_tribute_mission_scripted_effects.txt",
+      "line": 180,
+      "command": "run_interaction"
+    },
+    {
+      "path": "common/scripted_effects/tgp_tribute_mission_scripted_effects.txt",
+      "line": 196,
+      "command": "run_interaction"
+    },
+    {
+      "path": "common/scripted_effects/tgp_tribute_mission_scripted_effects.txt",
+      "line": 205,
+      "command": "run_interaction"
+    },
+    {
+      "path": "common/scripted_effects/tgp_tribute_mission_scripted_effects.txt",
+      "line": 304,
+      "command": "run_interaction"
+    },
+    {
+      "path": "common/scripted_effects/tgp_tribute_mission_scripted_effects.txt",
+      "line": 362,
+      "command": "run_interaction"
+    },
+    {
+      "path": "common/scripted_triggers/05_bp2_hostage_triggers.txt",
+      "line": 135,
+      "command": "is_character_interaction_potentially_accepted"
+    },
+    {
+      "path": "common/scripted_triggers/05_bp2_hostage_triggers.txt",
+      "line": 155,
+      "command": "is_character_interaction_potentially_accepted"
+    },
+    {
+      "path": "common/scripted_triggers/05_bp2_hostage_triggers.txt",
+      "line": 181,
+      "command": "is_character_interaction_potentially_accepted"
+    },
+    {
+      "path": "common/scripted_triggers/05_bp2_hostage_triggers.txt",
+      "line": 210,
+      "command": "is_character_interaction_potentially_accepted"
+    },
+    {
+      "path": "common/scripted_triggers/05_bp2_hostage_triggers.txt",
+      "line": 221,
+      "command": "is_character_interaction_potentially_accepted"
+    },
+    {
+      "path": "common/scripted_triggers/pam_scripted_triggers.txt",
+      "line": 1952,
+      "command": "is_character_interaction_potentially_accepted"
+    },
+    {
+      "path": "common/scripted_triggers/pam_scripted_triggers.txt",
+      "line": 1972,
+      "command": "is_character_interaction_potentially_accepted"
+    },
+    {
+      "path": "common/scripted_triggers/pam_scripted_triggers.txt",
+      "line": 1980,
+      "command": "is_character_interaction_potentially_accepted"
+    },
+    {
+      "path": "common/scripted_triggers/pam_scripted_triggers.txt",
+      "line": 1993,
+      "command": "is_character_interaction_potentially_accepted"
+    },
+    {
+      "path": "common/scripted_triggers/pam_scripted_triggers.txt",
+      "line": 2014,
+      "command": "is_character_interaction_potentially_accepted"
+    },
+    {
+      "path": "common/scripted_triggers/pam_scripted_triggers.txt",
+      "line": 2023,
+      "command": "is_character_interaction_potentially_accepted"
+    },
+    {
+      "path": "common/script_values/tutorial_values.txt",
+      "line": 105,
+      "command": "is_character_interaction_potentially_accepted"
+    },
+    {
+      "path": "common/story_cycles/tgp_story_cycle_mandala.txt",
+      "line": 181,
+      "command": "run_interaction"
+    },
+    {
+      "path": "common/story_cycles/tgp_story_cycle_mandala.txt",
+      "line": 1599,
+      "command": "is_character_interaction_potentially_accepted"
+    },
+    {
+      "path": "common/story_cycles/tgp_story_cycle_mandala.txt",
+      "line": 1610,
+      "command": "is_character_interaction_potentially_accepted"
+    },
+    {
+      "path": "common/story_cycles/tgp_story_cycle_mandala.txt",
+      "line": 1626,
+      "command": "run_interaction"
+    },
+    {
+      "path": "common/story_cycles/tgp_story_cycle_mandala.txt",
+      "line": 1639,
+      "command": "is_character_interaction_potentially_accepted"
+    },
+    {
+      "path": "common/story_cycles/tgp_story_cycle_mandala.txt",
+      "line": 1654,
+      "command": "run_interaction"
+    },
+    {
+      "path": "common/story_cycles/tgp_story_cycle_mandala.txt",
+      "line": 1667,
+      "command": "is_character_interaction_potentially_accepted"
+    },
+    {
+      "path": "common/story_cycles/tgp_story_cycle_mandala.txt",
+      "line": 1682,
+      "command": "run_interaction"
+    },
+    {
+      "path": "common/story_cycles/tgp_story_cycle_mandala.txt",
+      "line": 2448,
+      "command": "is_character_interaction_potentially_accepted"
+    },
+    {
+      "path": "common/story_cycles/tgp_story_cycle_mandala.txt",
+      "line": 2638,
+      "command": "is_character_interaction_potentially_accepted"
+    },
+    {
+      "path": "common/trigger_localization/01_character_interaction_triggers.txt",
+      "line": 1200,
+      "command": "is_character_interaction_potentially_accepted"
+    },
+    {
+      "path": "common/decisions/dlc_decisions/tgp/tgp_dynastic_cycle_decisions.txt",
+      "line": 566,
+      "command": "run_interaction"
+    },
+    {
+      "path": "events/diarchy_events/diarchy_events.txt",
+      "line": 808,
+      "command": "run_interaction"
+    },
+    {
+      "path": "events/diarchy_events/diarchy_events.txt",
+      "line": 830,
+      "command": "run_interaction"
+    },
+    {
+      "path": "events/diarchy_events/diarchy_events.txt",
+      "line": 9296,
+      "command": "run_interaction"
+    },
+    {
+      "path": "events/diarchy_events/diarchy_events.txt",
+      "line": 9313,
+      "command": "run_interaction"
+    },
+    {
+      "path": "events/dlc/ep3/ep3_contract_events.txt",
+      "line": 5909,
+      "command": "run_interaction"
+    },
+    {
+      "path": "events/dlc/ep3/ep3_interactions_events.txt",
+      "line": 3099,
+      "command": "run_interaction"
+    },
+    {
+      "path": "events/dlc/ep3/ep3_roman_restoration_events.txt",
+      "line": 102,
+      "command": "run_interaction"
+    },
+    {
+      "path": "events/dlc/ep3/ep3_roman_restoration_events.txt",
+      "line": 173,
+      "command": "run_interaction"
+    }
+  ],
+  "prior_native_source_drift": [],
+  "prior_workspace_drift": [
+    "AGENTS.md"
+  ],
+  "drift_note": "AGENTS.md changed before this follow-up; prior evidence retained, no rebaseline.",
+  "web_sources": [
+    {
+      "title": "By God Alone Dev Diary #8 - (Truly) Everything Else",
+      "published": "2026-09-29",
+      "url": "https://store.steampowered.com/news/posts/?appids=1158310&feed=steam_community_announcements",
+      "section": "Puppet / Interactions",
+      "role": "Official publisher developer explanation; script-command construction details not specified"
+    },
+    {
+      "url": "https://docs.rs/tiger-lib/latest/src/tiger_lib/ck3/tables/triggers.rs.html",
+      "role": "Validator schema only, not Engine behavior"
+    }
+  ]
+}

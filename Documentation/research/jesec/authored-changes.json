@@ -1,0 +1,42 @@
+{
+  "research/sources.json": {
+    "before": "32c0f53634bfab0ada51b62c5936dae740c6eadf03c46149a532c247de0d306f",
+    "after": "f966e630d449306c7ca02aacd08ba3801389cec0ced28d1530929ed75d6bd1ff"
+  },
+  "research/sources.md": {
+    "before": "e6c759e438f5efcb9a679fcfe2a7f4289b94ad4ba743eb0aed5748d5bb4d2a44",
+    "after": "27b25f1fb919e951f2474b280c996e3aeed22806ad0069abf5f2e86d6cff6c80"
+  },
+  "README.md": {
+    "before": "ac2f27a5a0422bad2a961a3484706e71ef283eb7fe9985ebf5b6290a3fa5103d",
+    "after": "c2526a542c540fa67fbd0e24f12eb59bb22c9e358e131f8d88ca8c72ef88bbd7"
+  },
+  "research/coverage.md": {
+    "before": "1e310069a7279b17f8897e5042ffba4d93afe4264985c141c36217d6d2ff4bd7",
+    "after": "35f63e21cc5227843c62f4ff2edd0728e8e2d371f77ca7c97566a46eb7718cfc"
+  },
+  "handbook/state-and-values.md": {
+    "before": "4a100896f419fb3471af0a4edd8da41c346ccfa1348131da943e5ece302ebc50",
+    "after": "36b5e78a3a6e0690a2e600a0db1b8c4f111f7c2b596942262854ccb3763a2813"
+  },
+  "handbook/control-flow.md": {
+    "before": "0c6481372757b20411d45f94cb29f093dd1e6129e8fcc78989b8534ccf223623",
+    "after": "85e6ba1c13fc4b0dfde432262d544b796fb9f69b7f39aa0cb29ce17c02eed91b"
+  },
+  "systems/localization-and-gui.md": {
+    "before": "be13930f255744219d8b383e042e856771d8776ebd77ef4337418b0e85f65851",
+    "after": "1fcf78efaade28da9822c194563e5f65fed012b92220ca2f44c93a191cad8365"
+  },
+  "systems/subsystem-guide.md": {
+    "before": "8c772a9f4b82390949daa0da9afcfc06c6a650943b803d61ebf9843a0e7a18c7",
+    "after": "9c75c80a71bcc2b71e4c8fcc1b6499fa8c611f96980c638c40a795841374406d"
+  },
+  "systems/crozier-migration.md": {
+    "before": "9ffb3f299c6130c83555c6341719de3d119c9ed8cb9c175a16bc94f5beac79ed",
+    "after": "fb59cfe96e85433552fce4307ada3bc84015d4b7bfd5288e2c42cf5f70e03b7d"
+  },
+  "systems/crozier-gui-tools.md": {
+    "before": "ba307fce1227e31187beeb1417c87217b929d6b43e18daed1a68e7470c331be6",
+    "after": "029937147fcec5697e4fbf38767bb59315cbb0d1e63ad1fba885c4fb27729a85"
+  }
+}

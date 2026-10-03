@@ -30,7 +30,7 @@ Sources: native religion/faith/rite `.info` and actual type files; [historical r
 
 The native history schema applies initial values plus dated blocks. It supports character `effect` only when that character is alive at the selected start date, and a separate `effect_even_if_dead`. Historical dates are not scheduled future gameplay events.
 
-Current character-history documentation supports `id_override_priority`, but says base attributes and birth are overridden while other content combines additively. Review collisions at a dated-entry level instead of assuming complete character replacement. Keep character IDs and relationships consistent with life dates and title holders.
+Current character-history documentation supports `history_override_priority`, but says base attributes and birth are overridden while other content combines additively. Review collisions at a dated-entry level instead of assuming complete character replacement. Keep character IDs and relationships consistent with life dates and title holders.
 
 For new history, test every supported bookmark, parentage, marriages, lieges, culture, faith/rite, title creation and coat of arms. A playable title that exists in the database still needs valid start-state ownership/government. Date boundaries and dead characters are particularly important.
 
@@ -107,3 +107,11 @@ Sources: [3D models](https://github.com/jesec/ck3-modding-wiki/blob/master/wiki_
 Music has script definitions and audio assets; sound also relies on the engine's sound-event pipeline. The reachable Wiki sound page is brief and does not establish a complete custom-audio workflow. Treat codec/import/bank/export steps as unresolved until the matching tools and local format are audited. No audio tools were installed here.
 
 Sources: [Music](https://github.com/jesec/ck3-modding-wiki/blob/master/wiki_pages/Music_modding.md), [Sound](https://github.com/jesec/ck3-modding-wiki/blob/master/wiki_pages/Sound_modding.md), native music `.info` index.
+
+## General Crozier source supplement — 2026-10-03
+
+Detailed current chapters now cover [Religion and rites](religion-rites.md), [Puppets and selection](puppets-and-selection.md), [schema/lifecycle migration](crozier-migration.md), and [GUI/assets/tools](crozier-gui-tools.md). Character-history priority spelling above was corrected against `history/_characters.info:31`; event priority retains its distinct name.
+
+## Complete archived-topic reconciliation
+
+The [Wiki supplement](../reference/wiki-extensions.md) adds council/task, history, government, holding, flavorization, story, terrain/struggle and art/font/exporter research routes, with historical version and current-audit limits. [Dynasty legacies](dynasty-legacies.md) supplies the focused current schema, complete third-party source map and concrete pending tests. No independent map/audio feature was introduced.

@@ -1,0 +1,1119 @@
+[
+  {
+    "id": "C120-01",
+    "label": "Separate religion/faith/rite types",
+    "symbols": [
+      "faith_details",
+      "main_rite",
+      "doctrine_group_type"
+    ],
+    "native_paths": [
+      "common/religion/doctrine_category_types/_doctrine_category_types.info",
+      "common/religion/doctrine_group_types/_doctrine_group_types.info",
+      "common/religion/doctrine_types/_doctrine_types.info",
+      "common/religion/faith_types/_faith_types.info",
+      "common/religion/great_holy_wars.info",
+      "common/religion/holy_site_types/_holy_site_types.info",
+      "common/religion/religion_family_types/_religion_family_types.info",
+      "common/religion/religion_types/_religion_types.info",
+      "common/religion/rite_icons/_rite_icons.info",
+      "common/religion/rite_names/_rite_names.info",
+      "common/religion/rite_types/_rite_types.info",
+      "common/religion/tenet_types/_tenet_types.info"
+    ],
+    "chapter": "systems/religion-rites.md",
+    "status": "integrated: local schema/declaration; runtime untested",
+    "limit": "Exact feature consumers and runtime outcomes still require their own audit/test.",
+    "discovery_source": "Official 1.20 modding sections / diary #8, except validator and Wiki rows; checked 2026-10-03",
+    "prior_coverage": "Existing Engine index and general orientation; detailed supplement added."
+  },
+  {
+    "id": "C120-02",
+    "label": "Doctrine categories, group membership and ordering",
+    "symbols": [
+      "doctrine_group_type",
+      "category",
+      "index"
+    ],
+    "native_paths": [
+      "common/religion/doctrine_category_types/_doctrine_category_types.info",
+      "common/religion/doctrine_group_types/_doctrine_group_types.info",
+      "common/religion/doctrine_types/_doctrine_types.info",
+      "common/religion/faith_types/_faith_types.info",
+      "common/religion/great_holy_wars.info",
+      "common/religion/holy_site_types/_holy_site_types.info",
+      "common/religion/religion_family_types/_religion_family_types.info",
+      "common/religion/religion_types/_religion_types.info",
+      "common/religion/rite_icons/_rite_icons.info",
+      "common/religion/rite_names/_rite_names.info",
+      "common/religion/rite_types/_rite_types.info",
+      "common/religion/tenet_types/_tenet_types.info"
+    ],
+    "chapter": "systems/religion-rites.md",
+    "status": "integrated: local schema/declaration; runtime untested",
+    "limit": "Exact feature consumers and runtime outcomes still require their own audit/test.",
+    "discovery_source": "Official 1.20 modding sections / diary #8, except validator and Wiki rows; checked 2026-10-03",
+    "prior_coverage": "Existing Engine index and general orientation; detailed supplement added."
+  },
+  {
+    "id": "C120-03",
+    "label": "Doctrine locks and change consequences",
+    "symbols": [
+      "doctrine_lock",
+      "set_parent_faith",
+      "change_doctrine"
+    ],
+    "native_paths": [
+      "common/religion/doctrine_category_types/_doctrine_category_types.info",
+      "common/religion/doctrine_group_types/_doctrine_group_types.info",
+      "common/religion/doctrine_types/_doctrine_types.info",
+      "common/religion/faith_types/_faith_types.info",
+      "common/religion/great_holy_wars.info",
+      "common/religion/holy_site_types/_holy_site_types.info",
+      "common/religion/religion_family_types/_religion_family_types.info",
+      "common/religion/religion_types/_religion_types.info",
+      "common/religion/rite_icons/_rite_icons.info",
+      "common/religion/rite_names/_rite_names.info",
+      "common/religion/rite_types/_rite_types.info",
+      "common/religion/tenet_types/_tenet_types.info"
+    ],
+    "chapter": "systems/religion-rites.md",
+    "status": "integrated: local schema/declaration; runtime untested",
+    "limit": "Exact feature consumers and runtime outcomes still require their own audit/test.",
+    "discovery_source": "Official 1.20 modding sections / diary #8, except validator and Wiki rows; checked 2026-10-03",
+    "prior_coverage": "Existing Engine index and general orientation; detailed supplement added."
+  },
+  {
+    "id": "C120-04",
+    "label": "Non-boolean doctrine/tenet parameters",
+    "symbols": [
+      "special_parameters"
+    ],
+    "native_paths": [
+      "common/religion/doctrine_category_types/_doctrine_category_types.info",
+      "common/religion/doctrine_group_types/_doctrine_group_types.info",
+      "common/religion/doctrine_types/_doctrine_types.info",
+      "common/religion/faith_types/_faith_types.info",
+      "common/religion/great_holy_wars.info",
+      "common/religion/holy_site_types/_holy_site_types.info",
+      "common/religion/religion_family_types/_religion_family_types.info",
+      "common/religion/religion_types/_religion_types.info",
+      "common/religion/rite_icons/_rite_icons.info",
+      "common/religion/rite_names/_rite_names.info",
+      "common/religion/rite_types/_rite_types.info",
+      "common/religion/tenet_types/_tenet_types.info"
+    ],
+    "chapter": "systems/religion-rites.md",
+    "status": "integrated: local schema/declaration; runtime untested",
+    "limit": "Exact feature consumers and runtime outcomes still require their own audit/test.",
+    "discovery_source": "Official 1.20 modding sections / diary #8, except validator and Wiki rows; checked 2026-10-03",
+    "prior_coverage": "Existing Engine index and general orientation; detailed supplement added."
+  },
+  {
+    "id": "C120-05",
+    "label": "Faith versus Rite costs and modifiers",
+    "symbols": [
+      "piety_cost",
+      "faith_character_modifier",
+      "involved_faith_character_modifier",
+      "interloper_faith_character_modifier"
+    ],
+    "native_paths": [
+      "common/religion/doctrine_category_types/_doctrine_category_types.info",
+      "common/religion/doctrine_group_types/_doctrine_group_types.info",
+      "common/religion/doctrine_types/_doctrine_types.info",
+      "common/religion/faith_types/_faith_types.info",
+      "common/religion/great_holy_wars.info",
+      "common/religion/holy_site_types/_holy_site_types.info",
+      "common/religion/religion_family_types/_religion_family_types.info",
+      "common/religion/religion_types/_religion_types.info",
+      "common/religion/rite_icons/_rite_icons.info",
+      "common/religion/rite_names/_rite_names.info",
+      "common/religion/rite_types/_rite_types.info",
+      "common/religion/tenet_types/_tenet_types.info"
+    ],
+    "chapter": "systems/religion-rites.md",
+    "status": "integrated: local schema/declaration; runtime untested",
+    "limit": "Exact feature consumers and runtime outcomes still require their own audit/test.",
+    "discovery_source": "Official 1.20 modding sections / diary #8, except validator and Wiki rows; checked 2026-10-03",
+    "prior_coverage": "Existing Engine index and general orientation; detailed supplement added."
+  },
+  {
+    "id": "C120-06",
+    "label": "Rite creation and uncreated objects",
+    "symbols": [
+      "create_rite_from_type",
+      "create",
+      "convert"
+    ],
+    "native_paths": [
+      "common/religion/rite_types/_rite_types.info",
+      "common/scripted_effects/00_historical_characters_scripted_effects.txt"
+    ],
+    "chapter": "systems/religion-rites.md",
+    "status": "integrated: local schema/declaration; runtime untested",
+    "limit": "Exact feature consumers and runtime outcomes still require their own audit/test.",
+    "discovery_source": "Official 1.20 modding sections / diary #8, except validator and Wiki rows; checked 2026-10-03",
+    "prior_coverage": "Existing Engine index and general orientation; detailed supplement added."
+  },
+  {
+    "id": "C120-07",
+    "label": "Faith history order, dates, origins and main rites",
+    "symbols": [
+      "main_rite",
+      "origin",
+      "tenet_setup",
+      "created"
+    ],
+    "native_paths": [
+      "common/religion/faith_types/_faith_types.info",
+      "history/faiths/_faith_history.info"
+    ],
+    "chapter": "systems/religion-rites.md",
+    "status": "integrated: local schema/declaration; runtime untested",
+    "limit": "Exact feature consumers and runtime outcomes still require their own audit/test.",
+    "discovery_source": "Official 1.20 modding sections / diary #8, except validator and Wiki rows; checked 2026-10-03",
+    "prior_coverage": "Existing Engine index and general orientation; detailed supplement added."
+  },
+  {
+    "id": "C120-08",
+    "label": "Personal tenets and selection state",
+    "symbols": [
+      "can_pick_as_personal_tenet",
+      "personal_tenet_modifier",
+      "personal_tenet_parameters",
+      "selected_tenets",
+      "selected_doctrines"
+    ],
+    "native_paths": [
+      "common/religion/doctrine_category_types/_doctrine_category_types.info",
+      "common/religion/doctrine_group_types/_doctrine_group_types.info",
+      "common/religion/doctrine_types/_doctrine_types.info",
+      "common/religion/faith_types/_faith_types.info",
+      "common/religion/great_holy_wars.info",
+      "common/religion/holy_site_types/_holy_site_types.info",
+      "common/religion/religion_family_types/_religion_family_types.info",
+      "common/religion/religion_types/_religion_types.info",
+      "common/religion/rite_icons/_rite_icons.info",
+      "common/religion/rite_names/_rite_names.info",
+      "common/religion/rite_types/_rite_types.info",
+      "common/religion/tenet_types/_tenet_types.info"
+    ],
+    "chapter": "systems/religion-rites.md",
+    "status": "integrated: local schema/declaration; runtime untested",
+    "limit": "Exact feature consumers and runtime outcomes still require their own audit/test.",
+    "discovery_source": "Official 1.20 modding sections / diary #8, except validator and Wiki rows; checked 2026-10-03",
+    "prior_coverage": "Existing Engine index and general orientation; detailed supplement added."
+  },
+  {
+    "id": "C120-09",
+    "label": "Tenet knowledge, popularity and fulfillment APIs",
+    "symbols": [
+      "has_tenet_status",
+      "has_personal_tenet_flag",
+      "stress_and_fulfillment_impact"
+    ],
+    "native_paths": [
+      "common/religion/doctrine_category_types/_doctrine_category_types.info",
+      "common/religion/doctrine_group_types/_doctrine_group_types.info",
+      "common/religion/doctrine_types/_doctrine_types.info",
+      "common/religion/faith_types/_faith_types.info",
+      "common/religion/great_holy_wars.info",
+      "common/religion/holy_site_types/_holy_site_types.info",
+      "common/religion/religion_family_types/_religion_family_types.info",
+      "common/religion/religion_types/_religion_types.info",
+      "common/religion/rite_icons/_rite_icons.info",
+      "common/religion/rite_names/_rite_names.info",
+      "common/religion/rite_types/_rite_types.info",
+      "common/religion/tenet_types/_tenet_types.info",
+      "common/spiritual_fulfillment/_spiritual_fulfillment_type.info"
+    ],
+    "chapter": "systems/religion-rites.md",
+    "status": "integrated: local schema/declaration; runtime untested",
+    "limit": "Exact feature consumers and runtime outcomes still require their own audit/test.",
+    "discovery_source": "Official 1.20 modding sections / diary #8, except validator and Wiki rows; checked 2026-10-03",
+    "prior_coverage": "Existing Engine index and general orientation; detailed supplement added."
+  },
+  {
+    "id": "C120-10",
+    "label": "Dynamic holy sites and scaled relic benefits",
+    "symbols": [
+      "create_holy_site",
+      "holy_site_total_artifact_rarity",
+      "faith_character_modifier_scaled",
+      "county_modifier_scaled"
+    ],
+    "native_paths": [
+      "common/religion/holy_site_types/_holy_site_types.info"
+    ],
+    "chapter": "systems/religion-rites.md",
+    "status": "integrated: local schema/declaration; runtime untested",
+    "limit": "Exact feature consumers and runtime outcomes still require their own audit/test.",
+    "discovery_source": "Official 1.20 modding sections / diary #8, except validator and Wiki rows; checked 2026-10-03",
+    "prior_coverage": "Existing Engine index and general orientation; detailed supplement added."
+  },
+  {
+    "id": "C120-11",
+    "label": "Clerical regions and dynamic domiciles",
+    "symbols": [
+      "create_clerical_region",
+      "create_domicile_title",
+      "split_clerical_region",
+      "merge_clerical_region"
+    ],
+    "native_paths": [
+      "common/lease_contracts/_lease_contracts.info"
+    ],
+    "chapter": "systems/religion-rites.md",
+    "status": "integrated: local schema/declaration; runtime untested",
+    "limit": "Exact feature consumers and runtime outcomes still require their own audit/test.",
+    "discovery_source": "Official 1.20 modding sections / diary #8, except validator and Wiki rows; checked 2026-10-03",
+    "prior_coverage": "Existing Engine index and general orientation; detailed supplement added."
+  },
+  {
+    "id": "C120-12",
+    "label": "Head/challenger access and conversion targets",
+    "symbols": [
+      "religious_head_or_challenger",
+      "head_of_rite",
+      "head_of_rites",
+      "rite_conversion"
+    ],
+    "native_paths": [
+      "common/character_interactions/_character_interactions.info"
+    ],
+    "chapter": "systems/religion-rites.md",
+    "status": "integrated: local schema/declaration; runtime untested",
+    "limit": "Exact feature consumers and runtime outcomes still require their own audit/test.",
+    "discovery_source": "Official 1.20 modding sections / diary #8, except validator and Wiki rows; checked 2026-10-03",
+    "prior_coverage": "Existing Engine index and general orientation; detailed supplement added."
+  },
+  {
+    "id": "C120-13",
+    "label": "Rite icon/name databases and tenet selection assets",
+    "symbols": [
+      "tenet_selection_pair",
+      "icon",
+      "name"
+    ],
+    "native_paths": [
+      "common/religion/rite_icons/_rite_icons.info",
+      "common/religion/rite_names/_rite_names.info"
+    ],
+    "chapter": "systems/religion-rites.md",
+    "status": "integrated: local schema/declaration; runtime untested",
+    "limit": "Exact feature consumers and runtime outcomes still require their own audit/test.",
+    "discovery_source": "Official 1.20 modding sections / diary #8, except validator and Wiki rows; checked 2026-10-03",
+    "prior_coverage": "Existing Engine index and general orientation; detailed supplement added."
+  },
+  {
+    "id": "C120-14",
+    "label": "Puppet creation, daily validation and fallback art",
+    "symbols": [
+      "set_puppet",
+      "can_have",
+      "is_valid",
+      "asset",
+      "animation"
+    ],
+    "native_paths": [
+      "common/character_interactions/00_puppet_interactions.txt",
+      "common/puppets/actions/_puppet_actions.info",
+      "common/puppets/types/_puppet_types.info"
+    ],
+    "chapter": "systems/puppets-and-selection.md",
+    "status": "integrated: local schema/declaration; runtime untested",
+    "limit": "Exact feature consumers and runtime outcomes still require their own audit/test.",
+    "discovery_source": "Official 1.20 modding sections / diary #8, except validator and Wiki rows; checked 2026-10-03",
+    "prior_coverage": "Existing Engine index and general orientation; detailed supplement added."
+  },
+  {
+    "id": "C120-15",
+    "label": "Puppet action registration and enabled context",
+    "symbols": [
+      "is_enabled",
+      "is_important",
+      "puppeteer",
+      "puppet_or_actor",
+      "is_puppet_action"
+    ],
+    "native_paths": [
+      "common/puppets/actions/_puppet_actions.info",
+      "common/puppets/types/_puppet_types.info"
+    ],
+    "chapter": "systems/puppets-and-selection.md",
+    "status": "integrated: local schema/declaration; runtime untested",
+    "limit": "Exact feature consumers and runtime outcomes still require their own audit/test.",
+    "discovery_source": "Official 1.20 modding sections / diary #8, except validator and Wiki rows; checked 2026-10-03",
+    "prior_coverage": "Existing Engine index and general orientation; detailed supplement added."
+  },
+  {
+    "id": "C120-16",
+    "label": "Interaction stages, actors and script-command boundaries",
+    "symbols": [
+      "is_available",
+      "run_interaction",
+      "is_character_interaction_potentially_accepted"
+    ],
+    "native_paths": [
+      "common/character_interactions/_character_interactions.info"
+    ],
+    "chapter": "systems/puppets-and-selection.md",
+    "status": "integrated: local schema/declaration; runtime untested",
+    "limit": "Exact feature consumers and runtime outcomes still require their own audit/test.",
+    "discovery_source": "Official 1.20 modding sections / diary #8, except validator and Wiki rows; checked 2026-10-03",
+    "prior_coverage": "Existing Engine index and general orientation; detailed supplement added."
+  },
+  {
+    "id": "C120-17",
+    "label": "Decision execution root and puppet chooser limitation",
+    "symbols": [
+      "puppeteer"
+    ],
+    "native_paths": [
+      "common/decisions/_decisions.info",
+      "common/puppets/actions/_puppet_actions.info",
+      "common/puppets/types/_puppet_types.info"
+    ],
+    "chapter": "systems/puppets-and-selection.md",
+    "status": "integrated: local schema/declaration; runtime untested",
+    "limit": "Exact feature consumers and runtime outcomes still require their own audit/test.",
+    "discovery_source": "Official 1.20 modding sections / diary #8, except validator and Wiki rows; checked 2026-10-03",
+    "prior_coverage": "Existing Engine index and general orientation; detailed supplement added."
+  },
+  {
+    "id": "C120-18",
+    "label": "Dynamic selection construction, defaults and AI paths",
+    "symbols": [
+      "setup_items",
+      "default_item",
+      "ai_select_item",
+      "ai_item_will_do",
+      "is_item_valid",
+      "selected_item"
+    ],
+    "native_paths": [
+      "common/decisions/50_holy_site_decisions.txt",
+      "common/decisions/_decisions.info",
+      "common/decisions/dlc_decisions/pam/pam_saint_decisions.txt"
+    ],
+    "chapter": "systems/puppets-and-selection.md",
+    "status": "integrated: local schema/declaration; runtime untested",
+    "limit": "Exact feature consumers and runtime outcomes still require their own audit/test.",
+    "discovery_source": "Official 1.20 modding sections / diary #8, except validator and Wiki rows; checked 2026-10-03",
+    "prior_coverage": "Existing Engine index and general orientation; detailed supplement added."
+  },
+  {
+    "id": "C120-19",
+    "label": "Selection controllers, scoped GUI preselection and title filtering",
+    "symbols": [
+      "select_scope_object",
+      "select_title",
+      "MakeDecisionTypeWithParam",
+      "PdxGuiWidget.MakeDecisionTypeWithParam"
+    ],
+    "native_paths": [
+      "common/decisions/_decisions.info",
+      "gui/window_holy_site.gui"
+    ],
+    "chapter": "systems/puppets-and-selection.md",
+    "status": "integrated: local schema/declaration; runtime untested",
+    "limit": "Exact feature consumers and runtime outcomes still require their own audit/test.",
+    "discovery_source": "Official 1.20 modding sections / diary #8, except validator and Wiki rows; checked 2026-10-03",
+    "prior_coverage": "Existing Engine index and general orientation; detailed supplement added."
+  },
+  {
+    "id": "C120-20",
+    "label": "Government mechanics, flags, war redirect and courts",
+    "symbols": [
+      "mechanic_type",
+      "government_has_mechanic",
+      "government_type_has_flag",
+      "redirects_wars_to_overlord",
+      "royal_court"
+    ],
+    "native_paths": [
+      "common/governments/_governments.info"
+    ],
+    "chapter": "systems/crozier-migration.md",
+    "status": "integrated: local schema/declaration; runtime untested",
+    "limit": "Exact feature consumers and runtime outcomes still require their own audit/test.",
+    "discovery_source": "Official 1.20 modding sections / diary #8, except validator and Wiki rows; checked 2026-10-03",
+    "prior_coverage": "Existing Engine index and general orientation; detailed supplement added."
+  },
+  {
+    "id": "C120-21",
+    "label": "Law membership, cumulative groups and authority helper",
+    "symbols": [
+      "law_group_type",
+      "cumulative",
+      "required_government_flag",
+      "change_authority_effect"
+    ],
+    "native_paths": [
+      "common/law_groups/_law_groups.info",
+      "common/laws/_laws.info",
+      "common/scripted_effects/00_realm_effects.txt"
+    ],
+    "chapter": "systems/crozier-migration.md",
+    "status": "integrated: local schema/declaration; runtime untested",
+    "limit": "Exact feature consumers and runtime outcomes still require their own audit/test.",
+    "discovery_source": "Official 1.20 modding sections / diary #8, except validator and Wiki rows; checked 2026-10-03",
+    "prior_coverage": "Existing Engine index and general orientation; detailed supplement added."
+  },
+  {
+    "id": "C120-22",
+    "label": "Lease hierarchies, share limits and holy-order leases",
+    "symbols": [
+      "hierarchy",
+      "type",
+      "lease_out_to_holy_order"
+    ],
+    "native_paths": [
+      "common/lease_contracts/_lease_contracts.info"
+    ],
+    "chapter": "systems/crozier-migration.md",
+    "status": "integrated: local schema/declaration; runtime untested",
+    "limit": "Exact feature consumers and runtime outcomes still require their own audit/test.",
+    "discovery_source": "Official 1.20 modding sections / diary #8, except validator and Wiki rows; checked 2026-10-03",
+    "prior_coverage": "Existing Engine index and general orientation; detailed supplement added."
+  },
+  {
+    "id": "C120-23",
+    "label": "Holy order databases",
+    "symbols": [
+      "create_holy_order"
+    ],
+    "native_paths": [
+      "common/holy_orders/_holy_orders.info"
+    ],
+    "chapter": "systems/crozier-migration.md",
+    "status": "integrated: local schema/declaration; runtime untested",
+    "limit": "Exact feature consumers and runtime outcomes still require their own audit/test.",
+    "discovery_source": "Official 1.20 modding sections / diary #8, except validator and Wiki rows; checked 2026-10-03",
+    "prior_coverage": "Existing Engine index and general orientation; detailed supplement added."
+  },
+  {
+    "id": "C120-24",
+    "label": "Council validity and trait flags",
+    "symbols": [
+      "valid_for_council_task",
+      "valid_for_council_position",
+      "has_trait_with_flag"
+    ],
+    "native_paths": [
+      "common/council_positions/_council_positions.info"
+    ],
+    "chapter": "systems/crozier-migration.md",
+    "status": "integrated: local schema/declaration; runtime untested",
+    "limit": "Exact feature consumers and runtime outcomes still require their own audit/test.",
+    "discovery_source": "Official 1.20 modding sections / diary #8, except validator and Wiki rows; checked 2026-10-03",
+    "prior_coverage": "Existing Engine index and general orientation; detailed supplement added."
+  },
+  {
+    "id": "C120-25",
+    "label": "Scheme information visibility",
+    "symbols": [
+      "expose_scheme_to"
+    ],
+    "native_paths": [
+      "common/schemes/agent_types/_agent_types.info",
+      "common/schemes/pulse_actions/_pulse_actions.info",
+      "common/schemes/scheme_countermeasures/_scheme_countermeasures.info",
+      "common/schemes/scheme_types/_schemes.info"
+    ],
+    "chapter": "systems/crozier-migration.md",
+    "status": "integrated: local schema/declaration; runtime untested",
+    "limit": "Exact feature consumers and runtime outcomes still require their own audit/test.",
+    "discovery_source": "Official 1.20 modding sections / diary #8, except validator and Wiki rows; checked 2026-10-03",
+    "prior_coverage": "Existing Engine index and general orientation; detailed supplement added."
+  },
+  {
+    "id": "C120-26",
+    "label": "Great Project stage-specific heir scopes",
+    "symbols": [
+      "founder_heir"
+    ],
+    "native_paths": [
+      "common/great_projects/types/_great_project_types.info"
+    ],
+    "chapter": "systems/crozier-migration.md",
+    "status": "integrated: local schema/declaration; runtime untested",
+    "limit": "Exact feature consumers and runtime outcomes still require their own audit/test.",
+    "discovery_source": "Official 1.20 modding sections / diary #8, except validator and Wiki rows; checked 2026-10-03",
+    "prior_coverage": "Existing Engine index and general orientation; detailed supplement added."
+  },
+  {
+    "id": "C120-27",
+    "label": "Election set identity and scoring alternatives",
+    "symbols": [
+      "candidate_policy",
+      "priority_value",
+      "elector_vote_strength_value",
+      "candidate_score_value"
+    ],
+    "native_paths": [
+      "common/succession_election/_succession_election.info"
+    ],
+    "chapter": "systems/crozier-migration.md",
+    "status": "integrated: local schema/declaration; runtime untested",
+    "limit": "Exact feature consumers and runtime outcomes still require their own audit/test.",
+    "discovery_source": "Official 1.20 modding sections / diary #8, except validator and Wiki rows; checked 2026-10-03",
+    "prior_coverage": "Existing Engine index and general orientation; detailed supplement added."
+  },
+  {
+    "id": "C120-28",
+    "label": "Appointment tier enum, investments and title grouping",
+    "symbols": [
+      "allowed_candidate_tier",
+      "use_investment_cap",
+      "keep_top_tier_titles_together"
+    ],
+    "native_paths": [
+      "common/succession_appointment/_succession_appointment.info"
+    ],
+    "chapter": "systems/crozier-migration.md",
+    "status": "integrated with explicit source discrepancy",
+    "limit": "Announcement wording differs from local declaration; no equivalence assumed.",
+    "discovery_source": "Official 1.20 modding sections / diary #8, except validator and Wiki rows; checked 2026-10-03",
+    "prior_coverage": "Existing Engine index and general orientation; detailed supplement added."
+  },
+  {
+    "id": "C120-29",
+    "label": "Fallback inheritance and secular-only blockers",
+    "symbols": [
+      "inheritance_blocker",
+      "set_title_fallback_heir"
+    ],
+    "native_paths": [
+      "common/landed_titles/_landed_titles.info",
+      "common/traits/_traits.info"
+    ],
+    "chapter": "systems/crozier-migration.md",
+    "status": "integrated: local schema/declaration; runtime untested",
+    "limit": "Exact feature consumers and runtime outcomes still require their own audit/test.",
+    "discovery_source": "Official 1.20 modding sections / diary #8, except validator and Wiki rows; checked 2026-10-03",
+    "prior_coverage": "Existing Engine index and general orientation; detailed supplement added."
+  },
+  {
+    "id": "C120-30",
+    "label": "History overrides and post-death effects",
+    "symbols": [
+      "history_override_priority",
+      "effect_even_if_dead",
+      "obscured"
+    ],
+    "native_paths": [
+      "history/_characters.info",
+      "history/_history.info",
+      "history/_provinces.info",
+      "history/cultures/_culture.info",
+      "history/faiths/_faith_history.info",
+      "history/situations/_situations.info",
+      "history/struggles/_struggles.info"
+    ],
+    "chapter": "systems/crozier-migration.md",
+    "status": "integrated: local schema/declaration; runtime untested",
+    "limit": "Exact feature consumers and runtime outcomes still require their own audit/test.",
+    "discovery_source": "Official 1.20 modding sections / diary #8, except validator and Wiki rows; checked 2026-10-03",
+    "prior_coverage": "Existing Engine index and general orientation; detailed supplement added."
+  },
+  {
+    "id": "C120-31",
+    "label": "Single-event override and restart/hot reload",
+    "symbols": [
+      "id_override_priority",
+      "stacking_order"
+    ],
+    "native_paths": [
+      "events/_events.info"
+    ],
+    "chapter": "systems/crozier-migration.md",
+    "status": "integrated: local schema/declaration; runtime untested",
+    "limit": "Exact feature consumers and runtime outcomes still require their own audit/test.",
+    "discovery_source": "Official 1.20 modding sections / diary #8, except validator and Wiki rows; checked 2026-10-03",
+    "prior_coverage": "Existing Engine index and general orientation; detailed supplement added."
+  },
+  {
+    "id": "C120-32",
+    "label": "Activity religious selectors and backgrounds",
+    "symbols": [
+      "tenet_doctrine_based_activity",
+      "activity_tenet",
+      "activity_doctrine",
+      "header_background"
+    ],
+    "native_paths": [
+      "common/activities/activity_types/_activity_type.info"
+    ],
+    "chapter": "systems/crozier-migration.md",
+    "status": "integrated: local schema/declaration; runtime untested",
+    "limit": "Exact feature consumers and runtime outcomes still require their own audit/test.",
+    "discovery_source": "Official 1.20 modding sections / diary #8, except validator and Wiki rows; checked 2026-10-03",
+    "prior_coverage": "Existing Engine index and general orientation; detailed supplement added."
+  },
+  {
+    "id": "C120-33",
+    "label": "Locked invite rules",
+    "symbols": [
+      "locked"
+    ],
+    "native_paths": [
+      "common/activities/guest_invite_rules/_invite_rules.info"
+    ],
+    "chapter": "systems/crozier-migration.md",
+    "status": "integrated: local schema/declaration; runtime untested",
+    "limit": "Exact feature consumers and runtime outcomes still require their own audit/test.",
+    "discovery_source": "Official 1.20 modding sections / diary #8, except validator and Wiki rows; checked 2026-10-03",
+    "prior_coverage": "Existing Engine index and general orientation; detailed supplement added."
+  },
+  {
+    "id": "C120-34",
+    "label": "Situation decisions, GUI tags and phase assets",
+    "symbols": [
+      "situation_decisions",
+      "ending_decisions",
+      "gui_tags",
+      "texture"
+    ],
+    "native_paths": [
+      "common/situation/catalysts/_catalysts.info",
+      "common/situation/situation_group_types/_situation_group_types.info",
+      "common/situation/situations/_situations.info"
+    ],
+    "chapter": "systems/crozier-migration.md",
+    "status": "integrated: local schema/declaration; runtime untested",
+    "limit": "Exact feature consumers and runtime outcomes still require their own audit/test.",
+    "discovery_source": "Official 1.20 modding sections / diary #8, except validator and Wiki rows; checked 2026-10-03",
+    "prior_coverage": "Existing Engine index and general orientation; detailed supplement added."
+  },
+  {
+    "id": "C120-35",
+    "label": "Flavorization scopes and deceased saints",
+    "symbols": [
+      "rite",
+      "lessee",
+      "saint"
+    ],
+    "native_paths": [
+      "common/flavorization/_flavourization.info"
+    ],
+    "chapter": "systems/crozier-migration.md",
+    "status": "integrated: local schema/declaration; runtime untested",
+    "limit": "Exact feature consumers and runtime outcomes still require their own audit/test.",
+    "discovery_source": "Official 1.20 modding sections / diary #8, except validator and Wiki rows; checked 2026-10-03",
+    "prior_coverage": "Existing Engine index and general orientation; detailed supplement added."
+  },
+  {
+    "id": "C120-36",
+    "label": "Holding modifier removal and county opinion families",
+    "symbols": [
+      "character_faith_modifier",
+      "county_modifier"
+    ],
+    "native_paths": [
+      "common/buildings/_buildings.info"
+    ],
+    "chapter": "systems/crozier-migration.md",
+    "status": "integrated: local schema/declaration; runtime untested",
+    "limit": "Exact feature consumers and runtime outcomes still require their own audit/test.",
+    "discovery_source": "Official 1.20 modding sections / diary #8, except validator and Wiki rows; checked 2026-10-03",
+    "prior_coverage": "Existing Engine index and general orientation; detailed supplement added."
+  },
+  {
+    "id": "C120-37",
+    "label": "Standalone currency modifiers and legitimacy levels",
+    "symbols": [
+      "prestige_standalone_gain_mult",
+      "change_legitimacy_level"
+    ],
+    "native_paths": [],
+    "chapter": "systems/crozier-migration.md",
+    "status": "integrated: local schema/declaration; runtime untested",
+    "limit": "Exact feature consumers and runtime outcomes still require their own audit/test.",
+    "discovery_source": "Official 1.20 modding sections / diary #8, except validator and Wiki rows; checked 2026-10-03",
+    "prior_coverage": "Existing Engine index and general orientation; detailed supplement added."
+  },
+  {
+    "id": "C120-38",
+    "label": "Realm-title interaction target migration",
+    "symbols": [
+      "realm_titles",
+      "realm_counties",
+      "other_faith_heads"
+    ],
+    "native_paths": [
+      "common/character_interactions/_character_interactions.info"
+    ],
+    "chapter": "systems/crozier-migration.md",
+    "status": "integrated: local schema/declaration; runtime untested",
+    "limit": "Exact feature consumers and runtime outcomes still require their own audit/test.",
+    "discovery_source": "Official 1.20 modding sections / diary #8, except validator and Wiki rows; checked 2026-10-03",
+    "prior_coverage": "Existing Engine index and general orientation; detailed supplement added."
+  },
+  {
+    "id": "C120-39",
+    "label": "Dynasty base names, lowborn bookmarks and marriage conditions",
+    "symbols": [
+      "dynast_has_base_name",
+      "dynasty_has_base_name"
+    ],
+    "native_paths": [
+      "common/bookmarks/bookmarks/_bookmarks.info",
+      "common/bookmarks/challenge_characters/_challenge_characters.info",
+      "common/bookmarks/groups/_bookmark_groups.info"
+    ],
+    "chapter": "systems/crozier-migration.md",
+    "status": "integrated with explicit announcement spelling discrepancy",
+    "limit": "Use installed dynasty_has_base_name; lowborn/marriage policy remains specific-feature research.",
+    "discovery_source": "Official 1.20 modding sections / diary #8, except validator and Wiki rows; checked 2026-10-03",
+    "prior_coverage": "Existing Engine index and general orientation; detailed supplement added."
+  },
+  {
+    "id": "C120-40",
+    "label": "Optional scope syntax in numeric contexts",
+    "symbols": [
+      "?="
+    ],
+    "native_paths": [
+      "common/script_values/_script_values.info",
+      "common/script_values/pam_values.txt"
+    ],
+    "chapter": "systems/crozier-migration.md",
+    "status": "integrated: local schema/declaration; runtime untested",
+    "limit": "Current callers observed; no generalized optional-RHS or arbitrary-reader guarantee.",
+    "discovery_source": "Official 1.20 modding sections / diary #8, except validator and Wiki rows; checked 2026-10-03",
+    "prior_coverage": "Existing Engine index and general orientation; detailed supplement added."
+  },
+  {
+    "id": "C120-41",
+    "label": "Trait gained/lost and recursion",
+    "symbols": [
+      "on_trait_gained",
+      "on_trait_lost"
+    ],
+    "native_paths": [
+      "common/on_action/traits_on_actions.txt"
+    ],
+    "chapter": "systems/crozier-migration.md",
+    "status": "integrated: local schema/declaration; runtime untested",
+    "limit": "Exact feature consumers and runtime outcomes still require their own audit/test.",
+    "discovery_source": "Official 1.20 modding sections / diary #8, except validator and Wiki rows; checked 2026-10-03",
+    "prior_coverage": "Existing Engine index and general orientation; detailed supplement added."
+  },
+  {
+    "id": "C120-42",
+    "label": "Created characters versus births; reason flags",
+    "symbols": [
+      "on_character_created",
+      "creation_reason"
+    ],
+    "native_paths": [
+      "common/on_action/character_created_on_actions.txt"
+    ],
+    "chapter": "systems/crozier-migration.md",
+    "status": "integrated: local schema/declaration; runtime untested",
+    "limit": "Exact feature consumers and runtime outcomes still require their own audit/test.",
+    "discovery_source": "Official 1.20 modding sections / diary #8, except validator and Wiki rows; checked 2026-10-03",
+    "prior_coverage": "Existing Engine index and general orientation; detailed supplement added."
+  },
+  {
+    "id": "C120-43",
+    "label": "Player switch hook and old/new identity",
+    "symbols": [
+      "on_player_character_change",
+      "previous_player_character"
+    ],
+    "native_paths": [
+      "common/on_action/player_change_on_actions.txt"
+    ],
+    "chapter": "systems/crozier-migration.md",
+    "status": "integrated: local schema/declaration; runtime untested",
+    "limit": "Exact feature consumers and runtime outcomes still require their own audit/test.",
+    "discovery_source": "Official 1.20 modding sections / diary #8, except validator and Wiki rows; checked 2026-10-03",
+    "prior_coverage": "Existing Engine index and general orientation; detailed supplement added."
+  },
+  {
+    "id": "C120-44",
+    "label": "Religion and personal-tenet hooks",
+    "symbols": [
+      "on_rite_change",
+      "on_rite_created",
+      "on_personal_tenet_gain",
+      "on_personal_tenet_loss"
+    ],
+    "native_paths": [
+      "common/on_action/religion_on_actions.txt"
+    ],
+    "chapter": "systems/crozier-migration.md",
+    "status": "integrated: local schema/declaration; runtime untested",
+    "limit": "Exact feature consumers and runtime outcomes still require their own audit/test.",
+    "discovery_source": "Official 1.20 modding sections / diary #8, except validator and Wiki rows; checked 2026-10-03",
+    "prior_coverage": "Existing Engine index and general orientation; detailed supplement added."
+  },
+  {
+    "id": "C120-45",
+    "label": "County rite versus faith change",
+    "symbols": [
+      "on_county_rite_change",
+      "on_county_faith_change",
+      "old_rite",
+      "old_faith"
+    ],
+    "native_paths": [
+      "common/on_action/county_on_actions.txt"
+    ],
+    "chapter": "systems/crozier-migration.md",
+    "status": "integrated: local schema/declaration; runtime untested",
+    "limit": "Exact feature consumers and runtime outcomes still require their own audit/test.",
+    "discovery_source": "Official 1.20 modding sections / diary #8, except validator and Wiki rows; checked 2026-10-03",
+    "prior_coverage": "Existing Engine index and general orientation; detailed supplement added."
+  },
+  {
+    "id": "C120-46",
+    "label": "Death timing and death-reason scope",
+    "symbols": [
+      "on_death",
+      "death_reason",
+      "killer",
+      "artifact"
+    ],
+    "native_paths": [
+      "common/on_action/death.txt"
+    ],
+    "chapter": "systems/crozier-migration.md",
+    "status": "integrated: local schema/declaration; runtime untested",
+    "limit": "Exact feature consumers and runtime outcomes still require their own audit/test.",
+    "discovery_source": "Official 1.20 modding sections / diary #8, except validator and Wiki rows; checked 2026-10-03",
+    "prior_coverage": "Existing Engine index and general orientation; detailed supplement added."
+  },
+  {
+    "id": "C120-47",
+    "label": "Liberation sieges and points-of-interest callbacks",
+    "symbols": [
+      "on_liberation_siege_completion",
+      "on_add",
+      "on_remove"
+    ],
+    "native_paths": [
+      "common/on_action/army_on_actions.txt",
+      "common/travel/point_of_interest_types/_travel_point_of_interest_types.info",
+      "common/travel/travel_options/_travel_options.info"
+    ],
+    "chapter": "systems/crozier-migration.md",
+    "status": "integrated: local schema/declaration; runtime untested",
+    "limit": "Exact feature consumers and runtime outcomes still require their own audit/test.",
+    "discovery_source": "Official 1.20 modding sections / diary #8, except validator and Wiki rows; checked 2026-10-03",
+    "prior_coverage": "Existing Engine index and general orientation; detailed supplement added."
+  },
+  {
+    "id": "C120-48",
+    "label": "Genealogical lists, biological parents and birth dates",
+    "symbols": [
+      "every_grandchild",
+      "every_great_grandchild",
+      "every_real_parent",
+      "every_real_grandparent",
+      "every_real_great_grandparent",
+      "clear_father",
+      "clear_mother",
+      "clear_real_father",
+      "clear_real_mother",
+      "days_since_birth",
+      "birth_date",
+      "day_of_year_of_birth",
+      "month_of_year_of_birth",
+      "day_of_month_of_birth"
+    ],
+    "native_paths": [
+      "history/_characters.info"
+    ],
+    "chapter": "systems/crozier-migration.md",
+    "status": "integrated: local schema/declaration; runtime untested",
+    "limit": "Exact feature consumers and runtime outcomes still require their own audit/test.",
+    "discovery_source": "Official 1.20 modding sections / diary #8, except validator and Wiki rows; checked 2026-10-03",
+    "prior_coverage": "Existing Engine index and general orientation; detailed supplement added."
+  },
+  {
+    "id": "C120-49",
+    "label": "Data-model string joining and conflicting last-item tokens",
+    "symbols": [
+      "DataModelJoinList"
+    ],
+    "native_paths": [
+      "gui/window_holy_site.gui"
+    ],
+    "chapter": "systems/crozier-gui-tools.md",
+    "status": "integrated with explicit source discrepancy",
+    "limit": "Announcement wording differs from local declaration; no equivalence assumed.",
+    "discovery_source": "Official 1.20 modding sections / diary #8, except validator and Wiki rows; checked 2026-10-03",
+    "prior_coverage": "Existing Engine index and general orientation; detailed supplement added."
+  },
+  {
+    "id": "C120-50",
+    "label": "Boolean binding functions and integer casts",
+    "symbols": [
+      "And2",
+      "Or2",
+      "Nor",
+      "Nand",
+      "int_bool"
+    ],
+    "native_paths": [
+      "gui/scripted_widgets/_scripted_widgets.info",
+      "gui/shared/animation.info"
+    ],
+    "chapter": "systems/crozier-gui-tools.md",
+    "status": "integrated: local schema/declaration; runtime untested",
+    "limit": "Exact feature consumers and runtime outcomes still require their own audit/test.",
+    "discovery_source": "Official 1.20 modding sections / diary #8, except validator and Wiki rows; checked 2026-10-03",
+    "prior_coverage": "Existing Engine index and general orientation; detailed supplement added."
+  },
+  {
+    "id": "C120-51",
+    "label": "Database Custom localization and morphology formatters",
+    "symbols": [
+      "Custom",
+      "seek_from",
+      "strip",
+      "match"
+    ],
+    "native_paths": [
+      "common/customizable_localization/_custom_loc.info",
+      "common/morpheme_strip_rules/00_morpheme_strip_rules.info"
+    ],
+    "chapter": "systems/crozier-gui-tools.md",
+    "status": "integrated: local schema/declaration; runtime untested",
+    "limit": "Exact feature consumers and runtime outcomes still require their own audit/test.",
+    "discovery_source": "Official 1.20 modding sections / diary #8, except validator and Wiki rows; checked 2026-10-03",
+    "prior_coverage": "Existing Engine index and general orientation; detailed supplement added."
+  },
+  {
+    "id": "C120-52",
+    "label": "Portrait animation packs, sets and variant precedence",
+    "symbols": [
+      "portrait_modifier_pack",
+      "portrait_modifier_set",
+      "force"
+    ],
+    "native_paths": [
+      "gfx/portraits/portrait_animations/_animations.info"
+    ],
+    "chapter": "systems/crozier-gui-tools.md",
+    "status": "integrated: local schema/declaration; runtime untested",
+    "limit": "Exact feature consumers and runtime outcomes still require their own audit/test.",
+    "discovery_source": "Official 1.20 modding sections / diary #8, except validator and Wiki rows; checked 2026-10-03",
+    "prior_coverage": "Existing Engine index and general orientation; detailed supplement added."
+  },
+  {
+    "id": "C120-53",
+    "label": "Wappen/frame overrides and realm-mask assets",
+    "symbols": [
+      "coat_of_arms",
+      "frame"
+    ],
+    "native_paths": [
+      "common/coat_of_arms/dynamic_definitions/_dynamic_definitions.info"
+    ],
+    "chapter": "systems/crozier-gui-tools.md",
+    "status": "integrated: retrieval boundary; detailed override consumers open",
+    "limit": "Culture frame schema exists; per-house/dynasty override and masks require exact loader/GUI audit.",
+    "discovery_source": "Official 1.20 modding sections / diary #8, except validator and Wiki rows; checked 2026-10-03",
+    "prior_coverage": "Existing Engine index and general orientation; detailed supplement added."
+  },
+  {
+    "id": "C120-54",
+    "label": "Developer command-line inventory and initialization stages",
+    "symbols": [
+      "-bookmark",
+      "-skip_checksum",
+      "-run_console_action",
+      "-shutdown_after_history",
+      "-logprefix",
+      "-logpostfix"
+    ],
+    "native_paths": [
+      "_commandline_options.info"
+    ],
+    "chapter": "systems/crozier-gui-tools.md",
+    "status": "integrated: local schema/declaration; runtime untested",
+    "limit": "Exact feature consumers and runtime outcomes still require their own audit/test.",
+    "discovery_source": "Official 1.20 modding sections / diary #8, except validator and Wiki rows; checked 2026-10-03",
+    "prior_coverage": "Existing Engine index and general orientation; detailed supplement added."
+  },
+  {
+    "id": "C120-55",
+    "label": "Debug-query history, nested blockers and perspective diagnostics",
+    "symbols": [],
+    "native_paths": [],
+    "chapter": "systems/crozier-gui-tools.md",
+    "status": "integrated: qualified source note",
+    "limit": "Release/tool statement; no independent engine-runtime verification.",
+    "discovery_source": "Official 1.20 modding sections / diary #8, except validator and Wiki rows; checked 2026-10-03",
+    "prior_coverage": "Existing Engine index and general orientation; detailed supplement added."
+  },
+  {
+    "id": "C120-56",
+    "label": "Reload boundaries, source overrides and diagnostic quality",
+    "symbols": [],
+    "native_paths": [],
+    "chapter": "systems/crozier-gui-tools.md",
+    "status": "integrated: qualified source note",
+    "limit": "Release/tool statement; no independent engine-runtime verification.",
+    "discovery_source": "Official 1.20 modding sections / diary #8, except validator and Wiki rows; checked 2026-10-03",
+    "prior_coverage": "Existing Engine index and general orientation; detailed supplement added."
+  },
+  {
+    "id": "C120-57",
+    "label": "Accessory range, DNA and no-portrait assets",
+    "symbols": [],
+    "native_paths": [],
+    "chapter": "systems/crozier-gui-tools.md",
+    "status": "integrated: qualified source note",
+    "limit": "Release/tool statement; no independent engine-runtime verification.",
+    "discovery_source": "Official 1.20 modding sections / diary #8, except validator and Wiki rows; checked 2026-10-03",
+    "prior_coverage": "Existing Engine index and general orientation; detailed supplement added."
+  },
+  {
+    "id": "C120-58",
+    "label": "Validator coverage, version lag and suppression",
+    "symbols": [],
+    "native_paths": [],
+    "chapter": "systems/crozier-gui-tools.md",
+    "status": "integrated: qualified source note",
+    "limit": "Release/tool statement; no independent engine-runtime verification.",
+    "discovery_source": "Official 1.20 modding sections / diary #8, except validator and Wiki rows; checked 2026-10-03",
+    "prior_coverage": "Existing Engine index and general orientation; detailed supplement added."
+  },
+  {
+    "id": "C120-59",
+    "label": "Wiki declarations and native query/send/execute callers",
+    "symbols": [
+      "run_interaction",
+      "is_character_interaction_potentially_accepted"
+    ],
+    "native_paths": [
+      "common/customizable_localization/pam_sway_to_rite_custom_loc.txt",
+      "common/important_actions/00_personal_actions.txt",
+      "common/script_values/tutorial_values.txt",
+      "common/scripted_effects/10_dlc_tgp_scripted_effects.txt",
+      "common/scripted_triggers/pam_scripted_triggers.txt"
+    ],
+    "chapter": "systems/crozier-gui-tools.md",
+    "status": "integrated: local schema/declaration; runtime untested",
+    "limit": "Exact feature consumers and runtime outcomes still require their own audit/test.",
+    "discovery_source": "Official 1.20 modding sections / diary #8, except validator and Wiki rows; checked 2026-10-03",
+    "prior_coverage": "Existing Engine index and general orientation; detailed supplement added."
+  },
+  {
+    "id": "C120-60",
+    "label": "Build-specific hotfix regression cases",
+    "symbols": [],
+    "native_paths": [],
+    "chapter": "systems/crozier-migration.md",
+    "status": "integrated: qualified source note",
+    "limit": "Release/tool statement; no independent engine-runtime verification.",
+    "discovery_source": "Official 1.20 modding sections / diary #8, except validator and Wiki rows; checked 2026-10-03",
+    "prior_coverage": "Existing Engine index and general orientation; detailed supplement added."
+  }
+]

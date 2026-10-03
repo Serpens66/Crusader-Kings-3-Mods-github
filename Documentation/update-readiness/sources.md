@@ -7,6 +7,7 @@ All local sources were accessed on **2026-10-03**. The installation baseline is 
 | Evidence | What it establishes | Limit |
 |---|---|---|
 | [Workspace baseline](evidence/workspace-baseline.json) | Recorded hashes of all 853 non-Documentation, non-Git files, version metadata and Git status | Preservation manifest, not a backup of file contents; no source edits were needed |
+| [Mass conversion supplement](evidence/mass-conversion-audit-20261003.json) | Fresh 295 native file hashes, 2,536 lexical objects, exact export spans and 853 current non-Documentation preservation hashes; [reviewed routes](mods/mass-demand-conversion-audit.md) | Partial semantic audit; dynamic/engine contracts and runtime gates remain; historical baselines preserved |
 | [Source closure](evidence/feature-source-closure.json) | Complete-file read hashes for 1,208 unique native files, per-package counterparts, developer references and literal dependency edges | Overinclusive discovery; not a semantic call graph or macro expansion |
 | [Collision records](evidence/conflicts.json) | All same-path cross-package overlaps, same-directory top-level ID candidates and native same paths | Nested GUI types and localization replacements require separate inspection |
 | [Native ID candidates](evidence/native-id-overrides.json) | Native IDs under the same database directory even when filenames differ | Lexical candidates, not a general loader precedence rule |

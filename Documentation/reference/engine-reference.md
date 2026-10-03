@@ -48,3 +48,11 @@ The original [local index](index-guide.md) still provides definitions and caller
 | `ScriptedGui.IsShown`, `IsValid`, `Execute` | Single TopScope argument; registered return types retained | Correct widget root, synchronized click behavior and visible native UI |
 
 Every row is a declaration finding. Retrieve its full raw text before implementation; the [43 contract cards](../update-readiness/contracts/README.md) retain remaining behavioral gates. No compatibility status is promoted automatically.
+
+## Conversion declaration limits — 2026-10-03
+
+The [focused conversion audit](../update-readiness/mods/mass-demand-conversion-audit.md) preserves complete local declarations, including optional query parameters and redirect/threshold syntax. Query default response/cutoff and initialization of puppet/option scopes are not specified by the export. Effect fallback after acceptance cannot certify earlier query context. The [native acceptance matrix](../update-readiness/mods/mass-demand-conversion-tests.md) is separate from own-interaction fixture tests; no gameplay claim is added.
+
+## General Crozier source supplement — 2026-10-03
+
+The [general Crozier supplement](../research/crozier-source-coverage.md) connects existing declarations to current schemas and chapter guidance. It preserves conflicts in hook root metadata and GUI last-item tokens rather than rewriting raw exports or guessing a runtime contract.

@@ -1,0 +1,19 @@
+{
+  "date": "2026-10-03",
+  "status": "passed",
+  "changed_documentation_files": 19,
+  "internal_links": 255,
+  "native_source_hashes": 295,
+  "lexical_object_boundaries": 2536,
+  "preserved_non_documentation_files": 853,
+  "historical_baseline_drift": [
+    "AGENTS.md"
+  ],
+  "runtime": "not run",
+  "external_validator": "not run",
+  "issues": [],
+  "limits": [
+    "Partial semantic feature audit; lexical edges are discovery only",
+    "No gameplay, GUI or MP tests; no compatibility promotion"
+  ]
+}

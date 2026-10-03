@@ -30,9 +30,9 @@ Current engine declarations are now indexed. These cards complement, rather than
 | [LW-SELECT](LW-SELECT.md) | mixed; missing names are not proof of unsupported API | War predicates, saved context and selection-time revalidation |
 | [LW-EXIT](LW-EXIT.md) | export declarations available | Removal/cleanup/alliance/payment/experience contracts |
 | [LW-RULES](LW-RULES.md) | export declarations available | Rule arithmetic verified; accounting/duplicates need current engine tests |
-| [MC-CANDIDATES](MC-CANDIDATES.md) | export declarations available | Query validity/context and count/send equality |
-| [MC-DISPATCH](MC-DISPATCH.md) | export declarations available | Native actor initialization, consent, cooldown and consequence audit |
-| [MC-VARIANTS](MC-VARIANTS.md) | export declarations available | Port verified standalone behavior to bundle; keep categories scoped |
+| [MC-CANDIDATES](MC-CANDIDATES.md) | export declarations available | G01/G02/G04: query initialization/default response, validity/cooldown/pending checks and snapshot count context |
+| [MC-DISPATCH](MC-DISPATCH.md) | export declarations available | G01/G02/G03/G05: dispatch/options initialization, native consequences and delayed/list/MP lifecycle |
+| [MC-VARIANTS](MC-VARIANTS.md) | export declarations available | After MC gates: verify corresponding standalone/bundle routes and radio selection; retain distribution identity |
 | [SA-JOIN](SA-JOIN.md) | export declarations available | Target-specific query and native scope:target contract |
 | [SA-STOP](SA-STOP.md) | export declarations available | Current selectable war and correct leader query context |
 | [SA-EDUCATION](SA-EDUCATION.md) | export declarations available | Editing permission and current education view binding |
@@ -49,3 +49,7 @@ Current engine declarations are now indexed. These cards complement, rather than
 | [SI-EXCOMM](SI-EXCOMM.md) | export declarations available | Required EXCOMMUNICATOR, removed helper, intended temporal policy |
 | [SI-CONVERSION](SI-CONVERSION.md) | export declarations available | Same shared MC work package; test bundle separately |
 | [SI-WARS](SI-WARS.md) | export declarations available | Same shared LW work package; test bundle separately |
+
+## Mass conversion source supplement — 2026-10-03
+
+The [focused audit](../mods/mass-demand-conversion-audit.md) and [native tests](../mods/mass-demand-conversion-tests.md) refine MC gates without changing compatibility status. Export signatures are present; engine initialization, query defaults, lifecycle and runtime evidence remain unresolved. General own-interaction fixture runs do not certify native conversion.

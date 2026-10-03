@@ -95,3 +95,7 @@ Static evidence alone does not establish multiplayer determinism, loop ordering 
 The [current engine reference](../reference/engine-reference.md) now indexes six script and five data-type exports with exact raw line ranges and checksums. Historical statements above about absent generated dumps describe the initial research stage. Use [lookup](../tools/lookup.py) for both engine declarations and existing local definitions/callers. Missing optionality, argument types, scope lifetime, permissions and multiplayer routing remain unknown where the export does not specify them.
 
 See [workspace function contracts](../workspace/function-contracts.md) for owner/caller/state distinctions and [isolated tests](../examples/test-runs.md) for runtime acceptance. The user completed export sessions, but no example gameplay/GUI/MP tests have been performed.
+
+## Complete Wiki and legacy reader supplement
+
+The [57-page reconciliation](../research/jesec-wiki-coverage.md) reinforces historical weight macros versus numeric formulas. [Legacy contracts](../systems/dynasty-legacies.md) show separate visibility and pick triggers, dynasty/dynast scope transitions and initialization-phase restrictions. A scripted helper legal in a perk AI formula is not automatically legal while parsing a track visibility definition.

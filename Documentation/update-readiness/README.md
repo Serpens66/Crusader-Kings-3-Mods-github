@@ -28,7 +28,7 @@ Research date: **2026-10-03**. All 18,710 previously indexed native text/referen
 | [GFX Mod](mods/gfx-mod.md) | Rank atlas is shorter than current native atlas; shared gender textures conflict with other graphical packages |
 | [GFX Mod Serp](mods/gfx-mod-serp.md) | 664 textures need consumer-aware review; six concrete post-effect assignment changes; rank atlas and other dimensions differ |
 | [Leave Wars](mods/leave-wars.md) | Standalone and bundle content are byte-identical; current war-state revalidation and command contracts are prerequisites |
-| [Mass Demand Conversion](mods/mass-demand-conversion.md) | Standalone is newer than bundle; preserve native consent and new conversion consequences; query/dispatch context remains a gate |
+| [Mass Demand Conversion](mods/mass-demand-conversion.md) | [Focused source audit](mods/mass-demand-conversion-audit.md) and [native tests](mods/mass-demand-conversion-tests.md) refine conditional costs, fallback and delayed outcomes; G01–G05 remain open |
 | [SerpAlerts](mods/serp-alerts.md) | Eight important-action types and four active hook subscriptions; verify current contexts, overlap and recipient routing |
 | [SerpInteractionsDecisions](mods/serp-interactions-decisions.md) | Eight feature families; proven helper mismatch in excommunication; exact 500-gold display bug; succession and delayed education need focused tests |
 

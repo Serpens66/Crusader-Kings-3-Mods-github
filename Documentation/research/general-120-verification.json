@@ -1,0 +1,18 @@
+{
+  "date": "2026-10-03",
+  "status": "passed",
+  "issues": [],
+  "internal_links": 881,
+  "native_hashes": 202,
+  "coverage_topics": 60,
+  "export_hashes": 9,
+  "preserved_non_documentation": 853,
+  "historical_workspace_drift": [
+    "AGENTS.md"
+  ],
+  "historical_baseline_rewritten": false,
+  "gameplay": "not run",
+  "GUI": "not run",
+  "multiplayer": "not run",
+  "Tiger": "not run"
+}

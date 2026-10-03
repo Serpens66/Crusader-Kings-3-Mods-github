@@ -88,3 +88,11 @@ Test first invocation, repeated invocation, absent state, zero/negative values, 
 The [current engine reference](../reference/engine-reference.md) now indexes six script and five data-type exports with exact raw line ranges and checksums. Historical statements above about absent generated dumps describe the initial research stage. Use [lookup](../tools/lookup.py) for both engine declarations and existing local definitions/callers. Missing optionality, argument types, scope lifetime, permissions and multiplayer routing remain unknown where the export does not specify them.
 
 See [workspace function contracts](../workspace/function-contracts.md) for owner/caller/state distinctions and [isolated tests](../examples/test-runs.md) for runtime acceptance. The user completed export sessions, but no example gameplay/GUI/MP tests have been performed.
+
+## General Crozier source supplement — 2026-10-03
+
+Current native script values use interaction queries outside opened interactions. Optional-scope syntax and GUI numeric/boolean syntax belong to different readers; see [migration contracts](../systems/crozier-migration.md) and [GUI bindings](../systems/crozier-gui-tools.md). An observed query does not establish its omitted response default.
+
+## Legacy AI and story ownership supplement
+
+[Dynasty legacies](../systems/dynasty-legacies.md) demonstrates a numeric `ai_chance` reader, named phase-duration values and an explicitly enumerated native AI policy. Its weight is not a percentage. [Story guidance](../reference/wiki-extensions.md) distinguishes a story root, owner-death hook and cleanup from automatic cross-generation persistence or exactly-once execution. Both retain pending runtime tests.

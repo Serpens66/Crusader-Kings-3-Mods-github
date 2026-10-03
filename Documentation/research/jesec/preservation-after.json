@@ -1,0 +1,10 @@
+{
+  "status": "passed",
+  "errors": [],
+  "original_workspace_files": 853,
+  "protected_doc_files": 139,
+  "native_source_files": 1784,
+  "base_head_preserved": true,
+  "cache_excluded": true,
+  "gameplay_tests": "not run"
+}
