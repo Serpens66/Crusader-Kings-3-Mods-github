@@ -1,0 +1,1704 @@
+{
+  "date": "2026-10-03",
+  "scope": "standalone MDC 1.077 only; bundle port not certified",
+  "conclusion": "No necessary functional 1.20 mod patch demonstrated by these static checks; not proof of runtime compatibility.",
+  "full_feature_audit_status": "not closed; remaining Engine and runtime contracts explicit",
+  "assumption": "User states the mod worked correctly under 1.19; exact tested patch unknown.",
+  "snapshots": {
+    "1.19.0.6": "85e1ca4fcee5a1e2238b9db13c70a335fa94dac8",
+    "1.20.0.3": "0ec13350cde9e410b37a46d3616966838f4ba994"
+  },
+  "history_report_sha256": "071cba446c1dd3877674757f34799a9b268415a0394af056e1872df253299945",
+  "installed_version": "1.20.0.3 (Crozier)",
+  "launcher_version_sha256": "9cd6ff96f8092f2d21e1491b37e8344aa287faf69850563128ca1b117244a214",
+  "engine_index_sha256": "e46ae9bf3252b01ba9163705ccb4f92d6630434bd2966464c65783cf7a555edb",
+  "export_hashes": {
+    "update-readiness/runtime-evidence/20261003T005950.086458Z/script-docs/effects.log.raw": "d3dbb758fb226d584b8b00fa84db9a4c494a2519a043116ff9d0cb7bee308b03",
+    "update-readiness/runtime-evidence/20261003T005950.086458Z/script-docs/event_scopes.log.raw": "4dc5072cb829a9c642f6b367c17cb8c1d88e8f70613adef30a6f706bd8ee5bc6",
+    "update-readiness/runtime-evidence/20261003T005950.086458Z/script-docs/event_targets.log.raw": "b1b3a90dc6f7e194a4f88aea35579fa8584854467276548577216403a5c90114",
+    "update-readiness/runtime-evidence/20261003T005950.086458Z/script-docs/modifiers.log.raw": "9c01aed50f903ac4cf7eb6330a2f1b2a881d4dab72e0e8e49e01326292110960",
+    "update-readiness/runtime-evidence/20261003T005950.086458Z/script-docs/on_actions.log.raw": "423ca674930100419a7335426fe1a29cc944682030cd9d303b6b83634e4aac47",
+    "update-readiness/runtime-evidence/20261003T005950.086458Z/script-docs/triggers.log.raw": "62aeca6098d7c42b226b766b5ce8594c6cad3576267124434095c7ea88a2a744",
+    "update-readiness/runtime-evidence/20261003T112558.279918Z/main-menu-data-types/data_types/data_types_common.txt.raw": "d547666be47e0af877eec947d16057034d9661ced50dbef83167eda9015e1d72",
+    "update-readiness/runtime-evidence/20261003T112558.279918Z/main-menu-data-types/data_types/data_types_gui.txt.raw": "56f3506561e217244ec263796f2e7476f71fe3cecc0817c3f3516838f507c438",
+    "update-readiness/runtime-evidence/20261003T112558.279918Z/main-menu-data-types/data_types/data_types_internalclausewitzgui.txt.raw": "16de17bfa2a0a84936708dc7f0477423f235700971a1efa914b791d35698efa6",
+    "update-readiness/runtime-evidence/20261003T112558.279918Z/main-menu-data-types/data_types/data_types_script.txt.raw": "2865423157c8cb4caabeb2230c22a609453c27a85d6b1261c9b87722b7b21eea",
+    "update-readiness/runtime-evidence/20261003T112558.279918Z/main-menu-data-types/data_types/data_types_uncategorized.txt.raw": "1f29d6829336cadbfbf7e58c5c9a3f5519273a6c7d6f3dfc72c45c98d1ef2dca"
+  },
+  "declarations": {
+    "any_vassal": [
+      {
+        "category": "trigger",
+        "name": "any_vassal",
+        "signature": null,
+        "description": "Iterate through all DIRECT vassals",
+        "documented_fields": [
+          {
+            "key": "Supported Scopes",
+            "value": "character"
+          },
+          {
+            "key": "Supported Targets",
+            "value": "character"
+          }
+        ],
+        "supported_scopes": [
+          "character"
+        ],
+        "supported_targets": [
+          "character"
+        ],
+        "return_type": null,
+        "definition_type": null,
+        "parameter_documentation": [
+          "any_vassal = { vassal_stance = parochial }",
+          "any_vassal = { <count=num/all> / <percent=fixed_point> <triggers> }"
+        ],
+        "raw_text": "\nany_vassal - Iterate through all DIRECT vassals\nOptionally specify a vassal stance filter\nany_vassal = { vassal_stance = parochial }\nany_vassal = { <count=num/all> / <percent=fixed_point> <triggers> }\nSupported Scopes: character\nSupported Targets: character\n\n",
+        "source": {
+          "path": "update-readiness/runtime-evidence/20261003T005950.086458Z/script-docs/triggers.log.raw",
+          "sha256": "62aeca6098d7c42b226b766b5ce8594c6cad3576267124434095c7ea88a2a744",
+          "original_path": "C:\\Users\\Serpens66\\Documents\\Paradox Interactive\\Crusader Kings III\\logs\\triggers.log",
+          "mtime_ns": 1790989239572896200,
+          "decode_encoding": "utf-8",
+          "decode_note": "UTF-8 compatible; no BOM"
+        },
+        "line": 2426,
+        "span_start": 2425,
+        "span_end": 2432,
+        "limits": "Fields are exported declarations; missing parameter types/optionality and runtime permissions are not inferred."
+      }
+    ],
+    "every_vassal": [
+      {
+        "category": "effect",
+        "name": "every_vassal",
+        "signature": null,
+        "description": "Iterate through all DIRECT vassals",
+        "documented_fields": [
+          {
+            "key": "Supported Scopes",
+            "value": "character"
+          },
+          {
+            "key": "Supported Targets",
+            "value": "character"
+          }
+        ],
+        "supported_scopes": [
+          "character"
+        ],
+        "supported_targets": [
+          "character"
+        ],
+        "return_type": null,
+        "definition_type": null,
+        "parameter_documentation": [
+          "any_vassal = { vassal_stance = parochial }",
+          "every_vassal = { limit = { <triggers> } <effects> }"
+        ],
+        "raw_text": "\nevery_vassal - Iterate through all DIRECT vassals\nOptionally specify a vassal stance filter\nany_vassal = { vassal_stance = parochial }\nevery_vassal = { limit = { <triggers> } <effects> }\nSupported Scopes: character\nSupported Targets: character\n\n",
+        "source": {
+          "path": "update-readiness/runtime-evidence/20261003T005950.086458Z/script-docs/effects.log.raw",
+          "sha256": "d3dbb758fb226d584b8b00fa84db9a4c494a2519a043116ff9d0cb7bee308b03",
+          "original_path": "C:\\Users\\Serpens66\\Documents\\Paradox Interactive\\Crusader Kings III\\logs\\effects.log",
+          "mtime_ns": 1790989239570895800,
+          "decode_encoding": "cp1252",
+          "decode_note": "Reversible Windows-1252 candidate; original bytes retained"
+        },
+        "line": 5360,
+        "span_start": 5359,
+        "span_end": 5366,
+        "limits": "Fields are exported declarations; missing parameter types/optionality and runtime permissions are not inferred."
+      }
+    ],
+    "any_vassal_or_below": [
+      {
+        "category": "trigger",
+        "name": "any_vassal_or_below",
+        "signature": null,
+        "description": "Iterate through ALL vassals, not just direct vassals",
+        "documented_fields": [
+          {
+            "key": "Supported Scopes",
+            "value": "character"
+          },
+          {
+            "key": "Supported Targets",
+            "value": "character"
+          }
+        ],
+        "supported_scopes": [
+          "character"
+        ],
+        "supported_targets": [
+          "character"
+        ],
+        "return_type": null,
+        "definition_type": null,
+        "parameter_documentation": [
+          "any_vassal_or_below = { vassal_stance = parochial }",
+          "any_vassal_or_below = { <count=num/all> / <percent=fixed_point> <triggers> }"
+        ],
+        "raw_text": "\nany_vassal_or_below - Iterate through ALL vassals, not just direct vassals\nOptionally specify a vassal stance filter\nany_vassal_or_below = { vassal_stance = parochial }\nany_vassal_or_below = { <count=num/all> / <percent=fixed_point> <triggers> }\nSupported Scopes: character\nSupported Targets: character\n\n",
+        "source": {
+          "path": "update-readiness/runtime-evidence/20261003T005950.086458Z/script-docs/triggers.log.raw",
+          "sha256": "62aeca6098d7c42b226b766b5ce8594c6cad3576267124434095c7ea88a2a744",
+          "original_path": "C:\\Users\\Serpens66\\Documents\\Paradox Interactive\\Crusader Kings III\\logs\\triggers.log",
+          "mtime_ns": 1790989239572896200,
+          "decode_encoding": "utf-8",
+          "decode_note": "UTF-8 compatible; no BOM"
+        },
+        "line": 2435,
+        "span_start": 2434,
+        "span_end": 2441,
+        "limits": "Fields are exported declarations; missing parameter types/optionality and runtime permissions are not inferred."
+      }
+    ],
+    "every_vassal_or_below": [
+      {
+        "category": "effect",
+        "name": "every_vassal_or_below",
+        "signature": null,
+        "description": "Iterate through ALL vassals, not just direct vassals",
+        "documented_fields": [
+          {
+            "key": "Supported Scopes",
+            "value": "character"
+          },
+          {
+            "key": "Supported Targets",
+            "value": "character"
+          }
+        ],
+        "supported_scopes": [
+          "character"
+        ],
+        "supported_targets": [
+          "character"
+        ],
+        "return_type": null,
+        "definition_type": null,
+        "parameter_documentation": [
+          "any_vassal_or_below = { vassal_stance = parochial }",
+          "every_vassal_or_below = { limit = { <triggers> } <effects> }"
+        ],
+        "raw_text": "\nevery_vassal_or_below - Iterate through ALL vassals, not just direct vassals\nOptionally specify a vassal stance filter\nany_vassal_or_below = { vassal_stance = parochial }\nevery_vassal_or_below = { limit = { <triggers> } <effects> }\nSupported Scopes: character\nSupported Targets: character\n\n",
+        "source": {
+          "path": "update-readiness/runtime-evidence/20261003T005950.086458Z/script-docs/effects.log.raw",
+          "sha256": "d3dbb758fb226d584b8b00fa84db9a4c494a2519a043116ff9d0cb7bee308b03",
+          "original_path": "C:\\Users\\Serpens66\\Documents\\Paradox Interactive\\Crusader Kings III\\logs\\effects.log",
+          "mtime_ns": 1790989239570895800,
+          "decode_encoding": "cp1252",
+          "decode_note": "Reversible Windows-1252 candidate; original bytes retained"
+        },
+        "line": 5369,
+        "span_start": 5368,
+        "span_end": 5375,
+        "limits": "Fields are exported declarations; missing parameter types/optionality and runtime permissions are not inferred."
+      }
+    ],
+    "any_tributary": [
+      {
+        "category": "trigger",
+        "name": "any_tributary",
+        "signature": null,
+        "description": "Iterate through all tributaries",
+        "documented_fields": [
+          {
+            "key": "Supported Scopes",
+            "value": "character"
+          },
+          {
+            "key": "Supported Targets",
+            "value": "character"
+          }
+        ],
+        "supported_scopes": [
+          "character"
+        ],
+        "supported_targets": [
+          "character"
+        ],
+        "return_type": null,
+        "definition_type": null,
+        "parameter_documentation": [
+          "any_tributary = { <count=num/all> / <percent=fixed_point> <triggers> }"
+        ],
+        "raw_text": "\nany_tributary - Iterate through all tributaries\nany_tributary = { <count=num/all> / <percent=fixed_point> <triggers> }\nSupported Scopes: character\nSupported Targets: character\n\n",
+        "source": {
+          "path": "update-readiness/runtime-evidence/20261003T005950.086458Z/script-docs/triggers.log.raw",
+          "sha256": "62aeca6098d7c42b226b766b5ce8594c6cad3576267124434095c7ea88a2a744",
+          "original_path": "C:\\Users\\Serpens66\\Documents\\Paradox Interactive\\Crusader Kings III\\logs\\triggers.log",
+          "mtime_ns": 1790989239572896200,
+          "decode_encoding": "utf-8",
+          "decode_note": "UTF-8 compatible; no BOM"
+        },
+        "line": 2370,
+        "span_start": 2369,
+        "span_end": 2374,
+        "limits": "Fields are exported declarations; missing parameter types/optionality and runtime permissions are not inferred."
+      }
+    ],
+    "every_tributary": [
+      {
+        "category": "effect",
+        "name": "every_tributary",
+        "signature": null,
+        "description": "Iterate through all tributaries",
+        "documented_fields": [
+          {
+            "key": "Supported Scopes",
+            "value": "character"
+          },
+          {
+            "key": "Supported Targets",
+            "value": "character"
+          }
+        ],
+        "supported_scopes": [
+          "character"
+        ],
+        "supported_targets": [
+          "character"
+        ],
+        "return_type": null,
+        "definition_type": null,
+        "parameter_documentation": [
+          "every_tributary = { limit = { <triggers> } <effects> }"
+        ],
+        "raw_text": "\nevery_tributary - Iterate through all tributaries\nevery_tributary = { limit = { <triggers> } <effects> }\nSupported Scopes: character\nSupported Targets: character\n\n",
+        "source": {
+          "path": "update-readiness/runtime-evidence/20261003T005950.086458Z/script-docs/effects.log.raw",
+          "sha256": "d3dbb758fb226d584b8b00fa84db9a4c494a2519a043116ff9d0cb7bee308b03",
+          "original_path": "C:\\Users\\Serpens66\\Documents\\Paradox Interactive\\Crusader Kings III\\logs\\effects.log",
+          "mtime_ns": 1790989239570895800,
+          "decode_encoding": "cp1252",
+          "decode_note": "Reversible Windows-1252 candidate; original bytes retained"
+        },
+        "line": 5304,
+        "span_start": 5303,
+        "span_end": 5308,
+        "limits": "Fields are exported declarations; missing parameter types/optionality and runtime permissions are not inferred."
+      }
+    ],
+    "any_courtier": [
+      {
+        "category": "trigger",
+        "name": "any_courtier",
+        "signature": null,
+        "description": "Iterate through all courtiers",
+        "documented_fields": [
+          {
+            "key": "Supported Scopes",
+            "value": "character"
+          },
+          {
+            "key": "Supported Targets",
+            "value": "character"
+          }
+        ],
+        "supported_scopes": [
+          "character"
+        ],
+        "supported_targets": [
+          "character"
+        ],
+        "return_type": null,
+        "definition_type": null,
+        "parameter_documentation": [
+          "any_courtier = { <count=num/all> / <percent=fixed_point> <triggers> }"
+        ],
+        "raw_text": "\nany_courtier - Iterate through all courtiers\nany_courtier = { <count=num/all> / <percent=fixed_point> <triggers> }\nSupported Scopes: character\nSupported Targets: character\n\n",
+        "source": {
+          "path": "update-readiness/runtime-evidence/20261003T005950.086458Z/script-docs/triggers.log.raw",
+          "sha256": "62aeca6098d7c42b226b766b5ce8594c6cad3576267124434095c7ea88a2a744",
+          "original_path": "C:\\Users\\Serpens66\\Documents\\Paradox Interactive\\Crusader Kings III\\logs\\triggers.log",
+          "mtime_ns": 1790989239572896200,
+          "decode_encoding": "utf-8",
+          "decode_note": "UTF-8 compatible; no BOM"
+        },
+        "line": 1565,
+        "span_start": 1564,
+        "span_end": 1569,
+        "limits": "Fields are exported declarations; missing parameter types/optionality and runtime permissions are not inferred."
+      }
+    ],
+    "every_courtier": [
+      {
+        "category": "effect",
+        "name": "every_courtier",
+        "signature": null,
+        "description": "Iterate through all courtiers",
+        "documented_fields": [
+          {
+            "key": "Supported Scopes",
+            "value": "character"
+          },
+          {
+            "key": "Supported Targets",
+            "value": "character"
+          }
+        ],
+        "supported_scopes": [
+          "character"
+        ],
+        "supported_targets": [
+          "character"
+        ],
+        "return_type": null,
+        "definition_type": null,
+        "parameter_documentation": [
+          "every_courtier = { limit = { <triggers> } <effects> }"
+        ],
+        "raw_text": "\nevery_courtier - Iterate through all courtiers\nevery_courtier = { limit = { <triggers> } <effects> }\nSupported Scopes: character\nSupported Targets: character\n\n",
+        "source": {
+          "path": "update-readiness/runtime-evidence/20261003T005950.086458Z/script-docs/effects.log.raw",
+          "sha256": "d3dbb758fb226d584b8b00fa84db9a4c494a2519a043116ff9d0cb7bee308b03",
+          "original_path": "C:\\Users\\Serpens66\\Documents\\Paradox Interactive\\Crusader Kings III\\logs\\effects.log",
+          "mtime_ns": 1790989239570895800,
+          "decode_encoding": "cp1252",
+          "decode_note": "Reversible Windows-1252 candidate; original bytes retained"
+        },
+        "line": 4499,
+        "span_start": 4498,
+        "span_end": 4503,
+        "limits": "Fields are exported declarations; missing parameter types/optionality and runtime permissions are not inferred."
+      }
+    ],
+    "any_house_member": [
+      {
+        "category": "trigger",
+        "name": "any_house_member",
+        "signature": null,
+        "description": "Iterate through all house members",
+        "documented_fields": [
+          {
+            "key": "Supported Scopes",
+            "value": "dynasty_house"
+          },
+          {
+            "key": "Supported Targets",
+            "value": "character"
+          }
+        ],
+        "supported_scopes": [
+          "dynasty_house"
+        ],
+        "supported_targets": [
+          "character"
+        ],
+        "return_type": null,
+        "definition_type": null,
+        "parameter_documentation": [
+          "any_house_member = { <count=num/all> / <percent=fixed_point> <triggers> }"
+        ],
+        "raw_text": "\nany_house_member - Iterate through all house members\nany_house_member = { <count=num/all> / <percent=fixed_point> <triggers> }\nSupported Scopes: dynasty_house\nSupported Targets: character\n\n",
+        "source": {
+          "path": "update-readiness/runtime-evidence/20261003T005950.086458Z/script-docs/triggers.log.raw",
+          "sha256": "62aeca6098d7c42b226b766b5ce8594c6cad3576267124434095c7ea88a2a744",
+          "original_path": "C:\\Users\\Serpens66\\Documents\\Paradox Interactive\\Crusader Kings III\\logs\\triggers.log",
+          "mtime_ns": 1790989239572896200,
+          "decode_encoding": "utf-8",
+          "decode_note": "UTF-8 compatible; no BOM"
+        },
+        "line": 9457,
+        "span_start": 9456,
+        "span_end": 9461,
+        "limits": "Fields are exported declarations; missing parameter types/optionality and runtime permissions are not inferred."
+      }
+    ],
+    "every_house_member": [
+      {
+        "category": "effect",
+        "name": "every_house_member",
+        "signature": null,
+        "description": "Iterate through all house members",
+        "documented_fields": [
+          {
+            "key": "Supported Scopes",
+            "value": "dynasty_house"
+          },
+          {
+            "key": "Supported Targets",
+            "value": "character"
+          }
+        ],
+        "supported_scopes": [
+          "dynasty_house"
+        ],
+        "supported_targets": [
+          "character"
+        ],
+        "return_type": null,
+        "definition_type": null,
+        "parameter_documentation": [
+          "every_house_member = { limit = { <triggers> } <effects> }"
+        ],
+        "raw_text": "\nevery_house_member - Iterate through all house members\nevery_house_member = { limit = { <triggers> } <effects> }\nSupported Scopes: dynasty_house\nSupported Targets: character\n\n",
+        "source": {
+          "path": "update-readiness/runtime-evidence/20261003T005950.086458Z/script-docs/effects.log.raw",
+          "sha256": "d3dbb758fb226d584b8b00fa84db9a4c494a2519a043116ff9d0cb7bee308b03",
+          "original_path": "C:\\Users\\Serpens66\\Documents\\Paradox Interactive\\Crusader Kings III\\logs\\effects.log",
+          "mtime_ns": 1790989239570895800,
+          "decode_encoding": "cp1252",
+          "decode_note": "Reversible Windows-1252 candidate; original bytes retained"
+        },
+        "line": 13502,
+        "span_start": 13501,
+        "span_end": 13506,
+        "limits": "Fields are exported declarations; missing parameter types/optionality and runtime permissions are not inferred."
+      }
+    ],
+    "vassal_contract_has_flag": [
+      {
+        "category": "trigger",
+        "name": "vassal_contract_has_flag",
+        "signature": null,
+        "description": "Do any of the current active obligations in the scoped character's vassal contract have the given flag",
+        "documented_fields": [
+          {
+            "key": "Supported Scopes",
+            "value": "character"
+          }
+        ],
+        "supported_scopes": [
+          "character"
+        ],
+        "supported_targets": [],
+        "return_type": null,
+        "definition_type": null,
+        "parameter_documentation": [],
+        "raw_text": "\nvassal_contract_has_flag - Do any of the current active obligations in the scoped character's vassal contract have the given flag\nSupported Scopes: character\n\n",
+        "source": {
+          "path": "update-readiness/runtime-evidence/20261003T005950.086458Z/script-docs/triggers.log.raw",
+          "sha256": "62aeca6098d7c42b226b766b5ce8594c6cad3576267124434095c7ea88a2a744",
+          "original_path": "C:\\Users\\Serpens66\\Documents\\Paradox Interactive\\Crusader Kings III\\logs\\triggers.log",
+          "mtime_ns": 1790989239572896200,
+          "decode_encoding": "utf-8",
+          "decode_note": "UTF-8 compatible; no BOM"
+        },
+        "line": 7814,
+        "span_start": 7813,
+        "span_end": 7816,
+        "limits": "Fields are exported declarations; missing parameter types/optionality and runtime permissions are not inferred."
+      }
+    ],
+    "exists": [
+      {
+        "category": "trigger",
+        "name": "exists",
+        "signature": null,
+        "description": "Checks whether the specified scope target exists (check for not being the null object)",
+        "documented_fields": [
+          {
+            "key": "Supported Scopes",
+            "value": "none"
+          }
+        ],
+        "supported_scopes": [
+          "none"
+        ],
+        "supported_targets": [],
+        "return_type": null,
+        "definition_type": null,
+        "parameter_documentation": [
+          "exists = from.owner.var:cool_var.mother"
+        ],
+        "raw_text": "\nexists - Checks whether the specified scope target exists (check for not being the null object)\nexists = from.owner.var:cool_var.mother\nSupported Scopes: none\n\n",
+        "source": {
+          "path": "update-readiness/runtime-evidence/20261003T005950.086458Z/script-docs/triggers.log.raw",
+          "sha256": "62aeca6098d7c42b226b766b5ce8594c6cad3576267124434095c7ea88a2a744",
+          "original_path": "C:\\Users\\Serpens66\\Documents\\Paradox Interactive\\Crusader Kings III\\logs\\triggers.log",
+          "mtime_ns": 1790989239572896200,
+          "decode_encoding": "utf-8",
+          "decode_note": "UTF-8 compatible; no BOM"
+        },
+        "line": 600,
+        "span_start": 599,
+        "span_end": 603,
+        "limits": "Fields are exported declarations; missing parameter types/optionality and runtime permissions are not inferred."
+      }
+    ],
+    "is_character_interaction_potentially_accepted": [
+      {
+        "category": "trigger",
+        "name": "is_character_interaction_potentially_accepted",
+        "signature": null,
+        "description": "Is the character interaction specified available and potentially accepted for the target character?",
+        "documented_fields": [
+          {
+            "key": "Supported Scopes",
+            "value": "character"
+          }
+        ],
+        "supported_scopes": [
+          "character"
+        ],
+        "supported_targets": [],
+        "return_type": null,
+        "definition_type": null,
+        "parameter_documentation": [
+          "is_character_interaction_potentially_accepted = {",
+          "recipient = character",
+          "interaction = interaction_name",
+          "secondary_actor = character <optional>",
+          "secondary_recipient = character <optional>",
+          "target_title = title <optional>",
+          "required_response = yes/maybe <optional>",
+          "ai_accept = min acceptance value <optional>"
+        ],
+        "raw_text": "\nis_character_interaction_potentially_accepted - Is the character interaction specified available and potentially accepted for the target character?\nis_character_interaction_potentially_accepted = {\n    recipient = character\n    interaction = interaction_name\n    secondary_actor = character <optional>\n    secondary_recipient = character <optional>\n    target_title = title <optional>\n    required_response = yes/maybe <optional>\n    ai_accept = min acceptance value <optional>\n}\nSupported Scopes: character\n\n",
+        "source": {
+          "path": "update-readiness/runtime-evidence/20261003T005950.086458Z/script-docs/triggers.log.raw",
+          "sha256": "62aeca6098d7c42b226b766b5ce8594c6cad3576267124434095c7ea88a2a744",
+          "original_path": "C:\\Users\\Serpens66\\Documents\\Paradox Interactive\\Crusader Kings III\\logs\\triggers.log",
+          "mtime_ns": 1790989239572896200,
+          "decode_encoding": "utf-8",
+          "decode_note": "UTF-8 compatible; no BOM"
+        },
+        "line": 5167,
+        "span_start": 5166,
+        "span_end": 5178,
+        "limits": "Fields are exported declarations; missing parameter types/optionality and runtime permissions are not inferred."
+      }
+    ],
+    "run_interaction": [
+      {
+        "category": "effect",
+        "name": "run_interaction",
+        "signature": null,
+        "description": "Execute/send the given interaction",
+        "documented_fields": [
+          {
+            "key": "Supported Scopes",
+            "value": "none"
+          }
+        ],
+        "supported_scopes": [
+          "none"
+        ],
+        "supported_targets": [],
+        "return_type": null,
+        "definition_type": null,
+        "parameter_documentation": [
+          "interaction = interaction_key - the interaction object key to run",
+          "redirect = [yes|no] - yes by default, redirect the actor and recipients ( only works if secondary_actor and secondary_recipient are not setup or are invalid)",
+          "actor = character_actor - must be defined",
+          "recipient = character_actor - must be defined",
+          "secondary_actor = character_secontary_actor - optional",
+          "secondary_recipient = character_secondary_recipient - optional",
+          "execute_threshold = accept/maybe/decline - will be executed immediately if the AI response is at least this",
+          "send_threshold = accept/maybe/decline - will be sent if the AI response is at least this"
+        ],
+        "raw_text": "\nrun_interaction - Execute/send the given interaction\n\ninteraction = interaction_key - the interaction object key to run\nredirect = [yes|no] - yes by default, redirect the actor and recipients ( only works if secondary_actor and secondary_recipient are not setup or are invalid)\nactor = character_actor - must be defined\nrecipient = character_actor - must be defined\nsecondary_actor = character_secontary_actor - optional\nsecondary_recipient = character_secondary_recipient - optional\nexecute_threshold = accept/maybe/decline - will be executed immediately if the AI response is at least this\nsend_threshold = accept/maybe/decline - will be sent if the AI response is at least this\nAt least one of execute_threshold and send_threshold must be set\nSupported Scopes: none\n\n",
+        "source": {
+          "path": "update-readiness/runtime-evidence/20261003T005950.086458Z/script-docs/effects.log.raw",
+          "sha256": "d3dbb758fb226d584b8b00fa84db9a4c494a2519a043116ff9d0cb7bee308b03",
+          "original_path": "C:\\Users\\Serpens66\\Documents\\Paradox Interactive\\Crusader Kings III\\logs\\effects.log",
+          "mtime_ns": 1790989239570895800,
+          "decode_encoding": "cp1252",
+          "decode_note": "Reversible Windows-1252 candidate; original bytes retained"
+        },
+        "line": 2654,
+        "span_start": 2653,
+        "span_end": 2666,
+        "limits": "Fields are exported declarations; missing parameter types/optionality and runtime permissions are not inferred."
+      }
+    ],
+    "Scope.ScriptValue": [
+      {
+        "category": "datatype",
+        "name": "Scope.ScriptValue",
+        "signature": "Scope.ScriptValue( Arg0 )",
+        "description": null,
+        "documented_fields": [
+          {
+            "key": "Definition type",
+            "value": "Function"
+          },
+          {
+            "key": "Return type",
+            "value": "CFixedPoint"
+          }
+        ],
+        "supported_scopes": [],
+        "supported_targets": [],
+        "return_type": "CFixedPoint",
+        "definition_type": "Function",
+        "parameter_documentation": [],
+        "raw_text": "\nScope.ScriptValue( Arg0 )\nDefinition type: Function\nReturn type: CFixedPoint\n\n",
+        "source": {
+          "path": "update-readiness/runtime-evidence/20261003T112558.279918Z/main-menu-data-types/data_types/data_types_script.txt.raw",
+          "sha256": "2865423157c8cb4caabeb2230c22a609453c27a85d6b1261c9b87722b7b21eea",
+          "original_path": "C:\\Users\\Serpens66\\Documents\\Paradox Interactive\\Crusader Kings III\\logs\\data_types\\data_types_script.txt",
+          "mtime_ns": 1791026818156971900,
+          "decode_encoding": "utf-8",
+          "decode_note": "UTF-8 compatible; no BOM"
+        },
+        "line": 3811,
+        "span_start": 3810,
+        "span_end": 3814,
+        "limits": "Fields are exported declarations; missing parameter types/optionality and runtime permissions are not inferred."
+      }
+    ],
+    "DecisionViewWidgetOptionList.GetEntries": [
+      {
+        "category": "datatype",
+        "name": "DecisionViewWidgetOptionList.GetEntries",
+        "signature": "DecisionViewWidgetOptionList.GetEntries",
+        "description": null,
+        "documented_fields": [
+          {
+            "key": "Definition type",
+            "value": "Function"
+          },
+          {
+            "key": "Return type",
+            "value": "[unregistered]"
+          }
+        ],
+        "supported_scopes": [],
+        "supported_targets": [],
+        "return_type": "[unregistered]",
+        "definition_type": "Function",
+        "parameter_documentation": [],
+        "raw_text": "\nDecisionViewWidgetOptionList.GetEntries\nDefinition type: Function\nReturn type: [unregistered]\n\n",
+        "source": {
+          "path": "update-readiness/runtime-evidence/20261003T112558.279918Z/main-menu-data-types/data_types/data_types_uncategorized.txt.raw",
+          "sha256": "1f29d6829336cadbfbf7e58c5c9a3f5519273a6c7d6f3dfc72c45c98d1ef2dca",
+          "original_path": "C:\\Users\\Serpens66\\Documents\\Paradox Interactive\\Crusader Kings III\\logs\\data_types\\data_types_uncategorized.txt",
+          "mtime_ns": 1791026818164924100,
+          "decode_encoding": "utf-8",
+          "decode_note": "UTF-8 compatible; no BOM"
+        },
+        "line": 55779,
+        "span_start": 55778,
+        "span_end": 55782,
+        "limits": "Fields are exported declarations; missing parameter types/optionality and runtime permissions are not inferred."
+      }
+    ],
+    "DecisionViewWidgetOptionList.OnSelect": [
+      {
+        "category": "datatype",
+        "name": "DecisionViewWidgetOptionList.OnSelect",
+        "signature": "DecisionViewWidgetOptionList.OnSelect( Arg0 )",
+        "description": null,
+        "documented_fields": [
+          {
+            "key": "Definition type",
+            "value": "Function"
+          },
+          {
+            "key": "Return type",
+            "value": "void"
+          }
+        ],
+        "supported_scopes": [],
+        "supported_targets": [],
+        "return_type": "void",
+        "definition_type": "Function",
+        "parameter_documentation": [],
+        "raw_text": "\nDecisionViewWidgetOptionList.OnSelect( Arg0 )\nDefinition type: Function\nReturn type: void\n\n",
+        "source": {
+          "path": "update-readiness/runtime-evidence/20261003T112558.279918Z/main-menu-data-types/data_types/data_types_uncategorized.txt.raw",
+          "sha256": "1f29d6829336cadbfbf7e58c5c9a3f5519273a6c7d6f3dfc72c45c98d1ef2dca",
+          "original_path": "C:\\Users\\Serpens66\\Documents\\Paradox Interactive\\Crusader Kings III\\logs\\data_types\\data_types_uncategorized.txt",
+          "mtime_ns": 1791026818164924100,
+          "decode_encoding": "utf-8",
+          "decode_note": "UTF-8 compatible; no BOM"
+        },
+        "line": 55785,
+        "span_start": 55784,
+        "span_end": 55788,
+        "limits": "Fields are exported declarations; missing parameter types/optionality and runtime permissions are not inferred."
+      }
+    ]
+  },
+  "script_interface_count": 14,
+  "gui_binding_count": 3,
+  "mod_sources": {
+    "Mass Demand Conversion/common/decisions/mod_mass_convert_subjects.txt": {
+      "sha256": "fbbd9f04e5a7ab9b8eaee71c31bf4053c9f37e0f526936d7ad482fb4238f0732",
+      "bom": true
+    },
+    "Mass Demand Conversion/common/script_values/mod_mass_convert_subjects_values.txt": {
+      "sha256": "9340207b8db21b621b20d0d5a95274f85eb4a48bd4fa6b94020e68048bf3c0af",
+      "bom": true
+    },
+    "Mass Demand Conversion/descriptor.mod": {
+      "sha256": "76d6dfbe8ba12d863905605bb3f706d06893a70b5cb240a300f6f1b7fdba0ea0",
+      "bom": false
+    },
+    "Mass Demand Conversion/events/religion_events/accept_conversion_notification.txt": {
+      "sha256": "13213f5522e28fe0ae3fa5526544e9135d797c7b553848d091326287dbb588f7",
+      "bom": true
+    },
+    "Mass Demand Conversion/localization/english/mod_mass_convert_subjects_l_english.yml": {
+      "sha256": "894410b117b12305a391d7eaafc32c0273022eca8205edfc6d4bdab14c7c6273",
+      "bom": true
+    },
+    "Mass Demand Conversion/localization/french/mod_mass_convert_subjects_l_french.yml": {
+      "sha256": "c5b9092fc6d67cd3bc2b21ff3b33c6beac7e54c6778289153ae420e630c68639",
+      "bom": true
+    },
+    "Mass Demand Conversion/localization/german/mod_mass_convert_subjects_l_german.yml": {
+      "sha256": "2140017043625f3bf3daf77234e13bb8d1cf3e9470e7b6b35865ac540a00c5cf",
+      "bom": true
+    },
+    "Mass Demand Conversion/localization/korean/mod_mass_convert_subjects_l_korean.yml": {
+      "sha256": "c0efa9a33d383e13326dcc2a0c02c98913e662b40d3c8cc16961313a58e0af70",
+      "bom": true
+    },
+    "Mass Demand Conversion/localization/polish/mod_mass_convert_subjects_l_polish.yml": {
+      "sha256": "e63ab8775303cc3b5e107a7e742496fcf0a5b8b8198bba1dbee291720d25b6af",
+      "bom": true
+    },
+    "Mass Demand Conversion/localization/russian/mod_mass_convert_subjects_l_russian.yml": {
+      "sha256": "81e77925456389bc129cb457d9ab9cbfdbb2c1234c3ab4c239a0fa7b67979f7a",
+      "bom": true
+    },
+    "Mass Demand Conversion/localization/simp_chinese/mod_mass_convert_subjects_l_simp_chinese.yml": {
+      "sha256": "dbc8205102725f3fdd81dabc78e7c83f14b079ce4384a3c84f08fb23396f5a96",
+      "bom": true
+    },
+    "Mass Demand Conversion/localization/spanish/mod_mass_convert_subjects_l_spanish.yml": {
+      "sha256": "c93b0bc75055669a2cdb3c2d3685f8121b2f3847f61a6dafb356acd7957a723f",
+      "bom": true
+    }
+  },
+  "external_descriptor_sha256": "b910496d2f1b736b3dec2af97b59e599fed8fc6619e02f0d702b46c23457de47",
+  "categories": [
+    {
+      "category": "direct_vassals",
+      "enumeration": [
+        "any_vassal",
+        "every_vassal"
+      ],
+      "interaction": "demand_conversion_vassal_ruler_interaction",
+      "query": {
+        "scope": "root",
+        "recipient": "prev"
+      },
+      "send": {
+        "actor": "root",
+        "recipient": "this",
+        "send_threshold": "decline"
+      },
+      "protected_contract_exclusion": true,
+      "indirect_liege_guard": false
+    },
+    {
+      "category": "indirect_vassals",
+      "enumeration": [
+        "any_vassal_or_below",
+        "every_vassal_or_below"
+      ],
+      "interaction": "demand_conversion_vassal_ruler_interaction",
+      "query": {
+        "scope": "root",
+        "recipient": "prev"
+      },
+      "send": {
+        "actor": "root",
+        "recipient": "this",
+        "send_threshold": "decline"
+      },
+      "protected_contract_exclusion": true,
+      "indirect_liege_guard": true
+    },
+    {
+      "category": "tributaries",
+      "enumeration": [
+        "any_tributary",
+        "every_tributary"
+      ],
+      "interaction": "demand_conversion_vassal_ruler_interaction",
+      "query": {
+        "scope": "root",
+        "recipient": "prev"
+      },
+      "send": {
+        "actor": "root",
+        "recipient": "this",
+        "send_threshold": "decline"
+      },
+      "protected_contract_exclusion": false,
+      "indirect_liege_guard": false
+    },
+    {
+      "category": "courtiers",
+      "enumeration": [
+        "any_courtier",
+        "every_courtier"
+      ],
+      "interaction": "ask_for_conversion_courtier_interaction",
+      "query": {
+        "scope": "root",
+        "recipient": "prev"
+      },
+      "send": {
+        "actor": "root",
+        "recipient": "this",
+        "send_threshold": "decline"
+      },
+      "protected_contract_exclusion": false,
+      "indirect_liege_guard": false
+    },
+    {
+      "category": "house",
+      "enumeration": [
+        "any_house_member",
+        "every_house_member"
+      ],
+      "interaction": "demand_conversion_interaction",
+      "query": {
+        "scope": "root",
+        "recipient": "prev"
+      },
+      "send": {
+        "actor": "root",
+        "recipient": "this",
+        "send_threshold": "decline"
+      },
+      "protected_contract_exclusion": false,
+      "indirect_liege_guard": false
+    }
+  ],
+  "translation_count_references": {
+    "english": [
+      "mod_convert_direct_vassals_number",
+      "mod_convert_indirect_vassals_number",
+      "mod_convert_tributaries_number",
+      "mod_convert_courtiers_number",
+      "mod_convert_house_number"
+    ],
+    "french": [
+      "mod_convert_direct_vassals_number",
+      "mod_convert_indirect_vassals_number",
+      "mod_convert_tributaries_number",
+      "mod_convert_courtiers_number",
+      "mod_convert_house_number"
+    ],
+    "german": [
+      "mod_convert_direct_vassals_number",
+      "mod_convert_indirect_vassals_number",
+      "mod_convert_tributaries_number",
+      "mod_convert_courtiers_number",
+      "mod_convert_house_number"
+    ],
+    "korean": [
+      "mod_convert_direct_vassals_number",
+      "mod_convert_indirect_vassals_number",
+      "mod_convert_tributaries_number",
+      "mod_convert_courtiers_number",
+      "mod_convert_house_number"
+    ],
+    "polish": [
+      "mod_convert_direct_vassals_number",
+      "mod_convert_indirect_vassals_number",
+      "mod_convert_tributaries_number",
+      "mod_convert_courtiers_number",
+      "mod_convert_house_number"
+    ],
+    "russian": [
+      "mod_convert_direct_vassals_number",
+      "mod_convert_indirect_vassals_number",
+      "mod_convert_tributaries_number",
+      "mod_convert_courtiers_number",
+      "mod_convert_house_number"
+    ],
+    "simp_chinese": [
+      "mod_convert_direct_vassals_number",
+      "mod_convert_indirect_vassals_number",
+      "mod_convert_tributaries_number",
+      "mod_convert_courtiers_number",
+      "mod_convert_house_number"
+    ],
+    "spanish": [
+      "mod_convert_direct_vassals_number",
+      "mod_convert_indirect_vassals_number",
+      "mod_convert_tributaries_number",
+      "mod_convert_courtiers_number",
+      "mod_convert_house_number"
+    ]
+  },
+  "current_native_hashes": {
+    "common/character_interactions/00_religious_interactions.txt": "63afe4538725929fb20bc20cbbbbc86705dba55a384755949431419265db0ac6",
+    "common/character_interactions/00_scheme_interactions.txt": "850bb20cae67eece4f4d423f0d2f5cee0c22a0457224b9b4eedcf109ad41e1d5",
+    "common/character_interactions/_character_interactions.info": "cc2442a313a6b1a2a7fa02b92a094276edfe39c60835c3286172c5b6d7b70a37",
+    "common/decisions/_decisions.info": "d36f202f6f91a6e17f0accff86ba7604caeb82e6ff73fc8c24041f4052f43742",
+    "common/on_action/childhood_on_actions.txt": "e7813fdf1bd90e2dc79cbb1ea7af7c099944e68171f73ec4e5596ff4c8a15455",
+    "common/on_action/dlc/pam/pam_on_actions.txt": "6149169c1be40bd71bd86bd21bff7afff59b5773dbcfa3b13e6ea840911b7fbf",
+    "common/on_action/scheme_on_actions.txt": "738a15aba2d2dd648ff4ebacd4b54e6f16efe0370e48fe6e3d7cb9102d507fee",
+    "common/on_action/schemes/abduct_on_actions.txt": "ecbe69c5c0b042167c5ef5426edc886aedb53fec6f03fb3784701bfb8f0e18df",
+    "common/on_action/schemes/befriend_on_actions.txt": "58ce2cc8c86c5370da15c9f5fbb8ebf9dac89201fd4758f17254162040136b6d",
+    "common/on_action/schemes/claim_throne_on_actions.txt": "f87d7a57123b6cc0dbe4ceac9392a1c925876e054247873779e41e4da2f1f799",
+    "common/on_action/schemes/coerce_and_leverage_contribution_on_actions.txt": "d5bda570e0c45e45cc2009912e481a94a61d28c561d1c4dc19653808725deb46",
+    "common/on_action/schemes/coerce_tributary_on_actions.txt": "44d83fd244600c0fd9cf3eeb8ed07ca30391863eca57ab576f77b8beca6e54d4",
+    "common/on_action/schemes/court_on_actions.txt": "5bc0658d3f62593b75322f65592426d5672867bc911f5218a10a39cf3272585b",
+    "common/on_action/schemes/disbelieve_mandala_on_actions.txt": "e3aa6986ce3a80bd5d292d97f7febb6d73181733e0ee02fc3ae5dad6c7b4817f",
+    "common/on_action/schemes/elope_on_actions.txt": "2a2763d70a47e2087ed13a978c1fb871bd702f1d918a082eeeddf7d0bfcd5ceb",
+    "common/on_action/schemes/fabricate_hook_on_actions.txt": "f579c6c3bed03c300043c5265f8d7d08e83b35c62206ea76113f3e3b83b37e11",
+    "common/on_action/schemes/murder_on_actions.txt": "06b8e5ca402b4c45926ec503b8f63aedfe36eac01f658437d5e9c9d739fe7757",
+    "common/on_action/schemes/seduce_on_actions.txt": "2dc4dad3479ca3e96d8ad971fed00be01e0ef0031264275f95fbc80d67f40922",
+    "common/on_action/schemes/steal_back_artifact_on_actions.txt": "5dc34a54336b3d5776ce76850518ba19f057cdfa9e13626364e0e75cd4511320",
+    "common/on_action/schemes/steal_herd_on_actions.txt": "f583869abd0efcb0f2cdcd527cd551332056977a84d20c8b0ac77ea2ff9f316c",
+    "common/on_action/schemes/study_faith_on_actions.txt": "e6a33f4674f5e25d57faaa8d781cdba873591f884e08f5aca543bc54481d0623",
+    "common/on_action/schemes/sway_on_actions.txt": "c3c549e6da41ce65043e712f44dd1db3b22bb0b76da89bc57198b6dc30a9ac46",
+    "common/on_action/task_contract_on_actions.txt": "ae60a7bd5ffae675224fe5830896b0a2bf493e31fe4d1b57ec4da902a040ef65",
+    "common/puppets/actions/_puppet_actions.info": "e26a39a773ad263346c1d5bc0deebfb7d81eff163e4883f68e9f79911d697769",
+    "common/puppets/actions/puppet_actions.txt": "d41f4b40c4a6da2c83ec253700dc433618f11bf1df9bfd7f33713702ca0e72ce",
+    "common/schemes/agent_types/agent_types.txt": "f363937a5e0dc19e0a7977eecfde5572d2006752355adde962a2c488efe7923c",
+    "common/schemes/scheme_types/abduct_scheme.txt": "ad52c5a7f8e3c5c375ac99ddfb2da6a0d57f3f619d682a86b9228292fdf50c57",
+    "common/schemes/scheme_types/befriend_scheme.txt": "ea109e5bba6052225f72e24474f5c49fa12678342dda05445c07b7f3cd684fb4",
+    "common/schemes/scheme_types/challenge_status_scheme.txt": "a0cfdd1991e61170fe02e98ab075a5b49ba8c9a492940cd96341b4908448f379",
+    "common/schemes/scheme_types/claim_throne_scheme.txt": "164f43dd181ad1a9895b78294e1f41ece1b90f3bbfddfdfe2df0ab299ba90256",
+    "common/schemes/scheme_types/coerce_contribution_scheme.txt": "4bfd08103cce7378ecf8eba4a0b0f9b8a543f62ca92d8f62b25ab4a2d2e4fd37",
+    "common/schemes/scheme_types/coerce_tributary_scheme.txt": "9eb223cda993f7c47e26701a346c9f33cfc2a753cf52bbe4ead37a3d4bb9777a",
+    "common/schemes/scheme_types/court_scheme.txt": "48e3fc583e431a9941451ee158b6357d813536d6c5a93d89822af89f83a313a2",
+    "common/schemes/scheme_types/depose_scheme.txt": "5f2ef53d4ececc3dc95c9179437675cc6d5d4313186d99d6f28e9bb7eff28a27",
+    "common/schemes/scheme_types/diarch_schemes.txt": "0a8a2772319c2a549e1a2f226366af55a0a7a33610db1a628a049b80fc80a529",
+    "common/schemes/scheme_types/disbelieve_mandala_scheme.txt": "f7db7ac8c640efbbe7c20c48915dfe326c40b1dd3c3988d743fa52bbf1580983",
+    "common/schemes/scheme_types/elope_scheme.txt": "6af285ebb986794ab9957393d18c6ee49b8d112b6dcfb07f8e2a4585e0c27c22",
+    "common/schemes/scheme_types/ep3_found_despotate_scheme.txt": "29ff0bf1575d95bff9c6afa781c32cc416292db003a5ad8aba3871394dff885c",
+    "common/schemes/scheme_types/ep3_prepare_fire_dromons_scheme.txt": "b9449a5386a61b5721978ec95a362bded6e1876a8ff8d1709a8133333b86d87a",
+    "common/schemes/scheme_types/ep3_raid_estate_scheme.txt": "bf64c7017f680f8dbd30ee564e3bcf76c6e6bee52ab1bb19c9d458aa0a504318",
+    "common/schemes/scheme_types/expand_power_base_scheme.txt": "2c3eec53fbb0035b7a1bfa1d45d967489dee293763425ec5abca149e61cb4a76",
+    "common/schemes/scheme_types/fabricate_hook_scheme.txt": "e19a6c4418f3ad1b7c4677f951248d7ddfc331b5e777d475b621e02df888927f",
+    "common/schemes/scheme_types/generate_claim_scheme.txt": "a825144abdf92bc453962c73af92339045c7df396e922e754a4c7c62e3da287a",
+    "common/schemes/scheme_types/laamp_base_contract_schemes.txt": "f2eed03c8e5ec3665c30af0d69a3155343314d6006bff94c4d6e745ce821d29a",
+    "common/schemes/scheme_types/leverage_contribution_scheme.txt": "789dfbc1e41f3fa1c1e5faac105cc1fbb82b1fb4477b53b4bad19b8be21cda84",
+    "common/schemes/scheme_types/murder_scheme.txt": "db5dc64a3fdb390cc9740f46144ce7d903e691b5286248ad61f7e3d0e265cd32",
+    "common/schemes/scheme_types/promote_scheme.txt": "787056c94dd65ab956f9da4d4eb11770881110638bf223456a64c9635258b36e",
+    "common/schemes/scheme_types/seduce_scheme.txt": "4f37de42079a928039d87294a21fb1d6147d27aedfe43df3425437877b41415d",
+    "common/schemes/scheme_types/seize_realm_scheme.txt": "fee1603af806fc93c83a3ebcd253ecab1dd71b3a0238199ad05a646300234c4b",
+    "common/schemes/scheme_types/slander_scheme.txt": "7863bd4dea0d776e544792283aac424f8dc1303c64bf83d67ce8c65685ab320c",
+    "common/schemes/scheme_types/steal_back_artifact_scheme.txt": "0ba6dd22e019f8d8b94dddab70b82580621238b42f253b290bbcaf7801969ed3",
+    "common/schemes/scheme_types/steal_herd_scheme.txt": "a15781256bd1e6f2e25958fd8c81b9bf2471be9fbac8571e5a6fbd4a6226ed76",
+    "common/schemes/scheme_types/study_faith_scheme.txt": "8251e1ab8017eb45f3c62ba3502f4f2675641662d245775b530e9b0b71004cbe",
+    "common/schemes/scheme_types/sway_scheme.txt": "7d73696a96c28ff7daddc6b6fa08c3c4365d53a2b69a9aa70def0f00d18720b3",
+    "common/schemes/scheme_types/tgp_dynastic_cycle_schemes.txt": "0b8bb2cba6c6266824c69b1cda5f3d4ef31560feb6d8f19a49ef50bd1aeab4fe",
+    "common/script_values/00_age_values.txt": "dabca2f98c652c35c3a1b4e27e2b4d4ee830610b860ad26a6818e0e984f07f11",
+    "common/script_values/00_ai_values.txt": "975b0fa8d02b3342c8984050eca0387a463cd1028c68122d1bbd255f90db5fb4",
+    "common/script_values/00_artifact_values.txt": "63f8372fc8892e9f00a823642926a2518b4caf036d65c67b91f553623a44c7ff",
+    "common/script_values/00_basic_values.txt": "c379cc0c58ed1574033f0e07a58697dfc6f8475c26aa4b117f2332008d4a27ef",
+    "common/script_values/00_combat_values.txt": "999f4f340a7325397267e0b0f40b506b85f105ea29e801aca2f7ebcf97166bff",
+    "common/script_values/00_county_control_values.txt": "a1d06c795cbbe22e06889ad90012ddf0ec476bffde63bd5d163e9c3451255e65",
+    "common/script_values/00_culture_values.txt": "e5fbbeb7631d4c15275ecc57f0971a728816e4ee24db1fb29d2d5e0c9eed88fd",
+    "common/script_values/00_distance_values.txt": "fd23c44170db684e7ae5fdb330b3622c89f4cc779a853245eee350482f1c65e5",
+    "common/script_values/00_dynasty_values.txt": "0aad110fd46c8bb7fbedba372e049002caa25ca992cd4362b9387d07dc90ca8e",
+    "common/script_values/00_ep1_artifact_values.txt": "3d2fedd33f67ad5fb75d63700a7c3cbaa601ef04910fc62c7b12f74f9f0f3ddb",
+    "common/script_values/00_ep1_script_values.txt": "b3693413d219440ee424e1acba125fe1cde0ae56c90567cdf1a3d0745cd0e478",
+    "common/script_values/00_intrigue_lifestyle_values.txt": "bca9fc6d2e342bb1a2259993ee589cad0ff5ed8c9bf8860c30d4996d34f03248",
+    "common/script_values/00_legitimacy_values.txt": "21ef917a99ad2c1923bfff837ef68fcb2216c3accc90067ed1ba8295213d3266",
+    "common/script_values/00_lifestyle_values.txt": "4ddec87bf5c6aeefa2d5f48e42a421408e96b4c85f129727ed6db8fda8bbecc0",
+    "common/script_values/00_relation_values.txt": "2a55bec4bfcd32039ea12cfbe14c66a7dbfd6859f79c88b1a97850a620d61dbd",
+    "common/script_values/00_scheme_values.txt": "9d3692d294c8310e9df102397c1f59d73e181cdea2686bde4eeb67d4b38d0256",
+    "common/script_values/00_single_combat_values.txt": "578e6db9b90e24691d01d16e24f1beaafa18b97e735330cf4307b5913cdebc01",
+    "common/script_values/00_stress_values.txt": "821a0b77244fc5ee2d87d339cb24dbef00787b83d44ec2df9215fc1a93aec2d4",
+    "common/script_values/00_title_tiers_values.txt": "4023d537b2c5d4dec879566350b9f21ab342b2a0f88b39df93ecc85f765eeab5",
+    "common/script_values/00_trait_values.txt": "8a6a617aafd0247364da1a6ccf0298de8a496412cb9589b168872251f8bc69e0",
+    "common/script_values/00_unity_values.txt": "eb0863688ff2f7d44dd489a0e36cd9a0b9a0aef97967cd961131ee2bbd888210",
+    "common/script_values/01_dlc_bp1_script_values.txt": "2dd624cde8f9d5c5156fe03842fa46ca76d7db1627fcd6ebcff7725115fd6215",
+    "common/script_values/01_dynamic_values.txt": "023165e7d27d106a34f34d7726d938efa8d5dce25650ea3256e0b5ea3f73cc2a",
+    "common/script_values/02_religion_values.txt": "9e55618b00b463589af310bd17511b4f260fea4d3acb43e512e209cfc1517ded",
+    "common/script_values/04_ep2_accolade_values.txt": "52b44e6e974c3ca32993b63f932b373c46af3fb31595935897fa055d0ace950c",
+    "common/script_values/04_ep2_tour_values.txt": "0b67cf2f17fba5522dcbfb02d5e87000b552417144124305d53003ebddc2d4f3",
+    "common/script_values/04_ep2_tournament_values.txt": "57466032cbb8ba9892855cf3b7e2e1dca5f84684e9f489d84b5516ce0a59c8f2",
+    "common/script_values/07_ep3_values.txt": "b4b46e562baa20f8aa7fbac91b3d8b95f6a59d053eaf6b5f28ca9d091f85c776",
+    "common/script_values/09_mpo_values.txt": "7b29e2613771ea8a359caba535e31162cd5638bd533c4f349405d1988f9c4b7e",
+    "common/script_values/10_dlc_tgp_china_values.txt": "664d7ac88e4cb3169997133180efe311074847056fb1a63ba55afd4472efb764",
+    "common/script_values/10_health_values.txt": "787d22ed5a482e2abaf5bd6f7a4a2ef257f77fc3b0636104108a62020fb7e90a",
+    "common/script_values/10_tgp_dynastic_cycle_values.txt": "c4972bee4ffe1e96cbfdbc0b7725a96997e651168f44e780d309adef6c6b9b36",
+    "common/script_values/10_tgp_japan_values.txt": "9e58a05b750393cd42682183c1a4b128c4654551f3d84a4bf36394cce99cebb0",
+    "common/script_values/99_spymaster_values.txt": "cf312a6e9e12d036e15db16701c1a548d824eabd7d234509b35babe351490362",
+    "common/script_values/pam_tenet_values.txt": "f20a1353dde0fbf22fe0184413525a524ff96e5f927bb0a1aac7a54ead43491b",
+    "common/script_values/pam_values.txt": "458d1bd882e8854005e3158339fca343177cff13eac7f83cb5877a8a37171965",
+    "common/script_values/tgp_japan_values.txt": "a2357b7ced81ffe2e2a142b581a1dde755fbf2817bd666a2cddf1bc3ac25f076",
+    "common/script_values/tgp_mandala_values.txt": "e78af1486c5996f4938d25722f88e0f9af931bfd3a4c22fe079544e45d42a491",
+    "common/script_values/tgp_values.txt": "a6ae6df5afe8c18831cf0fca33b0e191b7371751738d257d64d5c8d38f72f9de",
+    "common/scripted_effects/00_achievement_effects.txt": "a25c6272650bb8b4f71df0045a5d6a4ea124e69050ac1a05b2b86b79dedf1b4d",
+    "common/scripted_effects/00_administrative_effects.txt": "c8f8b4d41198afba045e22404445fc6d915bdc75334d9daf3c0f81df01b9c261",
+    "common/scripted_effects/00_adultery_effects.txt": "1949fa5f00a174158692b0db829783faf16e0243e8e5eeabcbebff94161d05e6",
+    "common/scripted_effects/00_animal_effects.txt": "bfa1aac3780c9c0822ba1e2abc0a8c7bea885b89d8cd2e808651eef2351dd5e2",
+    "common/scripted_effects/00_bastard_effects.txt": "ca8047471f74fca7a9600445a98ae710f4ec85379ca80d571a5a7d95252e764a",
+    "common/scripted_effects/00_building_effects.txt": "9df823306db2e5851583d76752af1375868575d426299a4f8602529119c8719f",
+    "common/scripted_effects/00_compliment_effects.txt": "2eeaf0feb18daf34fa3df1b900abce60c11c485d24c8ea3cac39243623f202ef",
+    "common/scripted_effects/00_courtier_guest_management_effects.txt": "fc71dd61112c225d53f1248b162c4860a92b7d85a68187b78027250af7de70b5",
+    "common/scripted_effects/00_death_management_effects.txt": "cb24c49a5fc09ae9c3314379bd9549d52d830a6dfd45fd9e1e47044446553111",
+    "common/scripted_effects/00_debug_and_shortcut_effects.txt": "9c309a3d3142e644f0ed5ec3b8d4cdc29d17deac0c67a1b3689807e748fe225d",
+    "common/scripted_effects/00_decisions_effects.txt": "a30e06ea5c3c3c0cc24e8be823600f12a5f5cb0caf3fa52c3ca98648b0f8f2d5",
+    "common/scripted_effects/00_dummy_gender_effects.txt": "58fcf880330b8bb61f166e4977d9c7dedf3f2f93d22975ae7aac8040f2b95c4d",
+    "common/scripted_effects/00_education_effects.txt": "b3fd20ed647fbb4f3bd9af337c605788c96b152e0823f2c7a17817aa23a7ca67",
+    "common/scripted_effects/00_ep1_artifact_creation_effects.txt": "1b60d78e54e1ebff7601bd13e59b2251cff47d96f595a4431c666fa3ee11a831",
+    "common/scripted_effects/00_ep1_artifact_effects.txt": "02f0408f7483eeee252333cd1ff57548406615de933f16c705bf100da4adfff7",
+    "common/scripted_effects/00_ep1_inspiration_effects.txt": "22c57258702fe5886fd026cbd93f933ba3b3a90cb4229b2a13f2940e8de4d690",
+    "common/scripted_effects/00_faction_effects.txt": "c7f853b9c8cf836cfc6b635c58bfa3c31a686528e99f5628e320a1d97a5efc70",
+    "common/scripted_effects/00_government_effects.txt": "356191f5b33de1e43e791598db60bdddfbbd61d93c4ea1c08b11346ed29cb939",
+    "common/scripted_effects/00_holding_effects.txt": "8d9f05fa838687b0b508fbbb090b0c94d11bf9d34390cff7ab2dfad475d11e47",
+    "common/scripted_effects/00_hook_effects.txt": "f7e3acb823191b7f2f685ae0b9c9a74ed5caa87566b1436d28cec15773fc65ef",
+    "common/scripted_effects/00_hunt_effects.txt": "36ed8e4ea72db2c6ed96a8395f80fb22e25063396be9a8dff156fc3a00fd3c5e",
+    "common/scripted_effects/00_interaction_effects.txt": "4247f484295988b50098a43869d4c4056b7e0855bf8d5fa6ec0755cb996d7e82",
+    "common/scripted_effects/00_laamp_effects.txt": "6d276b64ca51f2383db7064f64f46c520cd488b87d90695f4263b9881746367a",
+    "common/scripted_effects/00_learning_lifestyle_effects.txt": "a513bdf2c4e7b44e479e059cd998daf22f74c2d8fb06bad6e1914288f067cd24",
+    "common/scripted_effects/00_lifestyle_focus_effects.txt": "051706e95fd0f0535aaa6201941abfc86df1c0e44dfcba6bed5e6d9e94db849c",
+    "common/scripted_effects/00_lover_effects.txt": "119494bbf44ef6ef0caad647a6445ab8427ebf353781043c26c8bdde3ce3baf0",
+    "common/scripted_effects/00_marriage_interaction_effects.txt": "7d42c1ad0dca12f91e40d0260a0b57db9f4ff2f1d2bb819a817d4e3d0f2ec30f",
+    "common/scripted_effects/00_murder_effects.txt": "a224c23a2ddcb39be0fb985993f24622b663f04abc3da5927510d38a7cdee02b",
+    "common/scripted_effects/00_nickname_effects.txt": "e36c852d900cabe0b7506da7fd16106d278040cb64e4508ba1e751d7ba251bca",
+    "common/scripted_effects/00_personal_details_effects.txt": "259adcc14974d53a2423f1aadcb0f3a8708b7b37913f3157a307639d432fd41a",
+    "common/scripted_effects/00_poetry_effects.txt": "64af0f20bcbcb25221999a5e2761ac3992a10b0279403cbae21c4b2eae406db4",
+    "common/scripted_effects/00_prison_effects.txt": "ea8bb72426246692bf1f310ae7eb83715ae1b7314d046e3660df66443d486030",
+    "common/scripted_effects/00_relation_effects.txt": "b4668eed284175e67fb7f4df42d1b2007075dee25c0f348823c87664545b1891",
+    "common/scripted_effects/00_religion_effects.txt": "5bf6b0df3316f72f711507c310a349d508a3b83aef99373ea6440de20e4e4931",
+    "common/scripted_effects/00_religious_interaction_effects.txt": "9ecc22104b057e3425673917acbefaa320833226dd02b9a6c3dca7475b5b0928",
+    "common/scripted_effects/00_romance_effects.txt": "a4a88fa0f36e95e865dcdd077dcb64f5985db1b9a441fcca1795494abda66211",
+    "common/scripted_effects/00_scheme_scripted_effects.txt": "57e30da751f6fd4c4513d6fec3e7aec008ffcf621ca2c79c3aa472197b4d3456",
+    "common/scripted_effects/00_scripted_effects.txt": "d9e594cdcaf8da1f844b77d34170caf1b5ecfe20def7e9711756d81643cf1563",
+    "common/scripted_effects/00_secret_effects.txt": "4b86ba489602089969293c810a6aaee81ea5d213f7c0456f051ae8785addf7f9",
+    "common/scripted_effects/00_single_combat_effects.txt": "21aad9b03ffc3cb3e4190ebd0b5cdc61bd112b58f23932060b861e16eccaf6cd",
+    "common/scripted_effects/00_task_contract_scripted_effects.txt": "fdf17487a6579de8e28cb4d43c4fc182fa93afca8ba383455d0a8ffeb089006e",
+    "common/scripted_effects/00_unity_effects.txt": "42a0f30f3e2eb658ae6cf5ca712a582262ec8ec8382d9152d4dcbdce55e7b780",
+    "common/scripted_effects/01_ep1_court_artifact_creation_effects.txt": "d3605eb4f84436d20294ea1cbd3394e0ed268702b4828adc8f8319dd2ca872ff",
+    "common/scripted_effects/03_bp1_scripted_effects.txt": "3dddafac53ff87a5216cdb59cc9123c45acf03b671415e02f91fd297e596943f",
+    "common/scripted_effects/04_dlc_ep2_tour_effects.txt": "180a9e666317ba7e58525d11848544bca1bf2b6e6062b0fe1110f555abdf328e",
+    "common/scripted_effects/04_dlc_ep2_wedding_effects.txt": "11300784833b78b0c43a43cdc211933a042b514534c7227629113858201d68a0",
+    "common/scripted_effects/06_dlc_ce1_epidemics_effects.txt": "559e5e7952a1b943d9059122adc402993529891703b81048fa75a0475614f652",
+    "common/scripted_effects/06_dlc_ce1_legitimacy_effects.txt": "b639d4e390ce033c6d92f6706c9b41ee30e142e8fb1925ab97a1b448edbf5689",
+    "common/scripted_effects/07_dlc_ep3_scripted_effects.txt": "210fbb62ded6e6e48efbd144cf60e01b66b7711bf79914ba70d8a6b5d841c7e6",
+    "common/scripted_effects/08_bp3_effects.txt": "00dea18f8054192d5d278d76e9411021ce65476be4c235b86a990f9c84006f31",
+    "common/scripted_effects/09_dlc_mpo_scripted_effects.txt": "f4f19fd150b2fa79ff4d88b560b936bec8ebd7d494214047f50fa227e22debbc",
+    "common/scripted_effects/10_dlc_tgp_dynastic_cycle_scripted_effects.txt": "e2035c8c0d525064302efecbcc95da21544f159c86d6e9bf937ecc0d00c2277f",
+    "common/scripted_effects/10_dlc_tgp_house_relation_scripted_effects.txt": "d4a356ff0a94259d4fdcdf9841feff0ca1ca3f9903815a2aefb924f2fe381d75",
+    "common/scripted_effects/10_dlc_tgp_japan_scripted_effects.txt": "cf6fa3ec4e072dc3ec0bb79985443860f868536e120d1b88d9ca64eb4850022f",
+    "common/scripted_effects/10_dlc_tgp_scripted_effects.txt": "5bc38625f0e64a1965c59d814f2b3f3d35058ce102e52f8653e9445cbba9cf57",
+    "common/scripted_effects/10_dlc_tgp_silk_road_scripted_effects.txt": "1c7641583d76df6a8f2e4c90e4cfc73baaf56f1068fd7759f0f85bb22413b78f",
+    "common/scripted_effects/11_dlc_pam_scripted_effects.txt": "ade936faf40ac2f2c928ba3bc0b618f62d324ce6f2af400e54da3b4bd975371f",
+    "common/scripted_effects/20_health_effects.txt": "abefa738c913c660a52fa747bcc92fca2f57d77a0f47d903bedc2882f3d5a9db",
+    "common/scripted_effects/pam_effects.txt": "fc4c77974a7844c31c1271dcc2ace24b17906620a832658919aa281e42a2b94f",
+    "common/scripted_effects/tgp_mandala_scripted_effects.txt": "bb438d3ff77f017a3676d8a3960c136571f41355075961173a5c384f993aeb0e",
+    "common/scripted_modifiers/00_activity_scripted_modifiers.txt": "ede4e9047872703bad347e60bb00a3c372c31fc21d374085e09b83f83627aff0",
+    "common/scripted_modifiers/00_ai_value_modifiers.txt": "90eecac3d1b6fb0b8f7ae702341f743b2ab32603e34503459f6425a7d18c14ad",
+    "common/scripted_modifiers/00_diarchy_scripted_modifiers.txt": "ab59bd7c91aca1179d625257661005ce164f4fd2bc0fb4a8308cc65e4a8568ab",
+    "common/scripted_modifiers/00_religion_scripted_modifiers.txt": "0d3fbd5d6740212f9acd318aa400560f2572f81f4562c3984c9d158e382fbc71",
+    "common/scripted_modifiers/00_romance_and_seduction_scripted_modifiers.txt": "8d78fd1f769da4d1801c4e0103ecdcccd5df4b3e3afd203b0610eb7439439a11",
+    "common/scripted_modifiers/00_scheme_scripted_modifiers.txt": "6ff93622da0a35c564a05a0dd8ead0d9d144efcfb7f30a08342045b7476da07c",
+    "common/scripted_modifiers/00_single_combat_scripted_modifiers.txt": "287641555c5fc5b57bcbd5f152771ecdb1802708b7d26185ca838aaaa6390fa6",
+    "common/scripted_modifiers/01_bp1_scripted_modifiers.txt": "4fbc9e74a753d87800c4a301b4831958f91016400f7bc6e76c1f587985cdaa2d",
+    "common/scripted_modifiers/pam_scripted_modifiers.txt": "f0ee9a1035cf96b5165ff7ceb9e79e29e06c594546b1620c4a3c03f9d466af4e",
+    "common/scripted_triggers/00_adultery_triggers.txt": "3ec85c42897b2298f4e52f44dd579be5b074c094bb7d9c8e79d8e414a53c2772",
+    "common/scripted_triggers/00_ai_value_triggers.txt": "9196b7840b56233f871832140974d30c4957e79ebb960c8983e292a4477a8f3d",
+    "common/scripted_triggers/00_artifact_triggers.txt": "ab6ae5dcb1db9e05574b9f635ba62a3303f307df5d0401cbd7d4672684170aeb",
+    "common/scripted_triggers/00_available_for_events_triggers.txt": "fb94b3c340b0374ace5a90017e0e986941771510853bd6afa6fcb0a28d185f05",
+    "common/scripted_triggers/00_building_requirement_triggers.txt": "fe74b3125d4b3fe19a911ed71e3f55d1865cdc68c58ac165cb00e19b7b8c1bb1",
+    "common/scripted_triggers/00_childhood_triggers.txt": "cf5a68477bbfab4e9495a607b8c5c51455b49c54902c994518ae09fc9891996d",
+    "common/scripted_triggers/00_clan_triggers.txt": "02f70d4454691ae9f573f9fdb9f991f76b2d300aa62d17ce0c9b214e5ad2224a",
+    "common/scripted_triggers/00_clothing_triggers.txt": "4c57211a58957c344ce7b2d5c92e66d6229c73ca3daf8459c80d241fedfa621f",
+    "common/scripted_triggers/00_compliment_triggers.txt": "cac783dc5a231e407c1d2b26a18325144f0cbe982416513219a8c51550fe0f10",
+    "common/scripted_triggers/00_court_scheme_triggers.txt": "b5b37e6387d41ebd945256550ae9af030082528f52dbb8b35324e08998d27b68",
+    "common/scripted_triggers/00_courtier_guest_management_triggers.txt": "6ff4bc8350d2f21372967e98cacbc4e1d367745f70e649a4f3ee25bdbd131382",
+    "common/scripted_triggers/00_crime_triggers.txt": "26229add02b79a8c5f1b37f02679d99f733d553a5362c338a7297fec25868807",
+    "common/scripted_triggers/00_crypto_religionist_triggers.txt": "8e264d92e5f6c2a24d5fe6475fa1a5731b6b9b4696ec23f50a88a380d6670ea2",
+    "common/scripted_triggers/00_cultural_heritage_triggers.txt": "a805adabe14b2c7ee4387b0836531edc4f2493bd862475ea2841bb1a05e9bd84",
+    "common/scripted_triggers/00_cultural_triggers.txt": "acac6691ab34b89f492a149f7693cf34343a0301c9d99d67c032e9f01dede3de",
+    "common/scripted_triggers/00_death_management_triggers.txt": "f11a3575c908d2aadb558c3e8eee2748689c1b3639a505d6b6af36d32741531f",
+    "common/scripted_triggers/00_diarchy_scripted_triggers.txt": "3995f62fe332f98ccecd39abf70a2a2574fbfb18c86f5d5d3c02a367fda0607a",
+    "common/scripted_triggers/00_dynasty_triggers.txt": "67aa08c89326d077ddec18db824f421d54fb31aaecc0d2b55efdf8b9c7c7e9c4",
+    "common/scripted_triggers/00_education_triggers.txt": "2d68992606bbe69b43e38212e8279ff0973bca753f3e56fcc0502b9ffa7dcbb5",
+    "common/scripted_triggers/00_family_triggers.txt": "84a29fd89590f880c719a2da79293dbbf6086cccfb355b71b212c854de067496",
+    "common/scripted_triggers/00_food_scripted_triggers.txt": "1233b2ba1d033b3ebf3d93a5afc6a267e4151464fa70f4b58e69092cc49ed516",
+    "common/scripted_triggers/00_general_trait_triggers.txt": "92d8dd4868b9c5f83d66c7c2ea171bad3fc945ae0acc68d208a7d57ec360e75e",
+    "common/scripted_triggers/00_generic_struggle_scripted_triggers.txt": "9cce9f5527f35dc3e178d203cef6ce2c4b8a804f1d206790967bac0a4ad1b051",
+    "common/scripted_triggers/00_government_triggers.txt": "da4e97192bdfd77393c32792371a98370c1b86d19cefc53767460713bb1f0040",
+    "common/scripted_triggers/00_has_dlc_scripted_triggers.txt": "8bad67efdc979e6e3358cc055c462a2051cbc27b9ff2594e92b01e3f021f2066",
+    "common/scripted_triggers/00_hunt_triggers.txt": "ba92e5f0e3bf14b89d6a7312f0036b2e392daebda1994bf02b9c69d7a379274a",
+    "common/scripted_triggers/00_illustration_triggers.txt": "7a61f5f54ca3ac881ff4978c0a41395c5db42478ff1278058dc5c5258455c3f4",
+    "common/scripted_triggers/00_laamp_triggers.txt": "7f7c3b0c79a46d994a28bfbca10f958b7767f593be2720c128f981b326f1377b",
+    "common/scripted_triggers/00_lifestyle_triggers.txt": "aa28a7561e9ada14d9c954c47e85a57370b12178ddbb06791485a2b48257f942",
+    "common/scripted_triggers/00_marriage_triggers.txt": "fdf17646126567ef399b9ac0cc2579b3dd80ba09f080d118bb147ef061a99c8b",
+    "common/scripted_triggers/00_opinion_scripted_triggers.txt": "cc7a569beb424d4fcc0b3389b00d8dae01bd0aa45bbbc60a1730e7384dcca8e0",
+    "common/scripted_triggers/00_personality_triggers.txt": "c938e624bad108a6799d8f39c3fe4a82c346b92f0889bed1f92258da28f54820",
+    "common/scripted_triggers/00_pet_triggers.txt": "13e4e38b5cb017818733c6e1ab335fbf199bd4ba1f5522369876b2ece60cd4e1",
+    "common/scripted_triggers/00_physical_appearance_triggers.txt": "8552128c96773f0efd430726573cfde8da9d71b8e55d6c994efcd81a04f73761",
+    "common/scripted_triggers/00_relation_triggers.txt": "973ed236b5544f56d20d11ff8f2a183527438c32e30ff973fae54b39ac2def44",
+    "common/scripted_triggers/00_religious_triggers.txt": "e9d0b56130464eabdcd670fa6cf814534d11c99da1e8b3fc1e69e9c3e36d2bb2",
+    "common/scripted_triggers/00_romance_and_seduction_triggers.txt": "c2abea1571844479600ee47dd83102d0be770742a75be603f9c08532561eed92",
+    "common/scripted_triggers/00_scheme_befriend_triggers.txt": "75b413dca7a86ca03709c53e9895c5485c95922225de8d04e68bd767bab43f99",
+    "common/scripted_triggers/00_scheme_triggers.txt": "bf232b88b9dace14311a471149eac8390a44790963b4dedc4accf2d6bb2b8ffd",
+    "common/scripted_triggers/00_scripted_rule_triggers.txt": "907a1a7ef0f91b07c53cf7881fd8df0550b68ac46d66117aac2f74667e794c8c",
+    "common/scripted_triggers/00_scripted_triggers.txt": "a0d06291c9b29dbeb29e855b8d9552f30b967238046ebbce45d997f730c41b5a",
+    "common/scripted_triggers/00_secret_triggers.txt": "d551809d5a28a273307924f72e7fe6313ea4150ade59ee4e20bee40e07467cdb",
+    "common/scripted_triggers/00_single_combat_scripted_triggers.txt": "c33741f69eae06a5b4bd88b204f58e523645c4a49e332b72fba829069851f7c6",
+    "common/scripted_triggers/00_title_triggers.txt": "c69f7c434082c04ec99f316059cb6e3fbbb324fda145bc4006553e08e9a6b518",
+    "common/scripted_triggers/00_travel_triggers.txt": "e93967b7a05575560d1ee44b3719e8a7ca0fdff449cf2550ea24c59c8f128b14",
+    "common/scripted_triggers/00_war_and_peace_triggers.txt": "cbe25f04d61a2f2899e29b15cd6aeffd1ffc33154655c965fd441f3727183545",
+    "common/scripted_triggers/02_ep1_scripted_triggers.txt": "3f5a3ab1d3b0e832c6fbfb04b7c6bce2b1166ed578b18a7549d8acfc1bbd465d",
+    "common/scripted_triggers/03_bp1_scripted_triggers.txt": "32650c1bcf285b06868a84b79235cb3b98e1beb4caa66ed3aba18beba15ecf5f",
+    "common/scripted_triggers/04_ep2_accolade_triggers.txt": "107cfa2332be501004bd95b66ea3311e4dd2c76128075865ace6154bed209051",
+    "common/scripted_triggers/04_ep2_tour_triggers.txt": "ef1859ace04a0fb8ed7fb61705a2db7ee6bd8732912330d60abda8f54da88e25",
+    "common/scripted_triggers/04_ep2_wedding_triggers.txt": "d7401921e36171f45b6e4175077c89548494057c84005cb6aa2e0e8a5ef79093",
+    "common/scripted_triggers/06_ce1_legend_triggers.txt": "3a0be6295c43155b943d6ef940fb6e92f4ec0a319f1557d737cb40c09dbd8bf6",
+    "common/scripted_triggers/06_ce1_legitimacy_triggers.txt": "7b8ec719513adb46917aa6238721d128afca63e6baddc4efb9b46f71aa2befd7",
+    "common/scripted_triggers/07_ep3_triggers.txt": "ddd632e2f0028568d59b9907bf9a63ca39c09201588f47d7491187c628d42eb7",
+    "common/scripted_triggers/09_mpo_greatest_of_khans_triggers.txt": "2272b4bc1f7f5d5cbc4468bf217ed81ec660163ef56c853e20491744a01bdddd",
+    "common/scripted_triggers/10_tgp_dynastic_cycle_triggers.txt": "50660438058d3eb426adad1f644cf8abaa4e9446f3669d163535ae1a79be30b5",
+    "common/scripted_triggers/10_tgp_house_relation_triggers.txt": "fece4a169f347f37eb29256a52a586a2ec0e735bae09a3717912bf33fc2efde4",
+    "common/scripted_triggers/10_tgp_japan_triggers.txt": "4faf4ab6754c497e89df67735792de393548eb4143a43dbf6c1050c3d63fcc06",
+    "common/scripted_triggers/10_tgp_triggers.txt": "4bb6f9edebe8114f2e6b27c730122453e8f87e42af0df4bfcc2fd7727542402c",
+    "common/scripted_triggers/20_health_balancing_triggers.txt": "f49dbca1527c18a63c02e964a3b441db9d3887d314fab8800aa761e6bc684110",
+    "common/scripted_triggers/20_health_triggers.txt": "2846f0591e692814a907bb111c161bb8124798af5a972bd2d3344de69799c883",
+    "common/scripted_triggers/great_project_triggers.txt": "b6b88df2b986cd8656cd384e2aa7e91c1c1cf92de1b8545f4d415c2f6d1ab6cc",
+    "common/scripted_triggers/mpo_scripted_triggers.txt": "5dbbf145a4890f33cf1c02694d9b8967388a5c033ae3e8c27a4a4aa80a398f79",
+    "common/scripted_triggers/pam_scripted_triggers.txt": "0ad98f123b6739593b9ab2c170d0e8c9b3d9d941baa9d3580296dd2139b2ea6e",
+    "common/scripted_triggers/passive_rite_learning_triggers.txt": "4cde80d60a415b5dfef815d656f1b07c6d4d1582edc09cded9a91ed503224885",
+    "common/scripted_triggers/tgp_mandala_triggers.txt": "cdc1e640f244936327d2f8274f157a87a57480ec40db3cbc9fbddd8deed0696b",
+    "events/diarchy_events/diarchy_events.txt": "0246fb9cfda58071100779adca464da2f17ed30bb2d60adc8657d68353595337",
+    "events/dlc/bp1/bp1_house_feud.txt": "8e0d1d0014692de2a9cd4afe3fa0f21ba7d25572a6e0a08701734704aa0632a8",
+    "events/dlc/bp1/bp1_yearly_develop.txt": "fdcba4ea7e737fde6fa85488e6a5b95bcb2a28b495e41a5cdb80d5a0c7398bc1",
+    "events/dlc/bp2/bp2_yearly.txt": "67df046bf1a6b2fe6186e26d9eb9586c6346dbaeb78f0e5b46baaede4c385332",
+    "events/dlc/bp2/bp2_yearly_2.txt": "2d6a01d90d6220d8b2b236076a68c2b361082fd427b7a9a3a151e2cca8cf5df7",
+    "events/dlc/ce1/physician_epidemic_events.txt": "a32e442328bda1849535a666060d5a3011cc3d80a634e78c81b1cd01669092d4",
+    "events/dlc/ep1/ep1_court_position_events.txt": "0371857544849b9f7c3c9398d273fe71364768d09ff8e6ba3dd55dccbf92c071",
+    "events/dlc/ep3/ep3_emperor_yearly_2.txt": "bd38b84847f89d8932009de53bb4f4217d759c5b0b703c76aa2180aeecb010e1",
+    "events/dlc/ep3/ep3_laamp_events.txt": "bc5305eb51c0848d451e3815cff60fc7719be577be3d50595e2682cbd4429c14",
+    "events/dlc/ep3/ep3_story_cycle_grand_ambitions_events.txt": "d2630d38ec7c3bd9c387e195c80301c990a0b1d92fdf49faed62126c6b0b0944",
+    "events/dlc/fp1/fp1_shieldmaiden_events.txt": "973be50029bde3933dac321cd9174b9fcfc0028b2e46c5ef9518fef9cdb2d3c1",
+    "events/dlc/mpo/mpo_nomad_events_1.txt": "156924cfa8de38bd0d67d57972705d76e8bfaf45739f2f58647919cb32fe0ac8",
+    "events/dlc/tgp/tgp_china_career_events.txt": "5bdcf0a75b46f19c5b93e6474eead3fb2ac8ec789a8bf29ab4b0c455f5521fb5",
+    "events/dlc/tgp/tgp_interaction_events.txt": "6110e68839834293855779d8da33ed4a88e1a5610dd8cd0893bc654521d96dc6",
+    "events/health_events.txt": "74073e049a416c744b36a2a996fa467610705e38d53c836b050f1ac6f66e1212",
+    "events/interaction_events/character_interaction_events.txt": "46d0e436bbb9694e60e46c0c1c5ebc3ae1c14afa041a8b8cd9548bd5c3836c69",
+    "events/misc_events.txt": "58344878d5975a9c6f38aef16e48cfa00d31b4af6e826ac92a311cf32f01e175",
+    "events/nickname_events/nickname_events.txt": "c1393ed5e14cab062e25a119ee218eae027d78de22b85bc73039b5656ae9e215",
+    "events/relations_events/adultery_events.txt": "af8de94001cdba23fd385ee6b4672415461a828a004344bf3e30b146fafd46bd",
+    "events/relations_events/lover_events.txt": "8f43ba36732d516cf3843481ef2984a7224007c7851cb4c9a193bddd5dbb451e",
+    "events/religion_events/false_conversion_events.txt": "3c058eb278a6fc959895fb62316aa9f184a87dc810bdda0221396f1cc22749ac",
+    "events/religion_events/religious_interaction_events.txt": "27405d1ccd6217670f5812d8cbde987ed899c04b6b7d309099e2e8fbe1809a4d",
+    "events/scheme_events/adbuct_scheme/abduct_outcome_events.txt": "8fd363bcf5bb10808d38b9ba9216bdc0d3c94c904322e9e8fbfe12eb7613fbe3",
+    "events/scheme_events/agent_events.txt": "c89b9d86c887f972bac4df9fa9d4eae8bdd877bf35f5d29e2cfb9942360dec6d",
+    "events/scheme_events/befriend_scheme/befriend_ongoing_dislike_events.txt": "727a4311ce1483e554ddb9b796293354ffb137d89b3f2d40f68d1ad604afdada",
+    "events/scheme_events/befriend_scheme/befriend_ongoing_events.txt": "f02129988253046bb4c0e3fe7b3028eda3ad14403ce56e7c4684a1ef92afb703",
+    "events/scheme_events/befriend_scheme/befriend_ongoing_rival_events.txt": "3debac83e0377461791cc30958f0acdb73ced40b495cdd420b4d4e48118eb6cc",
+    "events/scheme_events/befriend_scheme/befriend_scheme_outcome_events.txt": "63263e27e46ea4500164528e3f3718839f6bd87c3298ae5eab642cf952927e9d",
+    "events/scheme_events/claim_throne_scheme/claim_throne_ongoing_events.txt": "bcd9c1b71b05fa50f635887be7cd602c14bde537026624f9927a5de0013731dd",
+    "events/scheme_events/claim_throne_scheme/claim_throne_outcome_events.txt": "af25f7664418169468529bb5c01edf675c9915e0ea3b2e17672d08a3fa82ce9e",
+    "events/scheme_events/court_scheme/court_scheme_ongoing_events.txt": "bca7de9ecc15c5f6a87720660ed246ac7a8dcb7ef916a09eaa9b605ca77e0b76",
+    "events/scheme_events/court_scheme/court_scheme_outcome_events.txt": "30f63d7960abe309dd1e065b08999632966b03adb834a88a5fd4eec97f300481",
+    "events/scheme_events/diplomatic_scheme_lifestyle_events.txt": "c2b4803e05387485229ce3f5a5f6d21ae1b366d9ac8747be8966e704924f13eb",
+    "events/scheme_events/elope_scheme/elope_scheme_events.txt": "64d38c904cded2458d17366a53814f926439bf3727f7df45a683ad547c869a1b",
+    "events/scheme_events/fabricate_hook_scheme/fabricate_hook_ongoing_events.txt": "2987cc352297b78930a255efa249ff96df16198f8fe447c2f01b59850bbd2f41",
+    "events/scheme_events/fabricate_hook_scheme/fabricate_hook_outcome_events.txt": "0b54b0a376d31c4c744a40b231fa162647d1ed1d54cb06edffa2bf951afe7462",
+    "events/scheme_events/hostile_scheme_discovery_events.txt": "c5232383e70f16d125347fa124f260974cf61334ce42efa4f87981c86dde736d",
+    "events/scheme_events/intrigue_scheme_lifestyle_events.txt": "c608490be874020f9233a468993dd7ce40bddacd1cb83660953e343d3a8643fd",
+    "events/scheme_events/intrigue_scheme_ongoing_events.txt": "d795a4d696e16764e1f13475c8c883bf25598cbbbb086eb3cf5a1f38e3cfcb90",
+    "events/scheme_events/laamp_base_contract_scheme_events.txt": "610db44988b07e3049413ae685d681e69b657d6cd712a6097a6f7fa3a32b71c1",
+    "events/scheme_events/laamp_extra_contract_scheme_events.txt": "3a9aecec826412b3c9f5ba50f9004a2b725815436ab4a3cf63f983688d30bbd9",
+    "events/scheme_events/mandala_schemes/coerce_and_leverage_contribution_scheme_events.txt": "cbcd32c8ea79b48207b49b6819ff28f63d3721fac3344fb12f1592ecdeb38507",
+    "events/scheme_events/mandala_schemes/coerce_tributary_scheme_events.txt": "a12203f807ba243132501286c532f9b224c565014a4bf5df29ce8f12b36074f8",
+    "events/scheme_events/mandala_schemes/disbelieve_mandala_scheme_events.txt": "7614be4322faec73b8706a95902aa84b95a56801c68901b9bf18071f3f68b1ec",
+    "events/scheme_events/murder_scheme/assassination_ongoing_events.txt": "2fef5a8feca059bcec62afc845dd1df27079bad4996216eee7713a00b84c51e3",
+    "events/scheme_events/murder_scheme/murder_ongoing_events.txt": "7052fdf36cb88d97a7bec08e9ab98eb34e6d479f29affce4ba1abb399a32681a",
+    "events/scheme_events/murder_scheme/murder_outcome_events.txt": "53dab5df37346e086938293d314605e65acbf01ae52fa0d9fe6029f627583e6f",
+    "events/scheme_events/murder_scheme/murder_outcome_reworked_events.txt": "95a3ff62b02e189279dd13799754e4e488e459b619588c3eef4c50a092c661c9",
+    "events/scheme_events/murder_scheme/murder_save_events.txt": "89d08ca534311516067208e99b335ae04e2302f65438625ffbc425437a9fd423",
+    "events/scheme_events/personal_scheme_ongoing_events.txt": "2d136349359efa40edae1a2f3ece3e292193ab25155d1c7bb012659b0f98b26e",
+    "events/scheme_events/scheme_critical_moments_events.txt": "0b0d2594931d29012ffd4447e1b8d8b66e4851e76a6dbff68adbd1701b838bc1",
+    "events/scheme_events/seduce_scheme/seduce_ongoing_events.txt": "fa560b67066ebe5837071b4bcf8e8ba5267585e6ce7e87c046f3ae4064df13ba",
+    "events/scheme_events/seduce_scheme/seduce_scheme_outcome_events.txt": "39b85e789d6573a73ca85f745c2afb5eac3154d958875ec6c904df2112214115",
+    "events/scheme_events/steal_back_artifact_scheme/steal_back_artifact_ongoing_events.txt": "3f2bbe882e4736107ccf977d67cadaf42b76502ca235c13953c781ffdad02bde",
+    "events/scheme_events/steal_back_artifact_scheme/steal_back_artifact_outcome_events.txt": "a2a9f31fd8a2627ed747811378082257fe2fe039debcc4a43f07c9c46ad77521",
+    "events/scheme_events/steal_herd_scheme/steal_herd_ongoing_events.txt": "8ece8cc2d084d940504aae8150861f211463e70474b23e044ad2c14e5af6f29e",
+    "events/scheme_events/steal_herd_scheme/steal_herd_outcome_events.txt": "a4253574d5492b3af77fbabe88465c5bc46d339ab361ca52df85f8f155ff9ae7",
+    "events/scheme_events/study_faith_scheme/study_faith_ongoing_events.txt": "296eae4ea2dc750a4687e596a0d458a77aaac5846f55f3cb52368f11d9235503",
+    "events/scheme_events/study_faith_scheme/study_faith_outcome_events.txt": "bcee989828e6997fa119580d9149c7bf93cc7bbc4a30e2d4bd641d4eb351dab6",
+    "events/scheme_events/sway_scheme/sway_ongoing_events.txt": "cac2328a721aae13c5c60dbe81eccdf83cd8bf06eca1f51f247a098c0f435adc",
+    "events/scheme_events/sway_scheme/sway_outcome_events.txt": "4157d683ff0e21b032bfea070b96c04d6a7ab647d5b9302abf05e2eecd8067f0",
+    "events/single_combat_events.txt": "0af227f276252424f888007f943383c76224ea7f85240e4d26f01007d3952fbb",
+    "events/story_cycles/story_cycle_pet_animal_events.txt": "ca410fe06c968b7256887f2327dde44ea50e1da72bc89de89277bdb64800183b",
+    "events/trait_specific_events/trait_specific_events.txt": "76a50f2b779e085419279801b1396a1c67c8785831e8859fcec6d0f088853c3a",
+    "events/varangian_events.txt": "7377c9ed046769c67c9a8cc524d69eec259c00270cf81382babdc62432459234",
+    "gui/decision_view_widgets/decision_view_widget_decision_option_list_controller.gui": "23b1933c47fed9f243ccf4d70987838d18194b629e43310a459b64c7669fcb3a"
+  },
+  "native_entry_spans": {
+    "ask_for_conversion_courtier_interaction": {
+      "1.19.0.6": {
+        "path": "common/character_interactions/00_religious_interactions.txt",
+        "first_line": 140,
+        "last_line": 487,
+        "whole_file_sha256": "70cab94e9f675f8c225f421655b2427beb3ed18afe5950f93fe2965ed4244a12",
+        "decoded_block_sha256": "40b156ab69216352eb7aa948286868c592f0cd35c90ea56b3283951c1d5bfb50",
+        "recipient_cooldown_years": 15
+      },
+      "1.20.0.3": {
+        "path": "common/character_interactions/00_religious_interactions.txt",
+        "first_line": 158,
+        "last_line": 505,
+        "whole_file_sha256": "63afe4538725929fb20bc20cbbbbc86705dba55a384755949431419265db0ac6",
+        "decoded_block_sha256": "fe7396ae0f4b4c9f6275e8e46a4df785cb1d88186e685936585949601642551e",
+        "recipient_cooldown_years": 15
+      }
+    },
+    "demand_conversion_interaction": {
+      "1.19.0.6": {
+        "path": "common/character_interactions/00_religious_interactions.txt",
+        "first_line": 490,
+        "last_line": 744,
+        "whole_file_sha256": "70cab94e9f675f8c225f421655b2427beb3ed18afe5950f93fe2965ed4244a12",
+        "decoded_block_sha256": "dc3b2fd34e60e1e1c3381e69618f30be571263e9dcc06f96e7eda25a51fc50e4",
+        "recipient_cooldown_years": 15
+      },
+      "1.20.0.3": {
+        "path": "common/character_interactions/00_religious_interactions.txt",
+        "first_line": 508,
+        "last_line": 778,
+        "whole_file_sha256": "63afe4538725929fb20bc20cbbbbc86705dba55a384755949431419265db0ac6",
+        "decoded_block_sha256": "2d2a363fb6d43c7c53678c2b967d86df2ff66048be81e3d2c86399e571c58d1f",
+        "recipient_cooldown_years": 15
+      }
+    },
+    "demand_conversion_vassal_ruler_interaction": {
+      "1.19.0.6": {
+        "path": "common/character_interactions/00_religious_interactions.txt",
+        "first_line": 746,
+        "last_line": 1227,
+        "whole_file_sha256": "70cab94e9f675f8c225f421655b2427beb3ed18afe5950f93fe2965ed4244a12",
+        "decoded_block_sha256": "75c1c51e1b433140aa9db6823d1d61a07cb261c529ef2f67d3b25f7671886ee0",
+        "recipient_cooldown_years": 15
+      },
+      "1.20.0.3": {
+        "path": "common/character_interactions/00_religious_interactions.txt",
+        "first_line": 780,
+        "last_line": 1383,
+        "whole_file_sha256": "63afe4538725929fb20bc20cbbbbc86705dba55a384755949431419265db0ac6",
+        "decoded_block_sha256": "29f45a667a935ac188b8ef54b60d2f7fff67589f8f1c5b63742a36141cdbc40a",
+        "recipient_cooldown_years": 15
+      }
+    }
+  },
+  "followup_source_spans": [
+    {
+      "symbol": "study_faith_success",
+      "path": "common/on_action/dlc/pam/pam_on_actions.txt",
+      "first_line": 71,
+      "last_line": 75,
+      "whole_file_sha256": "6149169c1be40bd71bd86bd21bff7afff59b5773dbcfa3b13e6ea840911b7fbf",
+      "decoded_line_span_sha256": "59b677210687d243a31f9bfbae2416e1674c9776c9642bd387cbce29203009c9",
+      "macro_parameters": []
+    },
+    {
+      "symbol": "study_faith_success",
+      "path": "common/on_action/schemes/study_faith_on_actions.txt",
+      "first_line": 1,
+      "last_line": 31,
+      "whole_file_sha256": "e6a33f4674f5e25d57faaa8d781cdba873591f884e08f5aca543bc54481d0623",
+      "decoded_line_span_sha256": "7f59a6f20e1065131eae39f415086f34b6960c2f20fbe5361690a02d356d820d",
+      "macro_parameters": []
+    },
+    {
+      "symbol": "study_faith_failure",
+      "path": "common/on_action/schemes/study_faith_on_actions.txt",
+      "first_line": 34,
+      "last_line": 57,
+      "whole_file_sha256": "e6a33f4674f5e25d57faaa8d781cdba873591f884e08f5aca543bc54481d0623",
+      "decoded_line_span_sha256": "e9e0f9ea5a8bd66b63ad001e2669a2f1852d124a43d007c76e5439b38788a47b",
+      "macro_parameters": []
+    },
+    {
+      "symbol": "study_faith",
+      "path": "common/schemes/scheme_types/study_faith_scheme.txt",
+      "first_line": 1,
+      "last_line": 525,
+      "whole_file_sha256": "8251e1ab8017eb45f3c62ba3502f4f2675641662d245775b530e9b0b71004cbe",
+      "decoded_line_span_sha256": "a3e1e47040c35e88d608266f4ffb8cc80d5c3234c5105bde710c04fb6382ba38",
+      "macro_parameters": []
+    },
+    {
+      "symbol": "demand_conversion_influence_cost_value",
+      "path": "common/script_values/pam_values.txt",
+      "first_line": 9473,
+      "last_line": 9480,
+      "whole_file_sha256": "458d1bd882e8854005e3158339fca343177cff13eac7f83cb5877a8a37171965",
+      "decoded_line_span_sha256": "134ac570630f2a24a75644b013760d85e27f2fcf0a6b48bf47ae06656061acbe",
+      "macro_parameters": []
+    },
+    {
+      "symbol": "notify_puppeteer_of_outcome_effect",
+      "path": "common/scripted_effects/00_interaction_effects.txt",
+      "first_line": 8,
+      "last_line": 25,
+      "whole_file_sha256": "4247f484295988b50098a43869d4c4056b7e0855bf8d5fa6ec0755cb996d7e82",
+      "decoded_line_span_sha256": "7b451357a19de268dc93fc1a015f8058b7cc655a3fd77334959568fa4dc49262",
+      "macro_parameters": [
+        "TITLE",
+        "TYPE"
+      ]
+    },
+    {
+      "symbol": "demand_conversion_vassal_ruler_interaction_effect",
+      "path": "common/scripted_effects/00_interaction_effects.txt",
+      "first_line": 4793,
+      "last_line": 4825,
+      "whole_file_sha256": "4247f484295988b50098a43869d4c4056b7e0855bf8d5fa6ec0755cb996d7e82",
+      "decoded_line_span_sha256": "ab5c50b6cf49723b7c50b54bc3df74aac283b94b8cfb741808eb278916e1ebc0",
+      "macro_parameters": []
+    },
+    {
+      "symbol": "add_clan_unity_interaction_effect",
+      "path": "common/scripted_effects/00_interaction_effects.txt",
+      "first_line": 5157,
+      "last_line": 5207,
+      "whole_file_sha256": "4247f484295988b50098a43869d4c4056b7e0855bf8d5fa6ec0755cb996d7e82",
+      "decoded_line_span_sha256": "81ba5eb8ea7fca17a0281ab32aac16a99069219b070258d42b0140b55d87c94e",
+      "macro_parameters": [
+        "CHARACTER",
+        "DESC",
+        "REVERSE_NON_HOUSE_TARGET",
+        "TARGET",
+        "VALUE"
+      ]
+    },
+    {
+      "symbol": "apply_clan_unity_interaction_effect",
+      "path": "common/scripted_effects/00_interaction_effects.txt",
+      "first_line": 5209,
+      "last_line": 5252,
+      "whole_file_sha256": "4247f484295988b50098a43869d4c4056b7e0855bf8d5fa6ec0755cb996d7e82",
+      "decoded_line_span_sha256": "6202813676bcb1c0d797b41187a3f8621b5e1cfcb38723a1a34fde84bfb9d633",
+      "macro_parameters": [
+        "CHARACTER",
+        "DESC",
+        "TARGET",
+        "VALUE",
+        "VALUE_REVERSED"
+      ]
+    },
+    {
+      "symbol": "grab_spouses_and_family_to_convert_effect",
+      "path": "common/scripted_effects/00_religious_interaction_effects.txt",
+      "first_line": 1158,
+      "last_line": 1217,
+      "whole_file_sha256": "9ecc22104b057e3425673917acbefaa320833226dd02b9a6c3dca7475b5b0928",
+      "decoded_line_span_sha256": "67fd7c302c7274657d93a64e32f65e1b621c9e5dabe8672f6251756c298f2e54",
+      "macro_parameters": []
+    },
+    {
+      "symbol": "demand_conversion_interaction_effect",
+      "path": "common/scripted_effects/00_religious_interaction_effects.txt",
+      "first_line": 1220,
+      "last_line": 1283,
+      "whole_file_sha256": "9ecc22104b057e3425673917acbefaa320833226dd02b9a6c3dca7475b5b0928",
+      "decoded_line_span_sha256": "215912b73b752585187850973fe3e0766c4355471f157adb4489f82bfec70b4a",
+      "macro_parameters": []
+    },
+    {
+      "symbol": "convert_family_to_faith_effect",
+      "path": "common/scripted_effects/00_religious_interaction_effects.txt",
+      "first_line": 1287,
+      "last_line": 1400,
+      "whole_file_sha256": "9ecc22104b057e3425673917acbefaa320833226dd02b9a6c3dca7475b5b0928",
+      "decoded_line_span_sha256": "8f38fa538616c8edb45521fbea31806ae492155dde726442bf8de2d81a871d7a",
+      "macro_parameters": [
+        "FALSE_CONVERSION",
+        "FORCED"
+      ]
+    },
+    {
+      "symbol": "give_piety_for_clinging_to_state_faith_effect",
+      "path": "common/scripted_effects/00_religious_interaction_effects.txt",
+      "first_line": 1799,
+      "last_line": 1804,
+      "whole_file_sha256": "9ecc22104b057e3425673917acbefaa320833226dd02b9a6c3dca7475b5b0928",
+      "decoded_line_span_sha256": "89654af71fb83a4a80cb916ccc1043a5543a617070308c55a7c8679993f8a6a7",
+      "macro_parameters": []
+    },
+    {
+      "symbol": "accept_faith_conversion_add_clan_unity_effect",
+      "path": "common/scripted_effects/00_unity_effects.txt",
+      "first_line": 125,
+      "last_line": 163,
+      "whole_file_sha256": "42a0f30f3e2eb658ae6cf5ca712a582262ec8ec8382d9152d4dcbdce55e7b780",
+      "decoded_line_span_sha256": "7a9eaeb26a9c3c0bb614abce2972995db444c0c5c905f084b2705cff79d7ac8b",
+      "macro_parameters": []
+    },
+    {
+      "symbol": "refuse_faith_conversion_add_clan_unity_effect",
+      "path": "common/scripted_effects/00_unity_effects.txt",
+      "first_line": 165,
+      "last_line": 203,
+      "whole_file_sha256": "42a0f30f3e2eb658ae6cf5ca712a582262ec8ec8382d9152d4dcbdce55e7b780",
+      "decoded_line_span_sha256": "853919bb91cab89c9047e9b091f1edd0d4cd619cbba2fe3e30b83c57d33fff7e",
+      "macro_parameters": []
+    },
+    {
+      "symbol": "state_faith_conversion_add_piety_effect",
+      "path": "common/scripted_effects/07_dlc_ep3_scripted_effects.txt",
+      "first_line": 10358,
+      "last_line": 10371,
+      "whole_file_sha256": "210fbb62ded6e6e48efbd144cf60e01b66b7711bf79914ba70d8a6b5d841c7e6",
+      "decoded_line_span_sha256": "db31b9649126bbb8d60308654da82efdf2538e3a19228fb18ae5f8916ca84f00",
+      "macro_parameters": []
+    },
+    {
+      "symbol": "clean_convert_modifier_effect",
+      "path": "common/scripted_effects/11_dlc_pam_scripted_effects.txt",
+      "first_line": 3,
+      "last_line": 16,
+      "whole_file_sha256": "ade936faf40ac2f2c928ba3bc0b618f62d324ce6f2af400e54da3b4bd975371f",
+      "decoded_line_span_sha256": "c39aa268061b838af43d0e3b755c44636503eb2b346a30604de00b199794f3c5",
+      "macro_parameters": []
+    },
+    {
+      "symbol": "convert_to_rite_with_consequences_effect",
+      "path": "common/scripted_effects/11_dlc_pam_scripted_effects.txt",
+      "first_line": 18,
+      "last_line": 102,
+      "whole_file_sha256": "ade936faf40ac2f2c928ba3bc0b618f62d324ce6f2af400e54da3b4bd975371f",
+      "decoded_line_span_sha256": "3a46944c9beb74ccf6f9930a960f91072adfe1c14f380b0bc669cc255865bb54",
+      "macro_parameters": [
+        "RITE"
+      ]
+    },
+    {
+      "symbol": "conversion_tenet_acts_of_the_apostles_effect",
+      "path": "common/scripted_effects/pam_effects.txt",
+      "first_line": 1257,
+      "last_line": 1332,
+      "whole_file_sha256": "fc4c77974a7844c31c1271dcc2ace24b17906620a832658919aa281e42a2b94f",
+      "decoded_line_span_sha256": "0e6d81515f80fd1696954c4120e0432f4ede4a6a714355ff97567b24dd888b51",
+      "macro_parameters": []
+    },
+    {
+      "symbol": "pam_tax_nonbelievers_conversion_concession_effect",
+      "path": "common/scripted_effects/pam_effects.txt",
+      "first_line": 1334,
+      "last_line": 1352,
+      "whole_file_sha256": "fc4c77974a7844c31c1271dcc2ace24b17906620a832658919aa281e42a2b94f",
+      "decoded_line_span_sha256": "2b63f9bc73c7af3135b603ae3705cb79a0c8256872d35699daad1e828e236e9c",
+      "macro_parameters": []
+    },
+    {
+      "symbol": "conversion_tenet_mendicant_preachers_effect",
+      "path": "common/scripted_effects/pam_effects.txt",
+      "first_line": 1354,
+      "last_line": 1379,
+      "whole_file_sha256": "fc4c77974a7844c31c1271dcc2ace24b17906620a832658919aa281e42a2b94f",
+      "decoded_line_span_sha256": "f430f33c652415458907655d275905792d6c5643156bbb17236b7a1fc477d836",
+      "macro_parameters": []
+    },
+    {
+      "symbol": "mandala_converter_piety_effect",
+      "path": "common/scripted_effects/tgp_mandala_scripted_effects.txt",
+      "first_line": 1652,
+      "last_line": 1665,
+      "whole_file_sha256": "bb438d3ff77f017a3676d8a3960c136571f41355075961173a5c384f993aeb0e",
+      "decoded_line_span_sha256": "d771629c28336d043184e65737bd5250dbe70bb932227432b052f592c235a84e",
+      "macro_parameters": []
+    },
+    {
+      "symbol": "religion_demand_conversion_default_modifier",
+      "path": "common/scripted_modifiers/00_religion_scripted_modifiers.txt",
+      "first_line": 26,
+      "last_line": 426,
+      "whole_file_sha256": "0d3fbd5d6740212f9acd318aa400560f2572f81f4562c3984c9d158e382fbc71",
+      "decoded_line_span_sha256": "92ad7166ab1869a39eabb2b5b4cf62483ae81159fd7e56c8d98d853d105bdb98",
+      "macro_parameters": []
+    },
+    {
+      "symbol": "religion_demand_conversion_christian_situation_modifier",
+      "path": "common/scripted_modifiers/00_religion_scripted_modifiers.txt",
+      "first_line": 428,
+      "last_line": 438,
+      "whole_file_sha256": "0d3fbd5d6740212f9acd318aa400560f2572f81f4562c3984c9d158e382fbc71",
+      "decoded_line_span_sha256": "5f8799cd861235f5913ddbf65728f41a1cf36a88f714d349b2720c03a2258bad",
+      "macro_parameters": []
+    },
+    {
+      "symbol": "refusing_conversion_is_crime_trigger",
+      "path": "common/scripted_triggers/00_religious_triggers.txt",
+      "first_line": 967,
+      "last_line": 994,
+      "whole_file_sha256": "e9d0b56130464eabdcd670fa6cf814534d11c99da1e8b3fc1e69e9c3e36d2bb2",
+      "decoded_line_span_sha256": "a7e44cd4c0073552a60cce3eca03218a1686ece9fcf9cdb33d7dfbcd88f7adce",
+      "macro_parameters": [
+        "CHARACTER"
+      ]
+    },
+    {
+      "symbol": "valid_demand_conversion_conditions_trigger",
+      "path": "common/scripted_triggers/00_religious_triggers.txt",
+      "first_line": 1198,
+      "last_line": 1269,
+      "whole_file_sha256": "e9d0b56130464eabdcd670fa6cf814534d11c99da1e8b3fc1e69e9c3e36d2bb2",
+      "decoded_line_span_sha256": "db10a62bc40008847bca21865b89858ac9632b41e2a8a5440f4c6dd61f15d05a",
+      "macro_parameters": []
+    },
+    {
+      "symbol": "study_faith_has_anything_to_learn_trigger",
+      "path": "common/scripted_triggers/passive_rite_learning_triggers.txt",
+      "first_line": 303,
+      "last_line": 317,
+      "whole_file_sha256": "4cde80d60a415b5dfef815d656f1b07c6d4d1582edc09cded9a91ed503224885",
+      "decoded_line_span_sha256": "89e10d6b72372487e5347f5872e466556370ff954e8ba5b96cba142796694d57",
+      "macro_parameters": [
+        "RITE"
+      ]
+    },
+    {
+      "symbol": "char_interaction.0181",
+      "path": "events/interaction_events/character_interaction_events.txt",
+      "first_line": 1444,
+      "last_line": 1464,
+      "whole_file_sha256": "46d0e436bbb9694e60e46c0c1c5ebc3ae1c14afa041a8b8cd9548bd5c3836c69",
+      "decoded_line_span_sha256": "28a643273312b9914af37e09b5d517511055052d20f48a09d4bfff6892e83ea7",
+      "macro_parameters": []
+    },
+    {
+      "symbol": "char_interaction.0182",
+      "path": "events/interaction_events/character_interaction_events.txt",
+      "first_line": 1467,
+      "last_line": 1489,
+      "whole_file_sha256": "46d0e436bbb9694e60e46c0c1c5ebc3ae1c14afa041a8b8cd9548bd5c3836c69",
+      "decoded_line_span_sha256": "365aecb98e70251241ea8147973d532b441930cf389e93c1bd2c1bc6bb3346d9",
+      "macro_parameters": []
+    },
+    {
+      "symbol": "false_conversion.0900",
+      "path": "events/religion_events/false_conversion_events.txt",
+      "first_line": 731,
+      "last_line": 766,
+      "whole_file_sha256": "3c058eb278a6fc959895fb62316aa9f184a87dc810bdda0221396f1cc22749ac",
+      "decoded_line_span_sha256": "3cac64e99510d84db8ece554935b44f03bd7a6bad50cd3dc262da3f212836469",
+      "macro_parameters": []
+    },
+    {
+      "symbol": "false_conversion.1000",
+      "path": "events/religion_events/false_conversion_events.txt",
+      "first_line": 770,
+      "last_line": 875,
+      "whole_file_sha256": "3c058eb278a6fc959895fb62316aa9f184a87dc810bdda0221396f1cc22749ac",
+      "decoded_line_span_sha256": "42bfa51069e6a7a0d90f6c3b712ce20e555f2d8b9f3ff5f8a8b23bf54b901e54",
+      "macro_parameters": []
+    },
+    {
+      "symbol": "false_conversion.1010",
+      "path": "events/religion_events/false_conversion_events.txt",
+      "first_line": 878,
+      "last_line": 1034,
+      "whole_file_sha256": "3c058eb278a6fc959895fb62316aa9f184a87dc810bdda0221396f1cc22749ac",
+      "decoded_line_span_sha256": "6d483d4effca59496e82aae9166e5e4c48f7fb756442732978513af295590153",
+      "macro_parameters": []
+    },
+    {
+      "symbol": "religious_interaction.2002",
+      "path": "events/religion_events/religious_interaction_events.txt",
+      "first_line": 1271,
+      "last_line": 1336,
+      "whole_file_sha256": "27405d1ccd6217670f5812d8cbde987ed899c04b6b7d309099e2e8fbe1809a4d",
+      "decoded_line_span_sha256": "2e67c03ec063272bb015950593bef628624bf1c0597e65445e7c902bab201f34",
+      "macro_parameters": []
+    },
+    {
+      "symbol": "religious_interaction.2003",
+      "path": "events/religion_events/religious_interaction_events.txt",
+      "first_line": 1340,
+      "last_line": 1536,
+      "whole_file_sha256": "27405d1ccd6217670f5812d8cbde987ed899c04b6b7d309099e2e8fbe1809a4d",
+      "decoded_line_span_sha256": "4db5ff44c0af99d2468e2c7b4f45bbef4c9fb50f8b7e3bccf9b272e757186da0",
+      "macro_parameters": []
+    },
+    {
+      "symbol": "religious_interaction.2011",
+      "path": "events/religion_events/religious_interaction_events.txt",
+      "first_line": 1541,
+      "last_line": 1691,
+      "whole_file_sha256": "27405d1ccd6217670f5812d8cbde987ed899c04b6b7d309099e2e8fbe1809a4d",
+      "decoded_line_span_sha256": "9967ee7736d00e7b59ece709d305f83560cd47749cc15ea22b12498dab842466",
+      "macro_parameters": []
+    },
+    {
+      "symbol": "religious_interaction.2012",
+      "path": "events/religion_events/religious_interaction_events.txt",
+      "first_line": 1695,
+      "last_line": 1833,
+      "whole_file_sha256": "27405d1ccd6217670f5812d8cbde987ed899c04b6b7d309099e2e8fbe1809a4d",
+      "decoded_line_span_sha256": "961cbd8606642b8094a3134d4423413022476fe967a414ac9150bb92f06254ae",
+      "macro_parameters": []
+    },
+    {
+      "symbol": "religious_interaction.2015",
+      "path": "events/religion_events/religious_interaction_events.txt",
+      "first_line": 1836,
+      "last_line": 1919,
+      "whole_file_sha256": "27405d1ccd6217670f5812d8cbde987ed899c04b6b7d309099e2e8fbe1809a4d",
+      "decoded_line_span_sha256": "2dd6dbbd06a0bdb4f569cebfc044458d5f5b1fc62cef9194b5c7d56bbba144df",
+      "macro_parameters": []
+    },
+    {
+      "symbol": "religious_interaction.2016",
+      "path": "events/religion_events/religious_interaction_events.txt",
+      "first_line": 1921,
+      "last_line": 1933,
+      "whole_file_sha256": "27405d1ccd6217670f5812d8cbde987ed899c04b6b7d309099e2e8fbe1809a4d",
+      "decoded_line_span_sha256": "d87a23655b5e10e85f24781f284f3e71e245e87fd87447101f07c44d81c22cc2",
+      "macro_parameters": []
+    },
+    {
+      "symbol": "study_faith_outcome.0100",
+      "path": "events/scheme_events/study_faith_scheme/study_faith_outcome_events.txt",
+      "first_line": 7,
+      "last_line": 33,
+      "whole_file_sha256": "bcee989828e6997fa119580d9149c7bf93cc7bbc4a30e2d4bd641d4eb351dab6",
+      "decoded_line_span_sha256": "62dfbec5ed5c0b16f5eca7b0103516a8392f48b4acdbe00863dd4c4525d1afdf",
+      "macro_parameters": []
+    },
+    {
+      "symbol": "study_faith_outcome.0101",
+      "path": "events/scheme_events/study_faith_scheme/study_faith_outcome_events.txt",
+      "first_line": 36,
+      "last_line": 116,
+      "whole_file_sha256": "bcee989828e6997fa119580d9149c7bf93cc7bbc4a30e2d4bd641d4eb351dab6",
+      "decoded_line_span_sha256": "ce5a19adda39991a008b5095de8bb98f203b00da87c9c12b690d5bbe4f3e41e8",
+      "macro_parameters": []
+    },
+    {
+      "symbol": "study_faith_outcome.0110",
+      "path": "events/scheme_events/study_faith_scheme/study_faith_outcome_events.txt",
+      "first_line": 118,
+      "last_line": 143,
+      "whole_file_sha256": "bcee989828e6997fa119580d9149c7bf93cc7bbc4a30e2d4bd641d4eb351dab6",
+      "decoded_line_span_sha256": "37c49e8015b69cfaa428b3ed3c55f7f54f20cca9a274cf78273cb5154e7b55c3",
+      "macro_parameters": []
+    },
+    {
+      "symbol": "study_faith_outcome.0111",
+      "path": "events/scheme_events/study_faith_scheme/study_faith_outcome_events.txt",
+      "first_line": 146,
+      "last_line": 226,
+      "whole_file_sha256": "bcee989828e6997fa119580d9149c7bf93cc7bbc4a30e2d4bd641d4eb351dab6",
+      "decoded_line_span_sha256": "ca5d882b706d95389c12c23f0fbaba424923ef6c40dcb2e222e71f49258bac86",
+      "macro_parameters": []
+    }
+  ],
+  "widget": {
+    "path": "gui/decision_view_widgets/decision_view_widget_decision_option_list_controller.gui",
+    "sha256": "23b1933c47fed9f243ccf4d70987838d18194b629e43310a459b64c7669fcb3a",
+    "byte_identical_between_versions_and_installation": true
+  },
+  "native_picture": {
+    "path": "gfx/interface/illustrations/decisions/decision_personal_religious.dds",
+    "sha256": "0cc4b14db29b6784a47b9a11c4c79080af851bdbfefc7fee59c73ea711a6d0b4"
+  },
+  "preserved_non_documentation_count": 853,
+  "preserved_non_documentation_inventory_sha256": "c06ec6908dbd4a0e511f80458439e5d894480047601a5c07dc0f7de9db008f90",
+  "gameplay": "not run",
+  "GUI": "not run",
+  "multiplayer": "not run",
+  "Tiger": "not run",
+  "limits": [
+    "Subset syntax reader, not an Engine parser or complete Jomini validator",
+    "Category mappings/bindings and selected guards checked; dynamic execution/count equality not proven",
+    "Native source hashes and spans are retrieval evidence, not automatic semantic branch coverage",
+    "Script query/dispatch option initialization, hardcoded validation and lifecycle remain unknown where not documented"
+  ]
+}

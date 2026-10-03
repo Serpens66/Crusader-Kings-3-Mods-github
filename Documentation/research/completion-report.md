@@ -37,3 +37,7 @@ A [focused source audit](../update-readiness/mods/mass-demand-conversion-audit.m
 ## General Crozier source supplement — 2026-10-03
 
 The [general Crozier supplement](crozier-source-coverage.md) integrates religion/rites, puppets/selection, lifecycle migration and GUI/tools independently of Mass Demand Conversion. It corrects character-history priority spelling and retains declaration discrepancies. [New verification](general-120-verification.json) checks links, encodings and preservation; all gameplay/GUI/MP/Tiger statuses remain not run. This is coverage of the identified source topics, not a completed semantic audit of all game features.
+
+## Subsequent standalone MDC migration review — 2026-10-03
+
+The [new static migration review](../update-readiness/mods/mass-demand-conversion-static-migration.md) records retained interfaces, five matching category bindings, eight localization count mappings and byte-identical fixed-option widget. No necessary functional 1.20 patch is demonstrated for standalone 1.077. Textual G04 mappings are checked; dynamic G04 and G01/G02/G03/G05 Engine/runtime contracts remain open. Historical cooldown/protection questions are regression coverage, while effective actor, rite consequences, concession and study promise are actual native migrations. Full feature audit and compatibility status are not promoted. No mod/game file, descriptor or supported version was changed.

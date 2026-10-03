@@ -324,7 +324,7 @@
       "sheet": "mods/mass-demand-conversion.md",
       "status": "blocked contract",
       "mechanics": "Relevant: tributaries, domicile, diarch, faith/rite",
-      "resolution": "G01/G02/G04: query initialization/default response, validity/cooldown/pending checks and snapshot count context",
+      "resolution": "G01/G02/G04: Engine query defaults/validation and dynamic GUI/count/delivery behavior; standalone textual mappings statically checked",
       "runtime": "not run",
       "signature_status": "export declarations available",
       "signature_symbols_available": [
@@ -333,49 +333,64 @@
         "is_character_interaction_potentially_accepted",
         "is_character_interaction_valid"
       ],
-      "behavior_status": "specific source/caller/runtime gate retained",
+      "behavior_status": "selected standalone static surfaces checked; Engine/runtime gates retained",
       "contract_card": "contracts/MC-CANDIDATES.md",
       "historical_resolution_before_mc_supplement": "Query validity/context and count/send equality",
       "source_audit_supplement": "mods/mass-demand-conversion-audit.md",
       "native_test_matrix": "mods/mass-demand-conversion-tests.md",
-      "source_audit_status": "partial; engine-context and runtime gates remain"
+      "source_audit_status": "partial; engine-context and runtime gates remain",
+      "historical_resolution_before_mc_static_review": "G01/G02/G04: query initialization/default response, validity/cooldown/pending checks and snapshot count context",
+      "static_migration_review": "mods/mass-demand-conversion-static-migration.md",
+      "static_migration_evidence": "evidence/mass-conversion-static-migration-20261003.json",
+      "static_migration_scope": "standalone 1.077 only; bundle not certified",
+      "static_migration_result": "no necessary functional 1.20 patch demonstrated; runtime compatibility unproven"
     },
     {
       "id": "MC-DISPATCH",
       "sheet": "mods/mass-demand-conversion.md",
       "status": "blocked contract",
       "mechanics": "Relevant: current conversion consequences",
-      "resolution": "G01/G02/G03/G05: dispatch/options initialization, native consequences and delayed/list/MP lifecycle",
+      "resolution": "G01/G02/G03/G05: Engine dispatch/options/validation, actual outcomes and delayed/list/MP lifecycle; no mandatory standalone functional patch demonstrated",
       "runtime": "not run",
       "signature_status": "export declarations available",
       "signature_symbols_available": [
         "is_character_interaction_potentially_accepted",
         "run_interaction"
       ],
-      "behavior_status": "specific source/caller/runtime gate retained",
+      "behavior_status": "selected standalone static surfaces checked; Engine/runtime gates retained",
       "contract_card": "contracts/MC-DISPATCH.md",
       "historical_resolution_before_mc_supplement": "Native actor initialization, consent, cooldown and consequence audit",
       "source_audit_supplement": "mods/mass-demand-conversion-audit.md",
       "native_test_matrix": "mods/mass-demand-conversion-tests.md",
-      "source_audit_status": "partial; engine-context and runtime gates remain"
+      "source_audit_status": "partial; engine-context and runtime gates remain",
+      "historical_resolution_before_mc_static_review": "G01/G02/G03/G05: dispatch/options initialization, native consequences and delayed/list/MP lifecycle",
+      "static_migration_review": "mods/mass-demand-conversion-static-migration.md",
+      "static_migration_evidence": "evidence/mass-conversion-static-migration-20261003.json",
+      "static_migration_scope": "standalone 1.077 only; bundle not certified",
+      "static_migration_result": "no necessary functional 1.20 patch demonstrated; runtime compatibility unproven"
     },
     {
       "id": "MC-VARIANTS",
       "sheet": "mods/mass-demand-conversion.md",
       "status": "plan ready after MC gates",
       "mechanics": "Relevant: current schema and standalone categories",
-      "resolution": "After MC gates: verify corresponding standalone/bundle routes and radio selection; retain distribution identity",
+      "resolution": "Standalone GUI/count surfaces statically checked; bundle port and separate-playset/runtime tests still pending",
       "runtime": "not run",
       "signature_status": "export declarations available",
       "signature_symbols_available": [
         "run_interaction"
       ],
-      "behavior_status": "specific source/caller/runtime gate retained",
+      "behavior_status": "selected standalone static surfaces checked; Engine/runtime gates retained",
       "contract_card": "contracts/MC-VARIANTS.md",
       "historical_resolution_before_mc_supplement": "Port verified standalone behavior to bundle; keep categories scoped",
       "source_audit_supplement": "mods/mass-demand-conversion-audit.md",
       "native_test_matrix": "mods/mass-demand-conversion-tests.md",
-      "source_audit_status": "partial; engine-context and runtime gates remain"
+      "source_audit_status": "partial; engine-context and runtime gates remain",
+      "historical_resolution_before_mc_static_review": "After MC gates: verify corresponding standalone/bundle routes and radio selection; retain distribution identity",
+      "static_migration_review": "mods/mass-demand-conversion-static-migration.md",
+      "static_migration_evidence": "evidence/mass-conversion-static-migration-20261003.json",
+      "static_migration_scope": "standalone 1.077 only; bundle not certified",
+      "static_migration_result": "no necessary functional 1.20 patch demonstrated; runtime compatibility unproven"
     },
     {
       "id": "SA-JOIN",

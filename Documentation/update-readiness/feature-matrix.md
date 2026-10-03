@@ -28,9 +28,9 @@ Every row has an authored sheet containing original intent, local evidence, plan
 | LW-SELECT | [Sheet](mods/leave-wars.md) | blocked contract | Relevant: current secondary participation | War predicates, saved context and selection-time revalidation |
 | LW-EXIT | [Sheet](mods/leave-wars.md) | blocked contract | Relevant: modern native war removal | Removal/cleanup/alliance/payment/experience contracts |
 | LW-RULES | [Sheet](mods/leave-wars.md) | blocked contract | Relevant: new title tiers and notifications | Rule arithmetic verified; accounting/duplicates need current engine tests |
-| MC-CANDIDATES | [Sheet](mods/mass-demand-conversion.md) | blocked contract | Relevant: tributaries, domicile, diarch, faith/rite | G01/G02/G04: query initialization/default response, validity/cooldown/pending checks and snapshot count context |
-| MC-DISPATCH | [Sheet](mods/mass-demand-conversion.md) | blocked contract | Relevant: current conversion consequences | G01/G02/G03/G05: dispatch/options initialization, native consequences and delayed/list/MP lifecycle |
-| MC-VARIANTS | [Sheet](mods/mass-demand-conversion.md) | plan ready after MC gates | Relevant: current schema and standalone categories | After MC gates: verify corresponding standalone/bundle routes and radio selection; retain distribution identity |
+| MC-CANDIDATES | [Sheet](mods/mass-demand-conversion.md) | blocked contract | Relevant: tributaries, domicile, diarch, faith/rite | G01/G02/G04: Engine query defaults/validation and dynamic GUI/count/delivery behavior; standalone textual mappings statically checked |
+| MC-DISPATCH | [Sheet](mods/mass-demand-conversion.md) | blocked contract | Relevant: current conversion consequences | G01/G02/G03/G05: Engine dispatch/options/validation, actual outcomes and delayed/list/MP lifecycle; no mandatory standalone functional patch demonstrated |
+| MC-VARIANTS | [Sheet](mods/mass-demand-conversion.md) | plan ready after MC gates | Relevant: current schema and standalone categories | Standalone GUI/count surfaces statically checked; bundle port and separate-playset/runtime tests still pending |
 | SA-JOIN | [Sheet](mods/serp-alerts.md) | blocked contract | Relevant: current war/diarch constraints | Target-specific query and native scope:target contract |
 | SA-STOP | [Sheet](mods/serp-alerts.md) | blocked contract | Relevant: current vassal-war authority | Current selectable war and correct leader query context |
 | SA-EDUCATION | [Sheet](mods/serp-alerts.md) | blocked contract | Relevant: current child/court eligibility | Editing permission and current education view binding |
@@ -63,3 +63,7 @@ The [43 cards](contracts/README.md) and [function guide](../workspace/function-c
 ## Mass conversion source supplement — 2026-10-03
 
 The [focused audit](mods/mass-demand-conversion-audit.md) and [native tests](mods/mass-demand-conversion-tests.md) refine MC gates without changing compatibility status. Export signatures are present; engine initialization, query defaults, lifecycle and runtime evidence remain unresolved. General own-interaction fixture runs do not certify native conversion.
+
+## Subsequent standalone static migration review — 2026-10-03
+
+[New MDC review](mods/mass-demand-conversion-static-migration.md) confirms retained interfaces, category bindings, count references and unchanged fixed-option widget. No necessary functional patch is demonstrated for standalone 1.077. Existing Engine/runtime gates and all runtime statuses remain open; the four-category bundle is not certified. Machine rows retain the preceding resolution wording separately.

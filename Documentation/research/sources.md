@@ -109,3 +109,7 @@ New general research uses the official [Steam announcement feed](https://store.s
 ## Additional jesec sources — 2026-10-03
 
 J01–J04 pin the Wiki, More, Less Restrictive and Scrollable repositories in the [source report](jesec-repositories.md). W01–W41 are preserved; newly discovered Wiki pages receive additional W IDs in [the complete ledger](jesec-wiki-coverage.md) and `sources.json`. A03 is corrected from the pinned Wiki license; the separate Base tooling/game notices are unchanged. All four repositories have independent inventories, source dates and license qualifications. No new runtime compatibility result is implied.
+
+## Subsequent standalone MDC static migration evidence — 2026-10-03
+
+The [new review](../update-readiness/mods/mass-demand-conversion-static-migration.md) and [separate machine evidence](../update-readiness/evidence/mass-conversion-static-migration-20261003.json) use the pinned jesec Base commits for 1.19.0.6/1.20.0.3, original local Engine exports and unchanged installed sources. They retain old/new entry spans, followup source spans, all eleven export hashes, fourteen Script declarations, three GUI declarations and standalone source/count-reference checks. The earlier history, source and caller reports remain independent evidence. These are static findings; no new game/Tiger/GUI/MP validation or compatibility claim follows.

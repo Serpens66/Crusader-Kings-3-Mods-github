@@ -1,0 +1,97 @@
+{
+  "date": "2026-10-03",
+  "initial_file_count": 1200,
+  "unchanged_existing_files": 1187,
+  "unexpected_changes": [],
+  "deleted_files": [],
+  "existing_mod_files_unchanged": true,
+  "historical_evidence_unchanged": true,
+  "scope": "Non-hidden workspace files; excludes hidden cache/git directories and __pycache__. Compared against working state at task start, not Git HEAD.",
+  "intentional_documentation_changes": [
+    {
+      "path": "AGENTS.md",
+      "before_sha256": "f3fabb5ef04172c590335ca5dd2d8c08a827d648a70b842b8c059b7e455922b3",
+      "after_sha256": "91834e8c184f2d7d0a08d0022f0f5ebf198662b856d3c6986fac42d09032f186"
+    },
+    {
+      "path": "Documentation/README.md",
+      "before_sha256": "d92223e9a3ff62dfb88f707aea42ef457483e0f5e00ca2f101be56a4e69c4a19",
+      "after_sha256": "80cf22d3a70983ecf189e3b175e12586f33934d6b6a2551308d267351f6d708d"
+    },
+    {
+      "path": "Documentation/handbook/development-workflow.md",
+      "before_sha256": "77bc6eeaac722852738f8f1876d0b9b0032d56dff9ef3b367007ee88613caabe",
+      "after_sha256": "85c712631277668a8744cef625b613faa55971d0b1f112f00f6919c927b9de91"
+    },
+    {
+      "path": "Documentation/update-readiness/conflicts.md",
+      "before_sha256": "ac740c3351e92529c5d18a9f744e47ea41554fc5b987779d816bcf7965de284f",
+      "after_sha256": "f70799820df83f3791b67974b1c63c072cb991c89de68d7baf73b5c1fc78c222"
+    },
+    {
+      "path": "Documentation/update-readiness/README.md",
+      "before_sha256": "ca05eccfddabb4223eb7d489d425eb8ba9a2789721fc6dab7dfff64bf6ad1714",
+      "after_sha256": "aabeae9b06584e7a0ede2252d47ea462a6f49c224376d5587c5daa23d1fa263b"
+    },
+    {
+      "path": "Documentation/update-readiness/mods/custom-defines.md",
+      "before_sha256": "c38fe330013eaab8723f1d8ad8997c3355b984111416665a1fd2b18a6811b010",
+      "after_sha256": "1fb91d249dd7bdbf831c3c12ae5856d4dd2a776c835593b52d54064ffda1bf20"
+    },
+    {
+      "path": "Documentation/update-readiness/mods/gender-colour.md",
+      "before_sha256": "4260a2e9de29a0200020f299b4c3d311364c4013a37efe0850a6b5f5680f991e",
+      "after_sha256": "6400f3745453d3a87aba15604aa4b36002990497fb6948aad3b8451e226a4675"
+    },
+    {
+      "path": "Documentation/update-readiness/mods/gfx-mod-serp.md",
+      "before_sha256": "6bf4f0b4607c26dea840ae3df2e55fd4fb84af7b2025cf3b758fc90f1d13d6fc",
+      "after_sha256": "1c303a37eb71296417ff93d2be3df5319f7b94e5e632b14ca516bccb7bbaaed8"
+    },
+    {
+      "path": "Documentation/update-readiness/mods/gfx-mod.md",
+      "before_sha256": "d5d3be4ac5be2af976db53a6fe0e10024432ca82c528e65c2c55094a77633d9e",
+      "after_sha256": "985f9e04502eb29b924bdf8400ade2789231acb2c60cb78df7668a3887859d44"
+    },
+    {
+      "path": "Documentation/update-readiness/mods/leave-wars.md",
+      "before_sha256": "55ffc10b824f1284c399076949d821f25c46c5f33029206a7852c987a35802d7",
+      "after_sha256": "33749173ac47555a2da32d5b9d13eb83b7156d11e0af0be40133112dbc0e36ed"
+    },
+    {
+      "path": "Documentation/update-readiness/mods/mass-demand-conversion.md",
+      "before_sha256": "092052cf8f47b46f33cebca062fe379659b05e13d23873be77d7d50dad4f17fd",
+      "after_sha256": "1fd59cbe757018819a28ddc46ba1c5df7ae156dd3ed28dd317650baebf2e42ad"
+    },
+    {
+      "path": "Documentation/update-readiness/mods/serp-alerts.md",
+      "before_sha256": "73d3128cfce4981e34c2d8900983dac1c29ae617ff1ddb98fc583e2cc5447a63",
+      "after_sha256": "46255e83cec926366c4d5bb6518d222b1bd82b307c1c419024ad671e41228de3"
+    },
+    {
+      "path": "Documentation/update-readiness/mods/serp-interactions-decisions.md",
+      "before_sha256": "9d9f22c18a29a13e991dffc7c648ceea8c6e316503d8856f4788f6eda7b11bd4",
+      "after_sha256": "542c1d78cfc3791f66fcc3a8ecc15f7a41eb1ad503bb38891a26944f5386de41"
+    }
+  ],
+  "new_files": [
+    "Documentation/handbook/mod-update-workflow.md",
+    "Documentation/research/mod-update-workflow-verification-20261003.md",
+    "Documentation/tools/check_mod_updates.py",
+    "Documentation/tools/test_check_mod_updates.py",
+    "Documentation/update-readiness/update-watch-20261003.json",
+    "Documentation/update-readiness/update-watch-index.json",
+    "Documentation/update-readiness/evidence/mod-update-source-check-20261003.json",
+    "Documentation/research/mod-update-workflow-verification-20261003.json"
+  ],
+  "source_check": {
+    "exit_code": 0,
+    "watches": 491,
+    "unchanged": 491,
+    "write_free": true
+  },
+  "fixture_tests": {
+    "passed": 33,
+    "gameplay_tests": "not performed; previous open gates retained"
+  }
+}

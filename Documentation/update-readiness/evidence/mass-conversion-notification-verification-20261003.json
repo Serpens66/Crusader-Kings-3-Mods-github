@@ -1,0 +1,97 @@
+{
+  "status": "passed",
+  "date": "2026-10-03",
+  "version": "1.20.0.3 (Crozier)",
+  "events": {
+    "religious_interaction.2002": {
+      "gameplay_ast_identical": true,
+      "preview_ast_identical": true,
+      "conversion_calls_tooltip_only": 2,
+      "explicit_reward_calls": 4,
+      "puppet_helper_calls": 1,
+      "hidden": true,
+      "priority": 1
+    },
+    "char_interaction.0181": {
+      "gameplay_ast_identical": true,
+      "preview_ast_identical": true,
+      "conversion_calls_tooltip_only": 1,
+      "explicit_reward_calls": 0,
+      "puppet_helper_calls": 1,
+      "hidden": true,
+      "priority": 1
+    }
+  },
+  "languages": [
+    "english",
+    "german",
+    "french",
+    "spanish",
+    "polish",
+    "russian",
+    "korean",
+    "simp_chinese"
+  ],
+  "native_callers": [
+    {
+      "path": "common/character_interactions/00_religious_interactions.txt",
+      "line": 613,
+      "event": "char_interaction.0181"
+    },
+    {
+      "path": "common/character_interactions/00_religious_interactions.txt",
+      "line": 920,
+      "event": "religious_interaction.2002"
+    },
+    {
+      "path": "common/character_interactions/00_religious_interactions.txt",
+      "line": 1792,
+      "event": "religious_interaction.2002"
+    },
+    {
+      "path": "common/character_interactions/00_religious_interactions.txt",
+      "line": 8718,
+      "event": "religious_interaction.2002"
+    }
+  ],
+  "native_hashes_checked": 14,
+  "historical_seed_hashes_checked": 295,
+  "changed_mod_files": [
+    "Mass Demand Conversion.mod",
+    "Mass Demand Conversion/common/messages/mdc_conversion_messages.txt",
+    "Mass Demand Conversion/descriptor.mod",
+    "Mass Demand Conversion/events/interaction_events/mdc_house_conversion_notification.txt",
+    "Mass Demand Conversion/events/religion_events/accept_conversion_notification.txt",
+    "Mass Demand Conversion/localization/english/mod_mass_convert_subjects_l_english.yml",
+    "Mass Demand Conversion/localization/french/mod_mass_convert_subjects_l_french.yml",
+    "Mass Demand Conversion/localization/german/mod_mass_convert_subjects_l_german.yml",
+    "Mass Demand Conversion/localization/korean/mod_mass_convert_subjects_l_korean.yml",
+    "Mass Demand Conversion/localization/polish/mod_mass_convert_subjects_l_polish.yml",
+    "Mass Demand Conversion/localization/russian/mod_mass_convert_subjects_l_russian.yml",
+    "Mass Demand Conversion/localization/simp_chinese/mod_mass_convert_subjects_l_simp_chinese.yml",
+    "Mass Demand Conversion/localization/spanish/mod_mass_convert_subjects_l_spanish.yml"
+  ],
+  "unchanged_non_documentation_files": 842,
+  "encoding_files_checked": 21,
+  "documentation_links_checked": 58,
+  "mod_sha256": {
+    "Mass Demand Conversion.mod": "38452798a7439e57d1c291bac3a77b826986b9c1e8cd53751ecd22c0dc1829b0",
+    "Mass Demand Conversion/common/messages/mdc_conversion_messages.txt": "dd99ac4d3afef95a38677bba3af6d61594e9a4960bcb43f3893241b080dcda74",
+    "Mass Demand Conversion/descriptor.mod": "d482c0fdfbe688bc270530807100b68adb2c70b884b2f5d91baf8477f1f8b919",
+    "Mass Demand Conversion/events/interaction_events/mdc_house_conversion_notification.txt": "1266da6f296570a9a5e25c899e321336f0e34734f0b6c5d1f5981a3205f64261",
+    "Mass Demand Conversion/events/religion_events/accept_conversion_notification.txt": "5ff50765fd24f90ff2bc4253f126d06710845a2ed4448e5b8f5128b4756e1b31",
+    "Mass Demand Conversion/localization/english/mod_mass_convert_subjects_l_english.yml": "c1cbf90c23d41afd3df9b3163021ba1d7966822c76b5141e74888414be9d4651",
+    "Mass Demand Conversion/localization/french/mod_mass_convert_subjects_l_french.yml": "e19f7901c2ba3e836a57e0b8ecad912f4a886c8010583bf2b59b45535b4af0d4",
+    "Mass Demand Conversion/localization/german/mod_mass_convert_subjects_l_german.yml": "c27613e9de3025d360fda5d471639ad0b9d5abb2ce1321526a06e035fc79c4b2",
+    "Mass Demand Conversion/localization/korean/mod_mass_convert_subjects_l_korean.yml": "34c5e647818771e151595d79fbe4cc6e2ac1562559163759da6682d252ac9f62",
+    "Mass Demand Conversion/localization/polish/mod_mass_convert_subjects_l_polish.yml": "e7ac9bc537c1634a39522d86292172fb0cf4dd178d0068c31fec7574532a32d2",
+    "Mass Demand Conversion/localization/russian/mod_mass_convert_subjects_l_russian.yml": "48c162e10021c66d2deeee7187516a3b117b1ac2ab4e065bcb17139bf003d87e",
+    "Mass Demand Conversion/localization/simp_chinese/mod_mass_convert_subjects_l_simp_chinese.yml": "d24e749b639032d971e58f49d8c8b992f1dd38f4f17c6829b7be8510ad6bb724",
+    "Mass Demand Conversion/localization/spanish/mod_mass_convert_subjects_l_spanish.yml": "57c687deccdf6789f44f77c304142eeaa5625e88cf128f9cca1e16fda8b10c96"
+  },
+  "gameplay": "not run",
+  "GUI": "not run",
+  "multiplayer": "not run",
+  "Tiger": "not run",
+  "limits": "Subset parser and source/AST comparison; no Engine load or runtime exactly-once proof."
+}

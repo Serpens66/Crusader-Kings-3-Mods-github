@@ -59,7 +59,7 @@ Workshop metadata and launcher UI can change. Check the current publishing workf
 
 ## Handling a game update
 
-Recheck launcher version, regenerate local references, compare hashes of overridden definitions and inspect changed API dumps. Review behavior, not just parsing. Existing workspace descriptors mostly advertise much older versions; their patterns are useful but their compatibility needs fresh validation.
+Follow the [mandatory mod-update workflow](mod-update-workflow.md). Recheck launcher version and the selected mod's last reviewed source baseline, run the read-only per-mod comparison, inspect complete changed definitions/callers/helpers and current API dumps, then carry out established targeted corrections. Preserve historical indexes and baselines instead of overwriting them during reference refresh. Review behavior, not just parsing; distinguish source registration, feature audit, static checks and actual game tests. Existing descriptors can advertise old versions without proving a code defect. Current MDC 1.078 has two active acceptance event overrides, both requiring complete upstream-event review after a patch.
 
 ## General Crozier source supplement — 2026-10-03
 

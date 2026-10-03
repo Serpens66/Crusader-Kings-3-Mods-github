@@ -35,3 +35,15 @@ Declarations are available separately from remaining semantic/runtime gates. Ori
 | GX-GENDER | source/asset contract, not an engine-command signature | [Card](../contracts/GX-GENDER.md) |
 | GX-EXTRAS | source/asset contract, not an engine-command signature | [Card](../contracts/GX-EXTRAS.md) |
 | GX-PACKAGE | source/asset contract, not an engine-command signature | [Card](../contracts/GX-PACKAGE.md) |
+
+## Maintenance after future game updates — 2026-10-03
+
+Follow the [mandatory update workflow](../../handbook/mod-update-workflow.md). A request to check this mod includes established targeted corrections after the full affected-feature audit. Run `Documentation/tools/check_mod_updates.py --mod "GFX-Mod"`; it is read-only and uses the [reviewed baseline index](../update-watch-index.json). The initial registration has **8 watches** against 1.20.0.3. Unchanged watches do not close the Engine/runtime gates above.
+
+**Watched surfaces:** All five native same-path replaced textures plus portraits, character-window and tooltip consumers.
+
+**Preserved intent and audit priorities:** Preserve the smaller public package, its artwork and credits; do not import local Serp assets. Check title-tier/frame changes and artifact state consumers. Three no-native-path extras remain unresolved and preserved.
+
+**Required regression acceptance:** Every current rank/tier and regent/clergy/ruler branch; artifact common/unique/empty states; sexuality frames; two UI scales and identical host/client selection.
+
+Known watch lists are curated source registrations, not a complete semantic/transitive graph. Add newly discovered relevant dependencies after their source audit. Keep future reports and baselines dated; preserve older evidence, user edits and distribution identity. No source hash or successful parser run establishes gameplay/GUI/MP compatibility. Release metadata remains gated by the prescribed actual tests unless the user explicitly authorizes a separate target declaration.

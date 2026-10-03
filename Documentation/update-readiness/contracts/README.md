@@ -53,3 +53,7 @@ Current engine declarations are now indexed. These cards complement, rather than
 ## Mass conversion source supplement — 2026-10-03
 
 The [focused audit](../mods/mass-demand-conversion-audit.md) and [native tests](../mods/mass-demand-conversion-tests.md) refine MC gates without changing compatibility status. Export signatures are present; engine initialization, query defaults, lifecycle and runtime evidence remain unresolved. General own-interaction fixture runs do not certify native conversion.
+
+## Subsequent standalone static migration review — 2026-10-03
+
+[New MDC evidence and findings](../mods/mass-demand-conversion-static-migration.md) narrow the remaining work: category/actor/recipient/count-reference mapping and retained interfaces are statically checked. No required functional 1.20 patch is demonstrated for standalone 1.077. G01–G05 retain their Engine/dynamic/runtime portions; full audit and compatibility status remain open. The bundle is not certified.

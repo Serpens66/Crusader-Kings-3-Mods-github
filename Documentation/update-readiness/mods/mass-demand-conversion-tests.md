@@ -52,3 +52,29 @@ Attach before/after evidence, exact reproduction and clean-baseline comparison t
 ## Subsequent caller and Internet recheck (2026-10-03)
 
 See the [follow-up research](mass-demand-conversion-recheck.md) for a current official developer explanation and native query/dispatch callers. General actor/puppet meaning and native requester/query patterns are now sourced; script-entry option/default/validation behavior remains narrower G01/G02 work. Earlier search failures are historical and do not establish absence of an explanation. All runtime statuses remain unchanged.
+
+## Subsequent static migration classification — 2026-10-03
+
+The [standalone review](mass-demand-conversion-static-migration.md) now checks textual category/actor/recipient mappings and localization count references. Actual GUI scope, state changes and deliveries still require this matrix; no case is marked run or removed. New effective-actor context, rite consequences, concession options and delayed study are 1.20 migration probes. The unchanged 15-year cooldown and original extra protection policy are regression cases, not automatically identified mod defects. General Engine defaults and list propagation remain unknown where undocumented. Run initial probes with unchanged mod code; only a demonstrated failure can justify a corresponding correction. Bundle runs remain separate.
+
+## Notification update 1.078 — 2026-10-03
+
+[Implementation/source evidence](mass-demand-conversion-notifications-20261003.md). All additional cases: **not run**. Use a full game restart with standalone 1.078; hot reload can ignore override priority. Continue recording request, acceptance and completed conversion separately. Feed entries do not establish converter counts. Earlier MC-T01–MC-T22 remain pending; bundle tests do not imply a bundle update.
+
+| Case | Required observation | Status |
+|---|---|---|
+| MC-N01 | Accepted vassal/tributary demand yields feed message instead of letter; include manual demand and script dispatch | not run |
+| MC-N02 | Accepted house demand yields the same feed type instead of letter | not run |
+| MC-N03 | Existing courtier notification still works through native code; no extra MDC notification | not run |
+| MC-N04 | Many 2002/0181 acceptances merge without individual confirmations; record surviving text/icon/tooltip, sound, animation, dismissal behavior and per-player routing | not run |
+| MC-N05 | Native conversion occurs once per intended target and event-owned rewards once per acceptance; inspect before/after state, not number of feed entries | not run |
+| MC-N06 | Minister of Rites manual compelled conversion retains 30 × primary-title tier influence and 50 × tier piety (native values); test alternative conversion rites | not run |
+| MC-N07 | Landless adventurer local-ruler acceptance grants native trivial fervor × tier and 200 prestige × tier, doubled for >= kingdom, without a click | not run |
+| MC-N08 | Puppet case: feed to effective requester and original guarded toast to puppeteer; correct recipient portrait and no duplicate reward | not run |
+| MC-N09 | Full/house refusal, gold/favor negotiations, concessions and faith-study promise retain native decisions; study promise alone produces no new acceptance notification | not run |
+| MC-N10 | Save/reload pending answers; two real players acting separately/simultaneously; no cross-player scopes, misrouting, duplicate conversion/reward or OOS | not run |
+| MC-N11 | Fresh cold-start and scenario error logs have no duplicate-ID, scope, localization or message errors; isolate pre-existing diagnostics | not run |
+
+| Case | Build / playset / actor / recipient | Acceptance count / completed conversion count / reward deltas | Feed / puppet toast / diagnostics | Result |
+|---|---|---|---|---|
+| MC-N01–MC-N11 (one row per executed case) | pending | pending | pending | not run |

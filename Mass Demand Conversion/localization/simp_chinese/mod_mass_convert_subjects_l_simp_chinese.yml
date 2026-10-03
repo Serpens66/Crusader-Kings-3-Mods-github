@@ -19,3 +19,7 @@
  mod_convert_house_tooltip: "要求你所有异教的家族成员改信。"
 
  mod_mass_convert_subjects_decision_confirm: "发送要求"
+
+ # Acceptance only; actual conversion may finish through a later native event.
+ mdc_conversion_accepted_title:0 "改信请求已接受"
+ mdc_conversion_accepted_desc:0 "[recipient.GetShortUIName]已接受改信请求。"

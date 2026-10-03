@@ -1,9 +1,9 @@
-version="1.077"
+version="1.078"
 tags={
 	"Decisions"
 	"Character Interactions"
 	"Utilities"
 }
 name="Mass Demand Conversion"
-supported_version="1.19.*"
+supported_version="1.20.*"
 remote_file_id="2753176859"

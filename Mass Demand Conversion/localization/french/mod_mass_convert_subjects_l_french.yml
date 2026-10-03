@@ -19,3 +19,7 @@
  mod_convert_house_tooltip: "Exigez la conversion de tous les membres de votre Maison qui sont infidèles."
 
  mod_mass_convert_subjects_decision_confirm: "Envoyer la demande"
+
+ # Acceptance only; actual conversion may finish through a later native event.
+ mdc_conversion_accepted_title:0 "Demande de conversion acceptée"
+ mdc_conversion_accepted_desc:0 "[recipient.GetShortUIName] a accepté la demande de conversion."

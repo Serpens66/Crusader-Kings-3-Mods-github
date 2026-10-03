@@ -58,3 +58,15 @@ Declarations are available separately from remaining semantic/runtime gates. Ori
 | LW-SELECT | mixed; missing names are not proof of unsupported API | [Card](../contracts/LW-SELECT.md) |
 | LW-EXIT | export declarations available | [Card](../contracts/LW-EXIT.md) |
 | LW-RULES | export declarations available | [Card](../contracts/LW-RULES.md) |
+
+## Maintenance after future game updates — 2026-10-03
+
+Follow the [mandatory update workflow](../../handbook/mod-update-workflow.md). A request to check this mod includes established targeted corrections after the full affected-feature audit. Run `Documentation/tools/check_mod_updates.py --mod "Leave Wars"`; it is read-only and uses the [reviewed baseline index](../update-watch-index.json). The initial registration has **9 watches** against 1.20.0.3. Unchanged watches do not close the Engine/runtime gates above.
+
+**Watched surfaces:** Native alliance/adventurer war interactions, war hooks/messages and interaction/event/value/message schemas; current Engine war-removal/payment/saved-scope declarations.
+
+**Preserved intent and audit priorities:** Preserve the ten-slot picker, six settings and exact payment/opinion/alliance policy. Check changed participation/caller scopes, ended wars, actor/leader roles, delayed target validity and duplicate native notifications. Engine prestige/experience semantics still require evidence.
+
+**Required regression acceptance:** All settings, 10/11 war candidates, ended/reassigned wars, secondary versus primary roles, exact gold/prestige/experience deltas, save/reload and two players. Bundle is a separate distribution; modify it only when explicitly included in the task.
+
+Known watch lists are curated source registrations, not a complete semantic/transitive graph. Add newly discovered relevant dependencies after their source audit. Keep future reports and baselines dated; preserve older evidence, user edits and distribution identity. No source hash or successful parser run establishes gameplay/GUI/MP compatibility. Release metadata remains gated by the prescribed actual tests unless the user explicitly authorizes a separate target declaration.

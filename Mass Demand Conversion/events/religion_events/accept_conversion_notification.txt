@@ -1,33 +1,77 @@
-﻿# Everything outcommented, bevause overwriting an event only partly is not supported by the game. I would need to replace the whole religious_interaction_events.txt file for it to work properly
-# (currently it works 50% of the times and other modders told me it even might cause crashes and other problems when I do not overwrite it fully)
-# So I outcomment this, because overwriting the whole event is no option, it makes it much too incomptaible to game updates and other mods.
-
-
-# namespace = religious_interaction
+﻿# Mod: replace only this acceptance ID using the CK3 1.20 override contract.
+# A full Vanilla-file replacement is no longer needed; equal-priority ID overrides still conflict.
+namespace = religious_interaction
 
 #####################
-# Demand Conversion	#
-# 					#
-# 					#
+# Demand Conversion #
 #####################
 
-# Mod: overwrite this event to only send a notification message, instead of a letter. This reduces spam a bit. 
+religious_interaction.2002 = {
+	id_override_priority = 1
+	type = character_event
+	hidden = yes
+	immediate = {
+		if = {
+			limit = {
+				has_title = title:e_minister_of_rites
+			}
+			change_influence = {
+				value = minor_influence_gain
+				multiply = scope:recipient.primary_title.tier
+			}
+			add_piety = {
+				value = minor_piety_gain
+				multiply = scope:recipient.primary_title.tier
+			}
+		}
+		notify_puppeteer_of_outcome_effect = {
+			TYPE = event_toast_effect_good
+			TITLE = religious_interaction.2002.toast_puppeteer
+		}
 
-# religious_interaction.2002 = {
-	# hidden = yes
-	# immediate = {
-		# scope:actor = {
-            # send_interface_message = {	
-                # title = ask_for_conversion_interaction
-                # left_icon = scope:recipient
-                # scope:recipient = {
-                    # show_as_tooltip = { demand_conversion_vassal_ruler_interaction_effect = yes }
-                # }
-            # }
-        # }
-	# }
-# }
+		# The old single-option rewards run explicitly without a confirmation click.
+		if = {
+			limit = {
+				has_government = landless_adventurer_government
+				scope:recipient.highest_held_title_tier >= tier_barony
+			}
+			faith = {
+				change_fervor = {
+					value = {
+						add = trivial_fervor_value
+						multiply = scope:recipient.highest_held_title_tier
+					}
+					desc = imperial_capital_sacked_fervor_gain
+				}
+			}
+			add_prestige = {
+				value = 200
+				multiply = scope:recipient.highest_held_title_tier
+				if = {
+					limit = {
+						scope:recipient.highest_held_title_tier >= tier_kingdom
+					}
+					multiply = 2
+				}
+			}
+		}
 
+		# Current scope is the original event receiver (puppet_or_actor), not necessarily actor.
+		send_interface_message = {
+			type = mdc_conversion_accepted_message
+			left_icon = scope:recipient
+			# Native interactions already initiate conversion; these are previews only.
+			if = {
+				limit = {
+					has_government = landless_adventurer_government
+				}
+				show_as_tooltip = { demand_conversion_interaction_effect = yes }
+			}
+			else = {
+				show_as_tooltip = { demand_conversion_vassal_ruler_interaction_effect = yes }
+			}
+		}
+	}
+}
 
-#Refuses conversion
-# do not overwrite this one, cause there are many possible actions depending on the curcumstances (eg. still using a hook) and applieing modifiers and so on
+# Refusal events stay native: hooks, negotiations and other choices still need player input.

@@ -24,7 +24,7 @@ Native actor initialization, consent, cooldown and consequence audit
 
 Source-confirmed: complete exported threshold/redirect syntax, native conditional influence/concession costs and response chains. The common conversion effect has a missing puppet_or_actor fallback to actor, but it occurs after the earlier eligibility/AI query. Engine option initialization, cooldown/pending enforcement, family-list isolation, delayed study and multiplayer remain G01/G02/G03/G05.
 
-Current remaining gate: G01/G02/G03/G05: dispatch/options initialization, native consequences and delayed/list/MP lifecycle. Partial source audit only; gameplay/GUI/MP not run.
+Current remaining gate: G01/G02/G03/G05: Engine dispatch/options initialization and validation, actual native consequences and delayed/list/MP lifecycle. Reviewed source routes and standalone actor/recipient/send-threshold bindings are recorded separately; full feature audit unclosed; gameplay/GUI/MP not run.
 
 No blanket gate closure follows from an export hit. Read the current complete entry-point, callers, expanded helper arguments and dependencies before an implementation decision. Preserve absent-target and multiplayer cases.
 
@@ -37,3 +37,11 @@ Use `Documentation/tools/lookup.py SYMBOL --context 4` for versioned declaration
 ## Subsequent caller and Internet recheck (2026-10-03)
 
 See the [follow-up research](../mods/mass-demand-conversion-recheck.md) for a current official developer explanation and native query/dispatch callers. General actor/puppet meaning and native requester/query patterns are now sourced; script-entry option/default/validation behavior remains narrower G01/G02 work. Earlier search failures are historical and do not establish absence of an explanation. All runtime statuses remain unchanged.
+
+## Subsequent static migration review (2026-10-03)
+
+[Reviewed source routes](../mods/mass-demand-conversion-static-migration.md) distinguish effective-actor migration, options/costs, negotiation, family/secret faith, rite consequences and delayed study. The standalone invokes native definitions and does not copy the old conversion implementation. Its five dispatches consistently supply requester/candidate and `send_threshold = decline`, without an execute threshold. No mandatory functional mod patch is demonstrated; the later fallback does not establish earlier Engine initialization. Unchanged cooldown and existing list/context questions are regression coverage, not proven 1.20 defects. Runtime behavior and full audit status remain open.
+
+## Notification update 1.078 — 2026-10-03
+
+[New notification audit and evidence](../mods/mass-demand-conversion-notifications-20261003.md): standalone metadata is now 1.078/1.20.* and its two native acceptance IDs are hidden priority-1 overrides using mdc_conversion_accepted_message. The completed source audit is limited to those notifications, their callers, previews, rewards and puppet notifier. The earlier full query/dispatch/lifecycle/GUI/MP gates remain open and gameplay remains **not run**. Candidate enumeration, all five categories, query/send bindings, option logic and count values are byte-preserved. The four-category bundle and its inactive experiment are untouched; no port is implied. Both native IDs affect all their callers, including manual requests; same-ID mod overrides can conflict. See MC-N01–MC-N11 in the updated test matrix. Historical static-migration and inactivity statements above describe the earlier 1.077 review.

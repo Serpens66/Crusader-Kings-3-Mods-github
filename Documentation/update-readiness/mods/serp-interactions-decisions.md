@@ -74,3 +74,15 @@ Declarations are available separately from remaining semantic/runtime gates. Ori
 | SI-EXCOMM | export declarations available | [Card](../contracts/SI-EXCOMM.md) |
 | SI-CONVERSION | export declarations available | [Card](../contracts/SI-CONVERSION.md) |
 | SI-WARS | export declarations available | [Card](../contracts/SI-WARS.md) |
+
+## Maintenance after future game updates — 2026-10-03
+
+Follow the [mandatory update workflow](../../handbook/mod-update-workflow.md). A request to check this mod includes established targeted corrections after the full affected-feature audit. Run `Documentation/tools/check_mod_updates.py --mod "SerpInteractionsDecisions"`; it is read-only and uses the [reviewed baseline index](../update-watch-index.json). The initial registration has **28 watches** against 1.20.0.3. Unchanged watches do not close the Engine/runtime gates above.
+
+**Watched surfaces:** Payment, religious authority/rite helpers, deposal continuation, conversion dependencies and general interaction/event/hook/value/message schemas. These curated watches do not fully cover every custom delayed education/resource branch.
+
+**Preserved intent and audit priorities:** Preserve all eight families, amount/AI exceptions, resource conversion and education timings/costs. Trace issuer/requester/victim and rite parameters, weak/strong hook semantics, rightful-heir versus landless continuation, delayed markers and list ownership. The four-category conversion and embedded Leave Wars are separate distribution contracts; do not silently import standalone MDC notifications or tributaries.
+
+**Required regression acceptance:** All original family-specific tests: affordability/threshold boundaries, missing councillors/rite/head, weak/strong hooks, payer/student death and days 364–367, repeat/save/reload and two-player actions. Passing one family does not certify the bundle.
+
+Known watch lists are curated source registrations, not a complete semantic/transitive graph. Add newly discovered relevant dependencies after their source audit. Keep future reports and baselines dated; preserve older evidence, user edits and distribution identity. No source hash or successful parser run establishes gameplay/GUI/MP compatibility. Release metadata remains gated by the prescribed actual tests unless the user explicitly authorizes a separate target declaration.

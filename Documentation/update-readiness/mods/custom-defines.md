@@ -76,3 +76,15 @@ Declarations are available separately from remaining semantic/runtime gates. Ori
 | CD-LOBBY | export declarations available | [Card](../contracts/CD-LOBBY.md) |
 | CD-TOOLTIPS | export declarations available | [Card](../contracts/CD-TOOLTIPS.md) |
 | CD-KNIGHTS | export declarations available | [Card](../contracts/CD-KNIGHTS.md) |
+
+## Maintenance after future game updates — 2026-10-03
+
+Follow the [mandatory update workflow](../../handbook/mod-update-workflow.md). A request to check this mod includes established targeted corrections after the full affected-feature audit. Run `Documentation/tools/check_mod_updates.py --mod "CustomDefines"`; it is read-only and uses the [reviewed baseline index](../update-watch-index.json). The initial registration has **8 watches** against 1.20.0.3. Unchanged watches do not close the Engine/runtime gates above.
+
+**Watched surfaces:** Native define databases (`00_defines`, graphical definitions and Jomini fog/text settings), current rules/lobby GUI and character tooltip consumers/localization.
+
+**Preserved intent and audit priorities:** Preserve casualty 0.5, dynasty values/cap and the documented graphical settings. Check renamed namespaces/keys and changed native meanings, GUI nesting/current controls, exact datatype getters and designer permissions. Do not replace current full windows with older versions.
+
+**Required regression acceptance:** Controlled combat/renown deltas; every current title tier; map zoom and fog; rules/presets at two UI scales; EN/DE tooltips; host/client lobby before/after start. CD-KNIGHTS remains its separately documented package; excluded independent Knight folders are not a deletion target.
+
+Known watch lists are curated source registrations, not a complete semantic/transitive graph. Add newly discovered relevant dependencies after their source audit. Keep future reports and baselines dated; preserve older evidence, user edits and distribution identity. No source hash or successful parser run establishes gameplay/GUI/MP compatibility. Release metadata remains gated by the prescribed actual tests unless the user explicitly authorizes a separate target declaration.

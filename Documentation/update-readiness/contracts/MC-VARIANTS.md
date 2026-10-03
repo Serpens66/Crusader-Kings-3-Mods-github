@@ -36,3 +36,11 @@ Use `Documentation/tools/lookup.py SYMBOL --context 4` for versioned declaration
 ## Subsequent caller and Internet recheck (2026-10-03)
 
 See the [follow-up research](../mods/mass-demand-conversion-recheck.md) for a current official developer explanation and native query/dispatch callers. General actor/puppet meaning and native requester/query patterns are now sourced; script-entry option/default/validation behavior remains narrower G01/G02 work. Earlier search failures are historical and do not establish absence of an explanation. All runtime statuses remain unchanged.
+
+## Subsequent static migration review (2026-10-03)
+
+The [standalone 1.077 review](../mods/mass-demand-conversion-static-migration.md) verifies five option IDs/count references, eight standalone languages, current GUI exports and byte-identical old/new/native fixed-option widget. That evidence supports no mandatory standalone GUI migration; rendering/context are untested. It does not certify or port the four-category bundle. Existing distribution identity, IDs and inactive notification experiment are retained. No metadata or runtime status promotion follows.
+
+## Notification update 1.078 — 2026-10-03
+
+[New notification audit and evidence](../mods/mass-demand-conversion-notifications-20261003.md): standalone metadata is now 1.078/1.20.* and its two native acceptance IDs are hidden priority-1 overrides using mdc_conversion_accepted_message. The completed source audit is limited to those notifications, their callers, previews, rewards and puppet notifier. The earlier full query/dispatch/lifecycle/GUI/MP gates remain open and gameplay remains **not run**. Candidate enumeration, all five categories, query/send bindings, option logic and count values are byte-preserved. The four-category bundle and its inactive experiment are untouched; no port is implied. Both native IDs affect all their callers, including manual requests; same-ID mod overrides can conflict. See MC-N01–MC-N11 in the updated test matrix. Historical static-migration and inactivity statements above describe the earlier 1.077 review.

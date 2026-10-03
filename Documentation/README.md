@@ -9,6 +9,7 @@ This is a working reference for building new Crusader Kings III mods in this wor
 | Need | Read |
 |---|---|
 | Develop a new mod safely | [Development workflow](handbook/development-workflow.md) |
+| Check and adapt a mod after a game update | [Mandatory update workflow and read-only source comparison](handbook/mod-update-workflow.md) |
 | Understand the language | [Syntax and execution contexts](handbook/script-language.md) |
 | Work with scopes | [Scopes and contracts](handbook/scopes.md) |
 | Conditions, loops and reusable helpers | [Control flow and macros](handbook/control-flow.md) |
@@ -31,7 +32,7 @@ This is a working reference for building new Crusader Kings III mods in this wor
 | Find a function or an object | [Command quick reference](reference/commands.md), [local lookup](reference/index-guide.md) |
 | Compare historical Vanilla versions | [Full local Git reference and commands](reference/vanilla-history.md), [initial 1.19→1.20 findings](research/vanilla-history-20261003.md) |
 | Prepare existing mods for the installed version | [Update readiness and per-mod packages](update-readiness/README.md) |
-| Investigate Mass Demand Conversion | [Focused source audit](update-readiness/mods/mass-demand-conversion-audit.md), [native acceptance matrix](update-readiness/mods/mass-demand-conversion-tests.md) |
+| Investigate Mass Demand Conversion | [Current 1.078 notification overrides](update-readiness/mods/mass-demand-conversion-notifications-20261003.md), [focused source audit](update-readiness/mods/mass-demand-conversion-audit.md), [static migration findings](update-readiness/mods/mass-demand-conversion-static-migration.md), [native acceptance matrix](update-readiness/mods/mass-demand-conversion-tests.md) |
 | Assess readiness against the existing mods | [Documentation readiness audit](research/documentation-readiness.md) |
 | Check confidence and gaps | [Audit findings](research/vanilla-audit.md), [coverage](research/coverage.md), [sources](research/sources.md) |
 
@@ -44,6 +45,7 @@ This is a working reference for building new Crusader Kings III mods in this wor
 5. Prefer a new uniquely named file/object when the loader supports it. Audit the actual override mechanism before overriding existing content.
 6. Use a unique prefix for new public identifiers, variables, flags and localization. Follow this workspace's UTF-8 BOM rule for `.txt`/`.yml` and CRLF rule for text files.
 7. State exactly what was validated: structural check, source audit, external validator, or gameplay test. Only a gameplay test supports a claim that the feature works in the engine.
+8. For a mod-update request follow the [mandatory update workflow](handbook/mod-update-workflow.md), run the selected mod's source watches, complete the affected feature audit and perform necessary targeted corrections. Preserve unknown contracts, historical baselines and pending runtime tests; do not stop at another plan when the correction is established.
 
 ## What is available offline
 

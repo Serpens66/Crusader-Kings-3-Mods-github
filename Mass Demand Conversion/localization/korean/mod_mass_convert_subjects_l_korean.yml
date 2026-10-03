@@ -19,3 +19,7 @@
  mod_convert_house_tooltip: "Demand conversion from all your infidel housemembers."
 
  mod_mass_convert_subjects_decision_confirm: "Send requests"
+
+ # Acceptance only; actual conversion may finish through a later native event.
+ mdc_conversion_accepted_title:0 "개종 요청 수락"
+ mdc_conversion_accepted_desc:0 "[recipient.GetShortUIName](이)가 개종 요청을 수락했습니다."

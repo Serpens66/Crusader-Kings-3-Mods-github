@@ -6,7 +6,7 @@ Purpose: shorten repeated manual conversion requests by selecting a category of 
 
 The standalone decision already uses the modern picture/reference block, `decision_group_type = admin`, a tributary category and five count values. The bundle has older scalar picture syntax and four categories without tributaries. Both share public decision and count IDs. These are different generations of one feature, not independently composable mods.
 
-Both `accept_conversion_notification.txt` files contain only comments. They are inactive historical experiments. Preserve that inactivity; compatibility work does not authorize replacing conversion letters with custom messages.
+At the original review both `accept_conversion_notification.txt` files contained only comments, and replacing letters was outside that review’s scope. The subsequently authorized standalone 1.078 notification update is documented below; the older bundled experiment remains inactive.
 
 ## Work packages
 
@@ -54,3 +54,25 @@ Declarations are available separately from remaining semantic/runtime gates. Ori
 ## Subsequent caller and Internet recheck (2026-10-03)
 
 See the [follow-up research](mass-demand-conversion-recheck.md) for a current official developer explanation and native query/dispatch callers. General actor/puppet meaning and native requester/query patterns are now sourced; script-entry option/default/validation behavior remains narrower G01/G02 work. Earlier search failures are historical and do not establish absence of an explanation. All runtime statuses remain unchanged.
+
+## Subsequent static migration review (2026-10-03)
+
+The [standalone 1.077 migration review](mass-demand-conversion-static-migration.md) records 14 retained Script interfaces, three exported GUI bindings, matching category/query/send IDs and textual bindings, eight languages with correct count references, unchanged widget bytes and the unchanged 15-year native cooldown. The current 295 native seed hashes still match. No necessary functional mod patch is demonstrated; this does not prove runtime compatibility. G04 textual mapping is checked, while its actual GUI/count/delivery behavior remains open. G01/G02/G03/G05 keep the narrower Engine/runtime gates. The complete feature audit remains unclosed where contracts are unknown.
+
+The existing protection policy and cooldown are regression topics, not demonstrated new 1.20 defects. Effective actor, rite consequences, the new concession and study promise are real native changes to probe. The bundle port is not included in this standalone conclusion. No metadata or mod-code change was made.
+
+## Notification update 1.078 — 2026-10-03
+
+The explicitly requested standalone update is now implemented for declared target 1.20.*. [Notification source audit, effect mapping and validation](mass-demand-conversion-notifications-20261003.md) distinguish this added behavior from the historical finding that no mandatory functional migration patch was demonstrated. Only religious_interaction.2002 and char_interaction.0181 become hidden priority-1 overrides using the shared merging feed type; native conversion remains tooltip-only here, and native Minister/adventurer rewards and puppet notifiers are preserved. Current callers of these IDs are globally affected, including manual requests. Gameplay/GUI/MP remain **not run**, including MC-N01–MC-N11. Earlier query/dispatch gates are unchanged; metadata 1.078/1.20.* does not close them. Historical statements above about inactive overrides and unchanged metadata describe the preceding review, not the current package. The older bundle remains unchanged.
+
+## Maintenance after future game updates — 2026-10-03
+
+Follow the [mandatory update workflow](../../handbook/mod-update-workflow.md). A request to check this mod includes established targeted corrections after the full affected-feature audit. Run `Documentation/tools/check_mod_updates.py --mod "Mass Demand Conversion"`; it is read-only and uses the [reviewed baseline index](../update-watch-index.json). The initial registration has **40 watches** against 1.20.0.3. Unchanged watches do not close the Engine/runtime gates above.
+
+**Watched surfaces:** Two full acceptance definitions and every direct scalar/block-form script caller; explicit conversion/notifier helpers, reward values, native conversion/study lifecycle, schemas and eight message templates.
+
+**Preserved intent and audit priorities:** Prioritize the full native IDs religious_interaction.2002 and char_interaction.0181. Their replacements do not merge upstream fields. New immediate/option/after effects and new real decisions must be examined; preserve root/actor/recipient/puppet roles, notifier guards and exactly-once Minister/adventurer rewards. Conversion calls stay tooltip-only. The shared feed type reports acceptance, not completed family conversion or study.
+
+**Required regression acceptance:** Run MC-N01–MC-N11 and applicable MC-T cases after a full restart. Record acceptance, completed conversion and reward counts independently. Test merging detail retention, manual/Minister/local-ruler callers, puppet delivery, refusal/gold/favor/study choices, save/reload and two players; conflicts at the same event IDs remain.
+
+Known watch lists are curated source registrations, not a complete semantic/transitive graph. Add newly discovered relevant dependencies after their source audit. Keep future reports and baselines dated; preserve older evidence, user edits and distribution identity. No source hash or successful parser run establishes gameplay/GUI/MP compatibility. Release metadata remains gated by the prescribed actual tests unless the user explicitly authorizes a separate target declaration.

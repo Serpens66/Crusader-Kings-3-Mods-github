@@ -1,6 +1,6 @@
 # CK3 mod update readiness
 
-This report prepares the existing mods for the **as-installed 1.20.0.3 (Crozier)** source tree. It records concrete changes and unresolved contracts before implementation. No mod, installation file, launcher registration or playset was changed. The user-run export sessions are now recorded separately in [runtime intake](runtime-intake.md); no fixture gameplay tests or external validator run have been performed.
+The initial preparation report below records the **as-installed 1.20.0.3 (Crozier)** source tree and unresolved contracts before implementation. At that historical stage no mod, installation file, launcher registration or playset was changed. Subsequently standalone MDC 1.078 was implemented with two active event overrides; see its [notification report](mods/mass-demand-conversion-notifications-20261003.md). For new update requests follow the [mandatory version-independent workflow](../handbook/mod-update-workflow.md). User-run exports are separately recorded in [runtime intake](runtime-intake.md); gameplay/GUI/MP acceptance remains pending.
 
 Research date: **2026-10-03**. All 18,710 previously indexed native text/reference hashes still match. The new workspace baseline covers **853 files**, including binary assets and pre-existing user changes. The first inventory had 851 files; two excluded-root OUTDATED markers appeared during the audit and are preserved. See [workspace observations](evidence/workspace-observations.json) for baseline reconciliation. This establishes reproducibility against the local installation; it does not establish that the installation is an unmodified Steam distribution.
 
@@ -8,6 +8,8 @@ Research date: **2026-10-03**. All 18,710 previously indexed native text/referen
 
 | Need | Document |
 |---|---|
+| Carry out a new mod-update request | [Mandatory workflow and comparison tool](../handbook/mod-update-workflow.md) |
+| Select the reviewed comparison baseline | [Baseline index](update-watch-index.json), [initial source registration](update-watch-20261003.json) |
 | See every functional work package and its gate | [Feature matrix](feature-matrix.md) |
 | Check dependencies and permitted combinations | [Conflict matrix](conflicts.md) |
 | Follow the implementation order | [Implementation packages](implementation-order.md) |
@@ -28,7 +30,7 @@ Research date: **2026-10-03**. All 18,710 previously indexed native text/referen
 | [GFX Mod](mods/gfx-mod.md) | Rank atlas is shorter than current native atlas; shared gender textures conflict with other graphical packages |
 | [GFX Mod Serp](mods/gfx-mod-serp.md) | 664 textures need consumer-aware review; six concrete post-effect assignment changes; rank atlas and other dimensions differ |
 | [Leave Wars](mods/leave-wars.md) | Standalone and bundle content are byte-identical; current war-state revalidation and command contracts are prerequisites |
-| [Mass Demand Conversion](mods/mass-demand-conversion.md) | [Focused source audit](mods/mass-demand-conversion-audit.md) and [native tests](mods/mass-demand-conversion-tests.md) refine conditional costs, fallback and delayed outcomes; G01–G05 remain open |
+| [Mass Demand Conversion](mods/mass-demand-conversion.md) | Current standalone 1.078 declares 1.20.*; [two acceptance overrides](mods/mass-demand-conversion-notifications-20261003.md) now have targeted source/caller watches. [Native tests](mods/mass-demand-conversion-tests.md) and G01–G05 remain open |
 | [SerpAlerts](mods/serp-alerts.md) | Eight important-action types and four active hook subscriptions; verify current contexts, overlap and recipient routing |
 | [SerpInteractionsDecisions](mods/serp-interactions-decisions.md) | Eight feature families; proven helper mismatch in excommunication; exact 500-gold display bug; succession and delayed education need focused tests |
 
@@ -54,4 +56,10 @@ Start with the shared evidence and engine gates, then apply the ordered packages
 
 ## Current export and example supplement
 
+The subsequent [standalone MDC 1.077 static migration review](mods/mass-demand-conversion-static-migration.md) records retained Script/GUI interfaces, matching category/query/send bindings, count references and byte-identical old/new fixed-option widget. No necessary functional 1.20 mod patch is demonstrated. Engine option/default/validation behavior, actual GUI/delivery outcomes and delayed/list/multiplayer lifecycle remain open. No compatibility, bundle-port or metadata status is promoted.
+
 The [engine registry](../reference/engine-reference.md), [43 separate contract cards](contracts/README.md) and [function/state guide](../workspace/function-contracts.md) reconcile the available 1.20.0.3 exports. [Completion boundary](../research/completion-report.md) distinguishes export success, structural checks and remaining semantic/runtime gates. The user-test [three-run manual](../examples/test-runs.md) uses separate playsets; do not use the Vanilla diagnostic starter for mod tests. Original update statuses remain unchanged.
+
+## Subsequent repeatable update workflow — 2026-10-03
+
+All eight retained distributions now have current maintenance instructions in their sheets and registered source watches. The new checker compares selected objects, their callers/dependencies, file-level contracts and native replacement assets; it does not refresh baselines or patch mods itself. The task instruction authorizes the agent to complete established corrections after the feature audit. Existing Engine/runtime gates and distribution exclusions remain. Historical 1.077 review statements above are retained as earlier findings, not the current MDC package state. See the [workflow verification](../research/mod-update-workflow-verification-20261003.md).

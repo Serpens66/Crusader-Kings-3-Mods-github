@@ -52,3 +52,15 @@ Declarations are available separately from remaining semantic/runtime gates. Ori
 | GS-CONTAINERS | source/asset contract, not an engine-command signature | [Card](../contracts/GS-CONTAINERS.md) |
 | GS-POST | source/asset contract, not an engine-command signature | [Card](../contracts/GS-POST.md) |
 | GS-PACKAGE | source/asset contract, not an engine-command signature | [Card](../contracts/GS-PACKAGE.md) |
+
+## Maintenance after future game updates — 2026-10-03
+
+Follow the [mandatory update workflow](../../handbook/mod-update-workflow.md). A request to check this mod includes established targeted corrections after the full affected-feature audit. Run `Documentation/tools/check_mod_updates.py --mod "GFX-Mod Serp"`; it is read-only and uses the [reviewed baseline index](../update-watch-index.json). The initial registration has **377 watches** against 1.20.0.3. Unchanged watches do not close the Engine/runtime gates above.
+
+**Watched surfaces:** All native same-path replaced textures, current portrait/character/tooltip consumers and the complete native map post-effect file.
+
+**Preserved intent and audit priorities:** Preserve the fuller local distribution and artwork. After native volume changes reapply only the six documented intended assignments, preserving unrelated new content. Audit new consumers/frame selection, 41 historical dimension differences, absent-native assets and PNG-under-DDS containers before remapping/transcoding.
+
+**Required regression acceptance:** Warm/cold seasons, zoom/paper-map transitions, every rank tier and affected skill/trait/men-at-arms widget; container loading logs; rendering/checksums in two-player play. No automatic public Workshop upload.
+
+Known watch lists are curated source registrations, not a complete semantic/transitive graph. Add newly discovered relevant dependencies after their source audit. Keep future reports and baselines dated; preserve older evidence, user edits and distribution identity. No source hash or successful parser run establishes gameplay/GUI/MP compatibility. Release metadata remains gated by the prescribed actual tests unless the user explicitly authorizes a separate target declaration.

@@ -35,3 +35,15 @@ Declarations are available separately from remaining semantic/runtime gates. Ori
 | GC-ICONS | source/asset contract, not an engine-command signature | [Card](../contracts/GC-ICONS.md) |
 | GC-EXTRAS | source/asset contract, not an engine-command signature | [Card](../contracts/GC-EXTRAS.md) |
 | GC-PACKAGE | source/asset contract, not an engine-command signature | [Card](../contracts/GC-PACKAGE.md) |
+
+## Maintenance after future game updates — 2026-10-03
+
+Follow the [mandatory update workflow](../../handbook/mod-update-workflow.md). A request to check this mod includes established targeted corrections after the full affected-feature audit. Run `Documentation/tools/check_mod_updates.py --mod "Gender Colour"`; it is read-only and uses the [reviewed baseline index](../update-watch-index.json). The initial registration has **4 watches** against 1.20.0.3. Unchanged watches do not close the Engine/runtime gates above.
+
+**Watched surfaces:** Both native sexuality atlases and their current consumers in `gui/window_character.gui` and `gui/shared/cooltip.gui`.
+
+**Preserved intent and audit priorities:** Preserve existing coloring and distribution identity. Native asset byte/header changes require frame/order/consumer auditing; unchanged dimensions are not rendering proof. Variants without native same paths remain an unresolved consumer queue, not automatic deletion candidates.
+
+**Required regression acceptance:** All available sexuality/gender frames, hover/selection, portrait sizes and two UI scales; host/client appearance/checksum. Test separately from competing GFX packages.
+
+Known watch lists are curated source registrations, not a complete semantic/transitive graph. Add newly discovered relevant dependencies after their source audit. Keep future reports and baselines dated; preserve older evidence, user edits and distribution identity. No source hash or successful parser run establishes gameplay/GUI/MP compatibility. Release metadata remains gated by the prescribed actual tests unless the user explicitly authorizes a separate target declaration.

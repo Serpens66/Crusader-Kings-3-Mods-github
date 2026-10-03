@@ -58,3 +58,15 @@ Declarations are available separately from remaining semantic/runtime gates. Ori
 | SA-WAR-JOIN | export declarations available | [Card](../contracts/SA-WAR-JOIN.md) |
 | SA-DEATH | export declarations available | [Card](../contracts/SA-DEATH.md) |
 | SA-COURT | export declarations available | [Card](../contracts/SA-COURT.md) |
+
+## Maintenance after future game updates — 2026-10-03
+
+Follow the [mandatory update workflow](../../handbook/mod-update-workflow.md). A request to check this mod includes established targeted corrections after the full affected-feature audit. Run `Documentation/tools/check_mod_updates.py --mod "SerpAlerts"`; it is read-only and uses the [reviewed baseline index](../update-watch-index.json). The initial registration has **17 watches** against 1.20.0.3. Unchanged watches do not close the Engine/runtime gates above.
+
+**Watched surfaces:** Native conversion/war interaction counterparts, join eligibility helper, important-action/on-action/message schemas, war/death/court callbacks/messages and character/education UI consumers.
+
+**Preserved intent and audit priorities:** Preserve eight existing action types/priorities and appended child hooks. Recheck supplied versus optional scopes, pre-death killer/employer context, current actionable war/education permission and duplicate native messages. Do not enable commented guest or fallback death paths or widen conversion categories. Important-action discovery/click remains interface-only.
+
+**Required regression acceptance:** Every action compared to the equivalent manual native action; missing killer/employer/war; overlapping receiver relationships; pre-death/departure routing; large-realm refresh; two-player scope isolation and save/reload.
+
+Known watch lists are curated source registrations, not a complete semantic/transitive graph. Add newly discovered relevant dependencies after their source audit. Keep future reports and baselines dated; preserve older evidence, user edits and distribution identity. No source hash or successful parser run establishes gameplay/GUI/MP compatibility. Release metadata remains gated by the prescribed actual tests unless the user explicitly authorizes a separate target declaration.

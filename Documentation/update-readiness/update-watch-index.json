@@ -1,0 +1,8 @@
+{
+  "schema_version": 1,
+  "current_baseline": "update-watch-20261003.json",
+  "history": [
+    "update-watch-20261003.json"
+  ],
+  "rule": "Update pointer only after feature source review; preserve every dated baseline and per-watch version/reference."
+}
