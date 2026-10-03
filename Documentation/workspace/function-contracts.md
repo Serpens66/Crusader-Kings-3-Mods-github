@@ -77,3 +77,7 @@ Standalone/bundle conversion and withdrawal share IDs and are alternatives. Publ
 ## Subsequent standalone MDC static migration review — 2026-10-03
 
 The [new review and exact evidence](../update-readiness/mods/mass-demand-conversion-static-migration.md) statically verify the five category routes, requester root/candidate prev in queries, requester root/candidate this in dispatch and selected existing guards. Scope.ScriptValue and fixed-option GUI exports remain available, and the widget is byte-identical between pinned versions. The common native helper now converts to rites; MDC has no copied old faith-conversion implementation to replace. No required functional 1.20 patch is demonstrated. Engine construction/options/validation and native lifecycle/list/MP behavior remain explicit boundaries; this does not certify a complete feature audit or runtime compatibility.
+
+## Leave Wars standalone implementation — 2026-10-03
+
+The [targeted update](../update-readiness/mods/leave-wars-update-20261003.md) implements the war-withdrawal recheck and cleanup previously shown as the intended safe flow. The original ten branch effects/amounts are preserved. Matching assistance abandonment, selected-war Frankokratia membership cleanup, independently enabled-by-default personality stress/native contract-failure options and message filters are added. Bundle remains unchanged. Source audit and static checks passed; [campaign/GUI/MP cases](../update-readiness/mods/leave-wars-tests.md), new-rule resolution in old saves and release metadata remain pending.

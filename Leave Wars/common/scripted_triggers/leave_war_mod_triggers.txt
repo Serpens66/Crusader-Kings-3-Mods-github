@@ -1,0 +1,43 @@
+﻿# War scope; actor/recipient are supplied by the interaction's unbroken event chain.
+lw_mod_can_leave_war_trigger = {
+    trigger_if = {
+        limit = { exists = scope:actor exists = scope:recipient }
+        scope:actor = { is_alive = yes is_ai = no is_landless_adventurer = no }
+        scope:recipient = { is_alive = yes }
+        is_war_leader = scope:recipient
+        NOT = { is_war_leader = scope:actor }
+        # A shared war alone is insufficient: both must still be on the same side.
+        OR = {
+            AND = { is_attacker = scope:actor is_attacker = scope:recipient }
+            AND = { is_defender = scope:actor is_defender = scope:recipient }
+        }
+    }
+    trigger_else = { always = no }
+}
+
+# Any scope; WAR is a scope:leaving_war_N reference, which may have expired.
+lw_mod_can_select_war_trigger = {
+    trigger_if = {
+        limit = { exists = $WAR$ }
+        $WAR$ = { lw_mod_can_leave_war_trigger = yes }
+    }
+    trigger_else = { always = no }
+}
+
+# Any scope with actor saved; preserve the original six-rule affordability policy.
+lw_mod_can_pay_war_exit_trigger = {
+    trigger_if = {
+        limit = { exists = scope:actor }
+        scope:actor = {
+            OR = {
+                has_game_rule = leave_war_mod_costs_nothing
+                has_game_rule = leave_war_mod_costs_only_opinion
+                AND = {
+                    prestige >= LW_prestige_costs_based_on_title_of_actor_value
+                    gold >= LW_gold_costs_based_on_title_of_actor_value
+                }
+            }
+        }
+    }
+    trigger_else = { always = no }
+}

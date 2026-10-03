@@ -25,9 +25,9 @@ Every row has an authored sheet containing original intent, local evidence, plan
 | GX-GENDER | [Sheet](mods/gfx-mod.md) | blocked render | Relevant: current status frame consumers | Separate graphical distribution and frame test |
 | GX-EXTRAS | [Sheet](mods/gfx-mod.md) | blocked consumer | Unresolved: alternate asset consumption | Static/dynamic references; no automatic deletion |
 | GX-PACKAGE | [Sheet](mods/gfx-mod.md) | plan ready | Not relevant: gameplay additions | Preserve public/local identity and original credits |
-| LW-SELECT | [Sheet](mods/leave-wars.md) | blocked contract | Relevant: current secondary participation | War predicates, saved context and selection-time revalidation |
-| LW-EXIT | [Sheet](mods/leave-wars.md) | blocked contract | Relevant: modern native war removal | Removal/cleanup/alliance/payment/experience contracts |
-| LW-RULES | [Sheet](mods/leave-wars.md) | blocked contract | Relevant: new title tiers and notifications | Rule arithmetic verified; accounting/duplicates need current engine tests |
+| LW-SELECT | [Sheet](mods/leave-wars.md) | standalone implemented; runtime pending | Relevant: current secondary participation | War predicates, saved context and selection-time revalidation |
+| LW-EXIT | [Sheet](mods/leave-wars.md) | standalone implemented; runtime pending | Relevant: modern native war removal | Removal/cleanup/alliance/payment/experience contracts |
+| LW-RULES | [Sheet](mods/leave-wars.md) | standalone implemented; runtime pending | Relevant: new title tiers and notifications | Rule arithmetic verified; accounting/duplicates need current engine tests |
 | MC-CANDIDATES | [Sheet](mods/mass-demand-conversion.md) | blocked contract | Relevant: tributaries, domicile, diarch, faith/rite | G01/G02/G04: Engine query defaults/validation and dynamic GUI/count/delivery behavior; standalone textual mappings statically checked |
 | MC-DISPATCH | [Sheet](mods/mass-demand-conversion.md) | blocked contract | Relevant: current conversion consequences | G01/G02/G03/G05: Engine dispatch/options/validation, actual outcomes and delayed/list/MP lifecycle; no mandatory standalone functional patch demonstrated |
 | MC-VARIANTS | [Sheet](mods/mass-demand-conversion.md) | plan ready after MC gates | Relevant: current schema and standalone categories | Standalone GUI/count surfaces statically checked; bundle port and separate-playset/runtime tests still pending |

@@ -63,3 +63,7 @@ The [engine registry](../reference/engine-reference.md), [43 separate contract c
 ## Subsequent repeatable update workflow — 2026-10-03
 
 All eight retained distributions now have current maintenance instructions in their sheets and registered source watches. The new checker compares selected objects, their callers/dependencies, file-level contracts and native replacement assets; it does not refresh baselines or patch mods itself. The task instruction authorizes the agent to complete established corrections after the feature audit. Existing Engine/runtime gates and distribution exclusions remain. Historical 1.077 review statements above are retained as earlier findings, not the current MDC package state. See the [workflow verification](../research/mod-update-workflow-verification-20261003.md).
+
+## Leave Wars standalone supplement — 2026-10-03
+
+The [standalone implementation/audit](mods/leave-wars-update-20261003.md) and [static verification](evidence/leave-wars-verification-20261003.json) are current. The [selected baseline](update-watch-leave-wars-20261003.json) refreshes only Leave Wars and its audited dependencies; all other mod records and historical baselines are unchanged. [Runtime acceptance](mods/leave-wars-tests.md) remains not run. No bundle propagation, game/profile change or compatibility metadata bump occurred.

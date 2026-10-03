@@ -32,3 +32,9 @@ No blanket gate closure follows from an export hit. Read the current complete en
 Root `Leave Wars` has 15 read text/reference files. [Machine evidence](evidence.json) records every object boundary, saved scope, macro parameter, referenced state/event and native-definition candidate. These are retrieval records, not a typed call graph.
 
 Use `Documentation/tools/lookup.py SYMBOL --context 4` for versioned declarations and current source uses. See the original sheet for exact original branch costs, callback sets and complete acceptance cases.
+
+## Standalone implementation reconciliation — 2026-10-03
+
+Source closure: six existing cost settings and formulas remain unchanged. Two independent new rules default on: literal additive stress (+40 loyal, +20 just, −30 disloyal, −5 callous, −5 arbitrary), and native assistance failure for ten years only on abandonment of a matching promise. Both work independently of price settings; no forced save migration or spiritual fulfillment mutation. Current native message filters applied. Accounting, stress modifiers/clamping, old-save settings and duplicate-message behavior remain live gates (LW-T05–LW-T06, LW-T10–LW-T13, LW-T17, LW-T20).
+
+[Current audit and implementation](../mods/leave-wars-update-20261003.md) · [Pending runtime cases](../mods/leave-wars-tests.md). Original evidence.json and raw export intake remain historical records; source/static checks do not certify runtime compatibility.

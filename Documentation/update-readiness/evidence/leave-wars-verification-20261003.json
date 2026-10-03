@@ -1,0 +1,22 @@
+{
+  "game_version": "1.20.0.3",
+  "static_status": "passed",
+  "checks": [
+    "All ten guarded branches preserve every legacy effect, preview price and explicit cleanup; cancel cleans all eleven scopes.",
+    "Display, enumeration, all ten option guards and execution share current war permission; absent selection fails closed; AI/adventurers excluded.",
+    "Only matching promise is abandoned; independently gated failure flag (10 years) and exact additive pure-stress profile; Frankokratia is selected-war-scoped, without random war selection.",
+    "Six old settings retained; both new rules default on and independently disabled; all three native message filters present.",
+    "Seven languages have the same 50 unique keys; original strings retained byte-for-text; all new tooltip/rule keys provided.",
+    "All scripts structurally balanced; UTF-8 BOM and existing newline conventions retained; amounts, opinions, effect text, descriptors, thumbnail and bundle unchanged."
+  ],
+  "runtime": {
+    "gameplay": "not_run",
+    "gui": "not_run",
+    "multiplayer": "not_run",
+    "external_validator": "not_run"
+  },
+  "limits": [
+    "Token/structure and preservation checks do not establish Jomini engine behavior or runtime compatibility."
+  ],
+  "date": "2026-10-03"
+}

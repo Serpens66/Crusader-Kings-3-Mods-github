@@ -1,6 +1,6 @@
 # Leave Wars update sheet
 
-Purpose: a player supporting another leader's war can select a shared war, withdraw and incur configured costs, alliance/opinion consequences and messages. It does not grant withdrawal as primary leader. Standalone and bundle ship fourteen byte-identical content files; update them consistently but test separate distributions.
+Purpose: a player supporting another leader's war can select a shared war, withdraw and incur configured costs, alliance/opinion consequences and messages. It does not grant withdrawal as primary leader. Standalone and bundle originally shipped fourteen byte-identical content files. The authorized 2026-10-03 update changes only standalone; bundle is intentionally retained at its earlier state. Synchronize only under a separate authorized bundle request.
 
 Evidence: original interaction, complete `events/leave_war_mod_events.txt`, cost values, six game-rule settings, opinions, messages, effect text and translations; current WAR, INT, VALUE and ON sources in [source register](../sources.md). No effect signature or runtime behavior is inferred from the old comments claiming hardcoded limits or tooltip bugs.
 
@@ -8,8 +8,8 @@ Evidence: original interaction, complete `events/leave_war_mod_events.txt`, cost
 
 | ID | Contract and affected content | Action or gate |
 |---|---|---|
-| LW-SELECT | `leave_war_interaction_mod`: recipient is allied war leader; on-send saves up to ten war scopes and opens `leave_war_mod.0001` on actor | **Blocked command/chain contract:** establish current war predicates and scope preservation from exports and native dispatch. Retain the existing ten-slot picker; validate candidate membership, same side and non-primary actor at opening and selection. An ended or changed war must produce no costs/effects |
-| LW-EXIT | All ten event branches mutate actor, selected war, leader and other participants, then clear eleven saved scopes | **Blocked primitive/lifecycle contract:** obtain `remove_participant`, `clear_saved_scope`, alliance break, prestige/experience and short-term payment signatures. Audit modern native removal callers and war hooks before factoring repeated branches into a shared helper |
+| LW-SELECT | `leave_war_interaction_mod`: recipient is allied war leader; on-send saves up to ten war scopes and opens `leave_war_mod.0001` on actor | **Standalone implemented; runtime pending:** current war predicates and direct-chain declaration audited; live propagation/invalidation still require LW-T cases. Retain the existing ten-slot picker; validate candidate membership, same side and non-primary actor at opening and selection. An ended or changed war must produce no costs/effects |
+| LW-EXIT | All ten event branches mutate actor, selected war, leader and other participants, then clear eleven saved scopes | **Standalone implemented; runtime pending:** current primitive declarations, native departure callers and alliance/war context audited. Existing ten legacy branches remain separate; test accounting, cleanup and native callbacks |
 | LW-RULES | `leave_war_mod_costs` and four cost values, two opinions, four message types and custom remove-participant effect text | Preserve existing six settings and costs; verify display/actual deltas and current native notifications. Keep custom messages only where they fulfill existing intent without duplicating new native messages |
 
 ## Existing numeric policy
@@ -47,7 +47,7 @@ Payment goes to the selected recipient/leader, which also receives prestige when
 
 ## Completion gates
 
-The actual implementation must not assume that any arbitrary participant can be removed, that an engine predicate name remained valid, or that effects preserve saved scopes across events. Resolve these through the exports and a feature audit of the modern native caller chain, then run [the test protocol](../test-protocol.md). Retain standalone IDs and propagate verified code/translations to the identical bundle copy. No metadata compatibility bump before both distributions pass.
+The actual implementation must not assume that any arbitrary participant can be removed, that an engine predicate name remained valid, or that effects preserve saved scopes across events. Resolve these through the exports and a feature audit of the modern native caller chain, then run [the test protocol](../test-protocol.md). Retain standalone IDs. Bundle propagation is outside the authorized standalone update and its unchanged code is not newly certified. No standalone metadata compatibility bump before its required tests pass.
 
 ## Current-export reconciliation (2026-10-03)
 
@@ -70,3 +70,9 @@ Follow the [mandatory update workflow](../../handbook/mod-update-workflow.md). A
 **Required regression acceptance:** All settings, 10/11 war candidates, ended/reassigned wars, secondary versus primary roles, exact gold/prestige/experience deltas, save/reload and two players. Bundle is a separate distribution; modify it only when explicitly included in the task.
 
 Known watch lists are curated source registrations, not a complete semantic/transitive graph. Add newly discovered relevant dependencies after their source audit. Keep future reports and baselines dated; preserve older evidence, user edits and distribution identity. No source hash or successful parser run establishes gameplay/GUI/MP compatibility. Release metadata remains gated by the prescribed actual tests unless the user explicitly authorizes a separate target declaration.
+
+## Implemented standalone update — 2026-10-03
+
+Current [implementation/audit report](leave-wars-update-20261003.md), [runtime acceptance protocol](leave-wars-tests.md), [source evidence](../evidence/leave-wars-source-audit-20261003.json) and [static result](../evidence/leave-wars-verification-20261003.json) supersede the original source-blocked intake for this standalone revision. War-role/side/live-funds guards and all exit/cancel/new-send cleanup are implemented. Matching paid assistance is abandoned without payout; selected-war Frankokratia membership is cleaned. Optional pure personality stress and the native ten-year assistance failure flag are independently toggled and default on, including under Free.
+
+All original prices, opinions, manual notifications/tooltip workaround and ten branches remain. The three custom message filters are updated. Gameplay/GUI/MP, old-save new-rule resolution and notification deduplication remain **not run**. Descriptors remain at 1.121 / 1.6.*. The new comparison baseline updates only standalone Leave Wars; historical baseline, raw exports and bundle remain unchanged.

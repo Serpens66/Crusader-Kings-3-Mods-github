@@ -1,0 +1,55 @@
+﻿# Event-chain cleanup only; these are not character variables or preferences.
+lw_mod_clear_war_scopes_effect = {
+    clear_saved_scope = leaving_war
+    clear_saved_scope = leaving_war_1
+    clear_saved_scope = leaving_war_2
+    clear_saved_scope = leaving_war_3
+    clear_saved_scope = leaving_war_4
+    clear_saved_scope = leaving_war_5
+    clear_saved_scope = leaving_war_6
+    clear_saved_scope = leaving_war_7
+    clear_saved_scope = leaving_war_8
+    clear_saved_scope = leaving_war_9
+    clear_saved_scope = leaving_war_10
+}
+
+# Selected war scope, still before removal; actor/recipient supplied by the event.
+lw_mod_war_departure_commitments_effect = {
+    scope:actor = {
+        if = {
+            limit = {
+                has_variable = owed_contract_assistance_war
+                var:owed_contract_assistance_war = scope:leaving_war
+            }
+            custom_tooltip = lw_mod_contract_abandoned_tt
+            # A voluntary exit forfeits the future payout; other promises are untouched.
+            remove_variable = owed_contract_assistance_war
+            remove_variable = owed_contract_assistance_contribution
+            remove_variable = owed_contract_assistance_gold
+            if = {
+                limit = { has_game_rule = lw_mod_contract_failure_on }
+                custom_tooltip = lw_mod_contract_failure_tt
+                add_character_flag = { flag = fp2_contract_assistance_failure years = 10 }
+            }
+        }
+        if = {
+            limit = { has_game_rule = lw_mod_personality_on }
+            # Literal trait amounts are additive. No base stress or spiritual fulfillment.
+            stress_impact = { loyal = 40 just = 20 disloyal = -30 callous = -5 arbitrary = -5 }
+        }
+    }
+    if = {
+        limit = { using_cb = crusading_claim_cb is_attacker = scope:actor }
+        # Native departure cleans this story list, but randomly chooses a war.
+        # Iterate only attackers of THIS selected war; do not detach from another war.
+        every_war_attacker = {
+            every_owned_story = {
+                type = frankokratia_story
+                limit = {
+                    is_target_in_variable_list = { name = frankokratia_leaders target = scope:actor }
+                }
+                remove_list_variable = { name = frankokratia_leaders target = scope:actor }
+            }
+        }
+    }
+}

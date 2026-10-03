@@ -20,7 +20,7 @@ leave_war_mod.0001 = {
     option = { # we have to hardcode options, we can not simply add an option per active war or so -.-. So I will hardcode ~ 10 options. I hope up to 10 same wars with the same person should be enough...
         name = leave_war_mod_optionname_1
         show_as_unavailable = { 
-            exists = scope:leaving_war_1
+            lw_mod_can_select_war_trigger = { WAR = scope:leaving_war_1 }
             AND = {
                 OR = {
                     has_game_rule = leave_war_mod_costs_default
@@ -35,7 +35,7 @@ leave_war_mod.0001 = {
             }
         }
         trigger = {
-            exists = scope:leaving_war_1
+            lw_mod_can_select_war_trigger = { WAR = scope:leaving_war_1 }
             OR = {
                 has_game_rule = leave_war_mod_costs_nothing
                 has_game_rule = leave_war_mod_costs_only_opinion
@@ -46,52 +46,13 @@ leave_war_mod.0001 = {
             }
             
         }
-        scope:actor = {
-            if = { 
-                limit = { 
-                    OR = {
-                        has_game_rule = leave_war_mod_costs_default
-                        has_game_rule = leave_war_mod_costs_half
-                        has_game_rule = leave_war_mod_costs_double
-                        has_game_rule = leave_war_mod_costs_only_prestigehonorgold
-                    }
-                }
-                add_prestige = { subtract = LW_prestige_costs_based_on_title_of_actor_value }
-                add_prestige_experience = { subtract = LW_prestige_costs_based_on_title_of_actor_value }
-                pay_short_term_gold = {
-                    gold = LW_gold_costs_based_on_title_of_actor_value
-                    target = scope:recipient
-                }
+        # Recheck after the player has left the picker open; no stale paid no-op.
+        if = {
+            limit = {
+                lw_mod_can_select_war_trigger = { WAR = scope:leaving_war_1 }
+                lw_mod_can_pay_war_exit_trigger = yes
             }
-            if = {
-                limit = {
-                    is_allied_to = scope:recipient
-                }
-                break_alliance = scope:recipient # break the alliance, if there is one
-            }
-        }
-        scope:leaving_war_1 = {
-            save_scope_as = leaving_war
-            custom_description = {
-                text = leave_war_mod_remove_participant # custom description for this effect, because oterhwise:  for whatever reason this triggers "REMOVE_PARTICIPANT_EFFECT_THIRD" instead of "REMOVE_PARTICIPANT_EFFECT_FIRST" in the tooltip of event, causing ALOT of error.log entries about missing character. WAR is known, but CHARACTER not. I think this is a bug somewhere in the devs code to trigger the wrong tooltip.
-                remove_participant = scope:actor
-            }
-            scope:recipient = {
-                if = { 
-                    limit = { 
-                        OR = {
-                            has_game_rule = leave_war_mod_costs_default
-                            has_game_rule = leave_war_mod_costs_half
-                            has_game_rule = leave_war_mod_costs_double
-                            has_game_rule = leave_war_mod_costs_only_opinion
-                        }
-                    }
-                    add_opinion = {
-                        target = scope:actor
-                        modifier = left_my_war_opinion_modifier # recipient/leader gets very bad opinion about actor
-                        opinion = LW_opinion_costs_leaders
-                    }
-                }
+            scope:actor = {
                 if = { 
                     limit = { 
                         OR = {
@@ -101,20 +62,30 @@ leave_war_mod.0001 = {
                             has_game_rule = leave_war_mod_costs_only_prestigehonorgold
                         }
                     }
-                    add_prestige = LW_prestige_costs_based_on_title_of_actor_value # the recipient is getting the amount of prestige
+                    add_prestige = { subtract = LW_prestige_costs_based_on_title_of_actor_value }
+                    add_prestige_experience = { subtract = LW_prestige_costs_based_on_title_of_actor_value }
+                    pay_short_term_gold = {
+                        gold = LW_gold_costs_based_on_title_of_actor_value
+                        target = scope:recipient
+                    }
+                }
+                if = {
+                    limit = {
+                        is_allied_to = scope:recipient
+                    }
+                    break_alliance = scope:recipient # break the alliance, if there is one
                 }
             }
-            if = {
-                limit = {
-                    is_defender = scope:recipient
+            scope:leaving_war_1 = {
+                save_scope_as = leaving_war
+                lw_mod_war_departure_commitments_effect = yes
+                custom_description = {
+                    text = leave_war_mod_remove_participant # custom description for this effect, because oterhwise:  for whatever reason this triggers "REMOVE_PARTICIPANT_EFFECT_THIRD" instead of "REMOVE_PARTICIPANT_EFFECT_FIRST" in the tooltip of event, causing ALOT of error.log entries about missing character. WAR is known, but CHARACTER not. I think this is a bug somewhere in the devs code to trigger the wrong tooltip.
+                    remove_participant = scope:actor
                 }
-                every_war_defender = {
+                scope:recipient = {
                     if = {
                         limit = {
-                            NOR = {
-                                this = scope:actor
-                                this = scope:recipient
-                            }
                             OR = {
                                 has_game_rule = leave_war_mod_costs_default
                                 has_game_rule = leave_war_mod_costs_half
@@ -124,85 +95,122 @@ leave_war_mod.0001 = {
                         }
                         add_opinion = {
                             target = scope:actor
-                            modifier = left_participating_war_opinion_modifier # other defenders in the war get bad opinion about actor
-                            opinion = LW_opinion_costs_participant
+                            modifier = left_my_war_opinion_modifier # recipient/leader gets very bad opinion about actor
+                            opinion = LW_opinion_costs_leaders
                         }
                     }
-                    if = {
-                        limit = {NOT = { this = scope:actor } }
-                        send_interface_message = { # ally in war is leaving war message. normally the game should send it, but it seems buggy, so we will send it manually here
-                            type = serp_msg_war_ally_removed
-                            title = serp_serp_msg_war_ally_removed
-                            desc = serp_serp_msg_war_ally_removed_desc 
-                            left_icon = scope:actor
-                            right_icon = scope:recipient
-                        }
-                    }
-                }
-                every_war_attacker = {
-                    send_interface_message = { # enemy is leaving war message. normally the game should send it, but it seems buggy, so we will send it manually here
-                        type = serp_msg_war_enemy_removed
-                        title = serp_serp_msg_war_enemy_removed
-                        desc = serp_serp_msg_war_enemy_removed_desc 
-                        left_icon = scope:actor
-                        right_icon = scope:recipient
-                    }
-                }
-            }
-            else_if = {
-                limit = {
-                    is_attacker = scope:recipient
-                }
-                every_war_attacker = {
                     if = {
                         limit = {
-                            NOR = {
-                                this = scope:actor
-                                this = scope:recipient
-                            }
                             OR = {
                                 has_game_rule = leave_war_mod_costs_default
                                 has_game_rule = leave_war_mod_costs_half
                                 has_game_rule = leave_war_mod_costs_double
-                                has_game_rule = leave_war_mod_costs_only_opinion
+                                has_game_rule = leave_war_mod_costs_only_prestigehonorgold
                             }
                         }
-                        add_opinion = {
-                            target = scope:actor
-                            modifier = left_participating_war_opinion_modifier # other attackers in the war get bad opinion about actor
-                            opinion = LW_opinion_costs_participant
+                        add_prestige = LW_prestige_costs_based_on_title_of_actor_value # the recipient is getting the amount of prestige
+                    }
+                }
+                if = {
+                    limit = {
+                        is_defender = scope:recipient
+                    }
+                    every_war_defender = {
+                        if = {
+                            limit = {
+                                NOR = {
+                                    this = scope:actor
+                                    this = scope:recipient
+                                }
+                                OR = {
+                                    has_game_rule = leave_war_mod_costs_default
+                                    has_game_rule = leave_war_mod_costs_half
+                                    has_game_rule = leave_war_mod_costs_double
+                                    has_game_rule = leave_war_mod_costs_only_opinion
+                                }
+                            }
+                            add_opinion = {
+                                target = scope:actor
+                                modifier = left_participating_war_opinion_modifier # other defenders in the war get bad opinion about actor
+                                opinion = LW_opinion_costs_participant
+                            }
+                        }
+                        if = {
+                            limit = {NOT = { this = scope:actor } }
+                            send_interface_message = { # ally in war is leaving war message. normally the game should send it, but it seems buggy, so we will send it manually here
+                                type = serp_msg_war_ally_removed
+                                title = serp_serp_msg_war_ally_removed
+                                desc = serp_serp_msg_war_ally_removed_desc
+                                left_icon = scope:actor
+                                right_icon = scope:recipient
+                            }
                         }
                     }
-                    if = {
-                        limit = {NOT = { this = scope:actor } }
-                        send_interface_message = { # ally in war is leaving war message. normally the game should send it, but it seems buggy, so we will send it manually here
-                            type = serp_msg_war_ally_removed
-                            title = serp_serp_msg_war_ally_removed
-                            desc = serp_serp_msg_war_ally_removed_desc 
+                    every_war_attacker = {
+                        send_interface_message = { # enemy is leaving war message. normally the game should send it, but it seems buggy, so we will send it manually here
+                            type = serp_msg_war_enemy_removed
+                            title = serp_serp_msg_war_enemy_removed
+                            desc = serp_serp_msg_war_enemy_removed_desc
                             left_icon = scope:actor
                             right_icon = scope:recipient
                         }
                     }
                 }
-                every_war_defender = {
-                    send_interface_message = { # enemy is leaving war message. normally the game should send it, but it seems buggy, so we will send it manually here
-                        type = serp_msg_war_enemy_removed
-                        title = serp_serp_msg_war_enemy_removed
-                        desc = serp_serp_msg_war_enemy_removed_desc 
-                        left_icon = scope:actor
-                        right_icon = scope:recipient
+                else_if = {
+                    limit = {
+                        is_attacker = scope:recipient
+                    }
+                    every_war_attacker = {
+                        if = {
+                            limit = {
+                                NOR = {
+                                    this = scope:actor
+                                    this = scope:recipient
+                                }
+                                OR = {
+                                    has_game_rule = leave_war_mod_costs_default
+                                    has_game_rule = leave_war_mod_costs_half
+                                    has_game_rule = leave_war_mod_costs_double
+                                    has_game_rule = leave_war_mod_costs_only_opinion
+                                }
+                            }
+                            add_opinion = {
+                                target = scope:actor
+                                modifier = left_participating_war_opinion_modifier # other attackers in the war get bad opinion about actor
+                                opinion = LW_opinion_costs_participant
+                            }
+                        }
+                        if = {
+                            limit = {NOT = { this = scope:actor } }
+                            send_interface_message = { # ally in war is leaving war message. normally the game should send it, but it seems buggy, so we will send it manually here
+                                type = serp_msg_war_ally_removed
+                                title = serp_serp_msg_war_ally_removed
+                                desc = serp_serp_msg_war_ally_removed_desc
+                                left_icon = scope:actor
+                                right_icon = scope:recipient
+                            }
+                        }
+                    }
+                    every_war_defender = {
+                        send_interface_message = { # enemy is leaving war message. normally the game should send it, but it seems buggy, so we will send it manually here
+                            type = serp_msg_war_enemy_removed
+                            title = serp_serp_msg_war_enemy_removed
+                            desc = serp_serp_msg_war_enemy_removed_desc
+                            left_icon = scope:actor
+                            right_icon = scope:recipient
+                        }
                     }
                 }
-            }
             
-        }
-        scope:actor = { # after leaving_war was set
-            send_interface_message = { # you are leaving war message. normally the game should send it, but it seems buggy, so we will send it manually here
-                type = serp_msg_war_player_removed
-                title = serp_serp_msg_war_player_removed
-                desc = serp_serp_msg_war_player_removed_desc 
-                left_icon = scope:actor
-                right_icon = scope:recipient
+            }
+            scope:actor = { # after leaving_war was set
+                send_interface_message = { # you are leaving war message. normally the game should send it, but it seems buggy, so we will send it manually here
+                    type = serp_msg_war_player_removed
+                    title = serp_serp_msg_war_player_removed
+                    desc = serp_serp_msg_war_player_removed_desc
+                    left_icon = scope:actor
+                    right_icon = scope:recipient
+                }
             }
         }
         clear_saved_scope = leaving_war
@@ -221,7 +229,7 @@ leave_war_mod.0001 = {
     option = { # we have to hardcode options, we can not simply add an option per active war or so -.-. So I will hardcode ~ 10 options. I hope up to 10 same wars with the same person should be enough...
         name = leave_war_mod_optionname_2
         show_as_unavailable = { 
-            exists = scope:leaving_war_2
+            lw_mod_can_select_war_trigger = { WAR = scope:leaving_war_2 }
             AND = {
                 OR = {
                     has_game_rule = leave_war_mod_costs_default
@@ -236,7 +244,7 @@ leave_war_mod.0001 = {
             }
         }
         trigger = {
-            exists = scope:leaving_war_2
+            lw_mod_can_select_war_trigger = { WAR = scope:leaving_war_2 }
             OR = {
                 has_game_rule = leave_war_mod_costs_nothing
                 has_game_rule = leave_war_mod_costs_only_opinion
@@ -247,52 +255,13 @@ leave_war_mod.0001 = {
             }
             
         }
-        scope:actor = {
-            if = { 
-                limit = { 
-                    OR = {
-                        has_game_rule = leave_war_mod_costs_default
-                        has_game_rule = leave_war_mod_costs_half
-                        has_game_rule = leave_war_mod_costs_double
-                        has_game_rule = leave_war_mod_costs_only_prestigehonorgold
-                    }
-                }
-                add_prestige = { subtract = LW_prestige_costs_based_on_title_of_actor_value }
-                add_prestige_experience = { subtract = LW_prestige_costs_based_on_title_of_actor_value }
-                pay_short_term_gold = {
-                    gold = LW_gold_costs_based_on_title_of_actor_value
-                    target = scope:recipient
-                }
+        # Recheck after the player has left the picker open; no stale paid no-op.
+        if = {
+            limit = {
+                lw_mod_can_select_war_trigger = { WAR = scope:leaving_war_2 }
+                lw_mod_can_pay_war_exit_trigger = yes
             }
-            if = {
-                limit = {
-                    is_allied_to = scope:recipient
-                }
-                break_alliance = scope:recipient # break the alliance, if there is one
-            }
-        }
-        scope:leaving_war_2 = {
-            save_scope_as = leaving_war
-            custom_description = {
-                text = leave_war_mod_remove_participant # custom description for this effect, because oterhwise:  for whatever reason this triggers "REMOVE_PARTICIPANT_EFFECT_THIRD" instead of "REMOVE_PARTICIPANT_EFFECT_FIRST" in the tooltip of event, causing ALOT of error.log entries about missing character. WAR is known, but CHARACTER not. I think this is a bug somewhere in the devs code to trigger the wrong tooltip.
-                remove_participant = scope:actor
-            }
-            scope:recipient = {
-                if = { 
-                    limit = { 
-                        OR = {
-                            has_game_rule = leave_war_mod_costs_default
-                            has_game_rule = leave_war_mod_costs_half
-                            has_game_rule = leave_war_mod_costs_double
-                            has_game_rule = leave_war_mod_costs_only_opinion
-                        }
-                    }
-                    add_opinion = {
-                        target = scope:actor
-                        modifier = left_my_war_opinion_modifier # recipient/leader gets very bad opinion about actor
-                        opinion = LW_opinion_costs_leaders
-                    }
-                }
+            scope:actor = {
                 if = { 
                     limit = { 
                         OR = {
@@ -302,20 +271,30 @@ leave_war_mod.0001 = {
                             has_game_rule = leave_war_mod_costs_only_prestigehonorgold
                         }
                     }
-                    add_prestige = LW_prestige_costs_based_on_title_of_actor_value # the recipient is getting the amount of prestige
+                    add_prestige = { subtract = LW_prestige_costs_based_on_title_of_actor_value }
+                    add_prestige_experience = { subtract = LW_prestige_costs_based_on_title_of_actor_value }
+                    pay_short_term_gold = {
+                        gold = LW_gold_costs_based_on_title_of_actor_value
+                        target = scope:recipient
+                    }
+                }
+                if = {
+                    limit = {
+                        is_allied_to = scope:recipient
+                    }
+                    break_alliance = scope:recipient # break the alliance, if there is one
                 }
             }
-            if = {
-                limit = {
-                    is_defender = scope:recipient
+            scope:leaving_war_2 = {
+                save_scope_as = leaving_war
+                lw_mod_war_departure_commitments_effect = yes
+                custom_description = {
+                    text = leave_war_mod_remove_participant # custom description for this effect, because oterhwise:  for whatever reason this triggers "REMOVE_PARTICIPANT_EFFECT_THIRD" instead of "REMOVE_PARTICIPANT_EFFECT_FIRST" in the tooltip of event, causing ALOT of error.log entries about missing character. WAR is known, but CHARACTER not. I think this is a bug somewhere in the devs code to trigger the wrong tooltip.
+                    remove_participant = scope:actor
                 }
-                every_war_defender = {
+                scope:recipient = {
                     if = {
                         limit = {
-                            NOR = {
-                                this = scope:actor
-                                this = scope:recipient
-                            }
                             OR = {
                                 has_game_rule = leave_war_mod_costs_default
                                 has_game_rule = leave_war_mod_costs_half
@@ -325,85 +304,122 @@ leave_war_mod.0001 = {
                         }
                         add_opinion = {
                             target = scope:actor
-                            modifier = left_participating_war_opinion_modifier # other defenders in the war get bad opinion about actor
-                            opinion = LW_opinion_costs_participant
+                            modifier = left_my_war_opinion_modifier # recipient/leader gets very bad opinion about actor
+                            opinion = LW_opinion_costs_leaders
                         }
                     }
-                    if = {
-                        limit = {NOT = { this = scope:actor } }
-                        send_interface_message = { # ally in war is leaving war message. normally the game should send it, but it seems buggy, so we will send it manually here
-                            type = serp_msg_war_ally_removed
-                            title = serp_serp_msg_war_ally_removed
-                            desc = serp_serp_msg_war_ally_removed_desc 
-                            left_icon = scope:actor
-                            right_icon = scope:recipient
-                        }
-                    }
-                }
-                every_war_attacker = {
-                    send_interface_message = { # enemy is leaving war message. normally the game should send it, but it seems buggy, so we will send it manually here
-                        type = serp_msg_war_enemy_removed
-                        title = serp_serp_msg_war_enemy_removed
-                        desc = serp_serp_msg_war_enemy_removed_desc 
-                        left_icon = scope:actor
-                        right_icon = scope:recipient
-                    }
-                }
-            }
-            else_if = {
-                limit = {
-                    is_attacker = scope:recipient
-                }
-                every_war_attacker = {
                     if = {
                         limit = {
-                            NOR = {
-                                this = scope:actor
-                                this = scope:recipient
-                            }
                             OR = {
                                 has_game_rule = leave_war_mod_costs_default
                                 has_game_rule = leave_war_mod_costs_half
                                 has_game_rule = leave_war_mod_costs_double
-                                has_game_rule = leave_war_mod_costs_only_opinion
+                                has_game_rule = leave_war_mod_costs_only_prestigehonorgold
                             }
                         }
-                        add_opinion = {
-                            target = scope:actor
-                            modifier = left_participating_war_opinion_modifier # other attackers in the war get bad opinion about actor
-                            opinion = LW_opinion_costs_participant
+                        add_prestige = LW_prestige_costs_based_on_title_of_actor_value # the recipient is getting the amount of prestige
+                    }
+                }
+                if = {
+                    limit = {
+                        is_defender = scope:recipient
+                    }
+                    every_war_defender = {
+                        if = {
+                            limit = {
+                                NOR = {
+                                    this = scope:actor
+                                    this = scope:recipient
+                                }
+                                OR = {
+                                    has_game_rule = leave_war_mod_costs_default
+                                    has_game_rule = leave_war_mod_costs_half
+                                    has_game_rule = leave_war_mod_costs_double
+                                    has_game_rule = leave_war_mod_costs_only_opinion
+                                }
+                            }
+                            add_opinion = {
+                                target = scope:actor
+                                modifier = left_participating_war_opinion_modifier # other defenders in the war get bad opinion about actor
+                                opinion = LW_opinion_costs_participant
+                            }
+                        }
+                        if = {
+                            limit = {NOT = { this = scope:actor } }
+                            send_interface_message = { # ally in war is leaving war message. normally the game should send it, but it seems buggy, so we will send it manually here
+                                type = serp_msg_war_ally_removed
+                                title = serp_serp_msg_war_ally_removed
+                                desc = serp_serp_msg_war_ally_removed_desc
+                                left_icon = scope:actor
+                                right_icon = scope:recipient
+                            }
                         }
                     }
-                    if = {
-                        limit = {NOT = { this = scope:actor } }
-                        send_interface_message = { # ally in war is leaving war message. normally the game should send it, but it seems buggy, so we will send it manually here
-                            type = serp_msg_war_ally_removed
-                            title = serp_serp_msg_war_ally_removed
-                            desc = serp_serp_msg_war_ally_removed_desc 
+                    every_war_attacker = {
+                        send_interface_message = { # enemy is leaving war message. normally the game should send it, but it seems buggy, so we will send it manually here
+                            type = serp_msg_war_enemy_removed
+                            title = serp_serp_msg_war_enemy_removed
+                            desc = serp_serp_msg_war_enemy_removed_desc
                             left_icon = scope:actor
                             right_icon = scope:recipient
                         }
                     }
                 }
-                every_war_defender = {
-                    send_interface_message = { # enemy is leaving war message. normally the game should send it, but it seems buggy, so we will send it manually here
-                        type = serp_msg_war_enemy_removed
-                        title = serp_serp_msg_war_enemy_removed
-                        desc = serp_serp_msg_war_enemy_removed_desc 
-                        left_icon = scope:actor
-                        right_icon = scope:recipient
+                else_if = {
+                    limit = {
+                        is_attacker = scope:recipient
+                    }
+                    every_war_attacker = {
+                        if = {
+                            limit = {
+                                NOR = {
+                                    this = scope:actor
+                                    this = scope:recipient
+                                }
+                                OR = {
+                                    has_game_rule = leave_war_mod_costs_default
+                                    has_game_rule = leave_war_mod_costs_half
+                                    has_game_rule = leave_war_mod_costs_double
+                                    has_game_rule = leave_war_mod_costs_only_opinion
+                                }
+                            }
+                            add_opinion = {
+                                target = scope:actor
+                                modifier = left_participating_war_opinion_modifier # other attackers in the war get bad opinion about actor
+                                opinion = LW_opinion_costs_participant
+                            }
+                        }
+                        if = {
+                            limit = {NOT = { this = scope:actor } }
+                            send_interface_message = { # ally in war is leaving war message. normally the game should send it, but it seems buggy, so we will send it manually here
+                                type = serp_msg_war_ally_removed
+                                title = serp_serp_msg_war_ally_removed
+                                desc = serp_serp_msg_war_ally_removed_desc
+                                left_icon = scope:actor
+                                right_icon = scope:recipient
+                            }
+                        }
+                    }
+                    every_war_defender = {
+                        send_interface_message = { # enemy is leaving war message. normally the game should send it, but it seems buggy, so we will send it manually here
+                            type = serp_msg_war_enemy_removed
+                            title = serp_serp_msg_war_enemy_removed
+                            desc = serp_serp_msg_war_enemy_removed_desc
+                            left_icon = scope:actor
+                            right_icon = scope:recipient
+                        }
                     }
                 }
-            }
             
-        }
-        scope:actor = { # after leaving_war was set
-            send_interface_message = { # you are leaving war message. normally the game should send it, but it seems buggy, so we will send it manually here
-                type = serp_msg_war_player_removed
-                title = serp_serp_msg_war_player_removed
-                desc = serp_serp_msg_war_player_removed_desc 
-                left_icon = scope:actor
-                right_icon = scope:recipient
+            }
+            scope:actor = { # after leaving_war was set
+                send_interface_message = { # you are leaving war message. normally the game should send it, but it seems buggy, so we will send it manually here
+                    type = serp_msg_war_player_removed
+                    title = serp_serp_msg_war_player_removed
+                    desc = serp_serp_msg_war_player_removed_desc
+                    left_icon = scope:actor
+                    right_icon = scope:recipient
+                }
             }
         }
         clear_saved_scope = leaving_war
@@ -422,7 +438,7 @@ leave_war_mod.0001 = {
     option = { # we have to hardcode options, we can not simply add an option per active war or so -.-. So I will hardcode ~ 10 options. I hope up to 10 same wars with the same person should be enough...
         name = leave_war_mod_optionname_3
         show_as_unavailable = { 
-            exists = scope:leaving_war_3
+            lw_mod_can_select_war_trigger = { WAR = scope:leaving_war_3 }
             AND = {
                 OR = {
                     has_game_rule = leave_war_mod_costs_default
@@ -437,7 +453,7 @@ leave_war_mod.0001 = {
             }
         }
         trigger = {
-            exists = scope:leaving_war_3
+            lw_mod_can_select_war_trigger = { WAR = scope:leaving_war_3 }
             OR = {
                 has_game_rule = leave_war_mod_costs_nothing
                 has_game_rule = leave_war_mod_costs_only_opinion
@@ -448,52 +464,13 @@ leave_war_mod.0001 = {
             }
             
         }
-        scope:actor = {
-            if = { 
-                limit = { 
-                    OR = {
-                        has_game_rule = leave_war_mod_costs_default
-                        has_game_rule = leave_war_mod_costs_half
-                        has_game_rule = leave_war_mod_costs_double
-                        has_game_rule = leave_war_mod_costs_only_prestigehonorgold
-                    }
-                }
-                add_prestige = { subtract = LW_prestige_costs_based_on_title_of_actor_value }
-                add_prestige_experience = { subtract = LW_prestige_costs_based_on_title_of_actor_value }
-                pay_short_term_gold = {
-                    gold = LW_gold_costs_based_on_title_of_actor_value
-                    target = scope:recipient
-                }
+        # Recheck after the player has left the picker open; no stale paid no-op.
+        if = {
+            limit = {
+                lw_mod_can_select_war_trigger = { WAR = scope:leaving_war_3 }
+                lw_mod_can_pay_war_exit_trigger = yes
             }
-            if = {
-                limit = {
-                    is_allied_to = scope:recipient
-                }
-                break_alliance = scope:recipient # break the alliance, if there is one
-            }
-        }
-        scope:leaving_war_3 = {
-            save_scope_as = leaving_war
-            custom_description = {
-                text = leave_war_mod_remove_participant # custom description for this effect, because oterhwise:  for whatever reason this triggers "REMOVE_PARTICIPANT_EFFECT_THIRD" instead of "REMOVE_PARTICIPANT_EFFECT_FIRST" in the tooltip of event, causing ALOT of error.log entries about missing character. WAR is known, but CHARACTER not. I think this is a bug somewhere in the devs code to trigger the wrong tooltip.
-                remove_participant = scope:actor
-            }
-            scope:recipient = {
-                if = { 
-                    limit = { 
-                        OR = {
-                            has_game_rule = leave_war_mod_costs_default
-                            has_game_rule = leave_war_mod_costs_half
-                            has_game_rule = leave_war_mod_costs_double
-                            has_game_rule = leave_war_mod_costs_only_opinion
-                        }
-                    }
-                    add_opinion = {
-                        target = scope:actor
-                        modifier = left_my_war_opinion_modifier # recipient/leader gets very bad opinion about actor
-                        opinion = LW_opinion_costs_leaders
-                    }
-                }
+            scope:actor = {
                 if = { 
                     limit = { 
                         OR = {
@@ -503,20 +480,30 @@ leave_war_mod.0001 = {
                             has_game_rule = leave_war_mod_costs_only_prestigehonorgold
                         }
                     }
-                    add_prestige = LW_prestige_costs_based_on_title_of_actor_value # the recipient is getting the amount of prestige
+                    add_prestige = { subtract = LW_prestige_costs_based_on_title_of_actor_value }
+                    add_prestige_experience = { subtract = LW_prestige_costs_based_on_title_of_actor_value }
+                    pay_short_term_gold = {
+                        gold = LW_gold_costs_based_on_title_of_actor_value
+                        target = scope:recipient
+                    }
+                }
+                if = {
+                    limit = {
+                        is_allied_to = scope:recipient
+                    }
+                    break_alliance = scope:recipient # break the alliance, if there is one
                 }
             }
-            if = {
-                limit = {
-                    is_defender = scope:recipient
+            scope:leaving_war_3 = {
+                save_scope_as = leaving_war
+                lw_mod_war_departure_commitments_effect = yes
+                custom_description = {
+                    text = leave_war_mod_remove_participant # custom description for this effect, because oterhwise:  for whatever reason this triggers "REMOVE_PARTICIPANT_EFFECT_THIRD" instead of "REMOVE_PARTICIPANT_EFFECT_FIRST" in the tooltip of event, causing ALOT of error.log entries about missing character. WAR is known, but CHARACTER not. I think this is a bug somewhere in the devs code to trigger the wrong tooltip.
+                    remove_participant = scope:actor
                 }
-                every_war_defender = {
+                scope:recipient = {
                     if = {
                         limit = {
-                            NOR = {
-                                this = scope:actor
-                                this = scope:recipient
-                            }
                             OR = {
                                 has_game_rule = leave_war_mod_costs_default
                                 has_game_rule = leave_war_mod_costs_half
@@ -526,85 +513,122 @@ leave_war_mod.0001 = {
                         }
                         add_opinion = {
                             target = scope:actor
-                            modifier = left_participating_war_opinion_modifier # other defenders in the war get bad opinion about actor
-                            opinion = LW_opinion_costs_participant
+                            modifier = left_my_war_opinion_modifier # recipient/leader gets very bad opinion about actor
+                            opinion = LW_opinion_costs_leaders
                         }
                     }
-                    if = {
-                        limit = {NOT = { this = scope:actor } }
-                        send_interface_message = { # ally in war is leaving war message. normally the game should send it, but it seems buggy, so we will send it manually here
-                            type = serp_msg_war_ally_removed
-                            title = serp_serp_msg_war_ally_removed
-                            desc = serp_serp_msg_war_ally_removed_desc 
-                            left_icon = scope:actor
-                            right_icon = scope:recipient
-                        }
-                    }
-                }
-                every_war_attacker = {
-                    send_interface_message = { # enemy is leaving war message. normally the game should send it, but it seems buggy, so we will send it manually here
-                        type = serp_msg_war_enemy_removed
-                        title = serp_serp_msg_war_enemy_removed
-                        desc = serp_serp_msg_war_enemy_removed_desc 
-                        left_icon = scope:actor
-                        right_icon = scope:recipient
-                    }
-                }
-            }
-            else_if = {
-                limit = {
-                    is_attacker = scope:recipient
-                }
-                every_war_attacker = {
                     if = {
                         limit = {
-                            NOR = {
-                                this = scope:actor
-                                this = scope:recipient
-                            }
                             OR = {
                                 has_game_rule = leave_war_mod_costs_default
                                 has_game_rule = leave_war_mod_costs_half
                                 has_game_rule = leave_war_mod_costs_double
-                                has_game_rule = leave_war_mod_costs_only_opinion
+                                has_game_rule = leave_war_mod_costs_only_prestigehonorgold
                             }
                         }
-                        add_opinion = {
-                            target = scope:actor
-                            modifier = left_participating_war_opinion_modifier # other attackers in the war get bad opinion about actor
-                            opinion = LW_opinion_costs_participant
+                        add_prestige = LW_prestige_costs_based_on_title_of_actor_value # the recipient is getting the amount of prestige
+                    }
+                }
+                if = {
+                    limit = {
+                        is_defender = scope:recipient
+                    }
+                    every_war_defender = {
+                        if = {
+                            limit = {
+                                NOR = {
+                                    this = scope:actor
+                                    this = scope:recipient
+                                }
+                                OR = {
+                                    has_game_rule = leave_war_mod_costs_default
+                                    has_game_rule = leave_war_mod_costs_half
+                                    has_game_rule = leave_war_mod_costs_double
+                                    has_game_rule = leave_war_mod_costs_only_opinion
+                                }
+                            }
+                            add_opinion = {
+                                target = scope:actor
+                                modifier = left_participating_war_opinion_modifier # other defenders in the war get bad opinion about actor
+                                opinion = LW_opinion_costs_participant
+                            }
+                        }
+                        if = {
+                            limit = {NOT = { this = scope:actor } }
+                            send_interface_message = { # ally in war is leaving war message. normally the game should send it, but it seems buggy, so we will send it manually here
+                                type = serp_msg_war_ally_removed
+                                title = serp_serp_msg_war_ally_removed
+                                desc = serp_serp_msg_war_ally_removed_desc
+                                left_icon = scope:actor
+                                right_icon = scope:recipient
+                            }
                         }
                     }
-                    if = {
-                        limit = {NOT = { this = scope:actor } }
-                        send_interface_message = { # ally in war is leaving war message. normally the game should send it, but it seems buggy, so we will send it manually here
-                            type = serp_msg_war_ally_removed
-                            title = serp_serp_msg_war_ally_removed
-                            desc = serp_serp_msg_war_ally_removed_desc 
+                    every_war_attacker = {
+                        send_interface_message = { # enemy is leaving war message. normally the game should send it, but it seems buggy, so we will send it manually here
+                            type = serp_msg_war_enemy_removed
+                            title = serp_serp_msg_war_enemy_removed
+                            desc = serp_serp_msg_war_enemy_removed_desc
                             left_icon = scope:actor
                             right_icon = scope:recipient
                         }
                     }
                 }
-                every_war_defender = {
-                    send_interface_message = { # enemy is leaving war message. normally the game should send it, but it seems buggy, so we will send it manually here
-                        type = serp_msg_war_enemy_removed
-                        title = serp_serp_msg_war_enemy_removed
-                        desc = serp_serp_msg_war_enemy_removed_desc 
-                        left_icon = scope:actor
-                        right_icon = scope:recipient
+                else_if = {
+                    limit = {
+                        is_attacker = scope:recipient
+                    }
+                    every_war_attacker = {
+                        if = {
+                            limit = {
+                                NOR = {
+                                    this = scope:actor
+                                    this = scope:recipient
+                                }
+                                OR = {
+                                    has_game_rule = leave_war_mod_costs_default
+                                    has_game_rule = leave_war_mod_costs_half
+                                    has_game_rule = leave_war_mod_costs_double
+                                    has_game_rule = leave_war_mod_costs_only_opinion
+                                }
+                            }
+                            add_opinion = {
+                                target = scope:actor
+                                modifier = left_participating_war_opinion_modifier # other attackers in the war get bad opinion about actor
+                                opinion = LW_opinion_costs_participant
+                            }
+                        }
+                        if = {
+                            limit = {NOT = { this = scope:actor } }
+                            send_interface_message = { # ally in war is leaving war message. normally the game should send it, but it seems buggy, so we will send it manually here
+                                type = serp_msg_war_ally_removed
+                                title = serp_serp_msg_war_ally_removed
+                                desc = serp_serp_msg_war_ally_removed_desc
+                                left_icon = scope:actor
+                                right_icon = scope:recipient
+                            }
+                        }
+                    }
+                    every_war_defender = {
+                        send_interface_message = { # enemy is leaving war message. normally the game should send it, but it seems buggy, so we will send it manually here
+                            type = serp_msg_war_enemy_removed
+                            title = serp_serp_msg_war_enemy_removed
+                            desc = serp_serp_msg_war_enemy_removed_desc
+                            left_icon = scope:actor
+                            right_icon = scope:recipient
+                        }
                     }
                 }
-            }
             
-        }
-        scope:actor = { # after leaving_war was set
-            send_interface_message = { # you are leaving war message. normally the game should send it, but it seems buggy, so we will send it manually here
-                type = serp_msg_war_player_removed
-                title = serp_serp_msg_war_player_removed
-                desc = serp_serp_msg_war_player_removed_desc 
-                left_icon = scope:actor
-                right_icon = scope:recipient
+            }
+            scope:actor = { # after leaving_war was set
+                send_interface_message = { # you are leaving war message. normally the game should send it, but it seems buggy, so we will send it manually here
+                    type = serp_msg_war_player_removed
+                    title = serp_serp_msg_war_player_removed
+                    desc = serp_serp_msg_war_player_removed_desc
+                    left_icon = scope:actor
+                    right_icon = scope:recipient
+                }
             }
         }
         clear_saved_scope = leaving_war
@@ -623,7 +647,7 @@ leave_war_mod.0001 = {
     option = { # we have to hardcode options, we can not simply add an option per active war or so -.-. So I will hardcode ~ 10 options. I hope up to 10 same wars with the same person should be enough...
         name = leave_war_mod_optionname_4
         show_as_unavailable = { 
-            exists = scope:leaving_war_4
+            lw_mod_can_select_war_trigger = { WAR = scope:leaving_war_4 }
             AND = {
                 OR = {
                     has_game_rule = leave_war_mod_costs_default
@@ -638,7 +662,7 @@ leave_war_mod.0001 = {
             }
         }
         trigger = {
-            exists = scope:leaving_war_4
+            lw_mod_can_select_war_trigger = { WAR = scope:leaving_war_4 }
             OR = {
                 has_game_rule = leave_war_mod_costs_nothing
                 has_game_rule = leave_war_mod_costs_only_opinion
@@ -649,52 +673,13 @@ leave_war_mod.0001 = {
             }
             
         }
-        scope:actor = {
-            if = { 
-                limit = { 
-                    OR = {
-                        has_game_rule = leave_war_mod_costs_default
-                        has_game_rule = leave_war_mod_costs_half
-                        has_game_rule = leave_war_mod_costs_double
-                        has_game_rule = leave_war_mod_costs_only_prestigehonorgold
-                    }
-                }
-                add_prestige = { subtract = LW_prestige_costs_based_on_title_of_actor_value }
-                add_prestige_experience = { subtract = LW_prestige_costs_based_on_title_of_actor_value }
-                pay_short_term_gold = {
-                    gold = LW_gold_costs_based_on_title_of_actor_value
-                    target = scope:recipient
-                }
+        # Recheck after the player has left the picker open; no stale paid no-op.
+        if = {
+            limit = {
+                lw_mod_can_select_war_trigger = { WAR = scope:leaving_war_4 }
+                lw_mod_can_pay_war_exit_trigger = yes
             }
-            if = {
-                limit = {
-                    is_allied_to = scope:recipient
-                }
-                break_alliance = scope:recipient # break the alliance, if there is one
-            }
-        }
-        scope:leaving_war_4 = {
-            save_scope_as = leaving_war
-            custom_description = {
-                text = leave_war_mod_remove_participant # custom description for this effect, because oterhwise:  for whatever reason this triggers "REMOVE_PARTICIPANT_EFFECT_THIRD" instead of "REMOVE_PARTICIPANT_EFFECT_FIRST" in the tooltip of event, causing ALOT of error.log entries about missing character. WAR is known, but CHARACTER not. I think this is a bug somewhere in the devs code to trigger the wrong tooltip.
-                remove_participant = scope:actor
-            }
-            scope:recipient = {
-                if = { 
-                    limit = { 
-                        OR = {
-                            has_game_rule = leave_war_mod_costs_default
-                            has_game_rule = leave_war_mod_costs_half
-                            has_game_rule = leave_war_mod_costs_double
-                            has_game_rule = leave_war_mod_costs_only_opinion
-                        }
-                    }
-                    add_opinion = {
-                        target = scope:actor
-                        modifier = left_my_war_opinion_modifier # recipient/leader gets very bad opinion about actor
-                        opinion = LW_opinion_costs_leaders
-                    }
-                }
+            scope:actor = {
                 if = { 
                     limit = { 
                         OR = {
@@ -704,20 +689,30 @@ leave_war_mod.0001 = {
                             has_game_rule = leave_war_mod_costs_only_prestigehonorgold
                         }
                     }
-                    add_prestige = LW_prestige_costs_based_on_title_of_actor_value # the recipient is getting the amount of prestige
+                    add_prestige = { subtract = LW_prestige_costs_based_on_title_of_actor_value }
+                    add_prestige_experience = { subtract = LW_prestige_costs_based_on_title_of_actor_value }
+                    pay_short_term_gold = {
+                        gold = LW_gold_costs_based_on_title_of_actor_value
+                        target = scope:recipient
+                    }
+                }
+                if = {
+                    limit = {
+                        is_allied_to = scope:recipient
+                    }
+                    break_alliance = scope:recipient # break the alliance, if there is one
                 }
             }
-            if = {
-                limit = {
-                    is_defender = scope:recipient
+            scope:leaving_war_4 = {
+                save_scope_as = leaving_war
+                lw_mod_war_departure_commitments_effect = yes
+                custom_description = {
+                    text = leave_war_mod_remove_participant # custom description for this effect, because oterhwise:  for whatever reason this triggers "REMOVE_PARTICIPANT_EFFECT_THIRD" instead of "REMOVE_PARTICIPANT_EFFECT_FIRST" in the tooltip of event, causing ALOT of error.log entries about missing character. WAR is known, but CHARACTER not. I think this is a bug somewhere in the devs code to trigger the wrong tooltip.
+                    remove_participant = scope:actor
                 }
-                every_war_defender = {
+                scope:recipient = {
                     if = {
                         limit = {
-                            NOR = {
-                                this = scope:actor
-                                this = scope:recipient
-                            }
                             OR = {
                                 has_game_rule = leave_war_mod_costs_default
                                 has_game_rule = leave_war_mod_costs_half
@@ -727,85 +722,122 @@ leave_war_mod.0001 = {
                         }
                         add_opinion = {
                             target = scope:actor
-                            modifier = left_participating_war_opinion_modifier # other defenders in the war get bad opinion about actor
-                            opinion = LW_opinion_costs_participant
+                            modifier = left_my_war_opinion_modifier # recipient/leader gets very bad opinion about actor
+                            opinion = LW_opinion_costs_leaders
                         }
                     }
-                    if = {
-                        limit = {NOT = { this = scope:actor } }
-                        send_interface_message = { # ally in war is leaving war message. normally the game should send it, but it seems buggy, so we will send it manually here
-                            type = serp_msg_war_ally_removed
-                            title = serp_serp_msg_war_ally_removed
-                            desc = serp_serp_msg_war_ally_removed_desc 
-                            left_icon = scope:actor
-                            right_icon = scope:recipient
-                        }
-                    }
-                }
-                every_war_attacker = {
-                    send_interface_message = { # enemy is leaving war message. normally the game should send it, but it seems buggy, so we will send it manually here
-                        type = serp_msg_war_enemy_removed
-                        title = serp_serp_msg_war_enemy_removed
-                        desc = serp_serp_msg_war_enemy_removed_desc 
-                        left_icon = scope:actor
-                        right_icon = scope:recipient
-                    }
-                }
-            }
-            else_if = {
-                limit = {
-                    is_attacker = scope:recipient
-                }
-                every_war_attacker = {
                     if = {
                         limit = {
-                            NOR = {
-                                this = scope:actor
-                                this = scope:recipient
-                            }
                             OR = {
                                 has_game_rule = leave_war_mod_costs_default
                                 has_game_rule = leave_war_mod_costs_half
                                 has_game_rule = leave_war_mod_costs_double
-                                has_game_rule = leave_war_mod_costs_only_opinion
+                                has_game_rule = leave_war_mod_costs_only_prestigehonorgold
                             }
                         }
-                        add_opinion = {
-                            target = scope:actor
-                            modifier = left_participating_war_opinion_modifier # other attackers in the war get bad opinion about actor
-                            opinion = LW_opinion_costs_participant
+                        add_prestige = LW_prestige_costs_based_on_title_of_actor_value # the recipient is getting the amount of prestige
+                    }
+                }
+                if = {
+                    limit = {
+                        is_defender = scope:recipient
+                    }
+                    every_war_defender = {
+                        if = {
+                            limit = {
+                                NOR = {
+                                    this = scope:actor
+                                    this = scope:recipient
+                                }
+                                OR = {
+                                    has_game_rule = leave_war_mod_costs_default
+                                    has_game_rule = leave_war_mod_costs_half
+                                    has_game_rule = leave_war_mod_costs_double
+                                    has_game_rule = leave_war_mod_costs_only_opinion
+                                }
+                            }
+                            add_opinion = {
+                                target = scope:actor
+                                modifier = left_participating_war_opinion_modifier # other defenders in the war get bad opinion about actor
+                                opinion = LW_opinion_costs_participant
+                            }
+                        }
+                        if = {
+                            limit = {NOT = { this = scope:actor } }
+                            send_interface_message = { # ally in war is leaving war message. normally the game should send it, but it seems buggy, so we will send it manually here
+                                type = serp_msg_war_ally_removed
+                                title = serp_serp_msg_war_ally_removed
+                                desc = serp_serp_msg_war_ally_removed_desc
+                                left_icon = scope:actor
+                                right_icon = scope:recipient
+                            }
                         }
                     }
-                    if = {
-                        limit = {NOT = { this = scope:actor } }
-                        send_interface_message = { # ally in war is leaving war message. normally the game should send it, but it seems buggy, so we will send it manually here
-                            type = serp_msg_war_ally_removed
-                            title = serp_serp_msg_war_ally_removed
-                            desc = serp_serp_msg_war_ally_removed_desc 
+                    every_war_attacker = {
+                        send_interface_message = { # enemy is leaving war message. normally the game should send it, but it seems buggy, so we will send it manually here
+                            type = serp_msg_war_enemy_removed
+                            title = serp_serp_msg_war_enemy_removed
+                            desc = serp_serp_msg_war_enemy_removed_desc
                             left_icon = scope:actor
                             right_icon = scope:recipient
                         }
                     }
                 }
-                every_war_defender = {
-                    send_interface_message = { # enemy is leaving war message. normally the game should send it, but it seems buggy, so we will send it manually here
-                        type = serp_msg_war_enemy_removed
-                        title = serp_serp_msg_war_enemy_removed
-                        desc = serp_serp_msg_war_enemy_removed_desc 
-                        left_icon = scope:actor
-                        right_icon = scope:recipient
+                else_if = {
+                    limit = {
+                        is_attacker = scope:recipient
+                    }
+                    every_war_attacker = {
+                        if = {
+                            limit = {
+                                NOR = {
+                                    this = scope:actor
+                                    this = scope:recipient
+                                }
+                                OR = {
+                                    has_game_rule = leave_war_mod_costs_default
+                                    has_game_rule = leave_war_mod_costs_half
+                                    has_game_rule = leave_war_mod_costs_double
+                                    has_game_rule = leave_war_mod_costs_only_opinion
+                                }
+                            }
+                            add_opinion = {
+                                target = scope:actor
+                                modifier = left_participating_war_opinion_modifier # other attackers in the war get bad opinion about actor
+                                opinion = LW_opinion_costs_participant
+                            }
+                        }
+                        if = {
+                            limit = {NOT = { this = scope:actor } }
+                            send_interface_message = { # ally in war is leaving war message. normally the game should send it, but it seems buggy, so we will send it manually here
+                                type = serp_msg_war_ally_removed
+                                title = serp_serp_msg_war_ally_removed
+                                desc = serp_serp_msg_war_ally_removed_desc
+                                left_icon = scope:actor
+                                right_icon = scope:recipient
+                            }
+                        }
+                    }
+                    every_war_defender = {
+                        send_interface_message = { # enemy is leaving war message. normally the game should send it, but it seems buggy, so we will send it manually here
+                            type = serp_msg_war_enemy_removed
+                            title = serp_serp_msg_war_enemy_removed
+                            desc = serp_serp_msg_war_enemy_removed_desc
+                            left_icon = scope:actor
+                            right_icon = scope:recipient
+                        }
                     }
                 }
-            }
             
-        }
-        scope:actor = { # after leaving_war was set
-            send_interface_message = { # you are leaving war message. normally the game should send it, but it seems buggy, so we will send it manually here
-                type = serp_msg_war_player_removed
-                title = serp_serp_msg_war_player_removed
-                desc = serp_serp_msg_war_player_removed_desc 
-                left_icon = scope:actor
-                right_icon = scope:recipient
+            }
+            scope:actor = { # after leaving_war was set
+                send_interface_message = { # you are leaving war message. normally the game should send it, but it seems buggy, so we will send it manually here
+                    type = serp_msg_war_player_removed
+                    title = serp_serp_msg_war_player_removed
+                    desc = serp_serp_msg_war_player_removed_desc
+                    left_icon = scope:actor
+                    right_icon = scope:recipient
+                }
             }
         }
         clear_saved_scope = leaving_war
@@ -824,7 +856,7 @@ leave_war_mod.0001 = {
     option = { # we have to hardcode options, we can not simply add an option per active war or so -.-. So I will hardcode ~ 10 options. I hope up to 10 same wars with the same person should be enough...
         name = leave_war_mod_optionname_5
         show_as_unavailable = { 
-            exists = scope:leaving_war_5
+            lw_mod_can_select_war_trigger = { WAR = scope:leaving_war_5 }
             AND = {
                 OR = {
                     has_game_rule = leave_war_mod_costs_default
@@ -839,7 +871,7 @@ leave_war_mod.0001 = {
             }
         }
         trigger = {
-            exists = scope:leaving_war_5
+            lw_mod_can_select_war_trigger = { WAR = scope:leaving_war_5 }
             OR = {
                 has_game_rule = leave_war_mod_costs_nothing
                 has_game_rule = leave_war_mod_costs_only_opinion
@@ -850,52 +882,13 @@ leave_war_mod.0001 = {
             }
             
         }
-        scope:actor = {
-            if = { 
-                limit = { 
-                    OR = {
-                        has_game_rule = leave_war_mod_costs_default
-                        has_game_rule = leave_war_mod_costs_half
-                        has_game_rule = leave_war_mod_costs_double
-                        has_game_rule = leave_war_mod_costs_only_prestigehonorgold
-                    }
-                }
-                add_prestige = { subtract = LW_prestige_costs_based_on_title_of_actor_value }
-                add_prestige_experience = { subtract = LW_prestige_costs_based_on_title_of_actor_value }
-                pay_short_term_gold = {
-                    gold = LW_gold_costs_based_on_title_of_actor_value
-                    target = scope:recipient
-                }
+        # Recheck after the player has left the picker open; no stale paid no-op.
+        if = {
+            limit = {
+                lw_mod_can_select_war_trigger = { WAR = scope:leaving_war_5 }
+                lw_mod_can_pay_war_exit_trigger = yes
             }
-            if = {
-                limit = {
-                    is_allied_to = scope:recipient
-                }
-                break_alliance = scope:recipient # break the alliance, if there is one
-            }
-        }
-        scope:leaving_war_5 = {
-            save_scope_as = leaving_war
-            custom_description = {
-                text = leave_war_mod_remove_participant # custom description for this effect, because oterhwise:  for whatever reason this triggers "REMOVE_PARTICIPANT_EFFECT_THIRD" instead of "REMOVE_PARTICIPANT_EFFECT_FIRST" in the tooltip of event, causing ALOT of error.log entries about missing character. WAR is known, but CHARACTER not. I think this is a bug somewhere in the devs code to trigger the wrong tooltip.
-                remove_participant = scope:actor
-            }
-            scope:recipient = {
-                if = { 
-                    limit = { 
-                        OR = {
-                            has_game_rule = leave_war_mod_costs_default
-                            has_game_rule = leave_war_mod_costs_half
-                            has_game_rule = leave_war_mod_costs_double
-                            has_game_rule = leave_war_mod_costs_only_opinion
-                        }
-                    }
-                    add_opinion = {
-                        target = scope:actor
-                        modifier = left_my_war_opinion_modifier # recipient/leader gets very bad opinion about actor
-                        opinion = LW_opinion_costs_leaders
-                    }
-                }
+            scope:actor = {
                 if = { 
                     limit = { 
                         OR = {
@@ -905,20 +898,30 @@ leave_war_mod.0001 = {
                             has_game_rule = leave_war_mod_costs_only_prestigehonorgold
                         }
                     }
-                    add_prestige = LW_prestige_costs_based_on_title_of_actor_value # the recipient is getting the amount of prestige
+                    add_prestige = { subtract = LW_prestige_costs_based_on_title_of_actor_value }
+                    add_prestige_experience = { subtract = LW_prestige_costs_based_on_title_of_actor_value }
+                    pay_short_term_gold = {
+                        gold = LW_gold_costs_based_on_title_of_actor_value
+                        target = scope:recipient
+                    }
+                }
+                if = {
+                    limit = {
+                        is_allied_to = scope:recipient
+                    }
+                    break_alliance = scope:recipient # break the alliance, if there is one
                 }
             }
-            if = {
-                limit = {
-                    is_defender = scope:recipient
+            scope:leaving_war_5 = {
+                save_scope_as = leaving_war
+                lw_mod_war_departure_commitments_effect = yes
+                custom_description = {
+                    text = leave_war_mod_remove_participant # custom description for this effect, because oterhwise:  for whatever reason this triggers "REMOVE_PARTICIPANT_EFFECT_THIRD" instead of "REMOVE_PARTICIPANT_EFFECT_FIRST" in the tooltip of event, causing ALOT of error.log entries about missing character. WAR is known, but CHARACTER not. I think this is a bug somewhere in the devs code to trigger the wrong tooltip.
+                    remove_participant = scope:actor
                 }
-                every_war_defender = {
+                scope:recipient = {
                     if = {
                         limit = {
-                            NOR = {
-                                this = scope:actor
-                                this = scope:recipient
-                            }
                             OR = {
                                 has_game_rule = leave_war_mod_costs_default
                                 has_game_rule = leave_war_mod_costs_half
@@ -928,85 +931,122 @@ leave_war_mod.0001 = {
                         }
                         add_opinion = {
                             target = scope:actor
-                            modifier = left_participating_war_opinion_modifier # other defenders in the war get bad opinion about actor
-                            opinion = LW_opinion_costs_participant
+                            modifier = left_my_war_opinion_modifier # recipient/leader gets very bad opinion about actor
+                            opinion = LW_opinion_costs_leaders
                         }
                     }
-                    if = {
-                        limit = {NOT = { this = scope:actor } }
-                        send_interface_message = { # ally in war is leaving war message. normally the game should send it, but it seems buggy, so we will send it manually here
-                            type = serp_msg_war_ally_removed
-                            title = serp_serp_msg_war_ally_removed
-                            desc = serp_serp_msg_war_ally_removed_desc 
-                            left_icon = scope:actor
-                            right_icon = scope:recipient
-                        }
-                    }
-                }
-                every_war_attacker = {
-                    send_interface_message = { # enemy is leaving war message. normally the game should send it, but it seems buggy, so we will send it manually here
-                        type = serp_msg_war_enemy_removed
-                        title = serp_serp_msg_war_enemy_removed
-                        desc = serp_serp_msg_war_enemy_removed_desc 
-                        left_icon = scope:actor
-                        right_icon = scope:recipient
-                    }
-                }
-            }
-            else_if = {
-                limit = {
-                    is_attacker = scope:recipient
-                }
-                every_war_attacker = {
                     if = {
                         limit = {
-                            NOR = {
-                                this = scope:actor
-                                this = scope:recipient
-                            }
                             OR = {
                                 has_game_rule = leave_war_mod_costs_default
                                 has_game_rule = leave_war_mod_costs_half
                                 has_game_rule = leave_war_mod_costs_double
-                                has_game_rule = leave_war_mod_costs_only_opinion
+                                has_game_rule = leave_war_mod_costs_only_prestigehonorgold
                             }
                         }
-                        add_opinion = {
-                            target = scope:actor
-                            modifier = left_participating_war_opinion_modifier # other attackers in the war get bad opinion about actor
-                            opinion = LW_opinion_costs_participant
+                        add_prestige = LW_prestige_costs_based_on_title_of_actor_value # the recipient is getting the amount of prestige
+                    }
+                }
+                if = {
+                    limit = {
+                        is_defender = scope:recipient
+                    }
+                    every_war_defender = {
+                        if = {
+                            limit = {
+                                NOR = {
+                                    this = scope:actor
+                                    this = scope:recipient
+                                }
+                                OR = {
+                                    has_game_rule = leave_war_mod_costs_default
+                                    has_game_rule = leave_war_mod_costs_half
+                                    has_game_rule = leave_war_mod_costs_double
+                                    has_game_rule = leave_war_mod_costs_only_opinion
+                                }
+                            }
+                            add_opinion = {
+                                target = scope:actor
+                                modifier = left_participating_war_opinion_modifier # other defenders in the war get bad opinion about actor
+                                opinion = LW_opinion_costs_participant
+                            }
+                        }
+                        if = {
+                            limit = {NOT = { this = scope:actor } }
+                            send_interface_message = { # ally in war is leaving war message. normally the game should send it, but it seems buggy, so we will send it manually here
+                                type = serp_msg_war_ally_removed
+                                title = serp_serp_msg_war_ally_removed
+                                desc = serp_serp_msg_war_ally_removed_desc
+                                left_icon = scope:actor
+                                right_icon = scope:recipient
+                            }
                         }
                     }
-                    if = {
-                        limit = {NOT = { this = scope:actor } }
-                        send_interface_message = { # ally in war is leaving war message. normally the game should send it, but it seems buggy, so we will send it manually here
-                            type = serp_msg_war_ally_removed
-                            title = serp_serp_msg_war_ally_removed
-                            desc = serp_serp_msg_war_ally_removed_desc 
+                    every_war_attacker = {
+                        send_interface_message = { # enemy is leaving war message. normally the game should send it, but it seems buggy, so we will send it manually here
+                            type = serp_msg_war_enemy_removed
+                            title = serp_serp_msg_war_enemy_removed
+                            desc = serp_serp_msg_war_enemy_removed_desc
                             left_icon = scope:actor
                             right_icon = scope:recipient
                         }
                     }
                 }
-                every_war_defender = {
-                    send_interface_message = { # enemy is leaving war message. normally the game should send it, but it seems buggy, so we will send it manually here
-                        type = serp_msg_war_enemy_removed
-                        title = serp_serp_msg_war_enemy_removed
-                        desc = serp_serp_msg_war_enemy_removed_desc 
-                        left_icon = scope:actor
-                        right_icon = scope:recipient
+                else_if = {
+                    limit = {
+                        is_attacker = scope:recipient
+                    }
+                    every_war_attacker = {
+                        if = {
+                            limit = {
+                                NOR = {
+                                    this = scope:actor
+                                    this = scope:recipient
+                                }
+                                OR = {
+                                    has_game_rule = leave_war_mod_costs_default
+                                    has_game_rule = leave_war_mod_costs_half
+                                    has_game_rule = leave_war_mod_costs_double
+                                    has_game_rule = leave_war_mod_costs_only_opinion
+                                }
+                            }
+                            add_opinion = {
+                                target = scope:actor
+                                modifier = left_participating_war_opinion_modifier # other attackers in the war get bad opinion about actor
+                                opinion = LW_opinion_costs_participant
+                            }
+                        }
+                        if = {
+                            limit = {NOT = { this = scope:actor } }
+                            send_interface_message = { # ally in war is leaving war message. normally the game should send it, but it seems buggy, so we will send it manually here
+                                type = serp_msg_war_ally_removed
+                                title = serp_serp_msg_war_ally_removed
+                                desc = serp_serp_msg_war_ally_removed_desc
+                                left_icon = scope:actor
+                                right_icon = scope:recipient
+                            }
+                        }
+                    }
+                    every_war_defender = {
+                        send_interface_message = { # enemy is leaving war message. normally the game should send it, but it seems buggy, so we will send it manually here
+                            type = serp_msg_war_enemy_removed
+                            title = serp_serp_msg_war_enemy_removed
+                            desc = serp_serp_msg_war_enemy_removed_desc
+                            left_icon = scope:actor
+                            right_icon = scope:recipient
+                        }
                     }
                 }
-            }
             
-        }
-        scope:actor = { # after leaving_war was set
-            send_interface_message = { # you are leaving war message. normally the game should send it, but it seems buggy, so we will send it manually here
-                type = serp_msg_war_player_removed
-                title = serp_serp_msg_war_player_removed
-                desc = serp_serp_msg_war_player_removed_desc 
-                left_icon = scope:actor
-                right_icon = scope:recipient
+            }
+            scope:actor = { # after leaving_war was set
+                send_interface_message = { # you are leaving war message. normally the game should send it, but it seems buggy, so we will send it manually here
+                    type = serp_msg_war_player_removed
+                    title = serp_serp_msg_war_player_removed
+                    desc = serp_serp_msg_war_player_removed_desc
+                    left_icon = scope:actor
+                    right_icon = scope:recipient
+                }
             }
         }
         clear_saved_scope = leaving_war
@@ -1025,7 +1065,7 @@ leave_war_mod.0001 = {
     option = { # we have to hardcode options, we can not simply add an option per active war or so -.-. So I will hardcode ~ 10 options. I hope up to 10 same wars with the same person should be enough...
         name = leave_war_mod_optionname_6
         show_as_unavailable = { 
-            exists = scope:leaving_war_6
+            lw_mod_can_select_war_trigger = { WAR = scope:leaving_war_6 }
             AND = {
                 OR = {
                     has_game_rule = leave_war_mod_costs_default
@@ -1040,7 +1080,7 @@ leave_war_mod.0001 = {
             }
         }
         trigger = {
-            exists = scope:leaving_war_6
+            lw_mod_can_select_war_trigger = { WAR = scope:leaving_war_6 }
             OR = {
                 has_game_rule = leave_war_mod_costs_nothing
                 has_game_rule = leave_war_mod_costs_only_opinion
@@ -1051,52 +1091,13 @@ leave_war_mod.0001 = {
             }
             
         }
-        scope:actor = {
-            if = { 
-                limit = { 
-                    OR = {
-                        has_game_rule = leave_war_mod_costs_default
-                        has_game_rule = leave_war_mod_costs_half
-                        has_game_rule = leave_war_mod_costs_double
-                        has_game_rule = leave_war_mod_costs_only_prestigehonorgold
-                    }
-                }
-                add_prestige = { subtract = LW_prestige_costs_based_on_title_of_actor_value }
-                add_prestige_experience = { subtract = LW_prestige_costs_based_on_title_of_actor_value }
-                pay_short_term_gold = {
-                    gold = LW_gold_costs_based_on_title_of_actor_value
-                    target = scope:recipient
-                }
+        # Recheck after the player has left the picker open; no stale paid no-op.
+        if = {
+            limit = {
+                lw_mod_can_select_war_trigger = { WAR = scope:leaving_war_6 }
+                lw_mod_can_pay_war_exit_trigger = yes
             }
-            if = {
-                limit = {
-                    is_allied_to = scope:recipient
-                }
-                break_alliance = scope:recipient # break the alliance, if there is one
-            }
-        }
-        scope:leaving_war_6 = {
-            save_scope_as = leaving_war
-            custom_description = {
-                text = leave_war_mod_remove_participant # custom description for this effect, because oterhwise:  for whatever reason this triggers "REMOVE_PARTICIPANT_EFFECT_THIRD" instead of "REMOVE_PARTICIPANT_EFFECT_FIRST" in the tooltip of event, causing ALOT of error.log entries about missing character. WAR is known, but CHARACTER not. I think this is a bug somewhere in the devs code to trigger the wrong tooltip.
-                remove_participant = scope:actor
-            }
-            scope:recipient = {
-                if = { 
-                    limit = { 
-                        OR = {
-                            has_game_rule = leave_war_mod_costs_default
-                            has_game_rule = leave_war_mod_costs_half
-                            has_game_rule = leave_war_mod_costs_double
-                            has_game_rule = leave_war_mod_costs_only_opinion
-                        }
-                    }
-                    add_opinion = {
-                        target = scope:actor
-                        modifier = left_my_war_opinion_modifier # recipient/leader gets very bad opinion about actor
-                        opinion = LW_opinion_costs_leaders
-                    }
-                }
+            scope:actor = {
                 if = { 
                     limit = { 
                         OR = {
@@ -1106,20 +1107,30 @@ leave_war_mod.0001 = {
                             has_game_rule = leave_war_mod_costs_only_prestigehonorgold
                         }
                     }
-                    add_prestige = LW_prestige_costs_based_on_title_of_actor_value # the recipient is getting the amount of prestige
+                    add_prestige = { subtract = LW_prestige_costs_based_on_title_of_actor_value }
+                    add_prestige_experience = { subtract = LW_prestige_costs_based_on_title_of_actor_value }
+                    pay_short_term_gold = {
+                        gold = LW_gold_costs_based_on_title_of_actor_value
+                        target = scope:recipient
+                    }
+                }
+                if = {
+                    limit = {
+                        is_allied_to = scope:recipient
+                    }
+                    break_alliance = scope:recipient # break the alliance, if there is one
                 }
             }
-            if = {
-                limit = {
-                    is_defender = scope:recipient
+            scope:leaving_war_6 = {
+                save_scope_as = leaving_war
+                lw_mod_war_departure_commitments_effect = yes
+                custom_description = {
+                    text = leave_war_mod_remove_participant # custom description for this effect, because oterhwise:  for whatever reason this triggers "REMOVE_PARTICIPANT_EFFECT_THIRD" instead of "REMOVE_PARTICIPANT_EFFECT_FIRST" in the tooltip of event, causing ALOT of error.log entries about missing character. WAR is known, but CHARACTER not. I think this is a bug somewhere in the devs code to trigger the wrong tooltip.
+                    remove_participant = scope:actor
                 }
-                every_war_defender = {
+                scope:recipient = {
                     if = {
                         limit = {
-                            NOR = {
-                                this = scope:actor
-                                this = scope:recipient
-                            }
                             OR = {
                                 has_game_rule = leave_war_mod_costs_default
                                 has_game_rule = leave_war_mod_costs_half
@@ -1129,85 +1140,122 @@ leave_war_mod.0001 = {
                         }
                         add_opinion = {
                             target = scope:actor
-                            modifier = left_participating_war_opinion_modifier # other defenders in the war get bad opinion about actor
-                            opinion = LW_opinion_costs_participant
+                            modifier = left_my_war_opinion_modifier # recipient/leader gets very bad opinion about actor
+                            opinion = LW_opinion_costs_leaders
                         }
                     }
-                    if = {
-                        limit = {NOT = { this = scope:actor } }
-                        send_interface_message = { # ally in war is leaving war message. normally the game should send it, but it seems buggy, so we will send it manually here
-                            type = serp_msg_war_ally_removed
-                            title = serp_serp_msg_war_ally_removed
-                            desc = serp_serp_msg_war_ally_removed_desc 
-                            left_icon = scope:actor
-                            right_icon = scope:recipient
-                        }
-                    }
-                }
-                every_war_attacker = {
-                    send_interface_message = { # enemy is leaving war message. normally the game should send it, but it seems buggy, so we will send it manually here
-                        type = serp_msg_war_enemy_removed
-                        title = serp_serp_msg_war_enemy_removed
-                        desc = serp_serp_msg_war_enemy_removed_desc 
-                        left_icon = scope:actor
-                        right_icon = scope:recipient
-                    }
-                }
-            }
-            else_if = {
-                limit = {
-                    is_attacker = scope:recipient
-                }
-                every_war_attacker = {
                     if = {
                         limit = {
-                            NOR = {
-                                this = scope:actor
-                                this = scope:recipient
-                            }
                             OR = {
                                 has_game_rule = leave_war_mod_costs_default
                                 has_game_rule = leave_war_mod_costs_half
                                 has_game_rule = leave_war_mod_costs_double
-                                has_game_rule = leave_war_mod_costs_only_opinion
+                                has_game_rule = leave_war_mod_costs_only_prestigehonorgold
                             }
                         }
-                        add_opinion = {
-                            target = scope:actor
-                            modifier = left_participating_war_opinion_modifier # other attackers in the war get bad opinion about actor
-                            opinion = LW_opinion_costs_participant
+                        add_prestige = LW_prestige_costs_based_on_title_of_actor_value # the recipient is getting the amount of prestige
+                    }
+                }
+                if = {
+                    limit = {
+                        is_defender = scope:recipient
+                    }
+                    every_war_defender = {
+                        if = {
+                            limit = {
+                                NOR = {
+                                    this = scope:actor
+                                    this = scope:recipient
+                                }
+                                OR = {
+                                    has_game_rule = leave_war_mod_costs_default
+                                    has_game_rule = leave_war_mod_costs_half
+                                    has_game_rule = leave_war_mod_costs_double
+                                    has_game_rule = leave_war_mod_costs_only_opinion
+                                }
+                            }
+                            add_opinion = {
+                                target = scope:actor
+                                modifier = left_participating_war_opinion_modifier # other defenders in the war get bad opinion about actor
+                                opinion = LW_opinion_costs_participant
+                            }
+                        }
+                        if = {
+                            limit = {NOT = { this = scope:actor } }
+                            send_interface_message = { # ally in war is leaving war message. normally the game should send it, but it seems buggy, so we will send it manually here
+                                type = serp_msg_war_ally_removed
+                                title = serp_serp_msg_war_ally_removed
+                                desc = serp_serp_msg_war_ally_removed_desc
+                                left_icon = scope:actor
+                                right_icon = scope:recipient
+                            }
                         }
                     }
-                    if = {
-                        limit = {NOT = { this = scope:actor } }
-                        send_interface_message = { # ally in war is leaving war message. normally the game should send it, but it seems buggy, so we will send it manually here
-                            type = serp_msg_war_ally_removed
-                            title = serp_serp_msg_war_ally_removed
-                            desc = serp_serp_msg_war_ally_removed_desc 
+                    every_war_attacker = {
+                        send_interface_message = { # enemy is leaving war message. normally the game should send it, but it seems buggy, so we will send it manually here
+                            type = serp_msg_war_enemy_removed
+                            title = serp_serp_msg_war_enemy_removed
+                            desc = serp_serp_msg_war_enemy_removed_desc
                             left_icon = scope:actor
                             right_icon = scope:recipient
                         }
                     }
                 }
-                every_war_defender = {
-                    send_interface_message = { # enemy is leaving war message. normally the game should send it, but it seems buggy, so we will send it manually here
-                        type = serp_msg_war_enemy_removed
-                        title = serp_serp_msg_war_enemy_removed
-                        desc = serp_serp_msg_war_enemy_removed_desc 
-                        left_icon = scope:actor
-                        right_icon = scope:recipient
+                else_if = {
+                    limit = {
+                        is_attacker = scope:recipient
+                    }
+                    every_war_attacker = {
+                        if = {
+                            limit = {
+                                NOR = {
+                                    this = scope:actor
+                                    this = scope:recipient
+                                }
+                                OR = {
+                                    has_game_rule = leave_war_mod_costs_default
+                                    has_game_rule = leave_war_mod_costs_half
+                                    has_game_rule = leave_war_mod_costs_double
+                                    has_game_rule = leave_war_mod_costs_only_opinion
+                                }
+                            }
+                            add_opinion = {
+                                target = scope:actor
+                                modifier = left_participating_war_opinion_modifier # other attackers in the war get bad opinion about actor
+                                opinion = LW_opinion_costs_participant
+                            }
+                        }
+                        if = {
+                            limit = {NOT = { this = scope:actor } }
+                            send_interface_message = { # ally in war is leaving war message. normally the game should send it, but it seems buggy, so we will send it manually here
+                                type = serp_msg_war_ally_removed
+                                title = serp_serp_msg_war_ally_removed
+                                desc = serp_serp_msg_war_ally_removed_desc
+                                left_icon = scope:actor
+                                right_icon = scope:recipient
+                            }
+                        }
+                    }
+                    every_war_defender = {
+                        send_interface_message = { # enemy is leaving war message. normally the game should send it, but it seems buggy, so we will send it manually here
+                            type = serp_msg_war_enemy_removed
+                            title = serp_serp_msg_war_enemy_removed
+                            desc = serp_serp_msg_war_enemy_removed_desc
+                            left_icon = scope:actor
+                            right_icon = scope:recipient
+                        }
                     }
                 }
-            }
             
-        }
-        scope:actor = { # after leaving_war was set
-            send_interface_message = { # you are leaving war message. normally the game should send it, but it seems buggy, so we will send it manually here
-                type = serp_msg_war_player_removed
-                title = serp_serp_msg_war_player_removed
-                desc = serp_serp_msg_war_player_removed_desc 
-                left_icon = scope:actor
-                right_icon = scope:recipient
+            }
+            scope:actor = { # after leaving_war was set
+                send_interface_message = { # you are leaving war message. normally the game should send it, but it seems buggy, so we will send it manually here
+                    type = serp_msg_war_player_removed
+                    title = serp_serp_msg_war_player_removed
+                    desc = serp_serp_msg_war_player_removed_desc
+                    left_icon = scope:actor
+                    right_icon = scope:recipient
+                }
             }
         }
         clear_saved_scope = leaving_war
@@ -1226,7 +1274,7 @@ leave_war_mod.0001 = {
     option = { # we have to hardcode options, we can not simply add an option per active war or so -.-. So I will hardcode ~ 10 options. I hope up to 10 same wars with the same person should be enough...
         name = leave_war_mod_optionname_7
         show_as_unavailable = { 
-            exists = scope:leaving_war_7
+            lw_mod_can_select_war_trigger = { WAR = scope:leaving_war_7 }
             AND = {
                 OR = {
                     has_game_rule = leave_war_mod_costs_default
@@ -1241,7 +1289,7 @@ leave_war_mod.0001 = {
             }
         }
         trigger = {
-            exists = scope:leaving_war_7
+            lw_mod_can_select_war_trigger = { WAR = scope:leaving_war_7 }
             OR = {
                 has_game_rule = leave_war_mod_costs_nothing
                 has_game_rule = leave_war_mod_costs_only_opinion
@@ -1252,52 +1300,13 @@ leave_war_mod.0001 = {
             }
             
         }
-        scope:actor = {
-            if = { 
-                limit = { 
-                    OR = {
-                        has_game_rule = leave_war_mod_costs_default
-                        has_game_rule = leave_war_mod_costs_half
-                        has_game_rule = leave_war_mod_costs_double
-                        has_game_rule = leave_war_mod_costs_only_prestigehonorgold
-                    }
-                }
-                add_prestige = { subtract = LW_prestige_costs_based_on_title_of_actor_value }
-                add_prestige_experience = { subtract = LW_prestige_costs_based_on_title_of_actor_value }
-                pay_short_term_gold = {
-                    gold = LW_gold_costs_based_on_title_of_actor_value
-                    target = scope:recipient
-                }
+        # Recheck after the player has left the picker open; no stale paid no-op.
+        if = {
+            limit = {
+                lw_mod_can_select_war_trigger = { WAR = scope:leaving_war_7 }
+                lw_mod_can_pay_war_exit_trigger = yes
             }
-            if = {
-                limit = {
-                    is_allied_to = scope:recipient
-                }
-                break_alliance = scope:recipient # break the alliance, if there is one
-            }
-        }
-        scope:leaving_war_7 = {
-            save_scope_as = leaving_war
-            custom_description = {
-                text = leave_war_mod_remove_participant # custom description for this effect, because oterhwise:  for whatever reason this triggers "REMOVE_PARTICIPANT_EFFECT_THIRD" instead of "REMOVE_PARTICIPANT_EFFECT_FIRST" in the tooltip of event, causing ALOT of error.log entries about missing character. WAR is known, but CHARACTER not. I think this is a bug somewhere in the devs code to trigger the wrong tooltip.
-                remove_participant = scope:actor
-            }
-            scope:recipient = {
-                if = { 
-                    limit = { 
-                        OR = {
-                            has_game_rule = leave_war_mod_costs_default
-                            has_game_rule = leave_war_mod_costs_half
-                            has_game_rule = leave_war_mod_costs_double
-                            has_game_rule = leave_war_mod_costs_only_opinion
-                        }
-                    }
-                    add_opinion = {
-                        target = scope:actor
-                        modifier = left_my_war_opinion_modifier # recipient/leader gets very bad opinion about actor
-                        opinion = LW_opinion_costs_leaders
-                    }
-                }
+            scope:actor = {
                 if = { 
                     limit = { 
                         OR = {
@@ -1307,20 +1316,30 @@ leave_war_mod.0001 = {
                             has_game_rule = leave_war_mod_costs_only_prestigehonorgold
                         }
                     }
-                    add_prestige = LW_prestige_costs_based_on_title_of_actor_value # the recipient is getting the amount of prestige
+                    add_prestige = { subtract = LW_prestige_costs_based_on_title_of_actor_value }
+                    add_prestige_experience = { subtract = LW_prestige_costs_based_on_title_of_actor_value }
+                    pay_short_term_gold = {
+                        gold = LW_gold_costs_based_on_title_of_actor_value
+                        target = scope:recipient
+                    }
+                }
+                if = {
+                    limit = {
+                        is_allied_to = scope:recipient
+                    }
+                    break_alliance = scope:recipient # break the alliance, if there is one
                 }
             }
-            if = {
-                limit = {
-                    is_defender = scope:recipient
+            scope:leaving_war_7 = {
+                save_scope_as = leaving_war
+                lw_mod_war_departure_commitments_effect = yes
+                custom_description = {
+                    text = leave_war_mod_remove_participant # custom description for this effect, because oterhwise:  for whatever reason this triggers "REMOVE_PARTICIPANT_EFFECT_THIRD" instead of "REMOVE_PARTICIPANT_EFFECT_FIRST" in the tooltip of event, causing ALOT of error.log entries about missing character. WAR is known, but CHARACTER not. I think this is a bug somewhere in the devs code to trigger the wrong tooltip.
+                    remove_participant = scope:actor
                 }
-                every_war_defender = {
+                scope:recipient = {
                     if = {
                         limit = {
-                            NOR = {
-                                this = scope:actor
-                                this = scope:recipient
-                            }
                             OR = {
                                 has_game_rule = leave_war_mod_costs_default
                                 has_game_rule = leave_war_mod_costs_half
@@ -1330,85 +1349,122 @@ leave_war_mod.0001 = {
                         }
                         add_opinion = {
                             target = scope:actor
-                            modifier = left_participating_war_opinion_modifier # other defenders in the war get bad opinion about actor
-                            opinion = LW_opinion_costs_participant
+                            modifier = left_my_war_opinion_modifier # recipient/leader gets very bad opinion about actor
+                            opinion = LW_opinion_costs_leaders
                         }
                     }
-                    if = {
-                        limit = {NOT = { this = scope:actor } }
-                        send_interface_message = { # ally in war is leaving war message. normally the game should send it, but it seems buggy, so we will send it manually here
-                            type = serp_msg_war_ally_removed
-                            title = serp_serp_msg_war_ally_removed
-                            desc = serp_serp_msg_war_ally_removed_desc 
-                            left_icon = scope:actor
-                            right_icon = scope:recipient
-                        }
-                    }
-                }
-                every_war_attacker = {
-                    send_interface_message = { # enemy is leaving war message. normally the game should send it, but it seems buggy, so we will send it manually here
-                        type = serp_msg_war_enemy_removed
-                        title = serp_serp_msg_war_enemy_removed
-                        desc = serp_serp_msg_war_enemy_removed_desc 
-                        left_icon = scope:actor
-                        right_icon = scope:recipient
-                    }
-                }
-            }
-            else_if = {
-                limit = {
-                    is_attacker = scope:recipient
-                }
-                every_war_attacker = {
                     if = {
                         limit = {
-                            NOR = {
-                                this = scope:actor
-                                this = scope:recipient
-                            }
                             OR = {
                                 has_game_rule = leave_war_mod_costs_default
                                 has_game_rule = leave_war_mod_costs_half
                                 has_game_rule = leave_war_mod_costs_double
-                                has_game_rule = leave_war_mod_costs_only_opinion
+                                has_game_rule = leave_war_mod_costs_only_prestigehonorgold
                             }
                         }
-                        add_opinion = {
-                            target = scope:actor
-                            modifier = left_participating_war_opinion_modifier # other attackers in the war get bad opinion about actor
-                            opinion = LW_opinion_costs_participant
+                        add_prestige = LW_prestige_costs_based_on_title_of_actor_value # the recipient is getting the amount of prestige
+                    }
+                }
+                if = {
+                    limit = {
+                        is_defender = scope:recipient
+                    }
+                    every_war_defender = {
+                        if = {
+                            limit = {
+                                NOR = {
+                                    this = scope:actor
+                                    this = scope:recipient
+                                }
+                                OR = {
+                                    has_game_rule = leave_war_mod_costs_default
+                                    has_game_rule = leave_war_mod_costs_half
+                                    has_game_rule = leave_war_mod_costs_double
+                                    has_game_rule = leave_war_mod_costs_only_opinion
+                                }
+                            }
+                            add_opinion = {
+                                target = scope:actor
+                                modifier = left_participating_war_opinion_modifier # other defenders in the war get bad opinion about actor
+                                opinion = LW_opinion_costs_participant
+                            }
+                        }
+                        if = {
+                            limit = {NOT = { this = scope:actor } }
+                            send_interface_message = { # ally in war is leaving war message. normally the game should send it, but it seems buggy, so we will send it manually here
+                                type = serp_msg_war_ally_removed
+                                title = serp_serp_msg_war_ally_removed
+                                desc = serp_serp_msg_war_ally_removed_desc
+                                left_icon = scope:actor
+                                right_icon = scope:recipient
+                            }
                         }
                     }
-                    if = {
-                        limit = {NOT = { this = scope:actor } }
-                        send_interface_message = { # ally in war is leaving war message. normally the game should send it, but it seems buggy, so we will send it manually here
-                            type = serp_msg_war_ally_removed
-                            title = serp_serp_msg_war_ally_removed
-                            desc = serp_serp_msg_war_ally_removed_desc 
+                    every_war_attacker = {
+                        send_interface_message = { # enemy is leaving war message. normally the game should send it, but it seems buggy, so we will send it manually here
+                            type = serp_msg_war_enemy_removed
+                            title = serp_serp_msg_war_enemy_removed
+                            desc = serp_serp_msg_war_enemy_removed_desc
                             left_icon = scope:actor
                             right_icon = scope:recipient
                         }
                     }
                 }
-                every_war_defender = {
-                    send_interface_message = { # enemy is leaving war message. normally the game should send it, but it seems buggy, so we will send it manually here
-                        type = serp_msg_war_enemy_removed
-                        title = serp_serp_msg_war_enemy_removed
-                        desc = serp_serp_msg_war_enemy_removed_desc 
-                        left_icon = scope:actor
-                        right_icon = scope:recipient
+                else_if = {
+                    limit = {
+                        is_attacker = scope:recipient
+                    }
+                    every_war_attacker = {
+                        if = {
+                            limit = {
+                                NOR = {
+                                    this = scope:actor
+                                    this = scope:recipient
+                                }
+                                OR = {
+                                    has_game_rule = leave_war_mod_costs_default
+                                    has_game_rule = leave_war_mod_costs_half
+                                    has_game_rule = leave_war_mod_costs_double
+                                    has_game_rule = leave_war_mod_costs_only_opinion
+                                }
+                            }
+                            add_opinion = {
+                                target = scope:actor
+                                modifier = left_participating_war_opinion_modifier # other attackers in the war get bad opinion about actor
+                                opinion = LW_opinion_costs_participant
+                            }
+                        }
+                        if = {
+                            limit = {NOT = { this = scope:actor } }
+                            send_interface_message = { # ally in war is leaving war message. normally the game should send it, but it seems buggy, so we will send it manually here
+                                type = serp_msg_war_ally_removed
+                                title = serp_serp_msg_war_ally_removed
+                                desc = serp_serp_msg_war_ally_removed_desc
+                                left_icon = scope:actor
+                                right_icon = scope:recipient
+                            }
+                        }
+                    }
+                    every_war_defender = {
+                        send_interface_message = { # enemy is leaving war message. normally the game should send it, but it seems buggy, so we will send it manually here
+                            type = serp_msg_war_enemy_removed
+                            title = serp_serp_msg_war_enemy_removed
+                            desc = serp_serp_msg_war_enemy_removed_desc
+                            left_icon = scope:actor
+                            right_icon = scope:recipient
+                        }
                     }
                 }
-            }
             
-        }
-        scope:actor = { # after leaving_war was set
-            send_interface_message = { # you are leaving war message. normally the game should send it, but it seems buggy, so we will send it manually here
-                type = serp_msg_war_player_removed
-                title = serp_serp_msg_war_player_removed
-                desc = serp_serp_msg_war_player_removed_desc 
-                left_icon = scope:actor
-                right_icon = scope:recipient
+            }
+            scope:actor = { # after leaving_war was set
+                send_interface_message = { # you are leaving war message. normally the game should send it, but it seems buggy, so we will send it manually here
+                    type = serp_msg_war_player_removed
+                    title = serp_serp_msg_war_player_removed
+                    desc = serp_serp_msg_war_player_removed_desc
+                    left_icon = scope:actor
+                    right_icon = scope:recipient
+                }
             }
         }
         clear_saved_scope = leaving_war
@@ -1427,7 +1483,7 @@ leave_war_mod.0001 = {
     option = { # we have to hardcode options, we can not simply add an option per active war or so -.-. So I will hardcode ~ 10 options. I hope up to 10 same wars with the same person should be enough...
         name = leave_war_mod_optionname_8
         show_as_unavailable = { 
-            exists = scope:leaving_war_8
+            lw_mod_can_select_war_trigger = { WAR = scope:leaving_war_8 }
             AND = {
                 OR = {
                     has_game_rule = leave_war_mod_costs_default
@@ -1442,7 +1498,7 @@ leave_war_mod.0001 = {
             }
         }
         trigger = {
-            exists = scope:leaving_war_8
+            lw_mod_can_select_war_trigger = { WAR = scope:leaving_war_8 }
             OR = {
                 has_game_rule = leave_war_mod_costs_nothing
                 has_game_rule = leave_war_mod_costs_only_opinion
@@ -1453,52 +1509,13 @@ leave_war_mod.0001 = {
             }
             
         }
-        scope:actor = {
-            if = { 
-                limit = { 
-                    OR = {
-                        has_game_rule = leave_war_mod_costs_default
-                        has_game_rule = leave_war_mod_costs_half
-                        has_game_rule = leave_war_mod_costs_double
-                        has_game_rule = leave_war_mod_costs_only_prestigehonorgold
-                    }
-                }
-                add_prestige = { subtract = LW_prestige_costs_based_on_title_of_actor_value }
-                add_prestige_experience = { subtract = LW_prestige_costs_based_on_title_of_actor_value }
-                pay_short_term_gold = {
-                    gold = LW_gold_costs_based_on_title_of_actor_value
-                    target = scope:recipient
-                }
+        # Recheck after the player has left the picker open; no stale paid no-op.
+        if = {
+            limit = {
+                lw_mod_can_select_war_trigger = { WAR = scope:leaving_war_8 }
+                lw_mod_can_pay_war_exit_trigger = yes
             }
-            if = {
-                limit = {
-                    is_allied_to = scope:recipient
-                }
-                break_alliance = scope:recipient # break the alliance, if there is one
-            }
-        }
-        scope:leaving_war_8 = {
-            save_scope_as = leaving_war
-            custom_description = {
-                text = leave_war_mod_remove_participant # custom description for this effect, because oterhwise:  for whatever reason this triggers "REMOVE_PARTICIPANT_EFFECT_THIRD" instead of "REMOVE_PARTICIPANT_EFFECT_FIRST" in the tooltip of event, causing ALOT of error.log entries about missing character. WAR is known, but CHARACTER not. I think this is a bug somewhere in the devs code to trigger the wrong tooltip.
-                remove_participant = scope:actor
-            }
-            scope:recipient = {
-                if = { 
-                    limit = { 
-                        OR = {
-                            has_game_rule = leave_war_mod_costs_default
-                            has_game_rule = leave_war_mod_costs_half
-                            has_game_rule = leave_war_mod_costs_double
-                            has_game_rule = leave_war_mod_costs_only_opinion
-                        }
-                    }
-                    add_opinion = {
-                        target = scope:actor
-                        modifier = left_my_war_opinion_modifier # recipient/leader gets very bad opinion about actor
-                        opinion = LW_opinion_costs_leaders
-                    }
-                }
+            scope:actor = {
                 if = { 
                     limit = { 
                         OR = {
@@ -1508,20 +1525,30 @@ leave_war_mod.0001 = {
                             has_game_rule = leave_war_mod_costs_only_prestigehonorgold
                         }
                     }
-                    add_prestige = LW_prestige_costs_based_on_title_of_actor_value # the recipient is getting the amount of prestige
+                    add_prestige = { subtract = LW_prestige_costs_based_on_title_of_actor_value }
+                    add_prestige_experience = { subtract = LW_prestige_costs_based_on_title_of_actor_value }
+                    pay_short_term_gold = {
+                        gold = LW_gold_costs_based_on_title_of_actor_value
+                        target = scope:recipient
+                    }
+                }
+                if = {
+                    limit = {
+                        is_allied_to = scope:recipient
+                    }
+                    break_alliance = scope:recipient # break the alliance, if there is one
                 }
             }
-            if = {
-                limit = {
-                    is_defender = scope:recipient
+            scope:leaving_war_8 = {
+                save_scope_as = leaving_war
+                lw_mod_war_departure_commitments_effect = yes
+                custom_description = {
+                    text = leave_war_mod_remove_participant # custom description for this effect, because oterhwise:  for whatever reason this triggers "REMOVE_PARTICIPANT_EFFECT_THIRD" instead of "REMOVE_PARTICIPANT_EFFECT_FIRST" in the tooltip of event, causing ALOT of error.log entries about missing character. WAR is known, but CHARACTER not. I think this is a bug somewhere in the devs code to trigger the wrong tooltip.
+                    remove_participant = scope:actor
                 }
-                every_war_defender = {
+                scope:recipient = {
                     if = {
                         limit = {
-                            NOR = {
-                                this = scope:actor
-                                this = scope:recipient
-                            }
                             OR = {
                                 has_game_rule = leave_war_mod_costs_default
                                 has_game_rule = leave_war_mod_costs_half
@@ -1531,85 +1558,122 @@ leave_war_mod.0001 = {
                         }
                         add_opinion = {
                             target = scope:actor
-                            modifier = left_participating_war_opinion_modifier # other defenders in the war get bad opinion about actor
-                            opinion = LW_opinion_costs_participant
+                            modifier = left_my_war_opinion_modifier # recipient/leader gets very bad opinion about actor
+                            opinion = LW_opinion_costs_leaders
                         }
                     }
-                    if = {
-                        limit = {NOT = { this = scope:actor } }
-                        send_interface_message = { # ally in war is leaving war message. normally the game should send it, but it seems buggy, so we will send it manually here
-                            type = serp_msg_war_ally_removed
-                            title = serp_serp_msg_war_ally_removed
-                            desc = serp_serp_msg_war_ally_removed_desc 
-                            left_icon = scope:actor
-                            right_icon = scope:recipient
-                        }
-                    }
-                }
-                every_war_attacker = {
-                    send_interface_message = { # enemy is leaving war message. normally the game should send it, but it seems buggy, so we will send it manually here
-                        type = serp_msg_war_enemy_removed
-                        title = serp_serp_msg_war_enemy_removed
-                        desc = serp_serp_msg_war_enemy_removed_desc 
-                        left_icon = scope:actor
-                        right_icon = scope:recipient
-                    }
-                }
-            }
-            else_if = {
-                limit = {
-                    is_attacker = scope:recipient
-                }
-                every_war_attacker = {
                     if = {
                         limit = {
-                            NOR = {
-                                this = scope:actor
-                                this = scope:recipient
-                            }
                             OR = {
                                 has_game_rule = leave_war_mod_costs_default
                                 has_game_rule = leave_war_mod_costs_half
                                 has_game_rule = leave_war_mod_costs_double
-                                has_game_rule = leave_war_mod_costs_only_opinion
+                                has_game_rule = leave_war_mod_costs_only_prestigehonorgold
                             }
                         }
-                        add_opinion = {
-                            target = scope:actor
-                            modifier = left_participating_war_opinion_modifier # other attackers in the war get bad opinion about actor
-                            opinion = LW_opinion_costs_participant
+                        add_prestige = LW_prestige_costs_based_on_title_of_actor_value # the recipient is getting the amount of prestige
+                    }
+                }
+                if = {
+                    limit = {
+                        is_defender = scope:recipient
+                    }
+                    every_war_defender = {
+                        if = {
+                            limit = {
+                                NOR = {
+                                    this = scope:actor
+                                    this = scope:recipient
+                                }
+                                OR = {
+                                    has_game_rule = leave_war_mod_costs_default
+                                    has_game_rule = leave_war_mod_costs_half
+                                    has_game_rule = leave_war_mod_costs_double
+                                    has_game_rule = leave_war_mod_costs_only_opinion
+                                }
+                            }
+                            add_opinion = {
+                                target = scope:actor
+                                modifier = left_participating_war_opinion_modifier # other defenders in the war get bad opinion about actor
+                                opinion = LW_opinion_costs_participant
+                            }
+                        }
+                        if = {
+                            limit = {NOT = { this = scope:actor } }
+                            send_interface_message = { # ally in war is leaving war message. normally the game should send it, but it seems buggy, so we will send it manually here
+                                type = serp_msg_war_ally_removed
+                                title = serp_serp_msg_war_ally_removed
+                                desc = serp_serp_msg_war_ally_removed_desc
+                                left_icon = scope:actor
+                                right_icon = scope:recipient
+                            }
                         }
                     }
-                    if = {
-                        limit = {NOT = { this = scope:actor } }
-                        send_interface_message = { # ally in war is leaving war message. normally the game should send it, but it seems buggy, so we will send it manually here
-                            type = serp_msg_war_ally_removed
-                            title = serp_serp_msg_war_ally_removed
-                            desc = serp_serp_msg_war_ally_removed_desc 
+                    every_war_attacker = {
+                        send_interface_message = { # enemy is leaving war message. normally the game should send it, but it seems buggy, so we will send it manually here
+                            type = serp_msg_war_enemy_removed
+                            title = serp_serp_msg_war_enemy_removed
+                            desc = serp_serp_msg_war_enemy_removed_desc
                             left_icon = scope:actor
                             right_icon = scope:recipient
                         }
                     }
                 }
-                every_war_defender = {
-                    send_interface_message = { # enemy is leaving war message. normally the game should send it, but it seems buggy, so we will send it manually here
-                        type = serp_msg_war_enemy_removed
-                        title = serp_serp_msg_war_enemy_removed
-                        desc = serp_serp_msg_war_enemy_removed_desc 
-                        left_icon = scope:actor
-                        right_icon = scope:recipient
+                else_if = {
+                    limit = {
+                        is_attacker = scope:recipient
+                    }
+                    every_war_attacker = {
+                        if = {
+                            limit = {
+                                NOR = {
+                                    this = scope:actor
+                                    this = scope:recipient
+                                }
+                                OR = {
+                                    has_game_rule = leave_war_mod_costs_default
+                                    has_game_rule = leave_war_mod_costs_half
+                                    has_game_rule = leave_war_mod_costs_double
+                                    has_game_rule = leave_war_mod_costs_only_opinion
+                                }
+                            }
+                            add_opinion = {
+                                target = scope:actor
+                                modifier = left_participating_war_opinion_modifier # other attackers in the war get bad opinion about actor
+                                opinion = LW_opinion_costs_participant
+                            }
+                        }
+                        if = {
+                            limit = {NOT = { this = scope:actor } }
+                            send_interface_message = { # ally in war is leaving war message. normally the game should send it, but it seems buggy, so we will send it manually here
+                                type = serp_msg_war_ally_removed
+                                title = serp_serp_msg_war_ally_removed
+                                desc = serp_serp_msg_war_ally_removed_desc
+                                left_icon = scope:actor
+                                right_icon = scope:recipient
+                            }
+                        }
+                    }
+                    every_war_defender = {
+                        send_interface_message = { # enemy is leaving war message. normally the game should send it, but it seems buggy, so we will send it manually here
+                            type = serp_msg_war_enemy_removed
+                            title = serp_serp_msg_war_enemy_removed
+                            desc = serp_serp_msg_war_enemy_removed_desc
+                            left_icon = scope:actor
+                            right_icon = scope:recipient
+                        }
                     }
                 }
-            }
             
-        }
-        scope:actor = { # after leaving_war was set
-            send_interface_message = { # you are leaving war message. normally the game should send it, but it seems buggy, so we will send it manually here
-                type = serp_msg_war_player_removed
-                title = serp_serp_msg_war_player_removed
-                desc = serp_serp_msg_war_player_removed_desc 
-                left_icon = scope:actor
-                right_icon = scope:recipient
+            }
+            scope:actor = { # after leaving_war was set
+                send_interface_message = { # you are leaving war message. normally the game should send it, but it seems buggy, so we will send it manually here
+                    type = serp_msg_war_player_removed
+                    title = serp_serp_msg_war_player_removed
+                    desc = serp_serp_msg_war_player_removed_desc
+                    left_icon = scope:actor
+                    right_icon = scope:recipient
+                }
             }
         }
         clear_saved_scope = leaving_war
@@ -1628,7 +1692,7 @@ leave_war_mod.0001 = {
     option = { # we have to hardcode options, we can not simply add an option per active war or so -.-. So I will hardcode ~ 10 options. I hope up to 10 same wars with the same person should be enough...
         name = leave_war_mod_optionname_9
         show_as_unavailable = { 
-            exists = scope:leaving_war_9
+            lw_mod_can_select_war_trigger = { WAR = scope:leaving_war_9 }
             AND = {
                 OR = {
                     has_game_rule = leave_war_mod_costs_default
@@ -1643,7 +1707,7 @@ leave_war_mod.0001 = {
             }
         }
         trigger = {
-            exists = scope:leaving_war_9
+            lw_mod_can_select_war_trigger = { WAR = scope:leaving_war_9 }
             OR = {
                 has_game_rule = leave_war_mod_costs_nothing
                 has_game_rule = leave_war_mod_costs_only_opinion
@@ -1654,52 +1718,13 @@ leave_war_mod.0001 = {
             }
             
         }
-        scope:actor = {
-            if = { 
-                limit = { 
-                    OR = {
-                        has_game_rule = leave_war_mod_costs_default
-                        has_game_rule = leave_war_mod_costs_half
-                        has_game_rule = leave_war_mod_costs_double
-                        has_game_rule = leave_war_mod_costs_only_prestigehonorgold
-                    }
-                }
-                add_prestige = { subtract = LW_prestige_costs_based_on_title_of_actor_value }
-                add_prestige_experience = { subtract = LW_prestige_costs_based_on_title_of_actor_value }
-                pay_short_term_gold = {
-                    gold = LW_gold_costs_based_on_title_of_actor_value
-                    target = scope:recipient
-                }
+        # Recheck after the player has left the picker open; no stale paid no-op.
+        if = {
+            limit = {
+                lw_mod_can_select_war_trigger = { WAR = scope:leaving_war_9 }
+                lw_mod_can_pay_war_exit_trigger = yes
             }
-            if = {
-                limit = {
-                    is_allied_to = scope:recipient
-                }
-                break_alliance = scope:recipient # break the alliance, if there is one
-            }
-        }
-        scope:leaving_war_9 = {
-            save_scope_as = leaving_war
-            custom_description = {
-                text = leave_war_mod_remove_participant # custom description for this effect, because oterhwise:  for whatever reason this triggers "REMOVE_PARTICIPANT_EFFECT_THIRD" instead of "REMOVE_PARTICIPANT_EFFECT_FIRST" in the tooltip of event, causing ALOT of error.log entries about missing character. WAR is known, but CHARACTER not. I think this is a bug somewhere in the devs code to trigger the wrong tooltip.
-                remove_participant = scope:actor
-            }
-            scope:recipient = {
-                if = { 
-                    limit = { 
-                        OR = {
-                            has_game_rule = leave_war_mod_costs_default
-                            has_game_rule = leave_war_mod_costs_half
-                            has_game_rule = leave_war_mod_costs_double
-                            has_game_rule = leave_war_mod_costs_only_opinion
-                        }
-                    }
-                    add_opinion = {
-                        target = scope:actor
-                        modifier = left_my_war_opinion_modifier # recipient/leader gets very bad opinion about actor
-                        opinion = LW_opinion_costs_leaders
-                    }
-                }
+            scope:actor = {
                 if = { 
                     limit = { 
                         OR = {
@@ -1709,20 +1734,30 @@ leave_war_mod.0001 = {
                             has_game_rule = leave_war_mod_costs_only_prestigehonorgold
                         }
                     }
-                    add_prestige = LW_prestige_costs_based_on_title_of_actor_value # the recipient is getting the amount of prestige
+                    add_prestige = { subtract = LW_prestige_costs_based_on_title_of_actor_value }
+                    add_prestige_experience = { subtract = LW_prestige_costs_based_on_title_of_actor_value }
+                    pay_short_term_gold = {
+                        gold = LW_gold_costs_based_on_title_of_actor_value
+                        target = scope:recipient
+                    }
+                }
+                if = {
+                    limit = {
+                        is_allied_to = scope:recipient
+                    }
+                    break_alliance = scope:recipient # break the alliance, if there is one
                 }
             }
-            if = {
-                limit = {
-                    is_defender = scope:recipient
+            scope:leaving_war_9 = {
+                save_scope_as = leaving_war
+                lw_mod_war_departure_commitments_effect = yes
+                custom_description = {
+                    text = leave_war_mod_remove_participant # custom description for this effect, because oterhwise:  for whatever reason this triggers "REMOVE_PARTICIPANT_EFFECT_THIRD" instead of "REMOVE_PARTICIPANT_EFFECT_FIRST" in the tooltip of event, causing ALOT of error.log entries about missing character. WAR is known, but CHARACTER not. I think this is a bug somewhere in the devs code to trigger the wrong tooltip.
+                    remove_participant = scope:actor
                 }
-                every_war_defender = {
+                scope:recipient = {
                     if = {
                         limit = {
-                            NOR = {
-                                this = scope:actor
-                                this = scope:recipient
-                            }
                             OR = {
                                 has_game_rule = leave_war_mod_costs_default
                                 has_game_rule = leave_war_mod_costs_half
@@ -1732,85 +1767,122 @@ leave_war_mod.0001 = {
                         }
                         add_opinion = {
                             target = scope:actor
-                            modifier = left_participating_war_opinion_modifier # other defenders in the war get bad opinion about actor
-                            opinion = LW_opinion_costs_participant
+                            modifier = left_my_war_opinion_modifier # recipient/leader gets very bad opinion about actor
+                            opinion = LW_opinion_costs_leaders
                         }
                     }
-                    if = {
-                        limit = {NOT = { this = scope:actor } }
-                        send_interface_message = { # ally in war is leaving war message. normally the game should send it, but it seems buggy, so we will send it manually here
-                            type = serp_msg_war_ally_removed
-                            title = serp_serp_msg_war_ally_removed
-                            desc = serp_serp_msg_war_ally_removed_desc 
-                            left_icon = scope:actor
-                            right_icon = scope:recipient
-                        }
-                    }
-                }
-                every_war_attacker = {
-                    send_interface_message = { # enemy is leaving war message. normally the game should send it, but it seems buggy, so we will send it manually here
-                        type = serp_msg_war_enemy_removed
-                        title = serp_serp_msg_war_enemy_removed
-                        desc = serp_serp_msg_war_enemy_removed_desc 
-                        left_icon = scope:actor
-                        right_icon = scope:recipient
-                    }
-                }
-            }
-            else_if = {
-                limit = {
-                    is_attacker = scope:recipient
-                }
-                every_war_attacker = {
                     if = {
                         limit = {
-                            NOR = {
-                                this = scope:actor
-                                this = scope:recipient
-                            }
                             OR = {
                                 has_game_rule = leave_war_mod_costs_default
                                 has_game_rule = leave_war_mod_costs_half
                                 has_game_rule = leave_war_mod_costs_double
-                                has_game_rule = leave_war_mod_costs_only_opinion
+                                has_game_rule = leave_war_mod_costs_only_prestigehonorgold
                             }
                         }
-                        add_opinion = {
-                            target = scope:actor
-                            modifier = left_participating_war_opinion_modifier # other attackers in the war get bad opinion about actor
-                            opinion = LW_opinion_costs_participant
+                        add_prestige = LW_prestige_costs_based_on_title_of_actor_value # the recipient is getting the amount of prestige
+                    }
+                }
+                if = {
+                    limit = {
+                        is_defender = scope:recipient
+                    }
+                    every_war_defender = {
+                        if = {
+                            limit = {
+                                NOR = {
+                                    this = scope:actor
+                                    this = scope:recipient
+                                }
+                                OR = {
+                                    has_game_rule = leave_war_mod_costs_default
+                                    has_game_rule = leave_war_mod_costs_half
+                                    has_game_rule = leave_war_mod_costs_double
+                                    has_game_rule = leave_war_mod_costs_only_opinion
+                                }
+                            }
+                            add_opinion = {
+                                target = scope:actor
+                                modifier = left_participating_war_opinion_modifier # other defenders in the war get bad opinion about actor
+                                opinion = LW_opinion_costs_participant
+                            }
+                        }
+                        if = {
+                            limit = {NOT = { this = scope:actor } }
+                            send_interface_message = { # ally in war is leaving war message. normally the game should send it, but it seems buggy, so we will send it manually here
+                                type = serp_msg_war_ally_removed
+                                title = serp_serp_msg_war_ally_removed
+                                desc = serp_serp_msg_war_ally_removed_desc
+                                left_icon = scope:actor
+                                right_icon = scope:recipient
+                            }
                         }
                     }
-                    if = {
-                        limit = {NOT = { this = scope:actor } }
-                        send_interface_message = { # ally in war is leaving war message. normally the game should send it, but it seems buggy, so we will send it manually here
-                            type = serp_msg_war_ally_removed
-                            title = serp_serp_msg_war_ally_removed
-                            desc = serp_serp_msg_war_ally_removed_desc 
+                    every_war_attacker = {
+                        send_interface_message = { # enemy is leaving war message. normally the game should send it, but it seems buggy, so we will send it manually here
+                            type = serp_msg_war_enemy_removed
+                            title = serp_serp_msg_war_enemy_removed
+                            desc = serp_serp_msg_war_enemy_removed_desc
                             left_icon = scope:actor
                             right_icon = scope:recipient
                         }
                     }
                 }
-                every_war_defender = {
-                    send_interface_message = { # enemy is leaving war message. normally the game should send it, but it seems buggy, so we will send it manually here
-                        type = serp_msg_war_enemy_removed
-                        title = serp_serp_msg_war_enemy_removed
-                        desc = serp_serp_msg_war_enemy_removed_desc 
-                        left_icon = scope:actor
-                        right_icon = scope:recipient
+                else_if = {
+                    limit = {
+                        is_attacker = scope:recipient
+                    }
+                    every_war_attacker = {
+                        if = {
+                            limit = {
+                                NOR = {
+                                    this = scope:actor
+                                    this = scope:recipient
+                                }
+                                OR = {
+                                    has_game_rule = leave_war_mod_costs_default
+                                    has_game_rule = leave_war_mod_costs_half
+                                    has_game_rule = leave_war_mod_costs_double
+                                    has_game_rule = leave_war_mod_costs_only_opinion
+                                }
+                            }
+                            add_opinion = {
+                                target = scope:actor
+                                modifier = left_participating_war_opinion_modifier # other attackers in the war get bad opinion about actor
+                                opinion = LW_opinion_costs_participant
+                            }
+                        }
+                        if = {
+                            limit = {NOT = { this = scope:actor } }
+                            send_interface_message = { # ally in war is leaving war message. normally the game should send it, but it seems buggy, so we will send it manually here
+                                type = serp_msg_war_ally_removed
+                                title = serp_serp_msg_war_ally_removed
+                                desc = serp_serp_msg_war_ally_removed_desc
+                                left_icon = scope:actor
+                                right_icon = scope:recipient
+                            }
+                        }
+                    }
+                    every_war_defender = {
+                        send_interface_message = { # enemy is leaving war message. normally the game should send it, but it seems buggy, so we will send it manually here
+                            type = serp_msg_war_enemy_removed
+                            title = serp_serp_msg_war_enemy_removed
+                            desc = serp_serp_msg_war_enemy_removed_desc
+                            left_icon = scope:actor
+                            right_icon = scope:recipient
+                        }
                     }
                 }
-            }
             
-        }
-        scope:actor = { # after leaving_war was set
-            send_interface_message = { # you are leaving war message. normally the game should send it, but it seems buggy, so we will send it manually here
-                type = serp_msg_war_player_removed
-                title = serp_serp_msg_war_player_removed
-                desc = serp_serp_msg_war_player_removed_desc 
-                left_icon = scope:actor
-                right_icon = scope:recipient
+            }
+            scope:actor = { # after leaving_war was set
+                send_interface_message = { # you are leaving war message. normally the game should send it, but it seems buggy, so we will send it manually here
+                    type = serp_msg_war_player_removed
+                    title = serp_serp_msg_war_player_removed
+                    desc = serp_serp_msg_war_player_removed_desc
+                    left_icon = scope:actor
+                    right_icon = scope:recipient
+                }
             }
         }
         clear_saved_scope = leaving_war
@@ -1829,7 +1901,7 @@ leave_war_mod.0001 = {
     option = { # we have to hardcode options, we can not simply add an option per active war or so -.-. So I will hardcode ~ 10 options. I hope up to 10 same wars with the same person should be enough...
         name = leave_war_mod_optionname_10
         show_as_unavailable = { 
-            exists = scope:leaving_war_10
+            lw_mod_can_select_war_trigger = { WAR = scope:leaving_war_10 }
             AND = {
                 OR = {
                     has_game_rule = leave_war_mod_costs_default
@@ -1844,7 +1916,7 @@ leave_war_mod.0001 = {
             }
         }
         trigger = {
-            exists = scope:leaving_war_10
+            lw_mod_can_select_war_trigger = { WAR = scope:leaving_war_10 }
             OR = {
                 has_game_rule = leave_war_mod_costs_nothing
                 has_game_rule = leave_war_mod_costs_only_opinion
@@ -1855,52 +1927,13 @@ leave_war_mod.0001 = {
             }
             
         }
-        scope:actor = {
-            if = { 
-                limit = { 
-                    OR = {
-                        has_game_rule = leave_war_mod_costs_default
-                        has_game_rule = leave_war_mod_costs_half
-                        has_game_rule = leave_war_mod_costs_double
-                        has_game_rule = leave_war_mod_costs_only_prestigehonorgold
-                    }
-                }
-                add_prestige = { subtract = LW_prestige_costs_based_on_title_of_actor_value }
-                add_prestige_experience = { subtract = LW_prestige_costs_based_on_title_of_actor_value }
-                pay_short_term_gold = {
-                    gold = LW_gold_costs_based_on_title_of_actor_value
-                    target = scope:recipient
-                }
+        # Recheck after the player has left the picker open; no stale paid no-op.
+        if = {
+            limit = {
+                lw_mod_can_select_war_trigger = { WAR = scope:leaving_war_10 }
+                lw_mod_can_pay_war_exit_trigger = yes
             }
-            if = {
-                limit = {
-                    is_allied_to = scope:recipient
-                }
-                break_alliance = scope:recipient # break the alliance, if there is one
-            }
-        }
-        scope:leaving_war_10 = {
-            save_scope_as = leaving_war
-            custom_description = {
-                text = leave_war_mod_remove_participant # custom description for this effect, because oterhwise:  for whatever reason this triggers "REMOVE_PARTICIPANT_EFFECT_THIRD" instead of "REMOVE_PARTICIPANT_EFFECT_FIRST" in the tooltip of event, causing ALOT of error.log entries about missing character. WAR is known, but CHARACTER not. I think this is a bug somewhere in the devs code to trigger the wrong tooltip.
-                remove_participant = scope:actor
-            }
-            scope:recipient = {
-                if = { 
-                    limit = { 
-                        OR = {
-                            has_game_rule = leave_war_mod_costs_default
-                            has_game_rule = leave_war_mod_costs_half
-                            has_game_rule = leave_war_mod_costs_double
-                            has_game_rule = leave_war_mod_costs_only_opinion
-                        }
-                    }
-                    add_opinion = {
-                        target = scope:actor
-                        modifier = left_my_war_opinion_modifier # recipient/leader gets very bad opinion about actor
-                        opinion = LW_opinion_costs_leaders
-                    }
-                }
+            scope:actor = {
                 if = { 
                     limit = { 
                         OR = {
@@ -1910,20 +1943,30 @@ leave_war_mod.0001 = {
                             has_game_rule = leave_war_mod_costs_only_prestigehonorgold
                         }
                     }
-                    add_prestige = LW_prestige_costs_based_on_title_of_actor_value # the recipient is getting the amount of prestige
+                    add_prestige = { subtract = LW_prestige_costs_based_on_title_of_actor_value }
+                    add_prestige_experience = { subtract = LW_prestige_costs_based_on_title_of_actor_value }
+                    pay_short_term_gold = {
+                        gold = LW_gold_costs_based_on_title_of_actor_value
+                        target = scope:recipient
+                    }
+                }
+                if = {
+                    limit = {
+                        is_allied_to = scope:recipient
+                    }
+                    break_alliance = scope:recipient # break the alliance, if there is one
                 }
             }
-            if = {
-                limit = {
-                    is_defender = scope:recipient
+            scope:leaving_war_10 = {
+                save_scope_as = leaving_war
+                lw_mod_war_departure_commitments_effect = yes
+                custom_description = {
+                    text = leave_war_mod_remove_participant # custom description for this effect, because oterhwise:  for whatever reason this triggers "REMOVE_PARTICIPANT_EFFECT_THIRD" instead of "REMOVE_PARTICIPANT_EFFECT_FIRST" in the tooltip of event, causing ALOT of error.log entries about missing character. WAR is known, but CHARACTER not. I think this is a bug somewhere in the devs code to trigger the wrong tooltip.
+                    remove_participant = scope:actor
                 }
-                every_war_defender = {
+                scope:recipient = {
                     if = {
                         limit = {
-                            NOR = {
-                                this = scope:actor
-                                this = scope:recipient
-                            }
                             OR = {
                                 has_game_rule = leave_war_mod_costs_default
                                 has_game_rule = leave_war_mod_costs_half
@@ -1933,85 +1976,122 @@ leave_war_mod.0001 = {
                         }
                         add_opinion = {
                             target = scope:actor
-                            modifier = left_participating_war_opinion_modifier # other defenders in the war get bad opinion about actor
-                            opinion = LW_opinion_costs_participant
+                            modifier = left_my_war_opinion_modifier # recipient/leader gets very bad opinion about actor
+                            opinion = LW_opinion_costs_leaders
                         }
                     }
-                    if = {
-                        limit = {NOT = { this = scope:actor } }
-                        send_interface_message = { # ally in war is leaving war message. normally the game should send it, but it seems buggy, so we will send it manually here
-                            type = serp_msg_war_ally_removed
-                            title = serp_serp_msg_war_ally_removed
-                            desc = serp_serp_msg_war_ally_removed_desc 
-                            left_icon = scope:actor
-                            right_icon = scope:recipient
-                        }
-                    }
-                }
-                every_war_attacker = {
-                    send_interface_message = { # enemy is leaving war message. normally the game should send it, but it seems buggy, so we will send it manually here
-                        type = serp_msg_war_enemy_removed
-                        title = serp_serp_msg_war_enemy_removed
-                        desc = serp_serp_msg_war_enemy_removed_desc 
-                        left_icon = scope:actor
-                        right_icon = scope:recipient
-                    }
-                }
-            }
-            else_if = {
-                limit = {
-                    is_attacker = scope:recipient
-                }
-                every_war_attacker = {
                     if = {
                         limit = {
-                            NOR = {
-                                this = scope:actor
-                                this = scope:recipient
-                            }
                             OR = {
                                 has_game_rule = leave_war_mod_costs_default
                                 has_game_rule = leave_war_mod_costs_half
                                 has_game_rule = leave_war_mod_costs_double
-                                has_game_rule = leave_war_mod_costs_only_opinion
+                                has_game_rule = leave_war_mod_costs_only_prestigehonorgold
                             }
                         }
-                        add_opinion = {
-                            target = scope:actor
-                            modifier = left_participating_war_opinion_modifier # other attackers in the war get bad opinion about actor
-                            opinion = LW_opinion_costs_participant
+                        add_prestige = LW_prestige_costs_based_on_title_of_actor_value # the recipient is getting the amount of prestige
+                    }
+                }
+                if = {
+                    limit = {
+                        is_defender = scope:recipient
+                    }
+                    every_war_defender = {
+                        if = {
+                            limit = {
+                                NOR = {
+                                    this = scope:actor
+                                    this = scope:recipient
+                                }
+                                OR = {
+                                    has_game_rule = leave_war_mod_costs_default
+                                    has_game_rule = leave_war_mod_costs_half
+                                    has_game_rule = leave_war_mod_costs_double
+                                    has_game_rule = leave_war_mod_costs_only_opinion
+                                }
+                            }
+                            add_opinion = {
+                                target = scope:actor
+                                modifier = left_participating_war_opinion_modifier # other defenders in the war get bad opinion about actor
+                                opinion = LW_opinion_costs_participant
+                            }
+                        }
+                        if = {
+                            limit = {NOT = { this = scope:actor } }
+                            send_interface_message = { # ally in war is leaving war message. normally the game should send it, but it seems buggy, so we will send it manually here
+                                type = serp_msg_war_ally_removed
+                                title = serp_serp_msg_war_ally_removed
+                                desc = serp_serp_msg_war_ally_removed_desc
+                                left_icon = scope:actor
+                                right_icon = scope:recipient
+                            }
                         }
                     }
-                    if = {
-                        limit = {NOT = { this = scope:actor } }
-                        send_interface_message = { # ally in war is leaving war message. normally the game should send it, but it seems buggy, so we will send it manually here
-                            type = serp_msg_war_ally_removed
-                            title = serp_serp_msg_war_ally_removed
-                            desc = serp_serp_msg_war_ally_removed_desc 
+                    every_war_attacker = {
+                        send_interface_message = { # enemy is leaving war message. normally the game should send it, but it seems buggy, so we will send it manually here
+                            type = serp_msg_war_enemy_removed
+                            title = serp_serp_msg_war_enemy_removed
+                            desc = serp_serp_msg_war_enemy_removed_desc
                             left_icon = scope:actor
                             right_icon = scope:recipient
                         }
                     }
                 }
-                every_war_defender = {
-                    send_interface_message = { # enemy is leaving war message. normally the game should send it, but it seems buggy, so we will send it manually here
-                        type = serp_msg_war_enemy_removed
-                        title = serp_serp_msg_war_enemy_removed
-                        desc = serp_serp_msg_war_enemy_removed_desc 
-                        left_icon = scope:actor
-                        right_icon = scope:recipient
+                else_if = {
+                    limit = {
+                        is_attacker = scope:recipient
+                    }
+                    every_war_attacker = {
+                        if = {
+                            limit = {
+                                NOR = {
+                                    this = scope:actor
+                                    this = scope:recipient
+                                }
+                                OR = {
+                                    has_game_rule = leave_war_mod_costs_default
+                                    has_game_rule = leave_war_mod_costs_half
+                                    has_game_rule = leave_war_mod_costs_double
+                                    has_game_rule = leave_war_mod_costs_only_opinion
+                                }
+                            }
+                            add_opinion = {
+                                target = scope:actor
+                                modifier = left_participating_war_opinion_modifier # other attackers in the war get bad opinion about actor
+                                opinion = LW_opinion_costs_participant
+                            }
+                        }
+                        if = {
+                            limit = {NOT = { this = scope:actor } }
+                            send_interface_message = { # ally in war is leaving war message. normally the game should send it, but it seems buggy, so we will send it manually here
+                                type = serp_msg_war_ally_removed
+                                title = serp_serp_msg_war_ally_removed
+                                desc = serp_serp_msg_war_ally_removed_desc
+                                left_icon = scope:actor
+                                right_icon = scope:recipient
+                            }
+                        }
+                    }
+                    every_war_defender = {
+                        send_interface_message = { # enemy is leaving war message. normally the game should send it, but it seems buggy, so we will send it manually here
+                            type = serp_msg_war_enemy_removed
+                            title = serp_serp_msg_war_enemy_removed
+                            desc = serp_serp_msg_war_enemy_removed_desc
+                            left_icon = scope:actor
+                            right_icon = scope:recipient
+                        }
                     }
                 }
-            }
             
-        }
-        scope:actor = { # after leaving_war was set
-            send_interface_message = { # you are leaving war message. normally the game should send it, but it seems buggy, so we will send it manually here
-                type = serp_msg_war_player_removed
-                title = serp_serp_msg_war_player_removed
-                desc = serp_serp_msg_war_player_removed_desc 
-                left_icon = scope:actor
-                right_icon = scope:recipient
+            }
+            scope:actor = { # after leaving_war was set
+                send_interface_message = { # you are leaving war message. normally the game should send it, but it seems buggy, so we will send it manually here
+                    type = serp_msg_war_player_removed
+                    title = serp_serp_msg_war_player_removed
+                    desc = serp_serp_msg_war_player_removed_desc
+                    left_icon = scope:actor
+                    right_icon = scope:recipient
+                }
             }
         }
         clear_saved_scope = leaving_war
@@ -2032,6 +2112,7 @@ leave_war_mod.0001 = {
     
 	option = {	
 		name = leave_war_mod_cancelname		#"Cancel"
+		lw_mod_clear_war_scopes_effect = yes
 		custom_tooltip = leave_war_mod_canceltooltip
 	}	
 }

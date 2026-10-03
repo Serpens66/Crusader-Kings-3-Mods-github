@@ -13,13 +13,20 @@ leave_war_interaction_mod = {
 	}
 	
 
+    # Actor-only availability also prevents scripted AI/Adventurer use.
+    is_available = {
+        is_alive = yes
+        is_ai = no
+        is_at_war = yes
+        is_landless_adventurer = no
+    }
+
     is_shown = {
         scope:recipient = {
             is_at_war = yes
             is_allied_in_war = scope:actor
             any_character_war = {
-                is_war_leader = scope:recipient
-                is_participant = scope:actor
+                lw_mod_can_leave_war_trigger = yes
             }
         }
         
@@ -33,11 +40,11 @@ leave_war_interaction_mod = {
 
     
     on_send = {
+        lw_mod_clear_war_scopes_effect = yes # Discard any earlier picker references.
         scope:recipient = {
             every_character_war = {
                 limit = {
-                    is_war_leader = scope:recipient
-                    is_participant = scope:actor
+                    lw_mod_can_leave_war_trigger = yes
                 }
                 if = { # save all the shared wars to the scope, so we can make an option for each of it within event. Allow up to 10.
                     limit = {

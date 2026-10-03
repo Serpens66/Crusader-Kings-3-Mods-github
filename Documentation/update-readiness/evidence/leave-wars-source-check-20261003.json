@@ -1,0 +1,513 @@
+{
+  "installed_version": "1.20.0.3",
+  "baseline_version": "1.20.0.3",
+  "baseline_date": "2026-10-03",
+  "version_changed": false,
+  "scope": "Registered source watches only; not compatibility certification or a complete feature audit.",
+  "mods": {
+    "Leave Wars": {
+      "sheet": "Documentation/update-readiness/mods/leave-wars.md",
+      "coverage": "Targeted standalone war selection/removal/assistance/Frankokratia/personality/message-filter source audit; broad file watches retain native context. No runtime certification.",
+      "open_gates": [
+        "Gameplay/GUI/MP acceptance LW-T01–LW-T20 not run, including actual removal, accounting, stale-target and save/reload behavior.",
+        "Native/manual notification duplication and special GHW/Frankokratia/association consequences require campaign comparison.",
+        "Old saves: native resolution of newly introduced game rules not tested; no forced migration.",
+        "Compatibility metadata and mod version intentionally unchanged pending acceptance."
+      ],
+      "counts": {
+        "unchanged": 24
+      },
+      "source_review_required": false,
+      "file_context_review_required": false,
+      "local_sources_changed": [],
+      "watches": [
+        {
+          "id": "MOD-CONTRACTS:common/character_interactions/_character_interactions.info",
+          "feature": "LW-CONTRACTS",
+          "surface": "native_schema",
+          "native_path": "common/character_interactions/_character_interactions.info",
+          "symbol": null,
+          "local_definitions": [
+            "Leave Wars/common/character_interactions/leave_war_mod_interaction.txt",
+            "Leave Wars/events/leave_war_mod_events.txt",
+            "Leave Wars/common/scripted_triggers/leave_war_mod_triggers.txt",
+            "Leave Wars/common/scripted_effects/leave_war_mod_effects.txt",
+            "Leave Wars/common/game_rules/leave_war_mod_rules.txt",
+            "Leave Wars/common/messages/leave_war_mod_messages.txt"
+          ],
+          "baseline_version": "1.20.0.3",
+          "audit_scope": "Targeted current Leave Wars source audit, with preserved native delegation; runtime acceptance remains open. See selected audit report for findings and limits.",
+          "status": "unchanged",
+          "baseline_sha256": "cc2442a313a6b1a2a7fa02b92a094276edfe39c60835c3286172c5b6d7b70a37",
+          "current_sha256": "cc2442a313a6b1a2a7fa02b92a094276edfe39c60835c3286172c5b6d7b70a37"
+        },
+        {
+          "id": "MOD-CONTRACTS:common/messages/_messages.info",
+          "feature": "LW-CONTRACTS",
+          "surface": "native_schema",
+          "native_path": "common/messages/_messages.info",
+          "symbol": null,
+          "local_definitions": [
+            "Leave Wars/common/character_interactions/leave_war_mod_interaction.txt",
+            "Leave Wars/events/leave_war_mod_events.txt",
+            "Leave Wars/common/scripted_triggers/leave_war_mod_triggers.txt",
+            "Leave Wars/common/scripted_effects/leave_war_mod_effects.txt",
+            "Leave Wars/common/game_rules/leave_war_mod_rules.txt",
+            "Leave Wars/common/messages/leave_war_mod_messages.txt"
+          ],
+          "baseline_version": "1.20.0.3",
+          "audit_scope": "Targeted current Leave Wars source audit, with preserved native delegation; runtime acceptance remains open. See selected audit report for findings and limits.",
+          "status": "unchanged",
+          "baseline_sha256": "a0ad5c695a34f2be2fda1353164afdf48b7a6ce69ca2cabc9ab8d89bdcd392e4",
+          "current_sha256": "a0ad5c695a34f2be2fda1353164afdf48b7a6ce69ca2cabc9ab8d89bdcd392e4"
+        },
+        {
+          "id": "MOD-CONTRACTS:common/on_action/_on_actions.info",
+          "feature": "LW-CONTRACTS",
+          "surface": "native_schema",
+          "native_path": "common/on_action/_on_actions.info",
+          "symbol": null,
+          "local_definitions": [
+            "Leave Wars/common/character_interactions/leave_war_mod_interaction.txt",
+            "Leave Wars/events/leave_war_mod_events.txt",
+            "Leave Wars/common/scripted_triggers/leave_war_mod_triggers.txt",
+            "Leave Wars/common/scripted_effects/leave_war_mod_effects.txt",
+            "Leave Wars/common/game_rules/leave_war_mod_rules.txt",
+            "Leave Wars/common/messages/leave_war_mod_messages.txt"
+          ],
+          "baseline_version": "1.20.0.3",
+          "audit_scope": "Targeted current Leave Wars source audit, with preserved native delegation; runtime acceptance remains open. See selected audit report for findings and limits.",
+          "status": "unchanged",
+          "baseline_sha256": "2bfbbf903d55a2417c988caf1479ef0ff91719c55128ce6357bca3d2c8e9b25f",
+          "current_sha256": "2bfbbf903d55a2417c988caf1479ef0ff91719c55128ce6357bca3d2c8e9b25f"
+        },
+        {
+          "id": "MOD-CONTRACTS:common/script_values/_script_values.info",
+          "feature": "LW-CONTRACTS",
+          "surface": "native_schema",
+          "native_path": "common/script_values/_script_values.info",
+          "symbol": null,
+          "local_definitions": [
+            "Leave Wars/common/character_interactions/leave_war_mod_interaction.txt",
+            "Leave Wars/events/leave_war_mod_events.txt",
+            "Leave Wars/common/scripted_triggers/leave_war_mod_triggers.txt",
+            "Leave Wars/common/scripted_effects/leave_war_mod_effects.txt",
+            "Leave Wars/common/game_rules/leave_war_mod_rules.txt",
+            "Leave Wars/common/messages/leave_war_mod_messages.txt"
+          ],
+          "baseline_version": "1.20.0.3",
+          "audit_scope": "Targeted current Leave Wars source audit, with preserved native delegation; runtime acceptance remains open. See selected audit report for findings and limits.",
+          "status": "unchanged",
+          "baseline_sha256": "764ad711339c61bf239851bd52d87168dc1a2c91fe0c385c308ec4b85e2b5ef1",
+          "current_sha256": "764ad711339c61bf239851bd52d87168dc1a2c91fe0c385c308ec4b85e2b5ef1"
+        },
+        {
+          "id": "MOD-CONTRACTS:events/_events.info",
+          "feature": "LW-CONTRACTS",
+          "surface": "native_schema",
+          "native_path": "events/_events.info",
+          "symbol": null,
+          "local_definitions": [
+            "Leave Wars/common/character_interactions/leave_war_mod_interaction.txt",
+            "Leave Wars/events/leave_war_mod_events.txt",
+            "Leave Wars/common/scripted_triggers/leave_war_mod_triggers.txt",
+            "Leave Wars/common/scripted_effects/leave_war_mod_effects.txt",
+            "Leave Wars/common/game_rules/leave_war_mod_rules.txt",
+            "Leave Wars/common/messages/leave_war_mod_messages.txt"
+          ],
+          "baseline_version": "1.20.0.3",
+          "audit_scope": "Targeted current Leave Wars source audit, with preserved native delegation; runtime acceptance remains open. See selected audit report for findings and limits.",
+          "status": "unchanged",
+          "baseline_sha256": "ccd628f42374eb300199a2676bde45ba60af0be056290f191bfc72461910a5fd",
+          "current_sha256": "ccd628f42374eb300199a2676bde45ba60af0be056290f191bfc72461910a5fd"
+        },
+        {
+          "id": "MOD-SOURCE:common/character_interactions/00_alliance.txt",
+          "feature": "LW-NATIVE-DEPENDENCIES",
+          "surface": "delegated_source",
+          "native_path": "common/character_interactions/00_alliance.txt",
+          "symbol": null,
+          "local_definitions": [
+            "Leave Wars/common/character_interactions/leave_war_mod_interaction.txt",
+            "Leave Wars/events/leave_war_mod_events.txt",
+            "Leave Wars/common/scripted_triggers/leave_war_mod_triggers.txt",
+            "Leave Wars/common/scripted_effects/leave_war_mod_effects.txt",
+            "Leave Wars/common/game_rules/leave_war_mod_rules.txt",
+            "Leave Wars/common/messages/leave_war_mod_messages.txt"
+          ],
+          "baseline_version": "1.20.0.3",
+          "audit_scope": "Targeted current Leave Wars source audit, with preserved native delegation; runtime acceptance remains open. See selected audit report for findings and limits.",
+          "status": "unchanged",
+          "baseline_sha256": "11e852967499e73c8bfbf9d6fe222278db66bb88cb674ea04f3758c86f35f1b4",
+          "current_sha256": "11e852967499e73c8bfbf9d6fe222278db66bb88cb674ea04f3758c86f35f1b4"
+        },
+        {
+          "id": "MOD-SOURCE:common/character_interactions/06_ep3_laamp_interactions.txt",
+          "feature": "LW-NATIVE-DEPENDENCIES",
+          "surface": "delegated_source",
+          "native_path": "common/character_interactions/06_ep3_laamp_interactions.txt",
+          "symbol": null,
+          "local_definitions": [
+            "Leave Wars/common/character_interactions/leave_war_mod_interaction.txt",
+            "Leave Wars/events/leave_war_mod_events.txt",
+            "Leave Wars/common/scripted_triggers/leave_war_mod_triggers.txt",
+            "Leave Wars/common/scripted_effects/leave_war_mod_effects.txt",
+            "Leave Wars/common/game_rules/leave_war_mod_rules.txt",
+            "Leave Wars/common/messages/leave_war_mod_messages.txt"
+          ],
+          "baseline_version": "1.20.0.3",
+          "audit_scope": "Targeted current Leave Wars source audit, with preserved native delegation; runtime acceptance remains open. See selected audit report for findings and limits.",
+          "status": "unchanged",
+          "baseline_sha256": "00f10e936c3528dbf2316037ca2518c3b216c5e48ad267f4d7eaa71968be2042",
+          "current_sha256": "00f10e936c3528dbf2316037ca2518c3b216c5e48ad267f4d7eaa71968be2042"
+        },
+        {
+          "id": "MOD-SOURCE:common/messages/01_war_messages.txt",
+          "feature": "LW-NATIVE-DEPENDENCIES",
+          "surface": "delegated_source",
+          "native_path": "common/messages/01_war_messages.txt",
+          "symbol": null,
+          "local_definitions": [
+            "Leave Wars/common/character_interactions/leave_war_mod_interaction.txt",
+            "Leave Wars/events/leave_war_mod_events.txt",
+            "Leave Wars/common/scripted_triggers/leave_war_mod_triggers.txt",
+            "Leave Wars/common/scripted_effects/leave_war_mod_effects.txt",
+            "Leave Wars/common/game_rules/leave_war_mod_rules.txt",
+            "Leave Wars/common/messages/leave_war_mod_messages.txt"
+          ],
+          "baseline_version": "1.20.0.3",
+          "audit_scope": "Targeted current Leave Wars source audit, with preserved native delegation; runtime acceptance remains open. See selected audit report for findings and limits.",
+          "status": "unchanged",
+          "baseline_sha256": "e2db255a3557e54ad74a8a0296902e739cb2cd8e7210080561a2eb5013660d95",
+          "current_sha256": "e2db255a3557e54ad74a8a0296902e739cb2cd8e7210080561a2eb5013660d95"
+        },
+        {
+          "id": "MOD-SOURCE:common/on_action/war_on_actions.txt",
+          "feature": "LW-NATIVE-DEPENDENCIES",
+          "surface": "delegated_source",
+          "native_path": "common/on_action/war_on_actions.txt",
+          "symbol": null,
+          "local_definitions": [
+            "Leave Wars/common/character_interactions/leave_war_mod_interaction.txt",
+            "Leave Wars/events/leave_war_mod_events.txt",
+            "Leave Wars/common/scripted_triggers/leave_war_mod_triggers.txt",
+            "Leave Wars/common/scripted_effects/leave_war_mod_effects.txt",
+            "Leave Wars/common/game_rules/leave_war_mod_rules.txt",
+            "Leave Wars/common/messages/leave_war_mod_messages.txt"
+          ],
+          "baseline_version": "1.20.0.3",
+          "audit_scope": "Targeted current Leave Wars source audit, with preserved native delegation; runtime acceptance remains open. See selected audit report for findings and limits.",
+          "status": "unchanged",
+          "baseline_sha256": "70cd2a388d849251665a237d6b05b52514d9142d2f7ba404186a523595a2cf9e",
+          "current_sha256": "70cd2a388d849251665a237d6b05b52514d9142d2f7ba404186a523595a2cf9e"
+        },
+        {
+          "id": "LW-AUDIT:common/game_rules/_game_rules.info",
+          "feature": "LW-CURRENT-SOURCES",
+          "surface": "audited_dependency",
+          "native_path": "common/game_rules/_game_rules.info",
+          "symbol": null,
+          "local_definitions": [
+            "Leave Wars/common/character_interactions/leave_war_mod_interaction.txt",
+            "Leave Wars/events/leave_war_mod_events.txt",
+            "Leave Wars/common/scripted_triggers/leave_war_mod_triggers.txt",
+            "Leave Wars/common/scripted_effects/leave_war_mod_effects.txt",
+            "Leave Wars/common/game_rules/leave_war_mod_rules.txt",
+            "Leave Wars/common/messages/leave_war_mod_messages.txt"
+          ],
+          "baseline_version": "1.20.0.3",
+          "audit_scope": "Targeted current Leave Wars source audit, with preserved native delegation; runtime acceptance remains open. See selected audit report for findings and limits.",
+          "status": "unchanged",
+          "baseline_sha256": "4432ad2d0218428bbc570ac363fbf9d314d54d5627b3c8670bc5d940a16be95b",
+          "current_sha256": "4432ad2d0218428bbc570ac363fbf9d314d54d5627b3c8670bc5d940a16be95b"
+        },
+        {
+          "id": "LW-AUDIT:common/character_interactions/03_fp2_interactions.txt",
+          "feature": "LW-CURRENT-SOURCES",
+          "surface": "audited_dependency",
+          "native_path": "common/character_interactions/03_fp2_interactions.txt",
+          "symbol": null,
+          "local_definitions": [
+            "Leave Wars/common/character_interactions/leave_war_mod_interaction.txt",
+            "Leave Wars/events/leave_war_mod_events.txt",
+            "Leave Wars/common/scripted_triggers/leave_war_mod_triggers.txt",
+            "Leave Wars/common/scripted_effects/leave_war_mod_effects.txt",
+            "Leave Wars/common/game_rules/leave_war_mod_rules.txt",
+            "Leave Wars/common/messages/leave_war_mod_messages.txt"
+          ],
+          "baseline_version": "1.20.0.3",
+          "audit_scope": "Targeted current Leave Wars source audit, with preserved native delegation; runtime acceptance remains open. See selected audit report for findings and limits.",
+          "status": "unchanged",
+          "baseline_sha256": "bcaab0d816d0e7bd1699b0d0ba27a33d43442c755bf3751e6280ee118c54d35d",
+          "current_sha256": "bcaab0d816d0e7bd1699b0d0ba27a33d43442c755bf3751e6280ee118c54d35d"
+        },
+        {
+          "id": "LW-AUDIT:common/on_action/alliance_on_actions.txt",
+          "feature": "LW-CURRENT-SOURCES",
+          "surface": "audited_dependency",
+          "native_path": "common/on_action/alliance_on_actions.txt",
+          "symbol": null,
+          "local_definitions": [
+            "Leave Wars/common/character_interactions/leave_war_mod_interaction.txt",
+            "Leave Wars/events/leave_war_mod_events.txt",
+            "Leave Wars/common/scripted_triggers/leave_war_mod_triggers.txt",
+            "Leave Wars/common/scripted_effects/leave_war_mod_effects.txt",
+            "Leave Wars/common/game_rules/leave_war_mod_rules.txt",
+            "Leave Wars/common/messages/leave_war_mod_messages.txt"
+          ],
+          "baseline_version": "1.20.0.3",
+          "audit_scope": "Targeted current Leave Wars source audit, with preserved native delegation; runtime acceptance remains open. See selected audit report for findings and limits.",
+          "status": "unchanged",
+          "baseline_sha256": "6ec53f6b55efaaae7942bd61495d1df0db38f4ee20b915eb834b096e634070f5",
+          "current_sha256": "6ec53f6b55efaaae7942bd61495d1df0db38f4ee20b915eb834b096e634070f5"
+        },
+        {
+          "id": "LW-AUDIT:common/effect_localization/00_war_effects.txt",
+          "feature": "LW-CURRENT-SOURCES",
+          "surface": "audited_dependency",
+          "native_path": "common/effect_localization/00_war_effects.txt",
+          "symbol": null,
+          "local_definitions": [
+            "Leave Wars/common/character_interactions/leave_war_mod_interaction.txt",
+            "Leave Wars/events/leave_war_mod_events.txt",
+            "Leave Wars/common/scripted_triggers/leave_war_mod_triggers.txt",
+            "Leave Wars/common/scripted_effects/leave_war_mod_effects.txt",
+            "Leave Wars/common/game_rules/leave_war_mod_rules.txt",
+            "Leave Wars/common/messages/leave_war_mod_messages.txt"
+          ],
+          "baseline_version": "1.20.0.3",
+          "audit_scope": "Targeted current Leave Wars source audit, with preserved native delegation; runtime acceptance remains open. See selected audit report for findings and limits.",
+          "status": "unchanged",
+          "baseline_sha256": "4730dd88283677c1ef7ddfc7c680f98883ac8d11ee7ab728b65a809ff08e6311",
+          "current_sha256": "4730dd88283677c1ef7ddfc7c680f98883ac8d11ee7ab728b65a809ff08e6311"
+        },
+        {
+          "id": "LW-AUDIT:common/scripted_effects/03_dlc_fp2_scripted_effects.txt",
+          "feature": "LW-CURRENT-SOURCES",
+          "surface": "audited_dependency",
+          "native_path": "common/scripted_effects/03_dlc_fp2_scripted_effects.txt",
+          "symbol": null,
+          "local_definitions": [
+            "Leave Wars/common/character_interactions/leave_war_mod_interaction.txt",
+            "Leave Wars/events/leave_war_mod_events.txt",
+            "Leave Wars/common/scripted_triggers/leave_war_mod_triggers.txt",
+            "Leave Wars/common/scripted_effects/leave_war_mod_effects.txt",
+            "Leave Wars/common/game_rules/leave_war_mod_rules.txt",
+            "Leave Wars/common/messages/leave_war_mod_messages.txt"
+          ],
+          "baseline_version": "1.20.0.3",
+          "audit_scope": "Targeted current Leave Wars source audit, with preserved native delegation; runtime acceptance remains open. See selected audit report for findings and limits.",
+          "status": "unchanged",
+          "baseline_sha256": "ef890b3c5a3b1e772308e36457acd74baebbb2a214a2f1a9c9cc441c1d2c8369",
+          "current_sha256": "ef890b3c5a3b1e772308e36457acd74baebbb2a214a2f1a9c9cc441c1d2c8369"
+        },
+        {
+          "id": "LW-AUDIT:common/scripted_effects/07_frankokratia_scripted_effects.txt",
+          "feature": "LW-CURRENT-SOURCES",
+          "surface": "audited_dependency",
+          "native_path": "common/scripted_effects/07_frankokratia_scripted_effects.txt",
+          "symbol": null,
+          "local_definitions": [
+            "Leave Wars/common/character_interactions/leave_war_mod_interaction.txt",
+            "Leave Wars/events/leave_war_mod_events.txt",
+            "Leave Wars/common/scripted_triggers/leave_war_mod_triggers.txt",
+            "Leave Wars/common/scripted_effects/leave_war_mod_effects.txt",
+            "Leave Wars/common/game_rules/leave_war_mod_rules.txt",
+            "Leave Wars/common/messages/leave_war_mod_messages.txt"
+          ],
+          "baseline_version": "1.20.0.3",
+          "audit_scope": "Targeted current Leave Wars source audit, with preserved native delegation; runtime acceptance remains open. See selected audit report for findings and limits.",
+          "status": "unchanged",
+          "baseline_sha256": "e16da3b7be7d043d3789e39eb4a2dbe9136144a3952dab2e6a954a407432dda7",
+          "current_sha256": "e16da3b7be7d043d3789e39eb4a2dbe9136144a3952dab2e6a954a407432dda7"
+        },
+        {
+          "id": "LW-AUDIT:common/scripted_effects/00_diplomacy_perk_effects.txt",
+          "feature": "LW-CURRENT-SOURCES",
+          "surface": "audited_dependency",
+          "native_path": "common/scripted_effects/00_diplomacy_perk_effects.txt",
+          "symbol": null,
+          "local_definitions": [
+            "Leave Wars/common/character_interactions/leave_war_mod_interaction.txt",
+            "Leave Wars/events/leave_war_mod_events.txt",
+            "Leave Wars/common/scripted_triggers/leave_war_mod_triggers.txt",
+            "Leave Wars/common/scripted_effects/leave_war_mod_effects.txt",
+            "Leave Wars/common/game_rules/leave_war_mod_rules.txt",
+            "Leave Wars/common/messages/leave_war_mod_messages.txt"
+          ],
+          "baseline_version": "1.20.0.3",
+          "audit_scope": "Targeted current Leave Wars source audit, with preserved native delegation; runtime acceptance remains open. See selected audit report for findings and limits.",
+          "status": "unchanged",
+          "baseline_sha256": "5b4a1b359aa2202f2abe25d8b96664c4a1ecfc87a3b1752ae3a10b1e09a5e1ee",
+          "current_sha256": "5b4a1b359aa2202f2abe25d8b96664c4a1ecfc87a3b1752ae3a10b1e09a5e1ee"
+        },
+        {
+          "id": "LW-AUDIT:common/scripted_effects/09_dlc_mpo_scripted_effects.txt",
+          "feature": "LW-CURRENT-SOURCES",
+          "surface": "audited_dependency",
+          "native_path": "common/scripted_effects/09_dlc_mpo_scripted_effects.txt",
+          "symbol": null,
+          "local_definitions": [
+            "Leave Wars/common/character_interactions/leave_war_mod_interaction.txt",
+            "Leave Wars/events/leave_war_mod_events.txt",
+            "Leave Wars/common/scripted_triggers/leave_war_mod_triggers.txt",
+            "Leave Wars/common/scripted_effects/leave_war_mod_effects.txt",
+            "Leave Wars/common/game_rules/leave_war_mod_rules.txt",
+            "Leave Wars/common/messages/leave_war_mod_messages.txt"
+          ],
+          "baseline_version": "1.20.0.3",
+          "audit_scope": "Targeted current Leave Wars source audit, with preserved native delegation; runtime acceptance remains open. See selected audit report for findings and limits.",
+          "status": "unchanged",
+          "baseline_sha256": "f4f19fd150b2fa79ff4d88b560b936bec8ebd7d494214047f50fa227e22debbc",
+          "current_sha256": "f4f19fd150b2fa79ff4d88b560b936bec8ebd7d494214047f50fa227e22debbc"
+        },
+        {
+          "id": "LW-AUDIT:common/scripted_triggers/00_available_for_events_triggers.txt",
+          "feature": "LW-CURRENT-SOURCES",
+          "surface": "audited_dependency",
+          "native_path": "common/scripted_triggers/00_available_for_events_triggers.txt",
+          "symbol": null,
+          "local_definitions": [
+            "Leave Wars/common/character_interactions/leave_war_mod_interaction.txt",
+            "Leave Wars/events/leave_war_mod_events.txt",
+            "Leave Wars/common/scripted_triggers/leave_war_mod_triggers.txt",
+            "Leave Wars/common/scripted_effects/leave_war_mod_effects.txt",
+            "Leave Wars/common/game_rules/leave_war_mod_rules.txt",
+            "Leave Wars/common/messages/leave_war_mod_messages.txt"
+          ],
+          "baseline_version": "1.20.0.3",
+          "audit_scope": "Targeted current Leave Wars source audit, with preserved native delegation; runtime acceptance remains open. See selected audit report for findings and limits.",
+          "status": "unchanged",
+          "baseline_sha256": "fb94b3c340b0374ace5a90017e0e986941771510853bd6afa6fcb0a28d185f05",
+          "current_sha256": "fb94b3c340b0374ace5a90017e0e986941771510853bd6afa6fcb0a28d185f05"
+        },
+        {
+          "id": "LW-AUDIT:common/story_cycles/ep3_story_cycle_frankokratia.txt",
+          "feature": "LW-CURRENT-SOURCES",
+          "surface": "audited_dependency",
+          "native_path": "common/story_cycles/ep3_story_cycle_frankokratia.txt",
+          "symbol": null,
+          "local_definitions": [
+            "Leave Wars/common/character_interactions/leave_war_mod_interaction.txt",
+            "Leave Wars/events/leave_war_mod_events.txt",
+            "Leave Wars/common/scripted_triggers/leave_war_mod_triggers.txt",
+            "Leave Wars/common/scripted_effects/leave_war_mod_effects.txt",
+            "Leave Wars/common/game_rules/leave_war_mod_rules.txt",
+            "Leave Wars/common/messages/leave_war_mod_messages.txt"
+          ],
+          "baseline_version": "1.20.0.3",
+          "audit_scope": "Targeted current Leave Wars source audit, with preserved native delegation; runtime acceptance remains open. See selected audit report for findings and limits.",
+          "status": "unchanged",
+          "baseline_sha256": "333577c6b7f47de46422a5ca2ac0f116829ff7c7c604eb16e9eefb17e6997839",
+          "current_sha256": "333577c6b7f47de46422a5ca2ac0f116829ff7c7c604eb16e9eefb17e6997839"
+        },
+        {
+          "id": "LW-AUDIT:common/script_values/00_stress_values.txt",
+          "feature": "LW-CURRENT-SOURCES",
+          "surface": "audited_dependency",
+          "native_path": "common/script_values/00_stress_values.txt",
+          "symbol": null,
+          "local_definitions": [
+            "Leave Wars/common/character_interactions/leave_war_mod_interaction.txt",
+            "Leave Wars/events/leave_war_mod_events.txt",
+            "Leave Wars/common/scripted_triggers/leave_war_mod_triggers.txt",
+            "Leave Wars/common/scripted_effects/leave_war_mod_effects.txt",
+            "Leave Wars/common/game_rules/leave_war_mod_rules.txt",
+            "Leave Wars/common/messages/leave_war_mod_messages.txt"
+          ],
+          "baseline_version": "1.20.0.3",
+          "audit_scope": "Targeted current Leave Wars source audit, with preserved native delegation; runtime acceptance remains open. See selected audit report for findings and limits.",
+          "status": "unchanged",
+          "baseline_sha256": "821a0b77244fc5ee2d87d339cb24dbef00787b83d44ec2df9215fc1a93aec2d4",
+          "current_sha256": "821a0b77244fc5ee2d87d339cb24dbef00787b83d44ec2df9215fc1a93aec2d4"
+        },
+        {
+          "id": "LW-AUDIT:common/traits/00_traits.txt",
+          "feature": "LW-CURRENT-SOURCES",
+          "surface": "audited_dependency",
+          "native_path": "common/traits/00_traits.txt",
+          "symbol": null,
+          "local_definitions": [
+            "Leave Wars/common/character_interactions/leave_war_mod_interaction.txt",
+            "Leave Wars/events/leave_war_mod_events.txt",
+            "Leave Wars/common/scripted_triggers/leave_war_mod_triggers.txt",
+            "Leave Wars/common/scripted_effects/leave_war_mod_effects.txt",
+            "Leave Wars/common/game_rules/leave_war_mod_rules.txt",
+            "Leave Wars/common/messages/leave_war_mod_messages.txt"
+          ],
+          "baseline_version": "1.20.0.3",
+          "audit_scope": "Targeted current Leave Wars source audit, with preserved native delegation; runtime acceptance remains open. See selected audit report for findings and limits.",
+          "status": "unchanged",
+          "baseline_sha256": "93ad0316b733aa474d34841bd92fb3fc9336c111e9f06e7910178e74482185aa",
+          "current_sha256": "93ad0316b733aa474d34841bd92fb3fc9336c111e9f06e7910178e74482185aa"
+        },
+        {
+          "id": "LW-AUDIT:events/interaction_events/character_interaction_events.txt",
+          "feature": "LW-CURRENT-SOURCES",
+          "surface": "audited_dependency",
+          "native_path": "events/interaction_events/character_interaction_events.txt",
+          "symbol": null,
+          "local_definitions": [
+            "Leave Wars/common/character_interactions/leave_war_mod_interaction.txt",
+            "Leave Wars/events/leave_war_mod_events.txt",
+            "Leave Wars/common/scripted_triggers/leave_war_mod_triggers.txt",
+            "Leave Wars/common/scripted_effects/leave_war_mod_effects.txt",
+            "Leave Wars/common/game_rules/leave_war_mod_rules.txt",
+            "Leave Wars/common/messages/leave_war_mod_messages.txt"
+          ],
+          "baseline_version": "1.20.0.3",
+          "audit_scope": "Targeted current Leave Wars source audit, with preserved native delegation; runtime acceptance remains open. See selected audit report for findings and limits.",
+          "status": "unchanged",
+          "baseline_sha256": "46d0e436bbb9694e60e46c0c1c5ebc3ae1c14afa041a8b8cd9548bd5c3836c69",
+          "current_sha256": "46d0e436bbb9694e60e46c0c1c5ebc3ae1c14afa041a8b8cd9548bd5c3836c69"
+        },
+        {
+          "id": "LW-AUDIT:common/on_action/religion_on_actions.txt",
+          "feature": "LW-CURRENT-SOURCES",
+          "surface": "audited_dependency",
+          "native_path": "common/on_action/religion_on_actions.txt",
+          "symbol": null,
+          "local_definitions": [
+            "Leave Wars/common/character_interactions/leave_war_mod_interaction.txt",
+            "Leave Wars/events/leave_war_mod_events.txt",
+            "Leave Wars/common/scripted_triggers/leave_war_mod_triggers.txt",
+            "Leave Wars/common/scripted_effects/leave_war_mod_effects.txt",
+            "Leave Wars/common/game_rules/leave_war_mod_rules.txt",
+            "Leave Wars/common/messages/leave_war_mod_messages.txt"
+          ],
+          "baseline_version": "1.20.0.3",
+          "audit_scope": "Targeted current Leave Wars source audit, with preserved native delegation; runtime acceptance remains open. See selected audit report for findings and limits.",
+          "status": "unchanged",
+          "baseline_sha256": "ef9367ddf5f89c912b895743f8b72441e88af3a5b03a5c1a9eddea0e5681ee2d",
+          "current_sha256": "ef9367ddf5f89c912b895743f8b72441e88af3a5b03a5c1a9eddea0e5681ee2d"
+        },
+        {
+          "id": "LW-AUDIT:common/casus_belli_types/00_religious_war.txt",
+          "feature": "LW-CURRENT-SOURCES",
+          "surface": "audited_dependency",
+          "native_path": "common/casus_belli_types/00_religious_war.txt",
+          "symbol": null,
+          "local_definitions": [
+            "Leave Wars/common/character_interactions/leave_war_mod_interaction.txt",
+            "Leave Wars/events/leave_war_mod_events.txt",
+            "Leave Wars/common/scripted_triggers/leave_war_mod_triggers.txt",
+            "Leave Wars/common/scripted_effects/leave_war_mod_effects.txt",
+            "Leave Wars/common/game_rules/leave_war_mod_rules.txt",
+            "Leave Wars/common/messages/leave_war_mod_messages.txt"
+          ],
+          "baseline_version": "1.20.0.3",
+          "audit_scope": "Targeted current Leave Wars source audit, with preserved native delegation; runtime acceptance remains open. See selected audit report for findings and limits.",
+          "status": "unchanged",
+          "baseline_sha256": "5c4b6af8742f65a720529434a2997e83ec93b6cfa8d594204ca914ae6c359d33",
+          "current_sha256": "5c4b6af8742f65a720529434a2997e83ec93b6cfa8d594204ca914ae6c359d33"
+        }
+      ],
+      "gameplay": "not evaluated"
+    }
+  },
+  "engine_reference": {
+    "version": "1.20.0.3",
+    "status": "recorded_exports_unchanged",
+    "changed_or_missing_exports": []
+  }
+}

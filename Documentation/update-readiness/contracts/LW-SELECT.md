@@ -32,3 +32,9 @@ No blanket gate closure follows from an export hit. Read the current complete en
 Root `Leave Wars` has 15 read text/reference files. [Machine evidence](evidence.json) records every object boundary, saved scope, macro parameter, referenced state/event and native-definition candidate. These are retrieval records, not a typed call graph.
 
 Use `Documentation/tools/lookup.py SYMBOL --context 4` for versioned declarations and current source uses. See the original sheet for exact original branch costs, callback sets and complete acceptance cases.
+
+## Standalone implementation reconciliation — 2026-10-03
+
+Source closure: current `is_war_leader`, `is_attacker` and `is_defender` declarations and native callers replace the missing discovery aliases; no unsupported alias is used. Shared eligibility is implemented at display, enumeration, options and immediate execution. Saved references remain event-chain state; new-send/cancel/success/stale paths clean all eleven targets. Live lifetime, ended/reassigned war, funds changes, reload and MP acceptance remain open (LW-T01–LW-T09, LW-T19).
+
+[Current audit and implementation](../mods/leave-wars-update-20261003.md) · [Pending runtime cases](../mods/leave-wars-tests.md). Original evidence.json and raw export intake remain historical records; source/static checks do not certify runtime compatibility.

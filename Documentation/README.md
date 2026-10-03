@@ -64,3 +64,7 @@ See [index tools](reference/index-guide.md). Regenerate indexes after a patch, c
 ## Additional jesec research — 2026-10-03
 
 Read [Dynasty legacy contracts](systems/dynasty-legacies.md) for current track/perk scopes, all additional content, relaxed eligibility and the historical/current GUI distinction. The [repository report](research/jesec-repositories.md), [57-page Wiki ledger](research/jesec-wiki-coverage.md) and [additional Wiki guidance](reference/wiki-extensions.md) integrate with the existing Vanilla-history lock and Crozier chapters. Source pins and new static reports are kept separately; existing gameplay/GUI/MP blockers remain.
+
+## Leave Wars standalone update — 2026-10-03
+
+[Current implementation and source audit](update-readiness/mods/leave-wars-update-20261003.md), [structural regression evidence](update-readiness/evidence/leave-wars-verification-20261003.json) and [pending runtime acceptance](update-readiness/mods/leave-wars-tests.md). Only standalone was updated; bundle and compatibility metadata remain unchanged. The [baseline index](update-readiness/update-watch-index.json) now selects the standalone-audited source record while preserving all historical and other-mod baselines.

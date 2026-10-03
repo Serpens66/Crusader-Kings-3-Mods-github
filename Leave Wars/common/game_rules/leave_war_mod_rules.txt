@@ -10,3 +10,16 @@ leave_war_mod_costs = {
     leave_war_mod_costs_double = {}
 }
 
+
+# Independent from the six original price settings, including "Free".
+lw_mod_personality = {
+    default = lw_mod_personality_on
+    lw_mod_personality_on = {}
+    lw_mod_personality_off = {}
+}
+
+lw_mod_contract_failure = {
+    default = lw_mod_contract_failure_on
+    lw_mod_contract_failure_on = {}
+    lw_mod_contract_failure_off = {}
+}

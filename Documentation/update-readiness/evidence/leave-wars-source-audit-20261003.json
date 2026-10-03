@@ -1,0 +1,790 @@
+{
+  "date": "2026-10-03",
+  "game_version": "1.20.0.3",
+  "original_commit": "f2d2338fb89b7bcd7b135b24e45a4fe82c97efc9",
+  "state": "targeted_current_source_audit_completed_before_mod_edits",
+  "runtime": "not_run",
+  "historical_gap": "No reliable 1.6-1.9 Vanilla source baseline located; available pinned history begins at 1.10.0.1.",
+  "native_sources": {
+    "common/character_interactions/_character_interactions.info": {
+      "sha256": "cc2442a313a6b1a2a7fa02b92a094276edfe39c60835c3286172c5b6d7b70a37",
+      "mirror_match": true,
+      "historical_1_10_sha256": "e16852b9c3b1d9ba498d42514338808928469550f687f68b31732d5f344fdec9",
+      "changed_since_1_10": true
+    },
+    "events/_events.info": {
+      "sha256": "ccd628f42374eb300199a2676bde45ba60af0be056290f191bfc72461910a5fd",
+      "mirror_match": true,
+      "historical_1_10_sha256": "99fd1b583ac2a17ac4f4f8240e261a98cd0aa365bdf4b4c6a0018ad4ba0e02d4",
+      "changed_since_1_10": true
+    },
+    "common/on_action/_on_actions.info": {
+      "sha256": "2bfbbf903d55a2417c988caf1479ef0ff91719c55128ce6357bca3d2c8e9b25f",
+      "mirror_match": true,
+      "historical_1_10_sha256": "cf198da091dc8f26a75e16c1836001c0ee4c1eb8fbefd5f1fbdaa5a51b09e5e7",
+      "changed_since_1_10": true
+    },
+    "common/messages/_messages.info": {
+      "sha256": "a0ad5c695a34f2be2fda1353164afdf48b7a6ce69ca2cabc9ab8d89bdcd392e4",
+      "mirror_match": true,
+      "historical_1_10_sha256": "489721d730d1c8b8b54a46463f991b5303f9f39fedca33a402ae46b013b3e98a",
+      "changed_since_1_10": true
+    },
+    "common/game_rules/_game_rules.info": {
+      "sha256": "4432ad2d0218428bbc570ac363fbf9d314d54d5627b3c8670bc5d940a16be95b",
+      "mirror_match": true,
+      "historical_1_10_sha256": "10dee6047e582155d68702814e6dc1162fb9a8540f65e6c318c8236d9bdbd4e0",
+      "changed_since_1_10": true
+    },
+    "common/script_values/_script_values.info": {
+      "sha256": "764ad711339c61bf239851bd52d87168dc1a2c91fe0c385c308ec4b85e2b5ef1",
+      "mirror_match": true,
+      "historical_1_10_sha256": "764ad711339c61bf239851bd52d87168dc1a2c91fe0c385c308ec4b85e2b5ef1",
+      "changed_since_1_10": false
+    },
+    "common/character_interactions/00_alliance.txt": {
+      "sha256": "11e852967499e73c8bfbf9d6fe222278db66bb88cb674ea04f3758c86f35f1b4",
+      "mirror_match": true,
+      "historical_1_10_sha256": "51078003da02f479ec914ac8d2454d244b03870f1d4e70216c4104c4a51f09e9",
+      "changed_since_1_10": true
+    },
+    "common/character_interactions/06_ep3_laamp_interactions.txt": {
+      "sha256": "00f10e936c3528dbf2316037ca2518c3b216c5e48ad267f4d7eaa71968be2042",
+      "mirror_match": true,
+      "historical_1_10_sha256": null,
+      "changed_since_1_10": "new_or_missing_historical_file"
+    },
+    "common/character_interactions/03_fp2_interactions.txt": {
+      "sha256": "bcaab0d816d0e7bd1699b0d0ba27a33d43442c755bf3751e6280ee118c54d35d",
+      "mirror_match": true,
+      "historical_1_10_sha256": "99670f8cf9c79cad26dadf076344f99bad85ebcc3fc04fdb61514863e22deeae",
+      "changed_since_1_10": true
+    },
+    "common/on_action/war_on_actions.txt": {
+      "sha256": "70cd2a388d849251665a237d6b05b52514d9142d2f7ba404186a523595a2cf9e",
+      "mirror_match": true,
+      "historical_1_10_sha256": "d2c0e677e749ebec9fbc39c55a9a0415bf0cac23244c2d1809b1b77c48a05d1f",
+      "changed_since_1_10": true
+    },
+    "common/on_action/alliance_on_actions.txt": {
+      "sha256": "6ec53f6b55efaaae7942bd61495d1df0db38f4ee20b915eb834b096e634070f5",
+      "mirror_match": true,
+      "historical_1_10_sha256": "af385bfa1cfed7ebe69e31150202c812ad024a3f373764d7e763c2657ba6510b",
+      "changed_since_1_10": true
+    },
+    "common/messages/01_war_messages.txt": {
+      "sha256": "e2db255a3557e54ad74a8a0296902e739cb2cd8e7210080561a2eb5013660d95",
+      "mirror_match": true,
+      "historical_1_10_sha256": null,
+      "changed_since_1_10": "new_or_missing_historical_file"
+    },
+    "common/effect_localization/00_war_effects.txt": {
+      "sha256": "4730dd88283677c1ef7ddfc7c680f98883ac8d11ee7ab728b65a809ff08e6311",
+      "mirror_match": true,
+      "historical_1_10_sha256": "e9c4b12ac60457d5acaa53c6478e926d802eafe52cad3814459846c86cb00121",
+      "changed_since_1_10": true
+    },
+    "common/scripted_effects/03_dlc_fp2_scripted_effects.txt": {
+      "sha256": "ef890b3c5a3b1e772308e36457acd74baebbb2a214a2f1a9c9cc441c1d2c8369",
+      "mirror_match": true,
+      "historical_1_10_sha256": "adc38eb8b5108207bd34e284977aa6b60ba5ae6c6228648d69d595ef4480cc0d",
+      "changed_since_1_10": true
+    },
+    "common/scripted_effects/07_frankokratia_scripted_effects.txt": {
+      "sha256": "e16da3b7be7d043d3789e39eb4a2dbe9136144a3952dab2e6a954a407432dda7",
+      "mirror_match": true,
+      "historical_1_10_sha256": null,
+      "changed_since_1_10": "new_or_missing_historical_file"
+    },
+    "common/scripted_effects/00_diplomacy_perk_effects.txt": {
+      "sha256": "5b4a1b359aa2202f2abe25d8b96664c4a1ecfc87a3b1752ae3a10b1e09a5e1ee",
+      "mirror_match": true,
+      "historical_1_10_sha256": "77d00eb1b80120617d6a3a81764a4ca293a13e037bb4c7ddcda309b423d8c309",
+      "changed_since_1_10": true
+    },
+    "common/scripted_effects/09_dlc_mpo_scripted_effects.txt": {
+      "sha256": "f4f19fd150b2fa79ff4d88b560b936bec8ebd7d494214047f50fa227e22debbc",
+      "mirror_match": true,
+      "historical_1_10_sha256": null,
+      "changed_since_1_10": "new_or_missing_historical_file"
+    },
+    "common/scripted_triggers/00_available_for_events_triggers.txt": {
+      "sha256": "fb94b3c340b0374ace5a90017e0e986941771510853bd6afa6fcb0a28d185f05",
+      "mirror_match": true,
+      "historical_1_10_sha256": "8110f2d4cbf18556e2a5faa612917ab89e43f170e6117a69a21d53b08c33a1e6",
+      "changed_since_1_10": true
+    },
+    "common/story_cycles/ep3_story_cycle_frankokratia.txt": {
+      "sha256": "333577c6b7f47de46422a5ca2ac0f116829ff7c7c604eb16e9eefb17e6997839",
+      "mirror_match": true,
+      "historical_1_10_sha256": null,
+      "changed_since_1_10": "new_or_missing_historical_file"
+    },
+    "common/script_values/00_stress_values.txt": {
+      "sha256": "821a0b77244fc5ee2d87d339cb24dbef00787b83d44ec2df9215fc1a93aec2d4",
+      "mirror_match": true,
+      "historical_1_10_sha256": "104a7ef94ee9da1092f23aeb2fd9dc971b08c695415f3b7ebfb628f381d26395",
+      "changed_since_1_10": true
+    },
+    "common/traits/00_traits.txt": {
+      "sha256": "93ad0316b733aa474d34841bd92fb3fc9336c111e9f06e7910178e74482185aa",
+      "mirror_match": true,
+      "historical_1_10_sha256": "5fce66a35e56d845c412eb5d588b539a3b73fab22c559cd1ba2971a5365263db",
+      "changed_since_1_10": true
+    },
+    "events/interaction_events/character_interaction_events.txt": {
+      "sha256": "46d0e436bbb9694e60e46c0c1c5ebc3ae1c14afa041a8b8cd9548bd5c3836c69",
+      "mirror_match": true,
+      "historical_1_10_sha256": "c1085d0e0266db663253cc43df96b42a2f9f78e12c4bc81b6114cb0162fdecb0",
+      "changed_since_1_10": true
+    },
+    "common/on_action/religion_on_actions.txt": {
+      "sha256": "ef9367ddf5f89c912b895743f8b72441e88af3a5b03a5c1a9eddea0e5681ee2d",
+      "mirror_match": true,
+      "historical_1_10_sha256": "00193b800df2d15ada4765e18b710f433987fc4a5e76643897bb9f558af8b696",
+      "changed_since_1_10": true
+    },
+    "common/casus_belli_types/00_religious_war.txt": {
+      "sha256": "5c4b6af8742f65a720529434a2997e83ec93b6cfa8d594204ca914ae6c359d33",
+      "mirror_match": true,
+      "historical_1_10_sha256": "72fc786693c37608dbf280015fcc910f04ab8d96f9c6e4324e314801d48aab79",
+      "changed_since_1_10": true
+    }
+  },
+  "original_mod_files": {
+    "Leave Wars/common/character_interactions/leave_war_mod_interaction.txt": {
+      "sha256": "62b75b47b8f4b7e302bd17d45d91a3de46e5ae2662246d992a4863f5cbc8a111",
+      "format": {
+        "utf8_bom": true,
+        "crlf": 156,
+        "bare_lf": 0,
+        "byte_length": 5964
+      }
+    },
+    "Leave Wars/common/effect_localization/leave_war_mod_effect_loc.txt": {
+      "sha256": "9b2c5e8b1376f947591e6a58f53082bf1940ef5e988282486f3be1cd0b784668",
+      "format": {
+        "utf8_bom": true,
+        "crlf": 2,
+        "bare_lf": 0,
+        "byte_length": 98
+      }
+    },
+    "Leave Wars/common/game_rules/leave_war_mod_rules.txt": {
+      "sha256": "79a2dfcba33c495ab570bd4f8031970b27d0c7a98ea8383bdc27d36ad786e6fc",
+      "format": {
+        "utf8_bom": true,
+        "crlf": 12,
+        "bare_lf": 0,
+        "byte_length": 405
+      }
+    },
+    "Leave Wars/common/messages/leave_war_mod_messages.txt": {
+      "sha256": "65f401e1aefa285763bca7a6ba0578fda341d83b1fb588fac9e53486e6736358",
+      "format": {
+        "utf8_bom": true,
+        "crlf": 17,
+        "bare_lf": 0,
+        "byte_length": 588
+      }
+    },
+    "Leave Wars/common/opinion_modifiers/leave_war_mod_opinions.txt": {
+      "sha256": "912fb4ccd8cf292bb57bd41bb5e56fb47f434f7cb192ba3bcdc5b57234cb6ca1",
+      "format": {
+        "utf8_bom": true,
+        "crlf": 13,
+        "bare_lf": 0,
+        "byte_length": 306
+      }
+    },
+    "Leave Wars/common/script_values/leave_war_mod_cost_values.txt": {
+      "sha256": "eb34904f59d4aa996e8ee3c3738984fbf7f64477a85ce0710c409813deb28005",
+      "format": {
+        "utf8_bom": true,
+        "crlf": 0,
+        "bare_lf": 76,
+        "byte_length": 1469
+      }
+    },
+    "Leave Wars/descriptor.mod": {
+      "sha256": "f58c333d6b1ec185ddfc1ab0f6760a579f71eeab72e58620fe178438ccc204f2",
+      "format": {
+        "utf8_bom": false,
+        "crlf": 0,
+        "bare_lf": 6,
+        "byte_length": 122
+      }
+    },
+    "Leave Wars/events/leave_war_mod_events.txt": {
+      "sha256": "6ad8e729a8ce1fd95f77faf43d1e33d4367fcd3c2fe9dce3890b55ea03154d86",
+      "format": {
+        "utf8_bom": true,
+        "crlf": 2038,
+        "bare_lf": 0,
+        "byte_length": 101435
+      }
+    },
+    "Leave Wars/localization/english/leave_war_mod_l_english.yml": {
+      "sha256": "259ef0cd29c0fcd29dcd54d7c6686552f7b25762422c2125989f387c9d6ec165",
+      "format": {
+        "utf8_bom": true,
+        "crlf": 0,
+        "bare_lf": 53,
+        "byte_length": 3549
+      }
+    },
+    "Leave Wars/localization/french/leave_war_mod_l_french.yml": {
+      "sha256": "f44431f4ebe87ff54ed837db0229aefd1d6a1a424f9d1d1d8a83f4017f3f71b6",
+      "format": {
+        "utf8_bom": true,
+        "crlf": 0,
+        "bare_lf": 53,
+        "byte_length": 3548
+      }
+    },
+    "Leave Wars/localization/german/leave_war_mod_l_german.yml": {
+      "sha256": "9b34f18033a74df96edf494e5280c393fe68a3f23abae3966d964152d0ce1c6c",
+      "format": {
+        "utf8_bom": true,
+        "crlf": 0,
+        "bare_lf": 53,
+        "byte_length": 3825
+      }
+    },
+    "Leave Wars/localization/korean/leave_war_mod_l_korean.yml": {
+      "sha256": "b0535bdd54606a44f48dcb5fcd6246fed3444a8a88c144bd3cc4594261696ef0",
+      "format": {
+        "utf8_bom": true,
+        "crlf": 0,
+        "bare_lf": 53,
+        "byte_length": 3548
+      }
+    },
+    "Leave Wars/localization/russian/leave_war_mod_l_russian.yml": {
+      "sha256": "a3b7b0651d90adfceceab81069f9744818c7b9b15c8bf54222921ebef96c4c6d",
+      "format": {
+        "utf8_bom": true,
+        "crlf": 0,
+        "bare_lf": 53,
+        "byte_length": 3549
+      }
+    },
+    "Leave Wars/localization/simp_chinese/leave_war_mod_l_simp_chinese.yml": {
+      "sha256": "786650648fed8452a1640667145dbf21dcd886bb1a91ccb767fa93df2b7d2ab4",
+      "format": {
+        "utf8_bom": true,
+        "crlf": 0,
+        "bare_lf": 53,
+        "byte_length": 3554
+      }
+    },
+    "Leave Wars/localization/spanish/leave_war_mod_l_spanish.yml": {
+      "sha256": "963e8dcae3e6b97374824bb7a932c0fabcdc119e5e8808cd72228000486004ea",
+      "format": {
+        "utf8_bom": true,
+        "crlf": 0,
+        "bare_lf": 53,
+        "byte_length": 3549
+      }
+    },
+    "Leave Wars/thumbnail.png": {
+      "sha256": "33d9854275a1ed4ea3656bf9eeec78f831aed316fa54b1167a8fae7a716c5b3f",
+      "format": {
+        "utf8_bom": false,
+        "crlf": 1,
+        "bare_lf": 218,
+        "byte_length": 63362
+      }
+    },
+    "Leave Wars.mod": {
+      "sha256": "ae02c682f98eb516b068e12f1f01b29208436998b6a9f7aa030b832b5bb78e5b",
+      "format": {
+        "utf8_bom": false,
+        "crlf": 0,
+        "bare_lf": 7,
+        "byte_length": 205
+      }
+    }
+  },
+  "findings": [
+    "War-root predicates and remove_participant character target are current exported primitives; no primary predicate alias needed.",
+    "save_scope_as is documented for an unbroken event chain; direct actor dispatch retained. Lifetime/reload/MP still need runtime tests.",
+    "All ten original option effects are token-identical after slot normalization. Cancel lacks explicit saved-scope cleanup.",
+    "The original options do not revalidate membership, side or leadership at execution.",
+    "Contract promises are actor-owned variables; native completion/invalidated helpers iterate remaining war participants. Clear only the selected matching promise.",
+    "fp2_contract_assistance_failure is a ten-year native failure flag and a -50 native assistance acceptance modifier; its optional use is user-authorized.",
+    "Frankokratia start/joins use crusading_claim_cb; native departure removes the actor from frankokratia_leaders, but randomly selects a war. Constrain iteration to the selected war.",
+    "stress_impact accepts additive literal trait amounts and does not modify spiritual fulfillment. Both independent optional rules default on by user choice.",
+    "Native message_filter_type keys exist for allied, enemy and player participation. Engine notification duplication is not source-proven.",
+    "break_alliance delegates native embassy/opinion/blood-brother/betrothal consequences; do not reproduce these callbacks.",
+    "No blanket GHW/adventurer-native restrictions are imposed on landed participants. GHW semantics remain an explicit runtime acceptance case."
+  ],
+  "engine_declarations": [
+    {
+      "category": "effect",
+      "name": "clear_saved_scope",
+      "source": {
+        "path": "update-readiness/runtime-evidence/20261003T005950.086458Z/script-docs/effects.log.raw",
+        "sha256": "d3dbb758fb226d584b8b00fa84db9a4c494a2519a043116ff9d0cb7bee308b03",
+        "original_path": "C:\\Users\\Serpens66\\Documents\\Paradox Interactive\\Crusader Kings III\\logs\\effects.log",
+        "mtime_ns": 1790989239570895800,
+        "decode_encoding": "cp1252",
+        "decode_note": "Reversible Windows-1252 candidate; original bytes retained"
+      },
+      "raw_text": "\nclear_saved_scope - Clears a saved scope from the top scope\nsave_scope_as = cool_scope -> clear_saved_scope = cool_scope\nSupported Scopes: none\n\n",
+      "line": 243,
+      "span_start": 242,
+      "span_end": 246,
+      "supported_scopes": [
+        "none"
+      ],
+      "supported_targets": [],
+      "parameter_documentation": [
+        "save_scope_as = cool_scope -> clear_saved_scope = cool_scope"
+      ]
+    },
+    {
+      "category": "effect",
+      "name": "remove_list_variable",
+      "source": {
+        "path": "update-readiness/runtime-evidence/20261003T005950.086458Z/script-docs/effects.log.raw",
+        "sha256": "d3dbb758fb226d584b8b00fa84db9a4c494a2519a043116ff9d0cb7bee308b03",
+        "original_path": "C:\\Users\\Serpens66\\Documents\\Paradox Interactive\\Crusader Kings III\\logs\\effects.log",
+        "mtime_ns": 1790989239570895800,
+        "decode_encoding": "cp1252",
+        "decode_note": "Reversible Windows-1252 candidate; original bytes retained"
+      },
+      "raw_text": "\nremove_list_variable - Removes the target from a variable list\nremove_list_variable = { name = X target = Y }\nWhere X is the name of the variable\nWhere Y is an event target\nSupported Scopes: none\n\n",
+      "line": 2591,
+      "span_start": 2590,
+      "span_end": 2596,
+      "supported_scopes": [
+        "none"
+      ],
+      "supported_targets": [],
+      "parameter_documentation": [
+        "remove_list_variable = { name = X target = Y }"
+      ]
+    },
+    {
+      "category": "effect",
+      "name": "remove_variable",
+      "source": {
+        "path": "update-readiness/runtime-evidence/20261003T005950.086458Z/script-docs/effects.log.raw",
+        "sha256": "d3dbb758fb226d584b8b00fa84db9a4c494a2519a043116ff9d0cb7bee308b03",
+        "original_path": "C:\\Users\\Serpens66\\Documents\\Paradox Interactive\\Crusader Kings III\\logs\\effects.log",
+        "mtime_ns": 1790989239570895800,
+        "decode_encoding": "cp1252",
+        "decode_note": "Reversible Windows-1252 candidate; original bytes retained"
+      },
+      "raw_text": "\nremove_variable - Removes a variable\nremove_variable = variable_name\nSupported Scopes: none\n\n",
+      "line": 2617,
+      "span_start": 2616,
+      "span_end": 2620,
+      "supported_scopes": [
+        "none"
+      ],
+      "supported_targets": [],
+      "parameter_documentation": [
+        "remove_variable = variable_name"
+      ]
+    },
+    {
+      "category": "effect",
+      "name": "save_scope_as",
+      "source": {
+        "path": "update-readiness/runtime-evidence/20261003T005950.086458Z/script-docs/effects.log.raw",
+        "sha256": "d3dbb758fb226d584b8b00fa84db9a4c494a2519a043116ff9d0cb7bee308b03",
+        "original_path": "C:\\Users\\Serpens66\\Documents\\Paradox Interactive\\Crusader Kings III\\logs\\effects.log",
+        "mtime_ns": 1790989239570895800,
+        "decode_encoding": "cp1252",
+        "decode_note": "Reversible Windows-1252 candidate; original bytes retained"
+      },
+      "raw_text": "\nsave_scope_as - Saves the current scope as an arbitrarily-named target to be referenced later in the (unbroken) event chain\nsave_event_target_as = <string>\nSupported Scopes: none\n\n",
+      "line": 2675,
+      "span_start": 2674,
+      "span_end": 2678,
+      "supported_scopes": [
+        "none"
+      ],
+      "supported_targets": [],
+      "parameter_documentation": [
+        "save_event_target_as = <string>"
+      ]
+    },
+    {
+      "category": "effect",
+      "name": "trigger_event",
+      "source": {
+        "path": "update-readiness/runtime-evidence/20261003T005950.086458Z/script-docs/effects.log.raw",
+        "sha256": "d3dbb758fb226d584b8b00fa84db9a4c494a2519a043116ff9d0cb7bee308b03",
+        "original_path": "C:\\Users\\Serpens66\\Documents\\Paradox Interactive\\Crusader Kings III\\logs\\effects.log",
+        "mtime_ns": 1790989239570895800,
+        "decode_encoding": "cp1252",
+        "decode_note": "Reversible Windows-1252 candidate; original bytes retained"
+      },
+      "raw_text": "\ntrigger_event - triggers an event or on_action\ntrigger_event = {\n    id = <event ID>                               # or:\n    on_action = <on_action name>                  # or:\n    saved_event_id = <event target with event ID> # example: scope:my_flag_name\n    \n    # optionally, the event can be delayed via one of those choices:    days/months/years = <num>\n    days/months/years = { <num> <num> }           # pick a value randomly from the range\n    trigger_on_next_date = \"<year>.<month>.<day>\" # trigger on a specific date in the future\n    trigger_on_next_date = \"<month>.<day>\"        # trigger the next time this date is reached (this or next year)\n    delayed = yes                                 # delay to the next tick\n}\nSupported Scopes: none\n\n",
+      "line": 2908,
+      "span_start": 2907,
+      "span_end": 2921,
+      "supported_scopes": [
+        "none"
+      ],
+      "supported_targets": [],
+      "parameter_documentation": [
+        "trigger_event = {",
+        "id = <event ID>                               # or:",
+        "on_action = <on_action name>                  # or:",
+        "saved_event_id = <event target with event ID> # example: scope:my_flag_name",
+        "trigger_on_next_date = \"<year>.<month>.<day>\" # trigger on a specific date in the future",
+        "trigger_on_next_date = \"<month>.<day>\"        # trigger the next time this date is reached (this or next year)",
+        "delayed = yes                                 # delay to the next tick"
+      ]
+    },
+    {
+      "category": "effect",
+      "name": "add_character_flag",
+      "source": {
+        "path": "update-readiness/runtime-evidence/20261003T005950.086458Z/script-docs/effects.log.raw",
+        "sha256": "d3dbb758fb226d584b8b00fa84db9a4c494a2519a043116ff9d0cb7bee308b03",
+        "original_path": "C:\\Users\\Serpens66\\Documents\\Paradox Interactive\\Crusader Kings III\\logs\\effects.log",
+        "mtime_ns": 1790989239570895800,
+        "decode_encoding": "cp1252",
+        "decode_note": "Reversible Windows-1252 candidate; original bytes retained"
+      },
+      "raw_text": "\nadd_character_flag - adds a character flag\nusage:\nadd_character_flag = X\nadd_character_flag = { flag = X days/weeks/years = Y }\nwhere X is the name of the flag and Y is a value or value interval \"{ min max }\"\nSupported Scopes: character\n\n",
+      "line": 2984,
+      "span_start": 2983,
+      "span_end": 2990,
+      "supported_scopes": [
+        "character"
+      ],
+      "supported_targets": [],
+      "parameter_documentation": [
+        "add_character_flag = X",
+        "add_character_flag = { flag = X days/weeks/years = Y }"
+      ]
+    },
+    {
+      "category": "effect",
+      "name": "add_opinion",
+      "source": {
+        "path": "update-readiness/runtime-evidence/20261003T005950.086458Z/script-docs/effects.log.raw",
+        "sha256": "d3dbb758fb226d584b8b00fa84db9a4c494a2519a043116ff9d0cb7bee308b03",
+        "original_path": "C:\\Users\\Serpens66\\Documents\\Paradox Interactive\\Crusader Kings III\\logs\\effects.log",
+        "mtime_ns": 1790989239570895800,
+        "decode_encoding": "cp1252",
+        "decode_note": "Reversible Windows-1252 candidate; original bytes retained"
+      },
+      "raw_text": "\nadd_opinion - Adds a temporary opinion modifier, add_opinion = { modifier = X days/months/years = Y target = Z }\nX is a scripted modifier name. Y can be a value or a range \"{ A B }\" If no timeout are specified, the modifier's scripted default timeout will be used.\nSupported Scopes: character\n\n",
+      "line": 3152,
+      "span_start": 3151,
+      "span_end": 3155,
+      "supported_scopes": [
+        "character"
+      ],
+      "supported_targets": [],
+      "parameter_documentation": []
+    },
+    {
+      "category": "effect",
+      "name": "add_prestige",
+      "source": {
+        "path": "update-readiness/runtime-evidence/20261003T005950.086458Z/script-docs/effects.log.raw",
+        "sha256": "d3dbb758fb226d584b8b00fa84db9a4c494a2519a043116ff9d0cb7bee308b03",
+        "original_path": "C:\\Users\\Serpens66\\Documents\\Paradox Interactive\\Crusader Kings III\\logs\\effects.log",
+        "mtime_ns": 1790989239570895800,
+        "decode_encoding": "cp1252",
+        "decode_note": "Reversible Windows-1252 candidate; original bytes retained"
+      },
+      "raw_text": "\nadd_prestige - gives (or takes) prestige to a character\nSupported Scopes: character\n\n",
+      "line": 3200,
+      "span_start": 3199,
+      "span_end": 3202,
+      "supported_scopes": [
+        "character"
+      ],
+      "supported_targets": [],
+      "parameter_documentation": []
+    },
+    {
+      "category": "effect",
+      "name": "add_prestige_experience",
+      "source": {
+        "path": "update-readiness/runtime-evidence/20261003T005950.086458Z/script-docs/effects.log.raw",
+        "sha256": "d3dbb758fb226d584b8b00fa84db9a4c494a2519a043116ff9d0cb7bee308b03",
+        "original_path": "C:\\Users\\Serpens66\\Documents\\Paradox Interactive\\Crusader Kings III\\logs\\effects.log",
+        "mtime_ns": 1790989239570895800,
+        "decode_encoding": "cp1252",
+        "decode_note": "Reversible Windows-1252 candidate; original bytes retained"
+      },
+      "raw_text": "\nadd_prestige_experience - gives (or takes) prestige experience to a character\nSupported Scopes: character\n\n",
+      "line": 3210,
+      "span_start": 3209,
+      "span_end": 3212,
+      "supported_scopes": [
+        "character"
+      ],
+      "supported_targets": [],
+      "parameter_documentation": []
+    },
+    {
+      "category": "effect",
+      "name": "break_alliance",
+      "source": {
+        "path": "update-readiness/runtime-evidence/20261003T005950.086458Z/script-docs/effects.log.raw",
+        "sha256": "d3dbb758fb226d584b8b00fa84db9a4c494a2519a043116ff9d0cb7bee308b03",
+        "original_path": "C:\\Users\\Serpens66\\Documents\\Paradox Interactive\\Crusader Kings III\\logs\\effects.log",
+        "mtime_ns": 1790989239570895800,
+        "decode_encoding": "cp1252",
+        "decode_note": "Reversible Windows-1252 candidate; original bytes retained"
+      },
+      "raw_text": "\nbreak_alliance - Breaks the alliance with the target character\nSupported Scopes: character\nSupported Targets: character\n\n",
+      "line": 3525,
+      "span_start": 3524,
+      "span_end": 3528,
+      "supported_scopes": [
+        "character"
+      ],
+      "supported_targets": [
+        "character"
+      ],
+      "parameter_documentation": []
+    },
+    {
+      "category": "effect",
+      "name": "every_owned_story",
+      "source": {
+        "path": "update-readiness/runtime-evidence/20261003T005950.086458Z/script-docs/effects.log.raw",
+        "sha256": "d3dbb758fb226d584b8b00fa84db9a4c494a2519a043116ff9d0cb7bee308b03",
+        "original_path": "C:\\Users\\Serpens66\\Documents\\Paradox Interactive\\Crusader Kings III\\logs\\effects.log",
+        "mtime_ns": 1790989239570895800,
+        "decode_encoding": "cp1252",
+        "decode_note": "Reversible Windows-1252 candidate; original bytes retained"
+      },
+      "raw_text": "\nevery_owned_story - Iterate through all owned stories for a character\nOptionally specify a story type filter\nany_owned_story = { type = story_cycle_pet_cat }\nevery_owned_story = { limit = { <triggers> } <effects> }\nSupported Scopes: character\nSupported Targets: story\n\n",
+      "line": 4887,
+      "span_start": 4886,
+      "span_end": 4893,
+      "supported_scopes": [
+        "character"
+      ],
+      "supported_targets": [
+        "story"
+      ],
+      "parameter_documentation": [
+        "any_owned_story = { type = story_cycle_pet_cat }",
+        "every_owned_story = { limit = { <triggers> } <effects> }"
+      ]
+    },
+    {
+      "category": "effect",
+      "name": "pay_short_term_gold",
+      "source": {
+        "path": "update-readiness/runtime-evidence/20261003T005950.086458Z/script-docs/effects.log.raw",
+        "sha256": "d3dbb758fb226d584b8b00fa84db9a4c494a2519a043116ff9d0cb7bee308b03",
+        "original_path": "C:\\Users\\Serpens66\\Documents\\Paradox Interactive\\Crusader Kings III\\logs\\effects.log",
+        "mtime_ns": 1790989239570895800,
+        "decode_encoding": "cp1252",
+        "decode_note": "Reversible Windows-1252 candidate; original bytes retained"
+      },
+      "raw_text": "\npay_short_term_gold - the scope character pays gold to the target character, pay_short_term_gold = { target = X gold = Y } (from AI budget category 'short term' first, then rest)\nSupported Scopes: character\n\n",
+      "line": 8142,
+      "span_start": 8141,
+      "span_end": 8144,
+      "supported_scopes": [
+        "character"
+      ],
+      "supported_targets": [],
+      "parameter_documentation": []
+    },
+    {
+      "category": "effect",
+      "name": "send_interface_message",
+      "source": {
+        "path": "update-readiness/runtime-evidence/20261003T005950.086458Z/script-docs/effects.log.raw",
+        "sha256": "d3dbb758fb226d584b8b00fa84db9a4c494a2519a043116ff9d0cb7bee308b03",
+        "original_path": "C:\\Users\\Serpens66\\Documents\\Paradox Interactive\\Crusader Kings III\\logs\\effects.log",
+        "mtime_ns": 1790989239570895800,
+        "decode_encoding": "cp1252",
+        "decode_note": "Reversible Windows-1252 candidate; original bytes retained"
+      },
+      "raw_text": "\nsend_interface_message - Sends a message to the player playing the character in the scope and then executes any effects inside.\nFor the message text and tooltip, $EFFECT$ contains the text description of the effects in the past tense.\nAnd $DESC$ contains the text from the desc field.\nsend_interface_message = {\n\ttype = message_type # default: send_interface_message\n\ttitle = LOCALIZATION # optional, otherwise takes it from the message type\n\tdesc = LOCALIZATION # optional, otherwise takes it from the message type\n\ttooltip = LOCALIZATION # optional, otherwise takes it from the message type\n\tleft_icon = scope:recipient # optional, character, artifact, title, dynasty, or house\n\tright_icon = scope:the_title # optional, character, artifact, title, dynasty, or house\n\t\t\n\t# optional effects...\n\tadd_dread = 5\n\tscope:someone = { add_gold = 5 }\n}\nSupported Scopes: character\n\n",
+      "line": 9999,
+      "span_start": 9998,
+      "span_end": 10015,
+      "supported_scopes": [
+        "character"
+      ],
+      "supported_targets": [],
+      "parameter_documentation": [
+        "send_interface_message = {",
+        "type = message_type # default: send_interface_message",
+        "title = LOCALIZATION # optional, otherwise takes it from the message type",
+        "desc = LOCALIZATION # optional, otherwise takes it from the message type",
+        "tooltip = LOCALIZATION # optional, otherwise takes it from the message type",
+        "left_icon = scope:recipient # optional, character, artifact, title, dynasty, or house",
+        "right_icon = scope:the_title # optional, character, artifact, title, dynasty, or house",
+        "add_dread = 5"
+      ]
+    },
+    {
+      "category": "effect",
+      "name": "stress_impact",
+      "source": {
+        "path": "update-readiness/runtime-evidence/20261003T005950.086458Z/script-docs/effects.log.raw",
+        "sha256": "d3dbb758fb226d584b8b00fa84db9a4c494a2519a043116ff9d0cb7bee308b03",
+        "original_path": "C:\\Users\\Serpens66\\Documents\\Paradox Interactive\\Crusader Kings III\\logs\\effects.log",
+        "mtime_ns": 1790989239570895800,
+        "decode_encoding": "cp1252",
+        "decode_note": "Reversible Windows-1252 candidate; original bytes retained"
+      },
+      "raw_text": "\nstress_impact - Adds stress to the character according to specified traits.\n\n<character> =\n\tstress_impact = {\n\t\tbase = value\t\t# base value that is always added, optional. Can be a scripted value.\n\t\ttrait = value\t\t# add this stress if the character has this trait. Does not support scripted values.\n\t\ttrait = value\t\t# multiple 'trait = value' lines are supported as long as each trait is only referenced once.\n\t}\n}\n\nValues are added together, so positive and negative additions will cancel each other.\nSupported Scopes: character\n\n",
+      "line": 10919,
+      "span_start": 10918,
+      "span_end": 10931,
+      "supported_scopes": [
+        "character"
+      ],
+      "supported_targets": [],
+      "parameter_documentation": [
+        "stress_impact = {",
+        "base = value\t\t# base value that is always added, optional. Can be a scripted value.",
+        "trait = value\t\t# add this stress if the character has this trait. Does not support scripted values.",
+        "trait = value\t\t# multiple 'trait = value' lines are supported as long as each trait is only referenced once."
+      ]
+    },
+    {
+      "category": "effect",
+      "name": "remove_participant",
+      "source": {
+        "path": "update-readiness/runtime-evidence/20261003T005950.086458Z/script-docs/effects.log.raw",
+        "sha256": "d3dbb758fb226d584b8b00fa84db9a4c494a2519a043116ff9d0cb7bee308b03",
+        "original_path": "C:\\Users\\Serpens66\\Documents\\Paradox Interactive\\Crusader Kings III\\logs\\effects.log",
+        "mtime_ns": 1790989239570895800,
+        "decode_encoding": "cp1252",
+        "decode_note": "Reversible Windows-1252 candidate; original bytes retained"
+      },
+      "raw_text": "\nremove_participant - removes the target character from the scope war\nSupported Scopes: war\nSupported Targets: character\n\n",
+      "line": 15804,
+      "span_start": 15803,
+      "span_end": 15807,
+      "supported_scopes": [
+        "war"
+      ],
+      "supported_targets": [
+        "character"
+      ],
+      "parameter_documentation": []
+    },
+    {
+      "category": "trigger",
+      "name": "is_target_in_variable_list",
+      "source": {
+        "path": "update-readiness/runtime-evidence/20261003T005950.086458Z/script-docs/triggers.log.raw",
+        "sha256": "62aeca6098d7c42b226b766b5ce8594c6cad3576267124434095c7ea88a2a744",
+        "original_path": "C:\\Users\\Serpens66\\Documents\\Paradox Interactive\\Crusader Kings III\\logs\\triggers.log",
+        "mtime_ns": 1790989239572896200,
+        "decode_encoding": "utf-8",
+        "decode_note": "UTF-8 compatible; no BOM"
+      },
+      "raw_text": "\nis_target_in_variable_list - Checks if a target is in a variable list\nis_target_in_variable_list = { name = X target = Y }\nWhere X is the name of the variable\nWhere Y is an event target\nSupported Scopes: none\n\n",
+      "line": 830,
+      "span_start": 829,
+      "span_end": 835,
+      "supported_scopes": [
+        "none"
+      ],
+      "supported_targets": [],
+      "parameter_documentation": [
+        "is_target_in_variable_list = { name = X target = Y }"
+      ]
+    },
+    {
+      "category": "trigger",
+      "name": "is_attacker",
+      "source": {
+        "path": "update-readiness/runtime-evidence/20261003T005950.086458Z/script-docs/triggers.log.raw",
+        "sha256": "62aeca6098d7c42b226b766b5ce8594c6cad3576267124434095c7ea88a2a744",
+        "original_path": "C:\\Users\\Serpens66\\Documents\\Paradox Interactive\\Crusader Kings III\\logs\\triggers.log",
+        "mtime_ns": 1790989239572896200,
+        "decode_encoding": "utf-8",
+        "decode_note": "UTF-8 compatible; no BOM"
+      },
+      "raw_text": "\nis_attacker - is the target character in the scope war as an attacker?\nTraits: character target \nSupported Scopes: war\n\n",
+      "line": 11027,
+      "span_start": 11026,
+      "span_end": 11030,
+      "supported_scopes": [
+        "war"
+      ],
+      "supported_targets": [],
+      "parameter_documentation": []
+    },
+    {
+      "category": "trigger",
+      "name": "is_defender",
+      "source": {
+        "path": "update-readiness/runtime-evidence/20261003T005950.086458Z/script-docs/triggers.log.raw",
+        "sha256": "62aeca6098d7c42b226b766b5ce8594c6cad3576267124434095c7ea88a2a744",
+        "original_path": "C:\\Users\\Serpens66\\Documents\\Paradox Interactive\\Crusader Kings III\\logs\\triggers.log",
+        "mtime_ns": 1790989239572896200,
+        "decode_encoding": "utf-8",
+        "decode_note": "UTF-8 compatible; no BOM"
+      },
+      "raw_text": "\nis_defender - is the target character in the scope war as a defender?\nTraits: character target \nSupported Scopes: war\n\n",
+      "line": 11039,
+      "span_start": 11038,
+      "span_end": 11042,
+      "supported_scopes": [
+        "war"
+      ],
+      "supported_targets": [],
+      "parameter_documentation": []
+    },
+    {
+      "category": "trigger",
+      "name": "is_participant",
+      "source": {
+        "path": "update-readiness/runtime-evidence/20261003T005950.086458Z/script-docs/triggers.log.raw",
+        "sha256": "62aeca6098d7c42b226b766b5ce8594c6cad3576267124434095c7ea88a2a744",
+        "original_path": "C:\\Users\\Serpens66\\Documents\\Paradox Interactive\\Crusader Kings III\\logs\\triggers.log",
+        "mtime_ns": 1790989239572896200,
+        "decode_encoding": "utf-8",
+        "decode_note": "UTF-8 compatible; no BOM"
+      },
+      "raw_text": "\nis_participant - is the target character participating in the scope war as an attacker or defender?\nTraits: character target \nSupported Scopes: war\n\n",
+      "line": 11045,
+      "span_start": 11044,
+      "span_end": 11048,
+      "supported_scopes": [
+        "war"
+      ],
+      "supported_targets": [],
+      "parameter_documentation": []
+    },
+    {
+      "category": "trigger",
+      "name": "is_war_leader",
+      "source": {
+        "path": "update-readiness/runtime-evidence/20261003T005950.086458Z/script-docs/triggers.log.raw",
+        "sha256": "62aeca6098d7c42b226b766b5ce8594c6cad3576267124434095c7ea88a2a744",
+        "original_path": "C:\\Users\\Serpens66\\Documents\\Paradox Interactive\\Crusader Kings III\\logs\\triggers.log",
+        "mtime_ns": 1790989239572896200,
+        "decode_encoding": "utf-8",
+        "decode_note": "UTF-8 compatible; no BOM"
+      },
+      "raw_text": "\nis_war_leader - is the target character leading one of the sides in the scope war?\nTraits: character target \nSupported Scopes: war\n\n",
+      "line": 11051,
+      "span_start": 11050,
+      "span_end": 11054,
+      "supported_scopes": [
+        "war"
+      ],
+      "supported_targets": [],
+      "parameter_documentation": []
+    }
+  ],
+  "engine_reference_sha256": "e46ae9bf3252b01ba9163705ccb4f92d6630434bd2966464c65783cf7a555edb",
+  "engine_commit": "4fe04c7143e6288cf1da609145c22d0ddc3c8878"
+}
