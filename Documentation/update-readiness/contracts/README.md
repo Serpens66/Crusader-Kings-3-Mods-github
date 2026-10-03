@@ -47,8 +47,8 @@ Current engine declarations are now indexed. These cards complement, rather than
 | [SI-PARDON](SI-PARDON.md) | export declarations available | Use versus remove-hook semantics and original pardon purpose |
 | [SI-MONEY](SI-MONEY.md) | export declarations available | Exact actor-side debit/credit and target revalidation |
 | [SI-EXCOMM](SI-EXCOMM.md) | export declarations available | Required EXCOMMUNICATOR, removed helper, intended temporal policy |
-| [SI-CONVERSION](SI-CONVERSION.md) | export declarations available | Same shared MC work package; test bundle separately |
-| [SI-WARS](SI-WARS.md) | export declarations available | Same shared LW work package; test bundle separately |
+| [SI-CONVERSION](SI-CONVERSION.md) | historical; removed 2026-10-03 | No longer part of the bundle; standalone MC contracts remain separate |
+| [SI-WARS](SI-WARS.md) | historical; removed 2026-10-03 | No longer part of the bundle; standalone LW contracts remain separate |
 
 ## Mass conversion source supplement — 2026-10-03
 

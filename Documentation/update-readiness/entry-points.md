@@ -1,5 +1,7 @@
 # Mod entry points and supporting definitions
 
+**Historical inventory:** the SerpInteractionsDecisions conversion/Leave Wars rows below were removed on 2026-10-03; see [current separation record](mods/serp-interactions-decisions.md#bundle-separation--2026-10-03).
+
 Complete lexical top-level definition inventory for relevant gameplay content. Localization keys and binary assets are inventoried separately. Field/type legality is not inferred from this table.
 
 | Package | Source | Definitions with lines |

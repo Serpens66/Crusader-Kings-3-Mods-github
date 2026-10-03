@@ -1,5 +1,7 @@
 # SI-WARS contract card
 
+**Removed from the current bundle on 2026-10-03.** This card is historical evidence, not an active implementation or update requirement. Use the standalone feature contracts instead; see [bundle separation](../mods/serp-interactions-decisions.md#bundle-separation--2026-10-03).
+
 Family: **SerpInteractionsDecisions**. Runtime: **not run**. Declaration status: **export declarations available**.
 
 [Original intent, costs, mechanics, variants and tests](../mods/serp-interactions-decisions.md) · [Behavior guide](../../workspace/function-contracts.md)

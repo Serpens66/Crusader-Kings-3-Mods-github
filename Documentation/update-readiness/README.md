@@ -32,7 +32,7 @@ Research date: **2026-10-03**. All 18,710 previously indexed native text/referen
 | [Leave Wars](mods/leave-wars.md) | Standalone and bundle content are byte-identical; current war-state revalidation and command contracts are prerequisites |
 | [Mass Demand Conversion](mods/mass-demand-conversion.md) | Current standalone 1.078 declares 1.20.*; [two acceptance overrides](mods/mass-demand-conversion-notifications-20261003.md) now have targeted source/caller watches. [Native tests](mods/mass-demand-conversion-tests.md) and G01–G05 remain open |
 | [SerpAlerts](mods/serp-alerts.md) | Eight important-action types and four active hook subscriptions; verify current contexts, overlap and recipient routing |
-| [SerpInteractionsDecisions](mods/serp-interactions-decisions.md) | Eight feature families; proven helper mismatch in excommunication; exact 500-gold display bug; succession and delayed education need focused tests |
+| [SerpInteractionsDecisions](mods/serp-interactions-decisions.md) | Six current feature families (embedded conversion/Leave Wars removed 2026-10-03; see the sheet); proven helper mismatch in excommunication; exact 500-gold display bug; succession and delayed education need focused tests |
 
 The independent Knight Manager packages and `test` are excluded from updates at the user's request. Their overlaps are still recorded because enabling them can affect retained packages. No exclusion means deleting their directories.
 

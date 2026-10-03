@@ -22,9 +22,9 @@ The same Knight Manager callback/helper names occur in several directories. They
 
 ## Mass Demand Conversion
 
-Primary entry point: `common/decisions/mod_mass_convert_subjects.txt`. The decision offers group choices and queries native interaction acceptance for direct/indirect vassals, tributaries, courtiers and house members. The standalone version includes newer picture-block syntax and extra candidate handling compared with the bundle version.
+Primary entry point: `common/decisions/mod_mass_convert_subjects.txt`. The decision offers group choices and queries native interaction acceptance for direct/indirect vassals, tributaries, courtiers and house members. The standalone version includes newer picture-block syntax and extra candidate handling compared with the historical bundle version, removed on 2026-10-03.
 
-The script-value file supports UI/count calculations. The `accept_conversion_notification` file contains a fully commented-out native event experiment. It is inactive in both standalone and bundle; do not count it as an active override. See the [update sheet](../update-readiness/mods/mass-demand-conversion.md) for the checked current status.
+The script-value file supports UI/count calculations. At the historical inventory stage, `accept_conversion_notification` was a fully commented-out experiment in both distributions. The inactive bundle file was removed on 2026-10-03; current standalone 1.078 has active notification overrides, documented in the [notification report](../update-readiness/mods/mass-demand-conversion-notifications-20261003.md).
 
 **Reusable:** classify target sets, retain native interaction rules, share numeric calculations. **Re-audit:** current faith/rite conversion API and exact dispatch helper chain, treatment of indirect vassals, candidate duplication, widget flags, consent and preview costs.
 
@@ -34,11 +34,11 @@ The interaction identifies shared wars, saves up to ten named war scopes, and di
 
 Source comments document an older hardcoded-picker limitation. Preserve that as author reasoning; validate whether it still holds before choosing the same workaround. Test what happens with more than ten candidates, ended wars, changed participants and war leadership.
 
-The same feature appears inside `SerpInteractionsDecisions`, including shared identifiers. Loading both forms may duplicate/override definitions. Future changes must identify which distribution is being targeted.
+Historically the same feature appeared inside `SerpInteractionsDecisions`, including shared identifiers. That embedded copy was removed on 2026-10-03; future Leave Wars changes target the standalone distribution.
 
 ## SerpInteractionsDecisions
 
-This bundle includes resource conversion, abdication, additional education, pardon hooks, multiplayer money sending, temporary excommunication, conversion and leaving wars. Entry points are decisions/interactions; event chains implement follow-up choices. Prices, opinion/static modifiers and localization are separate dependencies.
+This bundle now includes resource conversion, abdication, additional education, pardon hooks, multiplayer money sending and temporary excommunication. Embedded conversion and leaving wars were removed on 2026-10-03; see the [separation record](../update-readiness/mods/serp-interactions-decisions.md#bundle-separation--2026-10-03). Entry points are decisions/interactions; event chains implement follow-up choices. Prices, opinion/static modifiers and localization are separate dependencies.
 
 `pardon_hook_interaction` is a compact example: display a usable-hook requirement, consume it in actor scope, and add opinion on the recipient toward the actor. The additional-education feature illustrates costs plus event/modifier dependencies. Resource conversion illustrates a decision launching a choice event.
 

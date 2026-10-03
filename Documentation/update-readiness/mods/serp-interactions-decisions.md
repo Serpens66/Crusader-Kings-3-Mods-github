@@ -1,5 +1,7 @@
 # SerpInteractionsDecisions update sheet
 
+**Current scope: six feature families.** Embedded Mass Demand Conversion and Leave Wars were removed on 2026-10-03; see [bundle separation](#bundle-separation--2026-10-03). The original eight-family audit below is retained as historical evidence; removed-family implementation instructions are no longer applicable.
+
 Purpose: retain the bundle's existing utility decisions/interactions, their custom prices and consequences. Do not turn compatibility work into a new balance package. All scripts, dependencies, event branches, modifiers and EN/DE text were read; other translations are inventoried. Current native contracts and remaining engine gaps are listed in [sources](../sources.md).
 
 ## Feature packages
@@ -86,3 +88,13 @@ Follow the [mandatory update workflow](../../handbook/mod-update-workflow.md). A
 **Required regression acceptance:** All original family-specific tests: affordability/threshold boundaries, missing councillors/rite/head, weak/strong hooks, payer/student death and days 364–367, repeat/save/reload and two-player actions. Passing one family does not certify the bundle.
 
 Known watch lists are curated source registrations, not a complete semantic/transitive graph. Add newly discovered relevant dependencies after their source audit. Keep future reports and baselines dated; preserve older evidence, user edits and distribution identity. No source hash or successful parser run establishes gameplay/GUI/MP compatibility. Release metadata remains gated by the prescribed actual tests unless the user explicitly authorizes a separate target declaration.
+
+## Bundle separation — 2026-10-03
+
+At the user's request, the 14 embedded Leave Wars files and 10 embedded Mass Demand Conversion files were removed, including all seven translations for each feature and the inactive conversion-notification experiment. The current package contains six feature families: abdication, resource conversion, additional education, pardon hooks, multiplayer money transfers and temporal excommunication. Neither standalone mod is required.
+
+Earlier eight-family descriptions, source inventories, baselines and SI-CONVERSION/SI-WARS gates describe the historical package. They must not cause removed features to be restored or standalone changes to be copied into this package. The original watch registrations remain historical source evidence; no new Vanilla baseline or compatibility certification is introduced by this packaging change.
+
+Static verification: all removed public script/localization identifiers were checked for references in the retained package; no references or shared public script/localization IDs with either standalone remain. Retained bundle files, both standalone directories, descriptors and thumbnail were preserved byte-for-byte. See [removal evidence](../evidence/serp-interactions-decisions-separation-20261003.json).
+
+Runtime acceptance remains **not run**: load the reduced package alone, then with both standalone mods; inspect startup/conflict logs and visible decisions/interactions, confirm each standalone feature appears once and exercise the six retained families. This separation removes the duplicate content; it does not certify current game-version, gameplay or multiplayer compatibility.

@@ -215,6 +215,8 @@ Other files: 1. Extensions: `.dds`: 1
 | `localization/spanish/serp_alerts_messages_mod_l_spanish.yml` | no |  |
 ## SerpInteractionsDecisions
 
+**Historical inventory below:** 24 listed files were removed on 2026-10-03. The current package retains 27 text/reference files and its thumbnail. See [separation record](../update-readiness/mods/serp-interactions-decisions.md#bundle-separation--2026-10-03).
+
 Text/reference files indexed: 51. External descriptor: `SerpInteractionsDecisions.mod` (present).
 
 - `version = "1.26"`
