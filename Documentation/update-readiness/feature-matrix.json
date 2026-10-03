@@ -1,0 +1,356 @@
+{
+  "version": "1.20.0.3 (Crozier)",
+  "date": "2026-10-03",
+  "features": [
+    {
+      "id": "CD-COMBAT",
+      "sheet": "mods/custom-defines.md",
+      "status": "plan ready",
+      "mechanics": "Relevant: current combat coefficient",
+      "resolution": "Main-phase casualty comparison; engine numerical run pending",
+      "runtime": "not run"
+    },
+    {
+      "id": "CD-DYNASTY",
+      "sheet": "mods/custom-defines.md",
+      "status": "plan ready",
+      "mechanics": "Relevant: current highest tiers and dynasty contributions",
+      "resolution": "Native keys verified; gameplay contribution/cap test pending",
+      "runtime": "not run"
+    },
+    {
+      "id": "CD-MAP",
+      "sheet": "mods/custom-defines.md",
+      "status": "plan ready",
+      "mechanics": "Relevant: current map/event UI",
+      "resolution": "Exact keys verified; zoom and option rendering pending",
+      "runtime": "not run"
+    },
+    {
+      "id": "CD-RULES",
+      "sheet": "mods/custom-defines.md",
+      "status": "blocked contract",
+      "mechanics": "Relevant: current rules/preset UI",
+      "resolution": "UI export, nested loader precedence, current-type rebase",
+      "runtime": "not run"
+    },
+    {
+      "id": "CD-LOBBY",
+      "sheet": "mods/custom-defines.md",
+      "status": "blocked contract",
+      "mechanics": "Relevant: current character types",
+      "resolution": "Designer overloads and engine post-start permission",
+      "runtime": "not run"
+    },
+    {
+      "id": "CD-TOOLTIPS",
+      "sheet": "mods/custom-defines.md",
+      "status": "blocked contract",
+      "mechanics": "Relevant: current health UI",
+      "resolution": "Datatype signatures, consumer and rendered values",
+      "runtime": "not run"
+    },
+    {
+      "id": "CD-KNIGHTS",
+      "sheet": "mods/custom-defines.md",
+      "status": "plan ready",
+      "mechanics": "Relevant: excluded duplicate knight feature",
+      "resolution": "12-file removal; incoming references and native UI regression",
+      "runtime": "not run"
+    },
+    {
+      "id": "GC-ICONS",
+      "sheet": "mods/gender-colour.md",
+      "status": "blocked render",
+      "mechanics": "Relevant: current gender/status consumers",
+      "resolution": "Frame selection and render acceptance",
+      "runtime": "not run"
+    },
+    {
+      "id": "GC-EXTRAS",
+      "sheet": "mods/gender-colour.md",
+      "status": "blocked consumer",
+      "mechanics": "Unresolved: variant consumption",
+      "resolution": "Actual static/dynamic references before packaging changes",
+      "runtime": "not run"
+    },
+    {
+      "id": "GC-PACKAGE",
+      "sheet": "mods/gender-colour.md",
+      "status": "plan ready",
+      "mechanics": "Not relevant: new gameplay mechanics",
+      "resolution": "Preview present; preserve identity; metadata after tests",
+      "runtime": "not run"
+    },
+    {
+      "id": "GS-ICONS",
+      "sheet": "mods/gfx-mod-serp.md",
+      "status": "blocked consumer",
+      "mechanics": "Relevant: current icon/trait consumers",
+      "resolution": "291 absent same paths; 41 size mismatches; current mapping",
+      "runtime": "not run"
+    },
+    {
+      "id": "GS-RANK",
+      "sheet": "mods/gfx-mod-serp.md",
+      "status": "blocked contract",
+      "mechanics": "Relevant: current title-tier frames",
+      "resolution": "GX-RANK mapping; separate local art validation",
+      "runtime": "not run"
+    },
+    {
+      "id": "GS-ILLUSTRATIONS",
+      "sheet": "mods/gfx-mod-serp.md",
+      "status": "blocked render",
+      "mechanics": "Relevant: current regiment/character UI",
+      "resolution": "Consumer/aspect/frame rendering",
+      "runtime": "not run"
+    },
+    {
+      "id": "GS-CONTAINERS",
+      "sheet": "mods/gfx-mod-serp.md",
+      "status": "blocked render",
+      "mechanics": "Unresolved: current PNG-under-dds loading",
+      "resolution": "Current engine acceptance; no silent conversion",
+      "runtime": "not run"
+    },
+    {
+      "id": "GS-POST",
+      "sheet": "mods/gfx-mod-serp.md",
+      "status": "plan ready",
+      "mechanics": "Relevant: current map volumes/zoom",
+      "resolution": "Six exact assignments; BOM upon editing; render transition test",
+      "runtime": "not run"
+    },
+    {
+      "id": "GS-PACKAGE",
+      "sheet": "mods/gfx-mod-serp.md",
+      "status": "plan ready",
+      "mechanics": "Not relevant: new gameplay additions",
+      "resolution": "Local registration and credits; do not publish over public variant",
+      "runtime": "not run"
+    },
+    {
+      "id": "GX-RANK",
+      "sheet": "mods/gfx-mod.md",
+      "status": "blocked contract",
+      "mechanics": "Relevant: current title-tier frames",
+      "resolution": "Current frame mapping and atlas rendering",
+      "runtime": "not run"
+    },
+    {
+      "id": "GX-ARTIFACT",
+      "sheet": "mods/gfx-mod.md",
+      "status": "blocked render",
+      "mechanics": "Relevant: existing artifact UI states",
+      "resolution": "Current consumers and common/unique/empty rendering",
+      "runtime": "not run"
+    },
+    {
+      "id": "GX-GENDER",
+      "sheet": "mods/gfx-mod.md",
+      "status": "blocked render",
+      "mechanics": "Relevant: current status frame consumers",
+      "resolution": "Separate graphical distribution and frame test",
+      "runtime": "not run"
+    },
+    {
+      "id": "GX-EXTRAS",
+      "sheet": "mods/gfx-mod.md",
+      "status": "blocked consumer",
+      "mechanics": "Unresolved: alternate asset consumption",
+      "resolution": "Static/dynamic references; no automatic deletion",
+      "runtime": "not run"
+    },
+    {
+      "id": "GX-PACKAGE",
+      "sheet": "mods/gfx-mod.md",
+      "status": "plan ready",
+      "mechanics": "Not relevant: gameplay additions",
+      "resolution": "Preserve public/local identity and original credits",
+      "runtime": "not run"
+    },
+    {
+      "id": "LW-SELECT",
+      "sheet": "mods/leave-wars.md",
+      "status": "blocked contract",
+      "mechanics": "Relevant: current secondary participation",
+      "resolution": "War predicates, saved context and selection-time revalidation",
+      "runtime": "not run"
+    },
+    {
+      "id": "LW-EXIT",
+      "sheet": "mods/leave-wars.md",
+      "status": "blocked contract",
+      "mechanics": "Relevant: modern native war removal",
+      "resolution": "Removal/cleanup/alliance/payment/experience contracts",
+      "runtime": "not run"
+    },
+    {
+      "id": "LW-RULES",
+      "sheet": "mods/leave-wars.md",
+      "status": "blocked contract",
+      "mechanics": "Relevant: new title tiers and notifications",
+      "resolution": "Rule arithmetic verified; accounting/duplicates need current engine tests",
+      "runtime": "not run"
+    },
+    {
+      "id": "MC-CANDIDATES",
+      "sheet": "mods/mass-demand-conversion.md",
+      "status": "blocked contract",
+      "mechanics": "Relevant: tributaries, domicile, diarch, faith/rite",
+      "resolution": "Query validity/context and count/send equality",
+      "runtime": "not run"
+    },
+    {
+      "id": "MC-DISPATCH",
+      "sheet": "mods/mass-demand-conversion.md",
+      "status": "blocked contract",
+      "mechanics": "Relevant: current conversion consequences",
+      "resolution": "Native actor initialization, consent, cooldown and consequence audit",
+      "runtime": "not run"
+    },
+    {
+      "id": "MC-VARIANTS",
+      "sheet": "mods/mass-demand-conversion.md",
+      "status": "plan ready after MC gates",
+      "mechanics": "Relevant: current schema and standalone categories",
+      "resolution": "Port verified standalone behavior to bundle; keep categories scoped",
+      "runtime": "not run"
+    },
+    {
+      "id": "SA-JOIN",
+      "sheet": "mods/serp-alerts.md",
+      "status": "blocked contract",
+      "mechanics": "Relevant: current war/diarch constraints",
+      "resolution": "Target-specific query and native scope:target contract",
+      "runtime": "not run"
+    },
+    {
+      "id": "SA-STOP",
+      "sheet": "mods/serp-alerts.md",
+      "status": "blocked contract",
+      "mechanics": "Relevant: current vassal-war authority",
+      "resolution": "Current selectable war and correct leader query context",
+      "runtime": "not run"
+    },
+    {
+      "id": "SA-EDUCATION",
+      "sheet": "mods/serp-alerts.md",
+      "status": "blocked contract",
+      "mechanics": "Relevant: current child/court eligibility",
+      "resolution": "Editing permission and current education view binding",
+      "runtime": "not run"
+    },
+    {
+      "id": "SA-CONVERSION",
+      "sheet": "mods/serp-alerts.md",
+      "status": "blocked contract",
+      "mechanics": "Relevant: current faith/rite/authority",
+      "resolution": "MC query gate; preserve three existing alert categories",
+      "runtime": "not run"
+    },
+    {
+      "id": "SA-WAR-START",
+      "sheet": "mods/serp-alerts.md",
+      "status": "blocked contract",
+      "mechanics": "Relevant: current CB context and native messages",
+      "resolution": "Callback sets, list uniqueness and per-side duplicate tests",
+      "runtime": "not run"
+    },
+    {
+      "id": "SA-WAR-JOIN",
+      "sheet": "mods/serp-alerts.md",
+      "status": "blocked contract",
+      "mechanics": "Relevant: current joiner/war context",
+      "resolution": "Current participant exclusions and receiver-list contracts",
+      "runtime": "not run"
+    },
+    {
+      "id": "SA-DEATH",
+      "sheet": "mods/serp-alerts.md",
+      "status": "blocked contract",
+      "mechanics": "Relevant: pre-death state and optional killer",
+      "resolution": "Getter/icon timing and current native notification comparison",
+      "runtime": "not run"
+    },
+    {
+      "id": "SA-COURT",
+      "sheet": "mods/serp-alerts.md",
+      "status": "blocked contract",
+      "mechanics": "Relevant: current court/landless/employer state",
+      "resolution": "Old employer validity, current message delivery duplicates",
+      "runtime": "not run"
+    },
+    {
+      "id": "SI-ABDICATE",
+      "sheet": "mods/serp-interactions-decisions.md",
+      "status": "blocked contract",
+      "mechanics": "Relevant: governments, landless play, current succession",
+      "resolution": "Preserve heir continuation; full player/title handoff contract",
+      "runtime": "not run"
+    },
+    {
+      "id": "SI-RESOURCES",
+      "sheet": "mods/serp-interactions-decisions.md",
+      "status": "narrow fixes ready; execution blocked",
+      "mechanics": "Relevant: council availability and accounting; no new currencies",
+      "resolution": "500 threshold/picture confirmed; loans/injury/list behavior unresolved",
+      "runtime": "not run"
+    },
+    {
+      "id": "SI-EDUCATION",
+      "sheet": "mods/serp-interactions-decisions.md",
+      "status": "blocked contract",
+      "mechanics": "Relevant: current delayed scopes and skill/modifier system",
+      "resolution": "Student reward exactly once, death/expiry/save lifecycle",
+      "runtime": "not run"
+    },
+    {
+      "id": "SI-PARDON",
+      "sheet": "mods/serp-interactions-decisions.md",
+      "status": "blocked contract",
+      "mechanics": "Unresolved: weak/strong consumption",
+      "resolution": "Use versus remove-hook semantics and original pardon purpose",
+      "runtime": "not run"
+    },
+    {
+      "id": "SI-MONEY",
+      "sheet": "mods/serp-interactions-decisions.md",
+      "status": "blocked contract",
+      "mechanics": "Relevant: current budgets and player control",
+      "resolution": "Exact actor-side debit/credit and target revalidation",
+      "runtime": "not run"
+    },
+    {
+      "id": "SI-EXCOMM",
+      "sheet": "mods/serp-interactions-decisions.md",
+      "status": "required fixes identified; policy blocked",
+      "mechanics": "Relevant: rites, authority, legitimacy, current recovery",
+      "resolution": "Required EXCOMMUNICATOR, removed helper, intended temporal policy",
+      "runtime": "not run"
+    },
+    {
+      "id": "SI-CONVERSION",
+      "sheet": "mods/serp-interactions-decisions.md",
+      "status": "blocked by MC",
+      "mechanics": "Relevant: current conversion schema/consequences",
+      "resolution": "Same shared MC work package; test bundle separately",
+      "runtime": "not run"
+    },
+    {
+      "id": "SI-WARS",
+      "sheet": "mods/serp-interactions-decisions.md",
+      "status": "blocked by LW",
+      "mechanics": "Relevant: modern war contracts",
+      "resolution": "Same shared LW work package; test bundle separately",
+      "runtime": "not run"
+    }
+  ],
+  "excluded": [
+    "Knight Manager (MP)",
+    "Knight Manager Continued (MP)",
+    "test"
+  ],
+  "coverage_rule": "Every retained functional family is linked to an authored source/evidence sheet and a change or a concrete gate."
+}

@@ -1,0 +1,1611 @@
+[
+  {
+    "workspace": "CustomDefines/gui/window_knights.gui",
+    "native": "gui/window_knights.gui",
+    "mod_lines": 472,
+    "native_lines": 1248,
+    "blocks": [
+      {
+        "change": "replace",
+        "mod_start": 8,
+        "mod_end": 8,
+        "native_start": 8,
+        "native_end": 8
+      },
+      {
+        "change": "replace",
+        "mod_start": 10,
+        "mod_end": 10,
+        "native_start": 10,
+        "native_end": 10
+      },
+      {
+        "change": "insert",
+        "mod_start": 13,
+        "mod_end": 12,
+        "native_start": 13,
+        "native_end": 13
+      },
+      {
+        "change": "replace",
+        "mod_start": 20,
+        "mod_end": 20,
+        "native_start": 21,
+        "native_end": 21
+      },
+      {
+        "change": "insert",
+        "mod_start": 26,
+        "mod_end": 25,
+        "native_start": 27,
+        "native_end": 27
+      },
+      {
+        "change": "replace",
+        "mod_start": 32,
+        "mod_end": 32,
+        "native_start": 34,
+        "native_end": 34
+      },
+      {
+        "change": "replace",
+        "mod_start": 39,
+        "mod_end": 39,
+        "native_start": 41,
+        "native_end": 42
+      },
+      {
+        "change": "delete",
+        "mod_start": 45,
+        "mod_end": 45,
+        "native_start": 48,
+        "native_end": 47
+      },
+      {
+        "change": "replace",
+        "mod_start": 49,
+        "mod_end": 58,
+        "native_start": 51,
+        "native_end": 59
+      },
+      {
+        "change": "replace",
+        "mod_start": 62,
+        "mod_end": 62,
+        "native_start": 63,
+        "native_end": 63
+      },
+      {
+        "change": "replace",
+        "mod_start": 64,
+        "mod_end": 65,
+        "native_start": 65,
+        "native_end": 65
+      },
+      {
+        "change": "insert",
+        "mod_start": 67,
+        "mod_end": 66,
+        "native_start": 67,
+        "native_end": 282
+      },
+      {
+        "change": "replace",
+        "mod_start": 70,
+        "mod_end": 94,
+        "native_start": 286,
+        "native_end": 290
+      },
+      {
+        "change": "replace",
+        "mod_start": 96,
+        "mod_end": 99,
+        "native_start": 292,
+        "native_end": 294
+      },
+      {
+        "change": "replace",
+        "mod_start": 101,
+        "mod_end": 112,
+        "native_start": 296,
+        "native_end": 301
+      },
+      {
+        "change": "replace",
+        "mod_start": 114,
+        "mod_end": 117,
+        "native_start": 303,
+        "native_end": 304
+      },
+      {
+        "change": "replace",
+        "mod_start": 119,
+        "mod_end": 130,
+        "native_start": 306,
+        "native_end": 310
+      },
+      {
+        "change": "replace",
+        "mod_start": 132,
+        "mod_end": 135,
+        "native_start": 312,
+        "native_end": 316
+      },
+      {
+        "change": "replace",
+        "mod_start": 137,
+        "mod_end": 152,
+        "native_start": 318,
+        "native_end": 323
+      },
+      {
+        "change": "replace",
+        "mod_start": 154,
+        "mod_end": 157,
+        "native_start": 325,
+        "native_end": 329
+      },
+      {
+        "change": "replace",
+        "mod_start": 159,
+        "mod_end": 170,
+        "native_start": 331,
+        "native_end": 333
+      },
+      {
+        "change": "replace",
+        "mod_start": 172,
+        "mod_end": 192,
+        "native_start": 335,
+        "native_end": 338
+      },
+      {
+        "change": "replace",
+        "mod_start": 195,
+        "mod_end": 197,
+        "native_start": 341,
+        "native_end": 396
+      },
+      {
+        "change": "replace",
+        "mod_start": 201,
+        "mod_end": 212,
+        "native_start": 400,
+        "native_end": 400
+      },
+      {
+        "change": "replace",
+        "mod_start": 214,
+        "mod_end": 217,
+        "native_start": 402,
+        "native_end": 406
+      },
+      {
+        "change": "replace",
+        "mod_start": 219,
+        "mod_end": 230,
+        "native_start": 408,
+        "native_end": 410
+      },
+      {
+        "change": "replace",
+        "mod_start": 232,
+        "mod_end": 257,
+        "native_start": 412,
+        "native_end": 416
+      },
+      {
+        "change": "delete",
+        "mod_start": 261,
+        "mod_end": 261,
+        "native_start": 420,
+        "native_end": 419
+      },
+      {
+        "change": "replace",
+        "mod_start": 263,
+        "mod_end": 265,
+        "native_start": 421,
+        "native_end": 424
+      },
+      {
+        "change": "replace",
+        "mod_start": 267,
+        "mod_end": 271,
+        "native_start": 426,
+        "native_end": 429
+      },
+      {
+        "change": "replace",
+        "mod_start": 273,
+        "mod_end": 276,
+        "native_start": 431,
+        "native_end": 433
+      },
+      {
+        "change": "replace",
+        "mod_start": 278,
+        "mod_end": 281,
+        "native_start": 435,
+        "native_end": 438
+      },
+      {
+        "change": "replace",
+        "mod_start": 283,
+        "mod_end": 286,
+        "native_start": 440,
+        "native_end": 440
+      },
+      {
+        "change": "replace",
+        "mod_start": 288,
+        "mod_end": 288,
+        "native_start": 442,
+        "native_end": 445
+      },
+      {
+        "change": "replace",
+        "mod_start": 290,
+        "mod_end": 316,
+        "native_start": 447,
+        "native_end": 448
+      },
+      {
+        "change": "insert",
+        "mod_start": 319,
+        "mod_end": 318,
+        "native_start": 451,
+        "native_end": 460
+      },
+      {
+        "change": "replace",
+        "mod_start": 321,
+        "mod_end": 324,
+        "native_start": 463,
+        "native_end": 463
+      },
+      {
+        "change": "insert",
+        "mod_start": 328,
+        "mod_end": 327,
+        "native_start": 467,
+        "native_end": 469
+      },
+      {
+        "change": "replace",
+        "mod_start": 329,
+        "mod_end": 329,
+        "native_start": 471,
+        "native_end": 476
+      },
+      {
+        "change": "delete",
+        "mod_start": 331,
+        "mod_end": 331,
+        "native_start": 478,
+        "native_end": 477
+      },
+      {
+        "change": "replace",
+        "mod_start": 333,
+        "mod_end": 336,
+        "native_start": 479,
+        "native_end": 552
+      },
+      {
+        "change": "replace",
+        "mod_start": 339,
+        "mod_end": 339,
+        "native_start": 555,
+        "native_end": 558
+      },
+      {
+        "change": "replace",
+        "mod_start": 341,
+        "mod_end": 341,
+        "native_start": 560,
+        "native_end": 560
+      },
+      {
+        "change": "replace",
+        "mod_start": 343,
+        "mod_end": 343,
+        "native_start": 562,
+        "native_end": 562
+      },
+      {
+        "change": "replace",
+        "mod_start": 345,
+        "mod_end": 347,
+        "native_start": 564,
+        "native_end": 572
+      },
+      {
+        "change": "insert",
+        "mod_start": 350,
+        "mod_end": 349,
+        "native_start": 575,
+        "native_end": 580
+      },
+      {
+        "change": "replace",
+        "mod_start": 351,
+        "mod_end": 351,
+        "native_start": 582,
+        "native_end": 588
+      },
+      {
+        "change": "replace",
+        "mod_start": 353,
+        "mod_end": 357,
+        "native_start": 590,
+        "native_end": 599
+      },
+      {
+        "change": "delete",
+        "mod_start": 362,
+        "mod_end": 362,
+        "native_start": 604,
+        "native_end": 603
+      },
+      {
+        "change": "replace",
+        "mod_start": 364,
+        "mod_end": 366,
+        "native_start": 605,
+        "native_end": 608
+      },
+      {
+        "change": "replace",
+        "mod_start": 368,
+        "mod_end": 371,
+        "native_start": 610,
+        "native_end": 619
+      },
+      {
+        "change": "insert",
+        "mod_start": 376,
+        "mod_end": 375,
+        "native_start": 624,
+        "native_end": 625
+      },
+      {
+        "change": "replace",
+        "mod_start": 378,
+        "mod_end": 379,
+        "native_start": 628,
+        "native_end": 628
+      },
+      {
+        "change": "replace",
+        "mod_start": 381,
+        "mod_end": 436,
+        "native_start": 630,
+        "native_end": 630
+      },
+      {
+        "change": "delete",
+        "mod_start": 438,
+        "mod_end": 456,
+        "native_start": 632,
+        "native_end": 631
+      },
+      {
+        "change": "delete",
+        "mod_start": 458,
+        "mod_end": 463,
+        "native_start": 633,
+        "native_end": 632
+      },
+      {
+        "change": "insert",
+        "mod_start": 470,
+        "mod_end": 469,
+        "native_start": 639,
+        "native_end": 1160
+      },
+      {
+        "change": "insert",
+        "mod_start": 473,
+        "mod_end": 472,
+        "native_start": 1164,
+        "native_end": 1248
+      }
+    ]
+  },
+  {
+    "workspace": "GFX-Mod/credits.txt",
+    "native": "credits.txt",
+    "mod_lines": 16,
+    "native_lines": 11839,
+    "blocks": [
+      {
+        "change": "replace",
+        "mod_start": 1,
+        "mod_end": 2,
+        "native_start": 1,
+        "native_end": 1
+      },
+      {
+        "change": "replace",
+        "mod_start": 4,
+        "mod_end": 11,
+        "native_start": 3,
+        "native_end": 5
+      },
+      {
+        "change": "replace",
+        "mod_start": 13,
+        "mod_end": 14,
+        "native_start": 7,
+        "native_end": 147
+      },
+      {
+        "change": "insert",
+        "mod_start": 17,
+        "mod_end": 16,
+        "native_start": 150,
+        "native_end": 11839
+      }
+    ]
+  },
+  {
+    "workspace": "GFX-Mod Serp/credits.txt",
+    "native": "credits.txt",
+    "mod_lines": 18,
+    "native_lines": 11839,
+    "blocks": [
+      {
+        "change": "replace",
+        "mod_start": 1,
+        "mod_end": 2,
+        "native_start": 1,
+        "native_end": 1
+      },
+      {
+        "change": "replace",
+        "mod_start": 4,
+        "mod_end": 11,
+        "native_start": 3,
+        "native_end": 5
+      },
+      {
+        "change": "replace",
+        "mod_start": 13,
+        "mod_end": 15,
+        "native_start": 7,
+        "native_end": 431
+      },
+      {
+        "change": "insert",
+        "mod_start": 19,
+        "mod_end": 18,
+        "native_start": 435,
+        "native_end": 11839
+      }
+    ]
+  },
+  {
+    "workspace": "GFX-Mod Serp/gfx/map/post_effects/posteffect_volumes.txt",
+    "native": "gfx/map/post_effects/posteffect_volumes.txt",
+    "mod_lines": 120,
+    "native_lines": 119,
+    "blocks": [
+      {
+        "change": "replace",
+        "mod_start": 14,
+        "mod_end": 15,
+        "native_start": 14,
+        "native_end": 15
+      },
+      {
+        "change": "replace",
+        "mod_start": 23,
+        "mod_end": 24,
+        "native_start": 23,
+        "native_end": 24
+      },
+      {
+        "change": "replace",
+        "mod_start": 45,
+        "mod_end": 46,
+        "native_start": 45,
+        "native_end": 45
+      }
+    ]
+  },
+  {
+    "workspace": "Knight Manager (MP)/gui/window_knights.gui",
+    "native": "gui/window_knights.gui",
+    "mod_lines": 815,
+    "native_lines": 1248,
+    "blocks": [
+      {
+        "change": "replace",
+        "mod_start": 8,
+        "mod_end": 8,
+        "native_start": 8,
+        "native_end": 8
+      },
+      {
+        "change": "replace",
+        "mod_start": 10,
+        "mod_end": 10,
+        "native_start": 10,
+        "native_end": 10
+      },
+      {
+        "change": "insert",
+        "mod_start": 13,
+        "mod_end": 12,
+        "native_start": 13,
+        "native_end": 13
+      },
+      {
+        "change": "replace",
+        "mod_start": 20,
+        "mod_end": 20,
+        "native_start": 21,
+        "native_end": 21
+      },
+      {
+        "change": "insert",
+        "mod_start": 26,
+        "mod_end": 25,
+        "native_start": 27,
+        "native_end": 27
+      },
+      {
+        "change": "replace",
+        "mod_start": 40,
+        "mod_end": 40,
+        "native_start": 42,
+        "native_end": 42
+      },
+      {
+        "change": "replace",
+        "mod_start": 48,
+        "mod_end": 48,
+        "native_start": 50,
+        "native_end": 50
+      },
+      {
+        "change": "replace",
+        "mod_start": 51,
+        "mod_end": 51,
+        "native_start": 53,
+        "native_end": 54
+      },
+      {
+        "change": "replace",
+        "mod_start": 55,
+        "mod_end": 55,
+        "native_start": 58,
+        "native_end": 58
+      },
+      {
+        "change": "replace",
+        "mod_start": 60,
+        "mod_end": 61,
+        "native_start": 63,
+        "native_end": 63
+      },
+      {
+        "change": "delete",
+        "mod_start": 63,
+        "mod_end": 63,
+        "native_start": 65,
+        "native_end": 64
+      },
+      {
+        "change": "insert",
+        "mod_start": 66,
+        "mod_end": 65,
+        "native_start": 67,
+        "native_end": 68
+      },
+      {
+        "change": "delete",
+        "mod_start": 70,
+        "mod_end": 70,
+        "native_start": 73,
+        "native_end": 72
+      },
+      {
+        "change": "insert",
+        "mod_start": 72,
+        "mod_end": 71,
+        "native_start": 74,
+        "native_end": 74
+      },
+      {
+        "change": "replace",
+        "mod_start": 73,
+        "mod_end": 77,
+        "native_start": 76,
+        "native_end": 99
+      },
+      {
+        "change": "replace",
+        "mod_start": 83,
+        "mod_end": 84,
+        "native_start": 105,
+        "native_end": 107
+      },
+      {
+        "change": "replace",
+        "mod_start": 88,
+        "mod_end": 89,
+        "native_start": 111,
+        "native_end": 112
+      },
+      {
+        "change": "delete",
+        "mod_start": 93,
+        "mod_end": 93,
+        "native_start": 116,
+        "native_end": 115
+      },
+      {
+        "change": "insert",
+        "mod_start": 97,
+        "mod_end": 96,
+        "native_start": 119,
+        "native_end": 119
+      },
+      {
+        "change": "insert",
+        "mod_start": 106,
+        "mod_end": 105,
+        "native_start": 129,
+        "native_end": 132
+      },
+      {
+        "change": "replace",
+        "mod_start": 108,
+        "mod_end": 108,
+        "native_start": 135,
+        "native_end": 150
+      },
+      {
+        "change": "insert",
+        "mod_start": 115,
+        "mod_end": 114,
+        "native_start": 157,
+        "native_end": 157
+      },
+      {
+        "change": "delete",
+        "mod_start": 117,
+        "mod_end": 117,
+        "native_start": 160,
+        "native_end": 159
+      },
+      {
+        "change": "replace",
+        "mod_start": 120,
+        "mod_end": 120,
+        "native_start": 162,
+        "native_end": 162
+      },
+      {
+        "change": "replace",
+        "mod_start": 122,
+        "mod_end": 122,
+        "native_start": 164,
+        "native_end": 169
+      },
+      {
+        "change": "replace",
+        "mod_start": 128,
+        "mod_end": 136,
+        "native_start": 175,
+        "native_end": 175
+      },
+      {
+        "change": "delete",
+        "mod_start": 141,
+        "mod_end": 141,
+        "native_start": 180,
+        "native_end": 179
+      },
+      {
+        "change": "replace",
+        "mod_start": 143,
+        "mod_end": 154,
+        "native_start": 181,
+        "native_end": 182
+      },
+      {
+        "change": "replace",
+        "mod_start": 187,
+        "mod_end": 195,
+        "native_start": 215,
+        "native_end": 223
+      },
+      {
+        "change": "insert",
+        "mod_start": 203,
+        "mod_end": 202,
+        "native_start": 231,
+        "native_end": 232
+      },
+      {
+        "change": "insert",
+        "mod_start": 231,
+        "mod_end": 230,
+        "native_start": 261,
+        "native_end": 270
+      },
+      {
+        "change": "replace",
+        "mod_start": 237,
+        "mod_end": 256,
+        "native_start": 277,
+        "native_end": 283
+      },
+      {
+        "change": "delete",
+        "mod_start": 260,
+        "mod_end": 260,
+        "native_start": 287,
+        "native_end": 286
+      },
+      {
+        "change": "replace",
+        "mod_start": 264,
+        "mod_end": 265,
+        "native_start": 290,
+        "native_end": 290
+      },
+      {
+        "change": "replace",
+        "mod_start": 269,
+        "mod_end": 269,
+        "native_start": 294,
+        "native_end": 294
+      },
+      {
+        "change": "replace",
+        "mod_start": 287,
+        "mod_end": 288,
+        "native_start": 312,
+        "native_end": 344
+      },
+      {
+        "change": "replace",
+        "mod_start": 291,
+        "mod_end": 300,
+        "native_start": 347,
+        "native_end": 347
+      },
+      {
+        "change": "replace",
+        "mod_start": 302,
+        "mod_end": 335,
+        "native_start": 349,
+        "native_end": 350
+      },
+      {
+        "change": "replace",
+        "mod_start": 337,
+        "mod_end": 339,
+        "native_start": 352,
+        "native_end": 373
+      },
+      {
+        "change": "replace",
+        "mod_start": 342,
+        "mod_end": 357,
+        "native_start": 376,
+        "native_end": 379
+      },
+      {
+        "change": "replace",
+        "mod_start": 360,
+        "mod_end": 362,
+        "native_start": 382,
+        "native_end": 395
+      },
+      {
+        "change": "insert",
+        "mod_start": 366,
+        "mod_end": 365,
+        "native_start": 399,
+        "native_end": 407
+      },
+      {
+        "change": "replace",
+        "mod_start": 367,
+        "mod_end": 375,
+        "native_start": 409,
+        "native_end": 410
+      },
+      {
+        "change": "replace",
+        "mod_start": 377,
+        "mod_end": 385,
+        "native_start": 412,
+        "native_end": 416
+      },
+      {
+        "change": "delete",
+        "mod_start": 387,
+        "mod_end": 423,
+        "native_start": 418,
+        "native_end": 417
+      },
+      {
+        "change": "delete",
+        "mod_start": 425,
+        "mod_end": 492,
+        "native_start": 419,
+        "native_end": 418
+      },
+      {
+        "change": "replace",
+        "mod_start": 501,
+        "mod_end": 503,
+        "native_start": 427,
+        "native_end": 429
+      },
+      {
+        "change": "replace",
+        "mod_start": 505,
+        "mod_end": 508,
+        "native_start": 431,
+        "native_end": 433
+      },
+      {
+        "change": "replace",
+        "mod_start": 510,
+        "mod_end": 510,
+        "native_start": 435,
+        "native_end": 438
+      },
+      {
+        "change": "replace",
+        "mod_start": 512,
+        "mod_end": 525,
+        "native_start": 440,
+        "native_end": 440
+      },
+      {
+        "change": "replace",
+        "mod_start": 527,
+        "mod_end": 528,
+        "native_start": 442,
+        "native_end": 445
+      },
+      {
+        "change": "replace",
+        "mod_start": 530,
+        "mod_end": 532,
+        "native_start": 447,
+        "native_end": 447
+      },
+      {
+        "change": "replace",
+        "mod_start": 534,
+        "mod_end": 534,
+        "native_start": 449,
+        "native_end": 449
+      },
+      {
+        "change": "replace",
+        "mod_start": 536,
+        "mod_end": 538,
+        "native_start": 451,
+        "native_end": 454
+      },
+      {
+        "change": "insert",
+        "mod_start": 540,
+        "mod_end": 539,
+        "native_start": 456,
+        "native_end": 460
+      },
+      {
+        "change": "replace",
+        "mod_start": 541,
+        "mod_end": 541,
+        "native_start": 462,
+        "native_end": 466
+      },
+      {
+        "change": "replace",
+        "mod_start": 543,
+        "mod_end": 543,
+        "native_start": 468,
+        "native_end": 468
+      },
+      {
+        "change": "delete",
+        "mod_start": 545,
+        "mod_end": 545,
+        "native_start": 470,
+        "native_end": 469
+      },
+      {
+        "change": "replace",
+        "mod_start": 547,
+        "mod_end": 547,
+        "native_start": 471,
+        "native_end": 476
+      },
+      {
+        "change": "replace",
+        "mod_start": 552,
+        "mod_end": 552,
+        "native_start": 481,
+        "native_end": 481
+      },
+      {
+        "change": "replace",
+        "mod_start": 554,
+        "mod_end": 557,
+        "native_start": 483,
+        "native_end": 492
+      },
+      {
+        "change": "replace",
+        "mod_start": 560,
+        "mod_end": 563,
+        "native_start": 495,
+        "native_end": 540
+      },
+      {
+        "change": "replace",
+        "mod_start": 567,
+        "mod_end": 568,
+        "native_start": 544,
+        "native_end": 544
+      },
+      {
+        "change": "replace",
+        "mod_start": 571,
+        "mod_end": 574,
+        "native_start": 547,
+        "native_end": 550
+      },
+      {
+        "change": "delete",
+        "mod_start": 576,
+        "mod_end": 587,
+        "native_start": 552,
+        "native_end": 551
+      },
+      {
+        "change": "replace",
+        "mod_start": 591,
+        "mod_end": 593,
+        "native_start": 555,
+        "native_end": 555
+      },
+      {
+        "change": "replace",
+        "mod_start": 595,
+        "mod_end": 598,
+        "native_start": 557,
+        "native_end": 599
+      },
+      {
+        "change": "delete",
+        "mod_start": 603,
+        "mod_end": 603,
+        "native_start": 604,
+        "native_end": 603
+      },
+      {
+        "change": "replace",
+        "mod_start": 605,
+        "mod_end": 608,
+        "native_start": 605,
+        "native_end": 608
+      },
+      {
+        "change": "replace",
+        "mod_start": 610,
+        "mod_end": 614,
+        "native_start": 610,
+        "native_end": 617
+      },
+      {
+        "change": "replace",
+        "mod_start": 616,
+        "mod_end": 661,
+        "native_start": 619,
+        "native_end": 619
+      },
+      {
+        "change": "delete",
+        "mod_start": 667,
+        "mod_end": 670,
+        "native_start": 625,
+        "native_end": 624
+      },
+      {
+        "change": "delete",
+        "mod_start": 672,
+        "mod_end": 684,
+        "native_start": 626,
+        "native_end": 625
+      },
+      {
+        "change": "replace",
+        "mod_start": 687,
+        "mod_end": 692,
+        "native_start": 628,
+        "native_end": 631
+      },
+      {
+        "change": "delete",
+        "mod_start": 695,
+        "mod_end": 805,
+        "native_start": 634,
+        "native_end": 633
+      },
+      {
+        "change": "insert",
+        "mod_start": 814,
+        "mod_end": 813,
+        "native_start": 642,
+        "native_end": 1161
+      },
+      {
+        "change": "insert",
+        "mod_start": 816,
+        "mod_end": 815,
+        "native_start": 1164,
+        "native_end": 1248
+      }
+    ]
+  },
+  {
+    "workspace": "test/gui/window_knights.gui",
+    "native": "gui/window_knights.gui",
+    "mod_lines": 815,
+    "native_lines": 1248,
+    "blocks": [
+      {
+        "change": "replace",
+        "mod_start": 8,
+        "mod_end": 8,
+        "native_start": 8,
+        "native_end": 8
+      },
+      {
+        "change": "replace",
+        "mod_start": 10,
+        "mod_end": 10,
+        "native_start": 10,
+        "native_end": 10
+      },
+      {
+        "change": "insert",
+        "mod_start": 13,
+        "mod_end": 12,
+        "native_start": 13,
+        "native_end": 13
+      },
+      {
+        "change": "replace",
+        "mod_start": 20,
+        "mod_end": 20,
+        "native_start": 21,
+        "native_end": 21
+      },
+      {
+        "change": "insert",
+        "mod_start": 26,
+        "mod_end": 25,
+        "native_start": 27,
+        "native_end": 27
+      },
+      {
+        "change": "replace",
+        "mod_start": 40,
+        "mod_end": 40,
+        "native_start": 42,
+        "native_end": 42
+      },
+      {
+        "change": "replace",
+        "mod_start": 48,
+        "mod_end": 48,
+        "native_start": 50,
+        "native_end": 50
+      },
+      {
+        "change": "replace",
+        "mod_start": 51,
+        "mod_end": 51,
+        "native_start": 53,
+        "native_end": 54
+      },
+      {
+        "change": "replace",
+        "mod_start": 55,
+        "mod_end": 55,
+        "native_start": 58,
+        "native_end": 58
+      },
+      {
+        "change": "replace",
+        "mod_start": 60,
+        "mod_end": 61,
+        "native_start": 63,
+        "native_end": 63
+      },
+      {
+        "change": "delete",
+        "mod_start": 63,
+        "mod_end": 63,
+        "native_start": 65,
+        "native_end": 64
+      },
+      {
+        "change": "insert",
+        "mod_start": 66,
+        "mod_end": 65,
+        "native_start": 67,
+        "native_end": 68
+      },
+      {
+        "change": "delete",
+        "mod_start": 70,
+        "mod_end": 70,
+        "native_start": 73,
+        "native_end": 72
+      },
+      {
+        "change": "insert",
+        "mod_start": 72,
+        "mod_end": 71,
+        "native_start": 74,
+        "native_end": 74
+      },
+      {
+        "change": "replace",
+        "mod_start": 73,
+        "mod_end": 77,
+        "native_start": 76,
+        "native_end": 99
+      },
+      {
+        "change": "replace",
+        "mod_start": 83,
+        "mod_end": 84,
+        "native_start": 105,
+        "native_end": 107
+      },
+      {
+        "change": "replace",
+        "mod_start": 88,
+        "mod_end": 89,
+        "native_start": 111,
+        "native_end": 112
+      },
+      {
+        "change": "delete",
+        "mod_start": 93,
+        "mod_end": 93,
+        "native_start": 116,
+        "native_end": 115
+      },
+      {
+        "change": "insert",
+        "mod_start": 97,
+        "mod_end": 96,
+        "native_start": 119,
+        "native_end": 119
+      },
+      {
+        "change": "insert",
+        "mod_start": 106,
+        "mod_end": 105,
+        "native_start": 129,
+        "native_end": 132
+      },
+      {
+        "change": "replace",
+        "mod_start": 108,
+        "mod_end": 108,
+        "native_start": 135,
+        "native_end": 150
+      },
+      {
+        "change": "insert",
+        "mod_start": 115,
+        "mod_end": 114,
+        "native_start": 157,
+        "native_end": 157
+      },
+      {
+        "change": "delete",
+        "mod_start": 117,
+        "mod_end": 117,
+        "native_start": 160,
+        "native_end": 159
+      },
+      {
+        "change": "replace",
+        "mod_start": 120,
+        "mod_end": 120,
+        "native_start": 162,
+        "native_end": 162
+      },
+      {
+        "change": "replace",
+        "mod_start": 122,
+        "mod_end": 122,
+        "native_start": 164,
+        "native_end": 169
+      },
+      {
+        "change": "replace",
+        "mod_start": 128,
+        "mod_end": 136,
+        "native_start": 175,
+        "native_end": 175
+      },
+      {
+        "change": "delete",
+        "mod_start": 141,
+        "mod_end": 141,
+        "native_start": 180,
+        "native_end": 179
+      },
+      {
+        "change": "replace",
+        "mod_start": 143,
+        "mod_end": 154,
+        "native_start": 181,
+        "native_end": 182
+      },
+      {
+        "change": "replace",
+        "mod_start": 187,
+        "mod_end": 195,
+        "native_start": 215,
+        "native_end": 223
+      },
+      {
+        "change": "insert",
+        "mod_start": 203,
+        "mod_end": 202,
+        "native_start": 231,
+        "native_end": 232
+      },
+      {
+        "change": "insert",
+        "mod_start": 231,
+        "mod_end": 230,
+        "native_start": 261,
+        "native_end": 270
+      },
+      {
+        "change": "replace",
+        "mod_start": 237,
+        "mod_end": 256,
+        "native_start": 277,
+        "native_end": 283
+      },
+      {
+        "change": "delete",
+        "mod_start": 260,
+        "mod_end": 260,
+        "native_start": 287,
+        "native_end": 286
+      },
+      {
+        "change": "replace",
+        "mod_start": 264,
+        "mod_end": 265,
+        "native_start": 290,
+        "native_end": 290
+      },
+      {
+        "change": "replace",
+        "mod_start": 269,
+        "mod_end": 269,
+        "native_start": 294,
+        "native_end": 294
+      },
+      {
+        "change": "replace",
+        "mod_start": 287,
+        "mod_end": 288,
+        "native_start": 312,
+        "native_end": 344
+      },
+      {
+        "change": "replace",
+        "mod_start": 291,
+        "mod_end": 300,
+        "native_start": 347,
+        "native_end": 347
+      },
+      {
+        "change": "replace",
+        "mod_start": 302,
+        "mod_end": 335,
+        "native_start": 349,
+        "native_end": 350
+      },
+      {
+        "change": "replace",
+        "mod_start": 337,
+        "mod_end": 339,
+        "native_start": 352,
+        "native_end": 373
+      },
+      {
+        "change": "replace",
+        "mod_start": 342,
+        "mod_end": 357,
+        "native_start": 376,
+        "native_end": 379
+      },
+      {
+        "change": "replace",
+        "mod_start": 360,
+        "mod_end": 362,
+        "native_start": 382,
+        "native_end": 395
+      },
+      {
+        "change": "insert",
+        "mod_start": 366,
+        "mod_end": 365,
+        "native_start": 399,
+        "native_end": 407
+      },
+      {
+        "change": "replace",
+        "mod_start": 367,
+        "mod_end": 375,
+        "native_start": 409,
+        "native_end": 410
+      },
+      {
+        "change": "replace",
+        "mod_start": 377,
+        "mod_end": 385,
+        "native_start": 412,
+        "native_end": 416
+      },
+      {
+        "change": "delete",
+        "mod_start": 387,
+        "mod_end": 423,
+        "native_start": 418,
+        "native_end": 417
+      },
+      {
+        "change": "delete",
+        "mod_start": 425,
+        "mod_end": 492,
+        "native_start": 419,
+        "native_end": 418
+      },
+      {
+        "change": "replace",
+        "mod_start": 501,
+        "mod_end": 503,
+        "native_start": 427,
+        "native_end": 429
+      },
+      {
+        "change": "replace",
+        "mod_start": 505,
+        "mod_end": 508,
+        "native_start": 431,
+        "native_end": 433
+      },
+      {
+        "change": "replace",
+        "mod_start": 510,
+        "mod_end": 510,
+        "native_start": 435,
+        "native_end": 438
+      },
+      {
+        "change": "replace",
+        "mod_start": 512,
+        "mod_end": 525,
+        "native_start": 440,
+        "native_end": 440
+      },
+      {
+        "change": "replace",
+        "mod_start": 527,
+        "mod_end": 528,
+        "native_start": 442,
+        "native_end": 445
+      },
+      {
+        "change": "replace",
+        "mod_start": 530,
+        "mod_end": 532,
+        "native_start": 447,
+        "native_end": 447
+      },
+      {
+        "change": "replace",
+        "mod_start": 534,
+        "mod_end": 534,
+        "native_start": 449,
+        "native_end": 449
+      },
+      {
+        "change": "replace",
+        "mod_start": 536,
+        "mod_end": 538,
+        "native_start": 451,
+        "native_end": 454
+      },
+      {
+        "change": "insert",
+        "mod_start": 540,
+        "mod_end": 539,
+        "native_start": 456,
+        "native_end": 460
+      },
+      {
+        "change": "replace",
+        "mod_start": 541,
+        "mod_end": 541,
+        "native_start": 462,
+        "native_end": 466
+      },
+      {
+        "change": "replace",
+        "mod_start": 543,
+        "mod_end": 543,
+        "native_start": 468,
+        "native_end": 468
+      },
+      {
+        "change": "delete",
+        "mod_start": 545,
+        "mod_end": 545,
+        "native_start": 470,
+        "native_end": 469
+      },
+      {
+        "change": "replace",
+        "mod_start": 547,
+        "mod_end": 547,
+        "native_start": 471,
+        "native_end": 476
+      },
+      {
+        "change": "replace",
+        "mod_start": 552,
+        "mod_end": 552,
+        "native_start": 481,
+        "native_end": 481
+      },
+      {
+        "change": "replace",
+        "mod_start": 554,
+        "mod_end": 557,
+        "native_start": 483,
+        "native_end": 492
+      },
+      {
+        "change": "replace",
+        "mod_start": 560,
+        "mod_end": 563,
+        "native_start": 495,
+        "native_end": 540
+      },
+      {
+        "change": "replace",
+        "mod_start": 567,
+        "mod_end": 568,
+        "native_start": 544,
+        "native_end": 544
+      },
+      {
+        "change": "replace",
+        "mod_start": 571,
+        "mod_end": 574,
+        "native_start": 547,
+        "native_end": 550
+      },
+      {
+        "change": "delete",
+        "mod_start": 576,
+        "mod_end": 587,
+        "native_start": 552,
+        "native_end": 551
+      },
+      {
+        "change": "replace",
+        "mod_start": 591,
+        "mod_end": 593,
+        "native_start": 555,
+        "native_end": 555
+      },
+      {
+        "change": "replace",
+        "mod_start": 595,
+        "mod_end": 598,
+        "native_start": 557,
+        "native_end": 599
+      },
+      {
+        "change": "delete",
+        "mod_start": 603,
+        "mod_end": 603,
+        "native_start": 604,
+        "native_end": 603
+      },
+      {
+        "change": "replace",
+        "mod_start": 605,
+        "mod_end": 608,
+        "native_start": 605,
+        "native_end": 608
+      },
+      {
+        "change": "replace",
+        "mod_start": 610,
+        "mod_end": 614,
+        "native_start": 610,
+        "native_end": 617
+      },
+      {
+        "change": "replace",
+        "mod_start": 616,
+        "mod_end": 661,
+        "native_start": 619,
+        "native_end": 619
+      },
+      {
+        "change": "delete",
+        "mod_start": 667,
+        "mod_end": 670,
+        "native_start": 625,
+        "native_end": 624
+      },
+      {
+        "change": "delete",
+        "mod_start": 672,
+        "mod_end": 684,
+        "native_start": 626,
+        "native_end": 625
+      },
+      {
+        "change": "replace",
+        "mod_start": 687,
+        "mod_end": 692,
+        "native_start": 628,
+        "native_end": 631
+      },
+      {
+        "change": "delete",
+        "mod_start": 695,
+        "mod_end": 805,
+        "native_start": 634,
+        "native_end": 633
+      },
+      {
+        "change": "insert",
+        "mod_start": 814,
+        "mod_end": 813,
+        "native_start": 642,
+        "native_end": 1161
+      },
+      {
+        "change": "insert",
+        "mod_start": 816,
+        "mod_end": 815,
+        "native_start": 1164,
+        "native_end": 1248
+      }
+    ]
+  }
+]

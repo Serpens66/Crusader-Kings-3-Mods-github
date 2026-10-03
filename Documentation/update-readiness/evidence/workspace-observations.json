@@ -1,0 +1,11 @@
+{
+  "date": "2026-10-03",
+  "initial_workspace_file_count": 851,
+  "recorded_workspace_file_count": 853,
+  "observed_additions": [
+    "Knight Manager (MP)/OUTDATED.txt",
+    "Knight Manager Continued (MP)/OUTDATED.txt"
+  ],
+  "explanation": "These excluded-root markers appeared during audit. They were not written by the agent. Baseline capture was refreshed during discovery before being made immutable; verification compares the final recorded source state, not an archived first-run manifest.",
+  "preservation": "No original mod or installation file was edited; existing previous native/mod index hashes are checked separately."
+}

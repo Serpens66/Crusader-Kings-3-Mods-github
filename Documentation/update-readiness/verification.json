@@ -1,0 +1,22 @@
+{
+  "date": "2026-10-03",
+  "version": "1.20.0.3 (Crozier)",
+  "status": "passed",
+  "checks": {
+    "original_workspace_files": 853,
+    "audited_native_files": 1208,
+    "asset_consumer_source_hashes": 5830,
+    "native_texture_hashes": 373,
+    "links": 110,
+    "documentation_text_files": 37,
+    "feature_packages": 43,
+    "retained_package_file_assignments": 803
+  },
+  "issues": [],
+  "limits": [
+    "No game launch or runtime tests",
+    "No Tiger run",
+    "Lexical/source checks are not full engine type/grammar/GUI validation",
+    "Source closure is not a semantic audit of all engine primitives"
+  ]
+}

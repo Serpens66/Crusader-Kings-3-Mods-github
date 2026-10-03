@@ -1,0 +1,3381 @@
+[
+  {
+    "workspace": "CustomDefines/common/defines/graphic/serp_graphic_defines.txt",
+    "key": "NGui",
+    "line": 1,
+    "native": [
+      {
+        "key": "NGui",
+        "line": 578,
+        "path": "common/defines/graphic/00_graphics.txt"
+      }
+    ]
+  },
+  {
+    "workspace": "CustomDefines/common/defines/graphic/serp_graphic_defines.txt",
+    "key": "NMapIcon",
+    "line": 5,
+    "native": [
+      {
+        "key": "NMapIcon",
+        "line": 663,
+        "path": "common/defines/graphic/00_graphics.txt"
+      }
+    ]
+  },
+  {
+    "workspace": "CustomDefines/common/defines/graphic/serp_graphic_defines.txt",
+    "key": "NMapName",
+    "line": 24,
+    "native": [
+      {
+        "key": "NMapName",
+        "line": 248,
+        "path": "common/defines/graphic/00_graphics.txt"
+      }
+    ]
+  },
+  {
+    "workspace": "CustomDefines/common/defines/jomini/serp_jomini_defines.txt",
+    "key": "NFogOfWar",
+    "line": 1,
+    "native": [
+      {
+        "key": "NFogOfWar",
+        "line": 1,
+        "path": "common/defines/jomini/fog_of_war.txt"
+      }
+    ]
+  },
+  {
+    "workspace": "CustomDefines/common/defines/serp_defines.txt",
+    "key": "NCombat",
+    "line": 5,
+    "native": [
+      {
+        "key": "NCombat",
+        "line": 582,
+        "path": "common/defines/00_defines.txt"
+      }
+    ]
+  },
+  {
+    "workspace": "CustomDefines/common/defines/serp_defines.txt",
+    "key": "NDynasty",
+    "line": 18,
+    "native": [
+      {
+        "key": "NDynasty",
+        "line": 1098,
+        "path": "common/defines/00_defines.txt"
+      }
+    ]
+  },
+  {
+    "workspace": "CustomDefines/common/on_action/knight_manager_on_actions.txt",
+    "key": "on_game_start",
+    "line": 3,
+    "native": [
+      {
+        "key": "on_game_start",
+        "line": 2,
+        "path": "common/on_action/game_start.txt"
+      }
+    ]
+  },
+  {
+    "workspace": "CustomDefines/common/scripted_triggers/knighthood_trigger.txt",
+    "key": "can_be_knight_trigger",
+    "line": 1,
+    "native": [
+      {
+        "key": "can_be_knight_trigger",
+        "line": 539,
+        "path": "common/scripted_triggers/00_war_and_peace_triggers.txt"
+      }
+    ]
+  },
+  {
+    "workspace": "CustomDefines/descriptor.mod",
+    "key": "name",
+    "line": 5,
+    "native": [
+      {
+        "key": "name",
+        "line": 2,
+        "path": "checksum_manifest.txt"
+      },
+      {
+        "key": "name",
+        "line": 6,
+        "path": "checksum_manifest.txt"
+      },
+      {
+        "key": "name",
+        "line": 10,
+        "path": "checksum_manifest.txt"
+      },
+      {
+        "key": "name",
+        "line": 14,
+        "path": "checksum_manifest.txt"
+      },
+      {
+        "key": "name",
+        "line": 18,
+        "path": "checksum_manifest.txt"
+      },
+      {
+        "key": "name",
+        "line": 22,
+        "path": "checksum_manifest.txt"
+      },
+      {
+        "key": "name",
+        "line": 26,
+        "path": "checksum_manifest.txt"
+      },
+      {
+        "key": "name",
+        "line": 30,
+        "path": "checksum_manifest.txt"
+      },
+      {
+        "key": "name",
+        "line": 34,
+        "path": "checksum_manifest.txt"
+      }
+    ]
+  },
+  {
+    "workspace": "CustomDefines/events/knight_manager_events.txt",
+    "key": "namespace",
+    "line": 4,
+    "native": [
+      {
+        "key": "namespace",
+        "line": 6,
+        "path": "events/_events.info"
+      },
+      {
+        "key": "namespace",
+        "line": 1,
+        "path": "events/accolade_events.txt"
+      },
+      {
+        "key": "namespace",
+        "line": 3,
+        "path": "events/birth_events.txt"
+      },
+      {
+        "key": "namespace",
+        "line": 3,
+        "path": "events/blackmail_events.txt"
+      },
+      {
+        "key": "namespace",
+        "line": 1,
+        "path": "events/board_game_events.txt"
+      },
+      {
+        "key": "namespace",
+        "line": 2,
+        "path": "events/bookmark_events.txt"
+      },
+      {
+        "key": "namespace",
+        "line": 1,
+        "path": "events/bp1_dan_events.txt"
+      },
+      {
+        "key": "namespace",
+        "line": 1,
+        "path": "events/clerical_chastity_vow_events.txt"
+      },
+      {
+        "key": "namespace",
+        "line": 3,
+        "path": "events/court_maintenance_events.txt"
+      },
+      {
+        "key": "namespace",
+        "line": 2,
+        "path": "events/court_position_management_events.txt"
+      },
+      {
+        "key": "namespace",
+        "line": 1,
+        "path": "events/easteregg_events.txt"
+      },
+      {
+        "key": "namespace",
+        "line": 1,
+        "path": "events/elder_events.txt"
+      },
+      {
+        "key": "namespace",
+        "line": 1,
+        "path": "events/empire_faith_gate_events.txt"
+      },
+      {
+        "key": "namespace",
+        "line": 3,
+        "path": "events/error_suppression_events.txt"
+      },
+      {
+        "key": "namespace",
+        "line": 1,
+        "path": "events/game_rule_events.txt"
+      },
+      {
+        "key": "namespace",
+        "line": 1,
+        "path": "events/global_culture_events.txt"
+      },
+      {
+        "key": "namespace",
+        "line": 1,
+        "path": "events/global_religion_events.txt"
+      },
+      {
+        "key": "namespace",
+        "line": 6,
+        "path": "events/harm_events.txt"
+      },
+      {
+        "key": "namespace",
+        "line": 3,
+        "path": "events/health_events.txt"
+      },
+      {
+        "key": "namespace",
+        "line": 2,
+        "path": "events/historical_character_events.txt"
+      },
+      {
+        "key": "namespace",
+        "line": 1,
+        "path": "events/jester_stress_relief_events.txt"
+      },
+      {
+        "key": "namespace",
+        "line": 5,
+        "path": "events/marriage_effect_events.txt"
+      },
+      {
+        "key": "namespace",
+        "line": 1,
+        "path": "events/misc_events.txt"
+      },
+      {
+        "key": "namespace",
+        "line": 1,
+        "path": "events/mpo_chaotic_kurultai_succession.txt"
+      },
+      {
+        "key": "namespace",
+        "line": 1,
+        "path": "events/mpo_flavor_events.txt"
+      },
+      {
+        "key": "namespace",
+        "line": 1,
+        "path": "events/mpo_misc.txt"
+      },
+      {
+        "key": "namespace",
+        "line": 3,
+        "path": "events/pregnancy_events.txt"
+      },
+      {
+        "key": "namespace",
+        "line": 3,
+        "path": "events/realm_maintenance_events.txt"
+      },
+      {
+        "key": "namespace",
+        "line": 5,
+        "path": "events/secret_faith_events.txt"
+      },
+      {
+        "key": "namespace",
+        "line": 3,
+        "path": "events/siege_events.txt"
+      },
+      {
+        "key": "namespace",
+        "line": 1,
+        "path": "events/single_combat_events.txt"
+      },
+      {
+        "key": "namespace",
+        "line": 4,
+        "path": "events/title_events.txt"
+      },
+      {
+        "key": "namespace",
+        "line": 1,
+        "path": "events/tutorial_events.txt"
+      },
+      {
+        "key": "namespace",
+        "line": 1,
+        "path": "events/varangian_events.txt"
+      },
+      {
+        "key": "namespace",
+        "line": 5,
+        "path": "events/witch_events.txt"
+      }
+    ]
+  },
+  {
+    "workspace": "CustomDefines/gui/window_knights.gui",
+    "key": "window",
+    "line": 5,
+    "native": [
+      {
+        "key": "window",
+        "line": 1,
+        "path": "gui/dynasty_customization_window.gui"
+      },
+      {
+        "key": "window",
+        "line": 1,
+        "path": "gui/dynasty_house_customization_window.gui"
+      },
+      {
+        "key": "window",
+        "line": 1,
+        "path": "gui/frontend_ingame_menu.gui"
+      },
+      {
+        "key": "window",
+        "line": 373,
+        "path": "gui/frontend_ingame_menu.gui"
+      },
+      {
+        "key": "window",
+        "line": 1,
+        "path": "gui/frontend_mp_game_setup.gui"
+      },
+      {
+        "key": "window",
+        "line": 1,
+        "path": "gui/game_rules.gui"
+      },
+      {
+        "key": "window",
+        "line": 5,
+        "path": "gui/interaction_blackmail.gui"
+      },
+      {
+        "key": "window",
+        "line": 4,
+        "path": "gui/interaction_call_ally.gui"
+      },
+      {
+        "key": "window",
+        "line": 5,
+        "path": "gui/interaction_call_ally_notification_window.gui"
+      },
+      {
+        "key": "window",
+        "line": 5,
+        "path": "gui/interaction_concubine.gui"
+      },
+      {
+        "key": "window",
+        "line": 5,
+        "path": "gui/interaction_confirmation.gui"
+      },
+      {
+        "key": "window",
+        "line": 1,
+        "path": "gui/interaction_council_task.gui"
+      },
+      {
+        "key": "window",
+        "line": 1,
+        "path": "gui/interaction_court_task.gui"
+      },
+      {
+        "key": "window",
+        "line": 4,
+        "path": "gui/interaction_create_claimant_faction.gui"
+      },
+      {
+        "key": "window",
+        "line": 315,
+        "path": "gui/interaction_create_claimant_faction.gui"
+      },
+      {
+        "key": "window",
+        "line": 6,
+        "path": "gui/interaction_declare_war.gui"
+      },
+      {
+        "key": "window",
+        "line": 4,
+        "path": "gui/interaction_grant_titles.gui"
+      },
+      {
+        "key": "window",
+        "line": 4,
+        "path": "gui/interaction_interfere_in_war.gui"
+      },
+      {
+        "key": "window",
+        "line": 5,
+        "path": "gui/interaction_interfere_in_war_notification.gui"
+      },
+      {
+        "key": "window",
+        "line": 6,
+        "path": "gui/interaction_marriage.gui"
+      },
+      {
+        "key": "window",
+        "line": 4,
+        "path": "gui/interaction_marriage_notification_window.gui"
+      },
+      {
+        "key": "window",
+        "line": 11,
+        "path": "gui/interaction_menu_window.gui"
+      },
+      {
+        "key": "window",
+        "line": 1,
+        "path": "gui/interaction_modify_vassal_window.gui"
+      },
+      {
+        "key": "window",
+        "line": 4,
+        "path": "gui/interaction_notification_window.gui"
+      },
+      {
+        "key": "window",
+        "line": 4,
+        "path": "gui/interaction_revoke_title.gui"
+      },
+      {
+        "key": "window",
+        "line": 1,
+        "path": "gui/interaction_transfer_vassal.gui"
+      },
+      {
+        "key": "window",
+        "line": 5,
+        "path": "gui/window_accolade.gui"
+      },
+      {
+        "key": "window",
+        "line": 5,
+        "path": "gui/window_accolade_attribute_selection.gui"
+      },
+      {
+        "key": "window",
+        "line": 1,
+        "path": "gui/window_activity.gui"
+      },
+      {
+        "key": "window",
+        "line": 1,
+        "path": "gui/window_activity_guest_list.gui"
+      },
+      {
+        "key": "window",
+        "line": 1,
+        "path": "gui/window_activity_intent_selection.gui"
+      },
+      {
+        "key": "window",
+        "line": 1,
+        "path": "gui/window_activity_list.gui"
+      },
+      {
+        "key": "window",
+        "line": 235,
+        "path": "gui/window_activity_list.gui"
+      },
+      {
+        "key": "window",
+        "line": 454,
+        "path": "gui/window_activity_list.gui"
+      },
+      {
+        "key": "window",
+        "line": 1,
+        "path": "gui/window_activity_locale.gui"
+      },
+      {
+        "key": "window",
+        "line": 1,
+        "path": "gui/window_activity_log.gui"
+      },
+      {
+        "key": "window",
+        "line": 1,
+        "path": "gui/window_activity_planner.gui"
+      },
+      {
+        "key": "window",
+        "line": 5,
+        "path": "gui/window_add_tradition.gui"
+      },
+      {
+        "key": "window",
+        "line": 1,
+        "path": "gui/window_admin_vassal_detail.gui"
+      },
+      {
+        "key": "window",
+        "line": 1,
+        "path": "gui/window_appoint_tax_collector.gui"
+      },
+      {
+        "key": "window",
+        "line": 1,
+        "path": "gui/window_army.gui"
+      },
+      {
+        "key": "window",
+        "line": 1605,
+        "path": "gui/window_army.gui"
+      },
+      {
+        "key": "window",
+        "line": 1891,
+        "path": "gui/window_army.gui"
+      },
+      {
+        "key": "window",
+        "line": 6,
+        "path": "gui/window_army_automation_options.gui"
+      },
+      {
+        "key": "window",
+        "line": 5,
+        "path": "gui/window_army_select_commander.gui"
+      },
+      {
+        "key": "window",
+        "line": 1,
+        "path": "gui/window_artifact_details.gui"
+      },
+      {
+        "key": "window",
+        "line": 1,
+        "path": "gui/window_artifact_reforge.gui"
+      },
+      {
+        "key": "window",
+        "line": 1,
+        "path": "gui/window_barbershop.gui"
+      },
+      {
+        "key": "window",
+        "line": 2,
+        "path": "gui/window_barter.gui"
+      },
+      {
+        "key": "window",
+        "line": 3,
+        "path": "gui/window_battle_summary.gui"
+      },
+      {
+        "key": "window",
+        "line": 1,
+        "path": "gui/window_cardinals.gui"
+      },
+      {
+        "key": "window",
+        "line": 5,
+        "path": "gui/window_character.gui"
+      },
+      {
+        "key": "window",
+        "line": 3,
+        "path": "gui/window_character_finder.gui"
+      },
+      {
+        "key": "window",
+        "line": 5,
+        "path": "gui/window_character_focus.gui"
+      },
+      {
+        "key": "window",
+        "line": 5,
+        "path": "gui/window_character_lifestyle.gui"
+      },
+      {
+        "key": "window",
+        "line": 1,
+        "path": "gui/window_combat.gui"
+      },
+      {
+        "key": "window",
+        "line": 5,
+        "path": "gui/window_confederation.gui"
+      },
+      {
+        "key": "window",
+        "line": 6,
+        "path": "gui/window_council.gui"
+      },
+      {
+        "key": "window",
+        "line": 5,
+        "path": "gui/window_council_potential_councillor.gui"
+      },
+      {
+        "key": "window",
+        "line": 5,
+        "path": "gui/window_county_view.gui"
+      },
+      {
+        "key": "window",
+        "line": 2214,
+        "path": "gui/window_county_view.gui"
+      },
+      {
+        "key": "window",
+        "line": 3321,
+        "path": "gui/window_county_view.gui"
+      },
+      {
+        "key": "window",
+        "line": 1,
+        "path": "gui/window_court.gui"
+      },
+      {
+        "key": "window",
+        "line": 7,
+        "path": "gui/window_court_position_appoint.gui"
+      },
+      {
+        "key": "window",
+        "line": 1,
+        "path": "gui/window_court_types.gui"
+      },
+      {
+        "key": "window",
+        "line": 1,
+        "path": "gui/window_court_visuals.gui"
+      },
+      {
+        "key": "window",
+        "line": 5,
+        "path": "gui/window_create_accolade.gui"
+      },
+      {
+        "key": "window",
+        "line": 5,
+        "path": "gui/window_culture.gui"
+      },
+      {
+        "key": "window",
+        "line": 1,
+        "path": "gui/window_decisions.gui"
+      },
+      {
+        "key": "window",
+        "line": 5,
+        "path": "gui/window_decisions_detail.gui"
+      },
+      {
+        "key": "window",
+        "line": 2,
+        "path": "gui/window_diarchy.gui"
+      },
+      {
+        "key": "window",
+        "line": 5,
+        "path": "gui/window_diverge_culture.gui"
+      },
+      {
+        "key": "window",
+        "line": 2,
+        "path": "gui/window_dlc_info.gui"
+      },
+      {
+        "key": "window",
+        "line": 1,
+        "path": "gui/window_domicile.gui"
+      },
+      {
+        "key": "window",
+        "line": 2,
+        "path": "gui/window_dynasty_house.gui"
+      },
+      {
+        "key": "window",
+        "line": 3,
+        "path": "gui/window_dynasty_house_members.gui"
+      },
+      {
+        "key": "window",
+        "line": 3,
+        "path": "gui/window_dynasty_legacy.gui"
+      },
+      {
+        "key": "window",
+        "line": 414,
+        "path": "gui/window_dynasty_tree.gui"
+      },
+      {
+        "key": "window",
+        "line": 1,
+        "path": "gui/window_epidemics.gui"
+      },
+      {
+        "key": "window",
+        "line": 5,
+        "path": "gui/window_factions.gui"
+      },
+      {
+        "key": "window",
+        "line": 8,
+        "path": "gui/window_faith.gui"
+      },
+      {
+        "key": "window",
+        "line": 1,
+        "path": "gui/window_faith_conversion.gui"
+      },
+      {
+        "key": "window",
+        "line": 1,
+        "path": "gui/window_find_title.gui"
+      },
+      {
+        "key": "window",
+        "line": 1,
+        "path": "gui/window_find_vassal.gui"
+      },
+      {
+        "key": "window",
+        "line": 1,
+        "path": "gui/window_geographical_regions.gui"
+      },
+      {
+        "key": "window",
+        "line": 1,
+        "path": "gui/window_ghw.gui"
+      },
+      {
+        "key": "window",
+        "line": 5,
+        "path": "gui/window_ghw_change_target.gui"
+      },
+      {
+        "key": "window",
+        "line": 1,
+        "path": "gui/window_government_administration.gui"
+      },
+      {
+        "key": "window",
+        "line": 1,
+        "path": "gui/window_great_project.gui"
+      },
+      {
+        "key": "window",
+        "line": 1,
+        "path": "gui/window_hired_troops_detail.gui"
+      },
+      {
+        "key": "window",
+        "line": 1,
+        "path": "gui/window_holy_site.gui"
+      },
+      {
+        "key": "window",
+        "line": 1,
+        "path": "gui/window_holy_site_creation.gui"
+      },
+      {
+        "key": "window",
+        "line": 5,
+        "path": "gui/window_house_aspiration.gui"
+      },
+      {
+        "key": "window",
+        "line": 1,
+        "path": "gui/window_house_relation_history.gui"
+      },
+      {
+        "key": "window",
+        "line": 5,
+        "path": "gui/window_hybridize_culture.gui"
+      },
+      {
+        "key": "window",
+        "line": 5,
+        "path": "gui/window_intrigue.gui"
+      },
+      {
+        "key": "window",
+        "line": 1,
+        "path": "gui/window_intrigue_potential_faction_member.gui"
+      },
+      {
+        "key": "window",
+        "line": 1,
+        "path": "gui/window_intrigue_potential_scheme_agent.gui"
+      },
+      {
+        "key": "window",
+        "line": 1,
+        "path": "gui/window_inventory.gui"
+      },
+      {
+        "key": "window",
+        "line": 5,
+        "path": "gui/window_knights.gui"
+      },
+      {
+        "key": "window",
+        "line": 1,
+        "path": "gui/window_languages.gui"
+      },
+      {
+        "key": "window",
+        "line": 4,
+        "path": "gui/window_lease_out_baronies.gui"
+      },
+      {
+        "key": "window",
+        "line": 1,
+        "path": "gui/window_ledger.gui"
+      },
+      {
+        "key": "window",
+        "line": 1,
+        "path": "gui/window_legend_chronicle.gui"
+      },
+      {
+        "key": "window",
+        "line": 1,
+        "path": "gui/window_legend_creation.gui"
+      },
+      {
+        "key": "window",
+        "line": 1,
+        "path": "gui/window_legends.gui"
+      },
+      {
+        "key": "window",
+        "line": 5,
+        "path": "gui/window_levy.gui"
+      },
+      {
+        "key": "window",
+        "line": 6,
+        "path": "gui/window_lineage.gui"
+      },
+      {
+        "key": "window",
+        "line": 1,
+        "path": "gui/window_lobby_helper.gui"
+      },
+      {
+        "key": "window",
+        "line": 1,
+        "path": "gui/window_manage_tax_slots.gui"
+      },
+      {
+        "key": "window",
+        "line": 5,
+        "path": "gui/window_memories.gui"
+      },
+      {
+        "key": "window",
+        "line": 5,
+        "path": "gui/window_menatarms.gui"
+      },
+      {
+        "key": "window",
+        "line": 6,
+        "path": "gui/window_menatarms_type_view.gui"
+      },
+      {
+        "key": "window",
+        "line": 1,
+        "path": "gui/window_message_popup.gui"
+      },
+      {
+        "key": "window",
+        "line": 1,
+        "path": "gui/window_message_settings.gui"
+      },
+      {
+        "key": "window",
+        "line": 5,
+        "path": "gui/window_migration.gui"
+      },
+      {
+        "key": "window",
+        "line": 5,
+        "path": "gui/window_military.gui"
+      },
+      {
+        "key": "window",
+        "line": 1,
+        "path": "gui/window_move_domicile.gui"
+      },
+      {
+        "key": "window",
+        "line": 5,
+        "path": "gui/window_my_realm.gui"
+      },
+      {
+        "key": "window",
+        "line": 2,
+        "path": "gui/window_organization.gui"
+      },
+      {
+        "key": "window",
+        "line": 4,
+        "path": "gui/window_pam_christian_church.gui"
+      },
+      {
+        "key": "window",
+        "line": 1,
+        "path": "gui/window_personal_beliefs.gui"
+      },
+      {
+        "key": "window",
+        "line": 1,
+        "path": "gui/window_plan_great_project.gui"
+      },
+      {
+        "key": "window",
+        "line": 1,
+        "path": "gui/window_potential_great_project_contributors.gui"
+      },
+      {
+        "key": "window",
+        "line": 1,
+        "path": "gui/window_puppet_selection.gui"
+      },
+      {
+        "key": "window",
+        "line": 2,
+        "path": "gui/window_raid.gui"
+      },
+      {
+        "key": "window",
+        "line": 1,
+        "path": "gui/window_raid_intent_selection.gui"
+      },
+      {
+        "key": "window",
+        "line": 1,
+        "path": "gui/window_rally_points.gui"
+      },
+      {
+        "key": "window",
+        "line": 5,
+        "path": "gui/window_replace_pillar.gui"
+      },
+      {
+        "key": "window",
+        "line": 1,
+        "path": "gui/window_resign_confirmation.gui"
+      },
+      {
+        "key": "window",
+        "line": 5,
+        "path": "gui/window_rite_creation.gui"
+      },
+      {
+        "key": "window",
+        "line": 1,
+        "path": "gui/window_royal_court.gui"
+      },
+      {
+        "key": "window",
+        "line": 1,
+        "path": "gui/window_ruler_designer.gui"
+      },
+      {
+        "key": "window",
+        "line": 1,
+        "path": "gui/window_ruler_designer_load.gui"
+      },
+      {
+        "key": "window",
+        "line": 1,
+        "path": "gui/window_ruler_designer_save.gui"
+      },
+      {
+        "key": "window",
+        "line": 1,
+        "path": "gui/window_save_game.gui"
+      },
+      {
+        "key": "window",
+        "line": 2,
+        "path": "gui/window_siege.gui"
+      },
+      {
+        "key": "window",
+        "line": 1,
+        "path": "gui/window_silk_road.gui"
+      },
+      {
+        "key": "window",
+        "line": 4,
+        "path": "gui/window_situation.gui"
+      },
+      {
+        "key": "window",
+        "line": 4,
+        "path": "gui/window_situation_debug.gui"
+      },
+      {
+        "key": "window",
+        "line": 1,
+        "path": "gui/window_situation_list.gui"
+      },
+      {
+        "key": "window",
+        "line": 5,
+        "path": "gui/window_situation_participation.gui"
+      },
+      {
+        "key": "window",
+        "line": 5,
+        "path": "gui/window_situation_participation_debug.gui"
+      },
+      {
+        "key": "window",
+        "line": 1,
+        "path": "gui/window_situation_sub_region.gui"
+      },
+      {
+        "key": "window",
+        "line": 4,
+        "path": "gui/window_struggle.gui"
+      },
+      {
+        "key": "window",
+        "line": 5,
+        "path": "gui/window_struggle_involvement.gui"
+      },
+      {
+        "key": "window",
+        "line": 5,
+        "path": "gui/window_succession_change_law.gui"
+      },
+      {
+        "key": "window",
+        "line": 5,
+        "path": "gui/window_succession_designate_heir.gui"
+      },
+      {
+        "key": "window",
+        "line": 5,
+        "path": "gui/window_succession_event.gui"
+      },
+      {
+        "key": "window",
+        "line": 961,
+        "path": "gui/window_succession_event.gui"
+      },
+      {
+        "key": "window",
+        "line": 1,
+        "path": "gui/window_task_contract.gui"
+      },
+      {
+        "key": "window",
+        "line": 1,
+        "path": "gui/window_tax_slot_assign_vassal.gui"
+      },
+      {
+        "key": "window",
+        "line": 1,
+        "path": "gui/window_tax_slot_obligations.gui"
+      },
+      {
+        "key": "window",
+        "line": 1,
+        "path": "gui/window_tax_slot_vassals.gui"
+      },
+      {
+        "key": "window",
+        "line": 4,
+        "path": "gui/window_tgp_dynastic_cycle.gui"
+      },
+      {
+        "key": "window",
+        "line": 4,
+        "path": "gui/window_tgp_natural_disaster.gui"
+      },
+      {
+        "key": "window",
+        "line": 1,
+        "path": "gui/window_the_great_steppe.gui"
+      },
+      {
+        "key": "window",
+        "line": 3,
+        "path": "gui/window_title.gui"
+      },
+      {
+        "key": "window",
+        "line": 5,
+        "path": "gui/window_title_add_law.gui"
+      },
+      {
+        "key": "window",
+        "line": 1,
+        "path": "gui/window_title_appointment.gui"
+      },
+      {
+        "key": "window",
+        "line": 5,
+        "path": "gui/window_title_claimants.gui"
+      },
+      {
+        "key": "window",
+        "line": 1,
+        "path": "gui/window_title_customization.gui"
+      },
+      {
+        "key": "window",
+        "line": 5,
+        "path": "gui/window_title_election.gui"
+      },
+      {
+        "key": "window",
+        "line": 5,
+        "path": "gui/window_title_history.gui"
+      },
+      {
+        "key": "window",
+        "line": 1,
+        "path": "gui/window_title_selector.gui"
+      },
+      {
+        "key": "window",
+        "line": 1,
+        "path": "gui/window_travel_option_selection.gui"
+      },
+      {
+        "key": "window",
+        "line": 1,
+        "path": "gui/window_travel_planner.gui"
+      },
+      {
+        "key": "window",
+        "line": 1,
+        "path": "gui/window_travel_route_edit.gui"
+      },
+      {
+        "key": "window",
+        "line": 5,
+        "path": "gui/window_treasury_budget_change.gui"
+      },
+      {
+        "key": "window",
+        "line": 5,
+        "path": "gui/window_war_declared_overview.gui"
+      },
+      {
+        "key": "window",
+        "line": 1,
+        "path": "gui/window_war_overview.gui"
+      },
+      {
+        "key": "window",
+        "line": 5,
+        "path": "gui/window_war_results.gui"
+      }
+    ]
+  },
+  {
+    "workspace": "CustomDefines.mod",
+    "key": "name",
+    "line": 5,
+    "native": [
+      {
+        "key": "name",
+        "line": 2,
+        "path": "checksum_manifest.txt"
+      },
+      {
+        "key": "name",
+        "line": 6,
+        "path": "checksum_manifest.txt"
+      },
+      {
+        "key": "name",
+        "line": 10,
+        "path": "checksum_manifest.txt"
+      },
+      {
+        "key": "name",
+        "line": 14,
+        "path": "checksum_manifest.txt"
+      },
+      {
+        "key": "name",
+        "line": 18,
+        "path": "checksum_manifest.txt"
+      },
+      {
+        "key": "name",
+        "line": 22,
+        "path": "checksum_manifest.txt"
+      },
+      {
+        "key": "name",
+        "line": 26,
+        "path": "checksum_manifest.txt"
+      },
+      {
+        "key": "name",
+        "line": 30,
+        "path": "checksum_manifest.txt"
+      },
+      {
+        "key": "name",
+        "line": 34,
+        "path": "checksum_manifest.txt"
+      }
+    ]
+  },
+  {
+    "workspace": "Gender Colour/descriptor.mod",
+    "key": "name",
+    "line": 5,
+    "native": [
+      {
+        "key": "name",
+        "line": 2,
+        "path": "checksum_manifest.txt"
+      },
+      {
+        "key": "name",
+        "line": 6,
+        "path": "checksum_manifest.txt"
+      },
+      {
+        "key": "name",
+        "line": 10,
+        "path": "checksum_manifest.txt"
+      },
+      {
+        "key": "name",
+        "line": 14,
+        "path": "checksum_manifest.txt"
+      },
+      {
+        "key": "name",
+        "line": 18,
+        "path": "checksum_manifest.txt"
+      },
+      {
+        "key": "name",
+        "line": 22,
+        "path": "checksum_manifest.txt"
+      },
+      {
+        "key": "name",
+        "line": 26,
+        "path": "checksum_manifest.txt"
+      },
+      {
+        "key": "name",
+        "line": 30,
+        "path": "checksum_manifest.txt"
+      },
+      {
+        "key": "name",
+        "line": 34,
+        "path": "checksum_manifest.txt"
+      }
+    ]
+  },
+  {
+    "workspace": "Gender Colour.mod",
+    "key": "name",
+    "line": 5,
+    "native": [
+      {
+        "key": "name",
+        "line": 2,
+        "path": "checksum_manifest.txt"
+      },
+      {
+        "key": "name",
+        "line": 6,
+        "path": "checksum_manifest.txt"
+      },
+      {
+        "key": "name",
+        "line": 10,
+        "path": "checksum_manifest.txt"
+      },
+      {
+        "key": "name",
+        "line": 14,
+        "path": "checksum_manifest.txt"
+      },
+      {
+        "key": "name",
+        "line": 18,
+        "path": "checksum_manifest.txt"
+      },
+      {
+        "key": "name",
+        "line": 22,
+        "path": "checksum_manifest.txt"
+      },
+      {
+        "key": "name",
+        "line": 26,
+        "path": "checksum_manifest.txt"
+      },
+      {
+        "key": "name",
+        "line": 30,
+        "path": "checksum_manifest.txt"
+      },
+      {
+        "key": "name",
+        "line": 34,
+        "path": "checksum_manifest.txt"
+      }
+    ]
+  },
+  {
+    "workspace": "GFX-Mod/descriptor.mod",
+    "key": "name",
+    "line": 5,
+    "native": [
+      {
+        "key": "name",
+        "line": 2,
+        "path": "checksum_manifest.txt"
+      },
+      {
+        "key": "name",
+        "line": 6,
+        "path": "checksum_manifest.txt"
+      },
+      {
+        "key": "name",
+        "line": 10,
+        "path": "checksum_manifest.txt"
+      },
+      {
+        "key": "name",
+        "line": 14,
+        "path": "checksum_manifest.txt"
+      },
+      {
+        "key": "name",
+        "line": 18,
+        "path": "checksum_manifest.txt"
+      },
+      {
+        "key": "name",
+        "line": 22,
+        "path": "checksum_manifest.txt"
+      },
+      {
+        "key": "name",
+        "line": 26,
+        "path": "checksum_manifest.txt"
+      },
+      {
+        "key": "name",
+        "line": 30,
+        "path": "checksum_manifest.txt"
+      },
+      {
+        "key": "name",
+        "line": 34,
+        "path": "checksum_manifest.txt"
+      }
+    ]
+  },
+  {
+    "workspace": "GFX-Mod Serp/descriptor.mod",
+    "key": "name",
+    "line": 5,
+    "native": [
+      {
+        "key": "name",
+        "line": 2,
+        "path": "checksum_manifest.txt"
+      },
+      {
+        "key": "name",
+        "line": 6,
+        "path": "checksum_manifest.txt"
+      },
+      {
+        "key": "name",
+        "line": 10,
+        "path": "checksum_manifest.txt"
+      },
+      {
+        "key": "name",
+        "line": 14,
+        "path": "checksum_manifest.txt"
+      },
+      {
+        "key": "name",
+        "line": 18,
+        "path": "checksum_manifest.txt"
+      },
+      {
+        "key": "name",
+        "line": 22,
+        "path": "checksum_manifest.txt"
+      },
+      {
+        "key": "name",
+        "line": 26,
+        "path": "checksum_manifest.txt"
+      },
+      {
+        "key": "name",
+        "line": 30,
+        "path": "checksum_manifest.txt"
+      },
+      {
+        "key": "name",
+        "line": 34,
+        "path": "checksum_manifest.txt"
+      }
+    ]
+  },
+  {
+    "workspace": "GFX-Mod Serp/gfx/map/post_effects/posteffect_volumes.txt",
+    "key": "posteffect_values",
+    "line": 6,
+    "native": [
+      {
+        "key": "posteffect_values",
+        "line": 6,
+        "path": "gfx/map/post_effects/posteffect_volumes.txt"
+      },
+      {
+        "key": "posteffect_values",
+        "line": 11,
+        "path": "gfx/map/post_effects/posteffect_volumes.txt"
+      },
+      {
+        "key": "posteffect_values",
+        "line": 20,
+        "path": "gfx/map/post_effects/posteffect_volumes.txt"
+      },
+      {
+        "key": "posteffect_values",
+        "line": 27,
+        "path": "gfx/map/post_effects/posteffect_volumes.txt"
+      },
+      {
+        "key": "posteffect_values",
+        "line": 32,
+        "path": "gfx/map/post_effects/posteffect_volumes.txt"
+      },
+      {
+        "key": "posteffect_values",
+        "line": 36,
+        "path": "gfx/map/post_effects/posteffect_volumes.txt"
+      },
+      {
+        "key": "posteffect_values",
+        "line": 42,
+        "path": "gfx/map/post_effects/posteffect_volumes.txt"
+      }
+    ]
+  },
+  {
+    "workspace": "GFX-Mod Serp/gfx/map/post_effects/posteffect_volumes.txt",
+    "key": "posteffect_values",
+    "line": 11,
+    "native": [
+      {
+        "key": "posteffect_values",
+        "line": 6,
+        "path": "gfx/map/post_effects/posteffect_volumes.txt"
+      },
+      {
+        "key": "posteffect_values",
+        "line": 11,
+        "path": "gfx/map/post_effects/posteffect_volumes.txt"
+      },
+      {
+        "key": "posteffect_values",
+        "line": 20,
+        "path": "gfx/map/post_effects/posteffect_volumes.txt"
+      },
+      {
+        "key": "posteffect_values",
+        "line": 27,
+        "path": "gfx/map/post_effects/posteffect_volumes.txt"
+      },
+      {
+        "key": "posteffect_values",
+        "line": 32,
+        "path": "gfx/map/post_effects/posteffect_volumes.txt"
+      },
+      {
+        "key": "posteffect_values",
+        "line": 36,
+        "path": "gfx/map/post_effects/posteffect_volumes.txt"
+      },
+      {
+        "key": "posteffect_values",
+        "line": 42,
+        "path": "gfx/map/post_effects/posteffect_volumes.txt"
+      }
+    ]
+  },
+  {
+    "workspace": "GFX-Mod Serp/gfx/map/post_effects/posteffect_volumes.txt",
+    "key": "posteffect_values",
+    "line": 20,
+    "native": [
+      {
+        "key": "posteffect_values",
+        "line": 6,
+        "path": "gfx/map/post_effects/posteffect_volumes.txt"
+      },
+      {
+        "key": "posteffect_values",
+        "line": 11,
+        "path": "gfx/map/post_effects/posteffect_volumes.txt"
+      },
+      {
+        "key": "posteffect_values",
+        "line": 20,
+        "path": "gfx/map/post_effects/posteffect_volumes.txt"
+      },
+      {
+        "key": "posteffect_values",
+        "line": 27,
+        "path": "gfx/map/post_effects/posteffect_volumes.txt"
+      },
+      {
+        "key": "posteffect_values",
+        "line": 32,
+        "path": "gfx/map/post_effects/posteffect_volumes.txt"
+      },
+      {
+        "key": "posteffect_values",
+        "line": 36,
+        "path": "gfx/map/post_effects/posteffect_volumes.txt"
+      },
+      {
+        "key": "posteffect_values",
+        "line": 42,
+        "path": "gfx/map/post_effects/posteffect_volumes.txt"
+      }
+    ]
+  },
+  {
+    "workspace": "GFX-Mod Serp/gfx/map/post_effects/posteffect_volumes.txt",
+    "key": "posteffect_values",
+    "line": 27,
+    "native": [
+      {
+        "key": "posteffect_values",
+        "line": 6,
+        "path": "gfx/map/post_effects/posteffect_volumes.txt"
+      },
+      {
+        "key": "posteffect_values",
+        "line": 11,
+        "path": "gfx/map/post_effects/posteffect_volumes.txt"
+      },
+      {
+        "key": "posteffect_values",
+        "line": 20,
+        "path": "gfx/map/post_effects/posteffect_volumes.txt"
+      },
+      {
+        "key": "posteffect_values",
+        "line": 27,
+        "path": "gfx/map/post_effects/posteffect_volumes.txt"
+      },
+      {
+        "key": "posteffect_values",
+        "line": 32,
+        "path": "gfx/map/post_effects/posteffect_volumes.txt"
+      },
+      {
+        "key": "posteffect_values",
+        "line": 36,
+        "path": "gfx/map/post_effects/posteffect_volumes.txt"
+      },
+      {
+        "key": "posteffect_values",
+        "line": 42,
+        "path": "gfx/map/post_effects/posteffect_volumes.txt"
+      }
+    ]
+  },
+  {
+    "workspace": "GFX-Mod Serp/gfx/map/post_effects/posteffect_volumes.txt",
+    "key": "posteffect_values",
+    "line": 32,
+    "native": [
+      {
+        "key": "posteffect_values",
+        "line": 6,
+        "path": "gfx/map/post_effects/posteffect_volumes.txt"
+      },
+      {
+        "key": "posteffect_values",
+        "line": 11,
+        "path": "gfx/map/post_effects/posteffect_volumes.txt"
+      },
+      {
+        "key": "posteffect_values",
+        "line": 20,
+        "path": "gfx/map/post_effects/posteffect_volumes.txt"
+      },
+      {
+        "key": "posteffect_values",
+        "line": 27,
+        "path": "gfx/map/post_effects/posteffect_volumes.txt"
+      },
+      {
+        "key": "posteffect_values",
+        "line": 32,
+        "path": "gfx/map/post_effects/posteffect_volumes.txt"
+      },
+      {
+        "key": "posteffect_values",
+        "line": 36,
+        "path": "gfx/map/post_effects/posteffect_volumes.txt"
+      },
+      {
+        "key": "posteffect_values",
+        "line": 42,
+        "path": "gfx/map/post_effects/posteffect_volumes.txt"
+      }
+    ]
+  },
+  {
+    "workspace": "GFX-Mod Serp/gfx/map/post_effects/posteffect_volumes.txt",
+    "key": "posteffect_values",
+    "line": 36,
+    "native": [
+      {
+        "key": "posteffect_values",
+        "line": 6,
+        "path": "gfx/map/post_effects/posteffect_volumes.txt"
+      },
+      {
+        "key": "posteffect_values",
+        "line": 11,
+        "path": "gfx/map/post_effects/posteffect_volumes.txt"
+      },
+      {
+        "key": "posteffect_values",
+        "line": 20,
+        "path": "gfx/map/post_effects/posteffect_volumes.txt"
+      },
+      {
+        "key": "posteffect_values",
+        "line": 27,
+        "path": "gfx/map/post_effects/posteffect_volumes.txt"
+      },
+      {
+        "key": "posteffect_values",
+        "line": 32,
+        "path": "gfx/map/post_effects/posteffect_volumes.txt"
+      },
+      {
+        "key": "posteffect_values",
+        "line": 36,
+        "path": "gfx/map/post_effects/posteffect_volumes.txt"
+      },
+      {
+        "key": "posteffect_values",
+        "line": 42,
+        "path": "gfx/map/post_effects/posteffect_volumes.txt"
+      }
+    ]
+  },
+  {
+    "workspace": "GFX-Mod Serp/gfx/map/post_effects/posteffect_volumes.txt",
+    "key": "posteffect_values",
+    "line": 42,
+    "native": [
+      {
+        "key": "posteffect_values",
+        "line": 6,
+        "path": "gfx/map/post_effects/posteffect_volumes.txt"
+      },
+      {
+        "key": "posteffect_values",
+        "line": 11,
+        "path": "gfx/map/post_effects/posteffect_volumes.txt"
+      },
+      {
+        "key": "posteffect_values",
+        "line": 20,
+        "path": "gfx/map/post_effects/posteffect_volumes.txt"
+      },
+      {
+        "key": "posteffect_values",
+        "line": 27,
+        "path": "gfx/map/post_effects/posteffect_volumes.txt"
+      },
+      {
+        "key": "posteffect_values",
+        "line": 32,
+        "path": "gfx/map/post_effects/posteffect_volumes.txt"
+      },
+      {
+        "key": "posteffect_values",
+        "line": 36,
+        "path": "gfx/map/post_effects/posteffect_volumes.txt"
+      },
+      {
+        "key": "posteffect_values",
+        "line": 42,
+        "path": "gfx/map/post_effects/posteffect_volumes.txt"
+      }
+    ]
+  },
+  {
+    "workspace": "GFX-Mod Serp/gfx/map/post_effects/posteffect_volumes.txt",
+    "key": "posteffect_volumes",
+    "line": 57,
+    "native": [
+      {
+        "key": "posteffect_volumes",
+        "line": 56,
+        "path": "gfx/map/post_effects/posteffect_volumes.txt"
+      }
+    ]
+  },
+  {
+    "workspace": "GFX-Mod Serp/gfx/map/post_effects/posteffect_volumes.txt",
+    "key": "posteffect_volume",
+    "line": 98,
+    "native": [
+      {
+        "key": "posteffect_volume",
+        "line": 97,
+        "path": "gfx/map/post_effects/posteffect_volumes.txt"
+      },
+      {
+        "key": "posteffect_volume",
+        "line": 108,
+        "path": "gfx/map/post_effects/posteffect_volumes.txt"
+      }
+    ]
+  },
+  {
+    "workspace": "GFX-Mod Serp/gfx/map/post_effects/posteffect_volumes.txt",
+    "key": "posteffect_volume",
+    "line": 109,
+    "native": [
+      {
+        "key": "posteffect_volume",
+        "line": 97,
+        "path": "gfx/map/post_effects/posteffect_volumes.txt"
+      },
+      {
+        "key": "posteffect_volume",
+        "line": 108,
+        "path": "gfx/map/post_effects/posteffect_volumes.txt"
+      }
+    ]
+  },
+  {
+    "workspace": "GFX-Mod.mod",
+    "key": "name",
+    "line": 5,
+    "native": [
+      {
+        "key": "name",
+        "line": 2,
+        "path": "checksum_manifest.txt"
+      },
+      {
+        "key": "name",
+        "line": 6,
+        "path": "checksum_manifest.txt"
+      },
+      {
+        "key": "name",
+        "line": 10,
+        "path": "checksum_manifest.txt"
+      },
+      {
+        "key": "name",
+        "line": 14,
+        "path": "checksum_manifest.txt"
+      },
+      {
+        "key": "name",
+        "line": 18,
+        "path": "checksum_manifest.txt"
+      },
+      {
+        "key": "name",
+        "line": 22,
+        "path": "checksum_manifest.txt"
+      },
+      {
+        "key": "name",
+        "line": 26,
+        "path": "checksum_manifest.txt"
+      },
+      {
+        "key": "name",
+        "line": 30,
+        "path": "checksum_manifest.txt"
+      },
+      {
+        "key": "name",
+        "line": 34,
+        "path": "checksum_manifest.txt"
+      }
+    ]
+  },
+  {
+    "workspace": "Knight Manager (MP).mod",
+    "key": "name",
+    "line": 7,
+    "native": [
+      {
+        "key": "name",
+        "line": 2,
+        "path": "checksum_manifest.txt"
+      },
+      {
+        "key": "name",
+        "line": 6,
+        "path": "checksum_manifest.txt"
+      },
+      {
+        "key": "name",
+        "line": 10,
+        "path": "checksum_manifest.txt"
+      },
+      {
+        "key": "name",
+        "line": 14,
+        "path": "checksum_manifest.txt"
+      },
+      {
+        "key": "name",
+        "line": 18,
+        "path": "checksum_manifest.txt"
+      },
+      {
+        "key": "name",
+        "line": 22,
+        "path": "checksum_manifest.txt"
+      },
+      {
+        "key": "name",
+        "line": 26,
+        "path": "checksum_manifest.txt"
+      },
+      {
+        "key": "name",
+        "line": 30,
+        "path": "checksum_manifest.txt"
+      },
+      {
+        "key": "name",
+        "line": 34,
+        "path": "checksum_manifest.txt"
+      }
+    ]
+  },
+  {
+    "workspace": "Knight Manager Continued (MP).mod",
+    "key": "name",
+    "line": 7,
+    "native": [
+      {
+        "key": "name",
+        "line": 2,
+        "path": "checksum_manifest.txt"
+      },
+      {
+        "key": "name",
+        "line": 6,
+        "path": "checksum_manifest.txt"
+      },
+      {
+        "key": "name",
+        "line": 10,
+        "path": "checksum_manifest.txt"
+      },
+      {
+        "key": "name",
+        "line": 14,
+        "path": "checksum_manifest.txt"
+      },
+      {
+        "key": "name",
+        "line": 18,
+        "path": "checksum_manifest.txt"
+      },
+      {
+        "key": "name",
+        "line": 22,
+        "path": "checksum_manifest.txt"
+      },
+      {
+        "key": "name",
+        "line": 26,
+        "path": "checksum_manifest.txt"
+      },
+      {
+        "key": "name",
+        "line": 30,
+        "path": "checksum_manifest.txt"
+      },
+      {
+        "key": "name",
+        "line": 34,
+        "path": "checksum_manifest.txt"
+      }
+    ]
+  },
+  {
+    "workspace": "Leave Wars/descriptor.mod",
+    "key": "name",
+    "line": 5,
+    "native": [
+      {
+        "key": "name",
+        "line": 2,
+        "path": "checksum_manifest.txt"
+      },
+      {
+        "key": "name",
+        "line": 6,
+        "path": "checksum_manifest.txt"
+      },
+      {
+        "key": "name",
+        "line": 10,
+        "path": "checksum_manifest.txt"
+      },
+      {
+        "key": "name",
+        "line": 14,
+        "path": "checksum_manifest.txt"
+      },
+      {
+        "key": "name",
+        "line": 18,
+        "path": "checksum_manifest.txt"
+      },
+      {
+        "key": "name",
+        "line": 22,
+        "path": "checksum_manifest.txt"
+      },
+      {
+        "key": "name",
+        "line": 26,
+        "path": "checksum_manifest.txt"
+      },
+      {
+        "key": "name",
+        "line": 30,
+        "path": "checksum_manifest.txt"
+      },
+      {
+        "key": "name",
+        "line": 34,
+        "path": "checksum_manifest.txt"
+      }
+    ]
+  },
+  {
+    "workspace": "Leave Wars/events/leave_war_mod_events.txt",
+    "key": "namespace",
+    "line": 1,
+    "native": [
+      {
+        "key": "namespace",
+        "line": 6,
+        "path": "events/_events.info"
+      },
+      {
+        "key": "namespace",
+        "line": 1,
+        "path": "events/accolade_events.txt"
+      },
+      {
+        "key": "namespace",
+        "line": 3,
+        "path": "events/birth_events.txt"
+      },
+      {
+        "key": "namespace",
+        "line": 3,
+        "path": "events/blackmail_events.txt"
+      },
+      {
+        "key": "namespace",
+        "line": 1,
+        "path": "events/board_game_events.txt"
+      },
+      {
+        "key": "namespace",
+        "line": 2,
+        "path": "events/bookmark_events.txt"
+      },
+      {
+        "key": "namespace",
+        "line": 1,
+        "path": "events/bp1_dan_events.txt"
+      },
+      {
+        "key": "namespace",
+        "line": 1,
+        "path": "events/clerical_chastity_vow_events.txt"
+      },
+      {
+        "key": "namespace",
+        "line": 3,
+        "path": "events/court_maintenance_events.txt"
+      },
+      {
+        "key": "namespace",
+        "line": 2,
+        "path": "events/court_position_management_events.txt"
+      },
+      {
+        "key": "namespace",
+        "line": 1,
+        "path": "events/easteregg_events.txt"
+      },
+      {
+        "key": "namespace",
+        "line": 1,
+        "path": "events/elder_events.txt"
+      },
+      {
+        "key": "namespace",
+        "line": 1,
+        "path": "events/empire_faith_gate_events.txt"
+      },
+      {
+        "key": "namespace",
+        "line": 3,
+        "path": "events/error_suppression_events.txt"
+      },
+      {
+        "key": "namespace",
+        "line": 1,
+        "path": "events/game_rule_events.txt"
+      },
+      {
+        "key": "namespace",
+        "line": 1,
+        "path": "events/global_culture_events.txt"
+      },
+      {
+        "key": "namespace",
+        "line": 1,
+        "path": "events/global_religion_events.txt"
+      },
+      {
+        "key": "namespace",
+        "line": 6,
+        "path": "events/harm_events.txt"
+      },
+      {
+        "key": "namespace",
+        "line": 3,
+        "path": "events/health_events.txt"
+      },
+      {
+        "key": "namespace",
+        "line": 2,
+        "path": "events/historical_character_events.txt"
+      },
+      {
+        "key": "namespace",
+        "line": 1,
+        "path": "events/jester_stress_relief_events.txt"
+      },
+      {
+        "key": "namespace",
+        "line": 5,
+        "path": "events/marriage_effect_events.txt"
+      },
+      {
+        "key": "namespace",
+        "line": 1,
+        "path": "events/misc_events.txt"
+      },
+      {
+        "key": "namespace",
+        "line": 1,
+        "path": "events/mpo_chaotic_kurultai_succession.txt"
+      },
+      {
+        "key": "namespace",
+        "line": 1,
+        "path": "events/mpo_flavor_events.txt"
+      },
+      {
+        "key": "namespace",
+        "line": 1,
+        "path": "events/mpo_misc.txt"
+      },
+      {
+        "key": "namespace",
+        "line": 3,
+        "path": "events/pregnancy_events.txt"
+      },
+      {
+        "key": "namespace",
+        "line": 3,
+        "path": "events/realm_maintenance_events.txt"
+      },
+      {
+        "key": "namespace",
+        "line": 5,
+        "path": "events/secret_faith_events.txt"
+      },
+      {
+        "key": "namespace",
+        "line": 3,
+        "path": "events/siege_events.txt"
+      },
+      {
+        "key": "namespace",
+        "line": 1,
+        "path": "events/single_combat_events.txt"
+      },
+      {
+        "key": "namespace",
+        "line": 4,
+        "path": "events/title_events.txt"
+      },
+      {
+        "key": "namespace",
+        "line": 1,
+        "path": "events/tutorial_events.txt"
+      },
+      {
+        "key": "namespace",
+        "line": 1,
+        "path": "events/varangian_events.txt"
+      },
+      {
+        "key": "namespace",
+        "line": 5,
+        "path": "events/witch_events.txt"
+      }
+    ]
+  },
+  {
+    "workspace": "Leave Wars.mod",
+    "key": "name",
+    "line": 5,
+    "native": [
+      {
+        "key": "name",
+        "line": 2,
+        "path": "checksum_manifest.txt"
+      },
+      {
+        "key": "name",
+        "line": 6,
+        "path": "checksum_manifest.txt"
+      },
+      {
+        "key": "name",
+        "line": 10,
+        "path": "checksum_manifest.txt"
+      },
+      {
+        "key": "name",
+        "line": 14,
+        "path": "checksum_manifest.txt"
+      },
+      {
+        "key": "name",
+        "line": 18,
+        "path": "checksum_manifest.txt"
+      },
+      {
+        "key": "name",
+        "line": 22,
+        "path": "checksum_manifest.txt"
+      },
+      {
+        "key": "name",
+        "line": 26,
+        "path": "checksum_manifest.txt"
+      },
+      {
+        "key": "name",
+        "line": 30,
+        "path": "checksum_manifest.txt"
+      },
+      {
+        "key": "name",
+        "line": 34,
+        "path": "checksum_manifest.txt"
+      }
+    ]
+  },
+  {
+    "workspace": "Mass Demand Conversion/descriptor.mod",
+    "key": "name",
+    "line": 7,
+    "native": [
+      {
+        "key": "name",
+        "line": 2,
+        "path": "checksum_manifest.txt"
+      },
+      {
+        "key": "name",
+        "line": 6,
+        "path": "checksum_manifest.txt"
+      },
+      {
+        "key": "name",
+        "line": 10,
+        "path": "checksum_manifest.txt"
+      },
+      {
+        "key": "name",
+        "line": 14,
+        "path": "checksum_manifest.txt"
+      },
+      {
+        "key": "name",
+        "line": 18,
+        "path": "checksum_manifest.txt"
+      },
+      {
+        "key": "name",
+        "line": 22,
+        "path": "checksum_manifest.txt"
+      },
+      {
+        "key": "name",
+        "line": 26,
+        "path": "checksum_manifest.txt"
+      },
+      {
+        "key": "name",
+        "line": 30,
+        "path": "checksum_manifest.txt"
+      },
+      {
+        "key": "name",
+        "line": 34,
+        "path": "checksum_manifest.txt"
+      }
+    ]
+  },
+  {
+    "workspace": "Mass Demand Conversion.mod",
+    "key": "name",
+    "line": 7,
+    "native": [
+      {
+        "key": "name",
+        "line": 2,
+        "path": "checksum_manifest.txt"
+      },
+      {
+        "key": "name",
+        "line": 6,
+        "path": "checksum_manifest.txt"
+      },
+      {
+        "key": "name",
+        "line": 10,
+        "path": "checksum_manifest.txt"
+      },
+      {
+        "key": "name",
+        "line": 14,
+        "path": "checksum_manifest.txt"
+      },
+      {
+        "key": "name",
+        "line": 18,
+        "path": "checksum_manifest.txt"
+      },
+      {
+        "key": "name",
+        "line": 22,
+        "path": "checksum_manifest.txt"
+      },
+      {
+        "key": "name",
+        "line": 26,
+        "path": "checksum_manifest.txt"
+      },
+      {
+        "key": "name",
+        "line": 30,
+        "path": "checksum_manifest.txt"
+      },
+      {
+        "key": "name",
+        "line": 34,
+        "path": "checksum_manifest.txt"
+      }
+    ]
+  },
+  {
+    "workspace": "SerpAlerts/common/on_action/serp_on_actions_alerts_mod.txt",
+    "key": "on_war_started",
+    "line": 4,
+    "native": [
+      {
+        "key": "on_war_started",
+        "line": 312,
+        "path": "common/on_action/war_on_actions.txt"
+      }
+    ]
+  },
+  {
+    "workspace": "SerpAlerts/common/on_action/serp_on_actions_alerts_mod.txt",
+    "key": "on_join_war_as_secondary",
+    "line": 129,
+    "native": [
+      {
+        "key": "on_join_war_as_secondary",
+        "line": 18,
+        "path": "common/on_action/war_on_actions.txt"
+      }
+    ]
+  },
+  {
+    "workspace": "SerpAlerts/common/on_action/serp_on_actions_alerts_mod.txt",
+    "key": "on_death",
+    "line": 172,
+    "native": [
+      {
+        "key": "on_death",
+        "line": 7,
+        "path": "common/on_action/death.txt"
+      }
+    ]
+  },
+  {
+    "workspace": "SerpAlerts/common/on_action/serp_on_actions_alerts_mod.txt",
+    "key": "on_leave_court",
+    "line": 235,
+    "native": [
+      {
+        "key": "on_leave_court",
+        "line": 38,
+        "path": "common/on_action/court_maintenance_on_actions.txt"
+      }
+    ]
+  },
+  {
+    "workspace": "SerpAlerts/descriptor.mod",
+    "key": "name",
+    "line": 5,
+    "native": [
+      {
+        "key": "name",
+        "line": 2,
+        "path": "checksum_manifest.txt"
+      },
+      {
+        "key": "name",
+        "line": 6,
+        "path": "checksum_manifest.txt"
+      },
+      {
+        "key": "name",
+        "line": 10,
+        "path": "checksum_manifest.txt"
+      },
+      {
+        "key": "name",
+        "line": 14,
+        "path": "checksum_manifest.txt"
+      },
+      {
+        "key": "name",
+        "line": 18,
+        "path": "checksum_manifest.txt"
+      },
+      {
+        "key": "name",
+        "line": 22,
+        "path": "checksum_manifest.txt"
+      },
+      {
+        "key": "name",
+        "line": 26,
+        "path": "checksum_manifest.txt"
+      },
+      {
+        "key": "name",
+        "line": 30,
+        "path": "checksum_manifest.txt"
+      },
+      {
+        "key": "name",
+        "line": 34,
+        "path": "checksum_manifest.txt"
+      }
+    ]
+  },
+  {
+    "workspace": "SerpAlerts/events/serp_alerts_events.txt",
+    "key": "namespace",
+    "line": 1,
+    "native": [
+      {
+        "key": "namespace",
+        "line": 6,
+        "path": "events/_events.info"
+      },
+      {
+        "key": "namespace",
+        "line": 1,
+        "path": "events/accolade_events.txt"
+      },
+      {
+        "key": "namespace",
+        "line": 3,
+        "path": "events/birth_events.txt"
+      },
+      {
+        "key": "namespace",
+        "line": 3,
+        "path": "events/blackmail_events.txt"
+      },
+      {
+        "key": "namespace",
+        "line": 1,
+        "path": "events/board_game_events.txt"
+      },
+      {
+        "key": "namespace",
+        "line": 2,
+        "path": "events/bookmark_events.txt"
+      },
+      {
+        "key": "namespace",
+        "line": 1,
+        "path": "events/bp1_dan_events.txt"
+      },
+      {
+        "key": "namespace",
+        "line": 1,
+        "path": "events/clerical_chastity_vow_events.txt"
+      },
+      {
+        "key": "namespace",
+        "line": 3,
+        "path": "events/court_maintenance_events.txt"
+      },
+      {
+        "key": "namespace",
+        "line": 2,
+        "path": "events/court_position_management_events.txt"
+      },
+      {
+        "key": "namespace",
+        "line": 1,
+        "path": "events/easteregg_events.txt"
+      },
+      {
+        "key": "namespace",
+        "line": 1,
+        "path": "events/elder_events.txt"
+      },
+      {
+        "key": "namespace",
+        "line": 1,
+        "path": "events/empire_faith_gate_events.txt"
+      },
+      {
+        "key": "namespace",
+        "line": 3,
+        "path": "events/error_suppression_events.txt"
+      },
+      {
+        "key": "namespace",
+        "line": 1,
+        "path": "events/game_rule_events.txt"
+      },
+      {
+        "key": "namespace",
+        "line": 1,
+        "path": "events/global_culture_events.txt"
+      },
+      {
+        "key": "namespace",
+        "line": 1,
+        "path": "events/global_religion_events.txt"
+      },
+      {
+        "key": "namespace",
+        "line": 6,
+        "path": "events/harm_events.txt"
+      },
+      {
+        "key": "namespace",
+        "line": 3,
+        "path": "events/health_events.txt"
+      },
+      {
+        "key": "namespace",
+        "line": 2,
+        "path": "events/historical_character_events.txt"
+      },
+      {
+        "key": "namespace",
+        "line": 1,
+        "path": "events/jester_stress_relief_events.txt"
+      },
+      {
+        "key": "namespace",
+        "line": 5,
+        "path": "events/marriage_effect_events.txt"
+      },
+      {
+        "key": "namespace",
+        "line": 1,
+        "path": "events/misc_events.txt"
+      },
+      {
+        "key": "namespace",
+        "line": 1,
+        "path": "events/mpo_chaotic_kurultai_succession.txt"
+      },
+      {
+        "key": "namespace",
+        "line": 1,
+        "path": "events/mpo_flavor_events.txt"
+      },
+      {
+        "key": "namespace",
+        "line": 1,
+        "path": "events/mpo_misc.txt"
+      },
+      {
+        "key": "namespace",
+        "line": 3,
+        "path": "events/pregnancy_events.txt"
+      },
+      {
+        "key": "namespace",
+        "line": 3,
+        "path": "events/realm_maintenance_events.txt"
+      },
+      {
+        "key": "namespace",
+        "line": 5,
+        "path": "events/secret_faith_events.txt"
+      },
+      {
+        "key": "namespace",
+        "line": 3,
+        "path": "events/siege_events.txt"
+      },
+      {
+        "key": "namespace",
+        "line": 1,
+        "path": "events/single_combat_events.txt"
+      },
+      {
+        "key": "namespace",
+        "line": 4,
+        "path": "events/title_events.txt"
+      },
+      {
+        "key": "namespace",
+        "line": 1,
+        "path": "events/tutorial_events.txt"
+      },
+      {
+        "key": "namespace",
+        "line": 1,
+        "path": "events/varangian_events.txt"
+      },
+      {
+        "key": "namespace",
+        "line": 5,
+        "path": "events/witch_events.txt"
+      }
+    ]
+  },
+  {
+    "workspace": "SerpAlerts.mod",
+    "key": "name",
+    "line": 5,
+    "native": [
+      {
+        "key": "name",
+        "line": 2,
+        "path": "checksum_manifest.txt"
+      },
+      {
+        "key": "name",
+        "line": 6,
+        "path": "checksum_manifest.txt"
+      },
+      {
+        "key": "name",
+        "line": 10,
+        "path": "checksum_manifest.txt"
+      },
+      {
+        "key": "name",
+        "line": 14,
+        "path": "checksum_manifest.txt"
+      },
+      {
+        "key": "name",
+        "line": 18,
+        "path": "checksum_manifest.txt"
+      },
+      {
+        "key": "name",
+        "line": 22,
+        "path": "checksum_manifest.txt"
+      },
+      {
+        "key": "name",
+        "line": 26,
+        "path": "checksum_manifest.txt"
+      },
+      {
+        "key": "name",
+        "line": 30,
+        "path": "checksum_manifest.txt"
+      },
+      {
+        "key": "name",
+        "line": 34,
+        "path": "checksum_manifest.txt"
+      }
+    ]
+  },
+  {
+    "workspace": "SerpInteractionsDecisions/descriptor.mod",
+    "key": "name",
+    "line": 6,
+    "native": [
+      {
+        "key": "name",
+        "line": 2,
+        "path": "checksum_manifest.txt"
+      },
+      {
+        "key": "name",
+        "line": 6,
+        "path": "checksum_manifest.txt"
+      },
+      {
+        "key": "name",
+        "line": 10,
+        "path": "checksum_manifest.txt"
+      },
+      {
+        "key": "name",
+        "line": 14,
+        "path": "checksum_manifest.txt"
+      },
+      {
+        "key": "name",
+        "line": 18,
+        "path": "checksum_manifest.txt"
+      },
+      {
+        "key": "name",
+        "line": 22,
+        "path": "checksum_manifest.txt"
+      },
+      {
+        "key": "name",
+        "line": 26,
+        "path": "checksum_manifest.txt"
+      },
+      {
+        "key": "name",
+        "line": 30,
+        "path": "checksum_manifest.txt"
+      },
+      {
+        "key": "name",
+        "line": 34,
+        "path": "checksum_manifest.txt"
+      }
+    ]
+  },
+  {
+    "workspace": "SerpInteractionsDecisions/events/additional_education_events.txt",
+    "key": "namespace",
+    "line": 1,
+    "native": [
+      {
+        "key": "namespace",
+        "line": 6,
+        "path": "events/_events.info"
+      },
+      {
+        "key": "namespace",
+        "line": 1,
+        "path": "events/accolade_events.txt"
+      },
+      {
+        "key": "namespace",
+        "line": 3,
+        "path": "events/birth_events.txt"
+      },
+      {
+        "key": "namespace",
+        "line": 3,
+        "path": "events/blackmail_events.txt"
+      },
+      {
+        "key": "namespace",
+        "line": 1,
+        "path": "events/board_game_events.txt"
+      },
+      {
+        "key": "namespace",
+        "line": 2,
+        "path": "events/bookmark_events.txt"
+      },
+      {
+        "key": "namespace",
+        "line": 1,
+        "path": "events/bp1_dan_events.txt"
+      },
+      {
+        "key": "namespace",
+        "line": 1,
+        "path": "events/clerical_chastity_vow_events.txt"
+      },
+      {
+        "key": "namespace",
+        "line": 3,
+        "path": "events/court_maintenance_events.txt"
+      },
+      {
+        "key": "namespace",
+        "line": 2,
+        "path": "events/court_position_management_events.txt"
+      },
+      {
+        "key": "namespace",
+        "line": 1,
+        "path": "events/easteregg_events.txt"
+      },
+      {
+        "key": "namespace",
+        "line": 1,
+        "path": "events/elder_events.txt"
+      },
+      {
+        "key": "namespace",
+        "line": 1,
+        "path": "events/empire_faith_gate_events.txt"
+      },
+      {
+        "key": "namespace",
+        "line": 3,
+        "path": "events/error_suppression_events.txt"
+      },
+      {
+        "key": "namespace",
+        "line": 1,
+        "path": "events/game_rule_events.txt"
+      },
+      {
+        "key": "namespace",
+        "line": 1,
+        "path": "events/global_culture_events.txt"
+      },
+      {
+        "key": "namespace",
+        "line": 1,
+        "path": "events/global_religion_events.txt"
+      },
+      {
+        "key": "namespace",
+        "line": 6,
+        "path": "events/harm_events.txt"
+      },
+      {
+        "key": "namespace",
+        "line": 3,
+        "path": "events/health_events.txt"
+      },
+      {
+        "key": "namespace",
+        "line": 2,
+        "path": "events/historical_character_events.txt"
+      },
+      {
+        "key": "namespace",
+        "line": 1,
+        "path": "events/jester_stress_relief_events.txt"
+      },
+      {
+        "key": "namespace",
+        "line": 5,
+        "path": "events/marriage_effect_events.txt"
+      },
+      {
+        "key": "namespace",
+        "line": 1,
+        "path": "events/misc_events.txt"
+      },
+      {
+        "key": "namespace",
+        "line": 1,
+        "path": "events/mpo_chaotic_kurultai_succession.txt"
+      },
+      {
+        "key": "namespace",
+        "line": 1,
+        "path": "events/mpo_flavor_events.txt"
+      },
+      {
+        "key": "namespace",
+        "line": 1,
+        "path": "events/mpo_misc.txt"
+      },
+      {
+        "key": "namespace",
+        "line": 3,
+        "path": "events/pregnancy_events.txt"
+      },
+      {
+        "key": "namespace",
+        "line": 3,
+        "path": "events/realm_maintenance_events.txt"
+      },
+      {
+        "key": "namespace",
+        "line": 5,
+        "path": "events/secret_faith_events.txt"
+      },
+      {
+        "key": "namespace",
+        "line": 3,
+        "path": "events/siege_events.txt"
+      },
+      {
+        "key": "namespace",
+        "line": 1,
+        "path": "events/single_combat_events.txt"
+      },
+      {
+        "key": "namespace",
+        "line": 4,
+        "path": "events/title_events.txt"
+      },
+      {
+        "key": "namespace",
+        "line": 1,
+        "path": "events/tutorial_events.txt"
+      },
+      {
+        "key": "namespace",
+        "line": 1,
+        "path": "events/varangian_events.txt"
+      },
+      {
+        "key": "namespace",
+        "line": 5,
+        "path": "events/witch_events.txt"
+      }
+    ]
+  },
+  {
+    "workspace": "SerpInteractionsDecisions/events/convert_resources_events.txt",
+    "key": "namespace",
+    "line": 3,
+    "native": [
+      {
+        "key": "namespace",
+        "line": 6,
+        "path": "events/_events.info"
+      },
+      {
+        "key": "namespace",
+        "line": 1,
+        "path": "events/accolade_events.txt"
+      },
+      {
+        "key": "namespace",
+        "line": 3,
+        "path": "events/birth_events.txt"
+      },
+      {
+        "key": "namespace",
+        "line": 3,
+        "path": "events/blackmail_events.txt"
+      },
+      {
+        "key": "namespace",
+        "line": 1,
+        "path": "events/board_game_events.txt"
+      },
+      {
+        "key": "namespace",
+        "line": 2,
+        "path": "events/bookmark_events.txt"
+      },
+      {
+        "key": "namespace",
+        "line": 1,
+        "path": "events/bp1_dan_events.txt"
+      },
+      {
+        "key": "namespace",
+        "line": 1,
+        "path": "events/clerical_chastity_vow_events.txt"
+      },
+      {
+        "key": "namespace",
+        "line": 3,
+        "path": "events/court_maintenance_events.txt"
+      },
+      {
+        "key": "namespace",
+        "line": 2,
+        "path": "events/court_position_management_events.txt"
+      },
+      {
+        "key": "namespace",
+        "line": 1,
+        "path": "events/easteregg_events.txt"
+      },
+      {
+        "key": "namespace",
+        "line": 1,
+        "path": "events/elder_events.txt"
+      },
+      {
+        "key": "namespace",
+        "line": 1,
+        "path": "events/empire_faith_gate_events.txt"
+      },
+      {
+        "key": "namespace",
+        "line": 3,
+        "path": "events/error_suppression_events.txt"
+      },
+      {
+        "key": "namespace",
+        "line": 1,
+        "path": "events/game_rule_events.txt"
+      },
+      {
+        "key": "namespace",
+        "line": 1,
+        "path": "events/global_culture_events.txt"
+      },
+      {
+        "key": "namespace",
+        "line": 1,
+        "path": "events/global_religion_events.txt"
+      },
+      {
+        "key": "namespace",
+        "line": 6,
+        "path": "events/harm_events.txt"
+      },
+      {
+        "key": "namespace",
+        "line": 3,
+        "path": "events/health_events.txt"
+      },
+      {
+        "key": "namespace",
+        "line": 2,
+        "path": "events/historical_character_events.txt"
+      },
+      {
+        "key": "namespace",
+        "line": 1,
+        "path": "events/jester_stress_relief_events.txt"
+      },
+      {
+        "key": "namespace",
+        "line": 5,
+        "path": "events/marriage_effect_events.txt"
+      },
+      {
+        "key": "namespace",
+        "line": 1,
+        "path": "events/misc_events.txt"
+      },
+      {
+        "key": "namespace",
+        "line": 1,
+        "path": "events/mpo_chaotic_kurultai_succession.txt"
+      },
+      {
+        "key": "namespace",
+        "line": 1,
+        "path": "events/mpo_flavor_events.txt"
+      },
+      {
+        "key": "namespace",
+        "line": 1,
+        "path": "events/mpo_misc.txt"
+      },
+      {
+        "key": "namespace",
+        "line": 3,
+        "path": "events/pregnancy_events.txt"
+      },
+      {
+        "key": "namespace",
+        "line": 3,
+        "path": "events/realm_maintenance_events.txt"
+      },
+      {
+        "key": "namespace",
+        "line": 5,
+        "path": "events/secret_faith_events.txt"
+      },
+      {
+        "key": "namespace",
+        "line": 3,
+        "path": "events/siege_events.txt"
+      },
+      {
+        "key": "namespace",
+        "line": 1,
+        "path": "events/single_combat_events.txt"
+      },
+      {
+        "key": "namespace",
+        "line": 4,
+        "path": "events/title_events.txt"
+      },
+      {
+        "key": "namespace",
+        "line": 1,
+        "path": "events/tutorial_events.txt"
+      },
+      {
+        "key": "namespace",
+        "line": 1,
+        "path": "events/varangian_events.txt"
+      },
+      {
+        "key": "namespace",
+        "line": 5,
+        "path": "events/witch_events.txt"
+      }
+    ]
+  },
+  {
+    "workspace": "SerpInteractionsDecisions/events/leave_war_mod_events.txt",
+    "key": "namespace",
+    "line": 1,
+    "native": [
+      {
+        "key": "namespace",
+        "line": 6,
+        "path": "events/_events.info"
+      },
+      {
+        "key": "namespace",
+        "line": 1,
+        "path": "events/accolade_events.txt"
+      },
+      {
+        "key": "namespace",
+        "line": 3,
+        "path": "events/birth_events.txt"
+      },
+      {
+        "key": "namespace",
+        "line": 3,
+        "path": "events/blackmail_events.txt"
+      },
+      {
+        "key": "namespace",
+        "line": 1,
+        "path": "events/board_game_events.txt"
+      },
+      {
+        "key": "namespace",
+        "line": 2,
+        "path": "events/bookmark_events.txt"
+      },
+      {
+        "key": "namespace",
+        "line": 1,
+        "path": "events/bp1_dan_events.txt"
+      },
+      {
+        "key": "namespace",
+        "line": 1,
+        "path": "events/clerical_chastity_vow_events.txt"
+      },
+      {
+        "key": "namespace",
+        "line": 3,
+        "path": "events/court_maintenance_events.txt"
+      },
+      {
+        "key": "namespace",
+        "line": 2,
+        "path": "events/court_position_management_events.txt"
+      },
+      {
+        "key": "namespace",
+        "line": 1,
+        "path": "events/easteregg_events.txt"
+      },
+      {
+        "key": "namespace",
+        "line": 1,
+        "path": "events/elder_events.txt"
+      },
+      {
+        "key": "namespace",
+        "line": 1,
+        "path": "events/empire_faith_gate_events.txt"
+      },
+      {
+        "key": "namespace",
+        "line": 3,
+        "path": "events/error_suppression_events.txt"
+      },
+      {
+        "key": "namespace",
+        "line": 1,
+        "path": "events/game_rule_events.txt"
+      },
+      {
+        "key": "namespace",
+        "line": 1,
+        "path": "events/global_culture_events.txt"
+      },
+      {
+        "key": "namespace",
+        "line": 1,
+        "path": "events/global_religion_events.txt"
+      },
+      {
+        "key": "namespace",
+        "line": 6,
+        "path": "events/harm_events.txt"
+      },
+      {
+        "key": "namespace",
+        "line": 3,
+        "path": "events/health_events.txt"
+      },
+      {
+        "key": "namespace",
+        "line": 2,
+        "path": "events/historical_character_events.txt"
+      },
+      {
+        "key": "namespace",
+        "line": 1,
+        "path": "events/jester_stress_relief_events.txt"
+      },
+      {
+        "key": "namespace",
+        "line": 5,
+        "path": "events/marriage_effect_events.txt"
+      },
+      {
+        "key": "namespace",
+        "line": 1,
+        "path": "events/misc_events.txt"
+      },
+      {
+        "key": "namespace",
+        "line": 1,
+        "path": "events/mpo_chaotic_kurultai_succession.txt"
+      },
+      {
+        "key": "namespace",
+        "line": 1,
+        "path": "events/mpo_flavor_events.txt"
+      },
+      {
+        "key": "namespace",
+        "line": 1,
+        "path": "events/mpo_misc.txt"
+      },
+      {
+        "key": "namespace",
+        "line": 3,
+        "path": "events/pregnancy_events.txt"
+      },
+      {
+        "key": "namespace",
+        "line": 3,
+        "path": "events/realm_maintenance_events.txt"
+      },
+      {
+        "key": "namespace",
+        "line": 5,
+        "path": "events/secret_faith_events.txt"
+      },
+      {
+        "key": "namespace",
+        "line": 3,
+        "path": "events/siege_events.txt"
+      },
+      {
+        "key": "namespace",
+        "line": 1,
+        "path": "events/single_combat_events.txt"
+      },
+      {
+        "key": "namespace",
+        "line": 4,
+        "path": "events/title_events.txt"
+      },
+      {
+        "key": "namespace",
+        "line": 1,
+        "path": "events/tutorial_events.txt"
+      },
+      {
+        "key": "namespace",
+        "line": 1,
+        "path": "events/varangian_events.txt"
+      },
+      {
+        "key": "namespace",
+        "line": 5,
+        "path": "events/witch_events.txt"
+      }
+    ]
+  },
+  {
+    "workspace": "SerpInteractionsDecisions.mod",
+    "key": "name",
+    "line": 6,
+    "native": [
+      {
+        "key": "name",
+        "line": 2,
+        "path": "checksum_manifest.txt"
+      },
+      {
+        "key": "name",
+        "line": 6,
+        "path": "checksum_manifest.txt"
+      },
+      {
+        "key": "name",
+        "line": 10,
+        "path": "checksum_manifest.txt"
+      },
+      {
+        "key": "name",
+        "line": 14,
+        "path": "checksum_manifest.txt"
+      },
+      {
+        "key": "name",
+        "line": 18,
+        "path": "checksum_manifest.txt"
+      },
+      {
+        "key": "name",
+        "line": 22,
+        "path": "checksum_manifest.txt"
+      },
+      {
+        "key": "name",
+        "line": 26,
+        "path": "checksum_manifest.txt"
+      },
+      {
+        "key": "name",
+        "line": 30,
+        "path": "checksum_manifest.txt"
+      },
+      {
+        "key": "name",
+        "line": 34,
+        "path": "checksum_manifest.txt"
+      }
+    ]
+  },
+  {
+    "workspace": "test.mod",
+    "key": "name",
+    "line": 5,
+    "native": [
+      {
+        "key": "name",
+        "line": 2,
+        "path": "checksum_manifest.txt"
+      },
+      {
+        "key": "name",
+        "line": 6,
+        "path": "checksum_manifest.txt"
+      },
+      {
+        "key": "name",
+        "line": 10,
+        "path": "checksum_manifest.txt"
+      },
+      {
+        "key": "name",
+        "line": 14,
+        "path": "checksum_manifest.txt"
+      },
+      {
+        "key": "name",
+        "line": 18,
+        "path": "checksum_manifest.txt"
+      },
+      {
+        "key": "name",
+        "line": 22,
+        "path": "checksum_manifest.txt"
+      },
+      {
+        "key": "name",
+        "line": 26,
+        "path": "checksum_manifest.txt"
+      },
+      {
+        "key": "name",
+        "line": 30,
+        "path": "checksum_manifest.txt"
+      },
+      {
+        "key": "name",
+        "line": 34,
+        "path": "checksum_manifest.txt"
+      }
+    ]
+  }
+]

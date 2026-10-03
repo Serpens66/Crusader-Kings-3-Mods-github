@@ -21,6 +21,7 @@ This is a working reference for building new Crusader Kings III mods in this wor
 | Start from concrete files | [Examples and test scenarios](examples/README.md) |
 | Learn from existing work | [Workspace case studies](workspace/case-studies.md) and [inventory](reference/workspace-inventory.md) |
 | Find a function or an object | [Command quick reference](reference/commands.md), [local lookup](reference/index-guide.md) |
+| Prepare existing mods for the installed version | [Update readiness and per-mod packages](update-readiness/README.md) |
 | Check confidence and gaps | [Audit findings](research/vanilla-audit.md), [coverage](research/coverage.md), [sources](research/sources.md) |
 
 ## Rules for future agents

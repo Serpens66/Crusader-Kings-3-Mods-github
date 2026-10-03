@@ -24,7 +24,7 @@ The same Knight Manager callback/helper names occur in several directories. They
 
 Primary entry point: `common/decisions/mod_mass_convert_subjects.txt`. The decision offers group choices and queries native interaction acceptance for direct/indirect vassals, tributaries, courtiers and house members. The standalone version includes newer picture-block syntax and extra candidate handling compared with the bundle version.
 
-The script-value file supports UI/count calculations. The `accept_conversion_notification` event file reuses native event IDs: this is an object-level override candidate even when the path differs from the current native file. Use the event override rules, not just a same-path comparison.
+The script-value file supports UI/count calculations. The `accept_conversion_notification` file contains a fully commented-out native event experiment. It is inactive in both standalone and bundle; do not count it as an active override. See the [update sheet](../update-readiness/mods/mass-demand-conversion.md) for the checked current status.
 
 **Reusable:** classify target sets, retain native interaction rules, share numeric calculations. **Re-audit:** current faith/rite conversion API and exact dispatch helper chain, treatment of indirect vassals, candidate duplication, widget flags, consent and preview costs.
 

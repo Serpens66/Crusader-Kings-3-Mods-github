@@ -2,8 +2,8 @@
   "date": "2026-10-03",
   "status": "passed",
   "checks": {
-    "internal_links": 85,
-    "text_files": 42,
+    "internal_links": 197,
+    "text_files": 79,
     "fixture_structures": 10,
     "workspace_hashes": 157,
     "audit_source_hashes": 694,

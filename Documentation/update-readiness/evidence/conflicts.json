@@ -1,0 +1,4066 @@
+{
+  "same_paths": [
+    {
+      "relative_path": "OUTDATED.txt",
+      "files": [
+        {
+          "path": "Knight Manager (MP)/OUTDATED.txt",
+          "sha256": "f6fa829c529df799438d5e86c1ab0bf6570ec646698c3074c47fe85455c9b128"
+        },
+        {
+          "path": "Knight Manager Continued (MP)/OUTDATED.txt",
+          "sha256": "f6fa829c529df799438d5e86c1ab0bf6570ec646698c3074c47fe85455c9b128"
+        }
+      ]
+    },
+    {
+      "relative_path": "common/character_interactions/leave_war_mod_interaction.txt",
+      "files": [
+        {
+          "path": "Leave Wars/common/character_interactions/leave_war_mod_interaction.txt",
+          "sha256": "62b75b47b8f4b7e302bd17d45d91a3de46e5ae2662246d992a4863f5cbc8a111"
+        },
+        {
+          "path": "SerpInteractionsDecisions/common/character_interactions/leave_war_mod_interaction.txt",
+          "sha256": "62b75b47b8f4b7e302bd17d45d91a3de46e5ae2662246d992a4863f5cbc8a111"
+        }
+      ]
+    },
+    {
+      "relative_path": "common/decisions/mod_mass_convert_subjects.txt",
+      "files": [
+        {
+          "path": "Mass Demand Conversion/common/decisions/mod_mass_convert_subjects.txt",
+          "sha256": "fbbd9f04e5a7ab9b8eaee71c31bf4053c9f37e0f526936d7ad482fb4238f0732"
+        },
+        {
+          "path": "SerpInteractionsDecisions/common/decisions/mod_mass_convert_subjects.txt",
+          "sha256": "93dbafbddd84c242ac06a39a800b54aec616c8b476b7de3820d6b1fdb6311020"
+        }
+      ]
+    },
+    {
+      "relative_path": "common/effect_localization/leave_war_mod_effect_loc.txt",
+      "files": [
+        {
+          "path": "Leave Wars/common/effect_localization/leave_war_mod_effect_loc.txt",
+          "sha256": "9b2c5e8b1376f947591e6a58f53082bf1940ef5e988282486f3be1cd0b784668"
+        },
+        {
+          "path": "SerpInteractionsDecisions/common/effect_localization/leave_war_mod_effect_loc.txt",
+          "sha256": "9b2c5e8b1376f947591e6a58f53082bf1940ef5e988282486f3be1cd0b784668"
+        }
+      ]
+    },
+    {
+      "relative_path": "common/game_rules/leave_war_mod_rules.txt",
+      "files": [
+        {
+          "path": "Leave Wars/common/game_rules/leave_war_mod_rules.txt",
+          "sha256": "79a2dfcba33c495ab570bd4f8031970b27d0c7a98ea8383bdc27d36ad786e6fc"
+        },
+        {
+          "path": "SerpInteractionsDecisions/common/game_rules/leave_war_mod_rules.txt",
+          "sha256": "79a2dfcba33c495ab570bd4f8031970b27d0c7a98ea8383bdc27d36ad786e6fc"
+        }
+      ]
+    },
+    {
+      "relative_path": "common/messages/leave_war_mod_messages.txt",
+      "files": [
+        {
+          "path": "Leave Wars/common/messages/leave_war_mod_messages.txt",
+          "sha256": "65f401e1aefa285763bca7a6ba0578fda341d83b1fb588fac9e53486e6736358"
+        },
+        {
+          "path": "SerpInteractionsDecisions/common/messages/leave_war_mod_messages.txt",
+          "sha256": "65f401e1aefa285763bca7a6ba0578fda341d83b1fb588fac9e53486e6736358"
+        }
+      ]
+    },
+    {
+      "relative_path": "common/on_action/knight_manager_on_actions.txt",
+      "files": [
+        {
+          "path": "CustomDefines/common/on_action/knight_manager_on_actions.txt",
+          "sha256": "75055728a854ad4358d1e38d23f4984fee73075a085b32a7c74091b6c022bd78"
+        },
+        {
+          "path": "Knight Manager (MP)/common/on_action/knight_manager_on_actions.txt",
+          "sha256": "75055728a854ad4358d1e38d23f4984fee73075a085b32a7c74091b6c022bd78"
+        },
+        {
+          "path": "test/common/on_action/knight_manager_on_actions.txt",
+          "sha256": "75055728a854ad4358d1e38d23f4984fee73075a085b32a7c74091b6c022bd78"
+        }
+      ]
+    },
+    {
+      "relative_path": "common/opinion_modifiers/leave_war_mod_opinions.txt",
+      "files": [
+        {
+          "path": "Leave Wars/common/opinion_modifiers/leave_war_mod_opinions.txt",
+          "sha256": "912fb4ccd8cf292bb57bd41bb5e56fb47f434f7cb192ba3bcdc5b57234cb6ca1"
+        },
+        {
+          "path": "SerpInteractionsDecisions/common/opinion_modifiers/leave_war_mod_opinions.txt",
+          "sha256": "912fb4ccd8cf292bb57bd41bb5e56fb47f434f7cb192ba3bcdc5b57234cb6ca1"
+        }
+      ]
+    },
+    {
+      "relative_path": "common/script_values/leave_war_mod_cost_values.txt",
+      "files": [
+        {
+          "path": "Leave Wars/common/script_values/leave_war_mod_cost_values.txt",
+          "sha256": "eb34904f59d4aa996e8ee3c3738984fbf7f64477a85ce0710c409813deb28005"
+        },
+        {
+          "path": "SerpInteractionsDecisions/common/script_values/leave_war_mod_cost_values.txt",
+          "sha256": "eb34904f59d4aa996e8ee3c3738984fbf7f64477a85ce0710c409813deb28005"
+        }
+      ]
+    },
+    {
+      "relative_path": "common/script_values/mod_mass_convert_subjects_values.txt",
+      "files": [
+        {
+          "path": "Mass Demand Conversion/common/script_values/mod_mass_convert_subjects_values.txt",
+          "sha256": "9340207b8db21b621b20d0d5a95274f85eb4a48bd4fa6b94020e68048bf3c0af"
+        },
+        {
+          "path": "SerpInteractionsDecisions/common/script_values/mod_mass_convert_subjects_values.txt",
+          "sha256": "4dc48002026170a152c9fd22c9aa7cd9de812c999bac58ccfbc6ecd86853e9b8"
+        }
+      ]
+    },
+    {
+      "relative_path": "common/scripted_guis/knight_manager_gui.txt",
+      "files": [
+        {
+          "path": "CustomDefines/common/scripted_guis/knight_manager_gui.txt",
+          "sha256": "115e182f4218c6df1d9c19b72b595b3326590755fc6b40d179f59b327fcb9d46"
+        },
+        {
+          "path": "Knight Manager (MP)/common/scripted_guis/knight_manager_gui.txt",
+          "sha256": "115e182f4218c6df1d9c19b72b595b3326590755fc6b40d179f59b327fcb9d46"
+        },
+        {
+          "path": "test/common/scripted_guis/knight_manager_gui.txt",
+          "sha256": "115e182f4218c6df1d9c19b72b595b3326590755fc6b40d179f59b327fcb9d46"
+        }
+      ]
+    },
+    {
+      "relative_path": "common/scripted_triggers/knighthood_trigger.txt",
+      "files": [
+        {
+          "path": "CustomDefines/common/scripted_triggers/knighthood_trigger.txt",
+          "sha256": "bc66d733b460941a57d87ff8ce9241f7b05d57167c967d4829bf940e1f351df3"
+        },
+        {
+          "path": "Knight Manager (MP)/common/scripted_triggers/knighthood_trigger.txt",
+          "sha256": "93f859fe9b6dc283539b3abe13c83a48cbdb15011e8b390b54e61eb33d4f29b1"
+        },
+        {
+          "path": "test/common/scripted_triggers/knighthood_trigger.txt",
+          "sha256": "e26b33560d2bfd1ac7a7dbd09496544f927814e5a45deac547f60effa1427e73"
+        }
+      ]
+    },
+    {
+      "relative_path": "events/knight_manager_events.txt",
+      "files": [
+        {
+          "path": "CustomDefines/events/knight_manager_events.txt",
+          "sha256": "515338e2ea435572b93b9cbe9dc0d4c13d6c99a19e8527c61c15740c951848be"
+        },
+        {
+          "path": "Knight Manager (MP)/events/knight_manager_events.txt",
+          "sha256": "515338e2ea435572b93b9cbe9dc0d4c13d6c99a19e8527c61c15740c951848be"
+        },
+        {
+          "path": "test/events/knight_manager_events.txt",
+          "sha256": "515338e2ea435572b93b9cbe9dc0d4c13d6c99a19e8527c61c15740c951848be"
+        }
+      ]
+    },
+    {
+      "relative_path": "events/leave_war_mod_events.txt",
+      "files": [
+        {
+          "path": "Leave Wars/events/leave_war_mod_events.txt",
+          "sha256": "6ad8e729a8ce1fd95f77faf43d1e33d4367fcd3c2fe9dce3890b55ea03154d86"
+        },
+        {
+          "path": "SerpInteractionsDecisions/events/leave_war_mod_events.txt",
+          "sha256": "6ad8e729a8ce1fd95f77faf43d1e33d4367fcd3c2fe9dce3890b55ea03154d86"
+        }
+      ]
+    },
+    {
+      "relative_path": "events/religion_events/accept_conversion_notification.txt",
+      "files": [
+        {
+          "path": "Mass Demand Conversion/events/religion_events/accept_conversion_notification.txt",
+          "sha256": "13213f5522e28fe0ae3fa5526544e9135d797c7b553848d091326287dbb588f7"
+        },
+        {
+          "path": "SerpInteractionsDecisions/events/religion_events/accept_conversion_notification.txt",
+          "sha256": "13213f5522e28fe0ae3fa5526544e9135d797c7b553848d091326287dbb588f7"
+        }
+      ]
+    },
+    {
+      "relative_path": "gfx/interface/icons/artifact/artifact_bg.dds",
+      "files": [
+        {
+          "path": "GFX-Mod/gfx/interface/icons/artifact/artifact_bg.dds",
+          "sha256": "5cf39c75f0551be3b93635a7477e3eda16a5b24ba255637ae775968839669b90"
+        },
+        {
+          "path": "GFX-Mod Serp/gfx/interface/icons/artifact/artifact_bg.dds",
+          "sha256": "5cf39c75f0551be3b93635a7477e3eda16a5b24ba255637ae775968839669b90"
+        }
+      ]
+    },
+    {
+      "relative_path": "gfx/interface/icons/artifact/artifact_unique.dds",
+      "files": [
+        {
+          "path": "GFX-Mod/gfx/interface/icons/artifact/artifact_unique.dds",
+          "sha256": "e89cd9340a8d467d4ebbf7f2b1bb073cf75c13a1c42a4f77cb66e4aac52131ad"
+        },
+        {
+          "path": "GFX-Mod Serp/gfx/interface/icons/artifact/artifact_unique.dds",
+          "sha256": "e89cd9340a8d467d4ebbf7f2b1bb073cf75c13a1c42a4f77cb66e4aac52131ad"
+        }
+      ]
+    },
+    {
+      "relative_path": "gfx/interface/icons/character_status/sexuality_icons_female.dds",
+      "files": [
+        {
+          "path": "Gender Colour/gfx/interface/icons/character_status/sexuality_icons_female.dds",
+          "sha256": "8699ddc4f135d9fd6a6ca80435680fbf6eb256e1a6dd9104034cf9e5c2635c2b"
+        },
+        {
+          "path": "GFX-Mod/gfx/interface/icons/character_status/sexuality_icons_female.dds",
+          "sha256": "5a1d3ae8fadd70c46d3c8e291343be0dd7430b848cc68c6093239053c0cec75c"
+        },
+        {
+          "path": "GFX-Mod Serp/gfx/interface/icons/character_status/sexuality_icons_female.dds",
+          "sha256": "5a1d3ae8fadd70c46d3c8e291343be0dd7430b848cc68c6093239053c0cec75c"
+        }
+      ]
+    },
+    {
+      "relative_path": "gfx/interface/icons/character_status/sexuality_icons_female_mies.dds",
+      "files": [
+        {
+          "path": "GFX-Mod/gfx/interface/icons/character_status/sexuality_icons_female_mies.dds",
+          "sha256": "8699ddc4f135d9fd6a6ca80435680fbf6eb256e1a6dd9104034cf9e5c2635c2b"
+        },
+        {
+          "path": "GFX-Mod Serp/gfx/interface/icons/character_status/sexuality_icons_female_mies.dds",
+          "sha256": "8699ddc4f135d9fd6a6ca80435680fbf6eb256e1a6dd9104034cf9e5c2635c2b"
+        }
+      ]
+    },
+    {
+      "relative_path": "gfx/interface/icons/character_status/sexuality_icons_male.dds",
+      "files": [
+        {
+          "path": "Gender Colour/gfx/interface/icons/character_status/sexuality_icons_male.dds",
+          "sha256": "86d2fd0981e62cc3e261cc332aeff7c001c423b704be61881e241a6bed21d6b6"
+        },
+        {
+          "path": "GFX-Mod/gfx/interface/icons/character_status/sexuality_icons_male.dds",
+          "sha256": "86d2fd0981e62cc3e261cc332aeff7c001c423b704be61881e241a6bed21d6b6"
+        },
+        {
+          "path": "GFX-Mod Serp/gfx/interface/icons/character_status/sexuality_icons_male.dds",
+          "sha256": "86d2fd0981e62cc3e261cc332aeff7c001c423b704be61881e241a6bed21d6b6"
+        }
+      ]
+    },
+    {
+      "relative_path": "gfx/interface/icons/character_status/sexuality_icons_male_grey.dds",
+      "files": [
+        {
+          "path": "Gender Colour/gfx/interface/icons/character_status/sexuality_icons_male_grey.dds",
+          "sha256": "b95bf968d591c7dcfb7f5b29179a0720e22555c96d40b5dafc298eb90bb8b8cb"
+        },
+        {
+          "path": "GFX-Mod/gfx/interface/icons/character_status/sexuality_icons_male_grey.dds",
+          "sha256": "b95bf968d591c7dcfb7f5b29179a0720e22555c96d40b5dafc298eb90bb8b8cb"
+        },
+        {
+          "path": "GFX-Mod Serp/gfx/interface/icons/character_status/sexuality_icons_male_grey.dds",
+          "sha256": "b95bf968d591c7dcfb7f5b29179a0720e22555c96d40b5dafc298eb90bb8b8cb"
+        }
+      ]
+    },
+    {
+      "relative_path": "gfx/interface/icons/character_status/sexuality_icons_male_wrongicon.dds",
+      "files": [
+        {
+          "path": "Gender Colour/gfx/interface/icons/character_status/sexuality_icons_male_wrongicon.dds",
+          "sha256": "e7bba607d6c8ce86b1f89e1b8a64575609c22b64b3b0e47751d6e12d8499979e"
+        },
+        {
+          "path": "GFX-Mod/gfx/interface/icons/character_status/sexuality_icons_male_wrongicon.dds",
+          "sha256": "e7bba607d6c8ce86b1f89e1b8a64575609c22b64b3b0e47751d6e12d8499979e"
+        },
+        {
+          "path": "GFX-Mod Serp/gfx/interface/icons/character_status/sexuality_icons_male_wrongicon.dds",
+          "sha256": "e7bba607d6c8ce86b1f89e1b8a64575609c22b64b3b0e47751d6e12d8499979e"
+        }
+      ]
+    },
+    {
+      "relative_path": "gfx/portraits/portrait_rank.dds",
+      "files": [
+        {
+          "path": "GFX-Mod/gfx/portraits/portrait_rank.dds",
+          "sha256": "18531cc0c92f584c72ebee41bb071adcb2a20be3d2420964a5f5a308d5bbe2c6"
+        },
+        {
+          "path": "GFX-Mod Serp/gfx/portraits/portrait_rank.dds",
+          "sha256": "18531cc0c92f584c72ebee41bb071adcb2a20be3d2420964a5f5a308d5bbe2c6"
+        }
+      ]
+    },
+    {
+      "relative_path": "gui/window_knights.gui",
+      "files": [
+        {
+          "path": "CustomDefines/gui/window_knights.gui",
+          "sha256": "15d09bd007e13226bdfe8a612740bd3824e766d0d2ea1b5e8d223bbead37e2c5"
+        },
+        {
+          "path": "Knight Manager (MP)/gui/window_knights.gui",
+          "sha256": "bbae86490afac222608c0db5d6b64987c1aa045fe365f55a1a2d9d2e7fd0d2b9"
+        },
+        {
+          "path": "test/gui/window_knights.gui",
+          "sha256": "bbae86490afac222608c0db5d6b64987c1aa045fe365f55a1a2d9d2e7fd0d2b9"
+        }
+      ]
+    },
+    {
+      "relative_path": "localization/english/knight_manager_mod_l_english.yml",
+      "files": [
+        {
+          "path": "CustomDefines/localization/english/knight_manager_mod_l_english.yml",
+          "sha256": "883e5c69d9449a417b34479654691143e64b1000b5c259ec1b94aad86bf45a03"
+        },
+        {
+          "path": "Knight Manager (MP)/localization/english/knight_manager_mod_l_english.yml",
+          "sha256": "28f0efac8919409d0c2cd5f6e98c431b5b90d71807b931864ee662c959c960b3"
+        },
+        {
+          "path": "test/localization/english/knight_manager_mod_l_english.yml",
+          "sha256": "28f0efac8919409d0c2cd5f6e98c431b5b90d71807b931864ee662c959c960b3"
+        }
+      ]
+    },
+    {
+      "relative_path": "localization/english/leave_war_mod_l_english.yml",
+      "files": [
+        {
+          "path": "Leave Wars/localization/english/leave_war_mod_l_english.yml",
+          "sha256": "259ef0cd29c0fcd29dcd54d7c6686552f7b25762422c2125989f387c9d6ec165"
+        },
+        {
+          "path": "SerpInteractionsDecisions/localization/english/leave_war_mod_l_english.yml",
+          "sha256": "259ef0cd29c0fcd29dcd54d7c6686552f7b25762422c2125989f387c9d6ec165"
+        }
+      ]
+    },
+    {
+      "relative_path": "localization/english/mod_mass_convert_subjects_l_english.yml",
+      "files": [
+        {
+          "path": "Mass Demand Conversion/localization/english/mod_mass_convert_subjects_l_english.yml",
+          "sha256": "894410b117b12305a391d7eaafc32c0273022eca8205edfc6d4bdab14c7c6273"
+        },
+        {
+          "path": "SerpInteractionsDecisions/localization/english/mod_mass_convert_subjects_l_english.yml",
+          "sha256": "4e7535ef4272b33e198a79418d99c73abe8404939031d226bc65dd8c02245fc0"
+        }
+      ]
+    },
+    {
+      "relative_path": "localization/french/knight_manager_mod_l_french.yml",
+      "files": [
+        {
+          "path": "CustomDefines/localization/french/knight_manager_mod_l_french.yml",
+          "sha256": "a1cfdcc61ab75b4de949c667a1da6f1f7d53f35f4e723d41fec8f3a4daba69cc"
+        },
+        {
+          "path": "Knight Manager (MP)/localization/french/knight_manager_mod_l_french.yml",
+          "sha256": "71ace607c29875d0b036e32fbf2b130433234c53e9ba6023d8b0161c015c069c"
+        },
+        {
+          "path": "test/localization/french/knight_manager_mod_l_french.yml",
+          "sha256": "71ace607c29875d0b036e32fbf2b130433234c53e9ba6023d8b0161c015c069c"
+        }
+      ]
+    },
+    {
+      "relative_path": "localization/french/leave_war_mod_l_french.yml",
+      "files": [
+        {
+          "path": "Leave Wars/localization/french/leave_war_mod_l_french.yml",
+          "sha256": "f44431f4ebe87ff54ed837db0229aefd1d6a1a424f9d1d1d8a83f4017f3f71b6"
+        },
+        {
+          "path": "SerpInteractionsDecisions/localization/french/leave_war_mod_l_french.yml",
+          "sha256": "f44431f4ebe87ff54ed837db0229aefd1d6a1a424f9d1d1d8a83f4017f3f71b6"
+        }
+      ]
+    },
+    {
+      "relative_path": "localization/french/mod_mass_convert_subjects_l_french.yml",
+      "files": [
+        {
+          "path": "Mass Demand Conversion/localization/french/mod_mass_convert_subjects_l_french.yml",
+          "sha256": "c5b9092fc6d67cd3bc2b21ff3b33c6beac7e54c6778289153ae420e630c68639"
+        },
+        {
+          "path": "SerpInteractionsDecisions/localization/french/mod_mass_convert_subjects_l_french.yml",
+          "sha256": "49acfbfe46bcd562f9b80d44f534feaae281fd8ed793ecb3cb6ac70956d47ddd"
+        }
+      ]
+    },
+    {
+      "relative_path": "localization/german/knight_manager_mod_l_german.yml",
+      "files": [
+        {
+          "path": "CustomDefines/localization/german/knight_manager_mod_l_german.yml",
+          "sha256": "e86a1a43c8025c9d592aae887b3691a74f88ecef22a7fa341d6e9cb0b46dae4f"
+        },
+        {
+          "path": "Knight Manager (MP)/localization/german/knight_manager_mod_l_german.yml",
+          "sha256": "cc6cccc95738e86a027a6daf30137199f7c852249feadd2d5504dfea96f7d802"
+        },
+        {
+          "path": "test/localization/german/knight_manager_mod_l_german.yml",
+          "sha256": "cc6cccc95738e86a027a6daf30137199f7c852249feadd2d5504dfea96f7d802"
+        }
+      ]
+    },
+    {
+      "relative_path": "localization/german/leave_war_mod_l_german.yml",
+      "files": [
+        {
+          "path": "Leave Wars/localization/german/leave_war_mod_l_german.yml",
+          "sha256": "9b34f18033a74df96edf494e5280c393fe68a3f23abae3966d964152d0ce1c6c"
+        },
+        {
+          "path": "SerpInteractionsDecisions/localization/german/leave_war_mod_l_german.yml",
+          "sha256": "9b34f18033a74df96edf494e5280c393fe68a3f23abae3966d964152d0ce1c6c"
+        }
+      ]
+    },
+    {
+      "relative_path": "localization/german/mod_mass_convert_subjects_l_german.yml",
+      "files": [
+        {
+          "path": "Mass Demand Conversion/localization/german/mod_mass_convert_subjects_l_german.yml",
+          "sha256": "2140017043625f3bf3daf77234e13bb8d1cf3e9470e7b6b35865ac540a00c5cf"
+        },
+        {
+          "path": "SerpInteractionsDecisions/localization/german/mod_mass_convert_subjects_l_german.yml",
+          "sha256": "77d3d6e986baa34dcb7b2153302548faab0c7e48fba951d884730e37a3a1c6c5"
+        }
+      ]
+    },
+    {
+      "relative_path": "localization/korean/knight_manager_mod_l_korean.yml",
+      "files": [
+        {
+          "path": "CustomDefines/localization/korean/knight_manager_mod_l_korean.yml",
+          "sha256": "bb5e549af744be19f403552d249ba0aebf31dd4bd908a9f3991d697047475644"
+        },
+        {
+          "path": "Knight Manager (MP)/localization/korean/knight_manager_mod_l_korean.yml",
+          "sha256": "9b4d802f78da27786b8581667cb5d9d74485df045c63b7521cf4b5301ae753d4"
+        },
+        {
+          "path": "test/localization/korean/knight_manager_mod_l_korean.yml",
+          "sha256": "9b4d802f78da27786b8581667cb5d9d74485df045c63b7521cf4b5301ae753d4"
+        }
+      ]
+    },
+    {
+      "relative_path": "localization/korean/leave_war_mod_l_korean.yml",
+      "files": [
+        {
+          "path": "Leave Wars/localization/korean/leave_war_mod_l_korean.yml",
+          "sha256": "b0535bdd54606a44f48dcb5fcd6246fed3444a8a88c144bd3cc4594261696ef0"
+        },
+        {
+          "path": "SerpInteractionsDecisions/localization/korean/leave_war_mod_l_korean.yml",
+          "sha256": "b0535bdd54606a44f48dcb5fcd6246fed3444a8a88c144bd3cc4594261696ef0"
+        }
+      ]
+    },
+    {
+      "relative_path": "localization/korean/mod_mass_convert_subjects_l_korean.yml",
+      "files": [
+        {
+          "path": "Mass Demand Conversion/localization/korean/mod_mass_convert_subjects_l_korean.yml",
+          "sha256": "c0efa9a33d383e13326dcc2a0c02c98913e662b40d3c8cc16961313a58e0af70"
+        },
+        {
+          "path": "SerpInteractionsDecisions/localization/korean/mod_mass_convert_subjects_l_korean.yml",
+          "sha256": "f64f467c6f0cad43c5271e8141ba710f8f77496a5758a7e5e53072c49df4acdf"
+        }
+      ]
+    },
+    {
+      "relative_path": "localization/russian/knight_manager_mod_l_russian.yml",
+      "files": [
+        {
+          "path": "CustomDefines/localization/russian/knight_manager_mod_l_russian.yml",
+          "sha256": "218130de03d430585cc2cae3c4170295e003ee528a5c67547a89fcf8e849e20c"
+        },
+        {
+          "path": "Knight Manager (MP)/localization/russian/knight_manager_mod_l_russian.yml",
+          "sha256": "8604a2d9ed00aa8a36a74229d75b14e6d2ab01afd1b84c30921587892cf60ba1"
+        },
+        {
+          "path": "test/localization/russian/knight_manager_mod_l_russian.yml",
+          "sha256": "8604a2d9ed00aa8a36a74229d75b14e6d2ab01afd1b84c30921587892cf60ba1"
+        }
+      ]
+    },
+    {
+      "relative_path": "localization/russian/leave_war_mod_l_russian.yml",
+      "files": [
+        {
+          "path": "Leave Wars/localization/russian/leave_war_mod_l_russian.yml",
+          "sha256": "a3b7b0651d90adfceceab81069f9744818c7b9b15c8bf54222921ebef96c4c6d"
+        },
+        {
+          "path": "SerpInteractionsDecisions/localization/russian/leave_war_mod_l_russian.yml",
+          "sha256": "a3b7b0651d90adfceceab81069f9744818c7b9b15c8bf54222921ebef96c4c6d"
+        }
+      ]
+    },
+    {
+      "relative_path": "localization/russian/mod_mass_convert_subjects_l_russian.yml",
+      "files": [
+        {
+          "path": "Mass Demand Conversion/localization/russian/mod_mass_convert_subjects_l_russian.yml",
+          "sha256": "81e77925456389bc129cb457d9ab9cbfdbb2c1234c3ab4c239a0fa7b67979f7a"
+        },
+        {
+          "path": "SerpInteractionsDecisions/localization/russian/mod_mass_convert_subjects_l_russian.yml",
+          "sha256": "186dd7eacc538f561160b5016d8bae3f1c411079ba1e5c7346cab766271e787c"
+        }
+      ]
+    },
+    {
+      "relative_path": "localization/simp_chinese/knight_manager_mod_l_simp_chinese.yml",
+      "files": [
+        {
+          "path": "CustomDefines/localization/simp_chinese/knight_manager_mod_l_simp_chinese.yml",
+          "sha256": "4b9f4d262c4ffd1a95fc06b3aae045b5d2c0c3192b665e14f87b13613e1af07e"
+        },
+        {
+          "path": "Knight Manager (MP)/localization/simp_chinese/knight_manager_mod_l_simp_chinese.yml",
+          "sha256": "1088fef9f5d8a9f4bb9d3e1d97c0cac5d44a6f79c4bc4ce323244e059c117cad"
+        },
+        {
+          "path": "test/localization/simp_chinese/knight_manager_mod_l_simp_chinese.yml",
+          "sha256": "1088fef9f5d8a9f4bb9d3e1d97c0cac5d44a6f79c4bc4ce323244e059c117cad"
+        }
+      ]
+    },
+    {
+      "relative_path": "localization/simp_chinese/leave_war_mod_l_simp_chinese.yml",
+      "files": [
+        {
+          "path": "Leave Wars/localization/simp_chinese/leave_war_mod_l_simp_chinese.yml",
+          "sha256": "786650648fed8452a1640667145dbf21dcd886bb1a91ccb767fa93df2b7d2ab4"
+        },
+        {
+          "path": "SerpInteractionsDecisions/localization/simp_chinese/leave_war_mod_l_simp_chinese.yml",
+          "sha256": "786650648fed8452a1640667145dbf21dcd886bb1a91ccb767fa93df2b7d2ab4"
+        }
+      ]
+    },
+    {
+      "relative_path": "localization/simp_chinese/mod_mass_convert_subjects_l_simp_chinese.yml",
+      "files": [
+        {
+          "path": "Mass Demand Conversion/localization/simp_chinese/mod_mass_convert_subjects_l_simp_chinese.yml",
+          "sha256": "dbc8205102725f3fdd81dabc78e7c83f14b079ce4384a3c84f08fb23396f5a96"
+        },
+        {
+          "path": "SerpInteractionsDecisions/localization/simp_chinese/mod_mass_convert_subjects_l_simp_chinese.yml",
+          "sha256": "809b2b5dde33f5db61b8a915027aedc02cf5b718f41563bf9362640bb0cfb408"
+        }
+      ]
+    },
+    {
+      "relative_path": "localization/spanish/knight_manager_mod_l_spanish.yml",
+      "files": [
+        {
+          "path": "CustomDefines/localization/spanish/knight_manager_mod_l_spanish.yml",
+          "sha256": "1f8680eccff8749941db9a5e0044f776306c3fd15131ed06fcfd08b880c13f51"
+        },
+        {
+          "path": "Knight Manager (MP)/localization/spanish/knight_manager_mod_l_spanish.yml",
+          "sha256": "a2b2c3210438eaef14c205755ebdbdcd628aa827fc669686242a59b5ffc9f11c"
+        },
+        {
+          "path": "test/localization/spanish/knight_manager_mod_l_spanish.yml",
+          "sha256": "a2b2c3210438eaef14c205755ebdbdcd628aa827fc669686242a59b5ffc9f11c"
+        }
+      ]
+    },
+    {
+      "relative_path": "localization/spanish/leave_war_mod_l_spanish.yml",
+      "files": [
+        {
+          "path": "Leave Wars/localization/spanish/leave_war_mod_l_spanish.yml",
+          "sha256": "963e8dcae3e6b97374824bb7a932c0fabcdc119e5e8808cd72228000486004ea"
+        },
+        {
+          "path": "SerpInteractionsDecisions/localization/spanish/leave_war_mod_l_spanish.yml",
+          "sha256": "963e8dcae3e6b97374824bb7a932c0fabcdc119e5e8808cd72228000486004ea"
+        }
+      ]
+    },
+    {
+      "relative_path": "localization/spanish/mod_mass_convert_subjects_l_spanish.yml",
+      "files": [
+        {
+          "path": "Mass Demand Conversion/localization/spanish/mod_mass_convert_subjects_l_spanish.yml",
+          "sha256": "c93b0bc75055669a2cdb3c2d3685f8121b2f3847f61a6dafb356acd7957a723f"
+        },
+        {
+          "path": "SerpInteractionsDecisions/localization/spanish/mod_mass_convert_subjects_l_spanish.yml",
+          "sha256": "12915b9ce342d859323b9cb9fb85e15679033b1a2e588cccbc2ae07c0ffbdd69"
+        }
+      ]
+    },
+    {
+      "relative_path": "thumbnail.png",
+      "files": [
+        {
+          "path": "Gender Colour/thumbnail.png",
+          "sha256": "36e25d2043d948c2d6e491cdadc213b645764dfecd30918bbf6bb581ff85e546"
+        },
+        {
+          "path": "GFX-Mod/thumbnail.png",
+          "sha256": "e30c90338d1a7f2bd554c68bac5f3287807ead5bbc9842e9470fd21167223daa"
+        },
+        {
+          "path": "GFX-Mod Serp/thumbnail.png",
+          "sha256": "e30c90338d1a7f2bd554c68bac5f3287807ead5bbc9842e9470fd21167223daa"
+        },
+        {
+          "path": "Knight Manager (MP)/thumbnail.png",
+          "sha256": "495718ddbbde6070ce82979d554d21fc5b370a52488a0f45acb723fb6498ce05"
+        },
+        {
+          "path": "Knight Manager Continued (MP)/thumbnail.png",
+          "sha256": "2dc1b6191e8f4428df0cf2cfbc4dd05d0ff1e9cba083a495e41f281c51a589b9"
+        },
+        {
+          "path": "Leave Wars/thumbnail.png",
+          "sha256": "33d9854275a1ed4ea3656bf9eeec78f831aed316fa54b1167a8fae7a716c5b3f"
+        },
+        {
+          "path": "Mass Demand Conversion/thumbnail.png",
+          "sha256": "c159107344608398ba4618fd7770a72f5b7b86a618a0463aa0f886059fb6ef90"
+        },
+        {
+          "path": "SerpInteractionsDecisions/thumbnail.png",
+          "sha256": "c545b5d78f03bba564369fdcd65d1e9a5fdbdc81744bbd0a1eb9f4bb07b30fe6"
+        },
+        {
+          "path": "test/thumbnail.png",
+          "sha256": "495718ddbbde6070ce82979d554d21fc5b370a52488a0f45acb723fb6498ce05"
+        }
+      ]
+    }
+  ],
+  "same_directory_ids": [
+    {
+      "database_directory": ".",
+      "key": "https://steamcommunity.com/sharedfiles/filedetails/?id",
+      "definitions": [
+        {
+          "mod": "GFX-Mod",
+          "path": "GFX-Mod/credits.txt",
+          "line": 4
+        },
+        {
+          "mod": "GFX-Mod",
+          "path": "GFX-Mod/credits.txt",
+          "line": 5
+        },
+        {
+          "mod": "GFX-Mod",
+          "path": "GFX-Mod/credits.txt",
+          "line": 6
+        },
+        {
+          "mod": "GFX-Mod",
+          "path": "GFX-Mod/credits.txt",
+          "line": 7
+        },
+        {
+          "mod": "GFX-Mod",
+          "path": "GFX-Mod/credits.txt",
+          "line": 8
+        },
+        {
+          "mod": "GFX-Mod",
+          "path": "GFX-Mod/credits.txt",
+          "line": 9
+        },
+        {
+          "mod": "GFX-Mod",
+          "path": "GFX-Mod/credits.txt",
+          "line": 10
+        },
+        {
+          "mod": "GFX-Mod",
+          "path": "GFX-Mod/credits.txt",
+          "line": 11
+        },
+        {
+          "mod": "GFX-Mod Serp",
+          "path": "GFX-Mod Serp/credits.txt",
+          "line": 4
+        },
+        {
+          "mod": "GFX-Mod Serp",
+          "path": "GFX-Mod Serp/credits.txt",
+          "line": 5
+        },
+        {
+          "mod": "GFX-Mod Serp",
+          "path": "GFX-Mod Serp/credits.txt",
+          "line": 6
+        },
+        {
+          "mod": "GFX-Mod Serp",
+          "path": "GFX-Mod Serp/credits.txt",
+          "line": 7
+        },
+        {
+          "mod": "GFX-Mod Serp",
+          "path": "GFX-Mod Serp/credits.txt",
+          "line": 8
+        },
+        {
+          "mod": "GFX-Mod Serp",
+          "path": "GFX-Mod Serp/credits.txt",
+          "line": 9
+        },
+        {
+          "mod": "GFX-Mod Serp",
+          "path": "GFX-Mod Serp/credits.txt",
+          "line": 10
+        },
+        {
+          "mod": "GFX-Mod Serp",
+          "path": "GFX-Mod Serp/credits.txt",
+          "line": 11
+        },
+        {
+          "mod": "GFX-Mod Serp",
+          "path": "GFX-Mod Serp/credits.txt",
+          "line": 13
+        },
+        {
+          "mod": "GFX-Mod Serp",
+          "path": "GFX-Mod Serp/credits.txt",
+          "line": 14
+        },
+        {
+          "mod": "GFX-Mod Serp",
+          "path": "GFX-Mod Serp/credits.txt",
+          "line": 15
+        },
+        {
+          "mod": "GFX-Mod Serp",
+          "path": "GFX-Mod Serp/info.txt",
+          "line": 19
+        },
+        {
+          "mod": "GFX-Mod Serp",
+          "path": "GFX-Mod Serp/info.txt",
+          "line": 20
+        }
+      ]
+    },
+    {
+      "database_directory": ".",
+      "key": "name",
+      "definitions": [
+        {
+          "mod": "CustomDefines",
+          "path": "CustomDefines/descriptor.mod",
+          "line": 5
+        },
+        {
+          "mod": "Gender Colour",
+          "path": "Gender Colour/descriptor.mod",
+          "line": 5
+        },
+        {
+          "mod": "GFX-Mod",
+          "path": "GFX-Mod/descriptor.mod",
+          "line": 5
+        },
+        {
+          "mod": "GFX-Mod Serp",
+          "path": "GFX-Mod Serp/descriptor.mod",
+          "line": 5
+        },
+        {
+          "mod": "Knight Manager (MP)",
+          "path": "Knight Manager (MP)/descriptor.mod",
+          "line": 7
+        },
+        {
+          "mod": "Knight Manager Continued (MP)",
+          "path": "Knight Manager Continued (MP)/descriptor.mod",
+          "line": 7
+        },
+        {
+          "mod": "Leave Wars",
+          "path": "Leave Wars/descriptor.mod",
+          "line": 5
+        },
+        {
+          "mod": "Mass Demand Conversion",
+          "path": "Mass Demand Conversion/descriptor.mod",
+          "line": 7
+        },
+        {
+          "mod": "SerpAlerts",
+          "path": "SerpAlerts/descriptor.mod",
+          "line": 5
+        },
+        {
+          "mod": "SerpInteractionsDecisions",
+          "path": "SerpInteractionsDecisions/descriptor.mod",
+          "line": 6
+        },
+        {
+          "mod": "test",
+          "path": "test/descriptor.mod",
+          "line": 5
+        }
+      ]
+    },
+    {
+      "database_directory": ".",
+      "key": "remote_file_id",
+      "definitions": [
+        {
+          "mod": "CustomDefines",
+          "path": "CustomDefines/descriptor.mod",
+          "line": 7
+        },
+        {
+          "mod": "Gender Colour",
+          "path": "Gender Colour/descriptor.mod",
+          "line": 8
+        },
+        {
+          "mod": "GFX-Mod",
+          "path": "GFX-Mod/descriptor.mod",
+          "line": 7
+        },
+        {
+          "mod": "GFX-Mod Serp",
+          "path": "GFX-Mod Serp/descriptor.mod",
+          "line": 7
+        },
+        {
+          "mod": "Knight Manager (MP)",
+          "path": "Knight Manager (MP)/descriptor.mod",
+          "line": 9
+        },
+        {
+          "mod": "Knight Manager Continued (MP)",
+          "path": "Knight Manager Continued (MP)/descriptor.mod",
+          "line": 9
+        },
+        {
+          "mod": "Leave Wars",
+          "path": "Leave Wars/descriptor.mod",
+          "line": 7
+        },
+        {
+          "mod": "Mass Demand Conversion",
+          "path": "Mass Demand Conversion/descriptor.mod",
+          "line": 9
+        },
+        {
+          "mod": "SerpAlerts",
+          "path": "SerpAlerts/descriptor.mod",
+          "line": 7
+        },
+        {
+          "mod": "SerpInteractionsDecisions",
+          "path": "SerpInteractionsDecisions/descriptor.mod",
+          "line": 8
+        }
+      ]
+    },
+    {
+      "database_directory": ".",
+      "key": "supported_version",
+      "definitions": [
+        {
+          "mod": "CustomDefines",
+          "path": "CustomDefines/descriptor.mod",
+          "line": 6
+        },
+        {
+          "mod": "Gender Colour",
+          "path": "Gender Colour/descriptor.mod",
+          "line": 7
+        },
+        {
+          "mod": "GFX-Mod",
+          "path": "GFX-Mod/descriptor.mod",
+          "line": 6
+        },
+        {
+          "mod": "GFX-Mod Serp",
+          "path": "GFX-Mod Serp/descriptor.mod",
+          "line": 6
+        },
+        {
+          "mod": "Knight Manager (MP)",
+          "path": "Knight Manager (MP)/descriptor.mod",
+          "line": 8
+        },
+        {
+          "mod": "Knight Manager Continued (MP)",
+          "path": "Knight Manager Continued (MP)/descriptor.mod",
+          "line": 8
+        },
+        {
+          "mod": "Leave Wars",
+          "path": "Leave Wars/descriptor.mod",
+          "line": 6
+        },
+        {
+          "mod": "Mass Demand Conversion",
+          "path": "Mass Demand Conversion/descriptor.mod",
+          "line": 8
+        },
+        {
+          "mod": "SerpAlerts",
+          "path": "SerpAlerts/descriptor.mod",
+          "line": 6
+        },
+        {
+          "mod": "SerpInteractionsDecisions",
+          "path": "SerpInteractionsDecisions/descriptor.mod",
+          "line": 7
+        },
+        {
+          "mod": "test",
+          "path": "test/descriptor.mod",
+          "line": 6
+        }
+      ]
+    },
+    {
+      "database_directory": ".",
+      "key": "tags",
+      "definitions": [
+        {
+          "mod": "CustomDefines",
+          "path": "CustomDefines/descriptor.mod",
+          "line": 2
+        },
+        {
+          "mod": "Gender Colour",
+          "path": "Gender Colour/descriptor.mod",
+          "line": 2
+        },
+        {
+          "mod": "GFX-Mod",
+          "path": "GFX-Mod/descriptor.mod",
+          "line": 2
+        },
+        {
+          "mod": "GFX-Mod Serp",
+          "path": "GFX-Mod Serp/descriptor.mod",
+          "line": 2
+        },
+        {
+          "mod": "Knight Manager (MP)",
+          "path": "Knight Manager (MP)/descriptor.mod",
+          "line": 2
+        },
+        {
+          "mod": "Knight Manager Continued (MP)",
+          "path": "Knight Manager Continued (MP)/descriptor.mod",
+          "line": 2
+        },
+        {
+          "mod": "Leave Wars",
+          "path": "Leave Wars/descriptor.mod",
+          "line": 2
+        },
+        {
+          "mod": "Mass Demand Conversion",
+          "path": "Mass Demand Conversion/descriptor.mod",
+          "line": 2
+        },
+        {
+          "mod": "SerpAlerts",
+          "path": "SerpAlerts/descriptor.mod",
+          "line": 2
+        },
+        {
+          "mod": "SerpInteractionsDecisions",
+          "path": "SerpInteractionsDecisions/descriptor.mod",
+          "line": 2
+        },
+        {
+          "mod": "test",
+          "path": "test/descriptor.mod",
+          "line": 2
+        }
+      ]
+    },
+    {
+      "database_directory": ".",
+      "key": "version",
+      "definitions": [
+        {
+          "mod": "CustomDefines",
+          "path": "CustomDefines/descriptor.mod",
+          "line": 1
+        },
+        {
+          "mod": "Gender Colour",
+          "path": "Gender Colour/descriptor.mod",
+          "line": 1
+        },
+        {
+          "mod": "GFX-Mod",
+          "path": "GFX-Mod/descriptor.mod",
+          "line": 1
+        },
+        {
+          "mod": "GFX-Mod Serp",
+          "path": "GFX-Mod Serp/descriptor.mod",
+          "line": 1
+        },
+        {
+          "mod": "Knight Manager (MP)",
+          "path": "Knight Manager (MP)/descriptor.mod",
+          "line": 1
+        },
+        {
+          "mod": "Knight Manager Continued (MP)",
+          "path": "Knight Manager Continued (MP)/descriptor.mod",
+          "line": 1
+        },
+        {
+          "mod": "Leave Wars",
+          "path": "Leave Wars/descriptor.mod",
+          "line": 1
+        },
+        {
+          "mod": "Mass Demand Conversion",
+          "path": "Mass Demand Conversion/descriptor.mod",
+          "line": 1
+        },
+        {
+          "mod": "SerpAlerts",
+          "path": "SerpAlerts/descriptor.mod",
+          "line": 1
+        },
+        {
+          "mod": "SerpInteractionsDecisions",
+          "path": "SerpInteractionsDecisions/descriptor.mod",
+          "line": 1
+        },
+        {
+          "mod": "test",
+          "path": "test/descriptor.mod",
+          "line": 1
+        }
+      ]
+    },
+    {
+      "database_directory": "common\\character_interactions",
+      "key": "leave_war_interaction_mod",
+      "definitions": [
+        {
+          "mod": "Leave Wars",
+          "path": "Leave Wars/common/character_interactions/leave_war_mod_interaction.txt",
+          "line": 4
+        },
+        {
+          "mod": "SerpInteractionsDecisions",
+          "path": "SerpInteractionsDecisions/common/character_interactions/leave_war_mod_interaction.txt",
+          "line": 4
+        }
+      ]
+    },
+    {
+      "database_directory": "common\\decisions",
+      "key": "mod_mass_convert_subjects_decision",
+      "definitions": [
+        {
+          "mod": "Mass Demand Conversion",
+          "path": "Mass Demand Conversion/common/decisions/mod_mass_convert_subjects.txt",
+          "line": 8
+        },
+        {
+          "mod": "SerpInteractionsDecisions",
+          "path": "SerpInteractionsDecisions/common/decisions/mod_mass_convert_subjects.txt",
+          "line": 2
+        }
+      ]
+    },
+    {
+      "database_directory": "common\\effect_localization",
+      "key": "leave_war_mod_remove_participant",
+      "definitions": [
+        {
+          "mod": "Leave Wars",
+          "path": "Leave Wars/common/effect_localization/leave_war_mod_effect_loc.txt",
+          "line": 1
+        },
+        {
+          "mod": "SerpInteractionsDecisions",
+          "path": "SerpInteractionsDecisions/common/effect_localization/leave_war_mod_effect_loc.txt",
+          "line": 1
+        }
+      ]
+    },
+    {
+      "database_directory": "common\\game_rules",
+      "key": "leave_war_mod_costs",
+      "definitions": [
+        {
+          "mod": "Leave Wars",
+          "path": "Leave Wars/common/game_rules/leave_war_mod_rules.txt",
+          "line": 3
+        },
+        {
+          "mod": "SerpInteractionsDecisions",
+          "path": "SerpInteractionsDecisions/common/game_rules/leave_war_mod_rules.txt",
+          "line": 3
+        }
+      ]
+    },
+    {
+      "database_directory": "common\\messages",
+      "key": "serp_msg_war_ally_removed",
+      "definitions": [
+        {
+          "mod": "Leave Wars",
+          "path": "Leave Wars/common/messages/leave_war_mod_messages.txt",
+          "line": 2
+        },
+        {
+          "mod": "SerpInteractionsDecisions",
+          "path": "SerpInteractionsDecisions/common/messages/leave_war_mod_messages.txt",
+          "line": 2
+        }
+      ]
+    },
+    {
+      "database_directory": "common\\messages",
+      "key": "serp_msg_war_enemy_removed",
+      "definitions": [
+        {
+          "mod": "Leave Wars",
+          "path": "Leave Wars/common/messages/leave_war_mod_messages.txt",
+          "line": 8
+        },
+        {
+          "mod": "SerpInteractionsDecisions",
+          "path": "SerpInteractionsDecisions/common/messages/leave_war_mod_messages.txt",
+          "line": 8
+        }
+      ]
+    },
+    {
+      "database_directory": "common\\messages",
+      "key": "serp_msg_war_player_removed",
+      "definitions": [
+        {
+          "mod": "Leave Wars",
+          "path": "Leave Wars/common/messages/leave_war_mod_messages.txt",
+          "line": 14
+        },
+        {
+          "mod": "SerpInteractionsDecisions",
+          "path": "SerpInteractionsDecisions/common/messages/leave_war_mod_messages.txt",
+          "line": 14
+        }
+      ]
+    },
+    {
+      "database_directory": "common\\on_action",
+      "key": "on_KnightManager_start",
+      "definitions": [
+        {
+          "mod": "CustomDefines",
+          "path": "CustomDefines/common/on_action/knight_manager_on_actions.txt",
+          "line": 8
+        },
+        {
+          "mod": "Knight Manager (MP)",
+          "path": "Knight Manager (MP)/common/on_action/knight_manager_on_actions.txt",
+          "line": 8
+        },
+        {
+          "mod": "test",
+          "path": "test/common/on_action/knight_manager_on_actions.txt",
+          "line": 8
+        }
+      ]
+    },
+    {
+      "database_directory": "common\\on_action",
+      "key": "on_game_start",
+      "definitions": [
+        {
+          "mod": "CustomDefines",
+          "path": "CustomDefines/common/on_action/knight_manager_on_actions.txt",
+          "line": 3
+        },
+        {
+          "mod": "Knight Manager (MP)",
+          "path": "Knight Manager (MP)/common/on_action/knight_manager_on_actions.txt",
+          "line": 3
+        },
+        {
+          "mod": "test",
+          "path": "test/common/on_action/knight_manager_on_actions.txt",
+          "line": 3
+        }
+      ]
+    },
+    {
+      "database_directory": "common\\opinion_modifiers",
+      "key": "left_my_war_opinion_modifier",
+      "definitions": [
+        {
+          "mod": "Leave Wars",
+          "path": "Leave Wars/common/opinion_modifiers/leave_war_mod_opinions.txt",
+          "line": 1
+        },
+        {
+          "mod": "SerpInteractionsDecisions",
+          "path": "SerpInteractionsDecisions/common/opinion_modifiers/leave_war_mod_opinions.txt",
+          "line": 1
+        }
+      ]
+    },
+    {
+      "database_directory": "common\\opinion_modifiers",
+      "key": "left_participating_war_opinion_modifier",
+      "definitions": [
+        {
+          "mod": "Leave Wars",
+          "path": "Leave Wars/common/opinion_modifiers/leave_war_mod_opinions.txt",
+          "line": 8
+        },
+        {
+          "mod": "SerpInteractionsDecisions",
+          "path": "SerpInteractionsDecisions/common/opinion_modifiers/leave_war_mod_opinions.txt",
+          "line": 8
+        }
+      ]
+    },
+    {
+      "database_directory": "common\\script_values",
+      "key": "LW_gold_costs_based_on_title_of_actor_value",
+      "definitions": [
+        {
+          "mod": "Leave Wars",
+          "path": "Leave Wars/common/script_values/leave_war_mod_cost_values.txt",
+          "line": 24
+        },
+        {
+          "mod": "SerpInteractionsDecisions",
+          "path": "SerpInteractionsDecisions/common/script_values/leave_war_mod_cost_values.txt",
+          "line": 24
+        }
+      ]
+    },
+    {
+      "database_directory": "common\\script_values",
+      "key": "LW_opinion_costs_leaders",
+      "definitions": [
+        {
+          "mod": "Leave Wars",
+          "path": "Leave Wars/common/script_values/leave_war_mod_cost_values.txt",
+          "line": 44
+        },
+        {
+          "mod": "SerpInteractionsDecisions",
+          "path": "SerpInteractionsDecisions/common/script_values/leave_war_mod_cost_values.txt",
+          "line": 44
+        }
+      ]
+    },
+    {
+      "database_directory": "common\\script_values",
+      "key": "LW_opinion_costs_participant",
+      "definitions": [
+        {
+          "mod": "Leave Wars",
+          "path": "Leave Wars/common/script_values/leave_war_mod_cost_values.txt",
+          "line": 60
+        },
+        {
+          "mod": "SerpInteractionsDecisions",
+          "path": "SerpInteractionsDecisions/common/script_values/leave_war_mod_cost_values.txt",
+          "line": 60
+        }
+      ]
+    },
+    {
+      "database_directory": "common\\script_values",
+      "key": "LW_prestige_costs_based_on_title_of_actor_value",
+      "definitions": [
+        {
+          "mod": "Leave Wars",
+          "path": "Leave Wars/common/script_values/leave_war_mod_cost_values.txt",
+          "line": 3
+        },
+        {
+          "mod": "SerpInteractionsDecisions",
+          "path": "SerpInteractionsDecisions/common/script_values/leave_war_mod_cost_values.txt",
+          "line": 3
+        }
+      ]
+    },
+    {
+      "database_directory": "common\\script_values",
+      "key": "mod_convert_courtiers_number",
+      "definitions": [
+        {
+          "mod": "Mass Demand Conversion",
+          "path": "Mass Demand Conversion/common/script_values/mod_mass_convert_subjects_values.txt",
+          "line": 62
+        },
+        {
+          "mod": "SerpInteractionsDecisions",
+          "path": "SerpInteractionsDecisions/common/script_values/mod_mass_convert_subjects_values.txt",
+          "line": 41
+        }
+      ]
+    },
+    {
+      "database_directory": "common\\script_values",
+      "key": "mod_convert_direct_vassals_number",
+      "definitions": [
+        {
+          "mod": "Mass Demand Conversion",
+          "path": "Mass Demand Conversion/common/script_values/mod_mass_convert_subjects_values.txt",
+          "line": 5
+        },
+        {
+          "mod": "SerpInteractionsDecisions",
+          "path": "SerpInteractionsDecisions/common/script_values/mod_mass_convert_subjects_values.txt",
+          "line": 3
+        }
+      ]
+    },
+    {
+      "database_directory": "common\\script_values",
+      "key": "mod_convert_house_number",
+      "definitions": [
+        {
+          "mod": "Mass Demand Conversion",
+          "path": "Mass Demand Conversion/common/script_values/mod_mass_convert_subjects_values.txt",
+          "line": 79
+        },
+        {
+          "mod": "SerpInteractionsDecisions",
+          "path": "SerpInteractionsDecisions/common/script_values/mod_mass_convert_subjects_values.txt",
+          "line": 58
+        }
+      ]
+    },
+    {
+      "database_directory": "common\\script_values",
+      "key": "mod_convert_indirect_vassals_number",
+      "definitions": [
+        {
+          "mod": "Mass Demand Conversion",
+          "path": "Mass Demand Conversion/common/script_values/mod_mass_convert_subjects_values.txt",
+          "line": 23
+        },
+        {
+          "mod": "SerpInteractionsDecisions",
+          "path": "SerpInteractionsDecisions/common/script_values/mod_mass_convert_subjects_values.txt",
+          "line": 20
+        }
+      ]
+    },
+    {
+      "database_directory": "common\\scripted_guis",
+      "key": "knight_manager_toggle_awful_fighters_cannot_be_knight",
+      "definitions": [
+        {
+          "mod": "CustomDefines",
+          "path": "CustomDefines/common/scripted_guis/knight_manager_gui.txt",
+          "line": 130
+        },
+        {
+          "mod": "Knight Manager (MP)",
+          "path": "Knight Manager (MP)/common/scripted_guis/knight_manager_gui.txt",
+          "line": 130
+        },
+        {
+          "mod": "test",
+          "path": "test/common/scripted_guis/knight_manager_gui.txt",
+          "line": 130
+        }
+      ]
+    },
+    {
+      "database_directory": "common\\scripted_guis",
+      "key": "knight_manager_toggle_bad_fighters_cannot_be_knight",
+      "definitions": [
+        {
+          "mod": "CustomDefines",
+          "path": "CustomDefines/common/scripted_guis/knight_manager_gui.txt",
+          "line": 152
+        },
+        {
+          "mod": "Knight Manager (MP)",
+          "path": "Knight Manager (MP)/common/scripted_guis/knight_manager_gui.txt",
+          "line": 152
+        },
+        {
+          "mod": "test",
+          "path": "test/common/scripted_guis/knight_manager_gui.txt",
+          "line": 152
+        }
+      ]
+    },
+    {
+      "database_directory": "common\\scripted_guis",
+      "key": "knight_manager_toggle_children_cannot_be_knight",
+      "definitions": [
+        {
+          "mod": "CustomDefines",
+          "path": "CustomDefines/common/scripted_guis/knight_manager_gui.txt",
+          "line": 22
+        },
+        {
+          "mod": "Knight Manager (MP)",
+          "path": "Knight Manager (MP)/common/scripted_guis/knight_manager_gui.txt",
+          "line": 22
+        },
+        {
+          "mod": "test",
+          "path": "test/common/scripted_guis/knight_manager_gui.txt",
+          "line": 22
+        }
+      ]
+    },
+    {
+      "database_directory": "common\\scripted_guis",
+      "key": "knight_manager_toggle_councillors_cannot_be_knight",
+      "definitions": [
+        {
+          "mod": "CustomDefines",
+          "path": "CustomDefines/common/scripted_guis/knight_manager_gui.txt",
+          "line": 86
+        },
+        {
+          "mod": "Knight Manager (MP)",
+          "path": "Knight Manager (MP)/common/scripted_guis/knight_manager_gui.txt",
+          "line": 86
+        },
+        {
+          "mod": "test",
+          "path": "test/common/scripted_guis/knight_manager_gui.txt",
+          "line": 86
+        }
+      ]
+    },
+    {
+      "database_directory": "common\\scripted_guis",
+      "key": "knight_manager_toggle_family_spouses_cannot_be_knight",
+      "definitions": [
+        {
+          "mod": "CustomDefines",
+          "path": "CustomDefines/common/scripted_guis/knight_manager_gui.txt",
+          "line": 44
+        },
+        {
+          "mod": "Knight Manager (MP)",
+          "path": "Knight Manager (MP)/common/scripted_guis/knight_manager_gui.txt",
+          "line": 44
+        },
+        {
+          "mod": "test",
+          "path": "test/common/scripted_guis/knight_manager_gui.txt",
+          "line": 44
+        }
+      ]
+    },
+    {
+      "database_directory": "common\\scripted_guis",
+      "key": "knight_manager_toggle_kin_cannot_be_knight",
+      "definitions": [
+        {
+          "mod": "CustomDefines",
+          "path": "CustomDefines/common/scripted_guis/knight_manager_gui.txt",
+          "line": 1
+        },
+        {
+          "mod": "Knight Manager (MP)",
+          "path": "Knight Manager (MP)/common/scripted_guis/knight_manager_gui.txt",
+          "line": 1
+        },
+        {
+          "mod": "test",
+          "path": "test/common/scripted_guis/knight_manager_gui.txt",
+          "line": 1
+        }
+      ]
+    },
+    {
+      "database_directory": "common\\scripted_guis",
+      "key": "knight_manager_toggle_lover_cannot_be_knight",
+      "definitions": [
+        {
+          "mod": "CustomDefines",
+          "path": "CustomDefines/common/scripted_guis/knight_manager_gui.txt",
+          "line": 65
+        },
+        {
+          "mod": "Knight Manager (MP)",
+          "path": "Knight Manager (MP)/common/scripted_guis/knight_manager_gui.txt",
+          "line": 65
+        },
+        {
+          "mod": "test",
+          "path": "test/common/scripted_guis/knight_manager_gui.txt",
+          "line": 65
+        }
+      ]
+    },
+    {
+      "database_directory": "common\\scripted_guis",
+      "key": "knight_manager_toggle_manually_allowed",
+      "definitions": [
+        {
+          "mod": "CustomDefines",
+          "path": "CustomDefines/common/scripted_guis/knight_manager_gui.txt",
+          "line": 197
+        },
+        {
+          "mod": "Knight Manager (MP)",
+          "path": "Knight Manager (MP)/common/scripted_guis/knight_manager_gui.txt",
+          "line": 197
+        },
+        {
+          "mod": "test",
+          "path": "test/common/scripted_guis/knight_manager_gui.txt",
+          "line": 197
+        }
+      ]
+    },
+    {
+      "database_directory": "common\\scripted_guis",
+      "key": "knight_manager_toggle_player_heir_cannot_be_knight",
+      "definitions": [
+        {
+          "mod": "CustomDefines",
+          "path": "CustomDefines/common/scripted_guis/knight_manager_gui.txt",
+          "line": 174
+        },
+        {
+          "mod": "Knight Manager (MP)",
+          "path": "Knight Manager (MP)/common/scripted_guis/knight_manager_gui.txt",
+          "line": 174
+        },
+        {
+          "mod": "test",
+          "path": "test/common/scripted_guis/knight_manager_gui.txt",
+          "line": 174
+        }
+      ]
+    },
+    {
+      "database_directory": "common\\scripted_guis",
+      "key": "knight_manager_toggle_vassals_cannot_be_knight",
+      "definitions": [
+        {
+          "mod": "CustomDefines",
+          "path": "CustomDefines/common/scripted_guis/knight_manager_gui.txt",
+          "line": 108
+        },
+        {
+          "mod": "Knight Manager (MP)",
+          "path": "Knight Manager (MP)/common/scripted_guis/knight_manager_gui.txt",
+          "line": 108
+        },
+        {
+          "mod": "test",
+          "path": "test/common/scripted_guis/knight_manager_gui.txt",
+          "line": 108
+        }
+      ]
+    },
+    {
+      "database_directory": "common\\scripted_triggers",
+      "key": "KM_can_be_knight_trigger",
+      "definitions": [
+        {
+          "mod": "Knight Manager (MP)",
+          "path": "Knight Manager (MP)/common/scripted_triggers/knighthood_trigger.txt",
+          "line": 4
+        },
+        {
+          "mod": "Knight Manager Continued (MP)",
+          "path": "Knight Manager Continued (MP)/common/scripted_triggers/kmc_trigger.txt",
+          "line": 6
+        }
+      ]
+    },
+    {
+      "database_directory": "common\\scripted_triggers",
+      "key": "KM_is_loaded",
+      "definitions": [
+        {
+          "mod": "Knight Manager (MP)",
+          "path": "Knight Manager (MP)/common/scripted_triggers/knighthood_trigger.txt",
+          "line": 1
+        },
+        {
+          "mod": "Knight Manager Continued (MP)",
+          "path": "Knight Manager Continued (MP)/common/scripted_triggers/kmc_trigger.txt",
+          "line": 1
+        }
+      ]
+    },
+    {
+      "database_directory": "common\\scripted_triggers",
+      "key": "can_be_knight_trigger",
+      "definitions": [
+        {
+          "mod": "CustomDefines",
+          "path": "CustomDefines/common/scripted_triggers/knighthood_trigger.txt",
+          "line": 1
+        },
+        {
+          "mod": "Knight Manager (MP)",
+          "path": "Knight Manager (MP)/common/scripted_triggers/knighthood_trigger.txt",
+          "line": 88
+        },
+        {
+          "mod": "Knight Manager Continued (MP)",
+          "path": "Knight Manager Continued (MP)/common/scripted_triggers/kmc_trigger.txt",
+          "line": 124
+        },
+        {
+          "mod": "test",
+          "path": "test/common/scripted_triggers/knighthood_trigger.txt",
+          "line": 1
+        }
+      ]
+    },
+    {
+      "database_directory": "events",
+      "key": "knight_manager_mod_error_suppression.0001",
+      "definitions": [
+        {
+          "mod": "CustomDefines",
+          "path": "CustomDefines/events/knight_manager_events.txt",
+          "line": 6
+        },
+        {
+          "mod": "Knight Manager (MP)",
+          "path": "Knight Manager (MP)/events/knight_manager_events.txt",
+          "line": 6
+        },
+        {
+          "mod": "test",
+          "path": "test/events/knight_manager_events.txt",
+          "line": 6
+        }
+      ]
+    },
+    {
+      "database_directory": "events",
+      "key": "leave_war_mod.0001",
+      "definitions": [
+        {
+          "mod": "Leave Wars",
+          "path": "Leave Wars/events/leave_war_mod_events.txt",
+          "line": 4
+        },
+        {
+          "mod": "SerpInteractionsDecisions",
+          "path": "SerpInteractionsDecisions/events/leave_war_mod_events.txt",
+          "line": 4
+        }
+      ]
+    },
+    {
+      "database_directory": "gui",
+      "key": "window",
+      "definitions": [
+        {
+          "mod": "CustomDefines",
+          "path": "CustomDefines/gui/window_knights.gui",
+          "line": 5
+        },
+        {
+          "mod": "Knight Manager (MP)",
+          "path": "Knight Manager (MP)/gui/window_knights.gui",
+          "line": 5
+        },
+        {
+          "mod": "test",
+          "path": "test/gui/window_knights.gui",
+          "line": 5
+        }
+      ]
+    }
+  ],
+  "native_paths": [
+    {
+      "mod": "CustomDefines",
+      "path": "CustomDefines/gui/window_knights.gui",
+      "native_path": "gui/window_knights.gui",
+      "same_bytes": false
+    },
+    {
+      "mod": "Gender Colour",
+      "path": "Gender Colour/gfx/interface/icons/character_status/sexuality_icons_female.dds",
+      "native_path": "gfx/interface/icons/character_status/sexuality_icons_female.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "Gender Colour",
+      "path": "Gender Colour/gfx/interface/icons/character_status/sexuality_icons_male.dds",
+      "native_path": "gfx/interface/icons/character_status/sexuality_icons_male.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod",
+      "path": "GFX-Mod/credits.txt",
+      "native_path": "credits.txt",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod",
+      "path": "GFX-Mod/gfx/interface/icons/artifact/artifact_bg.dds",
+      "native_path": "gfx/interface/icons/artifact/artifact_bg.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod",
+      "path": "GFX-Mod/gfx/interface/icons/artifact/artifact_unique.dds",
+      "native_path": "gfx/interface/icons/artifact/artifact_unique.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod",
+      "path": "GFX-Mod/gfx/interface/icons/character_status/sexuality_icons_female.dds",
+      "native_path": "gfx/interface/icons/character_status/sexuality_icons_female.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod",
+      "path": "GFX-Mod/gfx/interface/icons/character_status/sexuality_icons_male.dds",
+      "native_path": "gfx/interface/icons/character_status/sexuality_icons_male.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod",
+      "path": "GFX-Mod/gfx/portraits/portrait_rank.dds",
+      "native_path": "gfx/portraits/portrait_rank.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/credits.txt",
+      "native_path": "credits.txt",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/artifact/artifact_bg.dds",
+      "native_path": "gfx/interface/icons/artifact/artifact_bg.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/artifact/artifact_unique.dds",
+      "native_path": "gfx/interface/icons/artifact/artifact_unique.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/character_interactions/_missing_interaction.dds",
+      "native_path": "gfx/interface/icons/character_interactions/_missing_interaction.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/character_interactions/artifact.dds",
+      "native_path": "gfx/interface/icons/character_interactions/artifact.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/character_interactions/declare_war_interaction.dds",
+      "native_path": "gfx/interface/icons/character_interactions/declare_war_interaction.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/character_interactions/designate_shieldmaiden_interaction.dds",
+      "native_path": "gfx/interface/icons/character_interactions/designate_shieldmaiden_interaction.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/character_interactions/fabricate_hook_interaction.dds",
+      "native_path": "gfx/interface/icons/character_interactions/fabricate_hook_interaction.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/character_interactions/grant_titles_interaction.dds",
+      "native_path": "gfx/interface/icons/character_interactions/grant_titles_interaction.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/character_interactions/icon_combat.dds",
+      "native_path": "gfx/interface/icons/character_interactions/icon_combat.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/character_interactions/icon_culture.dds",
+      "native_path": "gfx/interface/icons/character_interactions/icon_culture.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/character_interactions/icon_dynasty.dds",
+      "native_path": "gfx/interface/icons/character_interactions/icon_dynasty.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/character_interactions/icon_gold.dds",
+      "native_path": "gfx/interface/icons/character_interactions/icon_gold.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/character_interactions/icon_hostile.dds",
+      "native_path": "gfx/interface/icons/character_interactions/icon_hostile.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/character_interactions/icon_marriage.dds",
+      "native_path": "gfx/interface/icons/character_interactions/icon_marriage.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/character_interactions/icon_personal.dds",
+      "native_path": "gfx/interface/icons/character_interactions/icon_personal.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/character_interactions/inspiration.dds",
+      "native_path": "gfx/interface/icons/character_interactions/inspiration.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/character_interactions/prison.dds",
+      "native_path": "gfx/interface/icons/character_interactions/prison.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/character_interactions/send_poem_interaction.dds",
+      "native_path": "gfx/interface/icons/character_interactions/send_poem_interaction.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/character_interactions/send_to_varangian_guard_interaction.dds",
+      "native_path": "gfx/interface/icons/character_interactions/send_to_varangian_guard_interaction.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/character_interactions/torture_interaction.dds",
+      "native_path": "gfx/interface/icons/character_interactions/torture_interaction.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/character_interactions/vassal_claim_liege_title_interaction.dds",
+      "native_path": "gfx/interface/icons/character_interactions/vassal_claim_liege_title_interaction.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/character_status/sexuality_icons_female.dds",
+      "native_path": "gfx/interface/icons/character_status/sexuality_icons_female.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/character_status/sexuality_icons_male.dds",
+      "native_path": "gfx/interface/icons/character_status/sexuality_icons_male.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/icon_prowess.dds",
+      "native_path": "gfx/interface/icons/icon_prowess.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/icon_skills.dds",
+      "native_path": "gfx/interface/icons/icon_skills.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/_frame_commander.dds",
+      "native_path": "gfx/interface/icons/traits/_frame_commander.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/_frame_education.dds",
+      "native_path": "gfx/interface/icons/traits/_frame_education.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/_frame_fame_bad.dds",
+      "native_path": "gfx/interface/icons/traits/_frame_fame_bad.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/_frame_fame_good.dds",
+      "native_path": "gfx/interface/icons/traits/_frame_fame_good.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/_frame_fame_neutral.dds",
+      "native_path": "gfx/interface/icons/traits/_frame_fame_neutral.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/_frame_health.dds",
+      "native_path": "gfx/interface/icons/traits/_frame_health.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/_frame_physical_bad.dds",
+      "native_path": "gfx/interface/icons/traits/_frame_physical_bad.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/_frame_physical_good.dds",
+      "native_path": "gfx/interface/icons/traits/_frame_physical_good.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/_frame_physical_neutral.dds",
+      "native_path": "gfx/interface/icons/traits/_frame_physical_neutral.dds",
+      "same_bytes": true
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/_frame_pregnant.dds",
+      "native_path": "gfx/interface/icons/traits/_frame_pregnant.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/_stars_1.dds",
+      "native_path": "gfx/interface/icons/traits/_stars_1.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/_stars_2.dds",
+      "native_path": "gfx/interface/icons/traits/_stars_2.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/_stars_3.dds",
+      "native_path": "gfx/interface/icons/traits/_stars_3.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/_stars_4.dds",
+      "native_path": "gfx/interface/icons/traits/_stars_4.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/administrative_court_1.dds",
+      "native_path": "gfx/interface/icons/traits/administrative_court_1.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/administrative_court_2.dds",
+      "native_path": "gfx/interface/icons/traits/administrative_court_2.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/administrator.dds",
+      "native_path": "gfx/interface/icons/traits/administrator.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/adulterer.dds",
+      "native_path": "gfx/interface/icons/traits/adulterer.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/adventurer.dds",
+      "native_path": "gfx/interface/icons/traits/adventurer.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/aggressive_attacker.dds",
+      "native_path": "gfx/interface/icons/traits/aggressive_attacker.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/albino.dds",
+      "native_path": "gfx/interface/icons/traits/albino.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/ambitious.dds",
+      "native_path": "gfx/interface/icons/traits/ambitious.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/arbitrary.dds",
+      "native_path": "gfx/interface/icons/traits/arbitrary.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/architect.dds",
+      "native_path": "gfx/interface/icons/traits/architect.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/arrogant.dds",
+      "native_path": "gfx/interface/icons/traits/arrogant.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/athletic.dds",
+      "native_path": "gfx/interface/icons/traits/athletic.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/august.dds",
+      "native_path": "gfx/interface/icons/traits/august.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/augustus.dds",
+      "native_path": "gfx/interface/icons/traits/augustus.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/avaricious.dds",
+      "native_path": "gfx/interface/icons/traits/avaricious.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/bastard.dds",
+      "native_path": "gfx/interface/icons/traits/bastard.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/bastard_founder.dds",
+      "native_path": "gfx/interface/icons/traits/bastard_founder.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/beauty_bad_1.dds",
+      "native_path": "gfx/interface/icons/traits/beauty_bad_1.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/beauty_bad_2.dds",
+      "native_path": "gfx/interface/icons/traits/beauty_bad_2.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/beauty_bad_3.dds",
+      "native_path": "gfx/interface/icons/traits/beauty_bad_3.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/beauty_good_1.dds",
+      "native_path": "gfx/interface/icons/traits/beauty_good_1.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/beauty_good_2.dds",
+      "native_path": "gfx/interface/icons/traits/beauty_good_2.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/beauty_good_3.dds",
+      "native_path": "gfx/interface/icons/traits/beauty_good_3.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/berserker.dds",
+      "native_path": "gfx/interface/icons/traits/berserker.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/blademaster.dds",
+      "native_path": "gfx/interface/icons/traits/blademaster.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/blademaster_1.dds",
+      "native_path": "gfx/interface/icons/traits/blademaster_1.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/blademaster_2.dds",
+      "native_path": "gfx/interface/icons/traits/blademaster_2.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/blademaster_3.dds",
+      "native_path": "gfx/interface/icons/traits/blademaster_3.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/bleeder.dds",
+      "native_path": "gfx/interface/icons/traits/bleeder.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/blind.dds",
+      "native_path": "gfx/interface/icons/traits/blind.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/blood_of_prophet.dds",
+      "native_path": "gfx/interface/icons/traits/blood_of_prophet.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/blood_of_the_prophet_parent.dds",
+      "native_path": "gfx/interface/icons/traits/blood_of_the_prophet_parent.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/born_in_the_purple.dds",
+      "native_path": "gfx/interface/icons/traits/born_in_the_purple.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/bossy.dds",
+      "native_path": "gfx/interface/icons/traits/bossy.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/brave.dds",
+      "native_path": "gfx/interface/icons/traits/brave.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/bubonic_plague.dds",
+      "native_path": "gfx/interface/icons/traits/bubonic_plague.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/callous.dds",
+      "native_path": "gfx/interface/icons/traits/callous.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/calm.dds",
+      "native_path": "gfx/interface/icons/traits/calm.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/cancer.dds",
+      "native_path": "gfx/interface/icons/traits/cancer.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/cannibal.dds",
+      "native_path": "gfx/interface/icons/traits/cannibal.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/cautious_leader.dds",
+      "native_path": "gfx/interface/icons/traits/cautious_leader.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/celibate.dds",
+      "native_path": "gfx/interface/icons/traits/celibate.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/chakravarti.dds",
+      "native_path": "gfx/interface/icons/traits/chakravarti.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/charming.dds",
+      "native_path": "gfx/interface/icons/traits/charming.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/chaste.dds",
+      "native_path": "gfx/interface/icons/traits/chaste.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/cheese.dds",
+      "native_path": "gfx/interface/icons/traits/cheese.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/child_of_concubine.dds",
+      "native_path": "gfx/interface/icons/traits/child_of_concubine.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/clubfooted.dds",
+      "native_path": "gfx/interface/icons/traits/clubfooted.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/comfort_eater.dds",
+      "native_path": "gfx/interface/icons/traits/comfort_eater.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/compassionate.dds",
+      "native_path": "gfx/interface/icons/traits/compassionate.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/confider.dds",
+      "native_path": "gfx/interface/icons/traits/confider.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/congenital.dds",
+      "native_path": "gfx/interface/icons/traits/congenital.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/consecrated_blood.dds",
+      "native_path": "gfx/interface/icons/traits/consecrated_blood.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/consumption.dds",
+      "native_path": "gfx/interface/icons/traits/consumption.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/content.dds",
+      "native_path": "gfx/interface/icons/traits/content.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/contrite.dds",
+      "native_path": "gfx/interface/icons/traits/contrite.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/craven.dds",
+      "native_path": "gfx/interface/icons/traits/craven.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/crusader.dds",
+      "native_path": "gfx/interface/icons/traits/crusader.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/crusader_king.dds",
+      "native_path": "gfx/interface/icons/traits/crusader_king.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/curious.dds",
+      "native_path": "gfx/interface/icons/traits/curious.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/cynical.dds",
+      "native_path": "gfx/interface/icons/traits/cynical.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/deceitful.dds",
+      "native_path": "gfx/interface/icons/traits/deceitful.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/denounced.dds",
+      "native_path": "gfx/interface/icons/traits/denounced.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/depressed_1.dds",
+      "native_path": "gfx/interface/icons/traits/depressed_1.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/depressed_genetic.dds",
+      "native_path": "gfx/interface/icons/traits/depressed_genetic.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/desert_warrior.dds",
+      "native_path": "gfx/interface/icons/traits/desert_warrior.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/deviant.dds",
+      "native_path": "gfx/interface/icons/traits/deviant.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/devoted.dds",
+      "native_path": "gfx/interface/icons/traits/devoted.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/diligent.dds",
+      "native_path": "gfx/interface/icons/traits/diligent.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/diplomat.dds",
+      "native_path": "gfx/interface/icons/traits/diplomat.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/diplomatic_court_1.dds",
+      "native_path": "gfx/interface/icons/traits/diplomatic_court_1.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/diplomatic_court_2.dds",
+      "native_path": "gfx/interface/icons/traits/diplomatic_court_2.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/disfigured.dds",
+      "native_path": "gfx/interface/icons/traits/disfigured.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/disinherited.dds",
+      "native_path": "gfx/interface/icons/traits/disinherited.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/disputed_heritage.dds",
+      "native_path": "gfx/interface/icons/traits/disputed_heritage.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/divine_blood.dds",
+      "native_path": "gfx/interface/icons/traits/divine_blood.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/drunkard.dds",
+      "native_path": "gfx/interface/icons/traits/drunkard.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/dull.dds",
+      "native_path": "gfx/interface/icons/traits/dull.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/dwarf.dds",
+      "native_path": "gfx/interface/icons/traits/dwarf.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/early_great_pox.dds",
+      "native_path": "gfx/interface/icons/traits/early_great_pox.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/education_diplomacy.dds",
+      "native_path": "gfx/interface/icons/traits/education_diplomacy.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/education_diplomacy_1.dds",
+      "native_path": "gfx/interface/icons/traits/education_diplomacy_1.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/education_diplomacy_2.dds",
+      "native_path": "gfx/interface/icons/traits/education_diplomacy_2.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/education_diplomacy_3.dds",
+      "native_path": "gfx/interface/icons/traits/education_diplomacy_3.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/education_diplomacy_4.dds",
+      "native_path": "gfx/interface/icons/traits/education_diplomacy_4.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/education_intrigue_1.dds",
+      "native_path": "gfx/interface/icons/traits/education_intrigue_1.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/education_intrigue_2.dds",
+      "native_path": "gfx/interface/icons/traits/education_intrigue_2.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/education_intrigue_3.dds",
+      "native_path": "gfx/interface/icons/traits/education_intrigue_3.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/education_intrigue_4.dds",
+      "native_path": "gfx/interface/icons/traits/education_intrigue_4.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/education_learning_1.dds",
+      "native_path": "gfx/interface/icons/traits/education_learning_1.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/education_learning_2.dds",
+      "native_path": "gfx/interface/icons/traits/education_learning_2.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/education_learning_3.dds",
+      "native_path": "gfx/interface/icons/traits/education_learning_3.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/education_learning_4.dds",
+      "native_path": "gfx/interface/icons/traits/education_learning_4.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/education_martial_1.dds",
+      "native_path": "gfx/interface/icons/traits/education_martial_1.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/education_martial_2.dds",
+      "native_path": "gfx/interface/icons/traits/education_martial_2.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/education_martial_3.dds",
+      "native_path": "gfx/interface/icons/traits/education_martial_3.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/education_martial_4.dds",
+      "native_path": "gfx/interface/icons/traits/education_martial_4.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/education_martial_prowess_1.dds",
+      "native_path": "gfx/interface/icons/traits/education_martial_prowess_1.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/education_martial_prowess_2.dds",
+      "native_path": "gfx/interface/icons/traits/education_martial_prowess_2.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/education_martial_prowess_3.dds",
+      "native_path": "gfx/interface/icons/traits/education_martial_prowess_3.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/education_martial_prowess_4.dds",
+      "native_path": "gfx/interface/icons/traits/education_martial_prowess_4.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/education_stewardship_1.dds",
+      "native_path": "gfx/interface/icons/traits/education_stewardship_1.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/education_stewardship_2.dds",
+      "native_path": "gfx/interface/icons/traits/education_stewardship_2.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/education_stewardship_3.dds",
+      "native_path": "gfx/interface/icons/traits/education_stewardship_3.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/education_stewardship_4.dds",
+      "native_path": "gfx/interface/icons/traits/education_stewardship_4.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/excommunicated.dds",
+      "native_path": "gfx/interface/icons/traits/excommunicated.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/faith_warrior.dds",
+      "native_path": "gfx/interface/icons/traits/faith_warrior.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/family_first.dds",
+      "native_path": "gfx/interface/icons/traits/family_first.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/fecund.dds",
+      "native_path": "gfx/interface/icons/traits/fecund.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/fickle.dds",
+      "native_path": "gfx/interface/icons/traits/fickle.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/flagellant.dds",
+      "native_path": "gfx/interface/icons/traits/flagellant.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/flexible_leader.dds",
+      "native_path": "gfx/interface/icons/traits/flexible_leader.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/forder.dds",
+      "native_path": "gfx/interface/icons/traits/forder.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/forest_fighter.dds",
+      "native_path": "gfx/interface/icons/traits/forest_fighter.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/forgiving.dds",
+      "native_path": "gfx/interface/icons/traits/forgiving.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/fornicator.dds",
+      "native_path": "gfx/interface/icons/traits/fornicator.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/gallant.dds",
+      "native_path": "gfx/interface/icons/traits/gallant.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/generous.dds",
+      "native_path": "gfx/interface/icons/traits/generous.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/giant.dds",
+      "native_path": "gfx/interface/icons/traits/giant.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/gluttonous.dds",
+      "native_path": "gfx/interface/icons/traits/gluttonous.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/gout_ridden.dds",
+      "native_path": "gfx/interface/icons/traits/gout_ridden.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/great_pox.dds",
+      "native_path": "gfx/interface/icons/traits/great_pox.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/greatest_of_khans.dds",
+      "native_path": "gfx/interface/icons/traits/greatest_of_khans.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/greedy.dds",
+      "native_path": "gfx/interface/icons/traits/greedy.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/gregarious.dds",
+      "native_path": "gfx/interface/icons/traits/gregarious.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/hajjaj.dds",
+      "native_path": "gfx/interface/icons/traits/hajjaj.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/hashishiyah.dds",
+      "native_path": "gfx/interface/icons/traits/hashishiyah.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/herbalist_1.dds",
+      "native_path": "gfx/interface/icons/traits/herbalist_1.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/herbalist_2.dds",
+      "native_path": "gfx/interface/icons/traits/herbalist_2.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/herbalist_3.dds",
+      "native_path": "gfx/interface/icons/traits/herbalist_3.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/heresiarch.dds",
+      "native_path": "gfx/interface/icons/traits/heresiarch.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/holy_warrior.dds",
+      "native_path": "gfx/interface/icons/traits/holy_warrior.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/honest.dds",
+      "native_path": "gfx/interface/icons/traits/honest.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/humble.dds",
+      "native_path": "gfx/interface/icons/traits/humble.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/hunchbacked.dds",
+      "native_path": "gfx/interface/icons/traits/hunchbacked.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/hunter.dds",
+      "native_path": "gfx/interface/icons/traits/hunter.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/hunter_1.dds",
+      "native_path": "gfx/interface/icons/traits/hunter_1.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/hunter_2.dds",
+      "native_path": "gfx/interface/icons/traits/hunter_2.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/hunter_3.dds",
+      "native_path": "gfx/interface/icons/traits/hunter_3.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/ill.dds",
+      "native_path": "gfx/interface/icons/traits/ill.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/impatient.dds",
+      "native_path": "gfx/interface/icons/traits/impatient.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/impotent.dds",
+      "native_path": "gfx/interface/icons/traits/impotent.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/improvident.dds",
+      "native_path": "gfx/interface/icons/traits/improvident.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/inappetetic.dds",
+      "native_path": "gfx/interface/icons/traits/inappetetic.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/inbred.dds",
+      "native_path": "gfx/interface/icons/traits/inbred.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/incapable.dds",
+      "native_path": "gfx/interface/icons/traits/incapable.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/incestuous.dds",
+      "native_path": "gfx/interface/icons/traits/incestuous.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/infertile.dds",
+      "native_path": "gfx/interface/icons/traits/infertile.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/infirm.dds",
+      "native_path": "gfx/interface/icons/traits/infirm.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/intellect_bad_1.dds",
+      "native_path": "gfx/interface/icons/traits/intellect_bad_1.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/intellect_bad_2.dds",
+      "native_path": "gfx/interface/icons/traits/intellect_bad_2.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/intellect_bad_3.dds",
+      "native_path": "gfx/interface/icons/traits/intellect_bad_3.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/intellect_good_1.dds",
+      "native_path": "gfx/interface/icons/traits/intellect_good_1.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/intellect_good_2.dds",
+      "native_path": "gfx/interface/icons/traits/intellect_good_2.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/intellect_good_3.dds",
+      "native_path": "gfx/interface/icons/traits/intellect_good_3.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/intrigue_court_1.dds",
+      "native_path": "gfx/interface/icons/traits/intrigue_court_1.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/intrigue_court_2.dds",
+      "native_path": "gfx/interface/icons/traits/intrigue_court_2.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/irritable.dds",
+      "native_path": "gfx/interface/icons/traits/irritable.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/journaller.dds",
+      "native_path": "gfx/interface/icons/traits/journaller.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/jungle_stalker.dds",
+      "native_path": "gfx/interface/icons/traits/jungle_stalker.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/just.dds",
+      "native_path": "gfx/interface/icons/traits/just.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/kinslayer_1.dds",
+      "native_path": "gfx/interface/icons/traits/kinslayer_1.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/kinslayer_2.dds",
+      "native_path": "gfx/interface/icons/traits/kinslayer_2.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/kinslayer_3.dds",
+      "native_path": "gfx/interface/icons/traits/kinslayer_3.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/lazy.dds",
+      "native_path": "gfx/interface/icons/traits/lazy.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/legitimized_bastard.dds",
+      "native_path": "gfx/interface/icons/traits/legitimized_bastard.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/leper.dds",
+      "native_path": "gfx/interface/icons/traits/leper.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/lifestyle_herbalist.dds",
+      "native_path": "gfx/interface/icons/traits/lifestyle_herbalist.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/lisping.dds",
+      "native_path": "gfx/interface/icons/traits/lisping.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/logistician.dds",
+      "native_path": "gfx/interface/icons/traits/logistician.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/lovers_pox.dds",
+      "native_path": "gfx/interface/icons/traits/lovers_pox.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/lunatic_1.dds",
+      "native_path": "gfx/interface/icons/traits/lunatic_1.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/lunatic_genetic.dds",
+      "native_path": "gfx/interface/icons/traits/lunatic_genetic.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/lustful.dds",
+      "native_path": "gfx/interface/icons/traits/lustful.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/maimed.dds",
+      "native_path": "gfx/interface/icons/traits/maimed.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/military_engineer.dds",
+      "native_path": "gfx/interface/icons/traits/military_engineer.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/mirza.dds",
+      "native_path": "gfx/interface/icons/traits/mirza.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/mujahid.dds",
+      "native_path": "gfx/interface/icons/traits/mujahid.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/murderer.dds",
+      "native_path": "gfx/interface/icons/traits/murderer.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/mystic.dds",
+      "native_path": "gfx/interface/icons/traits/mystic.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/mystic_1.dds",
+      "native_path": "gfx/interface/icons/traits/mystic_1.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/mystic_2.dds",
+      "native_path": "gfx/interface/icons/traits/mystic_2.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/mystic_3.dds",
+      "native_path": "gfx/interface/icons/traits/mystic_3.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/one_eyed.dds",
+      "native_path": "gfx/interface/icons/traits/one_eyed.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/one_legged.dds",
+      "native_path": "gfx/interface/icons/traits/one_legged.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/open_terrain_expert.dds",
+      "native_path": "gfx/interface/icons/traits/open_terrain_expert.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/order_member.dds",
+      "native_path": "gfx/interface/icons/traits/order_member.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/organizer.dds",
+      "native_path": "gfx/interface/icons/traits/organizer.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/overseer.dds",
+      "native_path": "gfx/interface/icons/traits/overseer.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/paragon.dds",
+      "native_path": "gfx/interface/icons/traits/paragon.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/paranoid.dds",
+      "native_path": "gfx/interface/icons/traits/paranoid.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/patient.dds",
+      "native_path": "gfx/interface/icons/traits/patient.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/peasant_leader.dds",
+      "native_path": "gfx/interface/icons/traits/peasant_leader.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/pensive.dds",
+      "native_path": "gfx/interface/icons/traits/pensive.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/physician.dds",
+      "native_path": "gfx/interface/icons/traits/physician.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/physician_1.dds",
+      "native_path": "gfx/interface/icons/traits/physician_1.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/physician_2.dds",
+      "native_path": "gfx/interface/icons/traits/physician_2.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/physician_3.dds",
+      "native_path": "gfx/interface/icons/traits/physician_3.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/physique_bad_1.dds",
+      "native_path": "gfx/interface/icons/traits/physique_bad_1.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/physique_bad_2.dds",
+      "native_path": "gfx/interface/icons/traits/physique_bad_2.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/physique_bad_3.dds",
+      "native_path": "gfx/interface/icons/traits/physique_bad_3.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/physique_good_1.dds",
+      "native_path": "gfx/interface/icons/traits/physique_good_1.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/physique_good_2.dds",
+      "native_path": "gfx/interface/icons/traits/physique_good_2.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/physique_good_3.dds",
+      "native_path": "gfx/interface/icons/traits/physique_good_3.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/pilgrim.dds",
+      "native_path": "gfx/interface/icons/traits/pilgrim.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/pilgrim_1.dds",
+      "native_path": "gfx/interface/icons/traits/pilgrim_1.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/pilgrim_2.dds",
+      "native_path": "gfx/interface/icons/traits/pilgrim_2.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/pilgrim_3.dds",
+      "native_path": "gfx/interface/icons/traits/pilgrim_3.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/pneumonic.dds",
+      "native_path": "gfx/interface/icons/traits/pneumonic.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/poet.dds",
+      "native_path": "gfx/interface/icons/traits/poet.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/possessed_1.dds",
+      "native_path": "gfx/interface/icons/traits/possessed_1.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/possessed_genetic.dds",
+      "native_path": "gfx/interface/icons/traits/possessed_genetic.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/pregnant.dds",
+      "native_path": "gfx/interface/icons/traits/pregnant.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/profligate.dds",
+      "native_path": "gfx/interface/icons/traits/profligate.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/pure_blooded.dds",
+      "native_path": "gfx/interface/icons/traits/pure_blooded.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/rakish.dds",
+      "native_path": "gfx/interface/icons/traits/rakish.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/reaver.dds",
+      "native_path": "gfx/interface/icons/traits/reaver.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/reckless.dds",
+      "native_path": "gfx/interface/icons/traits/reckless.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/reclusive.dds",
+      "native_path": "gfx/interface/icons/traits/reclusive.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/reincarnation.dds",
+      "native_path": "gfx/interface/icons/traits/reincarnation.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/reveler.dds",
+      "native_path": "gfx/interface/icons/traits/reveler.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/reveler_1.dds",
+      "native_path": "gfx/interface/icons/traits/reveler_1.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/reveler_2.dds",
+      "native_path": "gfx/interface/icons/traits/reveler_2.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/reveler_3.dds",
+      "native_path": "gfx/interface/icons/traits/reveler_3.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/rough_terrain_expert.dds",
+      "native_path": "gfx/interface/icons/traits/rough_terrain_expert.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/rowdy.dds",
+      "native_path": "gfx/interface/icons/traits/rowdy.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/sadistic.dds",
+      "native_path": "gfx/interface/icons/traits/sadistic.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/saint.dds",
+      "native_path": "gfx/interface/icons/traits/saint.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/saoshyant.dds",
+      "native_path": "gfx/interface/icons/traits/saoshyant.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/saoshyant_descendant.dds",
+      "native_path": "gfx/interface/icons/traits/saoshyant_descendant.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/savior.dds",
+      "native_path": "gfx/interface/icons/traits/savior.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/sayyid.dds",
+      "native_path": "gfx/interface/icons/traits/sayyid.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/scaly.dds",
+      "native_path": "gfx/interface/icons/traits/scaly.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/scarred.dds",
+      "native_path": "gfx/interface/icons/traits/scarred.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/schemer.dds",
+      "native_path": "gfx/interface/icons/traits/schemer.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/scholarly_court_1.dds",
+      "native_path": "gfx/interface/icons/traits/scholarly_court_1.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/scholarly_court_2.dds",
+      "native_path": "gfx/interface/icons/traits/scholarly_court_2.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/sea_raider.dds",
+      "native_path": "gfx/interface/icons/traits/sea_raider.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/seducer.dds",
+      "native_path": "gfx/interface/icons/traits/seducer.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/shieldmaiden.dds",
+      "native_path": "gfx/interface/icons/traits/shieldmaiden.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/shrewd.dds",
+      "native_path": "gfx/interface/icons/traits/shrewd.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/shy.dds",
+      "native_path": "gfx/interface/icons/traits/shy.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/sickly.dds",
+      "native_path": "gfx/interface/icons/traits/sickly.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/sin.dds",
+      "native_path": "gfx/interface/icons/traits/sin.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/sly.dds",
+      "native_path": "gfx/interface/icons/traits/sly.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/smallpox.dds",
+      "native_path": "gfx/interface/icons/traits/smallpox.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/sodomite.dds",
+      "native_path": "gfx/interface/icons/traits/sodomite.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/spindly.dds",
+      "native_path": "gfx/interface/icons/traits/spindly.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/strategist.dds",
+      "native_path": "gfx/interface/icons/traits/strategist.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/strong.dds",
+      "native_path": "gfx/interface/icons/traits/strong.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/stubborn.dds",
+      "native_path": "gfx/interface/icons/traits/stubborn.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/stuttering.dds",
+      "native_path": "gfx/interface/icons/traits/stuttering.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/talkative.dds",
+      "native_path": "gfx/interface/icons/traits/talkative.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/temperate.dds",
+      "native_path": "gfx/interface/icons/traits/temperate.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/theologian.dds",
+      "native_path": "gfx/interface/icons/traits/theologian.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/torturer.dds",
+      "native_path": "gfx/interface/icons/traits/torturer.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/trusting.dds",
+      "native_path": "gfx/interface/icons/traits/trusting.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/twin.dds",
+      "native_path": "gfx/interface/icons/traits/twin.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/typhus.dds",
+      "native_path": "gfx/interface/icons/traits/typhus.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/unyielding_defender.dds",
+      "native_path": "gfx/interface/icons/traits/unyielding_defender.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/varangian.dds",
+      "native_path": "gfx/interface/icons/traits/varangian.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/vengeful.dds",
+      "native_path": "gfx/interface/icons/traits/vengeful.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/viking.dds",
+      "native_path": "gfx/interface/icons/traits/viking.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/virtue.dds",
+      "native_path": "gfx/interface/icons/traits/virtue.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/warlike_court_1.dds",
+      "native_path": "gfx/interface/icons/traits/warlike_court_1.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/warlike_court_2.dds",
+      "native_path": "gfx/interface/icons/traits/warlike_court_2.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/weak.dds",
+      "native_path": "gfx/interface/icons/traits/weak.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/wheezing.dds",
+      "native_path": "gfx/interface/icons/traits/wheezing.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/whole_of_body.dds",
+      "native_path": "gfx/interface/icons/traits/whole_of_body.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/wild_oat.dds",
+      "native_path": "gfx/interface/icons/traits/wild_oat.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/winter_soldier.dds",
+      "native_path": "gfx/interface/icons/traits/winter_soldier.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/witch.dds",
+      "native_path": "gfx/interface/icons/traits/witch.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/wounded_1.dds",
+      "native_path": "gfx/interface/icons/traits/wounded_1.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/wounded_2.dds",
+      "native_path": "gfx/interface/icons/traits/wounded_2.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/wounded_3.dds",
+      "native_path": "gfx/interface/icons/traits/wounded_3.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/wrathful.dds",
+      "native_path": "gfx/interface/icons/traits/wrathful.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/icons/traits/zealous.dds",
+      "native_path": "gfx/interface/icons/traits/zealous.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/illustrations/men_at_arms_big/archers.dds",
+      "native_path": "gfx/interface/illustrations/men_at_arms_big/archers.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/illustrations/men_at_arms_big/bombard.dds",
+      "native_path": "gfx/interface/illustrations/men_at_arms_big/bombard.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/illustrations/men_at_arms_big/bondi.dds",
+      "native_path": "gfx/interface/illustrations/men_at_arms_big/bondi.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/illustrations/men_at_arms_big/bowmen.dds",
+      "native_path": "gfx/interface/illustrations/men_at_arms_big/bowmen.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/illustrations/men_at_arms_big/camel_riders.dds",
+      "native_path": "gfx/interface/illustrations/men_at_arms_big/camel_riders.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/illustrations/men_at_arms_big/crossbowmen.dds",
+      "native_path": "gfx/interface/illustrations/men_at_arms_big/crossbowmen.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/illustrations/men_at_arms_big/danish_huskarls.dds",
+      "native_path": "gfx/interface/illustrations/men_at_arms_big/danish_huskarls.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/illustrations/men_at_arms_big/heavy_cavalry.dds",
+      "native_path": "gfx/interface/illustrations/men_at_arms_big/heavy_cavalry.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/illustrations/men_at_arms_big/heavy_infantry.dds",
+      "native_path": "gfx/interface/illustrations/men_at_arms_big/heavy_infantry.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/illustrations/men_at_arms_big/horse_archers.dds",
+      "native_path": "gfx/interface/illustrations/men_at_arms_big/horse_archers.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/illustrations/men_at_arms_big/house_guard.dds",
+      "native_path": "gfx/interface/illustrations/men_at_arms_big/house_guard.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/illustrations/men_at_arms_big/jomsviking_pirates.dds",
+      "native_path": "gfx/interface/illustrations/men_at_arms_big/jomsviking_pirates.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/illustrations/men_at_arms_big/levies.dds",
+      "native_path": "gfx/interface/illustrations/men_at_arms_big/levies.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/illustrations/men_at_arms_big/light_cavalry.dds",
+      "native_path": "gfx/interface/illustrations/men_at_arms_big/light_cavalry.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/illustrations/men_at_arms_big/mangonel.dds",
+      "native_path": "gfx/interface/illustrations/men_at_arms_big/mangonel.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/illustrations/men_at_arms_big/onager.dds",
+      "native_path": "gfx/interface/illustrations/men_at_arms_big/onager.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/illustrations/men_at_arms_big/pikemen.dds",
+      "native_path": "gfx/interface/illustrations/men_at_arms_big/pikemen.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/illustrations/men_at_arms_big/skirmishers.dds",
+      "native_path": "gfx/interface/illustrations/men_at_arms_big/skirmishers.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/illustrations/men_at_arms_big/trebuchet.dds",
+      "native_path": "gfx/interface/illustrations/men_at_arms_big/trebuchet.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/illustrations/men_at_arms_big/varangian_veterans.dds",
+      "native_path": "gfx/interface/illustrations/men_at_arms_big/varangian_veterans.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/illustrations/men_at_arms_big/vigmen.dds",
+      "native_path": "gfx/interface/illustrations/men_at_arms_big/vigmen.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/illustrations/men_at_arms_big/war_elephants.dds",
+      "native_path": "gfx/interface/illustrations/men_at_arms_big/war_elephants.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/illustrations/men_at_arms_small/archers.dds",
+      "native_path": "gfx/interface/illustrations/men_at_arms_small/archers.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/illustrations/men_at_arms_small/bombard.dds",
+      "native_path": "gfx/interface/illustrations/men_at_arms_small/bombard.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/illustrations/men_at_arms_small/bondi.dds",
+      "native_path": "gfx/interface/illustrations/men_at_arms_small/bondi.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/illustrations/men_at_arms_small/bowmen.dds",
+      "native_path": "gfx/interface/illustrations/men_at_arms_small/bowmen.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/illustrations/men_at_arms_small/camel_riders.dds",
+      "native_path": "gfx/interface/illustrations/men_at_arms_small/camel_riders.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/illustrations/men_at_arms_small/crossbowmen.dds",
+      "native_path": "gfx/interface/illustrations/men_at_arms_small/crossbowmen.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/illustrations/men_at_arms_small/danish_huskarls.dds",
+      "native_path": "gfx/interface/illustrations/men_at_arms_small/danish_huskarls.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/illustrations/men_at_arms_small/heavy_cavalry.dds",
+      "native_path": "gfx/interface/illustrations/men_at_arms_small/heavy_cavalry.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/illustrations/men_at_arms_small/heavy_infantry.dds",
+      "native_path": "gfx/interface/illustrations/men_at_arms_small/heavy_infantry.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/illustrations/men_at_arms_small/horse_archers.dds",
+      "native_path": "gfx/interface/illustrations/men_at_arms_small/horse_archers.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/illustrations/men_at_arms_small/house_guard.dds",
+      "native_path": "gfx/interface/illustrations/men_at_arms_small/house_guard.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/illustrations/men_at_arms_small/jomsviking_pirates.dds",
+      "native_path": "gfx/interface/illustrations/men_at_arms_small/jomsviking_pirates.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/illustrations/men_at_arms_small/knights.dds",
+      "native_path": "gfx/interface/illustrations/men_at_arms_small/knights.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/illustrations/men_at_arms_small/levies.dds",
+      "native_path": "gfx/interface/illustrations/men_at_arms_small/levies.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/illustrations/men_at_arms_small/light_cavalry.dds",
+      "native_path": "gfx/interface/illustrations/men_at_arms_small/light_cavalry.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/illustrations/men_at_arms_small/mangonel.dds",
+      "native_path": "gfx/interface/illustrations/men_at_arms_small/mangonel.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/illustrations/men_at_arms_small/onager.dds",
+      "native_path": "gfx/interface/illustrations/men_at_arms_small/onager.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/illustrations/men_at_arms_small/pikemen.dds",
+      "native_path": "gfx/interface/illustrations/men_at_arms_small/pikemen.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/illustrations/men_at_arms_small/skirmishers.dds",
+      "native_path": "gfx/interface/illustrations/men_at_arms_small/skirmishers.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/illustrations/men_at_arms_small/trebuchet.dds",
+      "native_path": "gfx/interface/illustrations/men_at_arms_small/trebuchet.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/illustrations/men_at_arms_small/varangian_veterans.dds",
+      "native_path": "gfx/interface/illustrations/men_at_arms_small/varangian_veterans.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/illustrations/men_at_arms_small/vigmen.dds",
+      "native_path": "gfx/interface/illustrations/men_at_arms_small/vigmen.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/illustrations/men_at_arms_small/war_elephants.dds",
+      "native_path": "gfx/interface/illustrations/men_at_arms_small/war_elephants.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/progressbars/progress_blue.dds",
+      "native_path": "gfx/interface/progressbars/progress_blue.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/progressbars/progress_frozen.dds",
+      "native_path": "gfx/interface/progressbars/progress_frozen.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/progressbars/progress_gray.dds",
+      "native_path": "gfx/interface/progressbars/progress_gray.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/progressbars/progress_green.dds",
+      "native_path": "gfx/interface/progressbars/progress_green.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/progressbars/progress_purple.dds",
+      "native_path": "gfx/interface/progressbars/progress_purple.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/progressbars/progress_red.dds",
+      "native_path": "gfx/interface/progressbars/progress_red.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/progressbars/progress_scheme.dds",
+      "native_path": "gfx/interface/progressbars/progress_scheme.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/progressbars/progress_standard.dds",
+      "native_path": "gfx/interface/progressbars/progress_standard.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/skinned/illustrations/men_at_arms/knights.dds",
+      "native_path": "gfx/interface/skinned/illustrations/men_at_arms/knights.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/window_character/character_view_skills_bg.dds",
+      "native_path": "gfx/interface/window_character/character_view_skills_bg.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/interface/window_character/characterlist_skills_bg.dds",
+      "native_path": "gfx/interface/window_character/characterlist_skills_bg.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/map/post_effects/posteffect_volumes.txt",
+      "native_path": "gfx/map/post_effects/posteffect_volumes.txt",
+      "same_bytes": false
+    },
+    {
+      "mod": "GFX-Mod Serp",
+      "path": "GFX-Mod Serp/gfx/portraits/portrait_rank.dds",
+      "native_path": "gfx/portraits/portrait_rank.dds",
+      "same_bytes": false
+    },
+    {
+      "mod": "Knight Manager (MP)",
+      "path": "Knight Manager (MP)/gui/window_knights.gui",
+      "native_path": "gui/window_knights.gui",
+      "same_bytes": false
+    },
+    {
+      "mod": "test",
+      "path": "test/gui/window_knights.gui",
+      "native_path": "gui/window_knights.gui",
+      "same_bytes": false
+    }
+  ],
+  "limits": "Lexical collisions; actual merge semantics and nested object IDs need separate review."
+}

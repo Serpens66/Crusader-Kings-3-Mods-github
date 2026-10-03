@@ -1,0 +1,370 @@
+[
+  {
+    "namespace": "NGui",
+    "key": "EVENT_OPTIONS_SHOWN_HIDE_UNAVAILABLE",
+    "value": "8",
+    "line": 2,
+    "path": "CustomDefines/common/defines/graphic/serp_graphic_defines.txt",
+    "native": [
+      {
+        "namespace": "NGui",
+        "key": "EVENT_OPTIONS_SHOWN_HIDE_UNAVAILABLE",
+        "value": "4",
+        "line": 599,
+        "path": "common/defines/graphic/00_graphics.txt"
+      }
+    ]
+  },
+  {
+    "namespace": "NMapIcon",
+    "key": "FORT_VISIBLE_ZOOM_STEPS",
+    "value": "{ 0 12 }",
+    "line": 6,
+    "path": "CustomDefines/common/defines/graphic/serp_graphic_defines.txt",
+    "native": [
+      {
+        "namespace": "NMapIcon",
+        "key": "FORT_VISIBLE_ZOOM_STEPS",
+        "value": "{ 0 9 }",
+        "line": 664,
+        "path": "common/defines/graphic/00_graphics.txt"
+      }
+    ]
+  },
+  {
+    "namespace": "NMapIcon",
+    "key": "STRAITS_VISIBLE_ZOOM_STEPS",
+    "value": "{ 0 11 }",
+    "line": 7,
+    "path": "CustomDefines/common/defines/graphic/serp_graphic_defines.txt",
+    "native": [
+      {
+        "namespace": "NMapIcon",
+        "key": "STRAITS_VISIBLE_ZOOM_STEPS",
+        "value": "{ 0 12 }",
+        "line": 665,
+        "path": "common/defines/graphic/00_graphics.txt"
+      }
+    ]
+  },
+  {
+    "namespace": "NMapIcon",
+    "key": "HOLDING_VISIBLE_ZOOM_STEPS",
+    "value": "{ 0 7 }",
+    "line": 8,
+    "path": "CustomDefines/common/defines/graphic/serp_graphic_defines.txt",
+    "native": [
+      {
+        "namespace": "NMapIcon",
+        "key": "HOLDING_VISIBLE_ZOOM_STEPS",
+        "value": "{ 0 4 }",
+        "line": 666,
+        "path": "common/defines/graphic/00_graphics.txt"
+      }
+    ]
+  },
+  {
+    "namespace": "NMapIcon",
+    "key": "HOLDING_SMALL_VISIBLE_ZOOM_STEPS",
+    "value": "{ 5 11 }",
+    "line": 9,
+    "path": "CustomDefines/common/defines/graphic/serp_graphic_defines.txt",
+    "native": [
+      {
+        "namespace": "NMapIcon",
+        "key": "HOLDING_SMALL_VISIBLE_ZOOM_STEPS",
+        "value": "{ 5 8 }",
+        "line": 667,
+        "path": "common/defines/graphic/00_graphics.txt"
+      }
+    ]
+  },
+  {
+    "namespace": "NMapIcon",
+    "key": "REALM_CAPITAL_VISIBLE_ZOOM_STEPS",
+    "value": "{ 0 22 }",
+    "line": 10,
+    "path": "CustomDefines/common/defines/graphic/serp_graphic_defines.txt",
+    "native": [
+      {
+        "namespace": "NMapIcon",
+        "key": "REALM_CAPITAL_VISIBLE_ZOOM_STEPS",
+        "value": "{ 0 21 }",
+        "line": 668,
+        "path": "common/defines/graphic/00_graphics.txt"
+      }
+    ]
+  },
+  {
+    "namespace": "NMapIcon",
+    "key": "TITLE_CAPITAL_VISIBLE_ZOOM_STEPS",
+    "value": "{ 0 19 }",
+    "line": 11,
+    "path": "CustomDefines/common/defines/graphic/serp_graphic_defines.txt",
+    "native": [
+      {
+        "namespace": "NMapIcon",
+        "key": "TITLE_CAPITAL_VISIBLE_ZOOM_STEPS",
+        "value": "{ 0 16 }",
+        "line": 669,
+        "path": "common/defines/graphic/00_graphics.txt"
+      }
+    ]
+  },
+  {
+    "namespace": "NMapIcon",
+    "key": "DYNASTY_HOUSES_VISIBLE_ZOOM_STEPS",
+    "value": "{ 5 13 }",
+    "line": 12,
+    "path": "CustomDefines/common/defines/graphic/serp_graphic_defines.txt",
+    "native": [
+      {
+        "namespace": "NMapIcon",
+        "key": "DYNASTY_HOUSES_VISIBLE_ZOOM_STEPS",
+        "value": "{ 5 10 }",
+        "line": 671,
+        "path": "common/defines/graphic/00_graphics.txt"
+      }
+    ]
+  },
+  {
+    "namespace": "NMapIcon",
+    "key": "RALLY_POINT_VISIBLE_ZOOM_STEPS",
+    "value": "{ 0 11 }",
+    "line": 13,
+    "path": "CustomDefines/common/defines/graphic/serp_graphic_defines.txt",
+    "native": [
+      {
+        "namespace": "NMapIcon",
+        "key": "RALLY_POINT_VISIBLE_ZOOM_STEPS",
+        "value": "{ 0 8 }",
+        "line": 672,
+        "path": "common/defines/graphic/00_graphics.txt"
+      }
+    ]
+  },
+  {
+    "namespace": "NMapIcon",
+    "key": "UNIT_VISIBLE_ZOOM_STEPS",
+    "value": "{ 0 22 }",
+    "line": 14,
+    "path": "CustomDefines/common/defines/graphic/serp_graphic_defines.txt",
+    "native": [
+      {
+        "namespace": "NMapIcon",
+        "key": "UNIT_VISIBLE_ZOOM_STEPS",
+        "value": "{ 0 16 }",
+        "line": 673,
+        "path": "common/defines/graphic/00_graphics.txt"
+      }
+    ]
+  },
+  {
+    "namespace": "NMapIcon",
+    "key": "UNIT_NEUTRAL_VISIBLE_ZOOM_STEPS",
+    "value": "{ 0 16 }",
+    "line": 15,
+    "path": "CustomDefines/common/defines/graphic/serp_graphic_defines.txt",
+    "native": [
+      {
+        "namespace": "NMapIcon",
+        "key": "UNIT_NEUTRAL_VISIBLE_ZOOM_STEPS",
+        "value": "{ 0 8 }",
+        "line": 674,
+        "path": "common/defines/graphic/00_graphics.txt"
+      }
+    ]
+  },
+  {
+    "namespace": "NMapIcon",
+    "key": "COMBAT_VISIBLE_ZOOM_STEPS",
+    "value": "{ 0 19 }",
+    "line": 16,
+    "path": "CustomDefines/common/defines/graphic/serp_graphic_defines.txt",
+    "native": [
+      {
+        "namespace": "NMapIcon",
+        "key": "COMBAT_VISIBLE_ZOOM_STEPS",
+        "value": "{ 0 16 }",
+        "line": 675,
+        "path": "common/defines/graphic/00_graphics.txt"
+      }
+    ]
+  },
+  {
+    "namespace": "NMapIcon",
+    "key": "COMBAT_NEUTRAL_VISIBLE_ZOOM_STEPS",
+    "value": "{ 0 11 }",
+    "line": 17,
+    "path": "CustomDefines/common/defines/graphic/serp_graphic_defines.txt",
+    "native": [
+      {
+        "namespace": "NMapIcon",
+        "key": "COMBAT_NEUTRAL_VISIBLE_ZOOM_STEPS",
+        "value": "{ 0 8 }",
+        "line": 676,
+        "path": "common/defines/graphic/00_graphics.txt"
+      }
+    ]
+  },
+  {
+    "namespace": "NMapIcon",
+    "key": "COMBAT_PREDICITON_VISIBLE_ZOOM_STEPS",
+    "value": "{ 0 11 }",
+    "line": 18,
+    "path": "CustomDefines/common/defines/graphic/serp_graphic_defines.txt",
+    "native": [
+      {
+        "namespace": "NMapIcon",
+        "key": "COMBAT_PREDICITON_VISIBLE_ZOOM_STEPS",
+        "value": "{ 0 8 }",
+        "line": 677,
+        "path": "common/defines/graphic/00_graphics.txt"
+      }
+    ]
+  },
+  {
+    "namespace": "NMapIcon",
+    "key": "COUNCIL_TASK_VISIBLE_ZOOM_STEPS",
+    "value": "{ 0 11 }",
+    "line": 19,
+    "path": "CustomDefines/common/defines/graphic/serp_graphic_defines.txt",
+    "native": [
+      {
+        "namespace": "NMapIcon",
+        "key": "COUNCIL_TASK_VISIBLE_ZOOM_STEPS",
+        "value": "{ 0 8 }",
+        "line": 678,
+        "path": "common/defines/graphic/00_graphics.txt"
+      }
+    ]
+  },
+  {
+    "namespace": "NMapIcon",
+    "key": "PROVINCE_VISIBLE_ZOOM_STEPS",
+    "value": "{ 0 22 }",
+    "line": 20,
+    "path": "CustomDefines/common/defines/graphic/serp_graphic_defines.txt",
+    "native": [
+      {
+        "namespace": "NMapIcon",
+        "key": "PROVINCE_VISIBLE_ZOOM_STEPS",
+        "value": "{ 0 19 }",
+        "line": 679,
+        "path": "common/defines/graphic/00_graphics.txt"
+      }
+    ]
+  },
+  {
+    "namespace": "NMapIcon",
+    "key": "COURT_LANGUAGE_VISIBLE_ZOOM_STEPS",
+    "value": "{ 0 22 }",
+    "line": 21,
+    "path": "CustomDefines/common/defines/graphic/serp_graphic_defines.txt",
+    "native": [
+      {
+        "namespace": "NMapIcon",
+        "key": "COURT_LANGUAGE_VISIBLE_ZOOM_STEPS",
+        "value": "{ 0 19 }",
+        "line": 680,
+        "path": "common/defines/graphic/00_graphics.txt"
+      }
+    ]
+  },
+  {
+    "namespace": "NMapName",
+    "key": "LARGE_NAMES_ZOOM_STEP",
+    "value": "12",
+    "line": 25,
+    "path": "CustomDefines/common/defines/graphic/serp_graphic_defines.txt",
+    "native": [
+      {
+        "namespace": "NMapName",
+        "key": "LARGE_NAMES_ZOOM_STEP",
+        "value": "9",
+        "line": 250,
+        "path": "common/defines/graphic/00_graphics.txt"
+      }
+    ]
+  },
+  {
+    "namespace": "NFogOfWar",
+    "key": "FADE_OUT_ZOOM_STEP",
+    "value": "16",
+    "line": 2,
+    "path": "CustomDefines/common/defines/jomini/serp_jomini_defines.txt",
+    "native": [
+      {
+        "namespace": "NFogOfWar",
+        "key": "FADE_OUT_ZOOM_STEP",
+        "value": "9",
+        "line": 14,
+        "path": "common/defines/jomini/fog_of_war.txt"
+      }
+    ]
+  },
+  {
+    "namespace": "NCombat",
+    "key": "BASE_RATIO_CASUALTIES_CONVERSION",
+    "value": "0.5",
+    "line": 6,
+    "path": "CustomDefines/common/defines/serp_defines.txt",
+    "native": [
+      {
+        "namespace": "NCombat",
+        "key": "BASE_RATIO_CASUALTIES_CONVERSION",
+        "value": "0.3",
+        "line": 598,
+        "path": "common/defines/00_defines.txt"
+      }
+    ]
+  },
+  {
+    "namespace": "NDynasty",
+    "key": "MAX_MONTHLY_PRESTIGE_GAIN_FROM_ALIVE_MEMBERS",
+    "value": "4",
+    "line": 19,
+    "path": "CustomDefines/common/defines/serp_defines.txt",
+    "native": [
+      {
+        "namespace": "NDynasty",
+        "key": "MAX_MONTHLY_PRESTIGE_GAIN_FROM_ALIVE_MEMBERS",
+        "value": "2",
+        "line": 1100,
+        "path": "common/defines/00_defines.txt"
+      }
+    ]
+  },
+  {
+    "namespace": "NDynasty",
+    "key": "MONTHLY_PRESTIGE_GAIN_MULT_FOR_VASSALS_OF_SAME_DYNASTY",
+    "value": "0.25",
+    "line": 20,
+    "path": "CustomDefines/common/defines/serp_defines.txt",
+    "native": [
+      {
+        "namespace": "NDynasty",
+        "key": "MONTHLY_PRESTIGE_GAIN_MULT_FOR_VASSALS_OF_SAME_DYNASTY",
+        "value": "0",
+        "line": 1102,
+        "path": "common/defines/00_defines.txt"
+      }
+    ]
+  },
+  {
+    "namespace": "NDynasty",
+    "key": "MONTHLY_PRESTIGE_GAIN_MULT_FOR_VASSALS_OF_SAME_DYNASTY_SPOUSE",
+    "value": "0.1",
+    "line": 21,
+    "path": "CustomDefines/common/defines/serp_defines.txt",
+    "native": [
+      {
+        "namespace": "NDynasty",
+        "key": "MONTHLY_PRESTIGE_GAIN_MULT_FOR_VASSALS_OF_SAME_DYNASTY_SPOUSE",
+        "value": "0",
+        "line": 1104,
+        "path": "common/defines/00_defines.txt"
+      }
+    ]
+  }
+]

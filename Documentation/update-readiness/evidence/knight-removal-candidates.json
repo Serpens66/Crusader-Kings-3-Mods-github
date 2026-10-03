@@ -1,0 +1,14 @@
+[
+  "CustomDefines/common/on_action/knight_manager_on_actions.txt",
+  "CustomDefines/common/scripted_guis/knight_manager_gui.txt",
+  "CustomDefines/common/scripted_triggers/knighthood_trigger.txt",
+  "CustomDefines/events/knight_manager_events.txt",
+  "CustomDefines/gui/window_knights.gui",
+  "CustomDefines/localization/english/knight_manager_mod_l_english.yml",
+  "CustomDefines/localization/french/knight_manager_mod_l_french.yml",
+  "CustomDefines/localization/german/knight_manager_mod_l_german.yml",
+  "CustomDefines/localization/korean/knight_manager_mod_l_korean.yml",
+  "CustomDefines/localization/russian/knight_manager_mod_l_russian.yml",
+  "CustomDefines/localization/simp_chinese/knight_manager_mod_l_simp_chinese.yml",
+  "CustomDefines/localization/spanish/knight_manager_mod_l_spanish.yml"
+]

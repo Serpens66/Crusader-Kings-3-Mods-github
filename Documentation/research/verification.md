@@ -4,8 +4,8 @@ Date: 2026-10-03. Status: **passed**.
 
 | Check | Count |
 |---|---:|
-| internal links | 85 |
-| text files | 42 |
+| internal links | 197 |
+| text files | 79 |
 | fixture structures | 10 |
 | workspace hashes | 157 |
 | audit source hashes | 694 |
