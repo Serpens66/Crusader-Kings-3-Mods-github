@@ -1,0 +1,11 @@
+# Documentation GUI Frame Lab — private diagnostic fixture
+
+Requires the separately named **Documentation Contract Lab**. The [registration descriptor](../registration/doclab_gui.mod) points at this content root; no vanilla GUI path is replaced. `gui/scripted_widgets/doclab_registration.txt` registers `gui/doclab_panel.gui = doclab_panel` using the current `_scripted_widgets.info` contract. The panel is visible when `GetPlayer.IsValid`; runtime placement/loading remains untested.
+
+The button constructs the identical `GuiScope.SetRoot(GetPlayer.MakeScope).End` for `IsShown`, `IsValid` and `Execute`, targeting `doclab_panel_action` in the gameplay lab. A valid click adds two gold to the local player's character. Native funeral ScriptedGui/button caller, full button/background/text type definitions, HUD usage and exports were read and hashed in the [recipe audit](../native-recipe-audit.json). These sources establish a binding recipe, not proof of a rendered or synchronized window.
+
+Three rows compare native portrait-rank atlas, public legacy atlas and local legacy atlas. Columns are literal frames 1–7 with `framesize = { 196 194 }`; they are not asserted title-tier labels. Native atlas width is 1374; old width is 1176. Record cropped/blank/out-of-range behavior rather than assuming an old six-frame texture supports the current consumer. This synthetic panel tests raw frames; actual portrait masks/tier mapping still require checking the live native consumer.
+
+Three further icons probe the existing `icon_prowess`, `icon_skills` and `icon_skills_martial` files whose headers are PNG despite `.dds` suffixes. Their bytes are unmodified. [Asset manifest](../fixture-assets.json) contains six original paths, content hashes, container observations and private-use limits. These copies are local diagnosis material, not a publishable art bundle. No map or audio functionality is added.
+
+Tests: load panel, labels at normal and alternate UI scale, exactly +2 gold per click, no wrong-player grant, all raw frames, all PNG-container icons, native windows still present, save/load and host/client execution. A successful panel does not validate unrelated existing GUI overrides or every asset in GFX-Mod Serp. See [manual](../test-runs.md).

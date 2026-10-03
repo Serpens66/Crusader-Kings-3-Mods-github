@@ -61,3 +61,7 @@ Record exact texture/path overlaps for graphical changes. Verify game-version co
 ## Lessons for new work
 
 Prefer the current native source for a contract, then use a workspace pattern for implementation shape. Specify the distribution being changed, preserve user edits, trace references across all files and avoid copied public identifiers. A mod's age, descriptor wildcard, folder name or successful historical upload does not replace a current feature audit.
+
+## State and contract supplement
+
+See [function-level owner/lifetime guide](function-contracts.md), [43 engine-reconciled cards](../update-readiness/contracts/README.md) and [Knight variants learning audit](knight-manager-contracts.md). These retain alternatives and unresolved context/lifecycle questions rather than treating old workspace code as a current best-practice reference.

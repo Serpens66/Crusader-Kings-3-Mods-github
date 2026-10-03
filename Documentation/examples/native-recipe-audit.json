@@ -1,0 +1,138 @@
+[
+  {
+    "path": "E:\\ProgrammeE\\Steam\\steamapps\\common\\Crusader Kings III\\game\\gui\\shared\\backgrounds.gui",
+    "sha256": "07fc0d6a4a871a309c65e596fddb0e671c5e17f77a3a5b39c7adc7639aab39c5",
+    "full_file_read": true,
+    "lines": 861,
+    "decode_warning": false,
+    "boundary": "Native recipe/type evidence; no engine function test or complete transitive semantic closure claimed"
+  },
+  {
+    "path": "E:\\ProgrammeE\\Steam\\steamapps\\common\\Crusader Kings III\\game\\gui\\shared\\buttons.gui",
+    "sha256": "88403785a1acdacc628730aaa101a04b2ae6293e74aa706a93e0e1695f3b1a0c",
+    "full_file_read": true,
+    "lines": 1865,
+    "decode_warning": false,
+    "boundary": "Native recipe/type evidence; no engine function test or complete transitive semantic closure claimed"
+  },
+  {
+    "path": "E:\\ProgrammeE\\Steam\\steamapps\\common\\Crusader Kings III\\game\\gui\\preload\\labels.gui",
+    "sha256": "8bc62633a6953d1a371e1d35d3b25990d63b577315beef294e8f908a8e4b657b",
+    "full_file_read": true,
+    "lines": 120,
+    "decode_warning": false,
+    "boundary": "Native recipe/type evidence; no engine function test or complete transitive semantic closure claimed"
+  },
+  {
+    "path": "E:\\ProgrammeE\\Steam\\steamapps\\common\\Crusader Kings III\\game\\gui\\hud.gui",
+    "sha256": "77d0beedefe23eee22b24c1c0b160ae5ee8ec938868d3f4b7ae76296347a6ac6",
+    "full_file_read": true,
+    "lines": 9344,
+    "decode_warning": false,
+    "boundary": "Native recipe/type evidence; no engine function test or complete transitive semantic closure claimed"
+  },
+  {
+    "path": "E:\\ProgrammeE\\Steam\\steamapps\\common\\Crusader Kings III\\game\\gui\\shared\\portraits.gui",
+    "sha256": "100c69221b42e0953261bd43b88613fa08bcb7f04d1bbef18ba3c7aecdab9fd1",
+    "full_file_read": true,
+    "lines": 3512,
+    "decode_warning": false,
+    "boundary": "Native recipe/type evidence; no engine function test or complete transitive semantic closure claimed"
+  },
+  {
+    "path": "E:\\ProgrammeE\\Steam\\steamapps\\common\\Crusader Kings III\\game\\gui\\scripted_widgets\\_scripted_widgets.info",
+    "sha256": "c5e1e671c0328e37a11aa56004033f4609ed8709b56128b8ac4de2394b8ff3ad",
+    "full_file_read": true,
+    "lines": 9,
+    "decode_warning": false,
+    "boundary": "Native recipe/type evidence; no engine function test or complete transitive semantic closure claimed"
+  },
+  {
+    "path": "E:\\ProgrammeE\\Steam\\steamapps\\common\\Crusader Kings III\\game\\common\\scripted_guis\\ce1_funeral_scripted_guis.txt",
+    "sha256": "6ad28e9d5d5703f4d1c858a8b9c1f5747316334aab0f67d5a62a3892069477aa",
+    "full_file_read": true,
+    "lines": 18,
+    "decode_warning": false,
+    "boundary": "Native recipe/type evidence; no engine function test or complete transitive semantic closure claimed"
+  },
+  {
+    "path": "E:\\ProgrammeE\\Steam\\steamapps\\common\\Crusader Kings III\\game\\gui\\activity_window_widgets\\funeral_deceased_selection_button.gui",
+    "sha256": "a270cb424fba93e6b64c3c8a07aef4ba93fdca92f7c97448a34e5e26799b30b0",
+    "full_file_read": true,
+    "lines": 77,
+    "decode_warning": false,
+    "boundary": "Native recipe/type evidence; no engine function test or complete transitive semantic closure claimed"
+  },
+  {
+    "path": "E:\\ProgrammeE\\Steam\\steamapps\\common\\Crusader Kings III\\game\\common\\character_interactions\\_character_interactions.info",
+    "sha256": "cc2442a313a6b1a2a7fa02b92a094276edfe39c60835c3286172c5b6d7b70a37",
+    "full_file_read": true,
+    "lines": 822,
+    "decode_warning": false,
+    "boundary": "Native recipe/type evidence; no engine function test or complete transitive semantic closure claimed"
+  },
+  {
+    "path": "E:\\ProgrammeE\\Steam\\steamapps\\common\\Crusader Kings III\\game\\common\\character_interactions\\00_gift.txt",
+    "sha256": "d62a80dd8ed0f666a1223ba5ba68ea4362a8259e54c795c4d215c5eb7d0df0f2",
+    "full_file_read": true,
+    "lines": 911,
+    "decode_warning": false,
+    "boundary": "Native recipe/type evidence; no engine function test or complete transitive semantic closure claimed"
+  },
+  {
+    "path": "E:\\ProgrammeE\\Steam\\steamapps\\common\\Crusader Kings III\\game\\common\\on_action\\_on_actions.info",
+    "sha256": "2bfbbf903d55a2417c988caf1479ef0ff91719c55128ce6357bca3d2c8e9b25f",
+    "full_file_read": true,
+    "lines": 117,
+    "decode_warning": false,
+    "boundary": "Native recipe/type evidence; no engine function test or complete transitive semantic closure claimed"
+  },
+  {
+    "path": "E:\\ProgrammeE\\Steam\\steamapps\\common\\Crusader Kings III\\game\\common\\on_action\\birthday.txt",
+    "sha256": "143855fe58754a558a0e8690c43ccda72e56a7f68d400a6642043cd42ca9225c",
+    "full_file_read": true,
+    "lines": 348,
+    "decode_warning": false,
+    "boundary": "Native recipe/type evidence; no engine function test or complete transitive semantic closure claimed"
+  },
+  {
+    "path": "E:\\ProgrammeE\\Steam\\steamapps\\common\\Crusader Kings III\\game\\common\\on_action\\yearly_on_actions.txt",
+    "sha256": "14c97f3845138d74a2c2552c5dd3c95de1da035014a5cdf31c92540aae3390fe",
+    "full_file_read": true,
+    "lines": 4457,
+    "decode_warning": false,
+    "boundary": "Native recipe/type evidence; no engine function test or complete transitive semantic closure claimed"
+  },
+  {
+    "path": "E:\\ProgrammeE\\Steam\\steamapps\\common\\Crusader Kings III\\game\\common\\on_action\\barter_on_actions.txt",
+    "sha256": "9fc63fdb284f2e41274bd1384b7394d23fc42907254f91a51845097b45dbc6ab",
+    "full_file_read": true,
+    "lines": 124,
+    "decode_warning": false,
+    "boundary": "Native recipe/type evidence; no engine function test or complete transitive semantic closure claimed"
+  },
+  {
+    "path": "E:\\ProgrammeE\\Steam\\steamapps\\common\\Crusader Kings III\\game\\common\\messages\\_messages.info",
+    "sha256": "a0ad5c695a34f2be2fda1353164afdf48b7a6ce69ca2cabc9ab8d89bdcd392e4",
+    "full_file_read": true,
+    "lines": 107,
+    "decode_warning": false,
+    "boundary": "Native recipe/type evidence; no engine function test or complete transitive semantic closure claimed"
+  },
+  {
+    "path": "E:\\ProgrammeE\\Steam\\steamapps\\common\\Crusader Kings III\\game\\common\\decisions\\_decisions.info",
+    "sha256": "d36f202f6f91a6e17f0accff86ba7604caeb82e6ff73fc8c24041f4052f43742",
+    "full_file_read": true,
+    "lines": 377,
+    "decode_warning": false,
+    "boundary": "Native recipe/type evidence; no engine function test or complete transitive semantic closure claimed"
+  },
+  {
+    "path": "E:\\ProgrammeE\\Steam\\steamapps\\common\\Crusader Kings III\\game\\common\\scripted_triggers\\00_war_and_peace_triggers.txt",
+    "sha256": "cbe25f04d61a2f2899e29b15cd6aeffd1ffc33154655c965fd441f3727183545",
+    "full_file_read": true,
+    "lines": 1246,
+    "decode_warning": false,
+    "boundary": "Native recipe/type evidence; no engine function test or complete transitive semantic closure claimed"
+  }
+]

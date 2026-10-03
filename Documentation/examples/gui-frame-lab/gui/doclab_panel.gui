@@ -1,0 +1,43 @@
+# Automatic widget registration is documented by gui/scripted_widgets/_scripted_widgets.info.
+widget = {
+    name = "doclab_panel"
+    size = { 760 620 }
+    position = { 20 130 }
+    visible = "[GetPlayer.IsValid]"
+    background = { using = Background_Area_Dark }
+    text_single = { position = { 12 8 } text = "doclab_panel_title" }
+    button_standard = {
+        position = { 12 42 }
+        size = { 350 44 }
+        text = "doclab_gui_button"
+        visible = "[GetScriptedGui('doclab_panel_action').IsShown( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+        enabled = "[GetScriptedGui('doclab_panel_action').IsValid( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+        onclick = "[GetScriptedGui('doclab_panel_action').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+    }
+    text_single = { position = { 12 96 } text = "doclab_rank_caption" }
+    icon = { position = { 12 126 } size = { 98 97 } texture = "gfx/doclab/native_rank.dds" framesize = { 196 194 } frame = 1 }
+    icon = { position = { 114 126 } size = { 98 97 } texture = "gfx/doclab/native_rank.dds" framesize = { 196 194 } frame = 2 }
+    icon = { position = { 216 126 } size = { 98 97 } texture = "gfx/doclab/native_rank.dds" framesize = { 196 194 } frame = 3 }
+    icon = { position = { 318 126 } size = { 98 97 } texture = "gfx/doclab/native_rank.dds" framesize = { 196 194 } frame = 4 }
+    icon = { position = { 420 126 } size = { 98 97 } texture = "gfx/doclab/native_rank.dds" framesize = { 196 194 } frame = 5 }
+    icon = { position = { 522 126 } size = { 98 97 } texture = "gfx/doclab/native_rank.dds" framesize = { 196 194 } frame = 6 }
+    icon = { position = { 624 126 } size = { 98 97 } texture = "gfx/doclab/native_rank.dds" framesize = { 196 194 } frame = 7 }
+    icon = { position = { 12 236 } size = { 98 97 } texture = "gfx/doclab/public_rank.dds" framesize = { 196 194 } frame = 1 }
+    icon = { position = { 114 236 } size = { 98 97 } texture = "gfx/doclab/public_rank.dds" framesize = { 196 194 } frame = 2 }
+    icon = { position = { 216 236 } size = { 98 97 } texture = "gfx/doclab/public_rank.dds" framesize = { 196 194 } frame = 3 }
+    icon = { position = { 318 236 } size = { 98 97 } texture = "gfx/doclab/public_rank.dds" framesize = { 196 194 } frame = 4 }
+    icon = { position = { 420 236 } size = { 98 97 } texture = "gfx/doclab/public_rank.dds" framesize = { 196 194 } frame = 5 }
+    icon = { position = { 522 236 } size = { 98 97 } texture = "gfx/doclab/public_rank.dds" framesize = { 196 194 } frame = 6 }
+    icon = { position = { 624 236 } size = { 98 97 } texture = "gfx/doclab/public_rank.dds" framesize = { 196 194 } frame = 7 }
+    icon = { position = { 12 346 } size = { 98 97 } texture = "gfx/doclab/local_rank.dds" framesize = { 196 194 } frame = 1 }
+    icon = { position = { 114 346 } size = { 98 97 } texture = "gfx/doclab/local_rank.dds" framesize = { 196 194 } frame = 2 }
+    icon = { position = { 216 346 } size = { 98 97 } texture = "gfx/doclab/local_rank.dds" framesize = { 196 194 } frame = 3 }
+    icon = { position = { 318 346 } size = { 98 97 } texture = "gfx/doclab/local_rank.dds" framesize = { 196 194 } frame = 4 }
+    icon = { position = { 420 346 } size = { 98 97 } texture = "gfx/doclab/local_rank.dds" framesize = { 196 194 } frame = 5 }
+    icon = { position = { 522 346 } size = { 98 97 } texture = "gfx/doclab/local_rank.dds" framesize = { 196 194 } frame = 6 }
+    icon = { position = { 624 346 } size = { 98 97 } texture = "gfx/doclab/local_rank.dds" framesize = { 196 194 } frame = 7 }
+    text_single = { position = { 12 466 } text = "doclab_container_caption" }
+    icon = { position = { 12 505 } size = { 60 60 } texture = "gfx/doclab/icon_prowess.dds" }
+    icon = { position = { 252 505 } size = { 180 30 } texture = "gfx/doclab/icon_skills.dds" }
+    icon = { position = { 492 505 } size = { 60 60 } texture = "gfx/doclab/icon_skills_martial.dds" }
+}

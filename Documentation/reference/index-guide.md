@@ -39,3 +39,9 @@ These scripts use Python's standard library, read the supplied source tree and w
 The audit discovery selects developer references, explicit seed files and representative meaningful definitions, then follows literal helper references through whole files. Because it can overinclude symbols, call-graph edges are navigation evidence rather than a formal semantic graph. Parameter-generated calls, inherited behavior, database references and engine callbacks still need feature-specific inspection.
 
 Regeneration updates evidence only. It does not revise prose, update a declared research date, run the game, render a GUI or certify new versions. Recheck coverage and version-conflict notes before presenting the handbook as current.
+
+## Installed 1.20.0.3 export supplement
+
+The [current engine reference](../reference/engine-reference.md) now indexes six script and five data-type exports with exact raw line ranges and checksums. Historical statements above about absent generated dumps describe the initial research stage. Use [lookup](../tools/lookup.py) for both engine declarations and existing local definitions/callers. Missing optionality, argument types, scope lifetime, permissions and multiplayer routing remain unknown where the export does not specify them.
+
+See [workspace function contracts](../workspace/function-contracts.md) for owner/caller/state distinctions and [isolated tests](../examples/test-runs.md) for runtime acceptance. The user completed export sessions, but no example gameplay/GUI/MP tests have been performed.

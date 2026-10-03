@@ -1,0 +1,10 @@
+﻿# Matching root must be supplied for all three GUI operations.
+doclab_panel_action = {
+    scope = character
+    is_shown = { is_ai = no is_alive = yes }
+    is_valid = { is_alive = yes }
+    effect = {
+        add_gold = 2
+        debug_log = "doclab GUI action granted 2 gold"
+    }
+}

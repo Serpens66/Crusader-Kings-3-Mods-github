@@ -1,0 +1,6 @@
+﻿# Child hook preserves the complete native birthday callback.
+on_birthday = { on_actions = { doclab_birthday } }
+doclab_birthday = {
+    trigger = { is_ai = no is_alive = yes }
+    effect = { doclab_notify_effect = yes }
+}

@@ -535,5 +535,116 @@
       "url": "https://raw.githubusercontent.com/jesec/ck3-modding-wiki/master/wiki_pages/Game_rules_modding.md",
       "reason": "Unavailable guessed name; native game-rule .info used"
     }
-  ]
+  ],
+  "current_export_supplement": {
+    "retrieval_date": "2026-10-03",
+    "version": "1.20.0.3",
+    "commit": "4fe04c7143e6288cf1da609145c22d0ddc3c8878",
+    "raw_sources": [
+      {
+        "path": "update-readiness/runtime-evidence/20261003T005950.086458Z/script-docs/effects.log.raw",
+        "sha256": "d3dbb758fb226d584b8b00fa84db9a4c494a2519a043116ff9d0cb7bee308b03",
+        "original_path": "C:\\Users\\Serpens66\\Documents\\Paradox Interactive\\Crusader Kings III\\logs\\effects.log",
+        "mtime_ns": 1790989239570895800,
+        "decode_encoding": "cp1252",
+        "decode_note": "Reversible Windows-1252 candidate; original bytes retained"
+      },
+      {
+        "path": "update-readiness/runtime-evidence/20261003T005950.086458Z/script-docs/event_scopes.log.raw",
+        "sha256": "4dc5072cb829a9c642f6b367c17cb8c1d88e8f70613adef30a6f706bd8ee5bc6",
+        "original_path": "C:\\Users\\Serpens66\\Documents\\Paradox Interactive\\Crusader Kings III\\logs\\event_scopes.log",
+        "mtime_ns": 1790989239567890600,
+        "decode_encoding": "utf-8",
+        "decode_note": "UTF-8 compatible; no BOM"
+      },
+      {
+        "path": "update-readiness/runtime-evidence/20261003T005950.086458Z/script-docs/event_targets.log.raw",
+        "sha256": "b1b3a90dc6f7e194a4f88aea35579fa8584854467276548577216403a5c90114",
+        "original_path": "C:\\Users\\Serpens66\\Documents\\Paradox Interactive\\Crusader Kings III\\logs\\event_targets.log",
+        "mtime_ns": 1790989239569896400,
+        "decode_encoding": "utf-8",
+        "decode_note": "UTF-8 compatible; no BOM"
+      },
+      {
+        "path": "update-readiness/runtime-evidence/20261003T005950.086458Z/script-docs/modifiers.log.raw",
+        "sha256": "9c01aed50f903ac4cf7eb6330a2f1b2a881d4dab72e0e8e49e01326292110960",
+        "original_path": "C:\\Users\\Serpens66\\Documents\\Paradox Interactive\\Crusader Kings III\\logs\\modifiers.log",
+        "mtime_ns": 1790989239566385100,
+        "decode_encoding": "utf-8",
+        "decode_note": "UTF-8 compatible; no BOM"
+      },
+      {
+        "path": "update-readiness/runtime-evidence/20261003T005950.086458Z/script-docs/on_actions.log.raw",
+        "sha256": "423ca674930100419a7335426fe1a29cc944682030cd9d303b6b83634e4aac47",
+        "original_path": "C:\\Users\\Serpens66\\Documents\\Paradox Interactive\\Crusader Kings III\\logs\\on_actions.log",
+        "mtime_ns": 1790989239565386700,
+        "decode_encoding": "utf-8",
+        "decode_note": "UTF-8 compatible; no BOM"
+      },
+      {
+        "path": "update-readiness/runtime-evidence/20261003T005950.086458Z/script-docs/triggers.log.raw",
+        "sha256": "62aeca6098d7c42b226b766b5ce8594c6cad3576267124434095c7ea88a2a744",
+        "original_path": "C:\\Users\\Serpens66\\Documents\\Paradox Interactive\\Crusader Kings III\\logs\\triggers.log",
+        "mtime_ns": 1790989239572896200,
+        "decode_encoding": "utf-8",
+        "decode_note": "UTF-8 compatible; no BOM"
+      },
+      {
+        "path": "update-readiness/runtime-evidence/20261003T112558.279918Z/main-menu-data-types/data_types/data_types_common.txt.raw",
+        "sha256": "d547666be47e0af877eec947d16057034d9661ced50dbef83167eda9015e1d72",
+        "original_path": "C:\\Users\\Serpens66\\Documents\\Paradox Interactive\\Crusader Kings III\\logs\\data_types\\data_types_common.txt",
+        "mtime_ns": 1791026818158475800,
+        "decode_encoding": "utf-8",
+        "decode_note": "UTF-8 compatible; no BOM"
+      },
+      {
+        "path": "update-readiness/runtime-evidence/20261003T112558.279918Z/main-menu-data-types/data_types/data_types_gui.txt.raw",
+        "sha256": "56f3506561e217244ec263796f2e7476f71fe3cecc0817c3f3516838f507c438",
+        "original_path": "C:\\Users\\Serpens66\\Documents\\Paradox Interactive\\Crusader Kings III\\logs\\data_types\\data_types_gui.txt",
+        "mtime_ns": 1791026818161480700,
+        "decode_encoding": "utf-8",
+        "decode_note": "UTF-8 compatible; no BOM"
+      },
+      {
+        "path": "update-readiness/runtime-evidence/20261003T112558.279918Z/main-menu-data-types/data_types/data_types_internalclausewitzgui.txt.raw",
+        "sha256": "16de17bfa2a0a84936708dc7f0477423f235700971a1efa914b791d35698efa6",
+        "original_path": "C:\\Users\\Serpens66\\Documents\\Paradox Interactive\\Crusader Kings III\\logs\\data_types\\data_types_internalclausewitzgui.txt",
+        "mtime_ns": 1791026818160482200,
+        "decode_encoding": "utf-8",
+        "decode_note": "UTF-8 compatible; no BOM"
+      },
+      {
+        "path": "update-readiness/runtime-evidence/20261003T112558.279918Z/main-menu-data-types/data_types/data_types_script.txt.raw",
+        "sha256": "2865423157c8cb4caabeb2230c22a609453c27a85d6b1261c9b87722b7b21eea",
+        "original_path": "C:\\Users\\Serpens66\\Documents\\Paradox Interactive\\Crusader Kings III\\logs\\data_types\\data_types_script.txt",
+        "mtime_ns": 1791026818156971900,
+        "decode_encoding": "utf-8",
+        "decode_note": "UTF-8 compatible; no BOM"
+      },
+      {
+        "path": "update-readiness/runtime-evidence/20261003T112558.279918Z/main-menu-data-types/data_types/data_types_uncategorized.txt.raw",
+        "sha256": "1f29d6829336cadbfbf7e58c5c9a3f5519273a6c7d6f3dfc72c45c98d1ef2dca",
+        "original_path": "C:\\Users\\Serpens66\\Documents\\Paradox Interactive\\Crusader Kings III\\logs\\data_types\\data_types_uncategorized.txt",
+        "mtime_ns": 1791026818164924100,
+        "decode_encoding": "utf-8",
+        "decode_note": "UTF-8 compatible; no BOM"
+      }
+    ],
+    "native_recipe_manifest": "examples/native-recipe-audit.json",
+    "knight_manifest": "workspace/knight-manager-evidence.json",
+    "fixture_assets_manifest": "examples/fixture-assets.json",
+    "rechecked_primary_urls": [
+      "https://github.com/amtep/tiger",
+      "https://github.com/jesec/ck3-modding-wiki"
+    ],
+    "topics": [
+      "Installed API declarations",
+      "Full source paths and caller boundaries",
+      "Private fixture source/type/asset contracts"
+    ],
+    "limits": [
+      "Historical web pages do not override installed declarations",
+      "No Tiger run or asserted 1.20.0.3 support"
+    ]
+  }
 }

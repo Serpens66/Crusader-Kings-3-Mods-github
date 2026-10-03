@@ -1,0 +1,2 @@
+[22:18:06][D][commanddispatcher.cpp:78]: Discarding command. ID: 12, Type: remove_player_command, Recipient: BROADCAST
+[22:18:06][D][commanddispatcher.cpp:78]: Discarding command. ID: 13, Type: remove_player_command, Recipient: BROADCAST

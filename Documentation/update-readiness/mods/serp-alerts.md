@@ -43,3 +43,18 @@ Current diarch, government, tributary and religious rules are relevant through q
 - Large realm notification/action refresh and two-player MP: record evaluation delays, recipients and desync logs. Native child hooks must continue running.
 
 Behavioral changes remain gated by the exact query, list and UI contracts. The additive subscription structure and provided native callback scopes are source-confirmed. After gates close, factor only repeated interface-safe predicates; do not introduce ordinary list-mutating effects into important-action discovery.
+
+## Current-export reconciliation (2026-10-03)
+
+Declarations are available separately from remaining semantic/runtime gates. Original intent and update status are retained.
+
+| Feature | Signature intake | Separate contract |
+|---|---|---|
+| SA-JOIN | export declarations available | [Card](../contracts/SA-JOIN.md) |
+| SA-STOP | export declarations available | [Card](../contracts/SA-STOP.md) |
+| SA-EDUCATION | export declarations available | [Card](../contracts/SA-EDUCATION.md) |
+| SA-CONVERSION | export declarations available | [Card](../contracts/SA-CONVERSION.md) |
+| SA-WAR-START | export declarations available | [Card](../contracts/SA-WAR-START.md) |
+| SA-WAR-JOIN | export declarations available | [Card](../contracts/SA-WAR-JOIN.md) |
+| SA-DEATH | export declarations available | [Card](../contracts/SA-DEATH.md) |
+| SA-COURT | export declarations available | [Card](../contracts/SA-COURT.md) |

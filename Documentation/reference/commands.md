@@ -120,10 +120,16 @@ Local evidence locations below are relative to the game root in [local-index.jso
 
 Generate `script_docs` in an explicitly requested debug session after every relevant patch. The Wiki identifies output under the user `logs` directory, commonly including effects, triggers, event scopes, event targets and modifier/on-action references. Use the files actually produced by the current build; filenames and completeness can change. Record version, run date and the exported file hashes.
 
-Generate `dump_data_types` for UI/data-binding functions and return types. Current source callers remain useful when a function is not documented in an older online table. No current local generated dumps were found during this research, so this collection does not manufacture a complete 1.20 engine signature registry.
+Generate `dump_data_types` for UI/data-binding functions and return types. Current source callers remain useful when a function is not documented in an older online table. The six script and five data-type exports are now retained and indexed in [the 1.20.0.3 registry](engine-reference.md). The registry conserves the supplied declarations; it does not claim that the engine exports document every permission or behavior.
 
 External discovery references: [Effects list](https://github.com/jesec/ck3-modding-wiki/blob/master/wiki_pages/Effects_list.md), [Triggers list](https://github.com/jesec/ck3-modding-wiki/blob/master/wiki_pages/Triggers_list.md), [Scopes list](https://github.com/jesec/ck3-modding-wiki/blob/master/wiki_pages/Scopes_list.md), [Data Types](https://github.com/jesec/ck3-modding-wiki/blob/master/wiki_pages/Data_types.md), [OldEnt versioned dumps](https://github.com/OldEnt/crusader-kings-3-triggers-modifiers-effects-event-scopes-targets-on-actions-code-revisions-list). The effect/trigger Wiki pages explicitly label their tables outdated.
 
 ## Debug workflow vocabulary
 
 `-debug_mode` exposes developer access; `-develop` is documented for reloading. Wiki-described tools include console `effect`/`trigger`, `event`, `explorer`, `run`, `release_mode`, `log_viewer`, GUI inspection and command help. Verify availability and context in the current build. A direct console test can bypass the ordinary feature entry point, so also test normal gameplay dispatch.
+
+## Installed 1.20.0.3 export supplement
+
+The [current engine reference](../reference/engine-reference.md) now indexes six script and five data-type exports with exact raw line ranges and checksums. Historical statements above about absent generated dumps describe the initial research stage. Use [lookup](../tools/lookup.py) for both engine declarations and existing local definitions/callers. Missing optionality, argument types, scope lifetime, permissions and multiplayer routing remain unknown where the export does not specify them.
+
+See [workspace function contracts](../workspace/function-contracts.md) for owner/caller/state distinctions and [isolated tests](../examples/test-runs.md) for runtime acceptance. The user completed export sessions, but no example gameplay/GUI/MP tests have been performed.

@@ -1,0 +1,19 @@
+{
+  "date": "2026-10-03",
+  "version": "1.20.0.3",
+  "status": "passed with recorded pre-existing instruction drift",
+  "original_files_checked": 853,
+  "original_drift": [
+    {
+      "path": "AGENTS.md",
+      "original_sha256": "75f2b1eb600d6b088e536fb927a06cf65eea0a1367e1a0c19084bc3aa8e239d8",
+      "current_sha256": "32bc2f0f756364cfc069eb56443a40060ee6e3a0153fa83c4d50982f7f292499",
+      "classification": "Previously observed AGENTS.md user instruction drift; preserved, not rewritten"
+    }
+  ],
+  "raw_exports_checked": 11,
+  "native_contract_files_checked": 1214,
+  "engine_declarations": 31129,
+  "issues": [],
+  "scope": "Preservation and declaration intake, not gameplay or complete semantic audit"
+}

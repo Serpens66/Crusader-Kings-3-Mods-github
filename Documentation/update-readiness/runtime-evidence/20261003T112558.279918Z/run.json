@@ -1,0 +1,480 @@
+{
+  "started_utc": "20261003T112558.279918Z",
+  "status": "captured-review-pending",
+  "installation_version": "1.20.0.3 (Crozier)",
+  "executed_version": "pending review of fresh runtime logs; empty code_revisions.log is not proof",
+  "executed_checksum": "pending runtime evidence review",
+  "exe": "E:\\ProgrammeE\\Steam\\steamapps\\common\\Crusader Kings III\\binaries\\ck3.exe",
+  "exe_sha256": "94b55397abb687a3dcd436805a5d885e6be90fa6c693feb44a9e3bbeeade02a6",
+  "original_config_sha256": "049692149ad47512d9116583616b3b0fc434d82ffd32f28b1d8d94adc49ff102",
+  "temporary_config_sha256": "d777410a9e9ded23e2f27086163a33d5a7261e532a633d313307dd550ab85174",
+  "configuration_restored": true,
+  "enabled_mods": [],
+  "disabled_dlcs": [],
+  "dlc_entitlements": "Not inferred from disabled_dlcs; verify loaded DLC in fresh logs",
+  "previous_logs": [
+    {
+      "source": "C:\\Users\\Serpens66\\Documents\\Paradox Interactive\\Crusader Kings III\\logs\\age_distribution.csv",
+      "relative_source": "age_distribution.csv",
+      "copy": "runtime-evidence\\20261003T112558.279918Z\\previous-logs\\age_distribution.csv.raw",
+      "sha256": "eedf1ec51f88d4b94bfe8942ecc6b3c0639a052cb65ef2802a48097ac866fc21",
+      "mtime_ns": 1754667364715396500,
+      "size": 80946
+    },
+    {
+      "source": "C:\\Users\\Serpens66\\Documents\\Paradox Interactive\\Crusader Kings III\\logs\\callstacks_hotjoin.log",
+      "relative_source": "callstacks_hotjoin.log",
+      "copy": "runtime-evidence\\20261003T112558.279918Z\\previous-logs\\callstacks_hotjoin.log.raw",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "mtime_ns": 1754663770861788100,
+      "size": 0
+    },
+    {
+      "source": "C:\\Users\\Serpens66\\Documents\\Paradox Interactive\\Crusader Kings III\\logs\\character_stats.csv",
+      "relative_source": "character_stats.csv",
+      "copy": "runtime-evidence\\20261003T112558.279918Z\\previous-logs\\character_stats.csv.raw",
+      "sha256": "525cc50a13a6a1998e3cca4d82d7327755e8b3d60c6f877090f581c336e7e012",
+      "mtime_ns": 1754667364718397000,
+      "size": 1324
+    },
+    {
+      "source": "C:\\Users\\Serpens66\\Documents\\Paradox Interactive\\Crusader Kings III\\logs\\code_revisions.log",
+      "relative_source": "code_revisions.log",
+      "copy": "runtime-evidence\\20261003T112558.279918Z\\previous-logs\\code_revisions.log.raw",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "mtime_ns": 1790989191574383400,
+      "size": 0
+    },
+    {
+      "source": "C:\\Users\\Serpens66\\Documents\\Paradox Interactive\\Crusader Kings III\\logs\\custom_automated_stats.log",
+      "relative_source": "custom_automated_stats.log",
+      "copy": "runtime-evidence\\20261003T112558.279918Z\\previous-logs\\custom_automated_stats.log.raw",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "mtime_ns": 1790989191574383400,
+      "size": 0
+    },
+    {
+      "source": "C:\\Users\\Serpens66\\Documents\\Paradox Interactive\\Crusader Kings III\\logs\\custom_localization.log",
+      "relative_source": "custom_localization.log",
+      "copy": "runtime-evidence\\20261003T112558.279918Z\\previous-logs\\custom_localization.log.raw",
+      "sha256": "ec943cff57c06f5921ee5719ef163012fa97ede9bb7efa76f712c8c9fd07060e",
+      "mtime_ns": 1790989239562384200,
+      "size": 856362
+    },
+    {
+      "source": "C:\\Users\\Serpens66\\Documents\\Paradox Interactive\\Crusader Kings III\\logs\\database_conflicts.log",
+      "relative_source": "database_conflicts.log",
+      "copy": "runtime-evidence\\20261003T112558.279918Z\\previous-logs\\database_conflicts.log.raw",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "mtime_ns": 1790989191574383400,
+      "size": 0
+    },
+    {
+      "source": "C:\\Users\\Serpens66\\Documents\\Paradox Interactive\\Crusader Kings III\\logs\\debug.log",
+      "relative_source": "debug.log",
+      "copy": "runtime-evidence\\20261003T112558.279918Z\\previous-logs\\debug.log.raw",
+      "sha256": "18b4f1e71452a09865a2b5cdab462351128511d41d0d959cd484e384bc3663ce",
+      "mtime_ns": 1790989239544873100,
+      "size": 434317
+    },
+    {
+      "source": "C:\\Users\\Serpens66\\Documents\\Paradox Interactive\\Crusader Kings III\\logs\\dedicated_server.log",
+      "relative_source": "dedicated_server.log",
+      "copy": "runtime-evidence\\20261003T112558.279918Z\\previous-logs\\dedicated_server.log.raw",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "mtime_ns": 1790989191574383400,
+      "size": 0
+    },
+    {
+      "source": "C:\\Users\\Serpens66\\Documents\\Paradox Interactive\\Crusader Kings III\\logs\\effects.log",
+      "relative_source": "effects.log",
+      "copy": "runtime-evidence\\20261003T112558.279918Z\\previous-logs\\effects.log.raw",
+      "sha256": "d3dbb758fb226d584b8b00fa84db9a4c494a2519a043116ff9d0cb7bee308b03",
+      "mtime_ns": 1790989239570895800,
+      "size": 647817
+    },
+    {
+      "source": "C:\\Users\\Serpens66\\Documents\\Paradox Interactive\\Crusader Kings III\\logs\\error.log",
+      "relative_source": "error.log",
+      "copy": "runtime-evidence\\20261003T112558.279918Z\\previous-logs\\error.log.raw",
+      "sha256": "56177d994b5f4f5ba420eac771794026ae355aa7616ec44e0085fef422d81d4b",
+      "mtime_ns": 1790989233223230700,
+      "size": 2822
+    },
+    {
+      "source": "C:\\Users\\Serpens66\\Documents\\Paradox Interactive\\Crusader Kings III\\logs\\event_scopes.log",
+      "relative_source": "event_scopes.log",
+      "copy": "runtime-evidence\\20261003T112558.279918Z\\previous-logs\\event_scopes.log.raw",
+      "sha256": "4dc5072cb829a9c642f6b367c17cb8c1d88e8f70613adef30a6f706bd8ee5bc6",
+      "mtime_ns": 1790989239567890600,
+      "size": 8898
+    },
+    {
+      "source": "C:\\Users\\Serpens66\\Documents\\Paradox Interactive\\Crusader Kings III\\logs\\event_targets.log",
+      "relative_source": "event_targets.log",
+      "copy": "runtime-evidence\\20261003T112558.279918Z\\previous-logs\\event_targets.log.raw",
+      "sha256": "b1b3a90dc6f7e194a4f88aea35579fa8584854467276548577216403a5c90114",
+      "mtime_ns": 1790989239569896400,
+      "size": 53914
+    },
+    {
+      "source": "C:\\Users\\Serpens66\\Documents\\Paradox Interactive\\Crusader Kings III\\logs\\game.log",
+      "relative_source": "game.log",
+      "copy": "runtime-evidence\\20261003T112558.279918Z\\previous-logs\\game.log.raw",
+      "sha256": "4fc54df153fccbc2b2ee00658b00fda48392c0f2503ffedbf84182d7626d5a97",
+      "mtime_ns": 1790989239544873100,
+      "size": 2046
+    },
+    {
+      "source": "C:\\Users\\Serpens66\\Documents\\Paradox Interactive\\Crusader Kings III\\logs\\gui_warnings.log",
+      "relative_source": "gui_warnings.log",
+      "copy": "runtime-evidence\\20261003T112558.279918Z\\previous-logs\\gui_warnings.log.raw",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "mtime_ns": 1790989191572382600,
+      "size": 0
+    },
+    {
+      "source": "C:\\Users\\Serpens66\\Documents\\Paradox Interactive\\Crusader Kings III\\logs\\memory.log",
+      "relative_source": "memory.log",
+      "copy": "runtime-evidence\\20261003T112558.279918Z\\previous-logs\\memory.log.raw",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "mtime_ns": 1790989191574383400,
+      "size": 0
+    },
+    {
+      "source": "C:\\Users\\Serpens66\\Documents\\Paradox Interactive\\Crusader Kings III\\logs\\message.log",
+      "relative_source": "message.log",
+      "copy": "runtime-evidence\\20261003T112558.279918Z\\previous-logs\\message.log.raw",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "mtime_ns": 1790989191573383200,
+      "size": 0
+    },
+    {
+      "source": "C:\\Users\\Serpens66\\Documents\\Paradox Interactive\\Crusader Kings III\\logs\\modifiers.log",
+      "relative_source": "modifiers.log",
+      "copy": "runtime-evidence\\20261003T112558.279918Z\\previous-logs\\modifiers.log.raw",
+      "sha256": "9c01aed50f903ac4cf7eb6330a2f1b2a881d4dab72e0e8e49e01326292110960",
+      "mtime_ns": 1790989239566385100,
+      "size": 45829
+    },
+    {
+      "source": "C:\\Users\\Serpens66\\Documents\\Paradox Interactive\\Crusader Kings III\\logs\\multiplayer.log",
+      "relative_source": "multiplayer.log",
+      "copy": "runtime-evidence\\20261003T112558.279918Z\\previous-logs\\multiplayer.log.raw",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "mtime_ns": 1790989191575384800,
+      "size": 0
+    },
+    {
+      "source": "C:\\Users\\Serpens66\\Documents\\Paradox Interactive\\Crusader Kings III\\logs\\on_actions.log",
+      "relative_source": "on_actions.log",
+      "copy": "runtime-evidence\\20261003T112558.279918Z\\previous-logs\\on_actions.log.raw",
+      "sha256": "423ca674930100419a7335426fe1a29cc944682030cd9d303b6b83634e4aac47",
+      "mtime_ns": 1790989239565386700,
+      "size": 84535
+    },
+    {
+      "source": "C:\\Users\\Serpens66\\Documents\\Paradox Interactive\\Crusader Kings III\\logs\\pdxsdk.log",
+      "relative_source": "pdxsdk.log",
+      "copy": "runtime-evidence\\20261003T112558.279918Z\\previous-logs\\pdxsdk.log.raw",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "mtime_ns": 1790989191845799500,
+      "size": 0
+    },
+    {
+      "source": "C:\\Users\\Serpens66\\Documents\\Paradox Interactive\\Crusader Kings III\\logs\\profile.log",
+      "relative_source": "profile.log",
+      "copy": "runtime-evidence\\20261003T112558.279918Z\\previous-logs\\profile.log.raw",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "mtime_ns": 1790989191573383200,
+      "size": 0
+    },
+    {
+      "source": "C:\\Users\\Serpens66\\Documents\\Paradox Interactive\\Crusader Kings III\\logs\\random.log",
+      "relative_source": "random.log",
+      "copy": "runtime-evidence\\20261003T112558.279918Z\\previous-logs\\random.log.raw",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "mtime_ns": 1667222515966548400,
+      "size": 0
+    },
+    {
+      "source": "C:\\Users\\Serpens66\\Documents\\Paradox Interactive\\Crusader Kings III\\logs\\randomlog_hotjoin.log",
+      "relative_source": "randomlog_hotjoin.log",
+      "copy": "runtime-evidence\\20261003T112558.279918Z\\previous-logs\\randomlog_hotjoin.log.raw",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "mtime_ns": 1754663770860783900,
+      "size": 0
+    },
+    {
+      "source": "C:\\Users\\Serpens66\\Documents\\Paradox Interactive\\Crusader Kings III\\logs\\setup.log",
+      "relative_source": "setup.log",
+      "copy": "runtime-evidence\\20261003T112558.279918Z\\previous-logs\\setup.log.raw",
+      "sha256": "019cd66f772e9b248e0ae762e5472d31829aa7e6b25088141643188f0e4d81c5",
+      "mtime_ns": 1790989205431384200,
+      "size": 36864
+    },
+    {
+      "source": "C:\\Users\\Serpens66\\Documents\\Paradox Interactive\\Crusader Kings III\\logs\\system.log",
+      "relative_source": "system.log",
+      "copy": "runtime-evidence\\20261003T112558.279918Z\\previous-logs\\system.log.raw",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "mtime_ns": 1790989191573383200,
+      "size": 0
+    },
+    {
+      "source": "C:\\Users\\Serpens66\\Documents\\Paradox Interactive\\Crusader Kings III\\logs\\text.log",
+      "relative_source": "text.log",
+      "copy": "runtime-evidence\\20261003T112558.279918Z\\previous-logs\\text.log.raw",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "mtime_ns": 1790989191573383200,
+      "size": 0
+    },
+    {
+      "source": "C:\\Users\\Serpens66\\Documents\\Paradox Interactive\\Crusader Kings III\\logs\\triggers.log",
+      "relative_source": "triggers.log",
+      "copy": "runtime-evidence\\20261003T112558.279918Z\\previous-logs\\triggers.log.raw",
+      "sha256": "62aeca6098d7c42b226b766b5ce8594c6cad3576267124434095c7ea88a2a744",
+      "mtime_ns": 1790989239572896200,
+      "size": 411880
+    }
+  ],
+  "stages": [
+    {
+      "name": "main-menu-data-types",
+      "argv": [
+        "E:\\ProgrammeE\\Steam\\steamapps\\common\\Crusader Kings III\\binaries\\ck3.exe",
+        "-gdpr-compliant",
+        "-debug_mode",
+        "-suppress_error_log"
+      ],
+      "start_utc": "2026-10-03T11:25:58.434368+00:00",
+      "state": "captured",
+      "exit_code": 0,
+      "files": [
+        {
+          "source": "C:\\Users\\Serpens66\\Documents\\Paradox Interactive\\Crusader Kings III\\logs\\code_revisions.log",
+          "relative_source": "code_revisions.log",
+          "copy": "runtime-evidence\\20261003T112558.279918Z\\main-menu-data-types\\code_revisions.log.raw",
+          "sha256": "cb5c00bdfd3922f4d53b9b1dc54b7e125d35028b9f5ecbf2c6a4bd4786790321",
+          "mtime_ns": 1791026832450222100,
+          "size": 1387
+        },
+        {
+          "source": "C:\\Users\\Serpens66\\Documents\\Paradox Interactive\\Crusader Kings III\\logs\\custom_automated_stats.log",
+          "relative_source": "custom_automated_stats.log",
+          "copy": "runtime-evidence\\20261003T112558.279918Z\\main-menu-data-types\\custom_automated_stats.log.raw",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "mtime_ns": 1791026759412469400,
+          "size": 0
+        },
+        {
+          "source": "C:\\Users\\Serpens66\\Documents\\Paradox Interactive\\Crusader Kings III\\logs\\database_conflicts.log",
+          "relative_source": "database_conflicts.log",
+          "copy": "runtime-evidence\\20261003T112558.279918Z\\main-menu-data-types\\database_conflicts.log.raw",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "mtime_ns": 1791026759413469000,
+          "size": 0
+        },
+        {
+          "source": "C:\\Users\\Serpens66\\Documents\\Paradox Interactive\\Crusader Kings III\\logs\\debug.log",
+          "relative_source": "debug.log",
+          "copy": "runtime-evidence\\20261003T112558.279918Z\\main-menu-data-types\\debug.log.raw",
+          "sha256": "6e11901a48c19d2482983f822d4025dd8f22e280e0911b526748fd3858524970",
+          "mtime_ns": 1791026832450222100,
+          "size": 437562
+        },
+        {
+          "source": "C:\\Users\\Serpens66\\Documents\\Paradox Interactive\\Crusader Kings III\\logs\\dedicated_server.log",
+          "relative_source": "dedicated_server.log",
+          "copy": "runtime-evidence\\20261003T112558.279918Z\\main-menu-data-types\\dedicated_server.log.raw",
+          "sha256": "b67b298a93c0df7fd7a743bec57e7bf3ad9f9385fa1b51cbdae15c62050d2e7c",
+          "mtime_ns": 1791026789457406200,
+          "size": 302
+        },
+        {
+          "source": "C:\\Users\\Serpens66\\Documents\\Paradox Interactive\\Crusader Kings III\\logs\\error.log",
+          "relative_source": "error.log",
+          "copy": "runtime-evidence\\20261003T112558.279918Z\\main-menu-data-types\\error.log.raw",
+          "sha256": "cd8e7f2060b8f8730be691e7fbd17262082d7bcfaaa4912f67367c1f44c057c4",
+          "mtime_ns": 1791026788707930200,
+          "size": 3102
+        },
+        {
+          "source": "C:\\Users\\Serpens66\\Documents\\Paradox Interactive\\Crusader Kings III\\logs\\game.log",
+          "relative_source": "game.log",
+          "copy": "runtime-evidence\\20261003T112558.279918Z\\main-menu-data-types\\game.log.raw",
+          "sha256": "42edbd48768b4c44b8972532594ac9dee46aadb5abf7d53f7ad386bfafee9d9f",
+          "mtime_ns": 1791026788680895600,
+          "size": 2126
+        },
+        {
+          "source": "C:\\Users\\Serpens66\\Documents\\Paradox Interactive\\Crusader Kings III\\logs\\gui_warnings.log",
+          "relative_source": "gui_warnings.log",
+          "copy": "runtime-evidence\\20261003T112558.279918Z\\main-menu-data-types\\gui_warnings.log.raw",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "mtime_ns": 1791026759410472000,
+          "size": 0
+        },
+        {
+          "source": "C:\\Users\\Serpens66\\Documents\\Paradox Interactive\\Crusader Kings III\\logs\\memory.log",
+          "relative_source": "memory.log",
+          "copy": "runtime-evidence\\20261003T112558.279918Z\\main-menu-data-types\\memory.log.raw",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "mtime_ns": 1791026759412469400,
+          "size": 0
+        },
+        {
+          "source": "C:\\Users\\Serpens66\\Documents\\Paradox Interactive\\Crusader Kings III\\logs\\message.log",
+          "relative_source": "message.log",
+          "copy": "runtime-evidence\\20261003T112558.279918Z\\main-menu-data-types\\message.log.raw",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "mtime_ns": 1791026759411470200,
+          "size": 0
+        },
+        {
+          "source": "C:\\Users\\Serpens66\\Documents\\Paradox Interactive\\Crusader Kings III\\logs\\multiplayer.log",
+          "relative_source": "multiplayer.log",
+          "copy": "runtime-evidence\\20261003T112558.279918Z\\main-menu-data-types\\multiplayer.log.raw",
+          "sha256": "c124c68de7a9ff8f0a321c396dae60ab897feefd590946673d933d672673bcab",
+          "mtime_ns": 1791026832450222100,
+          "size": 146
+        },
+        {
+          "source": "C:\\Users\\Serpens66\\Documents\\Paradox Interactive\\Crusader Kings III\\logs\\pdxsdk.log",
+          "relative_source": "pdxsdk.log",
+          "copy": "runtime-evidence\\20261003T112558.279918Z\\main-menu-data-types\\pdxsdk.log.raw",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "mtime_ns": 1791026759682363600,
+          "size": 0
+        },
+        {
+          "source": "C:\\Users\\Serpens66\\Documents\\Paradox Interactive\\Crusader Kings III\\logs\\profile.log",
+          "relative_source": "profile.log",
+          "copy": "runtime-evidence\\20261003T112558.279918Z\\main-menu-data-types\\profile.log.raw",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "mtime_ns": 1791026759411470200,
+          "size": 0
+        },
+        {
+          "source": "C:\\Users\\Serpens66\\Documents\\Paradox Interactive\\Crusader Kings III\\logs\\setup.log",
+          "relative_source": "setup.log",
+          "copy": "runtime-evidence\\20261003T112558.279918Z\\main-menu-data-types\\setup.log.raw",
+          "sha256": "ce9c5533cdaef382878b446df274ee65d78ec5a169b812c79706349445effb77",
+          "mtime_ns": 1791026832450222100,
+          "size": 37356
+        },
+        {
+          "source": "C:\\Users\\Serpens66\\Documents\\Paradox Interactive\\Crusader Kings III\\logs\\system.log",
+          "relative_source": "system.log",
+          "copy": "runtime-evidence\\20261003T112558.279918Z\\main-menu-data-types\\system.log.raw",
+          "sha256": "8e8178d06a708762a30fc8b67b832f850ef6ae0510093db9d9b7b738f54883e0",
+          "mtime_ns": 1791026832450222100,
+          "size": 923
+        },
+        {
+          "source": "C:\\Users\\Serpens66\\Documents\\Paradox Interactive\\Crusader Kings III\\logs\\text.log",
+          "relative_source": "text.log",
+          "copy": "runtime-evidence\\20261003T112558.279918Z\\main-menu-data-types\\text.log.raw",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "mtime_ns": 1791026759411470200,
+          "size": 0
+        },
+        {
+          "source": "C:\\Users\\Serpens66\\Documents\\Paradox Interactive\\Crusader Kings III\\logs\\data_types\\data_types_common.txt",
+          "relative_source": "data_types/data_types_common.txt",
+          "copy": "runtime-evidence\\20261003T112558.279918Z\\main-menu-data-types\\data_types\\data_types_common.txt.raw",
+          "sha256": "d547666be47e0af877eec947d16057034d9661ced50dbef83167eda9015e1d72",
+          "mtime_ns": 1791026818158475800,
+          "size": 41208
+        },
+        {
+          "source": "C:\\Users\\Serpens66\\Documents\\Paradox Interactive\\Crusader Kings III\\logs\\data_types\\data_types_gui.txt",
+          "relative_source": "data_types/data_types_gui.txt",
+          "copy": "runtime-evidence\\20261003T112558.279918Z\\main-menu-data-types\\data_types\\data_types_gui.txt.raw",
+          "sha256": "56f3506561e217244ec263796f2e7476f71fe3cecc0817c3f3516838f507c438",
+          "mtime_ns": 1791026818161480700,
+          "size": 91864
+        },
+        {
+          "source": "C:\\Users\\Serpens66\\Documents\\Paradox Interactive\\Crusader Kings III\\logs\\data_types\\data_types_internalclausewitzgui.txt",
+          "relative_source": "data_types/data_types_internalclausewitzgui.txt",
+          "copy": "runtime-evidence\\20261003T112558.279918Z\\main-menu-data-types\\data_types\\data_types_internalclausewitzgui.txt.raw",
+          "sha256": "16de17bfa2a0a84936708dc7f0477423f235700971a1efa914b791d35698efa6",
+          "mtime_ns": 1791026818160482200,
+          "size": 264115
+        },
+        {
+          "source": "C:\\Users\\Serpens66\\Documents\\Paradox Interactive\\Crusader Kings III\\logs\\data_types\\data_types_script.txt",
+          "relative_source": "data_types/data_types_script.txt",
+          "copy": "runtime-evidence\\20261003T112558.279918Z\\main-menu-data-types\\data_types\\data_types_script.txt.raw",
+          "sha256": "2865423157c8cb4caabeb2230c22a609453c27a85d6b1261c9b87722b7b21eea",
+          "mtime_ns": 1791026818156971900,
+          "size": 98395
+        },
+        {
+          "source": "C:\\Users\\Serpens66\\Documents\\Paradox Interactive\\Crusader Kings III\\logs\\data_types\\data_types_uncategorized.txt",
+          "relative_source": "data_types/data_types_uncategorized.txt",
+          "copy": "runtime-evidence\\20261003T112558.279918Z\\main-menu-data-types\\data_types\\data_types_uncategorized.txt.raw",
+          "sha256": "1f29d6829336cadbfbf7e58c5c9a3f5519273a6c7d6f3dfc72c45c98d1ef2dca",
+          "mtime_ns": 1791026818164924100,
+          "size": 2184143
+        }
+      ],
+      "missing_expected": [],
+      "end_utc": "2026-10-03T11:27:12.918262+00:00"
+    }
+  ],
+  "limits": [
+    "Main-menu/export only; no campaign, feature UI, saved-game, mod or multiplayer tests",
+    "File production is not proof of command semantics or mod compatibility"
+  ],
+  "installation_sources": [
+    {
+      "path": "E:\\ProgrammeE\\Steam\\steamapps\\common\\Crusader Kings III\\game\\_commandline_options.info",
+      "sha256": "7fb8073910a49d96fe0af1415674ffce20007180474d8d7c3807720191d4d5ae"
+    },
+    {
+      "path": "E:\\ProgrammeE\\Steam\\steamapps\\common\\Crusader Kings III\\launcher\\launcher-settings.json",
+      "sha256": "9cd6ff96f8092f2d21e1491b37e8344aa287faf69850563128ca1b117244a214"
+    },
+    {
+      "path": "E:\\ProgrammeE\\Steam\\steamapps\\common\\Crusader Kings III\\binaries\\checksum.txt",
+      "sha256": "b06b478de5d476440dd08cd8fe3e243ac22628bff815e093ca635a67b27b4b7d"
+    }
+  ],
+  "mode": "normal-debug-manual-gui-export",
+  "requested_console_command": "dump_data_types",
+  "baseline_kind": "main-menu; user profile retained",
+  "crash_reports": [],
+  "profile_warnings": [
+    {
+      "kind": "existing-profile-rule-references",
+      "references": [
+        "agot_bastard_cadets_landed_only",
+        "agot_cadet_default",
+        "agot_canon_children_disabled",
+        "agot_canon_children_gender_accurate",
+        "agot_canon_children_traits_enabled",
+        "agot_canon_dragons_disabled",
+        "agot_coin_flip_enabled",
+        "agot_debug_off",
+        "agot_dragon_culling_normal",
+        "agot_dragon_trait_inheritance_disabled",
+        "agot_dynastic_stability_disabled",
+        "agot_ema_lps_targs",
+        "agot_essos_enabled",
+        "agot_faegon_identity_default",
+        "agot_faegon_invasion_enabled",
+        "agot_hv_conversion_offshoots",
+        "agot_no_balding",
+        "agot_no_silly",
+        "agot_not_shattered",
+        "agot_story_random_events_random_outcomes",
+        "agot_strong_seed_house_stability",
+        "agot_targaryen_exile_invasion_special_content"
+      ],
+      "interpretation": "AGOT references observed in logs; relation to any crash is unknown. User profile, settings and saves were not cleaned or deleted."
+    }
+  ],
+  "finished_utc": "2026-10-03T11:27:12.919261+00:00"
+}

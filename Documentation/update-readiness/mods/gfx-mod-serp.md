@@ -39,3 +39,16 @@ The post-effect assignments are plan ready. Texture adaptation remains blocked b
 ## Static consumer findings
 
 [The consumer scan](../asset-consumers.md) checked all 677 retained texture files against 5,830 native text files. It records exact paths separately from basename, symbolic icon and matching object-ID candidates. Use those current sources before choosing any adaptation. Remaining compiled/dynamic frame or path selection and actual rendering are explicit gates; assets without a match are not deleted automatically.
+
+## Current-export reconciliation (2026-10-03)
+
+Declarations are available separately from remaining semantic/runtime gates. Original intent and update status are retained.
+
+| Feature | Signature intake | Separate contract |
+|---|---|---|
+| GS-ICONS | source/asset contract, not an engine-command signature | [Card](../contracts/GS-ICONS.md) |
+| GS-RANK | export declarations available | [Card](../contracts/GS-RANK.md) |
+| GS-ILLUSTRATIONS | source/asset contract, not an engine-command signature | [Card](../contracts/GS-ILLUSTRATIONS.md) |
+| GS-CONTAINERS | source/asset contract, not an engine-command signature | [Card](../contracts/GS-CONTAINERS.md) |
+| GS-POST | source/asset contract, not an engine-command signature | [Card](../contracts/GS-POST.md) |
+| GS-PACKAGE | source/asset contract, not an engine-command signature | [Card](../contracts/GS-PACKAGE.md) |

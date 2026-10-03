@@ -1,5 +1,7 @@
 # User debug run for current engine evidence
 
+The user completed the normal debug/main-menu GUI export; see [runtime intake](runtime-intake.md). The [normal debug starter](diagnostic-start.md) and [Start-Vanilla-Diagnostics.cmd](Start-Vanilla-Diagnostics.cmd) remain available only if another Vanilla export is needed; do not use them for mod fixture tests. The former automatic console-action attempt crashed after producing the script references; see [first-run outcome](diagnostic-first-run.md). The steps below remain the broader interactive protocol; campaign/UI checks are not claimed by the revised main-menu run.
+
 The user performs these steps. The agent has not launched CK3, installed a tool, registered a mod or changed launch options. This run establishes the current executed build and engine contracts needed by the blocked packages. It is separate from updating mods.
 
 ## Prepare the baseline

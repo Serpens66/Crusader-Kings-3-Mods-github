@@ -1,0 +1,87 @@
+[22:17:26][I][session.cpp:753]: [INFO] Init session
+[22:17:26][I][session.cpp:2406]: [INFO] SSessionDlcCache: Garments of the Holy Roman Empire
+[22:17:42][I][jominigamestate.cpp:232]: [INFO] Creating gamestate
+[22:17:45][I][jominigamestate.cpp:239]: [INFO] Destroying gamestate
+[22:17:45][I][jominigamestate.cpp:232]: [INFO] Creating gamestate
+[22:17:46][I][session.h:467]: [INFO] Setting execute commands: yes
+[22:17:46][I][session.h:479]: [INFO] Enabling recorded command replaying
+[22:17:46][I][multiplayer.cpp:181]: [INFO] Adding local player
+[22:17:46][I][session.cpp:1207]: [INFO] Replaying recorded commands: 0
+[22:17:46][I][session.h:473]: [INFO] Setting record commands: no
+[22:17:46][I][session.cpp:1214]: [INFO] Notifying callbacks with DoneReplayingCommands
+[22:17:46][I][ingamemultiplayeridlerlogic.cpp:191]: [INFO] Handling session notification: done replaying commands for machine ID: 1
+[22:17:46][I][controlcommands.cpp:52]: [INFO] CAddPlayer local player: Serpens66 with machine ID: 1 sender: 1
+[22:17:46][I][controlcommands.cpp:1072]: [INFO] Setting "done replaying commands" for machine ID: 1
+[22:17:47][I][controlcommands.cpp:1029]: [INFO] Setting "player here" for machine ID: 1
+[22:17:47][I][controlcommands.cpp:1199]: [INFO] Setting observer: no for machine ID: 1
+[22:17:47][I][controlcommands.cpp:1072]: [INFO] Setting "done replaying commands" for machine ID: 1
+[22:17:47][I][multiplayer.cpp:195]: [INFO] Hosting game: Spiel von Serpens66
+[22:17:47][I][session.cpp:1399]: [INFO] Hosting game
+[22:17:47][I][session.cpp:1983]: [INFO] Setting session state to: connecting
+[22:17:47][I][connectionshandler.h:238]: [INFO] Setting net context
+[22:17:47][I][session.cpp:1989]: [INFO] Setting connection state to: Host Start
+[22:17:47][I][session.cpp:2232]: [INFO] Setting preparation lobby: yes
+[22:17:47][I][connectionshandler.cpp:23]: [INFO] Starting host in connections handler
+[22:17:47][I][connectionshandler.cpp:39]: [SPAM] StartHost 1 [184812]: connections=0
+[22:17:47][I][connectionshandler.cpp:272]: [INFO] Resetting connection for account ID: 0
+[22:17:47][I][connectionshandler.cpp:42]: [SPAM] StartHost 2 [184812]: connections=1
+[22:17:47][I][session.cpp:1989]: [INFO] Setting connection state to: Host in Progress
+[22:17:47][I][controlcommands.cpp:985]: [INFO] Setting preparation lobby: yes, sender: 1
+[22:17:47][I][session.cpp:2232]: [INFO] Setting preparation lobby: yes
+[22:17:47][I][connectionshandler.cpp:53]: [SPAM] HostConnected 1 [184812]: connections=1
+[22:17:47][I][connectionshandler.cpp:56]: [INFO] Started host
+[22:17:47][I][connectionshandler.cpp:57]: [SPAM] HostConnected 2 [184812]: connections=2
+[22:17:47][I][session.cpp:1958]: [INFO] Announcing server
+[22:17:47][I][controlcommands.cpp:937]: [INFO] Setting ready status: no for machine ID: 1
+[22:17:47][I][controlcommands.cpp:937]: [INFO] Setting ready status: no for machine ID: 1
+[22:17:47][I][session.cpp:2222]: [INFO] Setting server ID: 5d0c3098-d3bb-45b6-a302-8d91085e8dd1.nakama-0
+[22:17:47][I][session.cpp:1983]: [INFO] Setting session state to: connected
+[22:17:47][I][session.cpp:1995]: [INFO] Setting session role to: Host
+[22:17:47][I][session.cpp:950]: [INFO] Started host with server ID: 5d0c3098-d3bb-45b6-a302-8d91085e8dd1.nakama-0
+[22:17:47][I][session.cpp:1989]: [INFO] Setting connection state to: None
+[22:17:47][I][session.cpp:1127]: [INFO] Connection successful: ok, none
+[22:17:47][I][multiplayer.cpp:181]: [INFO] Adding local player
+[22:17:47][I][session.cpp:2146]: [INFO] Syncing server info with machine ID: 0
+[22:17:47][I][session.cpp:2172]: [INFO] Enabled DLC: Garments of the Holy Roman Empire
+[22:17:47][I][session.cpp:2177]: [INFO] Enabled DLC (Cache): Garments of the Holy Roman Empire
+[22:17:47][I][controlcommands.cpp:52]: [INFO] CAddPlayer local player: Serpens66 with machine ID: 1 sender: 1
+[22:17:47][I][controlcommands.cpp:1072]: [INFO] Setting "done replaying commands" for machine ID: 1
+[22:17:47][I][controlcommands.cpp:1029]: [INFO] Setting "player here" for machine ID: 1
+[22:17:47][I][session.cpp:2139]: [INFO] Received server info
+[22:17:47][I][session.cpp:2406]: [INFO] SSessionDlcCache: Garments of the Holy Roman Empire
+[22:17:58][I][session.cpp:1744]: [INFO] Handing ClientRequestHandshake
+[22:17:58][I][session.cpp:193]: [INFO] Sending handshake response
+[22:17:58][I][session.cpp:197]: [INFO] Sending ServerRespondHandshake
+[22:18:06][I][session.cpp:1477]: [INFO] Disconnecting from game
+[22:18:06][I][session.cpp:1983]: [INFO] Setting session state to: disconnecting
+[22:18:06][I][session.cpp:1989]: [INFO] Setting connection state to: Disconnect Start
+[22:18:06][I][session.cpp:2016]: [INFO] CJominiSession::StartDisconnect: 10000
+[22:18:06][I][session.h:467]: [INFO] Setting execute commands: no
+[22:18:06][I][session.h:473]: [INFO] Setting record commands: no
+[22:18:06][I][session.cpp:1989]: [INFO] Setting connection state to: Disconnect in Progress
+[22:18:06][I][session.cpp:336]: [INFO] Server sending disconnect request to everyone, reason: Quit
+[22:18:06][I][session.cpp:341]: [INFO] Sending ServerRequestDisconnect
+[22:18:06][I][session.cpp:1046]: [INFO] Disconnecting in session update
+[22:18:06][I][session.cpp:1056]: [INFO] Hiding server
+[22:18:06][I][session.cpp:249]: [INFO] Notify session: connection disconnected for machine ID: 1
+[22:18:06][I][ingamemultiplayeridlerlogic.cpp:191]: [INFO] Handling session notification: connection disconnected for machine ID: 1
+[22:18:06][I][ingamemultiplayeridlerlogic.cpp:197]: [ERROR] Session error code: 2
+[22:18:06][I][session.cpp:1546]: [INFO] Net disconnect callback
+[22:18:06][I][connectionshandler.h:226]: [ERROR] Failed to get index from connection
+[22:18:06][I][session.cpp:1576]: [INFO] Starting disconnect for machine -1
+[22:18:06][I][connectionshandler.h:238]: [INFO] Setting net context
+[22:18:06][I][connectionshandler.cpp:103]: [SPAM] ClearConnections 1 [184812]: connections=2
+[22:18:06][I][connectionshandler.cpp:272]: [INFO] Resetting connection for account ID: 0
+[22:18:06][I][connectionshandler.cpp:272]: [INFO] Resetting connection for account ID: 4294967295
+[22:18:06][I][connectionshandler.cpp:106]: [INFO] Removed all connections
+[22:18:06][I][connectionshandler.cpp:107]: [SPAM] ClearConnections 2 [184812]: connections=0
+[22:18:06][I][session.cpp:1983]: [INFO] Setting session state to: disconnected
+[22:18:06][I][session.cpp:1995]: [INFO] Setting session role to: Local
+[22:18:06][I][session.h:460]: [INFO] Setting machine ID: 1
+[22:18:06][I][ingamemultiplayeridlerlogic.cpp:191]: [INFO] Handling session notification: machine ID changed for machine ID: 1
+[22:18:06][I][player.cpp:255]: [INFO] Changing local player ID from: 1 to: 1
+[22:18:06][I][session.cpp:2406]: [INFO] SSessionDlcCache: Garments of the Holy Roman Empire
+[22:18:06][I][session.cpp:1989]: [INFO] Setting connection state to: None
+[22:18:06][I][session.h:467]: [INFO] Setting execute commands: no
+[22:18:06][I][jominigamestate.cpp:239]: [INFO] Destroying gamestate
+[22:18:06][I][ingamesavegametransferhandler.cpp:86]: [INFO] Clearing pending save transfers

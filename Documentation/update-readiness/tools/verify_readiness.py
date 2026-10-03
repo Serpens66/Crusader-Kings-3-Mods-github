@@ -43,7 +43,7 @@ def main():
     counts['native_texture_hashes']=len(native_textures)
     ids=set();counts['links']=0;counts['documentation_text_files']=0
     for p in OUT.rglob('*'):
-        if not p.is_file() or '__pycache__' in p.parts or p.suffix=='.pyc':continue
+        if not p.is_file() or '__pycache__' in p.parts or p.suffix=='.pyc' or 'runtime-evidence' in p.relative_to(OUT).parts:continue
         raw=p.read_bytes()
         try:s=raw.decode('utf-8-sig')
         except UnicodeDecodeError:

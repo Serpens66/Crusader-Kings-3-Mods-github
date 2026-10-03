@@ -1,0 +1,20 @@
+[22:17:18][I][jomini_game_setup.cpp:352]: game_hash_long: 70e607434e84913f163af1d5d2a9b3314ebf2f10
+[22:17:18][I][jomini_game_setup.cpp:353]: game_hash_short: 70e607434e
+[22:17:18][I][jomini_game_setup.cpp:354]: game_branch: release/1.16.3
+[22:17:18][I][jomini_game_setup.cpp:355]: game_timestamp: 2025-06-02 12:25:28 +0000
+
+[22:17:18][I][jomini_game_setup.cpp:352]: jomini_hash_long: 990db80f5ad8be8a7646563b12a24179742163db
+[22:17:18][I][jomini_game_setup.cpp:353]: jomini_hash_short: 990db80f5a
+[22:17:18][I][jomini_game_setup.cpp:354]: jomini_branch: titus/release/1.16.3
+[22:17:18][I][jomini_game_setup.cpp:355]: jomini_timestamp: 2025-05-20 10:11:16 +0000
+
+[22:17:18][I][jomini_game_setup.cpp:352]: clausewitz_hash_long: 990db80f5ad8be8a7646563b12a24179742163db
+[22:17:18][I][jomini_game_setup.cpp:353]: clausewitz_hash_short: 990db80f5a
+[22:17:18][I][jomini_game_setup.cpp:354]: clausewitz_branch: titus/release/1.16.3
+[22:17:18][I][jomini_game_setup.cpp:355]: clausewitz_timestamp: 2025-05-20 10:11:16 +0000
+
+[22:17:18][I][jomini_game_setup.cpp:352]: external_libs_hash_long: d55e7f99ed41aa225647b764ef2830bef8fe02fd
+[22:17:18][I][jomini_game_setup.cpp:353]: external_libs_hash_short: d55e7f99ed
+[22:17:18][I][jomini_game_setup.cpp:354]: external_libs_branch: develop
+[22:17:18][I][jomini_game_setup.cpp:355]: external_libs_timestamp: 2025-05-08 07:44:34 +0000
+

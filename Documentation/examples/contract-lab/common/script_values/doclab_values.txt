@@ -1,0 +1,10 @@
+﻿doclab_transfer_amount = 5
+# Same predicate as dispatch. Caller/root must be the requester character.
+doclab_batch_count = {
+    value = 0
+    every_courtier = {
+        limit = { doclab_batch_candidate = yes }
+        add = 1
+    }
+}
+doclab_batch_cost = { value = doclab_batch_count multiply = doclab_transfer_amount }

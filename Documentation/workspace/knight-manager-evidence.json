@@ -1,0 +1,2518 @@
+{
+  "date": "2026-10-03",
+  "version": "1.20.0.3",
+  "variants": [
+    {
+      "variant": "Knight Manager (MP)",
+      "files": [
+        {
+          "path": "Knight Manager (MP)/common/on_action/knight_manager_on_actions.txt",
+          "sha256": "75055728a854ad4358d1e38d23f4984fee73075a085b32a7c74091b6c022bd78",
+          "bytes": 441,
+          "full_file_read": true,
+          "decode_warning": false,
+          "definitions": [
+            {
+              "key": "on_game_start",
+              "line": 3
+            },
+            {
+              "key": "on_KnightManager_start",
+              "line": 8
+            }
+          ]
+        },
+        {
+          "path": "Knight Manager (MP)/common/scripted_guis/knight_manager_gui.txt",
+          "sha256": "115e182f4218c6df1d9c19b72b595b3326590755fc6b40d179f59b327fcb9d46",
+          "bytes": 6057,
+          "full_file_read": true,
+          "decode_warning": false,
+          "definitions": [
+            {
+              "key": "knight_manager_toggle_kin_cannot_be_knight",
+              "line": 1
+            },
+            {
+              "key": "knight_manager_toggle_children_cannot_be_knight",
+              "line": 22
+            },
+            {
+              "key": "knight_manager_toggle_family_spouses_cannot_be_knight",
+              "line": 44
+            },
+            {
+              "key": "knight_manager_toggle_lover_cannot_be_knight",
+              "line": 65
+            },
+            {
+              "key": "knight_manager_toggle_councillors_cannot_be_knight",
+              "line": 86
+            },
+            {
+              "key": "knight_manager_toggle_vassals_cannot_be_knight",
+              "line": 108
+            },
+            {
+              "key": "knight_manager_toggle_awful_fighters_cannot_be_knight",
+              "line": 130
+            },
+            {
+              "key": "knight_manager_toggle_bad_fighters_cannot_be_knight",
+              "line": 152
+            },
+            {
+              "key": "knight_manager_toggle_player_heir_cannot_be_knight",
+              "line": 174
+            },
+            {
+              "key": "knight_manager_toggle_manually_allowed",
+              "line": 197
+            }
+          ]
+        },
+        {
+          "path": "Knight Manager (MP)/common/scripted_triggers/knighthood_trigger.txt",
+          "sha256": "93f859fe9b6dc283539b3abe13c83a48cbdb15011e8b390b54e61eb33d4f29b1",
+          "bytes": 4277,
+          "full_file_read": true,
+          "decode_warning": false,
+          "definitions": [
+            {
+              "key": "KM_is_loaded",
+              "line": 1
+            },
+            {
+              "key": "KM_can_be_knight_trigger",
+              "line": 4
+            },
+            {
+              "key": "can_be_knight_trigger",
+              "line": 88
+            }
+          ]
+        },
+        {
+          "path": "Knight Manager (MP)/descriptor.mod",
+          "sha256": "12bc383432d9f42d51e493eda58be75043d584a41bf6cb262dab5757de584ba3",
+          "bytes": 138,
+          "full_file_read": true,
+          "decode_warning": false,
+          "definitions": [
+            {
+              "key": "version",
+              "line": 1
+            },
+            {
+              "key": "tags",
+              "line": 2
+            },
+            {
+              "key": "name",
+              "line": 7
+            },
+            {
+              "key": "supported_version",
+              "line": 8
+            },
+            {
+              "key": "remote_file_id",
+              "line": 9
+            }
+          ]
+        },
+        {
+          "path": "Knight Manager (MP)/events/knight_manager_events.txt",
+          "sha256": "515338e2ea435572b93b9cbe9dc0d4c13d6c99a19e8527c61c15740c951848be",
+          "bytes": 352,
+          "full_file_read": true,
+          "decode_warning": false,
+          "definitions": [
+            {
+              "key": "namespace",
+              "line": 4
+            },
+            {
+              "key": "knight_manager_mod_error_suppression.0001",
+              "line": 6
+            }
+          ]
+        },
+        {
+          "path": "Knight Manager (MP)/gui/window_knights.gui",
+          "sha256": "bbae86490afac222608c0db5d6b64987c1aa045fe365f55a1a2d9d2e7fd0d2b9",
+          "bytes": 23450,
+          "full_file_read": true,
+          "decode_warning": false,
+          "definitions": [
+            {
+              "key": "window",
+              "line": 5
+            }
+          ]
+        },
+        {
+          "path": "Knight Manager (MP)/localization/english/knight_manager_mod_l_english.yml",
+          "sha256": "28f0efac8919409d0c2cd5f6e98c431b5b90d71807b931864ee662c959c960b3",
+          "bytes": 2516,
+          "full_file_read": true,
+          "decode_warning": false,
+          "definitions": []
+        },
+        {
+          "path": "Knight Manager (MP)/localization/french/knight_manager_mod_l_french.yml",
+          "sha256": "71ace607c29875d0b036e32fbf2b130433234c53e9ba6023d8b0161c015c069c",
+          "bytes": 2573,
+          "full_file_read": true,
+          "decode_warning": false,
+          "definitions": []
+        },
+        {
+          "path": "Knight Manager (MP)/localization/german/knight_manager_mod_l_german.yml",
+          "sha256": "cc6cccc95738e86a027a6daf30137199f7c852249feadd2d5504dfea96f7d802",
+          "bytes": 2605,
+          "full_file_read": true,
+          "decode_warning": false,
+          "definitions": []
+        },
+        {
+          "path": "Knight Manager (MP)/localization/korean/knight_manager_mod_l_korean.yml",
+          "sha256": "9b4d802f78da27786b8581667cb5d9d74485df045c63b7521cf4b5301ae753d4",
+          "bytes": 2346,
+          "full_file_read": true,
+          "decode_warning": false,
+          "definitions": []
+        },
+        {
+          "path": "Knight Manager (MP)/localization/polish/knight_manager_mod_l_polish.yml",
+          "sha256": "c9a0d2ffe9548ec36405ae40403627b16068f041a0378d91fad65d395aa10855",
+          "bytes": 3204,
+          "full_file_read": true,
+          "decode_warning": false,
+          "definitions": []
+        },
+        {
+          "path": "Knight Manager (MP)/localization/russian/knight_manager_mod_l_russian.yml",
+          "sha256": "8604a2d9ed00aa8a36a74229d75b14e6d2ab01afd1b84c30921587892cf60ba1",
+          "bytes": 3286,
+          "full_file_read": true,
+          "decode_warning": false,
+          "definitions": []
+        },
+        {
+          "path": "Knight Manager (MP)/localization/simp_chinese/knight_manager_mod_l_simp_chinese.yml",
+          "sha256": "1088fef9f5d8a9f4bb9d3e1d97c0cac5d44a6f79c4bc4ce323244e059c117cad",
+          "bytes": 2105,
+          "full_file_read": true,
+          "decode_warning": false,
+          "definitions": []
+        },
+        {
+          "path": "Knight Manager (MP)/localization/spanish/knight_manager_mod_l_spanish.yml",
+          "sha256": "a2b2c3210438eaef14c205755ebdbdcd628aa827fc669686242a59b5ffc9f11c",
+          "bytes": 2399,
+          "full_file_read": true,
+          "decode_warning": false,
+          "definitions": []
+        },
+        {
+          "path": "Knight Manager (MP)/OUTDATED.txt",
+          "sha256": "f6fa829c529df799438d5e86c1ab0bf6570ec646698c3074c47fe85455c9b128",
+          "bytes": 72,
+          "full_file_read": true,
+          "decode_warning": false,
+          "definitions": []
+        }
+      ],
+      "state_tokens": {
+        "KnightManager_is_loaded": [
+          {
+            "path": "Knight Manager (MP)/common/on_action/knight_manager_on_actions.txt",
+            "line": 11
+          },
+          {
+            "path": "Knight Manager (MP)/events/knight_manager_events.txt",
+            "line": 10
+          }
+        ],
+        "knight_manager_toggle_kin_cannot_be_knight": [
+          {
+            "path": "Knight Manager (MP)/common/scripted_guis/knight_manager_gui.txt",
+            "line": 1
+          },
+          {
+            "path": "Knight Manager (MP)/gui/window_knights.gui",
+            "line": 314
+          }
+        ],
+        "knight_manager_kin_cannot_be_knight": [
+          {
+            "path": "Knight Manager (MP)/common/scripted_guis/knight_manager_gui.txt",
+            "line": 5
+          },
+          {
+            "path": "Knight Manager (MP)/common/scripted_guis/knight_manager_gui.txt",
+            "line": 12
+          },
+          {
+            "path": "Knight Manager (MP)/common/scripted_guis/knight_manager_gui.txt",
+            "line": 15
+          },
+          {
+            "path": "Knight Manager (MP)/common/scripted_guis/knight_manager_gui.txt",
+            "line": 18
+          },
+          {
+            "path": "Knight Manager (MP)/common/scripted_triggers/knighthood_trigger.txt",
+            "line": 17
+          }
+        ],
+        "knight_manager_toggle_children_cannot_be_knight": [
+          {
+            "path": "Knight Manager (MP)/common/scripted_guis/knight_manager_gui.txt",
+            "line": 22
+          },
+          {
+            "path": "Knight Manager (MP)/gui/window_knights.gui",
+            "line": 332
+          }
+        ],
+        "knight_manager_children_cannot_be_knight": [
+          {
+            "path": "Knight Manager (MP)/common/scripted_guis/knight_manager_gui.txt",
+            "line": 26
+          },
+          {
+            "path": "Knight Manager (MP)/common/scripted_guis/knight_manager_gui.txt",
+            "line": 33
+          },
+          {
+            "path": "Knight Manager (MP)/common/scripted_guis/knight_manager_gui.txt",
+            "line": 36
+          },
+          {
+            "path": "Knight Manager (MP)/common/scripted_guis/knight_manager_gui.txt",
+            "line": 39
+          },
+          {
+            "path": "Knight Manager (MP)/common/scripted_triggers/knighthood_trigger.txt",
+            "line": 28
+          }
+        ],
+        "knight_manager_toggle_family_spouses_cannot_be_knight": [
+          {
+            "path": "Knight Manager (MP)/common/scripted_guis/knight_manager_gui.txt",
+            "line": 44
+          },
+          {
+            "path": "Knight Manager (MP)/gui/window_knights.gui",
+            "line": 350
+          }
+        ],
+        "knight_manager_family_spouses_cannot_be_knight": [
+          {
+            "path": "Knight Manager (MP)/common/scripted_guis/knight_manager_gui.txt",
+            "line": 48
+          },
+          {
+            "path": "Knight Manager (MP)/common/scripted_guis/knight_manager_gui.txt",
+            "line": 55
+          },
+          {
+            "path": "Knight Manager (MP)/common/scripted_guis/knight_manager_gui.txt",
+            "line": 58
+          },
+          {
+            "path": "Knight Manager (MP)/common/scripted_guis/knight_manager_gui.txt",
+            "line": 61
+          },
+          {
+            "path": "Knight Manager (MP)/common/scripted_triggers/knighthood_trigger.txt",
+            "line": 48
+          }
+        ],
+        "knight_manager_toggle_lover_cannot_be_knight": [
+          {
+            "path": "Knight Manager (MP)/common/scripted_guis/knight_manager_gui.txt",
+            "line": 65
+          },
+          {
+            "path": "Knight Manager (MP)/gui/window_knights.gui",
+            "line": 390
+          }
+        ],
+        "knight_manager_lover_cannot_be_knight": [
+          {
+            "path": "Knight Manager (MP)/common/scripted_guis/knight_manager_gui.txt",
+            "line": 69
+          },
+          {
+            "path": "Knight Manager (MP)/common/scripted_guis/knight_manager_gui.txt",
+            "line": 76
+          },
+          {
+            "path": "Knight Manager (MP)/common/scripted_guis/knight_manager_gui.txt",
+            "line": 79
+          },
+          {
+            "path": "Knight Manager (MP)/common/scripted_guis/knight_manager_gui.txt",
+            "line": 82
+          },
+          {
+            "path": "Knight Manager (MP)/common/scripted_triggers/knighthood_trigger.txt",
+            "line": 57
+          }
+        ],
+        "knight_manager_toggle_councillors_cannot_be_knight": [
+          {
+            "path": "Knight Manager (MP)/common/scripted_guis/knight_manager_gui.txt",
+            "line": 86
+          },
+          {
+            "path": "Knight Manager (MP)/gui/window_knights.gui",
+            "line": 372
+          }
+        ],
+        "knight_manager_councillors_cannot_be_knight": [
+          {
+            "path": "Knight Manager (MP)/common/scripted_guis/knight_manager_gui.txt",
+            "line": 90
+          },
+          {
+            "path": "Knight Manager (MP)/common/scripted_guis/knight_manager_gui.txt",
+            "line": 97
+          },
+          {
+            "path": "Knight Manager (MP)/common/scripted_guis/knight_manager_gui.txt",
+            "line": 100
+          },
+          {
+            "path": "Knight Manager (MP)/common/scripted_guis/knight_manager_gui.txt",
+            "line": 103
+          },
+          {
+            "path": "Knight Manager (MP)/common/scripted_triggers/knighthood_trigger.txt",
+            "line": 77
+          }
+        ],
+        "knight_manager_toggle_vassals_cannot_be_knight": [
+          {
+            "path": "Knight Manager (MP)/common/scripted_guis/knight_manager_gui.txt",
+            "line": 108
+          },
+          {
+            "path": "Knight Manager (MP)/gui/window_knights.gui",
+            "line": 467
+          }
+        ],
+        "knight_manager_vassals_cannot_be_knight": [
+          {
+            "path": "Knight Manager (MP)/common/scripted_guis/knight_manager_gui.txt",
+            "line": 112
+          },
+          {
+            "path": "Knight Manager (MP)/common/scripted_guis/knight_manager_gui.txt",
+            "line": 119
+          },
+          {
+            "path": "Knight Manager (MP)/common/scripted_guis/knight_manager_gui.txt",
+            "line": 122
+          },
+          {
+            "path": "Knight Manager (MP)/common/scripted_guis/knight_manager_gui.txt",
+            "line": 125
+          },
+          {
+            "path": "Knight Manager (MP)/common/scripted_triggers/knighthood_trigger.txt",
+            "line": 21
+          }
+        ],
+        "knight_manager_toggle_awful_fighters_cannot_be_knight": [
+          {
+            "path": "Knight Manager (MP)/common/scripted_guis/knight_manager_gui.txt",
+            "line": 130
+          },
+          {
+            "path": "Knight Manager (MP)/gui/window_knights.gui",
+            "line": 431
+          }
+        ],
+        "knight_manager_awful_fighter_cannot_be_knight": [
+          {
+            "path": "Knight Manager (MP)/common/scripted_guis/knight_manager_gui.txt",
+            "line": 134
+          },
+          {
+            "path": "Knight Manager (MP)/common/scripted_guis/knight_manager_gui.txt",
+            "line": 141
+          },
+          {
+            "path": "Knight Manager (MP)/common/scripted_guis/knight_manager_gui.txt",
+            "line": 144
+          },
+          {
+            "path": "Knight Manager (MP)/common/scripted_guis/knight_manager_gui.txt",
+            "line": 147
+          },
+          {
+            "path": "Knight Manager (MP)/common/scripted_triggers/knighthood_trigger.txt",
+            "line": 66
+          }
+        ],
+        "knight_manager_toggle_bad_fighters_cannot_be_knight": [
+          {
+            "path": "Knight Manager (MP)/common/scripted_guis/knight_manager_gui.txt",
+            "line": 152
+          },
+          {
+            "path": "Knight Manager (MP)/gui/window_knights.gui",
+            "line": 449
+          }
+        ],
+        "knight_manager_bad_fighter_cannot_be_knight": [
+          {
+            "path": "Knight Manager (MP)/common/scripted_guis/knight_manager_gui.txt",
+            "line": 156
+          },
+          {
+            "path": "Knight Manager (MP)/common/scripted_guis/knight_manager_gui.txt",
+            "line": 163
+          },
+          {
+            "path": "Knight Manager (MP)/common/scripted_guis/knight_manager_gui.txt",
+            "line": 166
+          },
+          {
+            "path": "Knight Manager (MP)/common/scripted_guis/knight_manager_gui.txt",
+            "line": 169
+          },
+          {
+            "path": "Knight Manager (MP)/common/scripted_triggers/knighthood_trigger.txt",
+            "line": 62
+          }
+        ],
+        "knight_manager_toggle_player_heir_cannot_be_knight": [
+          {
+            "path": "Knight Manager (MP)/common/scripted_guis/knight_manager_gui.txt",
+            "line": 174
+          },
+          {
+            "path": "Knight Manager (MP)/gui/window_knights.gui",
+            "line": 408
+          }
+        ],
+        "knight_manager_player_heir_cannot_be_knight": [
+          {
+            "path": "Knight Manager (MP)/common/scripted_guis/knight_manager_gui.txt",
+            "line": 178
+          },
+          {
+            "path": "Knight Manager (MP)/common/scripted_guis/knight_manager_gui.txt",
+            "line": 185
+          },
+          {
+            "path": "Knight Manager (MP)/common/scripted_guis/knight_manager_gui.txt",
+            "line": 188
+          },
+          {
+            "path": "Knight Manager (MP)/common/scripted_guis/knight_manager_gui.txt",
+            "line": 191
+          },
+          {
+            "path": "Knight Manager (MP)/common/scripted_triggers/knighthood_trigger.txt",
+            "line": 81
+          }
+        ],
+        "knight_manager_toggle_manually_allowed": [
+          {
+            "path": "Knight Manager (MP)/common/scripted_guis/knight_manager_gui.txt",
+            "line": 197
+          },
+          {
+            "path": "Knight Manager (MP)/gui/window_knights.gui",
+            "line": 648
+          }
+        ],
+        "knight_manager_manually_allowed": [
+          {
+            "path": "Knight Manager (MP)/common/scripted_guis/knight_manager_gui.txt",
+            "line": 201
+          },
+          {
+            "path": "Knight Manager (MP)/common/scripted_guis/knight_manager_gui.txt",
+            "line": 207
+          },
+          {
+            "path": "Knight Manager (MP)/common/scripted_guis/knight_manager_gui.txt",
+            "line": 209
+          },
+          {
+            "path": "Knight Manager (MP)/common/scripted_guis/knight_manager_gui.txt",
+            "line": 212
+          },
+          {
+            "path": "Knight Manager (MP)/common/scripted_triggers/knighthood_trigger.txt",
+            "line": 13
+          }
+        ],
+        "knight_manager_mod_error_suppression": [
+          {
+            "path": "Knight Manager (MP)/events/knight_manager_events.txt",
+            "line": 4
+          },
+          {
+            "path": "Knight Manager (MP)/events/knight_manager_events.txt",
+            "line": 6
+          }
+        ],
+        "knight_manager_settings": [
+          {
+            "path": "Knight Manager (MP)/gui/window_knights.gui",
+            "line": 300
+          }
+        ],
+        "knight_manager_first_row": [
+          {
+            "path": "Knight Manager (MP)/gui/window_knights.gui",
+            "line": 309
+          }
+        ],
+        "knight_manager_second_row": [
+          {
+            "path": "Knight Manager (MP)/gui/window_knights.gui",
+            "line": 367
+          }
+        ],
+        "knight_manager_third_row": [
+          {
+            "path": "Knight Manager (MP)/gui/window_knights.gui",
+            "line": 426
+          }
+        ],
+        "knight_manager_mod_vassals_tooltip": [
+          {
+            "path": "Knight Manager (MP)/gui/window_knights.gui",
+            "line": 470
+          },
+          {
+            "path": "Knight Manager (MP)/localization/english/knight_manager_mod_l_english.yml",
+            "line": 31
+          },
+          {
+            "path": "Knight Manager (MP)/localization/french/knight_manager_mod_l_french.yml",
+            "line": 31
+          },
+          {
+            "path": "Knight Manager (MP)/localization/german/knight_manager_mod_l_german.yml",
+            "line": 31
+          },
+          {
+            "path": "Knight Manager (MP)/localization/korean/knight_manager_mod_l_korean.yml",
+            "line": 35
+          },
+          {
+            "path": "Knight Manager (MP)/localization/polish/knight_manager_mod_l_polish.yml",
+            "line": 31
+          },
+          {
+            "path": "Knight Manager (MP)/localization/russian/knight_manager_mod_l_russian.yml",
+            "line": 35
+          },
+          {
+            "path": "Knight Manager (MP)/localization/simp_chinese/knight_manager_mod_l_simp_chinese.yml",
+            "line": 35
+          },
+          {
+            "path": "Knight Manager (MP)/localization/spanish/knight_manager_mod_l_spanish.yml",
+            "line": 34
+          }
+        ],
+        "knight_manager_mod_vassals_label": [
+          {
+            "path": "Knight Manager (MP)/gui/window_knights.gui",
+            "line": 479
+          },
+          {
+            "path": "Knight Manager (MP)/localization/english/knight_manager_mod_l_english.yml",
+            "line": 30
+          },
+          {
+            "path": "Knight Manager (MP)/localization/french/knight_manager_mod_l_french.yml",
+            "line": 30
+          },
+          {
+            "path": "Knight Manager (MP)/localization/german/knight_manager_mod_l_german.yml",
+            "line": 30
+          },
+          {
+            "path": "Knight Manager (MP)/localization/korean/knight_manager_mod_l_korean.yml",
+            "line": 34
+          },
+          {
+            "path": "Knight Manager (MP)/localization/polish/knight_manager_mod_l_polish.yml",
+            "line": 30
+          },
+          {
+            "path": "Knight Manager (MP)/localization/russian/knight_manager_mod_l_russian.yml",
+            "line": 34
+          },
+          {
+            "path": "Knight Manager (MP)/localization/simp_chinese/knight_manager_mod_l_simp_chinese.yml",
+            "line": 34
+          },
+          {
+            "path": "Knight Manager (MP)/localization/spanish/knight_manager_mod_l_spanish.yml",
+            "line": 33
+          }
+        ]
+      },
+      "status": "learning-only; excluded from updates"
+    },
+    {
+      "variant": "Knight Manager Continued (MP)",
+      "files": [
+        {
+          "path": "Knight Manager Continued (MP)/common/scripted_guis/kmc_gui.txt",
+          "sha256": "adacc615b432403b89a05be9b95dd88e173583076899012c5d552abe0f0ab2e6",
+          "bytes": 12133,
+          "full_file_read": true,
+          "decode_warning": false,
+          "definitions": [
+            {
+              "key": "kmc_toggle_dynasty_cannot_be_knight",
+              "line": 1
+            },
+            {
+              "key": "kmc_toggle_house_cannot_be_knight",
+              "line": 24
+            },
+            {
+              "key": "kmc_toggle_spouses_cannot_be_knight",
+              "line": 47
+            },
+            {
+              "key": "kmc_toggle_children_cannot_be_knight",
+              "line": 69
+            },
+            {
+              "key": "kmc_toggle_child_spouses_cannot_be_knight",
+              "line": 92
+            },
+            {
+              "key": "kmc_toggle_player_heir_cannot_be_knight",
+              "line": 114
+            },
+            {
+              "key": "kmc_toggle_lover_cannot_be_knight",
+              "line": 136
+            },
+            {
+              "key": "kmc_toggle_councillors_cannot_be_knight",
+              "line": 158
+            },
+            {
+              "key": "kmc_toggle_court_position_cannot_be_knight",
+              "line": 180
+            },
+            {
+              "key": "kmc_toggle_unlanded_cannot_be_knight",
+              "line": 202
+            },
+            {
+              "key": "kmc_toggle_highborn_cannot_be_knight",
+              "line": 224
+            },
+            {
+              "key": "kmc_toggle_lowborn_cannot_be_knight",
+              "line": 246
+            },
+            {
+              "key": "kmc_toggle_landed_cannot_be_knight",
+              "line": 268
+            },
+            {
+              "key": "kmc_toggle_barons_cannot_be_knight",
+              "line": 290
+            },
+            {
+              "key": "kmc_toggle_terrible_fighters_cannot_be_knight",
+              "line": 312
+            },
+            {
+              "key": "kmc_toggle_poor_fighters_cannot_be_knight",
+              "line": 334
+            },
+            {
+              "key": "kmc_toggle_average_fighters_cannot_be_knight",
+              "line": 356
+            },
+            {
+              "key": "kmc_toggle_good_fighters_cannot_be_knight",
+              "line": 378
+            },
+            {
+              "key": "kmc_toggle_excellent_fighters_cannot_be_knight",
+              "line": 400
+            },
+            {
+              "key": "kmc_toggle_wounded_cannot_be_knight",
+              "line": 422
+            },
+            {
+              "key": "kmc_toggle_manually_allowed",
+              "line": 448
+            }
+          ]
+        },
+        {
+          "path": "Knight Manager Continued (MP)/common/scripted_triggers/00_war_and_peace_triggers.info.lnk",
+          "sha256": "e4e862a5db252890f9fe9b563b196c74b2416af60815cd4f8d10ffc5f0feed4a",
+          "bytes": 2137,
+          "full_file_read": true,
+          "interpretation": "Windows shortcut, not a loadable GUI/script definition"
+        },
+        {
+          "path": "Knight Manager Continued (MP)/common/scripted_triggers/kmc_trigger.txt",
+          "sha256": "7bc002335b2b27ea29c8e14011460b0d72070d111f2b22b83645ad8614476dab",
+          "bytes": 4710,
+          "full_file_read": true,
+          "decode_warning": false,
+          "definitions": [
+            {
+              "key": "KM_is_loaded",
+              "line": 1
+            },
+            {
+              "key": "KM_can_be_knight_trigger",
+              "line": 6
+            },
+            {
+              "key": "can_be_knight_trigger",
+              "line": 124
+            }
+          ]
+        },
+        {
+          "path": "Knight Manager Continued (MP)/descriptor.mod",
+          "sha256": "134ce6f604faa44182c98416a50a525391f5ee18f30890d5197a331f9df2d743",
+          "bytes": 149,
+          "full_file_read": true,
+          "decode_warning": false,
+          "definitions": [
+            {
+              "key": "version",
+              "line": 1
+            },
+            {
+              "key": "tags",
+              "line": 2
+            },
+            {
+              "key": "name",
+              "line": 7
+            },
+            {
+              "key": "supported_version",
+              "line": 8
+            },
+            {
+              "key": "remote_file_id",
+              "line": 9
+            }
+          ]
+        },
+        {
+          "path": "Knight Manager Continued (MP)/OUTDATED.txt",
+          "sha256": "f6fa829c529df799438d5e86c1ab0bf6570ec646698c3074c47fe85455c9b128",
+          "bytes": 72,
+          "full_file_read": true,
+          "decode_warning": false,
+          "definitions": []
+        }
+      ],
+      "state_tokens": {
+        "kmc_toggle_dynasty_cannot_be_knight": [
+          {
+            "path": "Knight Manager Continued (MP)/common/scripted_guis/kmc_gui.txt",
+            "line": 1
+          }
+        ],
+        "kmc_dynasty_cannot_be_knight": [
+          {
+            "path": "Knight Manager Continued (MP)/common/scripted_guis/kmc_gui.txt",
+            "line": 5
+          },
+          {
+            "path": "Knight Manager Continued (MP)/common/scripted_guis/kmc_gui.txt",
+            "line": 12
+          },
+          {
+            "path": "Knight Manager Continued (MP)/common/scripted_guis/kmc_gui.txt",
+            "line": 15
+          },
+          {
+            "path": "Knight Manager Continued (MP)/common/scripted_guis/kmc_gui.txt",
+            "line": 18
+          },
+          {
+            "path": "Knight Manager Continued (MP)/common/scripted_triggers/kmc_trigger.txt",
+            "line": 16
+          }
+        ],
+        "kmc_toggle_house_cannot_be_knight": [
+          {
+            "path": "Knight Manager Continued (MP)/common/scripted_guis/kmc_gui.txt",
+            "line": 24
+          }
+        ],
+        "kmc_house_cannot_be_knight": [
+          {
+            "path": "Knight Manager Continued (MP)/common/scripted_guis/kmc_gui.txt",
+            "line": 28
+          },
+          {
+            "path": "Knight Manager Continued (MP)/common/scripted_guis/kmc_gui.txt",
+            "line": 35
+          },
+          {
+            "path": "Knight Manager Continued (MP)/common/scripted_guis/kmc_gui.txt",
+            "line": 38
+          },
+          {
+            "path": "Knight Manager Continued (MP)/common/scripted_guis/kmc_gui.txt",
+            "line": 41
+          },
+          {
+            "path": "Knight Manager Continued (MP)/common/scripted_triggers/kmc_trigger.txt",
+            "line": 20
+          }
+        ],
+        "kmc_toggle_spouses_cannot_be_knight": [
+          {
+            "path": "Knight Manager Continued (MP)/common/scripted_guis/kmc_gui.txt",
+            "line": 47
+          }
+        ],
+        "kmc_spouses_cannot_be_knight": [
+          {
+            "path": "Knight Manager Continued (MP)/common/scripted_guis/kmc_gui.txt",
+            "line": 51
+          },
+          {
+            "path": "Knight Manager Continued (MP)/common/scripted_guis/kmc_gui.txt",
+            "line": 58
+          },
+          {
+            "path": "Knight Manager Continued (MP)/common/scripted_guis/kmc_gui.txt",
+            "line": 61
+          },
+          {
+            "path": "Knight Manager Continued (MP)/common/scripted_guis/kmc_gui.txt",
+            "line": 64
+          },
+          {
+            "path": "Knight Manager Continued (MP)/common/scripted_triggers/kmc_trigger.txt",
+            "line": 24
+          }
+        ],
+        "kmc_toggle_children_cannot_be_knight": [
+          {
+            "path": "Knight Manager Continued (MP)/common/scripted_guis/kmc_gui.txt",
+            "line": 69
+          }
+        ],
+        "kmc_children_cannot_be_knight": [
+          {
+            "path": "Knight Manager Continued (MP)/common/scripted_guis/kmc_gui.txt",
+            "line": 73
+          },
+          {
+            "path": "Knight Manager Continued (MP)/common/scripted_guis/kmc_gui.txt",
+            "line": 80
+          },
+          {
+            "path": "Knight Manager Continued (MP)/common/scripted_guis/kmc_gui.txt",
+            "line": 83
+          },
+          {
+            "path": "Knight Manager Continued (MP)/common/scripted_guis/kmc_gui.txt",
+            "line": 86
+          },
+          {
+            "path": "Knight Manager Continued (MP)/common/scripted_triggers/kmc_trigger.txt",
+            "line": 31
+          }
+        ],
+        "kmc_toggle_child_spouses_cannot_be_knight": [
+          {
+            "path": "Knight Manager Continued (MP)/common/scripted_guis/kmc_gui.txt",
+            "line": 92
+          }
+        ],
+        "kmc_child_spouses_cannot_be_knight": [
+          {
+            "path": "Knight Manager Continued (MP)/common/scripted_guis/kmc_gui.txt",
+            "line": 96
+          },
+          {
+            "path": "Knight Manager Continued (MP)/common/scripted_guis/kmc_gui.txt",
+            "line": 103
+          },
+          {
+            "path": "Knight Manager Continued (MP)/common/scripted_guis/kmc_gui.txt",
+            "line": 106
+          },
+          {
+            "path": "Knight Manager Continued (MP)/common/scripted_guis/kmc_gui.txt",
+            "line": 109
+          },
+          {
+            "path": "Knight Manager Continued (MP)/common/scripted_triggers/kmc_trigger.txt",
+            "line": 41
+          }
+        ],
+        "kmc_toggle_player_heir_cannot_be_knight": [
+          {
+            "path": "Knight Manager Continued (MP)/common/scripted_guis/kmc_gui.txt",
+            "line": 114
+          }
+        ],
+        "kmc_player_heir_cannot_be_knight": [
+          {
+            "path": "Knight Manager Continued (MP)/common/scripted_guis/kmc_gui.txt",
+            "line": 118
+          },
+          {
+            "path": "Knight Manager Continued (MP)/common/scripted_guis/kmc_gui.txt",
+            "line": 125
+          },
+          {
+            "path": "Knight Manager Continued (MP)/common/scripted_guis/kmc_gui.txt",
+            "line": 128
+          },
+          {
+            "path": "Knight Manager Continued (MP)/common/scripted_guis/kmc_gui.txt",
+            "line": 131
+          },
+          {
+            "path": "Knight Manager Continued (MP)/common/scripted_triggers/kmc_trigger.txt",
+            "line": 45
+          }
+        ],
+        "kmc_toggle_lover_cannot_be_knight": [
+          {
+            "path": "Knight Manager Continued (MP)/common/scripted_guis/kmc_gui.txt",
+            "line": 136
+          }
+        ],
+        "kmc_lover_cannot_be_knight": [
+          {
+            "path": "Knight Manager Continued (MP)/common/scripted_guis/kmc_gui.txt",
+            "line": 140
+          },
+          {
+            "path": "Knight Manager Continued (MP)/common/scripted_guis/kmc_gui.txt",
+            "line": 147
+          },
+          {
+            "path": "Knight Manager Continued (MP)/common/scripted_guis/kmc_gui.txt",
+            "line": 150
+          },
+          {
+            "path": "Knight Manager Continued (MP)/common/scripted_guis/kmc_gui.txt",
+            "line": 153
+          },
+          {
+            "path": "Knight Manager Continued (MP)/common/scripted_triggers/kmc_trigger.txt",
+            "line": 54
+          }
+        ],
+        "kmc_toggle_councillors_cannot_be_knight": [
+          {
+            "path": "Knight Manager Continued (MP)/common/scripted_guis/kmc_gui.txt",
+            "line": 158
+          }
+        ],
+        "kmc_councillors_cannot_be_knight": [
+          {
+            "path": "Knight Manager Continued (MP)/common/scripted_guis/kmc_gui.txt",
+            "line": 162
+          },
+          {
+            "path": "Knight Manager Continued (MP)/common/scripted_guis/kmc_gui.txt",
+            "line": 169
+          },
+          {
+            "path": "Knight Manager Continued (MP)/common/scripted_guis/kmc_gui.txt",
+            "line": 172
+          },
+          {
+            "path": "Knight Manager Continued (MP)/common/scripted_guis/kmc_gui.txt",
+            "line": 175
+          },
+          {
+            "path": "Knight Manager Continued (MP)/common/scripted_triggers/kmc_trigger.txt",
+            "line": 60
+          }
+        ],
+        "kmc_toggle_court_position_cannot_be_knight": [
+          {
+            "path": "Knight Manager Continued (MP)/common/scripted_guis/kmc_gui.txt",
+            "line": 180
+          }
+        ],
+        "kmc_court_position_cannot_be_knight": [
+          {
+            "path": "Knight Manager Continued (MP)/common/scripted_guis/kmc_gui.txt",
+            "line": 184
+          },
+          {
+            "path": "Knight Manager Continued (MP)/common/scripted_guis/kmc_gui.txt",
+            "line": 191
+          },
+          {
+            "path": "Knight Manager Continued (MP)/common/scripted_guis/kmc_gui.txt",
+            "line": 194
+          },
+          {
+            "path": "Knight Manager Continued (MP)/common/scripted_guis/kmc_gui.txt",
+            "line": 197
+          },
+          {
+            "path": "Knight Manager Continued (MP)/common/scripted_triggers/kmc_trigger.txt",
+            "line": 68
+          }
+        ],
+        "kmc_toggle_unlanded_cannot_be_knight": [
+          {
+            "path": "Knight Manager Continued (MP)/common/scripted_guis/kmc_gui.txt",
+            "line": 202
+          }
+        ],
+        "kmc_unlanded_cannot_be_knight": [
+          {
+            "path": "Knight Manager Continued (MP)/common/scripted_guis/kmc_gui.txt",
+            "line": 206
+          },
+          {
+            "path": "Knight Manager Continued (MP)/common/scripted_guis/kmc_gui.txt",
+            "line": 213
+          },
+          {
+            "path": "Knight Manager Continued (MP)/common/scripted_guis/kmc_gui.txt",
+            "line": 216
+          },
+          {
+            "path": "Knight Manager Continued (MP)/common/scripted_guis/kmc_gui.txt",
+            "line": 219
+          },
+          {
+            "path": "Knight Manager Continued (MP)/common/scripted_triggers/kmc_trigger.txt",
+            "line": 72
+          }
+        ],
+        "kmc_toggle_highborn_cannot_be_knight": [
+          {
+            "path": "Knight Manager Continued (MP)/common/scripted_guis/kmc_gui.txt",
+            "line": 224
+          }
+        ],
+        "kmc_highborn_cannot_be_knight": [
+          {
+            "path": "Knight Manager Continued (MP)/common/scripted_guis/kmc_gui.txt",
+            "line": 228
+          },
+          {
+            "path": "Knight Manager Continued (MP)/common/scripted_guis/kmc_gui.txt",
+            "line": 235
+          },
+          {
+            "path": "Knight Manager Continued (MP)/common/scripted_guis/kmc_gui.txt",
+            "line": 238
+          },
+          {
+            "path": "Knight Manager Continued (MP)/common/scripted_guis/kmc_gui.txt",
+            "line": 241
+          },
+          {
+            "path": "Knight Manager Continued (MP)/common/scripted_triggers/kmc_trigger.txt",
+            "line": 76
+          }
+        ],
+        "kmc_toggle_lowborn_cannot_be_knight": [
+          {
+            "path": "Knight Manager Continued (MP)/common/scripted_guis/kmc_gui.txt",
+            "line": 246
+          }
+        ],
+        "kmc_lowborn_cannot_be_knight": [
+          {
+            "path": "Knight Manager Continued (MP)/common/scripted_guis/kmc_gui.txt",
+            "line": 250
+          },
+          {
+            "path": "Knight Manager Continued (MP)/common/scripted_guis/kmc_gui.txt",
+            "line": 257
+          },
+          {
+            "path": "Knight Manager Continued (MP)/common/scripted_guis/kmc_gui.txt",
+            "line": 260
+          },
+          {
+            "path": "Knight Manager Continued (MP)/common/scripted_guis/kmc_gui.txt",
+            "line": 263
+          },
+          {
+            "path": "Knight Manager Continued (MP)/common/scripted_triggers/kmc_trigger.txt",
+            "line": 80
+          }
+        ],
+        "kmc_toggle_landed_cannot_be_knight": [
+          {
+            "path": "Knight Manager Continued (MP)/common/scripted_guis/kmc_gui.txt",
+            "line": 268
+          }
+        ],
+        "kmc_landed_cannot_be_knight": [
+          {
+            "path": "Knight Manager Continued (MP)/common/scripted_guis/kmc_gui.txt",
+            "line": 272
+          },
+          {
+            "path": "Knight Manager Continued (MP)/common/scripted_guis/kmc_gui.txt",
+            "line": 279
+          },
+          {
+            "path": "Knight Manager Continued (MP)/common/scripted_guis/kmc_gui.txt",
+            "line": 282
+          },
+          {
+            "path": "Knight Manager Continued (MP)/common/scripted_guis/kmc_gui.txt",
+            "line": 285
+          },
+          {
+            "path": "Knight Manager Continued (MP)/common/scripted_triggers/kmc_trigger.txt",
+            "line": 86
+          }
+        ],
+        "kmc_toggle_barons_cannot_be_knight": [
+          {
+            "path": "Knight Manager Continued (MP)/common/scripted_guis/kmc_gui.txt",
+            "line": 290
+          }
+        ],
+        "kmc_barons_cannot_be_knight": [
+          {
+            "path": "Knight Manager Continued (MP)/common/scripted_guis/kmc_gui.txt",
+            "line": 294
+          },
+          {
+            "path": "Knight Manager Continued (MP)/common/scripted_guis/kmc_gui.txt",
+            "line": 301
+          },
+          {
+            "path": "Knight Manager Continued (MP)/common/scripted_guis/kmc_gui.txt",
+            "line": 304
+          },
+          {
+            "path": "Knight Manager Continued (MP)/common/scripted_guis/kmc_gui.txt",
+            "line": 307
+          },
+          {
+            "path": "Knight Manager Continued (MP)/common/scripted_triggers/kmc_trigger.txt",
+            "line": 91
+          }
+        ],
+        "kmc_toggle_terrible_fighters_cannot_be_knight": [
+          {
+            "path": "Knight Manager Continued (MP)/common/scripted_guis/kmc_gui.txt",
+            "line": 312
+          }
+        ],
+        "kmc_terrible_fighter_cannot_be_knight": [
+          {
+            "path": "Knight Manager Continued (MP)/common/scripted_guis/kmc_gui.txt",
+            "line": 316
+          },
+          {
+            "path": "Knight Manager Continued (MP)/common/scripted_guis/kmc_gui.txt",
+            "line": 323
+          },
+          {
+            "path": "Knight Manager Continued (MP)/common/scripted_guis/kmc_gui.txt",
+            "line": 326
+          },
+          {
+            "path": "Knight Manager Continued (MP)/common/scripted_guis/kmc_gui.txt",
+            "line": 329
+          },
+          {
+            "path": "Knight Manager Continued (MP)/common/scripted_triggers/kmc_trigger.txt",
+            "line": 95
+          }
+        ],
+        "kmc_toggle_poor_fighters_cannot_be_knight": [
+          {
+            "path": "Knight Manager Continued (MP)/common/scripted_guis/kmc_gui.txt",
+            "line": 334
+          }
+        ],
+        "kmc_poor_fighter_cannot_be_knight": [
+          {
+            "path": "Knight Manager Continued (MP)/common/scripted_guis/kmc_gui.txt",
+            "line": 338
+          },
+          {
+            "path": "Knight Manager Continued (MP)/common/scripted_guis/kmc_gui.txt",
+            "line": 345
+          },
+          {
+            "path": "Knight Manager Continued (MP)/common/scripted_guis/kmc_gui.txt",
+            "line": 348
+          },
+          {
+            "path": "Knight Manager Continued (MP)/common/scripted_guis/kmc_gui.txt",
+            "line": 351
+          },
+          {
+            "path": "Knight Manager Continued (MP)/common/scripted_triggers/kmc_trigger.txt",
+            "line": 100
+          }
+        ],
+        "kmc_toggle_average_fighters_cannot_be_knight": [
+          {
+            "path": "Knight Manager Continued (MP)/common/scripted_guis/kmc_gui.txt",
+            "line": 356
+          }
+        ],
+        "kmc_average_fighter_cannot_be_knight": [
+          {
+            "path": "Knight Manager Continued (MP)/common/scripted_guis/kmc_gui.txt",
+            "line": 360
+          },
+          {
+            "path": "Knight Manager Continued (MP)/common/scripted_guis/kmc_gui.txt",
+            "line": 367
+          },
+          {
+            "path": "Knight Manager Continued (MP)/common/scripted_guis/kmc_gui.txt",
+            "line": 370
+          },
+          {
+            "path": "Knight Manager Continued (MP)/common/scripted_guis/kmc_gui.txt",
+            "line": 373
+          },
+          {
+            "path": "Knight Manager Continued (MP)/common/scripted_triggers/kmc_trigger.txt",
+            "line": 105
+          }
+        ],
+        "kmc_toggle_good_fighters_cannot_be_knight": [
+          {
+            "path": "Knight Manager Continued (MP)/common/scripted_guis/kmc_gui.txt",
+            "line": 378
+          }
+        ],
+        "kmc_good_fighter_cannot_be_knight": [
+          {
+            "path": "Knight Manager Continued (MP)/common/scripted_guis/kmc_gui.txt",
+            "line": 382
+          },
+          {
+            "path": "Knight Manager Continued (MP)/common/scripted_guis/kmc_gui.txt",
+            "line": 389
+          },
+          {
+            "path": "Knight Manager Continued (MP)/common/scripted_guis/kmc_gui.txt",
+            "line": 392
+          },
+          {
+            "path": "Knight Manager Continued (MP)/common/scripted_guis/kmc_gui.txt",
+            "line": 395
+          },
+          {
+            "path": "Knight Manager Continued (MP)/common/scripted_triggers/kmc_trigger.txt",
+            "line": 110
+          }
+        ],
+        "kmc_toggle_excellent_fighters_cannot_be_knight": [
+          {
+            "path": "Knight Manager Continued (MP)/common/scripted_guis/kmc_gui.txt",
+            "line": 400
+          }
+        ],
+        "kmc_excellent_fighter_cannot_be_knight": [
+          {
+            "path": "Knight Manager Continued (MP)/common/scripted_guis/kmc_gui.txt",
+            "line": 404
+          },
+          {
+            "path": "Knight Manager Continued (MP)/common/scripted_guis/kmc_gui.txt",
+            "line": 411
+          },
+          {
+            "path": "Knight Manager Continued (MP)/common/scripted_guis/kmc_gui.txt",
+            "line": 414
+          },
+          {
+            "path": "Knight Manager Continued (MP)/common/scripted_guis/kmc_gui.txt",
+            "line": 417
+          },
+          {
+            "path": "Knight Manager Continued (MP)/common/scripted_triggers/kmc_trigger.txt",
+            "line": 114
+          }
+        ],
+        "kmc_toggle_wounded_cannot_be_knight": [
+          {
+            "path": "Knight Manager Continued (MP)/common/scripted_guis/kmc_gui.txt",
+            "line": 422
+          }
+        ],
+        "kmc_wounded_cannot_be_knight": [
+          {
+            "path": "Knight Manager Continued (MP)/common/scripted_guis/kmc_gui.txt",
+            "line": 426
+          },
+          {
+            "path": "Knight Manager Continued (MP)/common/scripted_guis/kmc_gui.txt",
+            "line": 433
+          },
+          {
+            "path": "Knight Manager Continued (MP)/common/scripted_guis/kmc_gui.txt",
+            "line": 436
+          },
+          {
+            "path": "Knight Manager Continued (MP)/common/scripted_guis/kmc_gui.txt",
+            "line": 439
+          },
+          {
+            "path": "Knight Manager Continued (MP)/common/scripted_triggers/kmc_trigger.txt",
+            "line": 118
+          }
+        ],
+        "kmc_toggle_manually_allowed": [
+          {
+            "path": "Knight Manager Continued (MP)/common/scripted_guis/kmc_gui.txt",
+            "line": 448
+          }
+        ],
+        "kmc_manually_allowed": [
+          {
+            "path": "Knight Manager Continued (MP)/common/scripted_guis/kmc_gui.txt",
+            "line": 452
+          },
+          {
+            "path": "Knight Manager Continued (MP)/common/scripted_guis/kmc_gui.txt",
+            "line": 458
+          },
+          {
+            "path": "Knight Manager Continued (MP)/common/scripted_guis/kmc_gui.txt",
+            "line": 460
+          },
+          {
+            "path": "Knight Manager Continued (MP)/common/scripted_guis/kmc_gui.txt",
+            "line": 463
+          },
+          {
+            "path": "Knight Manager Continued (MP)/common/scripted_triggers/kmc_trigger.txt",
+            "line": 12
+          }
+        ]
+      },
+      "status": "learning-only; excluded from updates"
+    },
+    {
+      "variant": "test",
+      "files": [
+        {
+          "path": "test/common/on_action/knight_manager_on_actions.txt",
+          "sha256": "75055728a854ad4358d1e38d23f4984fee73075a085b32a7c74091b6c022bd78",
+          "bytes": 441,
+          "full_file_read": true,
+          "decode_warning": false,
+          "definitions": [
+            {
+              "key": "on_game_start",
+              "line": 3
+            },
+            {
+              "key": "on_KnightManager_start",
+              "line": 8
+            }
+          ]
+        },
+        {
+          "path": "test/common/scripted_guis/knight_manager_gui.txt",
+          "sha256": "115e182f4218c6df1d9c19b72b595b3326590755fc6b40d179f59b327fcb9d46",
+          "bytes": 6057,
+          "full_file_read": true,
+          "decode_warning": false,
+          "definitions": [
+            {
+              "key": "knight_manager_toggle_kin_cannot_be_knight",
+              "line": 1
+            },
+            {
+              "key": "knight_manager_toggle_children_cannot_be_knight",
+              "line": 22
+            },
+            {
+              "key": "knight_manager_toggle_family_spouses_cannot_be_knight",
+              "line": 44
+            },
+            {
+              "key": "knight_manager_toggle_lover_cannot_be_knight",
+              "line": 65
+            },
+            {
+              "key": "knight_manager_toggle_councillors_cannot_be_knight",
+              "line": 86
+            },
+            {
+              "key": "knight_manager_toggle_vassals_cannot_be_knight",
+              "line": 108
+            },
+            {
+              "key": "knight_manager_toggle_awful_fighters_cannot_be_knight",
+              "line": 130
+            },
+            {
+              "key": "knight_manager_toggle_bad_fighters_cannot_be_knight",
+              "line": 152
+            },
+            {
+              "key": "knight_manager_toggle_player_heir_cannot_be_knight",
+              "line": 174
+            },
+            {
+              "key": "knight_manager_toggle_manually_allowed",
+              "line": 197
+            }
+          ]
+        },
+        {
+          "path": "test/common/scripted_triggers/knighthood_trigger.txt",
+          "sha256": "e26b33560d2bfd1ac7a7dbd09496544f927814e5a45deac547f60effa1427e73",
+          "bytes": 4085,
+          "full_file_read": true,
+          "decode_warning": false,
+          "definitions": [
+            {
+              "key": "can_be_knight_trigger",
+              "line": 1
+            }
+          ]
+        },
+        {
+          "path": "test/descriptor.mod",
+          "sha256": "b94d26d2b995c9a8bee54585427362cb5b344ab48c5f6a1b52bdb22428928bb0",
+          "bytes": 69,
+          "full_file_read": true,
+          "decode_warning": false,
+          "definitions": [
+            {
+              "key": "version",
+              "line": 1
+            },
+            {
+              "key": "tags",
+              "line": 2
+            },
+            {
+              "key": "name",
+              "line": 5
+            },
+            {
+              "key": "supported_version",
+              "line": 6
+            }
+          ]
+        },
+        {
+          "path": "test/events/knight_manager_events.txt",
+          "sha256": "515338e2ea435572b93b9cbe9dc0d4c13d6c99a19e8527c61c15740c951848be",
+          "bytes": 352,
+          "full_file_read": true,
+          "decode_warning": false,
+          "definitions": [
+            {
+              "key": "namespace",
+              "line": 4
+            },
+            {
+              "key": "knight_manager_mod_error_suppression.0001",
+              "line": 6
+            }
+          ]
+        },
+        {
+          "path": "test/gui/window_knights.gui",
+          "sha256": "bbae86490afac222608c0db5d6b64987c1aa045fe365f55a1a2d9d2e7fd0d2b9",
+          "bytes": 23450,
+          "full_file_read": true,
+          "decode_warning": false,
+          "definitions": [
+            {
+              "key": "window",
+              "line": 5
+            }
+          ]
+        },
+        {
+          "path": "test/localization/english/knight_manager_mod_l_english.yml",
+          "sha256": "28f0efac8919409d0c2cd5f6e98c431b5b90d71807b931864ee662c959c960b3",
+          "bytes": 2516,
+          "full_file_read": true,
+          "decode_warning": false,
+          "definitions": []
+        },
+        {
+          "path": "test/localization/french/knight_manager_mod_l_french.yml",
+          "sha256": "71ace607c29875d0b036e32fbf2b130433234c53e9ba6023d8b0161c015c069c",
+          "bytes": 2573,
+          "full_file_read": true,
+          "decode_warning": false,
+          "definitions": []
+        },
+        {
+          "path": "test/localization/german/knight_manager_mod_l_german.yml",
+          "sha256": "cc6cccc95738e86a027a6daf30137199f7c852249feadd2d5504dfea96f7d802",
+          "bytes": 2605,
+          "full_file_read": true,
+          "decode_warning": false,
+          "definitions": []
+        },
+        {
+          "path": "test/localization/korean/knight_manager_mod_l_korean.yml",
+          "sha256": "9b4d802f78da27786b8581667cb5d9d74485df045c63b7521cf4b5301ae753d4",
+          "bytes": 2346,
+          "full_file_read": true,
+          "decode_warning": false,
+          "definitions": []
+        },
+        {
+          "path": "test/localization/russian/knight_manager_mod_l_russian.yml",
+          "sha256": "8604a2d9ed00aa8a36a74229d75b14e6d2ab01afd1b84c30921587892cf60ba1",
+          "bytes": 3286,
+          "full_file_read": true,
+          "decode_warning": false,
+          "definitions": []
+        },
+        {
+          "path": "test/localization/simp_chinese/knight_manager_mod_l_simp_chinese.yml",
+          "sha256": "1088fef9f5d8a9f4bb9d3e1d97c0cac5d44a6f79c4bc4ce323244e059c117cad",
+          "bytes": 2105,
+          "full_file_read": true,
+          "decode_warning": false,
+          "definitions": []
+        },
+        {
+          "path": "test/localization/spanish/knight_manager_mod_l_spanish.yml",
+          "sha256": "a2b2c3210438eaef14c205755ebdbdcd628aa827fc669686242a59b5ffc9f11c",
+          "bytes": 2399,
+          "full_file_read": true,
+          "decode_warning": false,
+          "definitions": []
+        }
+      ],
+      "state_tokens": {
+        "KnightManager_is_loaded": [
+          {
+            "path": "test/common/on_action/knight_manager_on_actions.txt",
+            "line": 11
+          },
+          {
+            "path": "test/events/knight_manager_events.txt",
+            "line": 10
+          }
+        ],
+        "knight_manager_toggle_kin_cannot_be_knight": [
+          {
+            "path": "test/common/scripted_guis/knight_manager_gui.txt",
+            "line": 1
+          },
+          {
+            "path": "test/gui/window_knights.gui",
+            "line": 314
+          }
+        ],
+        "knight_manager_kin_cannot_be_knight": [
+          {
+            "path": "test/common/scripted_guis/knight_manager_gui.txt",
+            "line": 5
+          },
+          {
+            "path": "test/common/scripted_guis/knight_manager_gui.txt",
+            "line": 12
+          },
+          {
+            "path": "test/common/scripted_guis/knight_manager_gui.txt",
+            "line": 15
+          },
+          {
+            "path": "test/common/scripted_guis/knight_manager_gui.txt",
+            "line": 18
+          },
+          {
+            "path": "test/common/scripted_triggers/knighthood_trigger.txt",
+            "line": 56
+          }
+        ],
+        "knight_manager_toggle_children_cannot_be_knight": [
+          {
+            "path": "test/common/scripted_guis/knight_manager_gui.txt",
+            "line": 22
+          },
+          {
+            "path": "test/gui/window_knights.gui",
+            "line": 332
+          }
+        ],
+        "knight_manager_children_cannot_be_knight": [
+          {
+            "path": "test/common/scripted_guis/knight_manager_gui.txt",
+            "line": 26
+          },
+          {
+            "path": "test/common/scripted_guis/knight_manager_gui.txt",
+            "line": 33
+          },
+          {
+            "path": "test/common/scripted_guis/knight_manager_gui.txt",
+            "line": 36
+          },
+          {
+            "path": "test/common/scripted_guis/knight_manager_gui.txt",
+            "line": 39
+          },
+          {
+            "path": "test/common/scripted_triggers/knighthood_trigger.txt",
+            "line": 67
+          }
+        ],
+        "knight_manager_toggle_family_spouses_cannot_be_knight": [
+          {
+            "path": "test/common/scripted_guis/knight_manager_gui.txt",
+            "line": 44
+          },
+          {
+            "path": "test/gui/window_knights.gui",
+            "line": 350
+          }
+        ],
+        "knight_manager_family_spouses_cannot_be_knight": [
+          {
+            "path": "test/common/scripted_guis/knight_manager_gui.txt",
+            "line": 48
+          },
+          {
+            "path": "test/common/scripted_guis/knight_manager_gui.txt",
+            "line": 55
+          },
+          {
+            "path": "test/common/scripted_guis/knight_manager_gui.txt",
+            "line": 58
+          },
+          {
+            "path": "test/common/scripted_guis/knight_manager_gui.txt",
+            "line": 61
+          },
+          {
+            "path": "test/common/scripted_triggers/knighthood_trigger.txt",
+            "line": 87
+          }
+        ],
+        "knight_manager_toggle_lover_cannot_be_knight": [
+          {
+            "path": "test/common/scripted_guis/knight_manager_gui.txt",
+            "line": 65
+          },
+          {
+            "path": "test/gui/window_knights.gui",
+            "line": 390
+          }
+        ],
+        "knight_manager_lover_cannot_be_knight": [
+          {
+            "path": "test/common/scripted_guis/knight_manager_gui.txt",
+            "line": 69
+          },
+          {
+            "path": "test/common/scripted_guis/knight_manager_gui.txt",
+            "line": 76
+          },
+          {
+            "path": "test/common/scripted_guis/knight_manager_gui.txt",
+            "line": 79
+          },
+          {
+            "path": "test/common/scripted_guis/knight_manager_gui.txt",
+            "line": 82
+          },
+          {
+            "path": "test/common/scripted_triggers/knighthood_trigger.txt",
+            "line": 96
+          }
+        ],
+        "knight_manager_toggle_councillors_cannot_be_knight": [
+          {
+            "path": "test/common/scripted_guis/knight_manager_gui.txt",
+            "line": 86
+          },
+          {
+            "path": "test/gui/window_knights.gui",
+            "line": 372
+          }
+        ],
+        "knight_manager_councillors_cannot_be_knight": [
+          {
+            "path": "test/common/scripted_guis/knight_manager_gui.txt",
+            "line": 90
+          },
+          {
+            "path": "test/common/scripted_guis/knight_manager_gui.txt",
+            "line": 97
+          },
+          {
+            "path": "test/common/scripted_guis/knight_manager_gui.txt",
+            "line": 100
+          },
+          {
+            "path": "test/common/scripted_guis/knight_manager_gui.txt",
+            "line": 103
+          },
+          {
+            "path": "test/common/scripted_triggers/knighthood_trigger.txt",
+            "line": 116
+          }
+        ],
+        "knight_manager_toggle_vassals_cannot_be_knight": [
+          {
+            "path": "test/common/scripted_guis/knight_manager_gui.txt",
+            "line": 108
+          },
+          {
+            "path": "test/gui/window_knights.gui",
+            "line": 467
+          }
+        ],
+        "knight_manager_vassals_cannot_be_knight": [
+          {
+            "path": "test/common/scripted_guis/knight_manager_gui.txt",
+            "line": 112
+          },
+          {
+            "path": "test/common/scripted_guis/knight_manager_gui.txt",
+            "line": 119
+          },
+          {
+            "path": "test/common/scripted_guis/knight_manager_gui.txt",
+            "line": 122
+          },
+          {
+            "path": "test/common/scripted_guis/knight_manager_gui.txt",
+            "line": 125
+          },
+          {
+            "path": "test/common/scripted_triggers/knighthood_trigger.txt",
+            "line": 60
+          }
+        ],
+        "knight_manager_toggle_awful_fighters_cannot_be_knight": [
+          {
+            "path": "test/common/scripted_guis/knight_manager_gui.txt",
+            "line": 130
+          },
+          {
+            "path": "test/gui/window_knights.gui",
+            "line": 431
+          }
+        ],
+        "knight_manager_awful_fighter_cannot_be_knight": [
+          {
+            "path": "test/common/scripted_guis/knight_manager_gui.txt",
+            "line": 134
+          },
+          {
+            "path": "test/common/scripted_guis/knight_manager_gui.txt",
+            "line": 141
+          },
+          {
+            "path": "test/common/scripted_guis/knight_manager_gui.txt",
+            "line": 144
+          },
+          {
+            "path": "test/common/scripted_guis/knight_manager_gui.txt",
+            "line": 147
+          },
+          {
+            "path": "test/common/scripted_triggers/knighthood_trigger.txt",
+            "line": 105
+          }
+        ],
+        "knight_manager_toggle_bad_fighters_cannot_be_knight": [
+          {
+            "path": "test/common/scripted_guis/knight_manager_gui.txt",
+            "line": 152
+          },
+          {
+            "path": "test/gui/window_knights.gui",
+            "line": 449
+          }
+        ],
+        "knight_manager_bad_fighter_cannot_be_knight": [
+          {
+            "path": "test/common/scripted_guis/knight_manager_gui.txt",
+            "line": 156
+          },
+          {
+            "path": "test/common/scripted_guis/knight_manager_gui.txt",
+            "line": 163
+          },
+          {
+            "path": "test/common/scripted_guis/knight_manager_gui.txt",
+            "line": 166
+          },
+          {
+            "path": "test/common/scripted_guis/knight_manager_gui.txt",
+            "line": 169
+          },
+          {
+            "path": "test/common/scripted_triggers/knighthood_trigger.txt",
+            "line": 101
+          }
+        ],
+        "knight_manager_toggle_player_heir_cannot_be_knight": [
+          {
+            "path": "test/common/scripted_guis/knight_manager_gui.txt",
+            "line": 174
+          },
+          {
+            "path": "test/gui/window_knights.gui",
+            "line": 408
+          }
+        ],
+        "knight_manager_player_heir_cannot_be_knight": [
+          {
+            "path": "test/common/scripted_guis/knight_manager_gui.txt",
+            "line": 178
+          },
+          {
+            "path": "test/common/scripted_guis/knight_manager_gui.txt",
+            "line": 185
+          },
+          {
+            "path": "test/common/scripted_guis/knight_manager_gui.txt",
+            "line": 188
+          },
+          {
+            "path": "test/common/scripted_guis/knight_manager_gui.txt",
+            "line": 191
+          },
+          {
+            "path": "test/common/scripted_triggers/knighthood_trigger.txt",
+            "line": 120
+          }
+        ],
+        "knight_manager_toggle_manually_allowed": [
+          {
+            "path": "test/common/scripted_guis/knight_manager_gui.txt",
+            "line": 197
+          },
+          {
+            "path": "test/gui/window_knights.gui",
+            "line": 648
+          }
+        ],
+        "knight_manager_manually_allowed": [
+          {
+            "path": "test/common/scripted_guis/knight_manager_gui.txt",
+            "line": 201
+          },
+          {
+            "path": "test/common/scripted_guis/knight_manager_gui.txt",
+            "line": 207
+          },
+          {
+            "path": "test/common/scripted_guis/knight_manager_gui.txt",
+            "line": 209
+          },
+          {
+            "path": "test/common/scripted_guis/knight_manager_gui.txt",
+            "line": 212
+          },
+          {
+            "path": "test/common/scripted_triggers/knighthood_trigger.txt",
+            "line": 52
+          }
+        ],
+        "knight_manager_mod_error_suppression": [
+          {
+            "path": "test/events/knight_manager_events.txt",
+            "line": 4
+          },
+          {
+            "path": "test/events/knight_manager_events.txt",
+            "line": 6
+          }
+        ],
+        "knight_manager_settings": [
+          {
+            "path": "test/gui/window_knights.gui",
+            "line": 300
+          }
+        ],
+        "knight_manager_first_row": [
+          {
+            "path": "test/gui/window_knights.gui",
+            "line": 309
+          }
+        ],
+        "knight_manager_second_row": [
+          {
+            "path": "test/gui/window_knights.gui",
+            "line": 367
+          }
+        ],
+        "knight_manager_third_row": [
+          {
+            "path": "test/gui/window_knights.gui",
+            "line": 426
+          }
+        ],
+        "knight_manager_mod_vassals_tooltip": [
+          {
+            "path": "test/gui/window_knights.gui",
+            "line": 470
+          },
+          {
+            "path": "test/localization/english/knight_manager_mod_l_english.yml",
+            "line": 31
+          },
+          {
+            "path": "test/localization/french/knight_manager_mod_l_french.yml",
+            "line": 31
+          },
+          {
+            "path": "test/localization/german/knight_manager_mod_l_german.yml",
+            "line": 31
+          },
+          {
+            "path": "test/localization/korean/knight_manager_mod_l_korean.yml",
+            "line": 35
+          },
+          {
+            "path": "test/localization/russian/knight_manager_mod_l_russian.yml",
+            "line": 35
+          },
+          {
+            "path": "test/localization/simp_chinese/knight_manager_mod_l_simp_chinese.yml",
+            "line": 35
+          },
+          {
+            "path": "test/localization/spanish/knight_manager_mod_l_spanish.yml",
+            "line": 34
+          }
+        ],
+        "knight_manager_mod_vassals_label": [
+          {
+            "path": "test/gui/window_knights.gui",
+            "line": 479
+          },
+          {
+            "path": "test/localization/english/knight_manager_mod_l_english.yml",
+            "line": 30
+          },
+          {
+            "path": "test/localization/french/knight_manager_mod_l_french.yml",
+            "line": 30
+          },
+          {
+            "path": "test/localization/german/knight_manager_mod_l_german.yml",
+            "line": 30
+          },
+          {
+            "path": "test/localization/korean/knight_manager_mod_l_korean.yml",
+            "line": 34
+          },
+          {
+            "path": "test/localization/russian/knight_manager_mod_l_russian.yml",
+            "line": 34
+          },
+          {
+            "path": "test/localization/simp_chinese/knight_manager_mod_l_simp_chinese.yml",
+            "line": 34
+          },
+          {
+            "path": "test/localization/spanish/knight_manager_mod_l_spanish.yml",
+            "line": 33
+          }
+        ]
+      },
+      "status": "learning-only; excluded from updates"
+    }
+  ],
+  "native_full_read_callers": [
+    {
+      "path": "E:\\ProgrammeE\\Steam\\steamapps\\common\\Crusader Kings III\\game\\common\\character_interactions\\00_courtier_and_guest_interactions.txt",
+      "sha256": "c7b6dfffe786bab9358b91a11d9601ca77dacc43f390ba872dfb2104f2fb1cc6",
+      "full_file_read": true,
+      "lines": [
+        299
+      ]
+    },
+    {
+      "path": "E:\\ProgrammeE\\Steam\\steamapps\\common\\Crusader Kings III\\game\\common\\character_interactions\\00_dynast_interactions.txt",
+      "sha256": "12fc20966bc43fa62026359d46c87cd11400ccdeda026def1b125a124a613607",
+      "full_file_read": true,
+      "lines": [
+        2046,
+        2054
+      ]
+    },
+    {
+      "path": "E:\\ProgrammeE\\Steam\\steamapps\\common\\Crusader Kings III\\game\\common\\character_interactions\\00_religious_interactions.txt",
+      "sha256": "63afe4538725929fb20bc20cbbbbc86705dba55a384755949431419265db0ac6",
+      "full_file_read": true,
+      "lines": [
+        4368
+      ]
+    },
+    {
+      "path": "E:\\ProgrammeE\\Steam\\steamapps\\common\\Crusader Kings III\\game\\common\\courtier_guest_management\\guest_management.txt",
+      "sha256": "4c2ebabb2d36387937a825ba88b0f866a04a4d89ff5cf9ec626a1b2909b18b02",
+      "full_file_read": true,
+      "lines": [
+        802
+      ]
+    },
+    {
+      "path": "E:\\ProgrammeE\\Steam\\steamapps\\common\\Crusader Kings III\\game\\common\\culture\\traditions\\00_combat_traditions.txt",
+      "sha256": "a8bc43161e50c2763e9871952072f3dc558a99d05f5c0b01d052f00962baa7c5",
+      "full_file_read": true,
+      "lines": [
+        970
+      ]
+    },
+    {
+      "path": "E:\\ProgrammeE\\Steam\\steamapps\\common\\Crusader Kings III\\game\\common\\culture\\traditions\\01_fp1_traditions.txt",
+      "sha256": "45904b2bc569de9af2d57606e220f30d36d4e206a5787759b3335723dd54d53a",
+      "full_file_read": true,
+      "lines": [
+        219,
+        559,
+        594
+      ]
+    },
+    {
+      "path": "E:\\ProgrammeE\\Steam\\steamapps\\common\\Crusader Kings III\\game\\common\\customizable_localization\\00_character_descriptions.txt",
+      "sha256": "1a4bb591691c3b331cab9a0008e5f9c7b392c8a19956a455bc3f2fc84bcaac9c",
+      "full_file_read": true,
+      "lines": [
+        283,
+        294,
+        305,
+        1093,
+        1104,
+        1115,
+        1966,
+        2908,
+        3787,
+        3798,
+        3809,
+        4648,
+        5527,
+        5538,
+        5549,
+        6388
+      ]
+    },
+    {
+      "path": "E:\\ProgrammeE\\Steam\\steamapps\\common\\Crusader Kings III\\game\\common\\customizable_localization\\00_compliment_custom_loc.txt",
+      "sha256": "0708f9a1c19f7b0635f8439a79a9f95f8d5679a64d60463f9d46e1b3d84b91c1",
+      "full_file_read": true,
+      "lines": [
+        283,
+        294,
+        982,
+        993,
+        1766,
+        1776,
+        1786,
+        1820,
+        1828,
+        2539,
+        2550
+      ]
+    },
+    {
+      "path": "E:\\ProgrammeE\\Steam\\steamapps\\common\\Crusader Kings III\\game\\common\\customizable_localization\\00_insult_custom_loc.txt",
+      "sha256": "2792e539320e92f51d6e2ea2fa5e82de88e07528adde0af027e519340cbaaf72",
+      "full_file_read": true,
+      "lines": [
+        596,
+        609,
+        648,
+        879,
+        3617
+      ]
+    },
+    {
+      "path": "E:\\ProgrammeE\\Steam\\steamapps\\common\\Crusader Kings III\\game\\common\\customizable_localization\\99_ru_custom_loc.txt",
+      "sha256": "cfa361e70cdad8c041378d3fdf6d494e45da9dbf788f9a18152f89d89c8ca0a7",
+      "full_file_read": true,
+      "lines": [
+        1169,
+        1181,
+        1193,
+        2108,
+        3056,
+        3068,
+        3080,
+        3995
+      ]
+    },
+    {
+      "path": "E:\\ProgrammeE\\Steam\\steamapps\\common\\Crusader Kings III\\game\\common\\scripted_character_templates\\00_priest_character_template.txt",
+      "sha256": "854ca6eb38d798a0cab7fb88a5d1247dfd71bd2ef57e535ead0a0d32834c1f33",
+      "full_file_read": true,
+      "lines": [
+        1140
+      ]
+    },
+    {
+      "path": "E:\\ProgrammeE\\Steam\\steamapps\\common\\Crusader Kings III\\game\\common\\scripted_rules\\00_rules.txt",
+      "sha256": "c7ba2ae71e4461e88c6d5c86d8fc15fa7ccc73edae1e28fb3b65f0e362c4560f",
+      "full_file_read": true,
+      "lines": [
+        142,
+        145
+      ]
+    },
+    {
+      "path": "E:\\ProgrammeE\\Steam\\steamapps\\common\\Crusader Kings III\\game\\common\\scripted_triggers\\00_courtier_guest_management_triggers.txt",
+      "sha256": "6ff4bc8350d2f21372967e98cacbc4e1d367745f70e649a4f3ee25bdbd131382",
+      "full_file_read": true,
+      "lines": [
+        667
+      ]
+    },
+    {
+      "path": "E:\\ProgrammeE\\Steam\\steamapps\\common\\Crusader Kings III\\game\\common\\scripted_triggers\\00_war_and_peace_triggers.txt",
+      "sha256": "cbe25f04d61a2f2899e29b15cd6aeffd1ffc33154655c965fd441f3727183545",
+      "full_file_read": true,
+      "lines": [
+        499,
+        539,
+        544
+      ]
+    },
+    {
+      "path": "E:\\ProgrammeE\\Steam\\steamapps\\common\\Crusader Kings III\\game\\common\\scripted_triggers\\04_ep2_accolade_triggers.txt",
+      "sha256": "107cfa2332be501004bd95b66ea3311e4dd2c76128075865ace6154bed209051",
+      "full_file_read": true,
+      "lines": [
+        1102
+      ]
+    },
+    {
+      "path": "E:\\ProgrammeE\\Steam\\steamapps\\common\\Crusader Kings III\\game\\events\\activities\\hold_court_activity\\hold_court_events_general.txt",
+      "sha256": "eb03041cf3b2d0ea40f4476572d44c6b0f5af0fb909ae0d5b7fcf7e790feeef5",
+      "full_file_read": true,
+      "lines": [
+        13954
+      ]
+    },
+    {
+      "path": "E:\\ProgrammeE\\Steam\\steamapps\\common\\Crusader Kings III\\game\\events\\activities\\hunt_activity\\hunt_events.txt",
+      "sha256": "dcdf356d71cfb7b135a84caaf1503b018807ab8a492065c386c08bd500d426e4",
+      "full_file_read": true,
+      "lines": [
+        2534,
+        2541,
+        2684,
+        2691
+      ]
+    },
+    {
+      "path": "E:\\ProgrammeE\\Steam\\steamapps\\common\\Crusader Kings III\\game\\events\\activities\\tournaments\\jason_locale_events.txt",
+      "sha256": "6f42f440362a420a3c7f4824657756f51ee75eb71f609cb58626055cd61f5f88",
+      "full_file_read": true,
+      "lines": [
+        3554,
+        3608
+      ]
+    },
+    {
+      "path": "E:\\ProgrammeE\\Steam\\steamapps\\common\\Crusader Kings III\\game\\events\\activities\\tournaments\\passive_tournament_events_oltner.txt",
+      "sha256": "3d7a9f0153e75c0a39ae3d0a744231bd365fe95ab0ce2ad65daef36d2a986626",
+      "full_file_read": true,
+      "lines": [
+        169,
+        203,
+        214,
+        470,
+        479,
+        493,
+        1373,
+        1382,
+        1396,
+        1411
+      ]
+    },
+    {
+      "path": "E:\\ProgrammeE\\Steam\\steamapps\\common\\Crusader Kings III\\game\\events\\activities\\tournaments\\tournament_events.txt",
+      "sha256": "f23953a69c51060e4d82c94a3ad970a0f7525aaa0181a11b788ede1e2d39a11e",
+      "full_file_read": true,
+      "lines": [
+        4710,
+        8656,
+        8689
+      ]
+    },
+    {
+      "path": "E:\\ProgrammeE\\Steam\\steamapps\\common\\Crusader Kings III\\game\\events\\councillor_task_events\\marshal_task_events.txt",
+      "sha256": "baf176b76b359fe8d11ccd70c4642c2377812e7bd22b2ef84b1ba2fe8fe6a3dd",
+      "full_file_read": true,
+      "lines": [
+        544
+      ]
+    },
+    {
+      "path": "E:\\ProgrammeE\\Steam\\steamapps\\common\\Crusader Kings III\\game\\events\\court_events\\court_events_general.txt",
+      "sha256": "f0b24362480e0aec06a18f156a40836ad8ef4e203c9df80ac62618dbb072d1fb",
+      "full_file_read": true,
+      "lines": [
+        12743
+      ]
+    },
+    {
+      "path": "E:\\ProgrammeE\\Steam\\steamapps\\common\\Crusader Kings III\\game\\events\\decisions_events\\mpo_greatest_of_khans_events.txt",
+      "sha256": "5fa82b418e2b06d7e0f5d795a2df86e5164911efed4c7a835393aab343e642ac",
+      "full_file_read": true,
+      "lines": [
+        223
+      ]
+    },
+    {
+      "path": "E:\\ProgrammeE\\Steam\\steamapps\\common\\Crusader Kings III\\game\\events\\diarchy_events\\diarchy_events.txt",
+      "sha256": "0246fb9cfda58071100779adca464da2f17ed30bb2d60adc8657d68353595337",
+      "full_file_read": true,
+      "lines": [
+        6213,
+        7513
+      ]
+    },
+    {
+      "path": "E:\\ProgrammeE\\Steam\\steamapps\\common\\Crusader Kings III\\game\\events\\dlc\\ep2\\ep2_tournament_events.txt",
+      "sha256": "b2b55ff40d119808b0e1a0fe1b9de6a47263569b3dcfc9d0a01c76bfeb208206",
+      "full_file_read": true,
+      "lines": [
+        10053
+      ]
+    },
+    {
+      "path": "E:\\ProgrammeE\\Steam\\steamapps\\common\\Crusader Kings III\\game\\events\\dlc\\fp1\\fp1_yearly_events_oltner.txt",
+      "sha256": "75f94ebfdeb02d1522af8b10366748191563784b51b425e9d2b7265491e0b88a",
+      "full_file_read": true,
+      "lines": [
+        31
+      ]
+    },
+    {
+      "path": "E:\\ProgrammeE\\Steam\\steamapps\\common\\Crusader Kings III\\game\\events\\dlc\\fp3\\fp3_clan_events_ola.txt",
+      "sha256": "38d22d38f5e8b3d0b7a0a6bbb1a87fa5984fcacc5374230130d7e4a3321c95ce",
+      "full_file_read": true,
+      "lines": [
+        1443
+      ]
+    },
+    {
+      "path": "E:\\ProgrammeE\\Steam\\steamapps\\common\\Crusader Kings III\\game\\events\\religion_events\\holy_order_events.txt",
+      "sha256": "f4820ff47c6edd0e4d3723ae14f56cd3374846f7f3f5b4843c3810e2450b4622",
+      "full_file_read": true,
+      "lines": [
+        559,
+        1694
+      ]
+    },
+    {
+      "path": "E:\\ProgrammeE\\Steam\\steamapps\\common\\Crusader Kings III\\game\\events\\scheme_events\\court_scheme\\court_scheme_ongoing_events.txt",
+      "sha256": "bca7de9ecc15c5f6a87720660ed246ac7a8dcb7ef916a09eaa9b605ca77e0b76",
+      "full_file_read": true,
+      "lines": [
+        94
+      ]
+    },
+    {
+      "path": "E:\\ProgrammeE\\Steam\\steamapps\\common\\Crusader Kings III\\game\\events\\scheme_events\\intrigue_scheme_ongoing_events.txt",
+      "sha256": "d795a4d696e16764e1f13475c8c883bf25598cbbbb086eb3cf5a1f38e3cfcb90",
+      "full_file_read": true,
+      "lines": [
+        1768
+      ]
+    },
+    {
+      "path": "E:\\ProgrammeE\\Steam\\steamapps\\common\\Crusader Kings III\\game\\events\\scheme_events\\learn_language_scheme\\learn_language_ongoing_events.txt",
+      "sha256": "7486e055a87faf1386a45a901ee315198be70d972fc7e2c9c4b426cf25b93a56",
+      "full_file_read": true,
+      "lines": [
+        2860
+      ]
+    },
+    {
+      "path": "E:\\ProgrammeE\\Steam\\steamapps\\common\\Crusader Kings III\\game\\events\\scheme_events\\seduce_scheme\\seduce_ongoing_events.txt",
+      "sha256": "fa560b67066ebe5837071b4bcf8e8ba5267585e6ce7e87c046f3ae4064df13ba",
+      "full_file_read": true,
+      "lines": [
+        6251,
+        6254
+      ]
+    },
+    {
+      "path": "E:\\ProgrammeE\\Steam\\steamapps\\common\\Crusader Kings III\\game\\events\\scheme_events\\study_faith_scheme\\study_faith_ongoing_events.txt",
+      "sha256": "296eae4ea2dc750a4687e596a0d458a77aaac5846f55f3cb52368f11d9235503",
+      "full_file_read": true,
+      "lines": [
+        3354
+      ]
+    },
+    {
+      "path": "E:\\ProgrammeE\\Steam\\steamapps\\common\\Crusader Kings III\\game\\events\\scheme_events\\tgp_governor_contract_events_tova.txt",
+      "sha256": "8dd2d3d7e118e63d2fdafed6b6c9f5cdf356d2aaaba3e92bb2a1084419a03b72",
+      "full_file_read": true,
+      "lines": [
+        1327
+      ]
+    },
+    {
+      "path": "E:\\ProgrammeE\\Steam\\steamapps\\common\\Crusader Kings III\\game\\events\\travel_events\\travel_danger_events.txt",
+      "sha256": "f0db7d940d106d7031b118e6e2e3f0b3e92e7238859534b13c07f14ab6521b89",
+      "full_file_read": true,
+      "lines": [
+        1055
+      ]
+    },
+    {
+      "path": "E:\\ProgrammeE\\Steam\\steamapps\\common\\Crusader Kings III\\game\\events\\travel_events\\travel_events_oltner_2.txt",
+      "sha256": "6de5bfc12d2765da90541e98337529c4e974d8eec749943b40a30908e640b37b",
+      "full_file_read": true,
+      "lines": [
+        2190,
+        2199,
+        2407,
+        2415,
+        2656,
+        2665,
+        2878,
+        2887,
+        3089,
+        3098,
+        3621,
+        3631,
+        3661,
+        3669
+      ]
+    },
+    {
+      "path": "E:\\ProgrammeE\\Steam\\steamapps\\common\\Crusader Kings III\\game\\events\\travel_events\\travel_events_veronica.txt",
+      "sha256": "7b41a896227bddb2d7df0828012561b05dd9353e2c663359d338db540fc870f7",
+      "full_file_read": true,
+      "lines": [
+        3511,
+        3633,
+        3754,
+        3822
+      ]
+    },
+    {
+      "path": "E:\\ProgrammeE\\Steam\\steamapps\\common\\Crusader Kings III\\game\\events\\varangian_events.txt",
+      "sha256": "7377c9ed046769c67c9a8cc524d69eec259c00270cf81382babdc62432459234",
+      "full_file_read": true,
+      "lines": [
+        28
+      ]
+    }
+  ],
+  "native_contract_surfaces": [
+    {
+      "name": "can_be_warrior_trigger",
+      "line": 499,
+      "end": 538,
+      "parameters": [
+        "ARMY_OWNER"
+      ],
+      "lexical_keys": [
+        ".culture",
+        "AND",
+        "ARMY_OWNER",
+        "NOT",
+        "OR",
+        "adult",
+        "can_be_combatant_based_on_gender_trigger",
+        "can_be_warrior_trigger",
+        "culture",
+        "government_has_mechanic",
+        "has_cultural_parameter",
+        "imprisoned",
+        "incapable",
+        "is_at_war_as_defender",
+        "is_available_quick",
+        "is_close_family_of",
+        "is_married",
+        "is_spouse_of",
+        "limit",
+        "prowess",
+        "tgp_is_ceremonial_liege_trigger",
+        "trigger_if"
+      ]
+    },
+    {
+      "name": "can_be_knight_trigger",
+      "line": 539,
+      "end": 618,
+      "parameters": [
+        "ARMY_OWNER"
+      ],
+      "lexical_keys": [
+        ".culture",
+        "AND",
+        "ARMY_OWNER",
+        "NOR",
+        "NOT",
+        "OR",
+        "ai",
+        "always",
+        "can_be_knight_trigger",
+        "can_be_warrior_trigger",
+        "culture",
+        "exists",
+        "government_has_mechanic",
+        "has_court_position",
+        "has_cultural_parameter",
+        "has_personal_tenet_flag",
+        "has_trait",
+        "hostage",
+        "is_ai",
+        "is_available_quick",
+        "is_clergy",
+        "is_courtier",
+        "is_knight_permitted",
+        "is_noble_family_title",
+        "limit",
+        "primary_title",
+        "prowess",
+        "rite",
+        "rite_has_parameter",
+        "tier",
+        "trigger_if"
+      ]
+    }
+  ],
+  "limits": [
+    "No updates",
+    "No game tests",
+    "Caller discovery is lexical; no complete engine permission/semantic inference"
+  ]
+}

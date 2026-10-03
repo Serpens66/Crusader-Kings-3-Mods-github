@@ -1,6 +1,6 @@
 # Update readiness verification
 
-Date: 2026-10-03. Source baseline: **1.20.0.3 (Crozier)**. Status: **passed**.
+Date: 2026-10-03. Source baseline: **1.20.0.3 (Crozier)**. Status: **failed**.
 
 | Check | Count |
 |---|---:|
@@ -8,14 +8,14 @@ Date: 2026-10-03. Source baseline: **1.20.0.3 (Crozier)**. Status: **passed**.
 | audited native files | 1208 |
 | asset consumer source hashes | 5830 |
 | native texture hashes | 373 |
-| links | 110 |
-| documentation text files | 37 |
+| links | 432 |
+| documentation text files | 92 |
 | feature packages | 43 |
 | retained package file assignments | 803 |
 
 ## Issues
 
-No issues found by the checks above.
+Changed original workspace file: AGENTS.md
 
 ## Limits
 

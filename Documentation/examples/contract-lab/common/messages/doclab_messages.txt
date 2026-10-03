@@ -1,0 +1,6 @@
+﻿doclab_message = {
+    display = feed
+    text = doclab_message_title
+    desc = doclab_message_desc
+    style = neutral
+}

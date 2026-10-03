@@ -1,0 +1,30 @@
+﻿# Teaching transfer, not the native gift's opinion/religion/puppet consequences.
+doclab_transfer_interaction = {
+    category = interaction_category_friendly
+    icon = icon_gold
+    desc = doclab_transfer_interaction_desc
+    use_diplomatic_range = no
+    auto_accept = yes
+    is_available = { is_ai = no }
+    is_shown = {
+        scope:actor = { is_alive = yes NOT = { this = scope:recipient } }
+        scope:recipient = { is_alive = yes is_adult = yes }
+    }
+    is_valid_showing_failures_only = {
+        scope:actor = { gold >= doclab_transfer_amount }
+    }
+    on_accept = {
+        scope:actor = {
+            if = {
+                limit = {
+                    is_alive = yes
+                    gold >= doclab_transfer_amount
+                    scope:recipient = { is_alive = yes is_adult = yes }
+                }
+                pay_short_term_gold = { target = scope:recipient gold = doclab_transfer_amount }
+                debug_log = "doclab transfer executed"
+            }
+        }
+    }
+    ai_will_do = { base = 0 }
+}

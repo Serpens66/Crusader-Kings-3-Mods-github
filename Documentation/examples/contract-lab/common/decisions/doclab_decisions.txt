@@ -1,0 +1,26 @@
+﻿doclab_batch_decision = {
+    picture = { reference = "gfx/interface/illustrations/decisions/decision_personal_religious.dds" }
+    desc = doclab_batch_decision_desc
+    selection_tooltip = doclab_batch_decision_tooltip
+    confirm_text = doclab_batch_decision_confirm
+    is_shown = { is_ai = no is_alive = yes }
+    is_valid = {
+        any_courtier = { doclab_batch_candidate = yes }
+        gold >= doclab_batch_cost
+    }
+    effect = { doclab_batch_effect = yes }
+    ai_potential = { always = no }
+    ai_will_do = { base = 0 }
+    ai_check_interval = 0
+}
+doclab_notify_decision = {
+    picture = { reference = "gfx/interface/illustrations/decisions/decision_personal_religious.dds" }
+    desc = doclab_notify_decision_desc
+    selection_tooltip = doclab_notify_decision_tooltip
+    confirm_text = doclab_notify_decision_confirm
+    is_shown = { is_ai = no is_alive = yes }
+    effect = { trigger_event = { on_action = doclab_birthday } }
+    ai_potential = { always = no }
+    ai_will_do = { base = 0 }
+    ai_check_interval = 0
+}

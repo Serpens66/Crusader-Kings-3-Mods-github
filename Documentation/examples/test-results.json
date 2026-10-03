@@ -1,0 +1,106 @@
+{
+  "version": "1.20.0.3",
+  "status": "runtime pending",
+  "cases": [
+    {
+      "id": "A01",
+      "status": "not run",
+      "evidence": null
+    },
+    {
+      "id": "A02",
+      "status": "not run",
+      "evidence": null
+    },
+    {
+      "id": "A03",
+      "status": "not run",
+      "evidence": null
+    },
+    {
+      "id": "A04",
+      "status": "not run",
+      "evidence": null
+    },
+    {
+      "id": "A05",
+      "status": "not run",
+      "evidence": null
+    },
+    {
+      "id": "A06",
+      "status": "not run",
+      "evidence": null
+    },
+    {
+      "id": "A07",
+      "status": "not run",
+      "evidence": null
+    },
+    {
+      "id": "A08",
+      "status": "not run",
+      "evidence": null
+    },
+    {
+      "id": "A09",
+      "status": "not run",
+      "evidence": null
+    },
+    {
+      "id": "A10",
+      "status": "not run",
+      "evidence": null
+    },
+    {
+      "id": "B01",
+      "status": "not run",
+      "evidence": null
+    },
+    {
+      "id": "B02",
+      "status": "not run",
+      "evidence": null
+    },
+    {
+      "id": "B03",
+      "status": "not run",
+      "evidence": null
+    },
+    {
+      "id": "B04",
+      "status": "not run",
+      "evidence": null
+    },
+    {
+      "id": "B05",
+      "status": "not run",
+      "evidence": null
+    },
+    {
+      "id": "C01",
+      "status": "not run",
+      "evidence": null
+    },
+    {
+      "id": "C02",
+      "status": "not run",
+      "evidence": null
+    },
+    {
+      "id": "C03",
+      "status": "not run",
+      "evidence": null
+    },
+    {
+      "id": "C04",
+      "status": "not run",
+      "evidence": null
+    },
+    {
+      "id": "C05",
+      "status": "not run",
+      "evidence": null
+    }
+  ]
+}

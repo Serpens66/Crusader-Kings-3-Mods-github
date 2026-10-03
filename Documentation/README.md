@@ -20,8 +20,18 @@ This is a working reference for building new Crusader Kings III mods in this wor
 | Other game systems | [Subsystem guide](systems/subsystem-guide.md) |
 | Start from concrete files | [Examples and test scenarios](examples/README.md) |
 | Learn from existing work | [Workspace case studies](workspace/case-studies.md) and [inventory](reference/workspace-inventory.md) |
+| Current engine declarations | [Versioned engine reference](reference/engine-reference.md) |
+| Detailed function/state contracts | [Function guide](workspace/function-contracts.md), [43 cards](update-readiness/contracts/README.md), [Knight variants](workspace/knight-manager-contracts.md) |
+| Complete fixture acceptance runs | [Three-run manual](examples/test-runs.md), [completion status](research/completion-report.md) |
+| Current engine declarations | [Versioned engine reference](reference/engine-reference.md) |
+| Detailed function/state contracts | [Function guide](workspace/function-contracts.md), [43 cards](update-readiness/contracts/README.md), [Knight variants](workspace/knight-manager-contracts.md) |
+| Complete fixture acceptance runs | [Three-run manual](examples/test-runs.md), [completion status](research/completion-report.md) |
+| Current engine declarations | [Versioned engine reference](reference/engine-reference.md) |
+| Detailed function/state contracts | [Function guide](workspace/function-contracts.md), [43 cards](update-readiness/contracts/README.md), [Knight variants](workspace/knight-manager-contracts.md) |
+| Complete fixture acceptance runs | [Three-run manual](examples/test-runs.md), [completion status](research/completion-report.md) |
 | Find a function or an object | [Command quick reference](reference/commands.md), [local lookup](reference/index-guide.md) |
 | Prepare existing mods for the installed version | [Update readiness and per-mod packages](update-readiness/README.md) |
+| Assess readiness against the existing mods | [Documentation readiness audit](research/documentation-readiness.md) |
 | Check confidence and gaps | [Audit findings](research/vanilla-audit.md), [coverage](research/coverage.md), [sources](research/sources.md) |
 
 ## Rules for future agents
@@ -38,11 +48,11 @@ This is a working reference for building new Crusader Kings III mods in this wor
 
 The authored handbook, annotated examples, topic matrix, workspace inventory, 183 developer-reference paths, native definition index and observed command uses can be searched without internet access. The installation itself remains the source for complete Vanilla scripts; it is not copied into the repository. Internet sources are linked and summarized rather than archived wholesale.
 
-The example mod is **not installed or activated**. Its descriptor is a teaching fixture. The GUI example is an explicitly marked insertion fragment requiring a real window context.
+The example mod is **not installed or activated**. Its descriptor is a teaching fixture. The original GUI example remains an insertion fragment; the new GUI/frame lab includes additive registration and a complete source-informed binding, awaiting runtime tests.
 
 ## Validation report
 
-See the [static verification report](research/verification.md) for checked links, encodings, example structures and source preservation. Engine execution, Tiger validation and GUI rendering have not been performed.
+See the [static verification report](research/verification.md) for checked links, encodings, example structures and source preservation. User-run engine exports have been captured and verified. Fixture gameplay, Tiger validation and GUI rendering remain unperformed.
 
 ## Maintaining this reference
 

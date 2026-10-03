@@ -1,0 +1,27 @@
+[03:00:21][E][pdx_persistent_reader.cpp:216]: Error: "Failed to read key reference: agot_story_random_events_random_outcomes: agot_story_random_events_random_outcomes, near line: 3
+Failed to read key reference: agot_canon_children_disabled: agot_canon_children_disabled, near line: 3
+Failed to read key reference: agot_canon_children_traits_enabled: agot_canon_children_traits_enabled, near line: 3
+Failed to read key reference: agot_canon_children_gender_accurate: agot_canon_children_gender_accurate, near line: 3
+Failed to read key reference: agot_canon_dragons_disabled: agot_canon_dragons_disabled, near line: 3
+Failed to read key reference: agot_targaryen_exile_invasion_special_content: agot_targaryen_exile_invasion_special_content, near line: 3
+Failed to read key reference: agot_faegon_invasion_enabled: agot_faegon_invasion_enabled, near line: 3
+Failed to read key reference: agot_faegon_identity_default: agot_faegon_identity_default, near line: 3
+Failed to read key reference: agot_not_shattered: agot_not_shattered, near line: 3
+Failed to read key reference: dragon_dragonblood_3_gen: dragon_dragonblood_3_gen, near line: 3
+Failed to read key reference: agot_dragon_culling_normal: agot_dragon_culling_normal, near line: 3
+Failed to read key reference: agot_dragon_trait_inheritance_disabled: agot_dragon_trait_inheritance_disabled, near line: 3
+Failed to read key reference: agot_hv_conversion_offshoots: agot_hv_conversion_offshoots, near line: 3
+Failed to read key reference: agot_ema_lps_targs: agot_ema_lps_targs, near line: 3
+Failed to read key reference: agot_dynastic_stability_disabled: agot_dynastic_stability_disabled, near line: 3
+Failed to read key reference: agot_strong_seed_house_stability: agot_strong_seed_house_stability, near line: 3
+Failed to read key reference: agot_cadet_default: agot_cadet_default, near line: 3
+Failed to read key reference: agot_bastard_cadets_landed_only: agot_bastard_cadets_landed_only, near line: 3
+Failed to read key reference: agot_coin_flip_enabled: agot_coin_flip_enabled, near line: 3
+Failed to read key reference: agot_no_balding: agot_no_balding, near line: 3
+Failed to read key reference: agot_essos_enabled: agot_essos_enabled, near line: 3
+Failed to read key reference: agot_no_silly: agot_no_silly, near line: 3
+Failed to read key reference: agot_debug_off: agot_debug_off, near line: 3
+Failed to read key reference: ub_best_friend_to_heir_friend_allowed: ub_best_friend_to_heir_friend_allowed, near line: 3" in file: "" near line: 3
+[03:00:33][E][jomini_custom_text.h:93]: Object of type 'character' is not valid for 'DE_PRO_PER_S_3P_D'
+[03:00:33][E][jomini_custom_text.h:93]: Object of type 'character' is not valid for 'DE_PRO_PER_S_3P_N'
+[03:00:33][E][jomini_custom_text.h:93]: Object of type 'character' is not valid for 'DE_PRO_PER_S_3P_N'

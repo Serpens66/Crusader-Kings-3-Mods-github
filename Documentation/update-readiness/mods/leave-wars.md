@@ -48,3 +48,13 @@ Payment goes to the selected recipient/leader, which also receives prestige when
 ## Completion gates
 
 The actual implementation must not assume that any arbitrary participant can be removed, that an engine predicate name remained valid, or that effects preserve saved scopes across events. Resolve these through the exports and a feature audit of the modern native caller chain, then run [the test protocol](../test-protocol.md). Retain standalone IDs and propagate verified code/translations to the identical bundle copy. No metadata compatibility bump before both distributions pass.
+
+## Current-export reconciliation (2026-10-03)
+
+Declarations are available separately from remaining semantic/runtime gates. Original intent and update status are retained.
+
+| Feature | Signature intake | Separate contract |
+|---|---|---|
+| LW-SELECT | mixed; missing names are not proof of unsupported API | [Card](../contracts/LW-SELECT.md) |
+| LW-EXIT | export declarations available | [Card](../contracts/LW-EXIT.md) |
+| LW-RULES | export declarations available | [Card](../contracts/LW-RULES.md) |

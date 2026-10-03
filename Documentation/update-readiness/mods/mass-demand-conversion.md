@@ -36,3 +36,13 @@ Rite/faith changes and new religious consequences are relevant because dispatch 
 ## Blocker resolution
 
 Obtain current command signatures and run a minimal actor/recipient comparison between the UI's manual interaction and the script query/dispatch. Capture scope diagnostics, cooldown, validity, consent and side effects. Finish the native initialization/caller audit before choosing a shared helper implementation. Until then MC-DISPATCH blocks behavioral changes; modern picture syntax and inactive-event classification are independently source-confirmed.
+
+## Current-export reconciliation (2026-10-03)
+
+Declarations are available separately from remaining semantic/runtime gates. Original intent and update status are retained.
+
+| Feature | Signature intake | Separate contract |
+|---|---|---|
+| MC-CANDIDATES | export declarations available | [Card](../contracts/MC-CANDIDATES.md) |
+| MC-DISPATCH | export declarations available | [Card](../contracts/MC-DISPATCH.md) |
+| MC-VARIANTS | export declarations available | [Card](../contracts/MC-VARIANTS.md) |

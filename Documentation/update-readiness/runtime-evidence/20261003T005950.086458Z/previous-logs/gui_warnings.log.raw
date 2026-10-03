@@ -1,0 +1,2 @@
+[22:17:27][W][pdx_gui_factory.cpp:1282]: gui/event_window_widgets/event_window_widget_name_family.gui:229 - Type 'event_button_round' already registered at 'gui/event_window_widgets/event_window_widget_name_child.gui'(162)
+

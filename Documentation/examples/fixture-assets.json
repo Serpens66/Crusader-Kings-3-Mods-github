@@ -1,0 +1,44 @@
+[
+  {
+    "fixture": "examples/gui-frame-lab/gfx/doclab/native_rank.dds",
+    "source": "E:\\ProgrammeE\\Steam\\steamapps\\common\\Crusader Kings III\\game\\gfx\\portraits\\portrait_rank.dds",
+    "sha256": "23c627fecc89cdd3af1c92dbd51def69389eaded4251177cac6932bef90303fd",
+    "container": "DDS",
+    "use": "Private unmodified diagnostic copy; not a redistributed art package"
+  },
+  {
+    "fixture": "examples/gui-frame-lab/gfx/doclab/public_rank.dds",
+    "source": "D:\\CDesktopLink\\Unterlagen\\Mods\\CK3\\Crusader Kings 3 Mods github\\GFX-Mod\\gfx\\portraits\\portrait_rank.dds",
+    "sha256": "18531cc0c92f584c72ebee41bb071adcb2a20be3d2420964a5f5a308d5bbe2c6",
+    "container": "DDS",
+    "use": "Private unmodified diagnostic copy; not a redistributed art package"
+  },
+  {
+    "fixture": "examples/gui-frame-lab/gfx/doclab/local_rank.dds",
+    "source": "D:\\CDesktopLink\\Unterlagen\\Mods\\CK3\\Crusader Kings 3 Mods github\\GFX-Mod Serp\\gfx\\portraits\\portrait_rank.dds",
+    "sha256": "18531cc0c92f584c72ebee41bb071adcb2a20be3d2420964a5f5a308d5bbe2c6",
+    "container": "DDS",
+    "use": "Private unmodified diagnostic copy; not a redistributed art package"
+  },
+  {
+    "fixture": "examples/gui-frame-lab/gfx/doclab/icon_prowess.dds",
+    "source": "D:\\CDesktopLink\\Unterlagen\\Mods\\CK3\\Crusader Kings 3 Mods github\\GFX-Mod Serp\\gfx\\interface\\icons\\icon_prowess.dds",
+    "sha256": "6b1c1c35fdf54728ac958b69b67b3ddfd41f8abcb15c848c2883e9d682e4a78f",
+    "container": "PNG",
+    "use": "Private unmodified diagnostic copy; not a redistributed art package"
+  },
+  {
+    "fixture": "examples/gui-frame-lab/gfx/doclab/icon_skills.dds",
+    "source": "D:\\CDesktopLink\\Unterlagen\\Mods\\CK3\\Crusader Kings 3 Mods github\\GFX-Mod Serp\\gfx\\interface\\icons\\icon_skills.dds",
+    "sha256": "0a5347dc1cb81fcb2844cc48fa144a6fa7e42ef09923d23c41108b1e0273251a",
+    "container": "PNG",
+    "use": "Private unmodified diagnostic copy; not a redistributed art package"
+  },
+  {
+    "fixture": "examples/gui-frame-lab/gfx/doclab/icon_skills_martial.dds",
+    "source": "D:\\CDesktopLink\\Unterlagen\\Mods\\CK3\\Crusader Kings 3 Mods github\\GFX-Mod Serp\\gfx\\interface\\icons\\icon_skills_martial.dds",
+    "sha256": "647324893d569a0824db52a765b53a18e70c76eba688b4e599925a6905f9a320",
+    "container": "PNG",
+    "use": "Private unmodified diagnostic copy; not a redistributed art package"
+  }
+]

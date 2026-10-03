@@ -82,3 +82,9 @@ GUI script values may be evaluated frequently. Prefer cheap formulas. If a cache
 Renaming a saved variable or changing its type can break old saves and companion mods. For a stateful feature, specify an initialization marker/version, defaults for absent data and a migration or reset path if required. This collection does not invent a universal save migration protocol; choose one for the actual feature.
 
 Test first invocation, repeated invocation, absent state, zero/negative values, owner change, save/reload and expiry. For an object reference, also test the referenced object becoming invalid.
+
+## Installed 1.20.0.3 export supplement
+
+The [current engine reference](../reference/engine-reference.md) now indexes six script and five data-type exports with exact raw line ranges and checksums. Historical statements above about absent generated dumps describe the initial research stage. Use [lookup](../tools/lookup.py) for both engine declarations and existing local definitions/callers. Missing optionality, argument types, scope lifetime, permissions and multiplayer routing remain unknown where the export does not specify them.
+
+See [workspace function contracts](../workspace/function-contracts.md) for owner/caller/state distinctions and [isolated tests](../examples/test-runs.md) for runtime acceptance. The user completed export sessions, but no example gameplay/GUI/MP tests have been performed.

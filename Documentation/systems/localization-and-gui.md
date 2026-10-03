@@ -28,7 +28,7 @@ Dynamic descriptions select text based on conditions. Use a fallback when no con
 
 `.gui` files define widgets, layout, templates and data contexts. Quoted bracketed expressions call exposed UI/data-type functions. They cannot execute arbitrary Jomini effects directly. A widget's current data context determines available objects; an expression working in the character window may be invalid in another window.
 
-The native GUI/data-type dump is the reference for exposed functions and return types. The online Data Types table is an orientation; no current local dump was found. Therefore unobserved function signatures need a fresh dump or exact current Vanilla caller.
+The native GUI/data-type dump is the reference for exposed functions and return types. The online Data Types table is an orientation. The eleven current exports are now indexed in [the installed engine reference](../reference/engine-reference.md). An absent indexed signature still requires an exact current Vanilla caller or focused engine investigation; it is not permission to invent a function.
 
 When modifying an existing GUI file, compare the entire current Vanilla file first. The Knight Manager variants replace `gui/window_knights.gui`, creating an update-sensitive whole-file footprint. Adding a button to an obsolete window can remove unrelated native features even when the new button works.
 
@@ -54,3 +54,9 @@ The visible enabled state and actual execution should agree. Also revalidate wit
 ## Testing
 
 Check correct language/header, every referenced key, long and multiline strings, tooltip formatting, missing/optional scopes, disabled-button tooltip, correct click actor, selected-target changes and repeated clicks. Verify the original window still renders all native elements. A `.gui` fragment passing a brace check does not prove the UI template, layout or expression is supported.
+
+## Installed 1.20.0.3 export supplement
+
+The [current engine reference](../reference/engine-reference.md) now indexes six script and five data-type exports with exact raw line ranges and checksums. Historical statements above about absent generated dumps describe the initial research stage. Use [lookup](../tools/lookup.py) for both engine declarations and existing local definitions/callers. Missing optionality, argument types, scope lifetime, permissions and multiplayer routing remain unknown where the export does not specify them.
+
+See [workspace function contracts](../workspace/function-contracts.md) for owner/caller/state distinctions and [isolated tests](../examples/test-runs.md) for runtime acceptance. The user completed export sessions, but no example gameplay/GUI/MP tests have been performed.

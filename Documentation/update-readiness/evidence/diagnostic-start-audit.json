@@ -1,0 +1,115 @@
+{
+  "accessed": "2026-10-03",
+  "installation_version": "1.20.0.3 (Crozier)",
+  "local_sources": [
+    {
+      "path": "E:\\ProgrammeE\\Steam\\steamapps\\common\\Crusader Kings III\\game\\_commandline_options.info",
+      "sha256": "7fb8073910a49d96fe0af1415674ffce20007180474d8d7c3807720191d4d5ae"
+    },
+    {
+      "path": "E:\\ProgrammeE\\Steam\\steamapps\\common\\Crusader Kings III\\launcher\\launcher-settings.json",
+      "sha256": "9cd6ff96f8092f2d21e1491b37e8344aa287faf69850563128ca1b117244a214"
+    },
+    {
+      "path": "E:\\ProgrammeE\\Steam\\steamapps\\common\\Crusader Kings III\\binaries\\ck3.exe",
+      "sha256": "94b55397abb687a3dcd436805a5d885e6be90fa6c693feb44a9e3bbeeade02a6"
+    },
+    {
+      "path": "E:\\ProgrammeE\\Steam\\steamapps\\common\\Crusader Kings III\\game\\common\\bookmarks\\bookmarks\\00_bookmarks.txt",
+      "sha256": "fee9519196b964bb3eae364ef459f7bc92edff0a435be14b81a2377ab1db1472"
+    },
+    {
+      "path": "E:\\ProgrammeE\\Steam\\steamapps\\common\\Crusader Kings III\\game\\common\\landed_titles\\00_landed_titles.txt",
+      "sha256": "fc8ea76e8bcc8c3aa8557dfb7226dc75b4aee8830e906c434754599ab8c75f55"
+    }
+  ],
+  "full_file_reads": true,
+  "contracts": {
+    "console_action": "_commandline_options.info:140-141: application initialized, execute one command and exit",
+    "debug": "_commandline_options.info:46-47: debug mode; launcher alternative executable confirms executable/argument convention",
+    "baseline": "_commandline_options.info:9-16 and 160-161: load history with selected bookmark/title then exit; current IDs located in native definitions",
+    "config": "Existing dlc_load.json schema and executable literal strings dlc_load.json/enabled_mods examined; engine consumption must still be checked from fresh logs",
+    "commands": "Executable literal command names script_docs/dump_data_types present; Tiger primary documentation requests these exports; runtime output must be observed",
+    "current_start": "Only documented -debug_mode (46-47), -suppress_error_log (57-58) and launcher -gdpr-compliant; no console actions, auto-exit, history or save-load arguments.",
+    "current_crash_capture": "Current actual report inspected: root exception.txt, meta.yml, logs/*.log; excludes saves/settings/minidump."
+  },
+  "binary_inspection": "Read-only ASCII literal discovery; does not establish compiled behavior or successful invocation",
+  "online_sources": [
+    {
+      "url": "https://github.com/amtep/tiger/wiki/Updating-to-new-game-versions",
+      "accessed": "2026-10-03",
+      "page_last_edit": "2026-03-27",
+      "topic": "CK3 export command names and six script export files plus logs/data_types"
+    }
+  ],
+  "runtime": "Previous automatic trial crashed after script export; revised normal-debug workflow not executed.",
+  "preparation_verification": {
+    "offline_tests": {
+      "count": 4,
+      "status": "passed",
+      "actual_game_launch": false
+    },
+    "read_only_preflight": {
+      "status": "passed",
+      "version": "1.20.0.3 (Crozier)",
+      "selected_mods": 2,
+      "userdata_changes": false,
+      "note": "Sandbox process enumeration denied; elevated read-only check succeeded"
+    },
+    "source_preservation": "853 original workspace files and audited native sources unchanged",
+    "runtime": "Revised workflow not executed; historical failed trial retained separately."
+  },
+  "previous_automatic_trial": {
+    "run": "runtime-evidence/20261003T005950.086458Z/run.json",
+    "status": "incomplete",
+    "exit_code": 1,
+    "crash": "EXCEPTION_ACCESS_VIOLATION C0000005",
+    "configuration_restored": true,
+    "executed_version": "1.20.0.3 confirmed by crash exception/meta",
+    "retained_script_exports": [
+      {
+        "path": "runtime-evidence\\20261003T005950.086458Z\\script-docs\\effects.log.raw",
+        "sha256": "d3dbb758fb226d584b8b00fa84db9a4c494a2519a043116ff9d0cb7bee308b03",
+        "size": 647817
+      },
+      {
+        "path": "runtime-evidence\\20261003T005950.086458Z\\script-docs\\event_scopes.log.raw",
+        "sha256": "4dc5072cb829a9c642f6b367c17cb8c1d88e8f70613adef30a6f706bd8ee5bc6",
+        "size": 8898
+      },
+      {
+        "path": "runtime-evidence\\20261003T005950.086458Z\\script-docs\\event_targets.log.raw",
+        "sha256": "b1b3a90dc6f7e194a4f88aea35579fa8584854467276548577216403a5c90114",
+        "size": 53914
+      },
+      {
+        "path": "runtime-evidence\\20261003T005950.086458Z\\script-docs\\modifiers.log.raw",
+        "sha256": "9c01aed50f903ac4cf7eb6330a2f1b2a881d4dab72e0e8e49e01326292110960",
+        "size": 45829
+      },
+      {
+        "path": "runtime-evidence\\20261003T005950.086458Z\\script-docs\\on_actions.log.raw",
+        "sha256": "423ca674930100419a7335426fe1a29cc944682030cd9d303b6b83634e4aac47",
+        "size": 84535
+      },
+      {
+        "path": "runtime-evidence\\20261003T005950.086458Z\\script-docs\\triggers.log.raw",
+        "sha256": "62aeca6098d7c42b226b766b5ce8594c6cad3576267124434095c7ea88a2a744",
+        "size": 411880
+      }
+    ],
+    "script_export_hashes": "all checked and matching",
+    "gui_export": "not attempted",
+    "history_stage": "not attempted",
+    "cause": "unknown"
+  },
+  "normal_start_preparation_verification": {
+    "offline_tests": 13,
+    "status": "passed",
+    "game_launch": "not executed",
+    "read_only_preflight": "passed against 1.20.0.3 (Crozier), two selected mods, no userdata changes",
+    "documentation_checker": "passed",
+    "update_readiness_checker": "one pre-existing baseline mismatch: AGENTS.md; original baseline not rewritten",
+    "retained_exports": "all six original raw script-export SHA-256 values match"
+  }
+}

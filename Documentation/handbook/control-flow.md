@@ -89,3 +89,9 @@ A scripted trigger should answer a question without persistent mutation. Scope-s
 Prefer existing event hooks and bounded relevant-object lists over repeated world scans. Put inexpensive restrictive conditions before expensive checks where evaluation permits early exit. Do not recalculate large formulas in a GUI every frame. Use object-owned state for independent player preferences, and do not choose the local UI player inside synchronized gameplay code.
 
 Static evidence alone does not establish multiplayer determinism, loop ordering stability or cost at world scale. Test those explicitly for a new gameplay feature.
+
+## Installed 1.20.0.3 export supplement
+
+The [current engine reference](../reference/engine-reference.md) now indexes six script and five data-type exports with exact raw line ranges and checksums. Historical statements above about absent generated dumps describe the initial research stage. Use [lookup](../tools/lookup.py) for both engine declarations and existing local definitions/callers. Missing optionality, argument types, scope lifetime, permissions and multiplayer routing remain unknown where the export does not specify them.
+
+See [workspace function contracts](../workspace/function-contracts.md) for owner/caller/state distinctions and [isolated tests](../examples/test-runs.md) for runtime acceptance. The user completed export sessions, but no example gameplay/GUI/MP tests have been performed.

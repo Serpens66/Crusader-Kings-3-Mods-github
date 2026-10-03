@@ -25,3 +25,13 @@ After those checks, the update may require only packaging/metadata and any confi
 ## Static consumer findings
 
 [The consumer scan](../asset-consumers.md) checked all 677 retained texture files against 5,830 native text files. It records exact paths separately from basename, symbolic icon and matching object-ID candidates. Use those current sources before choosing any adaptation. Remaining compiled/dynamic frame or path selection and actual rendering are explicit gates; assets without a match are not deleted automatically.
+
+## Current-export reconciliation (2026-10-03)
+
+Declarations are available separately from remaining semantic/runtime gates. Original intent and update status are retained.
+
+| Feature | Signature intake | Separate contract |
+|---|---|---|
+| GC-ICONS | source/asset contract, not an engine-command signature | [Card](../contracts/GC-ICONS.md) |
+| GC-EXTRAS | source/asset contract, not an engine-command signature | [Card](../contracts/GC-EXTRAS.md) |
+| GC-PACKAGE | source/asset contract, not an engine-command signature | [Card](../contracts/GC-PACKAGE.md) |

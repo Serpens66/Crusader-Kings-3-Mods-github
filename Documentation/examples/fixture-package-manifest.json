@@ -1,0 +1,189 @@
+{
+  "version": "1.20.0.3",
+  "files": [
+    {
+      "package": "mini-mod",
+      "path": "mini-mod/common/character_interactions/doc_demo_interactions.txt",
+      "bytes": 1176,
+      "sha256": "08fcca71ed38a5a91354fe3258b27b1fe6ddc2a81a5af45e30c6e70acbc7d7a3"
+    },
+    {
+      "package": "mini-mod",
+      "path": "mini-mod/common/decisions/doc_demo_decisions.txt",
+      "bytes": 535,
+      "sha256": "148d021170ed58adad7ef35b7bf732141942bc7d406cdfe28ee5b3168839f716"
+    },
+    {
+      "package": "mini-mod",
+      "path": "mini-mod/common/on_action/doc_demo_on_actions.txt",
+      "bytes": 262,
+      "sha256": "98c0a5be7cf42fc79ee8f5b0876e59309596db2333ac0da83a2b211ac7b56214"
+    },
+    {
+      "package": "mini-mod",
+      "path": "mini-mod/common/script_values/doc_demo_values.txt",
+      "bytes": 204,
+      "sha256": "74dbcd7eb7fc62902ff45ab09b292a062fbdcef45f12afdff54cca963eec115e"
+    },
+    {
+      "package": "mini-mod",
+      "path": "mini-mod/common/scripted_effects/doc_demo_effects.txt",
+      "bytes": 375,
+      "sha256": "3b286f2efb0592394b046e34c1d826adab319cd5393733c19841b40d79195dc8"
+    },
+    {
+      "package": "mini-mod",
+      "path": "mini-mod/common/scripted_guis/doc_demo_guis.txt",
+      "bytes": 236,
+      "sha256": "252101cb587d1460349629346ac520a74b09ed141fec0ad19fc7d86b8b80e33e"
+    },
+    {
+      "package": "mini-mod",
+      "path": "mini-mod/common/scripted_triggers/doc_demo_triggers.txt",
+      "bytes": 351,
+      "sha256": "6e28bb2f984e2926c7b5d14ca1f01ef73ccd6e68d01b55b4eb44348d04866b00"
+    },
+    {
+      "package": "mini-mod",
+      "path": "mini-mod/descriptor.mod",
+      "bytes": 103,
+      "sha256": "702c573d3c27cc8e1247134727f4fbe83982313110eefbf5e810501cc0c7ee5b"
+    },
+    {
+      "package": "mini-mod",
+      "path": "mini-mod/events/doc_demo_events.txt",
+      "bytes": 1104,
+      "sha256": "5391be33e40695c8616771d64acbff885f56e24dd76721337a197871cb02af85"
+    },
+    {
+      "package": "mini-mod",
+      "path": "mini-mod/localization/english/doc_demo_l_english.yml",
+      "bytes": 445,
+      "sha256": "031481753e9ac284e76dbd76c42dac8255f95c983f86ee003f7c354aa8ba8ac4"
+    },
+    {
+      "package": "contract-lab",
+      "path": "contract-lab/common/character_interactions/doclab_interactions.txt",
+      "bytes": 1078,
+      "sha256": "9410e2a6ba1c0d9edbf4064c919bbf90bbe1ef324c149f32bf5c56e85fc59acb"
+    },
+    {
+      "package": "contract-lab",
+      "path": "contract-lab/common/decisions/doclab_decisions.txt",
+      "bytes": 1068,
+      "sha256": "b2a7f10c1e2b7bb69a10e84bf80fc79070c2bbab9e2db8c979620465a78e8dbb"
+    },
+    {
+      "package": "contract-lab",
+      "path": "contract-lab/common/messages/doclab_messages.txt",
+      "bytes": 132,
+      "sha256": "64a0045f7b027f807be07f60916c86448c4574660cce0ebe49139ec75dff3dd1"
+    },
+    {
+      "package": "contract-lab",
+      "path": "contract-lab/common/on_action/doclab_hooks.txt",
+      "bytes": 232,
+      "sha256": "da7f6d432168fbee0c49513077c6da564c41c503bad817cbae463d1f8878b1c3"
+    },
+    {
+      "package": "contract-lab",
+      "path": "contract-lab/common/script_values/doclab_values.txt",
+      "bytes": 333,
+      "sha256": "c278aca84c69c362d54f6474c9cfb502fcf35b85845ca6342f6e894b4180c320"
+    },
+    {
+      "package": "contract-lab",
+      "path": "contract-lab/common/scripted_effects/doclab_effects.txt",
+      "bytes": 1502,
+      "sha256": "034896a32e2b15a91362783a2b4c44f17689ac30a1b1349c82e3cd9272ffd924"
+    },
+    {
+      "package": "contract-lab",
+      "path": "contract-lab/common/scripted_guis/doclab_guis.txt",
+      "bytes": 300,
+      "sha256": "4acb95062afe65dae341ab55f5e9002a8342ae3d60792df8da26ece1be84904e"
+    },
+    {
+      "package": "contract-lab",
+      "path": "contract-lab/common/scripted_triggers/doclab_triggers.txt",
+      "bytes": 340,
+      "sha256": "f65870162c32765c3b77bdd1f7308abe62dbcbe28d534466920e95c94fc4efd6"
+    },
+    {
+      "package": "contract-lab",
+      "path": "contract-lab/descriptor.mod",
+      "bytes": 102,
+      "sha256": "4df3d1ec0236a745ed3b2693070a536420db6ee0954ee464ee092f15e2acd855"
+    },
+    {
+      "package": "contract-lab",
+      "path": "contract-lab/localization/english/doclab_l_english.yml",
+      "bytes": 1290,
+      "sha256": "c45d1441a254fe9e2bc1c989a3e7854b50b537beeb907aecbd6882c95f87c626"
+    },
+    {
+      "package": "contract-lab",
+      "path": "contract-lab/localization/german/doclab_l_german.yml",
+      "bytes": 1289,
+      "sha256": "fddd37e3781745bb9ff3480accd5af8dd80ba971b0787a4c19a425b56d00b998"
+    },
+    {
+      "package": "gui-frame-lab",
+      "path": "gui-frame-lab/descriptor.mod",
+      "bytes": 150,
+      "sha256": "7767ed15e21380916ef772665a60f872ec82d23c674b10263e501d1efc3c33ad"
+    },
+    {
+      "package": "gui-frame-lab",
+      "path": "gui-frame-lab/gfx/doclab/icon_prowess.dds",
+      "bytes": 7073,
+      "sha256": "6b1c1c35fdf54728ac958b69b67b3ddfd41f8abcb15c848c2883e9d682e4a78f"
+    },
+    {
+      "package": "gui-frame-lab",
+      "path": "gui-frame-lab/gfx/doclab/icon_skills.dds",
+      "bytes": 28353,
+      "sha256": "0a5347dc1cb81fcb2844cc48fa144a6fa7e42ef09923d23c41108b1e0273251a"
+    },
+    {
+      "package": "gui-frame-lab",
+      "path": "gui-frame-lab/gfx/doclab/icon_skills_martial.dds",
+      "bytes": 5560,
+      "sha256": "647324893d569a0824db52a765b53a18e70c76eba688b4e599925a6905f9a320"
+    },
+    {
+      "package": "gui-frame-lab",
+      "path": "gui-frame-lab/gfx/doclab/local_rank.dds",
+      "bytes": 1216056,
+      "sha256": "18531cc0c92f584c72ebee41bb071adcb2a20be3d2420964a5f5a308d5bbe2c6"
+    },
+    {
+      "package": "gui-frame-lab",
+      "path": "gui-frame-lab/gfx/doclab/native_rank.dds",
+      "bytes": 1066352,
+      "sha256": "23c627fecc89cdd3af1c92dbd51def69389eaded4251177cac6932bef90303fd"
+    },
+    {
+      "package": "gui-frame-lab",
+      "path": "gui-frame-lab/gfx/doclab/public_rank.dds",
+      "bytes": 1216056,
+      "sha256": "18531cc0c92f584c72ebee41bb071adcb2a20be3d2420964a5f5a308d5bbe2c6"
+    },
+    {
+      "package": "gui-frame-lab",
+      "path": "gui-frame-lab/gui/doclab_panel.gui",
+      "bytes": 3965,
+      "sha256": "3d02717f2582477d8dea6a0b1e56a40fd41783cc62799428839b72d3aecbee4d"
+    },
+    {
+      "package": "gui-frame-lab",
+      "path": "gui-frame-lab/gui/scripted_widgets/doclab_registration.txt",
+      "bytes": 40,
+      "sha256": "ae839b04903909cd595c9a0f9d8ab674885e8d689c6a46e2f65345eaaaf44d1a"
+    }
+  ],
+  "limits": [
+    "Package content hashes for host/client comparison, not runtime certification",
+    "External descriptor paths differ per machine and are not in this content manifest"
+  ]
+}

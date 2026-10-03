@@ -59,3 +59,18 @@ Use [common protocol](../test-protocol.md) plus MC/LW sheets. Tests include boun
 DLC availability is a **per-feature gate**: trace native helper gates for deposal/adventurer continuation, religious authority/rite mechanics and modern war participation. Test available enabled/disabled combinations that the installed DLC permits. No blanket new DLC dependency is added to the bundle from a native filename.
 
 Preserve namespaces/public IDs and translations. Correct the EN markup issue only after confirming the actual displayed string; do not rewrite untranslated text as English silently. Do not advertise the whole bundle as compatible because one small payment interaction passed.
+
+## Current-export reconciliation (2026-10-03)
+
+Declarations are available separately from remaining semantic/runtime gates. Original intent and update status are retained.
+
+| Feature | Signature intake | Separate contract |
+|---|---|---|
+| SI-ABDICATE | export declarations available | [Card](../contracts/SI-ABDICATE.md) |
+| SI-RESOURCES | export declarations available | [Card](../contracts/SI-RESOURCES.md) |
+| SI-EDUCATION | export declarations available | [Card](../contracts/SI-EDUCATION.md) |
+| SI-PARDON | export declarations available | [Card](../contracts/SI-PARDON.md) |
+| SI-MONEY | export declarations available | [Card](../contracts/SI-MONEY.md) |
+| SI-EXCOMM | export declarations available | [Card](../contracts/SI-EXCOMM.md) |
+| SI-CONVERSION | export declarations available | [Card](../contracts/SI-CONVERSION.md) |
+| SI-WARS | export declarations available | [Card](../contracts/SI-WARS.md) |

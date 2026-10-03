@@ -67,3 +67,11 @@ Tests: render within the actual target widget, enabled/disabled state, missing p
 Use [documentation verification](../tools/verify_documentation.py). It checks internal file links, encoding, CRLF, example syntax structure, cross-file example identifiers, current local evidence hashes and preservation of the originally indexed mod files. It is not a Jomini grammar/type checker.
 
 To search a native comparison, use [lookup](../reference/index-guide.md). To generate complete engine signatures later, use the game's `script_docs`/`dump_data_types` workflow described in [commands](../reference/commands.md).
+
+## Current export-backed contract labs
+
+The [Contract Lab](contract-lab/README.md) and [GUI/frame lab](gui-frame-lab/README.md) are complete separately named source-informed packages with external descriptor templates, English/German fallback text and own IDs. They are not installed, enabled or runtime certified. Use the [three-run manual](test-runs.md) and [results table](test-results.md). The old GUI fragment remains an insertion lesson; the new GUI fixture provides additive registration.
+
+**Delayed-chain limit:** the original boolean marker has no generation identity. A stale completion coinciding with a new request is not ruled out by its guards. Its short chain remains a teaching probe, not a certified robust exactly-once recipe. A generation-aware replacement is blocked pending a fully audited scope/lifetime contract and actual tests. Original mini-mod IDs and raw evidence are retained.
+
+Current six script and five UI exports are now [indexed](../reference/engine-reference.md); no re-export is needed for this build unless sources change.

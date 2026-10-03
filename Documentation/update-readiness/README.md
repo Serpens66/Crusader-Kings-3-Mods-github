@@ -1,6 +1,6 @@
 # CK3 mod update readiness
 
-This report prepares the existing mods for the **as-installed 1.20.0.3 (Crozier)** source tree. It records concrete changes and unresolved contracts before implementation. No mod, installation file, launcher registration or playset was changed. No game or external validator was run.
+This report prepares the existing mods for the **as-installed 1.20.0.3 (Crozier)** source tree. It records concrete changes and unresolved contracts before implementation. No mod, installation file, launcher registration or playset was changed. The user-run export sessions are now recorded separately in [runtime intake](runtime-intake.md); no fixture gameplay tests or external validator run have been performed.
 
 Research date: **2026-10-03**. All 18,710 previously indexed native text/reference hashes still match. The new workspace baseline covers **853 files**, including binary assets and pre-existing user changes. The first inventory had 851 files; two excluded-root OUTDATED markers appeared during the audit and are preserved. See [workspace observations](evidence/workspace-observations.json) for baseline reconciliation. This establishes reproducibility against the local installation; it does not establish that the installation is an unmodified Steam distribution.
 
@@ -12,6 +12,8 @@ Research date: **2026-10-03**. All 18,710 previously indexed native text/referen
 | Check dependencies and permitted combinations | [Conflict matrix](conflicts.md) |
 | Follow the implementation order | [Implementation packages](implementation-order.md) |
 | Obtain current engine contracts and fresh logs | [User debug run](debug-run.md) |
+| Review the captured engine exports | [Runtime intake](runtime-intake.md) |
+| Obtain GUI exports through a normal debug start | [Normal debug starter](diagnostic-start.md) |
 | Run later acceptance tests | [Test protocol](test-protocol.md) |
 | Locate texture consumers and format/size differences | [Asset consumers](asset-consumers.md) and [texture comparison](texture-comparison.md) |
 | Trace evidence and distinguish audit depth | [Evidence and sources](sources.md) |
@@ -49,3 +51,7 @@ The collection read complete developer references and discovered literal source 
 ## Scope of the next implementation
 
 Start with the shared evidence and engine gates, then apply the ordered packages. This report is the completed preparation deliverable: every enumerated function has a specified work package or a concrete blocker and a resolution procedure. It is not a claim that all packages are already safe to release.
+
+## Current export and example supplement
+
+The [engine registry](../reference/engine-reference.md), [43 separate contract cards](contracts/README.md) and [function/state guide](../workspace/function-contracts.md) reconcile the available 1.20.0.3 exports. [Completion boundary](../research/completion-report.md) distinguishes export success, structural checks and remaining semantic/runtime gates. The user-test [three-run manual](../examples/test-runs.md) uses separate playsets; do not use the Vanilla diagnostic starter for mod tests. Original update statuses remain unchanged.

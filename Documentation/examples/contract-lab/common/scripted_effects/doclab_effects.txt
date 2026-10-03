@@ -1,0 +1,44 @@
+﻿# Every call rechecks affordability. Root remains the actor through the iterator.
+doclab_batch_effect = {
+    if = {
+        limit = { gold >= doclab_batch_cost }
+        every_courtier = {
+            limit = { doclab_batch_candidate = yes }
+            root = {
+                run_interaction = {
+                    interaction = doclab_transfer_interaction
+                    actor = this
+                    recipient = prev
+                    redirect = no
+                    execute_threshold = accept
+                }
+            }
+        }
+        debug_log = "doclab batch dispatch finished; compare observed recipient count"
+    }
+}
+# One message for the current player; optional spouse is an icon, not another receiver.
+doclab_notify_effect = {
+    if = {
+        limit = { is_ai = no is_alive = yes }
+        if = {
+            limit = { exists = primary_spouse }
+            send_interface_message = {
+                type = doclab_message
+                title = doclab_message_title
+                desc = doclab_message_desc
+                left_icon = this
+                right_icon = primary_spouse
+            }
+        }
+        else = {
+            send_interface_message = {
+                type = doclab_message
+                title = doclab_message_title
+                desc = doclab_message_desc
+                left_icon = this
+            }
+        }
+        debug_log = "doclab player notification delivered"
+    }
+}

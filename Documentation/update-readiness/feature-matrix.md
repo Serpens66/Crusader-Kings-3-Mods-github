@@ -55,3 +55,7 @@ The 43 work packages group supporting events, rules, values, modifiers, translat
 Dormant innovation tweaks, conversion-notification replacements, guest-arrival subscription and delayed death dispatch are explicitly inactive. Independent Knight Manager roots and test are excluded; the embedded CustomDefines component is covered by CD-KNIGHTS. No inactive code is reactivated by a compatibility update.
 
 A gate is resolved only by the specific source/export/test observation stated here and in the sheet. A missing contract cannot be closed by incrementing supported_version or treating a historical log as current.
+
+## Export reconciliation and state contracts
+
+The [43 cards](contracts/README.md) and [function guide](../workspace/function-contracts.md) add declaration evidence and owner/lifetime gates. Current exports are integrated; old rows requesting signatures are historical combined gates, not evidence that exports are still missing. Remaining caller, permission and runtime questions are retained explicitly in each card. Feature tests remain not run.

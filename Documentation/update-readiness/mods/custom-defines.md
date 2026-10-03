@@ -62,3 +62,17 @@ This removes the subscriber `on_KnightManager_start`, the `KnightManager_is_load
 ## Gates and dependencies
 
 Read [debug run](../debug-run.md) for UI datatype export and [test protocol](../test-protocol.md). CD-RULES, CD-LOBBY and CD-TOOLTIPS remain blocked until their exact UI/engine contracts are established. Define retention and the removal list are plan ready, with runtime validation pending. A post-start designer restriction must be reported as a concrete engine limitation; do not substitute a gameplay effect that rewrites characters.
+
+## Current-export reconciliation (2026-10-03)
+
+Declarations are available separately from remaining semantic/runtime gates. Original intent and update status are retained.
+
+| Feature | Signature intake | Separate contract |
+|---|---|---|
+| CD-COMBAT | source/asset contract, not an engine-command signature | [Card](../contracts/CD-COMBAT.md) |
+| CD-DYNASTY | source/asset contract, not an engine-command signature | [Card](../contracts/CD-DYNASTY.md) |
+| CD-MAP | source/asset contract, not an engine-command signature | [Card](../contracts/CD-MAP.md) |
+| CD-RULES | export declarations available | [Card](../contracts/CD-RULES.md) |
+| CD-LOBBY | export declarations available | [Card](../contracts/CD-LOBBY.md) |
+| CD-TOOLTIPS | export declarations available | [Card](../contracts/CD-TOOLTIPS.md) |
+| CD-KNIGHTS | export declarations available | [Card](../contracts/CD-KNIGHTS.md) |

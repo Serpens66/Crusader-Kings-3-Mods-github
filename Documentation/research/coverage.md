@@ -41,3 +41,18 @@ The documentation task is complete when every requested area has a usable guide/
 4. Validate asset/editor workflows only if a new map, model or audio feature actually requires them.
 
 No unanswered user preference blocks this documentation. Access failures, unavailable dumps and unexecuted engine tests are recorded evidence limits, not disguised successful checks.
+
+## 2026-10-03 export and fixture supplement
+
+| Topic | Research/source evidence | Static checks | Runtime / exact remaining gap |
+|---|---|---|---|
+| Effects/triggers/scopes/targets/modifiers/on actions | Eleven exports, version/commit and hashes; all line spans accounted | Parser duplicate/unknown/encoding tests | Primitive documentation is not feature permission or complete behavior |
+| GUI functions | Registered/unregistered type declarations retained separately | Known ScriptedGui/TopScope signatures | Widget rendering and MP synchronization pending |
+| 43 existing functions | Separate cards, full source rereads and original per-mod sheets | Signatures reconciled without promoting compatibility | Macro/context/side-effect gates retained per card |
+| Knight variants/test | Trigger/state/widget learning audit | Variant/state source manifest | Historical overrides and continued missing GUI; no updates commissioned |
+| Immediate payment/bulk | Source-informed isolated Contract Lab | IDs, structure, localization and engine reference intake | Exact deltas/query initialization require A/C |
+| Delayed chain | Original two-event probe, state diagram | Namespace/guards/marker references | Cross-generation exactly-once recipe blocked; A07–A10/C05 |
+| Callback/optional targets | Own message and guarded spouse branch | Hook/message files | Recipient/dedup behavior A05–A06/C02 |
+| GUI/frame/container | Additive package and six hashed unmodified assets | Type/registration/asset evidence | B01–B05/C03 required |
+
+See [completion report](completion-report.md). No runtime fixture result is manufactured.

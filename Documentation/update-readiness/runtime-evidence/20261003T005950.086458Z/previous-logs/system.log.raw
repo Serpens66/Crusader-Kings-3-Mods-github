@@ -1,0 +1,15 @@
+[22:17:18][D][game_setup.cpp:79]: Exe Git Version: release/1.16.3 : 70e607434e
+
+[22:17:18][D][game_setup.cpp:83]: Build Timestamp: 2025-06-02 12:25:28 +0000 long hash: 70e607434e84913f163af1d5d2a9b3314ebf2f10
+
+[22:17:18][I][systemsettings.cpp:207]: CPU Model: AMD Ryzen 9 7950X3D 16-Core Processor          
+[22:17:18][I][systemsettings.cpp:208]: CPU Speed: 4200MHz
+[22:17:18][I][systemsettings.cpp:209]: CPU Physical Cores: 16
+[22:17:18][I][systemsettings.cpp:210]: CPU Logical Cores: 32
+[22:17:18][I][systemsettings.cpp:211]: System Memory: 64654
+[22:17:18][I][systemsettings.cpp:212]: OS: Windows 11 x86_64
+[22:17:18][I][systemsettings.cpp:213]: OS Language: de
+[22:17:18][I][contextowner.cpp:804]: GPU Name: NVIDIA GeForce RTX 4090
+[22:17:18][I][contextowner.cpp:805]: GPU Vendor: nVidia
+[22:17:18][I][contextowner.cpp:806]: GPU Id: 9860
+[22:17:18][I][contextowner.cpp:807]: GPU Dedicated Memory: 24142

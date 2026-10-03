@@ -33,10 +33,23 @@ def main():
     issues, checks = [], {'internal_links':0, 'text_files':0, 'fixture_structures':0,
                           'workspace_hashes':0, 'audit_source_hashes':0, 'fixture_identifiers':0}
     index = json.loads((OUT/'reference/local-index.json').read_text(encoding='utf-8'))
+    asset_rows = json.loads((OUT/'examples/fixture-assets.json').read_text(encoding='utf-8'))
+    assets = {row['fixture']: row for row in asset_rows}
+    checks['binary_fixture_hashes'] = 0
     for path in sorted(OUT.rglob('*')):
-        if not path.is_file() or '__pycache__' in path.parts or path.suffix == '.pyc':
+        if not path.is_file() or '__pycache__' in path.parts or path.suffix == '.pyc' or any(x in path.relative_to(OUT).parts for x in ['runtime-evidence','run-evidence']):
             continue
         raw = path.read_bytes()
+        relative_name = path.relative_to(OUT).as_posix()
+        if relative_name in assets:
+            row = assets[relative_name]
+            checks['binary_fixture_hashes'] += 1
+            if hashlib.sha256(raw).hexdigest() != row['sha256']:
+                issues.append('Changed binary fixture: '+relative_name)
+            source = Path(row['source'])
+            if not source.is_file() or hashlib.sha256(source.read_bytes()).hexdigest() != row['sha256']:
+                issues.append('Changed binary fixture source: '+row['source'])
+            continue
         try: text = raw.decode('utf-8-sig')
         except UnicodeDecodeError:
             issues.append(f'{path.relative_to(OUT)}: not UTF-8')
@@ -113,7 +126,7 @@ def main():
         if '$AMOUNT$' in text and '/scripted_' not in '/'+path:
             issues.append('Unexpanded helper parameter outside helper definitions: '+path)
     result = {'date':'2026-10-03','status':'passed' if not issues else 'failed','checks':checks,'issues':issues,
-              'limits':['No CK3 execution','No external Tiger run','No GUI rendering','No full grammar/type validation',
+              'limits':['No fixture CK3 execution by this verifier; user-run reference exports are separately recorded','No external Tiger run','No GUI rendering','No full grammar/type validation',
                         'Workspace preservation check covers initially indexed text/reference files; no writes were made outside Documentation.']}
     write('research/verification.json',json.dumps(result,ensure_ascii=False,indent=2)+'\n')
     lines = ['# Verification results','',f"Date: 2026-10-03. Status: **{result['status']}**.",'',

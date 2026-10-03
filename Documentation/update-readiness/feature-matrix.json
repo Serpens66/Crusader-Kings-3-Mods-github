@@ -8,7 +8,11 @@
       "status": "plan ready",
       "mechanics": "Relevant: current combat coefficient",
       "resolution": "Main-phase casualty comparison; engine numerical run pending",
-      "runtime": "not run"
+      "runtime": "not run",
+      "signature_status": "source/asset contract, not an engine-command signature",
+      "signature_symbols_available": [],
+      "behavior_status": "specific source/caller/runtime gate retained",
+      "contract_card": "contracts/CD-COMBAT.md"
     },
     {
       "id": "CD-DYNASTY",
@@ -16,7 +20,11 @@
       "status": "plan ready",
       "mechanics": "Relevant: current highest tiers and dynasty contributions",
       "resolution": "Native keys verified; gameplay contribution/cap test pending",
-      "runtime": "not run"
+      "runtime": "not run",
+      "signature_status": "source/asset contract, not an engine-command signature",
+      "signature_symbols_available": [],
+      "behavior_status": "specific source/caller/runtime gate retained",
+      "contract_card": "contracts/CD-DYNASTY.md"
     },
     {
       "id": "CD-MAP",
@@ -24,7 +32,11 @@
       "status": "plan ready",
       "mechanics": "Relevant: current map/event UI",
       "resolution": "Exact keys verified; zoom and option rendering pending",
-      "runtime": "not run"
+      "runtime": "not run",
+      "signature_status": "source/asset contract, not an engine-command signature",
+      "signature_symbols_available": [],
+      "behavior_status": "specific source/caller/runtime gate retained",
+      "contract_card": "contracts/CD-MAP.md"
     },
     {
       "id": "CD-RULES",
@@ -32,7 +44,13 @@
       "status": "blocked contract",
       "mechanics": "Relevant: current rules/preset UI",
       "resolution": "UI export, nested loader precedence, current-type rebase",
-      "runtime": "not run"
+      "runtime": "not run",
+      "signature_status": "export declarations available",
+      "signature_symbols_available": [
+        "ExecuteConsoleCommand"
+      ],
+      "behavior_status": "specific source/caller/runtime gate retained",
+      "contract_card": "contracts/CD-RULES.md"
     },
     {
       "id": "CD-LOBBY",
@@ -40,7 +58,14 @@
       "status": "blocked contract",
       "mechanics": "Relevant: current character types",
       "resolution": "Designer overloads and engine post-start permission",
-      "runtime": "not run"
+      "runtime": "not run",
+      "signature_status": "export declarations available",
+      "signature_symbols_available": [
+        "LobbyView.CanTryStartRulerDesigning",
+        "TryStartRulerDesigning"
+      ],
+      "behavior_status": "specific source/caller/runtime gate retained",
+      "contract_card": "contracts/CD-LOBBY.md"
     },
     {
       "id": "CD-TOOLTIPS",
@@ -48,7 +73,15 @@
       "status": "blocked contract",
       "mechanics": "Relevant: current health UI",
       "resolution": "Datatype signatures, consumer and rendered values",
-      "runtime": "not run"
+      "runtime": "not run",
+      "signature_status": "export declarations available",
+      "signature_symbols_available": [
+        "Character.GetFertility",
+        "Character.GetHealth",
+        "Character.GetStress"
+      ],
+      "behavior_status": "specific source/caller/runtime gate retained",
+      "contract_card": "contracts/CD-TOOLTIPS.md"
     },
     {
       "id": "CD-KNIGHTS",
@@ -56,7 +89,14 @@
       "status": "plan ready",
       "mechanics": "Relevant: excluded duplicate knight feature",
       "resolution": "12-file removal; incoming references and native UI regression",
-      "runtime": "not run"
+      "runtime": "not run",
+      "signature_status": "export declarations available",
+      "signature_symbols_available": [
+        "add_character_flag",
+        "has_character_flag"
+      ],
+      "behavior_status": "specific source/caller/runtime gate retained",
+      "contract_card": "contracts/CD-KNIGHTS.md"
     },
     {
       "id": "GC-ICONS",
@@ -64,7 +104,11 @@
       "status": "blocked render",
       "mechanics": "Relevant: current gender/status consumers",
       "resolution": "Frame selection and render acceptance",
-      "runtime": "not run"
+      "runtime": "not run",
+      "signature_status": "source/asset contract, not an engine-command signature",
+      "signature_symbols_available": [],
+      "behavior_status": "specific source/caller/runtime gate retained",
+      "contract_card": "contracts/GC-ICONS.md"
     },
     {
       "id": "GC-EXTRAS",
@@ -72,7 +116,11 @@
       "status": "blocked consumer",
       "mechanics": "Unresolved: variant consumption",
       "resolution": "Actual static/dynamic references before packaging changes",
-      "runtime": "not run"
+      "runtime": "not run",
+      "signature_status": "source/asset contract, not an engine-command signature",
+      "signature_symbols_available": [],
+      "behavior_status": "specific source/caller/runtime gate retained",
+      "contract_card": "contracts/GC-EXTRAS.md"
     },
     {
       "id": "GC-PACKAGE",
@@ -80,7 +128,11 @@
       "status": "plan ready",
       "mechanics": "Not relevant: new gameplay mechanics",
       "resolution": "Preview present; preserve identity; metadata after tests",
-      "runtime": "not run"
+      "runtime": "not run",
+      "signature_status": "source/asset contract, not an engine-command signature",
+      "signature_symbols_available": [],
+      "behavior_status": "specific source/caller/runtime gate retained",
+      "contract_card": "contracts/GC-PACKAGE.md"
     },
     {
       "id": "GS-ICONS",
@@ -88,7 +140,11 @@
       "status": "blocked consumer",
       "mechanics": "Relevant: current icon/trait consumers",
       "resolution": "291 absent same paths; 41 size mismatches; current mapping",
-      "runtime": "not run"
+      "runtime": "not run",
+      "signature_status": "source/asset contract, not an engine-command signature",
+      "signature_symbols_available": [],
+      "behavior_status": "specific source/caller/runtime gate retained",
+      "contract_card": "contracts/GS-ICONS.md"
     },
     {
       "id": "GS-RANK",
@@ -96,7 +152,13 @@
       "status": "blocked contract",
       "mechanics": "Relevant: current title-tier frames",
       "resolution": "GX-RANK mapping; separate local art validation",
-      "runtime": "not run"
+      "runtime": "not run",
+      "signature_status": "export declarations available",
+      "signature_symbols_available": [
+        "Title.GetTierFrame"
+      ],
+      "behavior_status": "specific source/caller/runtime gate retained",
+      "contract_card": "contracts/GS-RANK.md"
     },
     {
       "id": "GS-ILLUSTRATIONS",
@@ -104,7 +166,11 @@
       "status": "blocked render",
       "mechanics": "Relevant: current regiment/character UI",
       "resolution": "Consumer/aspect/frame rendering",
-      "runtime": "not run"
+      "runtime": "not run",
+      "signature_status": "source/asset contract, not an engine-command signature",
+      "signature_symbols_available": [],
+      "behavior_status": "specific source/caller/runtime gate retained",
+      "contract_card": "contracts/GS-ILLUSTRATIONS.md"
     },
     {
       "id": "GS-CONTAINERS",
@@ -112,7 +178,11 @@
       "status": "blocked render",
       "mechanics": "Unresolved: current PNG-under-dds loading",
       "resolution": "Current engine acceptance; no silent conversion",
-      "runtime": "not run"
+      "runtime": "not run",
+      "signature_status": "source/asset contract, not an engine-command signature",
+      "signature_symbols_available": [],
+      "behavior_status": "specific source/caller/runtime gate retained",
+      "contract_card": "contracts/GS-CONTAINERS.md"
     },
     {
       "id": "GS-POST",
@@ -120,7 +190,11 @@
       "status": "plan ready",
       "mechanics": "Relevant: current map volumes/zoom",
       "resolution": "Six exact assignments; BOM upon editing; render transition test",
-      "runtime": "not run"
+      "runtime": "not run",
+      "signature_status": "source/asset contract, not an engine-command signature",
+      "signature_symbols_available": [],
+      "behavior_status": "specific source/caller/runtime gate retained",
+      "contract_card": "contracts/GS-POST.md"
     },
     {
       "id": "GS-PACKAGE",
@@ -128,7 +202,11 @@
       "status": "plan ready",
       "mechanics": "Not relevant: new gameplay additions",
       "resolution": "Local registration and credits; do not publish over public variant",
-      "runtime": "not run"
+      "runtime": "not run",
+      "signature_status": "source/asset contract, not an engine-command signature",
+      "signature_symbols_available": [],
+      "behavior_status": "specific source/caller/runtime gate retained",
+      "contract_card": "contracts/GS-PACKAGE.md"
     },
     {
       "id": "GX-RANK",
@@ -136,7 +214,13 @@
       "status": "blocked contract",
       "mechanics": "Relevant: current title-tier frames",
       "resolution": "Current frame mapping and atlas rendering",
-      "runtime": "not run"
+      "runtime": "not run",
+      "signature_status": "export declarations available",
+      "signature_symbols_available": [
+        "Title.GetTierFrame"
+      ],
+      "behavior_status": "specific source/caller/runtime gate retained",
+      "contract_card": "contracts/GX-RANK.md"
     },
     {
       "id": "GX-ARTIFACT",
@@ -144,7 +228,11 @@
       "status": "blocked render",
       "mechanics": "Relevant: existing artifact UI states",
       "resolution": "Current consumers and common/unique/empty rendering",
-      "runtime": "not run"
+      "runtime": "not run",
+      "signature_status": "source/asset contract, not an engine-command signature",
+      "signature_symbols_available": [],
+      "behavior_status": "specific source/caller/runtime gate retained",
+      "contract_card": "contracts/GX-ARTIFACT.md"
     },
     {
       "id": "GX-GENDER",
@@ -152,7 +240,11 @@
       "status": "blocked render",
       "mechanics": "Relevant: current status frame consumers",
       "resolution": "Separate graphical distribution and frame test",
-      "runtime": "not run"
+      "runtime": "not run",
+      "signature_status": "source/asset contract, not an engine-command signature",
+      "signature_symbols_available": [],
+      "behavior_status": "specific source/caller/runtime gate retained",
+      "contract_card": "contracts/GX-GENDER.md"
     },
     {
       "id": "GX-EXTRAS",
@@ -160,7 +252,11 @@
       "status": "blocked consumer",
       "mechanics": "Unresolved: alternate asset consumption",
       "resolution": "Static/dynamic references; no automatic deletion",
-      "runtime": "not run"
+      "runtime": "not run",
+      "signature_status": "source/asset contract, not an engine-command signature",
+      "signature_symbols_available": [],
+      "behavior_status": "specific source/caller/runtime gate retained",
+      "contract_card": "contracts/GX-EXTRAS.md"
     },
     {
       "id": "GX-PACKAGE",
@@ -168,7 +264,11 @@
       "status": "plan ready",
       "mechanics": "Not relevant: gameplay additions",
       "resolution": "Preserve public/local identity and original credits",
-      "runtime": "not run"
+      "runtime": "not run",
+      "signature_status": "source/asset contract, not an engine-command signature",
+      "signature_symbols_available": [],
+      "behavior_status": "specific source/caller/runtime gate retained",
+      "contract_card": "contracts/GX-PACKAGE.md"
     },
     {
       "id": "LW-SELECT",
@@ -176,7 +276,15 @@
       "status": "blocked contract",
       "mechanics": "Relevant: current secondary participation",
       "resolution": "War predicates, saved context and selection-time revalidation",
-      "runtime": "not run"
+      "runtime": "not run",
+      "signature_status": "mixed; missing names are not proof of unsupported API",
+      "signature_symbols_available": [
+        "is_participant",
+        "save_scope_as",
+        "trigger_event"
+      ],
+      "behavior_status": "specific source/caller/runtime gate retained",
+      "contract_card": "contracts/LW-SELECT.md"
     },
     {
       "id": "LW-EXIT",
@@ -184,7 +292,17 @@
       "status": "blocked contract",
       "mechanics": "Relevant: modern native war removal",
       "resolution": "Removal/cleanup/alliance/payment/experience contracts",
-      "runtime": "not run"
+      "runtime": "not run",
+      "signature_status": "export declarations available",
+      "signature_symbols_available": [
+        "add_prestige",
+        "add_prestige_experience",
+        "clear_saved_scope",
+        "pay_short_term_gold",
+        "remove_participant"
+      ],
+      "behavior_status": "specific source/caller/runtime gate retained",
+      "contract_card": "contracts/LW-EXIT.md"
     },
     {
       "id": "LW-RULES",
@@ -192,7 +310,14 @@
       "status": "blocked contract",
       "mechanics": "Relevant: new title tiers and notifications",
       "resolution": "Rule arithmetic verified; accounting/duplicates need current engine tests",
-      "runtime": "not run"
+      "runtime": "not run",
+      "signature_status": "export declarations available",
+      "signature_symbols_available": [
+        "highest_held_title_tier",
+        "remove_short_term_gold"
+      ],
+      "behavior_status": "specific source/caller/runtime gate retained",
+      "contract_card": "contracts/LW-RULES.md"
     },
     {
       "id": "MC-CANDIDATES",
@@ -200,7 +325,16 @@
       "status": "blocked contract",
       "mechanics": "Relevant: tributaries, domicile, diarch, faith/rite",
       "resolution": "Query validity/context and count/send equality",
-      "runtime": "not run"
+      "runtime": "not run",
+      "signature_status": "export declarations available",
+      "signature_symbols_available": [
+        "every_courtier",
+        "every_tributary",
+        "is_character_interaction_potentially_accepted",
+        "is_character_interaction_valid"
+      ],
+      "behavior_status": "specific source/caller/runtime gate retained",
+      "contract_card": "contracts/MC-CANDIDATES.md"
     },
     {
       "id": "MC-DISPATCH",
@@ -208,7 +342,14 @@
       "status": "blocked contract",
       "mechanics": "Relevant: current conversion consequences",
       "resolution": "Native actor initialization, consent, cooldown and consequence audit",
-      "runtime": "not run"
+      "runtime": "not run",
+      "signature_status": "export declarations available",
+      "signature_symbols_available": [
+        "is_character_interaction_potentially_accepted",
+        "run_interaction"
+      ],
+      "behavior_status": "specific source/caller/runtime gate retained",
+      "contract_card": "contracts/MC-DISPATCH.md"
     },
     {
       "id": "MC-VARIANTS",
@@ -216,7 +357,13 @@
       "status": "plan ready after MC gates",
       "mechanics": "Relevant: current schema and standalone categories",
       "resolution": "Port verified standalone behavior to bundle; keep categories scoped",
-      "runtime": "not run"
+      "runtime": "not run",
+      "signature_status": "export declarations available",
+      "signature_symbols_available": [
+        "run_interaction"
+      ],
+      "behavior_status": "specific source/caller/runtime gate retained",
+      "contract_card": "contracts/MC-VARIANTS.md"
     },
     {
       "id": "SA-JOIN",
@@ -224,7 +371,14 @@
       "status": "blocked contract",
       "mechanics": "Relevant: current war/diarch constraints",
       "resolution": "Target-specific query and native scope:target contract",
-      "runtime": "not run"
+      "runtime": "not run",
+      "signature_status": "export declarations available",
+      "signature_symbols_available": [
+        "is_character_interaction_valid",
+        "open_interaction_window"
+      ],
+      "behavior_status": "specific source/caller/runtime gate retained",
+      "contract_card": "contracts/SA-JOIN.md"
     },
     {
       "id": "SA-STOP",
@@ -232,7 +386,14 @@
       "status": "blocked contract",
       "mechanics": "Relevant: current vassal-war authority",
       "resolution": "Current selectable war and correct leader query context",
-      "runtime": "not run"
+      "runtime": "not run",
+      "signature_status": "export declarations available",
+      "signature_symbols_available": [
+        "is_character_interaction_valid",
+        "open_interaction_window"
+      ],
+      "behavior_status": "specific source/caller/runtime gate retained",
+      "contract_card": "contracts/SA-STOP.md"
     },
     {
       "id": "SA-EDUCATION",
@@ -240,7 +401,13 @@
       "status": "blocked contract",
       "mechanics": "Relevant: current child/court eligibility",
       "resolution": "Editing permission and current education view binding",
-      "runtime": "not run"
+      "runtime": "not run",
+      "signature_status": "export declarations available",
+      "signature_symbols_available": [
+        "open_view_data"
+      ],
+      "behavior_status": "specific source/caller/runtime gate retained",
+      "contract_card": "contracts/SA-EDUCATION.md"
     },
     {
       "id": "SA-CONVERSION",
@@ -248,7 +415,14 @@
       "status": "blocked contract",
       "mechanics": "Relevant: current faith/rite/authority",
       "resolution": "MC query gate; preserve three existing alert categories",
-      "runtime": "not run"
+      "runtime": "not run",
+      "signature_status": "export declarations available",
+      "signature_symbols_available": [
+        "is_character_interaction_potentially_accepted",
+        "open_interaction_window"
+      ],
+      "behavior_status": "specific source/caller/runtime gate retained",
+      "contract_card": "contracts/SA-CONVERSION.md"
     },
     {
       "id": "SA-WAR-START",
@@ -256,7 +430,15 @@
       "status": "blocked contract",
       "mechanics": "Relevant: current CB context and native messages",
       "resolution": "Callback sets, list uniqueness and per-side duplicate tests",
-      "runtime": "not run"
+      "runtime": "not run",
+      "signature_status": "export declarations available",
+      "signature_symbols_available": [
+        "add_to_temporary_list",
+        "on_war_started",
+        "send_interface_message"
+      ],
+      "behavior_status": "specific source/caller/runtime gate retained",
+      "contract_card": "contracts/SA-WAR-START.md"
     },
     {
       "id": "SA-WAR-JOIN",
@@ -264,7 +446,14 @@
       "status": "blocked contract",
       "mechanics": "Relevant: current joiner/war context",
       "resolution": "Current participant exclusions and receiver-list contracts",
-      "runtime": "not run"
+      "runtime": "not run",
+      "signature_status": "export declarations available",
+      "signature_symbols_available": [
+        "on_join_war_as_secondary",
+        "send_interface_message"
+      ],
+      "behavior_status": "specific source/caller/runtime gate retained",
+      "contract_card": "contracts/SA-WAR-JOIN.md"
     },
     {
       "id": "SA-DEATH",
@@ -272,7 +461,14 @@
       "status": "blocked contract",
       "mechanics": "Relevant: pre-death state and optional killer",
       "resolution": "Getter/icon timing and current native notification comparison",
-      "runtime": "not run"
+      "runtime": "not run",
+      "signature_status": "export declarations available",
+      "signature_symbols_available": [
+        "on_death",
+        "send_interface_message"
+      ],
+      "behavior_status": "specific source/caller/runtime gate retained",
+      "contract_card": "contracts/SA-DEATH.md"
     },
     {
       "id": "SA-COURT",
@@ -280,7 +476,14 @@
       "status": "blocked contract",
       "mechanics": "Relevant: current court/landless/employer state",
       "resolution": "Old employer validity, current message delivery duplicates",
-      "runtime": "not run"
+      "runtime": "not run",
+      "signature_status": "export declarations available",
+      "signature_symbols_available": [
+        "on_leave_court",
+        "send_interface_message"
+      ],
+      "behavior_status": "specific source/caller/runtime gate retained",
+      "contract_card": "contracts/SA-COURT.md"
     },
     {
       "id": "SI-ABDICATE",
@@ -288,7 +491,14 @@
       "status": "blocked contract",
       "mechanics": "Relevant: governments, landless play, current succession",
       "resolution": "Preserve heir continuation; full player/title handoff contract",
-      "runtime": "not run"
+      "runtime": "not run",
+      "signature_status": "export declarations available",
+      "signature_symbols_available": [
+        "depose",
+        "highest_held_title_tier"
+      ],
+      "behavior_status": "specific source/caller/runtime gate retained",
+      "contract_card": "contracts/SI-ABDICATE.md"
     },
     {
       "id": "SI-RESOURCES",
@@ -296,7 +506,16 @@
       "status": "narrow fixes ready; execution blocked",
       "mechanics": "Relevant: council availability and accounting; no new currencies",
       "resolution": "500 threshold/picture confirmed; loans/injury/list behavior unresolved",
-      "runtime": "not run"
+      "runtime": "not run",
+      "signature_status": "export declarations available",
+      "signature_symbols_available": [
+        "add_character_modifier",
+        "add_piety",
+        "add_prestige",
+        "remove_short_term_gold"
+      ],
+      "behavior_status": "specific source/caller/runtime gate retained",
+      "contract_card": "contracts/SI-RESOURCES.md"
     },
     {
       "id": "SI-EDUCATION",
@@ -304,7 +523,17 @@
       "status": "blocked contract",
       "mechanics": "Relevant: current delayed scopes and skill/modifier system",
       "resolution": "Student reward exactly once, death/expiry/save lifecycle",
-      "runtime": "not run"
+      "runtime": "not run",
+      "signature_status": "export declarations available",
+      "signature_symbols_available": [
+        "add_character_modifier",
+        "remove_variable",
+        "save_scope_as",
+        "set_variable",
+        "trigger_event"
+      ],
+      "behavior_status": "specific source/caller/runtime gate retained",
+      "contract_card": "contracts/SI-EDUCATION.md"
     },
     {
       "id": "SI-PARDON",
@@ -312,7 +541,14 @@
       "status": "blocked contract",
       "mechanics": "Unresolved: weak/strong consumption",
       "resolution": "Use versus remove-hook semantics and original pardon purpose",
-      "runtime": "not run"
+      "runtime": "not run",
+      "signature_status": "export declarations available",
+      "signature_symbols_available": [
+        "remove_hook",
+        "use_hook"
+      ],
+      "behavior_status": "specific source/caller/runtime gate retained",
+      "contract_card": "contracts/SI-PARDON.md"
     },
     {
       "id": "SI-MONEY",
@@ -320,7 +556,13 @@
       "status": "blocked contract",
       "mechanics": "Relevant: current budgets and player control",
       "resolution": "Exact actor-side debit/credit and target revalidation",
-      "runtime": "not run"
+      "runtime": "not run",
+      "signature_status": "export declarations available",
+      "signature_symbols_available": [
+        "pay_short_term_gold"
+      ],
+      "behavior_status": "specific source/caller/runtime gate retained",
+      "contract_card": "contracts/SI-MONEY.md"
     },
     {
       "id": "SI-EXCOMM",
@@ -328,7 +570,14 @@
       "status": "required fixes identified; policy blocked",
       "mechanics": "Relevant: rites, authority, legitimacy, current recovery",
       "resolution": "Required EXCOMMUNICATOR, removed helper, intended temporal policy",
-      "runtime": "not run"
+      "runtime": "not run",
+      "signature_status": "export declarations available",
+      "signature_symbols_available": [
+        "piety_level",
+        "use_hook"
+      ],
+      "behavior_status": "specific source/caller/runtime gate retained",
+      "contract_card": "contracts/SI-EXCOMM.md"
     },
     {
       "id": "SI-CONVERSION",
@@ -336,7 +585,13 @@
       "status": "blocked by MC",
       "mechanics": "Relevant: current conversion schema/consequences",
       "resolution": "Same shared MC work package; test bundle separately",
-      "runtime": "not run"
+      "runtime": "not run",
+      "signature_status": "export declarations available",
+      "signature_symbols_available": [
+        "run_interaction"
+      ],
+      "behavior_status": "specific source/caller/runtime gate retained",
+      "contract_card": "contracts/SI-CONVERSION.md"
     },
     {
       "id": "SI-WARS",
@@ -344,7 +599,13 @@
       "status": "blocked by LW",
       "mechanics": "Relevant: modern war contracts",
       "resolution": "Same shared LW work package; test bundle separately",
-      "runtime": "not run"
+      "runtime": "not run",
+      "signature_status": "export declarations available",
+      "signature_symbols_available": [
+        "remove_participant"
+      ],
+      "behavior_status": "specific source/caller/runtime gate retained",
+      "contract_card": "contracts/SI-WARS.md"
     }
   ],
   "excluded": [

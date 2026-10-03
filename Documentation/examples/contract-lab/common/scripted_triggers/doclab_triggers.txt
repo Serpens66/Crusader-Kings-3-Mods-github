@@ -1,0 +1,12 @@
+﻿# Requires candidate this and the requester as root. No persistent mutation.
+doclab_batch_candidate = {
+    is_alive = yes
+    is_adult = yes
+    NOT = { this = root }
+    root = {
+        is_character_interaction_valid = {
+            recipient = prev
+            interaction = doclab_transfer_interaction
+        }
+    }
+}

@@ -95,3 +95,9 @@ Full Wiki/game-text archives are intentionally absent. A mirror repository licen
 ## Updating evidence
 
 Record the new installation and source dates, regenerate local indexes, then review changed contracts and teaching examples. Do not declare old material current just because an online archive was refreshed.
+
+## Current export/recipe sources (2026-10-03)
+
+Installed baseline 1.20.0.3 and engine commit are supported by the [runtime intake](../update-readiness/evidence/runtime-intake.json), including both original export sessions and their different crash/exit results. All eleven raw sources are listed with path, timestamp, SHA and decoding candidate in [engine index](../reference/engine-1.20.0.3.json). Recipe source paths, full-read line counts and hashes are in [native recipe audit](../examples/native-recipe-audit.json); exact asset originals/hashes in [fixture manifest](../examples/fixture-assets.json).
+
+Rechecked [Tiger primary repository](https://github.com/amtep/tiger) and [Wiki archive primary repository](https://github.com/jesec/ck3-modding-wiki) on 2026-10-03. Tiger describes validation scope and possible false positives/update lag; no installed Tiger executable was found and target-build support is not established here. No installation or validation run was performed. Historical wiki/OldEnt references remain discovery aids; current installed exports and native callers take priority for this baseline. These pages are summarized, not mirrored.

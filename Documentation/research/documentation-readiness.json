@@ -1,0 +1,286 @@
+{
+  "date": "2026-10-03",
+  "question": "Does the documentation alone fully explain existing mods and support functional similar new mods?",
+  "verdict": "Strong discovery and implementation foundation; not a self-contained complete behavior reference or runtime certification",
+  "mod_roots": [
+    {
+      "root": "CustomDefines",
+      "readable_files": 20,
+      "bytes": 55902,
+      "sha256": {
+        "descriptor.mod": "c0fcfdd5a9c71c87e61da03392c5656d60f369334016e27d12e46fbc707faf11",
+        "events/knight_manager_events.txt": "515338e2ea435572b93b9cbe9dc0d4c13d6c99a19e8527c61c15740c951848be",
+        "gui/11_game_rules.gui": "d0aa778b95ebf7409b5477f582bfe6b8a2dad890b73f088872c3a9bad94f15fe",
+        "gui/11_multiplayer_types.gui": "9a8699b4150cee52aa0481227e71e21b5290adb95cdea92f0e89f31ca057fda3",
+        "gui/window_knights.gui": "15d09bd007e13226bdfe8a612740bd3824e766d0d2ea1b5e8d223bbead37e2c5",
+        "common/defines/serp_defines.txt": "b77539f963ef2102d729d5dd5590c6c3eea3482c300f690407292a5cbaeb4584",
+        "common/on_action/knight_manager_on_actions.txt": "75055728a854ad4358d1e38d23f4984fee73075a085b32a7c74091b6c022bd78",
+        "common/scripted_guis/knight_manager_gui.txt": "115e182f4218c6df1d9c19b72b595b3326590755fc6b40d179f59b327fcb9d46",
+        "common/scripted_triggers/knighthood_trigger.txt": "bc66d733b460941a57d87ff8ce9241f7b05d57167c967d4829bf940e1f351df3",
+        "common/defines/graphic/serp_graphic_defines.txt": "59ad1773123369559a9c94930ed3882458dc75c4fbc8a61be9f14974c3a529d4",
+        "common/defines/jomini/serp_jomini_defines.txt": "d3df0eaab5dc7b5575c96446199e4b9d5822d877a06c6a6ad4615aae142dd95a",
+        "localization/english/knight_manager_mod_l_english.yml": "883e5c69d9449a417b34479654691143e64b1000b5c259ec1b94aad86bf45a03",
+        "localization/french/knight_manager_mod_l_french.yml": "a1cfdcc61ab75b4de949c667a1da6f1f7d53f35f4e723d41fec8f3a4daba69cc",
+        "localization/german/knight_manager_mod_l_german.yml": "e86a1a43c8025c9d592aae887b3691a74f88ecef22a7fa341d6e9cb0b46dae4f",
+        "localization/korean/knight_manager_mod_l_korean.yml": "bb5e549af744be19f403552d249ba0aebf31dd4bd908a9f3991d697047475644",
+        "localization/russian/knight_manager_mod_l_russian.yml": "218130de03d430585cc2cae3c4170295e003ee528a5c67547a89fcf8e849e20c",
+        "localization/simp_chinese/knight_manager_mod_l_simp_chinese.yml": "4b9f4d262c4ffd1a95fc06b3aae045b5d2c0c3192b665e14f87b13613e1af07e",
+        "localization/spanish/knight_manager_mod_l_spanish.yml": "1f8680eccff8749941db9a5e0044f776306c3fd15131ed06fcfd08b880c13f51",
+        "localization/english/gui/moretooltip_l_english.yml": "91df84cdb8a07dfb7baa5c8593352d3ddc66ef01797cf2f3007ae0ddec500526",
+        "localization/german/gui/moretooltip_l_german.yml": "2703fa495f66b0f515fe40e81fe5fe4c0904032dfdd86a49f81c96b9e42b1a74"
+      }
+    },
+    {
+      "root": "Gender Colour",
+      "readable_files": 1,
+      "bytes": 134,
+      "sha256": {
+        "descriptor.mod": "6d1e737a763daf251a8b01fb7d3ad74b69141ed9d3cec69c11e9eff60ffede10"
+      }
+    },
+    {
+      "root": "GFX-Mod",
+      "readable_files": 2,
+      "bytes": 983,
+      "sha256": {
+        "credits.txt": "d4396b8caecc66db6c827fbbe2dfed4e3e794437ef17283871e51745790d6db4",
+        "descriptor.mod": "6f2490d0560fbcbe0bc1fc82937c3428d59a2ed3b18cad6da6db12fbf6263168"
+      }
+    },
+    {
+      "root": "GFX-Mod Serp",
+      "readable_files": 4,
+      "bytes": 4330,
+      "sha256": {
+        "credits.txt": "0f9660608f1d5a21d18d23ccd5d840abcfa39b2d1f3e5f2b80122b98a6addc39",
+        "descriptor.mod": "6f2490d0560fbcbe0bc1fc82937c3428d59a2ed3b18cad6da6db12fbf6263168",
+        "info.txt": "52fb9d3da127f434b59920dab8025f784b50078676c12018ec0559dd33e7630c",
+        "gfx/map/post_effects/posteffect_volumes.txt": "38a69ae3d84bcd8b2931147ced27f20c0459cf5ac7d720560f5e945403ec25dd"
+      }
+    },
+    {
+      "root": "Knight Manager (MP)",
+      "readable_files": 15,
+      "bytes": 55821,
+      "sha256": {
+        "descriptor.mod": "12bc383432d9f42d51e493eda58be75043d584a41bf6cb262dab5757de584ba3",
+        "OUTDATED.txt": "f6fa829c529df799438d5e86c1ab0bf6570ec646698c3074c47fe85455c9b128",
+        "events/knight_manager_events.txt": "515338e2ea435572b93b9cbe9dc0d4c13d6c99a19e8527c61c15740c951848be",
+        "gui/window_knights.gui": "bbae86490afac222608c0db5d6b64987c1aa045fe365f55a1a2d9d2e7fd0d2b9",
+        "common/on_action/knight_manager_on_actions.txt": "75055728a854ad4358d1e38d23f4984fee73075a085b32a7c74091b6c022bd78",
+        "common/scripted_guis/knight_manager_gui.txt": "115e182f4218c6df1d9c19b72b595b3326590755fc6b40d179f59b327fcb9d46",
+        "common/scripted_triggers/knighthood_trigger.txt": "93f859fe9b6dc283539b3abe13c83a48cbdb15011e8b390b54e61eb33d4f29b1",
+        "localization/english/knight_manager_mod_l_english.yml": "28f0efac8919409d0c2cd5f6e98c431b5b90d71807b931864ee662c959c960b3",
+        "localization/french/knight_manager_mod_l_french.yml": "71ace607c29875d0b036e32fbf2b130433234c53e9ba6023d8b0161c015c069c",
+        "localization/german/knight_manager_mod_l_german.yml": "cc6cccc95738e86a027a6daf30137199f7c852249feadd2d5504dfea96f7d802",
+        "localization/korean/knight_manager_mod_l_korean.yml": "9b4d802f78da27786b8581667cb5d9d74485df045c63b7521cf4b5301ae753d4",
+        "localization/polish/knight_manager_mod_l_polish.yml": "c9a0d2ffe9548ec36405ae40403627b16068f041a0378d91fad65d395aa10855",
+        "localization/russian/knight_manager_mod_l_russian.yml": "8604a2d9ed00aa8a36a74229d75b14e6d2ab01afd1b84c30921587892cf60ba1",
+        "localization/simp_chinese/knight_manager_mod_l_simp_chinese.yml": "1088fef9f5d8a9f4bb9d3e1d97c0cac5d44a6f79c4bc4ce323244e059c117cad",
+        "localization/spanish/knight_manager_mod_l_spanish.yml": "a2b2c3210438eaef14c205755ebdbdcd628aa827fc669686242a59b5ffc9f11c"
+      }
+    },
+    {
+      "root": "Knight Manager Continued (MP)",
+      "readable_files": 4,
+      "bytes": 17064,
+      "sha256": {
+        "descriptor.mod": "134ce6f604faa44182c98416a50a525391f5ee18f30890d5197a331f9df2d743",
+        "OUTDATED.txt": "f6fa829c529df799438d5e86c1ab0bf6570ec646698c3074c47fe85455c9b128",
+        "common/scripted_guis/kmc_gui.txt": "adacc615b432403b89a05be9b95dd88e173583076899012c5d552abe0f0ab2e6",
+        "common/scripted_triggers/kmc_trigger.txt": "7bc002335b2b27ea29c8e14011460b0d72070d111f2b22b83645ad8614476dab"
+      }
+    },
+    {
+      "root": "Leave Wars",
+      "readable_files": 15,
+      "bytes": 135509,
+      "sha256": {
+        "descriptor.mod": "f58c333d6b1ec185ddfc1ab0f6760a579f71eeab72e58620fe178438ccc204f2",
+        "events/leave_war_mod_events.txt": "6ad8e729a8ce1fd95f77faf43d1e33d4367fcd3c2fe9dce3890b55ea03154d86",
+        "common/character_interactions/leave_war_mod_interaction.txt": "62b75b47b8f4b7e302bd17d45d91a3de46e5ae2662246d992a4863f5cbc8a111",
+        "common/effect_localization/leave_war_mod_effect_loc.txt": "9b2c5e8b1376f947591e6a58f53082bf1940ef5e988282486f3be1cd0b784668",
+        "common/game_rules/leave_war_mod_rules.txt": "79a2dfcba33c495ab570bd4f8031970b27d0c7a98ea8383bdc27d36ad786e6fc",
+        "common/messages/leave_war_mod_messages.txt": "65f401e1aefa285763bca7a6ba0578fda341d83b1fb588fac9e53486e6736358",
+        "common/opinion_modifiers/leave_war_mod_opinions.txt": "912fb4ccd8cf292bb57bd41bb5e56fb47f434f7cb192ba3bcdc5b57234cb6ca1",
+        "common/script_values/leave_war_mod_cost_values.txt": "eb34904f59d4aa996e8ee3c3738984fbf7f64477a85ce0710c409813deb28005",
+        "localization/english/leave_war_mod_l_english.yml": "259ef0cd29c0fcd29dcd54d7c6686552f7b25762422c2125989f387c9d6ec165",
+        "localization/french/leave_war_mod_l_french.yml": "f44431f4ebe87ff54ed837db0229aefd1d6a1a424f9d1d1d8a83f4017f3f71b6",
+        "localization/german/leave_war_mod_l_german.yml": "9b34f18033a74df96edf494e5280c393fe68a3f23abae3966d964152d0ce1c6c",
+        "localization/korean/leave_war_mod_l_korean.yml": "b0535bdd54606a44f48dcb5fcd6246fed3444a8a88c144bd3cc4594261696ef0",
+        "localization/russian/leave_war_mod_l_russian.yml": "a3b7b0651d90adfceceab81069f9744818c7b9b15c8bf54222921ebef96c4c6d",
+        "localization/simp_chinese/leave_war_mod_l_simp_chinese.yml": "786650648fed8452a1640667145dbf21dcd886bb1a91ccb767fa93df2b7d2ab4",
+        "localization/spanish/leave_war_mod_l_spanish.yml": "963e8dcae3e6b97374824bb7a932c0fabcdc119e5e8808cd72228000486004ea"
+      }
+    },
+    {
+      "root": "Mass Demand Conversion",
+      "readable_files": 12,
+      "bytes": 24626,
+      "sha256": {
+        "descriptor.mod": "76d6dfbe8ba12d863905605bb3f706d06893a70b5cb240a300f6f1b7fdba0ea0",
+        "common/decisions/mod_mass_convert_subjects.txt": "fbbd9f04e5a7ab9b8eaee71c31bf4053c9f37e0f526936d7ad482fb4238f0732",
+        "common/script_values/mod_mass_convert_subjects_values.txt": "9340207b8db21b621b20d0d5a95274f85eb4a48bd4fa6b94020e68048bf3c0af",
+        "events/religion_events/accept_conversion_notification.txt": "13213f5522e28fe0ae3fa5526544e9135d797c7b553848d091326287dbb588f7",
+        "localization/english/mod_mass_convert_subjects_l_english.yml": "894410b117b12305a391d7eaafc32c0273022eca8205edfc6d4bdab14c7c6273",
+        "localization/french/mod_mass_convert_subjects_l_french.yml": "c5b9092fc6d67cd3bc2b21ff3b33c6beac7e54c6778289153ae420e630c68639",
+        "localization/german/mod_mass_convert_subjects_l_german.yml": "2140017043625f3bf3daf77234e13bb8d1cf3e9470e7b6b35865ac540a00c5cf",
+        "localization/korean/mod_mass_convert_subjects_l_korean.yml": "c0efa9a33d383e13326dcc2a0c02c98913e662b40d3c8cc16961313a58e0af70",
+        "localization/polish/mod_mass_convert_subjects_l_polish.yml": "e63ab8775303cc3b5e107a7e742496fcf0a5b8b8198bba1dbee291720d25b6af",
+        "localization/russian/mod_mass_convert_subjects_l_russian.yml": "81e77925456389bc129cb457d9ab9cbfdbb2c1234c3ab4c239a0fa7b67979f7a",
+        "localization/simp_chinese/mod_mass_convert_subjects_l_simp_chinese.yml": "dbc8205102725f3fdd81dabc78e7c83f14b079ce4384a3c84f08fb23396f5a96",
+        "localization/spanish/mod_mass_convert_subjects_l_spanish.yml": "c93b0bc75055669a2cdb3c2d3685f8121b2f3847f61a6dafb356acd7957a723f"
+      }
+    },
+    {
+      "root": "SerpAlerts",
+      "readable_files": 12,
+      "bytes": 96602,
+      "sha256": {
+        "descriptor.mod": "a26d34a43d9f76d677b8606bc32af79d952850f1ae9624f0dc39ac21371d72fb",
+        "events/serp_alerts_events.txt": "183fb0b9cd763112a0646fb493ca6e42b6d9ef3fdf322da6e8436e89c36ca4f8",
+        "common/important_actions/serp_alerts_actions.txt": "2841341b3c40e212356406bfc98852d92e9aaf6ad326fcf34bea4745120ffeb7",
+        "common/messages/serp_alerts_mod_messages.txt": "9f2ad6bdbc30d0c30580b469f18290ec204c2d028ea342397f4b5635d8f17bca",
+        "common/on_action/serp_on_actions_alerts_mod.txt": "f5a722a232b2bdf68c2230089219279bf96a86386d30408d19404097079a0530",
+        "localization/english/serp_alerts_messages_mod_l_english.yml": "631889ee5a893d8ba46938860a39b7024b0daf73cf94aa48886509e04c7d9461",
+        "localization/french/serp_alerts_messages_mod_l_french.yml": "d21d8d5d76d31ff136c0b77224a6b35dff12fc9823bc1914622c7abbabf0e71a",
+        "localization/german/serp_alerts_messages_mod_l_german.yml": "333b37cf326add6df3fdef6f6e53ee718cf4babd0d7f9592be7899bc6c9400a4",
+        "localization/korean/serp_alerts_messages_mod_l_korean.yml": "ef1dbc492b868110e6928e8666f5746a842532b392af3914966d54731f81195d",
+        "localization/russian/serp_alerts_messages_mod_l_russian.yml": "47fd90badbd5842947a5e1fd8da6064361bad3b840e28d4afa60ebc05f0fd717",
+        "localization/simp_chinese/serp_alerts_messages_mod_l_simp_chinese.yml": "b07ad5bfb98e03f4e52b6531b876f966915af96b5d5912170a71674b1a7c6b82",
+        "localization/spanish/serp_alerts_messages_mod_l_spanish.yml": "7dc6aa8356e935a2b4f8c868bc43e5b5214fd59d7ab539030891c975b9ae610d"
+      }
+    },
+    {
+      "root": "SerpInteractionsDecisions",
+      "readable_files": 51,
+      "bytes": 273251,
+      "sha256": {
+        "descriptor.mod": "261cb063144f9f1f08b5bf0ce9f85c0b9cc36567d5f785ab7ee172063efe100d",
+        "events/additional_education_events.txt": "4257fef74e1c7cf39ad0aaee9ab367fc8bb8a5f7ee5d92e7d67b3d2ee22bd380",
+        "events/convert_resources_events.txt": "e8d666d13a6dab344864616898c785329cebde8ae147986c016b7bce8abce697",
+        "events/leave_war_mod_events.txt": "6ad8e729a8ce1fd95f77faf43d1e33d4367fcd3c2fe9dce3890b55ea03154d86",
+        "common/character_interactions/additional_education_interactions.txt": "6077bc41dba2804b64c4fb2175d584cdbfbe65245d4d847ba48768de19ff9dc4",
+        "common/character_interactions/leave_war_mod_interaction.txt": "62b75b47b8f4b7e302bd17d45d91a3de46e5ae2662246d992a4863f5cbc8a111",
+        "common/character_interactions/pardon_hooks_interactions.txt": "a2ab219651d33ed48180940f4414d87352f2c36eecd91ba7d70c78d8ffb82125",
+        "common/character_interactions/send_mpmoney_interactions.txt": "cc4970320c2ba6f4a6cfd607d50f86d98329655731e68b133dee45480aaa80af",
+        "common/character_interactions/temp_excommunication_interactions.txt": "a2cd112b1771c93ea76c0577a64ac5869a5bee701954e40eac52f994de983167",
+        "common/decisions/ABD_decision.txt": "706332a35e57fabd6ed05135018b06c2359798661e56bb3d04b0e4e10a6f1d9b",
+        "common/decisions/convert_resources_decision.txt": "0c359574c5331e6037ac44f567afd74beebd66abadc64328e69e975274531379",
+        "common/decisions/mod_mass_convert_subjects.txt": "93dbafbddd84c242ac06a39a800b54aec616c8b476b7de3820d6b1fdb6311020",
+        "common/effect_localization/leave_war_mod_effect_loc.txt": "9b2c5e8b1376f947591e6a58f53082bf1940ef5e988282486f3be1cd0b784668",
+        "common/game_rules/leave_war_mod_rules.txt": "79a2dfcba33c495ab570bd4f8031970b27d0c7a98ea8383bdc27d36ad786e6fc",
+        "common/messages/leave_war_mod_messages.txt": "65f401e1aefa285763bca7a6ba0578fda341d83b1fb588fac9e53486e6736358",
+        "common/modifiers/additional_education_modifiers.txt": "5828618213c6ae4b892bee95ec6dfe51ba44e12ebc52844b86041ad40bfc98dd",
+        "common/modifiers/convert_resources_modifiers.txt": "bc8d42d20a17ca3c4b2082d78d8c91daadff3078c77e4336897df1674f93d9a0",
+        "common/opinion_modifiers/additional_education_opinions.txt": "0ff72219bc1de8d5fec19bd2eeefc854dca21e502162c37273709ad7de4e1aea",
+        "common/opinion_modifiers/leave_war_mod_opinions.txt": "912fb4ccd8cf292bb57bd41bb5e56fb47f434f7cb192ba3bcdc5b57234cb6ca1",
+        "common/opinion_modifiers/pardon_hooks_opinions.txt": "9fb15667e34b0a65cebe8e74826b0195da428e77adc1453c8801409507d565c5",
+        "common/script_values/additional_education_cost_values.txt": "1138be918e2209ba47bee24e070bd42b36eaf71ef93efe188227257fadb30c73",
+        "common/script_values/leave_war_mod_cost_values.txt": "eb34904f59d4aa996e8ee3c3738984fbf7f64477a85ce0710c409813deb28005",
+        "common/script_values/mod_mass_convert_subjects_values.txt": "4dc48002026170a152c9fd22c9aa7cd9de812c999bac58ccfbc6ecd86853e9b8",
+        "common/script_values/temp_excommunication_interactions_cost_values.txt": "fd625372597bac4d80454618c8d2844d92e1f1bfacb43e08126c55668edfba1d",
+        "events/religion_events/accept_conversion_notification.txt": "13213f5522e28fe0ae3fa5526544e9135d797c7b553848d091326287dbb588f7",
+        "localization/english/ABD_l_english.yml": "0a63618ebf0e8c8b6924d815fff9ec1791b4b9f2302250b40dcf9912a89f92b4",
+        "localization/english/additional_education_l_english.yml": "eb4b21537e1ee5efe55ac8c2226b8a60ff2720eb4fbd8ef48b265e6f07a1b2b2",
+        "localization/english/convert_resources_l_english.yml": "7d5471c717615681487aa9654bedb92062725468ed2b4e87b9d50d80439e955d",
+        "localization/english/leave_war_mod_l_english.yml": "259ef0cd29c0fcd29dcd54d7c6686552f7b25762422c2125989f387c9d6ec165",
+        "localization/english/mod_mass_convert_subjects_l_english.yml": "4e7535ef4272b33e198a79418d99c73abe8404939031d226bc65dd8c02245fc0",
+        "localization/english/pardonhooks_l_english.yml": "d031253a7cd758380676b794981796813134ad0807e13f1666dbfcc167012f9f",
+        "localization/english/send_mpmoney_l_english.yml": "470886be97a9cbd26d26b68b0a9b08f9590ec44164e589f1e5b714d13a13f085",
+        "localization/english/temp_excom_interactions_l_english.yml": "4ebf7d117fdfe0934b7c4838f68472f3ddb59c0379c8cf7b8d1dc6e08d941667",
+        "localization/french/leave_war_mod_l_french.yml": "f44431f4ebe87ff54ed837db0229aefd1d6a1a424f9d1d1d8a83f4017f3f71b6",
+        "localization/french/mod_mass_convert_subjects_l_french.yml": "49acfbfe46bcd562f9b80d44f534feaae281fd8ed793ecb3cb6ac70956d47ddd",
+        "localization/german/ABD_l_german.yml": "166ada030839f1f2bf0457e34167329bd89fc27f6e346c09ff352f54d0928361",
+        "localization/german/additional_education_l_german.yml": "c4d8c323fb4fda55fca76a0e3229f082403a880ade0e0629943561efcace28bd",
+        "localization/german/convert_resources_l_german.yml": "9187e1753f05d3af5263fb2f7a52f2a0b146bbc752dd34f6642e86335cfde5f6",
+        "localization/german/leave_war_mod_l_german.yml": "9b34f18033a74df96edf494e5280c393fe68a3f23abae3966d964152d0ce1c6c",
+        "localization/german/mod_mass_convert_subjects_l_german.yml": "77d3d6e986baa34dcb7b2153302548faab0c7e48fba951d884730e37a3a1c6c5",
+        "localization/german/pardonhooks_l_german.yml": "b03415f02bb33fbea8816746b973a77f2766c0ea5deccdf26df7a67f39976350",
+        "localization/german/send_mpmoney_l_german.yml": "83397c337672608a5e0cfb8f4707a14a85c597a37ed6b1dd1466c5aea002c611",
+        "localization/german/temp_excom_interactions_l_german.yml": "c2fb04e23861c29d720d08ef11ca75f9e2401b96e0094e4d7aadb406bd74948c",
+        "localization/korean/leave_war_mod_l_korean.yml": "b0535bdd54606a44f48dcb5fcd6246fed3444a8a88c144bd3cc4594261696ef0",
+        "localization/korean/mod_mass_convert_subjects_l_korean.yml": "f64f467c6f0cad43c5271e8141ba710f8f77496a5758a7e5e53072c49df4acdf",
+        "localization/russian/leave_war_mod_l_russian.yml": "a3b7b0651d90adfceceab81069f9744818c7b9b15c8bf54222921ebef96c4c6d",
+        "localization/russian/mod_mass_convert_subjects_l_russian.yml": "186dd7eacc538f561160b5016d8bae3f1c411079ba1e5c7346cab766271e787c",
+        "localization/simp_chinese/leave_war_mod_l_simp_chinese.yml": "786650648fed8452a1640667145dbf21dcd886bb1a91ccb767fa93df2b7d2ab4",
+        "localization/simp_chinese/mod_mass_convert_subjects_l_simp_chinese.yml": "809b2b5dde33f5db61b8a915027aedc02cf5b718f41563bf9362640bb0cfb408",
+        "localization/spanish/leave_war_mod_l_spanish.yml": "963e8dcae3e6b97374824bb7a932c0fabcdc119e5e8808cd72228000486004ea",
+        "localization/spanish/mod_mass_convert_subjects_l_spanish.yml": "12915b9ce342d859323b9cb9fb85e15679033b1a2e588cccbc2ae07c0ffbdd69"
+      }
+    },
+    {
+      "root": "test",
+      "readable_files": 13,
+      "bytes": 52284,
+      "sha256": {
+        "descriptor.mod": "b94d26d2b995c9a8bee54585427362cb5b344ab48c5f6a1b52bdb22428928bb0",
+        "events/knight_manager_events.txt": "515338e2ea435572b93b9cbe9dc0d4c13d6c99a19e8527c61c15740c951848be",
+        "gui/window_knights.gui": "bbae86490afac222608c0db5d6b64987c1aa045fe365f55a1a2d9d2e7fd0d2b9",
+        "common/on_action/knight_manager_on_actions.txt": "75055728a854ad4358d1e38d23f4984fee73075a085b32a7c74091b6c022bd78",
+        "common/scripted_guis/knight_manager_gui.txt": "115e182f4218c6df1d9c19b72b595b3326590755fc6b40d179f59b327fcb9d46",
+        "common/scripted_triggers/knighthood_trigger.txt": "e26b33560d2bfd1ac7a7dbd09496544f927814e5a45deac547f60effa1427e73",
+        "localization/english/knight_manager_mod_l_english.yml": "28f0efac8919409d0c2cd5f6e98c431b5b90d71807b931864ee662c959c960b3",
+        "localization/french/knight_manager_mod_l_french.yml": "71ace607c29875d0b036e32fbf2b130433234c53e9ba6023d8b0161c015c069c",
+        "localization/german/knight_manager_mod_l_german.yml": "cc6cccc95738e86a027a6daf30137199f7c852249feadd2d5504dfea96f7d802",
+        "localization/korean/knight_manager_mod_l_korean.yml": "9b4d802f78da27786b8581667cb5d9d74485df045c63b7521cf4b5301ae753d4",
+        "localization/russian/knight_manager_mod_l_russian.yml": "8604a2d9ed00aa8a36a74229d75b14e6d2ab01afd1b84c30921587892cf60ba1",
+        "localization/simp_chinese/knight_manager_mod_l_simp_chinese.yml": "1088fef9f5d8a9f4bb9d3e1d97c0cac5d44a6f79c4bc4ce323244e059c117cad",
+        "localization/spanish/knight_manager_mod_l_spanish.yml": "a2b2c3210438eaef14c205755ebdbdcd628aa827fc669686242a59b5ffc9f11c"
+      }
+    }
+  ],
+  "files_read": 149,
+  "method": "Readable text/code inventory and existing purpose/feature-sheet review; previously recorded binary inventory/consumer evidence used; no new binary render audit or gameplay test",
+  "recorded_feature_packages": 43,
+  "recorded_status_counts": {
+    "plan ready": 8,
+    "blocked contract": 22,
+    "blocked render": 5,
+    "blocked consumer": 3,
+    "plan ready after MC gates": 1,
+    "narrow fixes ready; execution blocked": 1,
+    "required fixes identified; policy blocked": 1,
+    "blocked by MC": 1,
+    "blocked by LW": 1
+  },
+  "status_limit": "These are unreconciled preparation-sheet statuses; do not equate them with current export availability or a fresh verdict on every engine primitive",
+  "current_exports_verified": 11,
+  "native_review_sources": [
+    {
+      "path": "E:\\ProgrammeE\\Steam\\steamapps\\common\\Crusader Kings III\\game\\common\\on_action\\_on_actions.info",
+      "sha256": "2bfbbf903d55a2417c988caf1479ef0ff91719c55128ce6357bca3d2c8e9b25f",
+      "review": "Complete developer reference read; does not complete every feature audit"
+    },
+    {
+      "path": "E:\\ProgrammeE\\Steam\\steamapps\\common\\Crusader Kings III\\game\\common\\important_actions\\_important_actions.info",
+      "sha256": "143861200a0aa1e0273bc332cbdb57042de4e23cea2c697f28dfe36796e0fd05",
+      "review": "Complete developer reference read; does not complete every feature audit"
+    },
+    {
+      "path": "E:\\ProgrammeE\\Steam\\steamapps\\common\\Crusader Kings III\\game\\common\\character_interactions\\_character_interactions.info",
+      "sha256": "cc2442a313a6b1a2a7fa02b92a094276edfe39c60835c3286172c5b6d7b70a37",
+      "review": "Complete developer reference read; does not complete every feature audit"
+    },
+    {
+      "path": "E:\\ProgrammeE\\Steam\\steamapps\\common\\Crusader Kings III\\game\\common\\script_values\\_script_values.info",
+      "sha256": "764ad711339c61bf239851bd52d87168dc1a2c91fe0c385c308ec4b85e2b5ef1",
+      "review": "Complete developer reference read; does not complete every feature audit"
+    },
+    {
+      "path": "E:\\ProgrammeE\\Steam\\steamapps\\common\\Crusader Kings III\\game\\gui\\multiplayer_types.gui",
+      "sha256": "93912d008d2362955470e7f42029280c41e3e316e28d8d1055ee09dfbe8bc3a3",
+      "review": "Whole file read and current designer callers compared with current dump and CustomDefines caller; engine permission/defaults not inferred"
+    }
+  ],
+  "gaps": [
+    "Current dumps not integrated into API quick reference, lookup tool or feature sheets",
+    "Several pre-export availability statements obsolete",
+    "Feature-specific state ownership, scope flow, dynamic helper expansion and callback routing incomplete",
+    "Standalone current-window GUI and complex lifecycle/notification teaching examples not runtime verified",
+    "Asset frame/consumer/format/render mapping incomplete",
+    "Excluded Knight Manager variants have orientation rather than full per-preference behavior reference",
+    "No functional fixture, per-mod, save/load or multiplayer acceptance results"
+  ],
+  "no_mod_or_game_writes": true
+}
