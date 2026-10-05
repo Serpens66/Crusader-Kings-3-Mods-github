@@ -68,3 +68,7 @@ See [Crozier GUI/tools](crozier-gui-tools.md) for data-model joining, database l
 ## Legacy containers and historical overrides
 
 The [legacy GUI audit](dynasty-legacies.md) traces `DynastyHouseView.GetLegacies`, item contexts, framed progress and separate `GetIcon`/`GetTrackIcon` consumers. The historical Scrollable replacement is superseded in the examined native snapshots; do not transplant its full window into Crozier. Twenty custom asset object IDs and nine localization key sets are inventoried, without claiming rendering or path-resolution success.
+
+## MDC layout investigation: mandatory failure evidence
+
+Before further MDC GUI work, read the [screenshot-backed failed-approach ledger](../update-readiness/mods/mass-demand-conversion-gui-failures-20261005.md) and [current isolated size correction](../update-readiness/mods/mass-demand-conversion-scroll-size-20261005.md). Audit inherited nominal size separately from min/max bounds and inspect the complete insertion/layout chain. Repeated source checks and Git equality did not establish renderer success. Parent anchors, flexible-space recipes and old custom Git snapshots must not be promoted to working examples from static tests alone.

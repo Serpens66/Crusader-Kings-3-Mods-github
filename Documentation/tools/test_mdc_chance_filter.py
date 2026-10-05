@@ -3,6 +3,7 @@ import hashlib
 import json
 import re
 import sys
+import subprocess
 import unittest
 from pathlib import Path
 
@@ -35,9 +36,26 @@ def parse(text):
                 if not nested:
                     raise ValueError('Unexpected closing brace')
                 return rows
+            if key == 'types':
+                key += ' ' + tokens[position]
+                position += 1
+                assert tokens[position] == '{'
+                position += 1
+                rows.append((key, content(True)))
+                continue
+            if key == 'type' and tokens[position] != '=':
+                key += ' ' + tokens[position]
+                position += 1
+                assert tokens[position] == '='
+                base = tokens[position + 1]
+                position += 2
+                assert tokens[position] == '{'
+                position += 1
+                rows.append((key, [('base_type', base)] + content(True)))
+                continue
             if position < len(tokens) and tokens[position] in ('=', '?=', '>=', '<', '!='):
                 position += 1
-            elif key == 'blockoverride':
+            elif key in ('blockoverride', 'block'):
                 key += ' ' + tokens[position]
                 position += 1
             else:
@@ -338,26 +356,105 @@ class FilterTests(unittest.TestCase):
             marked = [m for m, button in zip(MODES, buttons) if evaluate_filter(one(one(button, 'blockoverride "radio"'), 'frame'), value) == 1]
             self.assertEqual(marked, [expected_mode])
 
-    def test_compact_row_bounds_scroll_and_no_permanent_explanation(self):
+    def test_compact_bounds_and_no_permanent_explanation(self):
         def size(node, key):
             return tuple(int(k) for k, _ in one(node, key))
         root = one(self.gui, 'vbox')
         row = named(self.gui, 'mdc_filter_row')
         scroll = named(self.gui, 'mdc_recipient_scroll')
+        self.assertEqual(one(root, 'layoutpolicy_horizontal'), 'expanding')
+        self.assertEqual(one(root, 'spacing'), '8')
+        self.assertIn(row, all_values(root, 'widget'))
+        self.assertIn(scroll, all_values(root, 'scrollbox'))
+        self.assertEqual(size(row, 'size'), (514, 32))
         for key in ['minimumsize', 'maximumsize']:
             self.assertEqual(size(root, key), (514, 250))
             self.assertEqual(size(row, key), (514, 32))
             self.assertEqual(size(scroll, key), (514, 210))
-        self.assertEqual(one(root, 'spacing'), '8')
         self.assertNotIn('mdc_chance_filter_scope_note', self.gui_text)
-        for group in GROUPS:
-            wrapper = named(self.gui, 'mdc_filter_for_' + group)
-            self.assertIn(wrapper, [v for n in walk(row) for k, v in n if k == 'hbox'])
-            self.assertEqual(one(one(wrapper, 'text_single'), 'text'), '"mdc_chance_filter_heading"')
-            columns = [n for n in walk(wrapper) if all_values(n, 'datamodel')]
+        self.assertFalse(all_values(row, 'hbox'))
+        self.assertFalse(all_values(row, 'flowcontainer'))
+
+    def test_absolute_filter_origin_and_column_bounds(self):
+        row = named(self.gui, 'mdc_filter_row')
+        wrappers = [n for n in all_values(row, 'widget') if all_values(n, 'datamodel') and ('name', '"mdc_native_default_reset"') not in n]
+        self.assertEqual(len(wrappers), 5)
+        for group, overlay in zip(GROUPS, wrappers):
+            selected = one(one(overlay, 'item'), 'widget')
+            self.assertEqual(one(selected, 'name'), '"mdc_filter_for_' + group + '"')
+            self.assertEqual(one(selected, 'visible'), '"[Entry.IsSelected]"')
+            for node in [overlay, selected]:
+                self.assertEqual(one(node, 'parentanchor'), 'top|left')
+                self.assertEqual(one(node, 'widgetanchor'), 'top|left')
+                self.assertEqual(one(node, 'position'), [('0', None), ('0', None)])
+                self.assertEqual(one(node, 'size'), [('514', None), ('32', None)])
+            heading = one(selected, 'text_single')
+            self.assertEqual(one(heading, 'parentanchor'), 'top|left')
+            self.assertEqual(one(heading, 'widgetanchor'), 'top|left')
+            self.assertEqual(one(heading, 'position'), [('0', None), ('0', None)])
+            self.assertEqual(one(heading, 'size'), [('120', None), ('30', None)])
+            self.assertEqual(one(heading, 'align'), 'left|nobaseline')
+            self.assertEqual(one(heading, 'text'), '"mdc_chance_filter_heading"')
+            self.assertEqual(one(heading, 'tooltip'), '"mdc_chance_filter_tooltip"')
+            columns = all_values(selected, 'vbox')
             self.assertEqual(len(columns), 3)
-            widths = sum(size(n, 'minimumsize')[0] for n in columns)
-            self.assertLessEqual(size(one(wrapper, 'text_single'), 'size')[0] + widths + 3 * int(one(wrapper, 'spacing')), 514)
+            previous_end = 120
+            for col, x, width in zip(columns, [122, 249, 351], [125, 100, 100]):
+                self.assertEqual(one(col, 'parentanchor'), 'top|left')
+                self.assertEqual(one(col, 'widgetanchor'), 'top|left')
+                self.assertEqual(one(col, 'position'), [(str(x), None), ('0', None)])
+                self.assertEqual(x - previous_end, 2)
+                previous_end = x + width
+                for key in ['size', 'minimumsize', 'maximumsize']:
+                    self.assertEqual(one(col, key), [(str(width), None), ('30', None)])
+                self.assertEqual(one(one(one(col, 'item'), 'button_radio_label'), 'size'), [(str(width), None), ('30', None)])
+            self.assertEqual(previous_end, 451)
+            self.assertEqual(514 - previous_end, 63)
+            self.assertFalse(all_values(selected, 'hbox'))
+            self.assertFalse(all_values(selected, 'expand'))
+
+    def test_recipient_scroll_content_matches_git_with_explicit_viewport_size(self):
+        # The user explicitly requested restoration, rather than another custom template.
+        source = subprocess.check_output(['git', '-C', str(ROOT), 'show', 'a81d7f3:Mass Demand Conversion/gui/decision_view_widgets/mdc_decision_chance_filter.gui']).decode('utf-8-sig')
+        expected = one(one(parse(source), 'vbox'), 'scrollbox')
+        actual = one(one(self.gui, 'vbox'), 'scrollbox')
+        self.assertEqual(one(actual, 'size'), [('514', None), ('210', None)])
+        self.assertFalse(all_values(expected, 'size'))
+        self.assertEqual([(k, v) for k, v in actual if k != 'size'], expected)
+        self.assertFalse(any(k.startswith('types ') for k, _ in self.gui))
+        self.assertNotIn('mdc_centered_recipient_option', self.gui_text)
+        self.assertNotIn('mdc_recipient_alignment', self.gui_text)
+
+    def test_scrollbox_nominal_size_matches_both_limits(self):
+        scroll = one(one(self.gui, 'vbox'), 'scrollbox')
+        expected = [('514', None), ('210', None)]
+        for key in ['size', 'minimumsize', 'maximumsize']:
+            self.assertEqual(one(scroll, key), expected)
+        # Regression: the earlier Git snapshot had constraints but inherited size100x100.
+        self.assertFalse(all_values(scroll, 'position'))
+        self.assertFalse(all_values(scroll, 'parentanchor'))
+        self.assertFalse(all_values(scroll, 'widgetanchor'))
+
+    def test_recipient_native_buttons_and_bindings(self):
+        root = one(self.gui, 'vbox')
+        scroll = one(root, 'scrollbox')
+        content = one(one(scroll, 'blockoverride "scrollbox_content"'), 'vbox')
+        self.assertEqual(one(content, 'ignoreinvisible'), 'yes')
+        self.assertEqual(one(content, 'spacing'), '6')
+        wrappers = all_values(content, 'vbox')
+        self.assertEqual(len(wrappers), 11)
+        self.assertEqual(sum(len(all_values(n, 'button_radio_label')) for n in walk(root)), 26)
+        for wrapper in wrappers:
+            self.assertEqual(one(wrapper, 'ignoreinvisible'), 'yes')
+            self.assertFalse(all_values(wrapper, 'layoutpolicy_horizontal'))
+            button = one(one(wrapper, 'item'), 'button_radio_label')
+            self.assertEqual(one(button, 'size'), [('470', None), ('30', None)])
+            self.assertFalse(all_values(button, 'layoutpolicy_horizontal'))
+            self.assertEqual(one(button, 'onclick'), '"[DecisionViewWidgetOptionList.OnSelect(Entry.Self)]"')
+            self.assertEqual(one(button, 'enabled'), '"[Entry.IsEnabled]"')
+            self.assertEqual(one(button, 'tooltip'), '"[Entry.GetTooltip]"')
+            self.assertEqual(one(one(button, 'blockoverride "text"'), 'text'), '"[Entry.GetName]"')
+            self.assertIn('Entry.IsSelected', one(one(button, 'blockoverride "radio"'), 'frame'))
 
     def test_unconditional_effect_explanation_and_all_language_keys(self):
         effect = one(self.decision, 'effect')

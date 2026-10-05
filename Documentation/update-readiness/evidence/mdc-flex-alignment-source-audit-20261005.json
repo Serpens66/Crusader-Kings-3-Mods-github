@@ -1,0 +1,46 @@
+{
+  "date": "2026-10-05",
+  "version": "1.20.0.3",
+  "reference_commit": "0ec13350cde9e410b37a46d3616966838f4ba994",
+  "scope": "Feature audit completed before edits; complete native option-list/detail insertion and scroll hierarchy; button_group defaults, radio templates, full-size button content hbox and expanding-space layout; preferred content flowcontainer.",
+  "native_sources": {
+    "gui/shared/buttons.gui": {
+      "sha256": "88403785a1acdacc628730aaa101a04b2ae6293e74aa706a93e0e1695f3b1a0c",
+      "reference_sha256": "88403785a1acdacc628730aaa101a04b2ae6293e74aa706a93e0e1695f3b1a0c"
+    },
+    "gui/shared/windows.gui": {
+      "sha256": "6b5759dd4d06aef88f24b86c1290de38387c3bd99b73dafac67d3e330ac06236",
+      "reference_sha256": "6b5759dd4d06aef88f24b86c1290de38387c3bd99b73dafac67d3e330ac06236"
+    },
+    "gui/shared/lists.gui": {
+      "sha256": "71c6dd9036ed54d53d95e6229782924325f262d208f4e971775237bd4852e5ac",
+      "reference_sha256": "71c6dd9036ed54d53d95e6229782924325f262d208f4e971775237bd4852e5ac"
+    },
+    "gui/preload/defaults.gui": {
+      "sha256": "7ba220ab2de42d68d1123353d20da55203dacf3e8fa699046cdf274d46296698",
+      "reference_sha256": "7ba220ab2de42d68d1123353d20da55203dacf3e8fa699046cdf274d46296698"
+    },
+    "gui/window_decisions_detail.gui": {
+      "sha256": "9007f4ba7c67314fa24ea6acc1fc709a4b185d7830230ebff479892e6046a469",
+      "reference_sha256": "9007f4ba7c67314fa24ea6acc1fc709a4b185d7830230ebff479892e6046a469"
+    },
+    "gui/window_activity_intent_selection.gui": {
+      "sha256": "07b09863a0064aad7abe1e061a93c979b5edcbc662cb8918a535c3a33a93a91a",
+      "reference_sha256": "07b09863a0064aad7abe1e061a93c979b5edcbc662cb8918a535c3a33a93a91a"
+    },
+    "gui/map_icon_layer.gui": {
+      "sha256": "b6dae8583b043134a04d09dec1aaf92ac7a8c7154a58858eff55d01b4b27ea8a",
+      "reference_sha256": "b6dae8583b043134a04d09dec1aaf92ac7a8c7154a58858eff55d01b4b27ea8a"
+    },
+    "gui/decision_view_widgets/decision_view_widget_decision_option_list_controller.gui": {
+      "sha256": "23b1933c47fed9f243ccf4d70987838d18194b629e43310a459b64c7669fcb3a",
+      "reference_sha256": "23b1933c47fed9f243ccf4d70987838d18194b629e43310a459b64c7669fcb3a"
+    }
+  },
+  "findings": [
+    "Native button_tab uses expanding hbox with equal expand children around measured content. Native activity-intent buttons use hbox size100%100% and trailing expand for left alignment.",
+    "expand is a native hbox with growing horizontal/vertical policies; preferred content flowcontainer exists in map_icon_layer.",
+    "Prior parentanchor-only assertion does not establish effective renderer geometry. Screenshot disproves prior recipient centering; exact internal Engine calculation is not demonstrated."
+  ],
+  "runtime": "New alignment not run; screenshot confirms preceding filter inset and left-aligned recipient rows, with five visible groups and count21."
+}

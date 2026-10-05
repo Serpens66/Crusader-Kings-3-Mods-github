@@ -1,5 +1,30 @@
 # MC-VARIANTS contract card
 
+## Scrollbox nominal-size correction and failed-layout ledger — 2026-10-05
+
+[Current isolated correction](../mods/mass-demand-conversion-scroll-size-20261005.md) and [mandatory screenshot-backed failure ledger](../mods/mass-demand-conversion-gui-failures-20261005.md). Latest screenshot confirms filter placement but recipient viewport displacement. Native inherited100×100 size is now explicitly overridden514×210; no list/filter behavior change. 23 static tests pass; rendering remains untested. Read the ledger before further GUI changes.
+
+
+## Git recipient-list restoration — 2026-10-05
+
+[Current restoration and pending game matrix](../mods/mass-demand-conversion-git-targets-20261005.md): user reported first-open row overlap and continuing filter inset. Entire native-radio scrollbox subtree restored from Git a81d7f3; custom recipient template removed. Filter heading/columns now use explicit top-left parent/own anchors and x0/122/249/351 positions. 22 static checks pass; first-open/filter-change rendering remains untested. Version 1.079 and gameplay/texts/history retained.
+
+
+## Explicit flexible-space alignment — 2026-10-05
+
+[Current correction and pending game matrix](../mods/mass-demand-conversion-flex-alignment-20261005.md): latest screenshot disproves prior recipient centering and shows filter inset. Explicit 514×32 filter viewport/trailing expander and full-size recipient hbox/equal expanders replace anchor-only alignment. 22 static tests pass; actual rendering remains untested. Gameplay/texts/1.079 metadata, bundle and historical evidence are retained.
+
+
+## Narrow filter row and centered recipient contents — 2026-10-05
+
+[Current patch and pending runtime matrix](../mods/mass-demand-conversion-centered-options-20261005.md): 451-wide left-origin filters inside the existing 514-wide section; only recipient rows use a local native-derived button with centered radio/text content and full-width click regions. Screenshot confirms preceding list fits but is left-aligned and filters still overflow. All gameplay/texts/1.079 metadata and historical records remain; new rendering and MP are untested.
+
+
+## Horizontal alignment correction — 2026-10-05
+
+[Current layout contract and user observations](../mods/mass-demand-conversion-alignment-20261005.md): root native vertical flowcontainer, centered horizontal section wrappers, top|left zero-origin overlaid filter groups and unanchored filter columns. Recipient content/buttons expand; 450-wide rows fit the conservative native scroll-margin/scrollbar budget. Caption, state, controller/index/action bindings are unchanged. New rendering requires normal/high-scale game tests; no bundle or release metadata change.
+
+
 ## Compact widget correction — 2026-10-05
 
 [Source audit, layout/lifecycle contract and runtime matrix](../mods/mass-demand-conversion-compact-widget-20261005.md): user-observed pre-patch rendering failures, fixed 514×250 widget/32-high filter row/210-high native scrollbox, trigger_on_create initialization and missing/unknown-state none fallback. Eleven entries/order and OnSelect routes preserved; bounded scrolling and creation/reopen synchronization require game tests. Bundle/version metadata remain unchanged.

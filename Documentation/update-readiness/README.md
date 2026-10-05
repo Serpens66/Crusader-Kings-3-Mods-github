@@ -1,5 +1,28 @@
 # CK3 mod update readiness
 
+## Scrollbox nominal-size correction and failed-layout ledger — 2026-10-05
+
+[Current isolated correction](mods/mass-demand-conversion-scroll-size-20261005.md) and [mandatory screenshot-backed failure ledger](mods/mass-demand-conversion-gui-failures-20261005.md). Latest screenshot confirms filter placement but recipient viewport displacement. Native inherited100×100 size is now explicitly overridden514×210; no list/filter behavior change. 23 static tests pass; rendering remains untested. Read the ledger before further GUI changes.
+
+
+## Git recipient-list restoration — 2026-10-05
+
+[Current restoration and pending game matrix](mods/mass-demand-conversion-git-targets-20261005.md): user reported first-open row overlap and continuing filter inset. Entire native-radio scrollbox subtree restored from Git a81d7f3; custom recipient template removed. Filter heading/columns now use explicit top-left parent/own anchors and x0/122/249/351 positions. 22 static checks pass; first-open/filter-change rendering remains untested. Version 1.079 and gameplay/texts/history retained.
+
+
+## Explicit flexible-space alignment — 2026-10-05
+
+[Current correction and pending game matrix](mods/mass-demand-conversion-flex-alignment-20261005.md): latest screenshot disproves prior recipient centering and shows filter inset. Explicit 514×32 filter viewport/trailing expander and full-size recipient hbox/equal expanders replace anchor-only alignment. 22 static tests pass; actual rendering remains untested. Gameplay/texts/1.079 metadata, bundle and historical evidence are retained.
+
+
+## Narrow filter row and centered recipient contents — 2026-10-05
+
+[Current patch and pending runtime matrix](mods/mass-demand-conversion-centered-options-20261005.md): 451-wide left-origin filters inside the existing 514-wide section; only recipient rows use a local native-derived button with centered radio/text content and full-width click regions. Screenshot confirms preceding list fits but is left-aligned and filters still overflow. All gameplay/texts/1.079 metadata and historical records remain; new rendering and MP are untested.
+
+
+Standalone MDC [horizontal alignment correction](mods/mass-demand-conversion-alignment-20261005.md) retains the compact layout and addresses user-observed right overflow. Five groups/default mark/indirect count21 were observed in the preceding patch; corrected alignment remains untested. Current static count: 20 tests, 54 source watches; version1.079 and remaining runtime/MP gates unchanged.
+
+
 Standalone MDC [compact widget correction](mods/mass-demand-conversion-compact-widget-20261005.md) addresses user-observed missing rows and overflow. Current source has 35 localization keys per language, 19 static checks and 53 native watches. The corrected GUI, unfiltered counts and MP await in-game verification; version remains 1.079.
 
 

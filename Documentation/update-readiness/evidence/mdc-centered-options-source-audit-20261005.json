@@ -1,0 +1,38 @@
+{
+  "date": "2026-10-05",
+  "version": "1.20.0.3",
+  "scope": "Feature audit completed before GUI edits: complete native option-list widget, button_radio_label and button_radio hierarchy, additive type registration, native center-anchored content flowcontainer, scroll content and margins. Existing native controller/Entry callbacks are retained.",
+  "reference_commit": "0ec13350cde9e410b37a46d3616966838f4ba994",
+  "native_sources": {
+    "gui/shared/buttons.gui": {
+      "sha256": "88403785a1acdacc628730aaa101a04b2ae6293e74aa706a93e0e1695f3b1a0c",
+      "reference_sha256": "88403785a1acdacc628730aaa101a04b2ae6293e74aa706a93e0e1695f3b1a0c"
+    },
+    "gui/shared/progressbars.gui": {
+      "sha256": "3af85c4858b465cd2098418056300b9088a6011cf851766e90c5ebb7e4857db5",
+      "reference_sha256": "3af85c4858b465cd2098418056300b9088a6011cf851766e90c5ebb7e4857db5"
+    },
+    "gui/shared/lists.gui": {
+      "sha256": "71c6dd9036ed54d53d95e6229782924325f262d208f4e971775237bd4852e5ac",
+      "reference_sha256": "71c6dd9036ed54d53d95e6229782924325f262d208f4e971775237bd4852e5ac"
+    },
+    "gui/shared/windows.gui": {
+      "sha256": "6b5759dd4d06aef88f24b86c1290de38387c3bd99b73dafac67d3e330ac06236",
+      "reference_sha256": "6b5759dd4d06aef88f24b86c1290de38387c3bd99b73dafac67d3e330ac06236"
+    },
+    "gui/decision_view_widgets/decision_view_widget_decision_option_list_controller.gui": {
+      "sha256": "23b1933c47fed9f243ccf4d70987838d18194b629e43310a459b64c7669fcb3a",
+      "reference_sha256": "23b1933c47fed9f243ccf4d70987838d18194b629e43310a459b64c7669fcb3a"
+    },
+    "gui/preload/defaults.gui": {
+      "sha256": "7ba220ab2de42d68d1123353d20da55203dacf3e8fa699046cdf274d46296698",
+      "reference_sha256": "7ba220ab2de42d68d1123353d20da55203dacf3e8fa699046cdf274d46296698"
+    }
+  },
+  "findings": [
+    "Copy button_radio_label as a uniquely prefixed button_group type; add parentanchor=center only on its inner content flowcontainer. Retain tooltip_se, native button_radio/background and text styling/blocks.",
+    "451 = 120 + 125 + 100 + 100 + 3*2; selected row remains top|left at zero within existing 514-wide area.",
+    "Native recipient row remains expanding 450x30; content center does not narrow its click area."
+  ],
+  "runtime": "Rendering, localization fit, scrolling and two-player behavior require game tests."
+}

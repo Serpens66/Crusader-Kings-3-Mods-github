@@ -1,0 +1,49 @@
+{
+  "date": "2026-10-05",
+  "mod_version": "1.079",
+  "static_tests_passed": 21,
+  "previous_watches_preserved": 54,
+  "source_watch_count": 56,
+  "GUI_behavior_binding_multisets_unchanged": true,
+  "filter_width": 451,
+  "recipient_content_anchor": "center",
+  "user_observed_preceding_patch": {
+    "five_groups_inside_window": true,
+    "recipient_contents_left_aligned": true,
+    "none_filter_marked": true,
+    "indirect_vassal_count": 21,
+    "filter_100_right_overflow": true
+  },
+  "runtime": {
+    "new_layout": "not run",
+    "scrolling": "not run",
+    "query_count_send_parity": "not run",
+    "percentage_UI_comparison": "not run",
+    "MP": "not run"
+  },
+  "compatibility_approval": false,
+  "current_baseline": "update-watch-mdc-centered-options-20261005.json",
+  "vanilla_check": {
+    "unchanged": 56,
+    "engine_reference": "recorded_exports_unchanged",
+    "standard_checker_read_only_verified": true
+  },
+  "preservation": {
+    "unexpected_existing_file_changes": [],
+    "missing_files": [],
+    "changed_existing_files": [
+      "Documentation/tools/test_mdc_chance_filter.py",
+      "Documentation/update-readiness/README.md",
+      "Documentation/update-readiness/update-watch-index.json",
+      "Documentation/update-readiness/contracts/MC-VARIANTS.md",
+      "Documentation/update-readiness/mods/mass-demand-conversion.md",
+      "Mass Demand Conversion/gui/decision_view_widgets/mdc_decision_chance_filter.gui"
+    ],
+    "all_mod_files_except_standalone_widget_byte_preserved": true,
+    "all_prior_baselines_byte_preserved": true,
+    "other_mod_baseline_records_preserved": true,
+    "GUI_encoding_and_CRLF_preserved": true,
+    "texts_gameplay_metadata_1079_and_notifications_unchanged": true
+  },
+  "native_recipient_template_identical_except_inner_center_anchor": true
+}

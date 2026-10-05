@@ -1,0 +1,54 @@
+{
+  "date": "2026-10-05",
+  "version": "1.20.0.3",
+  "reference_commit": "0ec13350cde9e410b37a46d3616966838f4ba994",
+  "scope": "Feature audit before edit: native scrollbox defaults/content/scrollbar/margins, radio/group defaults, vbox placement and decision insertion, native explicitly-sized generic decision list.",
+  "native_sources": {
+    "gui/shared/lists.gui": {
+      "sha256": "71c6dd9036ed54d53d95e6229782924325f262d208f4e971775237bd4852e5ac",
+      "reference_sha256": "71c6dd9036ed54d53d95e6229782924325f262d208f4e971775237bd4852e5ac"
+    },
+    "gui/shared/buttons.gui": {
+      "sha256": "88403785a1acdacc628730aaa101a04b2ae6293e74aa706a93e0e1695f3b1a0c",
+      "reference_sha256": "88403785a1acdacc628730aaa101a04b2ae6293e74aa706a93e0e1695f3b1a0c"
+    },
+    "gui/shared/windows.gui": {
+      "sha256": "6b5759dd4d06aef88f24b86c1290de38387c3bd99b73dafac67d3e330ac06236",
+      "reference_sha256": "6b5759dd4d06aef88f24b86c1290de38387c3bd99b73dafac67d3e330ac06236"
+    },
+    "gui/preload/defaults.gui": {
+      "sha256": "7ba220ab2de42d68d1123353d20da55203dacf3e8fa699046cdf274d46296698",
+      "reference_sha256": "7ba220ab2de42d68d1123353d20da55203dacf3e8fa699046cdf274d46296698"
+    },
+    "gui/window_decisions_detail.gui": {
+      "sha256": "9007f4ba7c67314fa24ea6acc1fc709a4b185d7830230ebff479892e6046a469",
+      "reference_sha256": "9007f4ba7c67314fa24ea6acc1fc709a4b185d7830230ebff479892e6046a469"
+    },
+    "gui/decision_view_widgets/decision_view_widget_decision_option_list_controller.gui": {
+      "sha256": "23b1933c47fed9f243ccf4d70987838d18194b629e43310a459b64c7669fcb3a",
+      "reference_sha256": "23b1933c47fed9f243ccf4d70987838d18194b629e43310a459b64c7669fcb3a"
+    },
+    "gui/decision_view_widgets/decision_view_widget_option_list_generic.gui": {
+      "sha256": "6c378fc5c4acc9289f7947a994d85c89cdc9eeb8ae4eeac2850d92598a960e53",
+      "reference_sha256": "6c378fc5c4acc9289f7947a994d85c89cdc9eeb8ae4eeac2850d92598a960e53"
+    }
+  },
+  "confirmed": {
+    "inherited_scrollbox_size": [
+      100,
+      100
+    ],
+    "local_minimum_maximum_size": [
+      514,
+      210
+    ],
+    "local_explicit_size_before": null,
+    "generic_native_decision_list_size": [
+      470,
+      166
+    ]
+  },
+  "inference": "Inherited nominal100 versus constrained514 width is a plausible explanation for whole-viewport displacement in the centered parent; the exact Engine layout calculation is not proven.",
+  "change": "Explicitly override size with514x210; do not change list contents, root, filter or recipient style.",
+  "runtime": "Latest screenshot confirms filters now within frame/heading left and recipient viewport+rows displaced right. New size correction not run."
+}

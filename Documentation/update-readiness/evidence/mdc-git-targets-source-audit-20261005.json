@@ -1,0 +1,46 @@
+{
+  "date": "2026-10-05",
+  "version": "1.20.0.3",
+  "scope": "Audit complete before restoration: native decision/detail insertion, radio/group defaults, scroll hierarchy, widget-backed multiple datamodel items and explicit widgetanchor/parentanchor top-left placement. Git a2df10b used native option-list GUI; a81d7f3 retained native radio list after chance-filter extension.",
+  "reference_commit": "0ec13350cde9e410b37a46d3616966838f4ba994",
+  "native_sources": {
+    "gui/shared/buttons.gui": {
+      "sha256": "88403785a1acdacc628730aaa101a04b2ae6293e74aa706a93e0e1695f3b1a0c",
+      "reference_sha256": "88403785a1acdacc628730aaa101a04b2ae6293e74aa706a93e0e1695f3b1a0c"
+    },
+    "gui/shared/lists.gui": {
+      "sha256": "71c6dd9036ed54d53d95e6229782924325f262d208f4e971775237bd4852e5ac",
+      "reference_sha256": "71c6dd9036ed54d53d95e6229782924325f262d208f4e971775237bd4852e5ac"
+    },
+    "gui/shared/windows.gui": {
+      "sha256": "6b5759dd4d06aef88f24b86c1290de38387c3bd99b73dafac67d3e330ac06236",
+      "reference_sha256": "6b5759dd4d06aef88f24b86c1290de38387c3bd99b73dafac67d3e330ac06236"
+    },
+    "gui/preload/defaults.gui": {
+      "sha256": "7ba220ab2de42d68d1123353d20da55203dacf3e8fa699046cdf274d46296698",
+      "reference_sha256": "7ba220ab2de42d68d1123353d20da55203dacf3e8fa699046cdf274d46296698"
+    },
+    "gui/window_decisions_detail.gui": {
+      "sha256": "9007f4ba7c67314fa24ea6acc1fc709a4b185d7830230ebff479892e6046a469",
+      "reference_sha256": "9007f4ba7c67314fa24ea6acc1fc709a4b185d7830230ebff479892e6046a469"
+    },
+    "gui/window_royal_court.gui": {
+      "sha256": "425cbfa044e12800a0202f37292ec26efd1ec944ba9f86e1afd1530d33d94bad",
+      "reference_sha256": "425cbfa044e12800a0202f37292ec26efd1ec944ba9f86e1afd1530d33d94bad"
+    },
+    "gui/achievements/popup.gui": {
+      "sha256": "3d448281fdcfcd5d519d027588917c756a9d739718a7c7d373fa2f9368b89db6",
+      "reference_sha256": "3d448281fdcfcd5d519d027588917c756a9d739718a7c7d373fa2f9368b89db6"
+    },
+    "gui/decision_view_widgets/decision_view_widget_decision_option_list_controller.gui": {
+      "sha256": "23b1933c47fed9f243ccf4d70987838d18194b629e43310a459b64c7669fcb3a",
+      "reference_sha256": "23b1933c47fed9f243ccf4d70987838d18194b629e43310a459b64c7669fcb3a"
+    }
+  },
+  "git_reference": {
+    "original_native_controller_commit": "a2df10b",
+    "restored_list_commit": "a81d7f3",
+    "gui_blob_sha256": "9686265033087dd981c280b184bd7128061ff197e50a4c0c2705f86b329e6157"
+  },
+  "runtime": "User screenshot confirms preceding custom-template first-open row overlap and filter inset; restoration/absolute filter geometry not run."
+}

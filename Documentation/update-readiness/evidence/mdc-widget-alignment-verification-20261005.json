@@ -1,0 +1,36 @@
+{
+  "date": "2026-10-05",
+  "mod_version": "1.079",
+  "static_tests_passed": 20,
+  "previous_watches_preserved": 53,
+  "source_watch_count": 54,
+  "GUI_behavior_binding_multisets_unchanged": true,
+  "user_observed_preceding_patch": {
+    "five_groups_visible": true,
+    "none_filter_marked": true,
+    "indirect_vassal_count": 21,
+    "right_overflow": true
+  },
+  "runtime": {
+    "new_alignment": "not run",
+    "scrolling": "not run",
+    "query_count_send_parity": "not run",
+    "percentage_UI_comparison": "not run",
+    "MP": "not run"
+  },
+  "compatibility_approval": false,
+  "current_baseline": "update-watch-mdc-alignment-20261005.json",
+  "vanilla_check": {
+    "unchanged": 54,
+    "engine_reference": "recorded_exports_unchanged"
+  },
+  "preservation": {
+    "unexpected_existing_file_changes": [],
+    "missing_files": [],
+    "all_mod_files_except_standalone_widget_byte_preserved": true,
+    "prior_dated_baselines_byte_preserved": true,
+    "texts_gameplay_metadata_1079_and_notifications_unchanged": true,
+    "GUI_encoding_and_line_endings_preserved": true,
+    "diff_whitespace_check": "passed"
+  }
+}

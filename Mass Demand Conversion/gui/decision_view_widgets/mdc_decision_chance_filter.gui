@@ -21,12 +21,13 @@ vbox = {
         name = _hide
         on_start = "[GetVariableSystem.Clear('mdc_conversion_filter_ui')]"
     }
-    # One selected-entry row; the other datamodel wrappers share its overlay area.
+    # Absolute filter controls: both parent and own origins are explicitly top-left.
+    # Datamodel widget items overlay; only the selected group's item is visible.
     widget = {
         name = "mdc_filter_row"
+        size = { 514 32 }
         minimumsize = { 514 32 }
         maximumsize = { 514 32 }
-        # Also reset native selection on opening, so a hidden old cutoff cannot execute.
         widget = {
             name = "mdc_native_default_reset"
             size = { 0 0 }
@@ -48,26 +49,35 @@ vbox = {
                 }
             }
         }
-        # Exactly one selected-entry wrapper supplies the filter controls.
-        vbox = {
-            ignoreinvisible = yes
+        widget = {
+            parentanchor = top|left
+            widgetanchor = top|left
+            position = { 0 0 }
+            size = { 514 32 }
             datamodel = "[DataModelSkipFirst( DataModelFirst( DecisionViewWidgetOptionList.GetEntries, '(int32)3' ), '(int32)0' )]"
             item = {
-                hbox = {
-                    ignoreinvisible = yes
+                widget = {
                     name = "mdc_filter_for_direct_vassals"
                     visible = "[Entry.IsSelected]"
-                    spacing = 4
-                    minimumsize = { 514 32 }
-                    maximumsize = { 514 32 }
+                    parentanchor = top|left
+                    widgetanchor = top|left
+                    position = { 0 0 }
+                    size = { 514 32 }
                     text_single = {
+                        parentanchor = top|left
+                        widgetanchor = top|left
+                        position = { 0 0 }
                         size = { 120 30 }
-                        align = nobaseline
+                        align = left|nobaseline
                         using = Font_Size_Small
                         text = "mdc_chance_filter_heading"
                         tooltip = "mdc_chance_filter_tooltip"
                     }
                     vbox = {
+                        parentanchor = top|left
+                        widgetanchor = top|left
+                        position = { 122 0 }
+                        size = { 125 30 }
                         ignoreinvisible = yes
                         minimumsize = { 125 30 }
                         maximumsize = { 125 30 }
@@ -87,14 +97,18 @@ vbox = {
                         }
                     }
                     vbox = {
+                        parentanchor = top|left
+                        widgetanchor = top|left
+                        position = { 249 0 }
+                        size = { 100 30 }
                         ignoreinvisible = yes
-                        minimumsize = { 125 30 }
-                        maximumsize = { 125 30 }
+                        minimumsize = { 100 30 }
+                        maximumsize = { 100 30 }
                         datamodel = "[DataModelSkipFirst( DataModelFirst( DecisionViewWidgetOptionList.GetEntries, '(int32)2' ), '(int32)1' )]"
                         item = {
                             button_radio_label = {
                                 name = "mdc_filter_target_1_80"
-                                size = { 125 30 }
+                                size = { 100 30 }
                                 onclick = "[DecisionViewWidgetOptionList.OnSelect(Entry.Self)]"
                                 onclick = "[GetVariableSystem.Set('mdc_conversion_filter_ui', '80') ]"
                                 tooltip = "mdc_chance_filter_tooltip"
@@ -106,14 +120,18 @@ vbox = {
                         }
                     }
                     vbox = {
+                        parentanchor = top|left
+                        widgetanchor = top|left
+                        position = { 351 0 }
+                        size = { 100 30 }
                         ignoreinvisible = yes
-                        minimumsize = { 125 30 }
-                        maximumsize = { 125 30 }
+                        minimumsize = { 100 30 }
+                        maximumsize = { 100 30 }
                         datamodel = "[DataModelSkipFirst( DataModelFirst( DecisionViewWidgetOptionList.GetEntries, '(int32)3' ), '(int32)2' )]"
                         item = {
                             button_radio_label = {
                                 name = "mdc_filter_target_2_100"
-                                size = { 125 30 }
+                                size = { 100 30 }
                                 onclick = "[DecisionViewWidgetOptionList.OnSelect(Entry.Self)]"
                                 onclick = "[GetVariableSystem.Set('mdc_conversion_filter_ui', '100') ]"
                                 tooltip = "mdc_chance_filter_tooltip"
@@ -127,25 +145,35 @@ vbox = {
                 }
             }
         }
-        vbox = {
-            ignoreinvisible = yes
+        widget = {
+            parentanchor = top|left
+            widgetanchor = top|left
+            position = { 0 0 }
+            size = { 514 32 }
             datamodel = "[DataModelSkipFirst( DataModelFirst( DecisionViewWidgetOptionList.GetEntries, '(int32)6' ), '(int32)3' )]"
             item = {
-                hbox = {
-                    ignoreinvisible = yes
+                widget = {
                     name = "mdc_filter_for_indirect_vassals"
                     visible = "[Entry.IsSelected]"
-                    spacing = 4
-                    minimumsize = { 514 32 }
-                    maximumsize = { 514 32 }
+                    parentanchor = top|left
+                    widgetanchor = top|left
+                    position = { 0 0 }
+                    size = { 514 32 }
                     text_single = {
+                        parentanchor = top|left
+                        widgetanchor = top|left
+                        position = { 0 0 }
                         size = { 120 30 }
-                        align = nobaseline
+                        align = left|nobaseline
                         using = Font_Size_Small
                         text = "mdc_chance_filter_heading"
                         tooltip = "mdc_chance_filter_tooltip"
                     }
                     vbox = {
+                        parentanchor = top|left
+                        widgetanchor = top|left
+                        position = { 122 0 }
+                        size = { 125 30 }
                         ignoreinvisible = yes
                         minimumsize = { 125 30 }
                         maximumsize = { 125 30 }
@@ -165,14 +193,18 @@ vbox = {
                         }
                     }
                     vbox = {
+                        parentanchor = top|left
+                        widgetanchor = top|left
+                        position = { 249 0 }
+                        size = { 100 30 }
                         ignoreinvisible = yes
-                        minimumsize = { 125 30 }
-                        maximumsize = { 125 30 }
+                        minimumsize = { 100 30 }
+                        maximumsize = { 100 30 }
                         datamodel = "[DataModelSkipFirst( DataModelFirst( DecisionViewWidgetOptionList.GetEntries, '(int32)5' ), '(int32)4' )]"
                         item = {
                             button_radio_label = {
                                 name = "mdc_filter_target_4_80"
-                                size = { 125 30 }
+                                size = { 100 30 }
                                 onclick = "[DecisionViewWidgetOptionList.OnSelect(Entry.Self)]"
                                 onclick = "[GetVariableSystem.Set('mdc_conversion_filter_ui', '80') ]"
                                 tooltip = "mdc_chance_filter_tooltip"
@@ -184,14 +216,18 @@ vbox = {
                         }
                     }
                     vbox = {
+                        parentanchor = top|left
+                        widgetanchor = top|left
+                        position = { 351 0 }
+                        size = { 100 30 }
                         ignoreinvisible = yes
-                        minimumsize = { 125 30 }
-                        maximumsize = { 125 30 }
+                        minimumsize = { 100 30 }
+                        maximumsize = { 100 30 }
                         datamodel = "[DataModelSkipFirst( DataModelFirst( DecisionViewWidgetOptionList.GetEntries, '(int32)6' ), '(int32)5' )]"
                         item = {
                             button_radio_label = {
                                 name = "mdc_filter_target_5_100"
-                                size = { 125 30 }
+                                size = { 100 30 }
                                 onclick = "[DecisionViewWidgetOptionList.OnSelect(Entry.Self)]"
                                 onclick = "[GetVariableSystem.Set('mdc_conversion_filter_ui', '100') ]"
                                 tooltip = "mdc_chance_filter_tooltip"
@@ -205,25 +241,35 @@ vbox = {
                 }
             }
         }
-        vbox = {
-            ignoreinvisible = yes
+        widget = {
+            parentanchor = top|left
+            widgetanchor = top|left
+            position = { 0 0 }
+            size = { 514 32 }
             datamodel = "[DataModelSkipFirst( DataModelFirst( DecisionViewWidgetOptionList.GetEntries, '(int32)9' ), '(int32)6' )]"
             item = {
-                hbox = {
-                    ignoreinvisible = yes
+                widget = {
                     name = "mdc_filter_for_tributaries"
                     visible = "[Entry.IsSelected]"
-                    spacing = 4
-                    minimumsize = { 514 32 }
-                    maximumsize = { 514 32 }
+                    parentanchor = top|left
+                    widgetanchor = top|left
+                    position = { 0 0 }
+                    size = { 514 32 }
                     text_single = {
+                        parentanchor = top|left
+                        widgetanchor = top|left
+                        position = { 0 0 }
                         size = { 120 30 }
-                        align = nobaseline
+                        align = left|nobaseline
                         using = Font_Size_Small
                         text = "mdc_chance_filter_heading"
                         tooltip = "mdc_chance_filter_tooltip"
                     }
                     vbox = {
+                        parentanchor = top|left
+                        widgetanchor = top|left
+                        position = { 122 0 }
+                        size = { 125 30 }
                         ignoreinvisible = yes
                         minimumsize = { 125 30 }
                         maximumsize = { 125 30 }
@@ -243,14 +289,18 @@ vbox = {
                         }
                     }
                     vbox = {
+                        parentanchor = top|left
+                        widgetanchor = top|left
+                        position = { 249 0 }
+                        size = { 100 30 }
                         ignoreinvisible = yes
-                        minimumsize = { 125 30 }
-                        maximumsize = { 125 30 }
+                        minimumsize = { 100 30 }
+                        maximumsize = { 100 30 }
                         datamodel = "[DataModelSkipFirst( DataModelFirst( DecisionViewWidgetOptionList.GetEntries, '(int32)8' ), '(int32)7' )]"
                         item = {
                             button_radio_label = {
                                 name = "mdc_filter_target_7_80"
-                                size = { 125 30 }
+                                size = { 100 30 }
                                 onclick = "[DecisionViewWidgetOptionList.OnSelect(Entry.Self)]"
                                 onclick = "[GetVariableSystem.Set('mdc_conversion_filter_ui', '80') ]"
                                 tooltip = "mdc_chance_filter_tooltip"
@@ -262,14 +312,18 @@ vbox = {
                         }
                     }
                     vbox = {
+                        parentanchor = top|left
+                        widgetanchor = top|left
+                        position = { 351 0 }
+                        size = { 100 30 }
                         ignoreinvisible = yes
-                        minimumsize = { 125 30 }
-                        maximumsize = { 125 30 }
+                        minimumsize = { 100 30 }
+                        maximumsize = { 100 30 }
                         datamodel = "[DataModelSkipFirst( DataModelFirst( DecisionViewWidgetOptionList.GetEntries, '(int32)9' ), '(int32)8' )]"
                         item = {
                             button_radio_label = {
                                 name = "mdc_filter_target_8_100"
-                                size = { 125 30 }
+                                size = { 100 30 }
                                 onclick = "[DecisionViewWidgetOptionList.OnSelect(Entry.Self)]"
                                 onclick = "[GetVariableSystem.Set('mdc_conversion_filter_ui', '100') ]"
                                 tooltip = "mdc_chance_filter_tooltip"
@@ -283,25 +337,35 @@ vbox = {
                 }
             }
         }
-        vbox = {
-            ignoreinvisible = yes
+        widget = {
+            parentanchor = top|left
+            widgetanchor = top|left
+            position = { 0 0 }
+            size = { 514 32 }
             datamodel = "[DataModelSkipFirst( DataModelFirst( DecisionViewWidgetOptionList.GetEntries, '(int32)10' ), '(int32)9' )]"
             item = {
-                hbox = {
-                    ignoreinvisible = yes
+                widget = {
                     name = "mdc_filter_for_courtiers"
                     visible = "[Entry.IsSelected]"
-                    spacing = 4
-                    minimumsize = { 514 32 }
-                    maximumsize = { 514 32 }
+                    parentanchor = top|left
+                    widgetanchor = top|left
+                    position = { 0 0 }
+                    size = { 514 32 }
                     text_single = {
+                        parentanchor = top|left
+                        widgetanchor = top|left
+                        position = { 0 0 }
                         size = { 120 30 }
-                        align = nobaseline
+                        align = left|nobaseline
                         using = Font_Size_Small
                         text = "mdc_chance_filter_heading"
                         tooltip = "mdc_chance_filter_tooltip"
                     }
                     vbox = {
+                        parentanchor = top|left
+                        widgetanchor = top|left
+                        position = { 122 0 }
+                        size = { 125 30 }
                         ignoreinvisible = yes
                         minimumsize = { 125 30 }
                         maximumsize = { 125 30 }
@@ -321,14 +385,18 @@ vbox = {
                         }
                     }
                     vbox = {
+                        parentanchor = top|left
+                        widgetanchor = top|left
+                        position = { 249 0 }
+                        size = { 100 30 }
                         ignoreinvisible = yes
-                        minimumsize = { 125 30 }
-                        maximumsize = { 125 30 }
+                        minimumsize = { 100 30 }
+                        maximumsize = { 100 30 }
                         datamodel = "[DataModelSkipFirst( DataModelFirst( DecisionViewWidgetOptionList.GetEntries, '(int32)10' ), '(int32)9' )]"
                         item = {
                             button_radio_label = {
                                 name = "mdc_filter_target_9_80"
-                                size = { 125 30 }
+                                size = { 100 30 }
                                 onclick = "[DecisionViewWidgetOptionList.OnSelect(Entry.Self)]"
                                 onclick = "[GetVariableSystem.Set('mdc_conversion_filter_ui', '80') ]"
                                 tooltip = "mdc_chance_filter_tooltip"
@@ -340,14 +408,18 @@ vbox = {
                         }
                     }
                     vbox = {
+                        parentanchor = top|left
+                        widgetanchor = top|left
+                        position = { 351 0 }
+                        size = { 100 30 }
                         ignoreinvisible = yes
-                        minimumsize = { 125 30 }
-                        maximumsize = { 125 30 }
+                        minimumsize = { 100 30 }
+                        maximumsize = { 100 30 }
                         datamodel = "[DataModelSkipFirst( DataModelFirst( DecisionViewWidgetOptionList.GetEntries, '(int32)10' ), '(int32)9' )]"
                         item = {
                             button_radio_label = {
                                 name = "mdc_filter_target_9_100"
-                                size = { 125 30 }
+                                size = { 100 30 }
                                 onclick = "[DecisionViewWidgetOptionList.OnSelect(Entry.Self)]"
                                 onclick = "[GetVariableSystem.Set('mdc_conversion_filter_ui', '100') ]"
                                 tooltip = "mdc_chance_filter_tooltip"
@@ -361,25 +433,35 @@ vbox = {
                 }
             }
         }
-        vbox = {
-            ignoreinvisible = yes
+        widget = {
+            parentanchor = top|left
+            widgetanchor = top|left
+            position = { 0 0 }
+            size = { 514 32 }
             datamodel = "[DataModelSkipFirst( DataModelFirst( DecisionViewWidgetOptionList.GetEntries, '(int32)11' ), '(int32)10' )]"
             item = {
-                hbox = {
-                    ignoreinvisible = yes
+                widget = {
                     name = "mdc_filter_for_house"
                     visible = "[Entry.IsSelected]"
-                    spacing = 4
-                    minimumsize = { 514 32 }
-                    maximumsize = { 514 32 }
+                    parentanchor = top|left
+                    widgetanchor = top|left
+                    position = { 0 0 }
+                    size = { 514 32 }
                     text_single = {
+                        parentanchor = top|left
+                        widgetanchor = top|left
+                        position = { 0 0 }
                         size = { 120 30 }
-                        align = nobaseline
+                        align = left|nobaseline
                         using = Font_Size_Small
                         text = "mdc_chance_filter_heading"
                         tooltip = "mdc_chance_filter_tooltip"
                     }
                     vbox = {
+                        parentanchor = top|left
+                        widgetanchor = top|left
+                        position = { 122 0 }
+                        size = { 125 30 }
                         ignoreinvisible = yes
                         minimumsize = { 125 30 }
                         maximumsize = { 125 30 }
@@ -399,14 +481,18 @@ vbox = {
                         }
                     }
                     vbox = {
+                        parentanchor = top|left
+                        widgetanchor = top|left
+                        position = { 249 0 }
+                        size = { 100 30 }
                         ignoreinvisible = yes
-                        minimumsize = { 125 30 }
-                        maximumsize = { 125 30 }
+                        minimumsize = { 100 30 }
+                        maximumsize = { 100 30 }
                         datamodel = "[DataModelSkipFirst( DataModelFirst( DecisionViewWidgetOptionList.GetEntries, '(int32)11' ), '(int32)10' )]"
                         item = {
                             button_radio_label = {
                                 name = "mdc_filter_target_10_80"
-                                size = { 125 30 }
+                                size = { 100 30 }
                                 onclick = "[DecisionViewWidgetOptionList.OnSelect(Entry.Self)]"
                                 onclick = "[GetVariableSystem.Set('mdc_conversion_filter_ui', '80') ]"
                                 tooltip = "mdc_chance_filter_tooltip"
@@ -418,14 +504,18 @@ vbox = {
                         }
                     }
                     vbox = {
+                        parentanchor = top|left
+                        widgetanchor = top|left
+                        position = { 351 0 }
+                        size = { 100 30 }
                         ignoreinvisible = yes
-                        minimumsize = { 125 30 }
-                        maximumsize = { 125 30 }
+                        minimumsize = { 100 30 }
+                        maximumsize = { 100 30 }
                         datamodel = "[DataModelSkipFirst( DataModelFirst( DecisionViewWidgetOptionList.GetEntries, '(int32)11' ), '(int32)10' )]"
                         item = {
                             button_radio_label = {
                                 name = "mdc_filter_target_10_100"
-                                size = { 125 30 }
+                                size = { 100 30 }
                                 onclick = "[DecisionViewWidgetOptionList.OnSelect(Entry.Self)]"
                                 onclick = "[GetVariableSystem.Set('mdc_conversion_filter_ui', '100') ]"
                                 tooltip = "mdc_chance_filter_tooltip"
@@ -440,8 +530,11 @@ vbox = {
             }
         }
     }
+    # Native radio-list contents retained from Git a81d7f3; viewport size overridden below.
     scrollbox = {
         name = "mdc_recipient_scroll"
+        # Override native scrollbox's 100x100 nominal size as well as its limits.
+        size = { 514 210 }
         minimumsize = { 514 210 }
         maximumsize = { 514 210 }
         blockoverride "scrollbox_content" {

@@ -1,0 +1,33 @@
+{
+  "date": "2026-10-05",
+  "version": "1.20.0.3",
+  "scope": "Native option-list flowcontainers, centering, expanding entry rows and inherited scroll margins; feature source review completed before GUI edit",
+  "native_sources": {
+    "gui/decision_view_widgets/decision_view_widget_decision_option_list_controller.gui": {
+      "sha256": "23b1933c47fed9f243ccf4d70987838d18194b629e43310a459b64c7669fcb3a",
+      "reference_sha256": "23b1933c47fed9f243ccf4d70987838d18194b629e43310a459b64c7669fcb3a"
+    },
+    "gui/shared/buttons.gui": {
+      "sha256": "88403785a1acdacc628730aaa101a04b2ae6293e74aa706a93e0e1695f3b1a0c",
+      "reference_sha256": "88403785a1acdacc628730aaa101a04b2ae6293e74aa706a93e0e1695f3b1a0c"
+    },
+    "gui/shared/lists.gui": {
+      "sha256": "71c6dd9036ed54d53d95e6229782924325f262d208f4e971775237bd4852e5ac",
+      "reference_sha256": "71c6dd9036ed54d53d95e6229782924325f262d208f4e971775237bd4852e5ac"
+    },
+    "gui/shared/windows.gui": {
+      "sha256": "6b5759dd4d06aef88f24b86c1290de38387c3bd99b73dafac67d3e330ac06236",
+      "reference_sha256": "6b5759dd4d06aef88f24b86c1290de38387c3bd99b73dafac67d3e330ac06236"
+    }
+  },
+  "reference_commit": "0ec13350cde9e410b37a46d3616966838f4ba994",
+  "width_budget": {
+    "outer": 514,
+    "margin_left": 15,
+    "margin_right": 20,
+    "vertical_scrollbar": 12,
+    "conservative_content": 467,
+    "native_button_width": 450
+  },
+  "runtime": "User screenshot confirms previous compact widget shows five groups, none mark and indirect count21; right overflow is observed. Corrected alignment, send/percentage/MP remain untested."
+}

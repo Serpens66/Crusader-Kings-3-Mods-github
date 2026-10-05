@@ -1,12 +1,17 @@
 {
   "schema_version": 1,
-  "current_baseline": "update-watch-mdc-compact-widget-20261005.json",
+  "current_baseline": "update-watch-mdc-scroll-size-20261005.json",
   "history": [
     "update-watch-20261003.json",
     "update-watch-leave-wars-20261003.json",
     "update-watch-mdc-filter-20261005.json",
     "update-watch-mdc-localization-20261005.json",
-    "update-watch-mdc-compact-widget-20261005.json"
+    "update-watch-mdc-compact-widget-20261005.json",
+    "update-watch-mdc-alignment-20261005.json",
+    "update-watch-mdc-centered-options-20261005.json",
+    "update-watch-mdc-flex-alignment-20261005.json",
+    "update-watch-mdc-git-targets-20261005.json",
+    "update-watch-mdc-scroll-size-20261005.json"
   ],
   "rule": "Update pointer only after feature source review; preserve every dated baseline and per-watch version/reference."
 }

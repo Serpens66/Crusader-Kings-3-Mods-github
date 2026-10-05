@@ -1,0 +1,56 @@
+{
+  "date": "2026-10-05",
+  "mod_version": "1.079",
+  "static_tests_passed": 23,
+  "previous_watches_preserved": 60,
+  "source_watch_count": 61,
+  "change": "scrollbox explicit size514x210 only",
+  "inherited_size_before": [
+    100,
+    100
+  ],
+  "filter_subtree_preserved": true,
+  "Git_scrollbox_content_preserved_except_explicit_size": true,
+  "runtime": {
+    "new_layout_first_open": "not run",
+    "filter_switch_layout": "not run",
+    "reopen": "not run",
+    "scaling_scrolling": "not run",
+    "query_count_send_parity": "not run",
+    "percentage_UI_comparison": "not run",
+    "MP": "not run"
+  },
+  "compatibility_approval": false,
+  "current_baseline": "update-watch-mdc-scroll-size-20261005.json",
+  "user_observed_preceding_patch": {
+    "absolute_filter_row_inside_window": true,
+    "whole_recipient_viewport_displaced_right": true,
+    "five_rows_visible": true,
+    "indirect_vassal_count": 21
+  },
+  "GUI_behavior_binding_multisets_unchanged": true,
+  "vanilla_check": {
+    "unchanged": 61,
+    "engine_reference": "recorded_exports_unchanged",
+    "standard_checker_read_only_verified": true
+  },
+  "preservation": {
+    "unexpected_existing_file_changes": [],
+    "missing_files": [],
+    "changed_existing_files": [
+      "Documentation/systems/localization-and-gui.md",
+      "Documentation/tools/test_mdc_chance_filter.py",
+      "Documentation/update-readiness/README.md",
+      "Documentation/update-readiness/update-watch-index.json",
+      "Documentation/update-readiness/contracts/MC-VARIANTS.md",
+      "Documentation/update-readiness/mods/mass-demand-conversion.md",
+      "Mass Demand Conversion/gui/decision_view_widgets/mdc_decision_chance_filter.gui"
+    ],
+    "all_mod_files_except_standalone_widget_byte_preserved": true,
+    "prior_baselines_byte_preserved": true,
+    "other_mod_baseline_records_preserved": true,
+    "encoding_and_CRLF_preserved": true,
+    "diff_whitespace_check": "passed",
+    "documentation_links_checked": 110
+  }
+}
