@@ -1,0 +1,628 @@
+# Required controller: decision_option_list_controller.
+# Only display state uses VariableSystem; OnSelect transmits the native item flag.
+# All eleven registered entries must remain present and in their documented order.
+vbox = {
+    ignoreinvisible = yes
+    name = "mdc_decision_chance_filter"
+    layoutpolicy_horizontal = expanding
+    minimumsize = { 514 250 }
+    maximumsize = { 514 250 }
+    spacing = 8
+    state = {
+        name = mdc_initialize_on_create
+        trigger_on_create = yes
+        on_start = "[GetVariableSystem.Set('mdc_conversion_filter_ui', 'none')]"
+    }
+    state = {
+        name = _show
+        on_start = "[GetVariableSystem.Set('mdc_conversion_filter_ui', 'none')]"
+    }
+    state = {
+        name = _hide
+        on_start = "[GetVariableSystem.Clear('mdc_conversion_filter_ui')]"
+    }
+    # One selected-entry row; the other datamodel wrappers share its overlay area.
+    widget = {
+        name = "mdc_filter_row"
+        minimumsize = { 514 32 }
+        maximumsize = { 514 32 }
+        # Also reset native selection on opening, so a hidden old cutoff cannot execute.
+        widget = {
+            name = "mdc_native_default_reset"
+            size = { 0 0 }
+            alwaystransparent = yes
+            datamodel = "[DataModelSkipFirst( DataModelFirst( DecisionViewWidgetOptionList.GetEntries, '(int32)1' ), '(int32)0' )]"
+            item = {
+                widget = {
+                    size = { 0 0 }
+                    state = {
+                        name = mdc_select_default_on_create
+                        trigger_on_create = yes
+                        on_start = "[DecisionViewWidgetOptionList.OnSelect(Entry.Self)]"
+                    }
+                    # Covers a reused widget when the native window propagates _show.
+                    state = {
+                        name = _show
+                        on_start = "[DecisionViewWidgetOptionList.OnSelect(Entry.Self)]"
+                    }
+                }
+            }
+        }
+        # Exactly one selected-entry wrapper supplies the filter controls.
+        vbox = {
+            ignoreinvisible = yes
+            datamodel = "[DataModelSkipFirst( DataModelFirst( DecisionViewWidgetOptionList.GetEntries, '(int32)3' ), '(int32)0' )]"
+            item = {
+                hbox = {
+                    ignoreinvisible = yes
+                    name = "mdc_filter_for_direct_vassals"
+                    visible = "[Entry.IsSelected]"
+                    spacing = 4
+                    minimumsize = { 514 32 }
+                    maximumsize = { 514 32 }
+                    text_single = {
+                        size = { 120 30 }
+                        align = nobaseline
+                        using = Font_Size_Small
+                        text = "mdc_chance_filter_heading"
+                        tooltip = "mdc_chance_filter_tooltip"
+                    }
+                    vbox = {
+                        ignoreinvisible = yes
+                        minimumsize = { 125 30 }
+                        maximumsize = { 125 30 }
+                        datamodel = "[DataModelSkipFirst( DataModelFirst( DecisionViewWidgetOptionList.GetEntries, '(int32)1' ), '(int32)0' )]"
+                        item = {
+                            button_radio_label = {
+                                name = "mdc_filter_target_0_none"
+                                size = { 125 30 }
+                                onclick = "[DecisionViewWidgetOptionList.OnSelect(Entry.Self)]"
+                                onclick = "[GetVariableSystem.Set('mdc_conversion_filter_ui', 'none') ]"
+                                tooltip = "mdc_chance_filter_tooltip"
+                                blockoverride "radio" {
+                                    frame = "[BoolTo1And2(Not(Or(GetVariableSystem.HasValue('mdc_conversion_filter_ui', '80'), GetVariableSystem.HasValue('mdc_conversion_filter_ui', '100'))))]"
+                                }
+                                blockoverride "text" { text = "mdc_chance_filter_none" }
+                            }
+                        }
+                    }
+                    vbox = {
+                        ignoreinvisible = yes
+                        minimumsize = { 125 30 }
+                        maximumsize = { 125 30 }
+                        datamodel = "[DataModelSkipFirst( DataModelFirst( DecisionViewWidgetOptionList.GetEntries, '(int32)2' ), '(int32)1' )]"
+                        item = {
+                            button_radio_label = {
+                                name = "mdc_filter_target_1_80"
+                                size = { 125 30 }
+                                onclick = "[DecisionViewWidgetOptionList.OnSelect(Entry.Self)]"
+                                onclick = "[GetVariableSystem.Set('mdc_conversion_filter_ui', '80') ]"
+                                tooltip = "mdc_chance_filter_tooltip"
+                                blockoverride "radio" {
+                                    frame = "[BoolTo1And2(GetVariableSystem.HasValue('mdc_conversion_filter_ui', '80'))]"
+                                }
+                                blockoverride "text" { text = "mdc_chance_filter_80" }
+                            }
+                        }
+                    }
+                    vbox = {
+                        ignoreinvisible = yes
+                        minimumsize = { 125 30 }
+                        maximumsize = { 125 30 }
+                        datamodel = "[DataModelSkipFirst( DataModelFirst( DecisionViewWidgetOptionList.GetEntries, '(int32)3' ), '(int32)2' )]"
+                        item = {
+                            button_radio_label = {
+                                name = "mdc_filter_target_2_100"
+                                size = { 125 30 }
+                                onclick = "[DecisionViewWidgetOptionList.OnSelect(Entry.Self)]"
+                                onclick = "[GetVariableSystem.Set('mdc_conversion_filter_ui', '100') ]"
+                                tooltip = "mdc_chance_filter_tooltip"
+                                blockoverride "radio" {
+                                    frame = "[BoolTo1And2(GetVariableSystem.HasValue('mdc_conversion_filter_ui', '100'))]"
+                                }
+                                blockoverride "text" { text = "mdc_chance_filter_100" }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        vbox = {
+            ignoreinvisible = yes
+            datamodel = "[DataModelSkipFirst( DataModelFirst( DecisionViewWidgetOptionList.GetEntries, '(int32)6' ), '(int32)3' )]"
+            item = {
+                hbox = {
+                    ignoreinvisible = yes
+                    name = "mdc_filter_for_indirect_vassals"
+                    visible = "[Entry.IsSelected]"
+                    spacing = 4
+                    minimumsize = { 514 32 }
+                    maximumsize = { 514 32 }
+                    text_single = {
+                        size = { 120 30 }
+                        align = nobaseline
+                        using = Font_Size_Small
+                        text = "mdc_chance_filter_heading"
+                        tooltip = "mdc_chance_filter_tooltip"
+                    }
+                    vbox = {
+                        ignoreinvisible = yes
+                        minimumsize = { 125 30 }
+                        maximumsize = { 125 30 }
+                        datamodel = "[DataModelSkipFirst( DataModelFirst( DecisionViewWidgetOptionList.GetEntries, '(int32)4' ), '(int32)3' )]"
+                        item = {
+                            button_radio_label = {
+                                name = "mdc_filter_target_3_none"
+                                size = { 125 30 }
+                                onclick = "[DecisionViewWidgetOptionList.OnSelect(Entry.Self)]"
+                                onclick = "[GetVariableSystem.Set('mdc_conversion_filter_ui', 'none') ]"
+                                tooltip = "mdc_chance_filter_tooltip"
+                                blockoverride "radio" {
+                                    frame = "[BoolTo1And2(Not(Or(GetVariableSystem.HasValue('mdc_conversion_filter_ui', '80'), GetVariableSystem.HasValue('mdc_conversion_filter_ui', '100'))))]"
+                                }
+                                blockoverride "text" { text = "mdc_chance_filter_none" }
+                            }
+                        }
+                    }
+                    vbox = {
+                        ignoreinvisible = yes
+                        minimumsize = { 125 30 }
+                        maximumsize = { 125 30 }
+                        datamodel = "[DataModelSkipFirst( DataModelFirst( DecisionViewWidgetOptionList.GetEntries, '(int32)5' ), '(int32)4' )]"
+                        item = {
+                            button_radio_label = {
+                                name = "mdc_filter_target_4_80"
+                                size = { 125 30 }
+                                onclick = "[DecisionViewWidgetOptionList.OnSelect(Entry.Self)]"
+                                onclick = "[GetVariableSystem.Set('mdc_conversion_filter_ui', '80') ]"
+                                tooltip = "mdc_chance_filter_tooltip"
+                                blockoverride "radio" {
+                                    frame = "[BoolTo1And2(GetVariableSystem.HasValue('mdc_conversion_filter_ui', '80'))]"
+                                }
+                                blockoverride "text" { text = "mdc_chance_filter_80" }
+                            }
+                        }
+                    }
+                    vbox = {
+                        ignoreinvisible = yes
+                        minimumsize = { 125 30 }
+                        maximumsize = { 125 30 }
+                        datamodel = "[DataModelSkipFirst( DataModelFirst( DecisionViewWidgetOptionList.GetEntries, '(int32)6' ), '(int32)5' )]"
+                        item = {
+                            button_radio_label = {
+                                name = "mdc_filter_target_5_100"
+                                size = { 125 30 }
+                                onclick = "[DecisionViewWidgetOptionList.OnSelect(Entry.Self)]"
+                                onclick = "[GetVariableSystem.Set('mdc_conversion_filter_ui', '100') ]"
+                                tooltip = "mdc_chance_filter_tooltip"
+                                blockoverride "radio" {
+                                    frame = "[BoolTo1And2(GetVariableSystem.HasValue('mdc_conversion_filter_ui', '100'))]"
+                                }
+                                blockoverride "text" { text = "mdc_chance_filter_100" }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        vbox = {
+            ignoreinvisible = yes
+            datamodel = "[DataModelSkipFirst( DataModelFirst( DecisionViewWidgetOptionList.GetEntries, '(int32)9' ), '(int32)6' )]"
+            item = {
+                hbox = {
+                    ignoreinvisible = yes
+                    name = "mdc_filter_for_tributaries"
+                    visible = "[Entry.IsSelected]"
+                    spacing = 4
+                    minimumsize = { 514 32 }
+                    maximumsize = { 514 32 }
+                    text_single = {
+                        size = { 120 30 }
+                        align = nobaseline
+                        using = Font_Size_Small
+                        text = "mdc_chance_filter_heading"
+                        tooltip = "mdc_chance_filter_tooltip"
+                    }
+                    vbox = {
+                        ignoreinvisible = yes
+                        minimumsize = { 125 30 }
+                        maximumsize = { 125 30 }
+                        datamodel = "[DataModelSkipFirst( DataModelFirst( DecisionViewWidgetOptionList.GetEntries, '(int32)7' ), '(int32)6' )]"
+                        item = {
+                            button_radio_label = {
+                                name = "mdc_filter_target_6_none"
+                                size = { 125 30 }
+                                onclick = "[DecisionViewWidgetOptionList.OnSelect(Entry.Self)]"
+                                onclick = "[GetVariableSystem.Set('mdc_conversion_filter_ui', 'none') ]"
+                                tooltip = "mdc_chance_filter_tooltip"
+                                blockoverride "radio" {
+                                    frame = "[BoolTo1And2(Not(Or(GetVariableSystem.HasValue('mdc_conversion_filter_ui', '80'), GetVariableSystem.HasValue('mdc_conversion_filter_ui', '100'))))]"
+                                }
+                                blockoverride "text" { text = "mdc_chance_filter_none" }
+                            }
+                        }
+                    }
+                    vbox = {
+                        ignoreinvisible = yes
+                        minimumsize = { 125 30 }
+                        maximumsize = { 125 30 }
+                        datamodel = "[DataModelSkipFirst( DataModelFirst( DecisionViewWidgetOptionList.GetEntries, '(int32)8' ), '(int32)7' )]"
+                        item = {
+                            button_radio_label = {
+                                name = "mdc_filter_target_7_80"
+                                size = { 125 30 }
+                                onclick = "[DecisionViewWidgetOptionList.OnSelect(Entry.Self)]"
+                                onclick = "[GetVariableSystem.Set('mdc_conversion_filter_ui', '80') ]"
+                                tooltip = "mdc_chance_filter_tooltip"
+                                blockoverride "radio" {
+                                    frame = "[BoolTo1And2(GetVariableSystem.HasValue('mdc_conversion_filter_ui', '80'))]"
+                                }
+                                blockoverride "text" { text = "mdc_chance_filter_80" }
+                            }
+                        }
+                    }
+                    vbox = {
+                        ignoreinvisible = yes
+                        minimumsize = { 125 30 }
+                        maximumsize = { 125 30 }
+                        datamodel = "[DataModelSkipFirst( DataModelFirst( DecisionViewWidgetOptionList.GetEntries, '(int32)9' ), '(int32)8' )]"
+                        item = {
+                            button_radio_label = {
+                                name = "mdc_filter_target_8_100"
+                                size = { 125 30 }
+                                onclick = "[DecisionViewWidgetOptionList.OnSelect(Entry.Self)]"
+                                onclick = "[GetVariableSystem.Set('mdc_conversion_filter_ui', '100') ]"
+                                tooltip = "mdc_chance_filter_tooltip"
+                                blockoverride "radio" {
+                                    frame = "[BoolTo1And2(GetVariableSystem.HasValue('mdc_conversion_filter_ui', '100'))]"
+                                }
+                                blockoverride "text" { text = "mdc_chance_filter_100" }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        vbox = {
+            ignoreinvisible = yes
+            datamodel = "[DataModelSkipFirst( DataModelFirst( DecisionViewWidgetOptionList.GetEntries, '(int32)10' ), '(int32)9' )]"
+            item = {
+                hbox = {
+                    ignoreinvisible = yes
+                    name = "mdc_filter_for_courtiers"
+                    visible = "[Entry.IsSelected]"
+                    spacing = 4
+                    minimumsize = { 514 32 }
+                    maximumsize = { 514 32 }
+                    text_single = {
+                        size = { 120 30 }
+                        align = nobaseline
+                        using = Font_Size_Small
+                        text = "mdc_chance_filter_heading"
+                        tooltip = "mdc_chance_filter_tooltip"
+                    }
+                    vbox = {
+                        ignoreinvisible = yes
+                        minimumsize = { 125 30 }
+                        maximumsize = { 125 30 }
+                        datamodel = "[DataModelSkipFirst( DataModelFirst( DecisionViewWidgetOptionList.GetEntries, '(int32)10' ), '(int32)9' )]"
+                        item = {
+                            button_radio_label = {
+                                name = "mdc_filter_target_9_none"
+                                size = { 125 30 }
+                                onclick = "[DecisionViewWidgetOptionList.OnSelect(Entry.Self)]"
+                                onclick = "[GetVariableSystem.Set('mdc_conversion_filter_ui', 'none') ]"
+                                tooltip = "mdc_chance_filter_tooltip"
+                                blockoverride "radio" {
+                                    frame = "[BoolTo1And2(Not(Or(GetVariableSystem.HasValue('mdc_conversion_filter_ui', '80'), GetVariableSystem.HasValue('mdc_conversion_filter_ui', '100'))))]"
+                                }
+                                blockoverride "text" { text = "mdc_chance_filter_none" }
+                            }
+                        }
+                    }
+                    vbox = {
+                        ignoreinvisible = yes
+                        minimumsize = { 125 30 }
+                        maximumsize = { 125 30 }
+                        datamodel = "[DataModelSkipFirst( DataModelFirst( DecisionViewWidgetOptionList.GetEntries, '(int32)10' ), '(int32)9' )]"
+                        item = {
+                            button_radio_label = {
+                                name = "mdc_filter_target_9_80"
+                                size = { 125 30 }
+                                onclick = "[DecisionViewWidgetOptionList.OnSelect(Entry.Self)]"
+                                onclick = "[GetVariableSystem.Set('mdc_conversion_filter_ui', '80') ]"
+                                tooltip = "mdc_chance_filter_tooltip"
+                                blockoverride "radio" {
+                                    frame = "[BoolTo1And2(GetVariableSystem.HasValue('mdc_conversion_filter_ui', '80'))]"
+                                }
+                                blockoverride "text" { text = "mdc_chance_filter_80" }
+                            }
+                        }
+                    }
+                    vbox = {
+                        ignoreinvisible = yes
+                        minimumsize = { 125 30 }
+                        maximumsize = { 125 30 }
+                        datamodel = "[DataModelSkipFirst( DataModelFirst( DecisionViewWidgetOptionList.GetEntries, '(int32)10' ), '(int32)9' )]"
+                        item = {
+                            button_radio_label = {
+                                name = "mdc_filter_target_9_100"
+                                size = { 125 30 }
+                                onclick = "[DecisionViewWidgetOptionList.OnSelect(Entry.Self)]"
+                                onclick = "[GetVariableSystem.Set('mdc_conversion_filter_ui', '100') ]"
+                                tooltip = "mdc_chance_filter_tooltip"
+                                blockoverride "radio" {
+                                    frame = "[BoolTo1And2(GetVariableSystem.HasValue('mdc_conversion_filter_ui', '100'))]"
+                                }
+                                blockoverride "text" { text = "mdc_chance_filter_100" }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        vbox = {
+            ignoreinvisible = yes
+            datamodel = "[DataModelSkipFirst( DataModelFirst( DecisionViewWidgetOptionList.GetEntries, '(int32)11' ), '(int32)10' )]"
+            item = {
+                hbox = {
+                    ignoreinvisible = yes
+                    name = "mdc_filter_for_house"
+                    visible = "[Entry.IsSelected]"
+                    spacing = 4
+                    minimumsize = { 514 32 }
+                    maximumsize = { 514 32 }
+                    text_single = {
+                        size = { 120 30 }
+                        align = nobaseline
+                        using = Font_Size_Small
+                        text = "mdc_chance_filter_heading"
+                        tooltip = "mdc_chance_filter_tooltip"
+                    }
+                    vbox = {
+                        ignoreinvisible = yes
+                        minimumsize = { 125 30 }
+                        maximumsize = { 125 30 }
+                        datamodel = "[DataModelSkipFirst( DataModelFirst( DecisionViewWidgetOptionList.GetEntries, '(int32)11' ), '(int32)10' )]"
+                        item = {
+                            button_radio_label = {
+                                name = "mdc_filter_target_10_none"
+                                size = { 125 30 }
+                                onclick = "[DecisionViewWidgetOptionList.OnSelect(Entry.Self)]"
+                                onclick = "[GetVariableSystem.Set('mdc_conversion_filter_ui', 'none') ]"
+                                tooltip = "mdc_chance_filter_tooltip"
+                                blockoverride "radio" {
+                                    frame = "[BoolTo1And2(Not(Or(GetVariableSystem.HasValue('mdc_conversion_filter_ui', '80'), GetVariableSystem.HasValue('mdc_conversion_filter_ui', '100'))))]"
+                                }
+                                blockoverride "text" { text = "mdc_chance_filter_none" }
+                            }
+                        }
+                    }
+                    vbox = {
+                        ignoreinvisible = yes
+                        minimumsize = { 125 30 }
+                        maximumsize = { 125 30 }
+                        datamodel = "[DataModelSkipFirst( DataModelFirst( DecisionViewWidgetOptionList.GetEntries, '(int32)11' ), '(int32)10' )]"
+                        item = {
+                            button_radio_label = {
+                                name = "mdc_filter_target_10_80"
+                                size = { 125 30 }
+                                onclick = "[DecisionViewWidgetOptionList.OnSelect(Entry.Self)]"
+                                onclick = "[GetVariableSystem.Set('mdc_conversion_filter_ui', '80') ]"
+                                tooltip = "mdc_chance_filter_tooltip"
+                                blockoverride "radio" {
+                                    frame = "[BoolTo1And2(GetVariableSystem.HasValue('mdc_conversion_filter_ui', '80'))]"
+                                }
+                                blockoverride "text" { text = "mdc_chance_filter_80" }
+                            }
+                        }
+                    }
+                    vbox = {
+                        ignoreinvisible = yes
+                        minimumsize = { 125 30 }
+                        maximumsize = { 125 30 }
+                        datamodel = "[DataModelSkipFirst( DataModelFirst( DecisionViewWidgetOptionList.GetEntries, '(int32)11' ), '(int32)10' )]"
+                        item = {
+                            button_radio_label = {
+                                name = "mdc_filter_target_10_100"
+                                size = { 125 30 }
+                                onclick = "[DecisionViewWidgetOptionList.OnSelect(Entry.Self)]"
+                                onclick = "[GetVariableSystem.Set('mdc_conversion_filter_ui', '100') ]"
+                                tooltip = "mdc_chance_filter_tooltip"
+                                blockoverride "radio" {
+                                    frame = "[BoolTo1And2(GetVariableSystem.HasValue('mdc_conversion_filter_ui', '100'))]"
+                                }
+                                blockoverride "text" { text = "mdc_chance_filter_100" }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    scrollbox = {
+        name = "mdc_recipient_scroll"
+        minimumsize = { 514 210 }
+        maximumsize = { 514 210 }
+        blockoverride "scrollbox_content" {
+            vbox = {
+                ignoreinvisible = yes
+                spacing = 6
+                vbox = {
+                    ignoreinvisible = yes
+                    name = "mdc_group_direct_vassals_none"
+                    visible = "[Not(Or(GetVariableSystem.HasValue('mdc_conversion_filter_ui', '80'), GetVariableSystem.HasValue('mdc_conversion_filter_ui', '100')))]"
+                    datamodel = "[DataModelSkipFirst( DataModelFirst( DecisionViewWidgetOptionList.GetEntries, '(int32)1' ), '(int32)0' )]"
+                    item = {
+                        button_radio_label = {
+                            size = { 470 30 }
+                            onclick = "[DecisionViewWidgetOptionList.OnSelect(Entry.Self)]"
+                            enabled = "[Entry.IsEnabled]"
+                            tooltip = "[Entry.GetTooltip]"
+                            blockoverride "radio" { frame = "[BoolTo1And2(Entry.IsSelected)]" }
+                            blockoverride "text" { text = "[Entry.GetName]" }
+                        }
+                    }
+                }
+                vbox = {
+                    ignoreinvisible = yes
+                    name = "mdc_group_direct_vassals_80"
+                    visible = "[GetVariableSystem.HasValue('mdc_conversion_filter_ui', '80')]"
+                    datamodel = "[DataModelSkipFirst( DataModelFirst( DecisionViewWidgetOptionList.GetEntries, '(int32)2' ), '(int32)1' )]"
+                    item = {
+                        button_radio_label = {
+                            size = { 470 30 }
+                            onclick = "[DecisionViewWidgetOptionList.OnSelect(Entry.Self)]"
+                            enabled = "[Entry.IsEnabled]"
+                            tooltip = "[Entry.GetTooltip]"
+                            blockoverride "radio" { frame = "[BoolTo1And2(Entry.IsSelected)]" }
+                            blockoverride "text" { text = "[Entry.GetName]" }
+                        }
+                    }
+                }
+                vbox = {
+                    ignoreinvisible = yes
+                    name = "mdc_group_direct_vassals_100"
+                    visible = "[GetVariableSystem.HasValue('mdc_conversion_filter_ui', '100')]"
+                    datamodel = "[DataModelSkipFirst( DataModelFirst( DecisionViewWidgetOptionList.GetEntries, '(int32)3' ), '(int32)2' )]"
+                    item = {
+                        button_radio_label = {
+                            size = { 470 30 }
+                            onclick = "[DecisionViewWidgetOptionList.OnSelect(Entry.Self)]"
+                            enabled = "[Entry.IsEnabled]"
+                            tooltip = "[Entry.GetTooltip]"
+                            blockoverride "radio" { frame = "[BoolTo1And2(Entry.IsSelected)]" }
+                            blockoverride "text" { text = "[Entry.GetName]" }
+                        }
+                    }
+                }
+                vbox = {
+                    ignoreinvisible = yes
+                    name = "mdc_group_indirect_vassals_none"
+                    visible = "[Not(Or(GetVariableSystem.HasValue('mdc_conversion_filter_ui', '80'), GetVariableSystem.HasValue('mdc_conversion_filter_ui', '100')))]"
+                    datamodel = "[DataModelSkipFirst( DataModelFirst( DecisionViewWidgetOptionList.GetEntries, '(int32)4' ), '(int32)3' )]"
+                    item = {
+                        button_radio_label = {
+                            size = { 470 30 }
+                            onclick = "[DecisionViewWidgetOptionList.OnSelect(Entry.Self)]"
+                            enabled = "[Entry.IsEnabled]"
+                            tooltip = "[Entry.GetTooltip]"
+                            blockoverride "radio" { frame = "[BoolTo1And2(Entry.IsSelected)]" }
+                            blockoverride "text" { text = "[Entry.GetName]" }
+                        }
+                    }
+                }
+                vbox = {
+                    ignoreinvisible = yes
+                    name = "mdc_group_indirect_vassals_80"
+                    visible = "[GetVariableSystem.HasValue('mdc_conversion_filter_ui', '80')]"
+                    datamodel = "[DataModelSkipFirst( DataModelFirst( DecisionViewWidgetOptionList.GetEntries, '(int32)5' ), '(int32)4' )]"
+                    item = {
+                        button_radio_label = {
+                            size = { 470 30 }
+                            onclick = "[DecisionViewWidgetOptionList.OnSelect(Entry.Self)]"
+                            enabled = "[Entry.IsEnabled]"
+                            tooltip = "[Entry.GetTooltip]"
+                            blockoverride "radio" { frame = "[BoolTo1And2(Entry.IsSelected)]" }
+                            blockoverride "text" { text = "[Entry.GetName]" }
+                        }
+                    }
+                }
+                vbox = {
+                    ignoreinvisible = yes
+                    name = "mdc_group_indirect_vassals_100"
+                    visible = "[GetVariableSystem.HasValue('mdc_conversion_filter_ui', '100')]"
+                    datamodel = "[DataModelSkipFirst( DataModelFirst( DecisionViewWidgetOptionList.GetEntries, '(int32)6' ), '(int32)5' )]"
+                    item = {
+                        button_radio_label = {
+                            size = { 470 30 }
+                            onclick = "[DecisionViewWidgetOptionList.OnSelect(Entry.Self)]"
+                            enabled = "[Entry.IsEnabled]"
+                            tooltip = "[Entry.GetTooltip]"
+                            blockoverride "radio" { frame = "[BoolTo1And2(Entry.IsSelected)]" }
+                            blockoverride "text" { text = "[Entry.GetName]" }
+                        }
+                    }
+                }
+                vbox = {
+                    ignoreinvisible = yes
+                    name = "mdc_group_tributaries_none"
+                    visible = "[Not(Or(GetVariableSystem.HasValue('mdc_conversion_filter_ui', '80'), GetVariableSystem.HasValue('mdc_conversion_filter_ui', '100')))]"
+                    datamodel = "[DataModelSkipFirst( DataModelFirst( DecisionViewWidgetOptionList.GetEntries, '(int32)7' ), '(int32)6' )]"
+                    item = {
+                        button_radio_label = {
+                            size = { 470 30 }
+                            onclick = "[DecisionViewWidgetOptionList.OnSelect(Entry.Self)]"
+                            enabled = "[Entry.IsEnabled]"
+                            tooltip = "[Entry.GetTooltip]"
+                            blockoverride "radio" { frame = "[BoolTo1And2(Entry.IsSelected)]" }
+                            blockoverride "text" { text = "[Entry.GetName]" }
+                        }
+                    }
+                }
+                vbox = {
+                    ignoreinvisible = yes
+                    name = "mdc_group_tributaries_80"
+                    visible = "[GetVariableSystem.HasValue('mdc_conversion_filter_ui', '80')]"
+                    datamodel = "[DataModelSkipFirst( DataModelFirst( DecisionViewWidgetOptionList.GetEntries, '(int32)8' ), '(int32)7' )]"
+                    item = {
+                        button_radio_label = {
+                            size = { 470 30 }
+                            onclick = "[DecisionViewWidgetOptionList.OnSelect(Entry.Self)]"
+                            enabled = "[Entry.IsEnabled]"
+                            tooltip = "[Entry.GetTooltip]"
+                            blockoverride "radio" { frame = "[BoolTo1And2(Entry.IsSelected)]" }
+                            blockoverride "text" { text = "[Entry.GetName]" }
+                        }
+                    }
+                }
+                vbox = {
+                    ignoreinvisible = yes
+                    name = "mdc_group_tributaries_100"
+                    visible = "[GetVariableSystem.HasValue('mdc_conversion_filter_ui', '100')]"
+                    datamodel = "[DataModelSkipFirst( DataModelFirst( DecisionViewWidgetOptionList.GetEntries, '(int32)9' ), '(int32)8' )]"
+                    item = {
+                        button_radio_label = {
+                            size = { 470 30 }
+                            onclick = "[DecisionViewWidgetOptionList.OnSelect(Entry.Self)]"
+                            enabled = "[Entry.IsEnabled]"
+                            tooltip = "[Entry.GetTooltip]"
+                            blockoverride "radio" { frame = "[BoolTo1And2(Entry.IsSelected)]" }
+                            blockoverride "text" { text = "[Entry.GetName]" }
+                        }
+                    }
+                }
+                vbox = {
+                    ignoreinvisible = yes
+                    name = "mdc_group_courtiers_any"
+                    datamodel = "[DataModelSkipFirst( DataModelFirst( DecisionViewWidgetOptionList.GetEntries, '(int32)10' ), '(int32)9' )]"
+                    item = {
+                        button_radio_label = {
+                            size = { 470 30 }
+                            onclick = "[DecisionViewWidgetOptionList.OnSelect(Entry.Self)]"
+                            enabled = "[Entry.IsEnabled]"
+                            tooltip = "[Entry.GetTooltip]"
+                            blockoverride "radio" { frame = "[BoolTo1And2(Entry.IsSelected)]" }
+                            blockoverride "text" { text = "[Entry.GetName]" }
+                        }
+                    }
+                }
+                vbox = {
+                    ignoreinvisible = yes
+                    name = "mdc_group_house_any"
+                    datamodel = "[DataModelSkipFirst( DataModelFirst( DecisionViewWidgetOptionList.GetEntries, '(int32)11' ), '(int32)10' )]"
+                    item = {
+                        button_radio_label = {
+                            size = { 470 30 }
+                            onclick = "[DecisionViewWidgetOptionList.OnSelect(Entry.Self)]"
+                            enabled = "[Entry.IsEnabled]"
+                            tooltip = "[Entry.GetTooltip]"
+                            blockoverride "radio" { frame = "[BoolTo1And2(Entry.IsSelected)]" }
+                            blockoverride "text" { text = "[Entry.GetName]" }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

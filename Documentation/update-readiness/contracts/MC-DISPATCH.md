@@ -1,5 +1,15 @@
 # MC-DISPATCH contract card
 
+## Explicit preview only — 2026-10-05
+
+[Compact-widget patch](../mods/mass-demand-conversion-compact-widget-20261005.md) adds an unconditional custom_tooltip before the five retained send branches. It describes normal requests and subsequent native outcomes; it neither performs nor guarantees conversion. All query/send blocks are unchanged. Runtime count/delivery parity and MP remain open.
+
+
+## Standalone filter extension — 2026-10-05
+
+[Current implementation/audit and pending tests](../mods/mass-demand-conversion-chance-filter-20261005.md): selected native entry flags choose the unchanged query or native `ai_accept = 80/100`. GUI display state never enters gameplay. Original interaction IDs, actor/recipient bindings and `send_threshold = decline` remain; no forced acceptance, hooks or payment options are introduced. Native defaults are left as in existing/native callers; earlier unresolved initialization/validation contracts are not declared closed. Threshold/UI parity and concurrent MP routing remain untested.
+
+
 Family: **Mass Demand Conversion**. Runtime: **not run**. Declaration status: **export declarations available**.
 
 [Original intent, costs, mechanics, variants and tests](../mods/mass-demand-conversion.md) · [Behavior guide](../../workspace/function-contracts.md) · [2026-10-03 audit supplement](../mods/mass-demand-conversion-audit.md) · [Native test matrix](../mods/mass-demand-conversion-tests.md)

@@ -1,0 +1,48 @@
+{
+  "date": "2026-10-05",
+  "version": "1.20.0.3",
+  "scope": "Compact standalone MDC GUI/initialization/effect-preview interfaces; audited before edit",
+  "native_sources": {
+    "common/decisions/_decisions.info": {
+      "sha256": "d36f202f6f91a6e17f0accff86ba7604caeb82e6ff73fc8c24041f4052f43742",
+      "reference_sha256": "d36f202f6f91a6e17f0accff86ba7604caeb82e6ff73fc8c24041f4052f43742"
+    },
+    "gui/window_decisions_detail.gui": {
+      "sha256": "9007f4ba7c67314fa24ea6acc1fc709a4b185d7830230ebff479892e6046a469",
+      "reference_sha256": "9007f4ba7c67314fa24ea6acc1fc709a4b185d7830230ebff479892e6046a469"
+    },
+    "gui/shared/buttons.gui": {
+      "sha256": "88403785a1acdacc628730aaa101a04b2ae6293e74aa706a93e0e1695f3b1a0c",
+      "reference_sha256": "88403785a1acdacc628730aaa101a04b2ae6293e74aa706a93e0e1695f3b1a0c"
+    },
+    "gui/shared/lists.gui": {
+      "sha256": "71c6dd9036ed54d53d95e6229782924325f262d208f4e971775237bd4852e5ac",
+      "reference_sha256": "71c6dd9036ed54d53d95e6229782924325f262d208f4e971775237bd4852e5ac"
+    },
+    "gui/event_window_widgets/event_window_widget_name_pope.gui": {
+      "sha256": "276f26914fa63bb72810efeca8ce8ab1782410bc3eb6ee075104eba2ca3f2e9d",
+      "reference_sha256": "276f26914fa63bb72810efeca8ce8ab1782410bc3eb6ee075104eba2ca3f2e9d"
+    },
+    "gui/window_admin_vassal_detail.gui": {
+      "sha256": "76a90d398af0334261c7780a6aa969d8cbff74e4a18a2807e1ac5b7b3debad21",
+      "reference_sha256": "76a90d398af0334261c7780a6aa969d8cbff74e4a18a2807e1ac5b7b3debad21"
+    },
+    "common/decisions/00_guest_decisions.txt": {
+      "sha256": "bc0e3edd027008154ba8182b1d0fc2a09c82ab89c224b87beb941aa3c8f8030c",
+      "reference_sha256": "bc0e3edd027008154ba8182b1d0fc2a09c82ab89c224b87beb941aa3c8f8030c"
+    }
+  },
+  "reference_commit": "0ec13350cde9e410b37a46d3616966838f4ba994",
+  "confirmed": [
+    "Native vbox widgets use trigger_on_create with on_start",
+    "Native scrollbox inherits scrollarea and vertical scrollbar; content has one child",
+    "Native decision effect area uses HasEffect and GetEffectDescription",
+    "custom_tooltip displays explanation without gameplay mutation"
+  ],
+  "remaining": [
+    "Native creation ordering and reused-widget reopen lifecycle need runtime verification",
+    "User screenshots prove display defects, not query/dispatch success",
+    "Unfiltered zero count versus eligible manual target needs same-state comparison",
+    "No MP/compatibility approval"
+  ]
+}

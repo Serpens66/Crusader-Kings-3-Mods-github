@@ -1,0 +1,66 @@
+{
+  "date": "2026-10-05",
+  "version": "1.20.0.3",
+  "native_sources": {
+    "common/decisions/_decisions.info": {
+      "sha256": "d36f202f6f91a6e17f0accff86ba7604caeb82e6ff73fc8c24041f4052f43742",
+      "reference_sha256": "d36f202f6f91a6e17f0accff86ba7604caeb82e6ff73fc8c24041f4052f43742"
+    },
+    "gui/decision_view_widgets/decision_view_widget_decision_option_list_controller.gui": {
+      "sha256": "23b1933c47fed9f243ccf4d70987838d18194b629e43310a459b64c7669fcb3a",
+      "reference_sha256": "23b1933c47fed9f243ccf4d70987838d18194b629e43310a459b64c7669fcb3a"
+    },
+    "gui/window_decisions_detail.gui": {
+      "sha256": "9007f4ba7c67314fa24ea6acc1fc709a4b185d7830230ebff479892e6046a469",
+      "reference_sha256": "9007f4ba7c67314fa24ea6acc1fc709a4b185d7830230ebff479892e6046a469"
+    },
+    "gui/shared/buttons.gui": {
+      "sha256": "88403785a1acdacc628730aaa101a04b2ae6293e74aa706a93e0e1695f3b1a0c",
+      "reference_sha256": "88403785a1acdacc628730aaa101a04b2ae6293e74aa706a93e0e1695f3b1a0c"
+    },
+    "gui/frontend_mp_game_setup.gui": {
+      "sha256": "f478edc35149b324b5cfd3a123770fb5f0d2ff1df7c8ab1a9d4390bb08ae01d5",
+      "reference_sha256": "f478edc35149b324b5cfd3a123770fb5f0d2ff1df7c8ab1a9d4390bb08ae01d5"
+    },
+    "gui/activity_window_widgets/chariot_race_progress_to_victory_widget.gui": {
+      "sha256": "04281b90dbe56774e1749af159f108c1ea82f7f0b58e73e49d091fe2c2f9df33",
+      "reference_sha256": "04281b90dbe56774e1749af159f108c1ea82f7f0b58e73e49d091fe2c2f9df33"
+    },
+    "common/character_interactions/00_religious_interactions.txt": {
+      "sha256": "63afe4538725929fb20bc20cbbbbc86705dba55a384755949431419265db0ac6",
+      "reference_sha256": "63afe4538725929fb20bc20cbbbbc86705dba55a384755949431419265db0ac6"
+    },
+    "common/scripted_modifiers/00_religion_scripted_modifiers.txt": {
+      "sha256": "0d3fbd5d6740212f9acd318aa400560f2572f81f4562c3984c9d158e382fbc71",
+      "reference_sha256": "0d3fbd5d6740212f9acd318aa400560f2572f81f4562c3984c9d158e382fbc71"
+    },
+    "common/script_values/02_religion_values.txt": {
+      "sha256": "9e55618b00b463589af310bd17511b4f260fea4d3acb43e512e209cfc1517ded",
+      "reference_sha256": "9e55618b00b463589af310bd17511b4f260fea4d3acb43e512e209cfc1517ded"
+    },
+    "common/scripted_triggers/pam_scripted_triggers.txt": {
+      "sha256": "0ad98f123b6739593b9ab2c170d0e8c9b3d9d941baa9d3580296dd2139b2ea6e",
+      "reference_sha256": "0ad98f123b6739593b9ab2c170d0e8c9b3d9d941baa9d3580296dd2139b2ea6e"
+    },
+    "common/customizable_localization/pam_sway_to_rite_custom_loc.txt": {
+      "sha256": "111cd99b3a75e5929c37f1f7314d857634054f2b08a47a034abd9919c298cf66",
+      "reference_sha256": "111cd99b3a75e5929c37f1f7314d857634054f2b08a47a034abd9919c298cf66"
+    }
+  },
+  "runtime": "not run",
+  "scope": "Custom widget registration, fixed native selection, GUI-only state and acceptance cutoff; existing Engine initialization/option/cooldown gaps remain explicit.",
+  "preserved_token_hashes": {
+    "is_shown": "0a42f519a70983641d04082db87f78ec908ec0e0bb955b519e60226eb62d44d5",
+    "mod_convert_direct_vassals_number": "d959085b9535bab5a916cef7c2ce11d03538f68091a7285e7748c01d57969ecf",
+    "mod_convert_indirect_vassals_number": "d043eefee516eecb505598373aa97d59380f9dac411153dbec022bbe039006ab",
+    "mod_convert_tributaries_number": "6ccdae9542cab9f4d5dfc359b788ba4b7771bbb7ba78be191bbb821c6abbbbc3",
+    "mod_convert_courtiers_number": "1f324eea430a50e604d77602e1aa1e65c3867e9043dbb62ecfd47e528e963d2a",
+    "mod_convert_house_number": "38d13b4ce692ab8deefd5ef0f0dbabda753464785db2a753a9452ba2132964bc",
+    "courtier_dispatch": "cffa85acd1965529bdf1136b8cffdfe2de37d23f6f7f3770b30507667776fb92",
+    "house_dispatch": "41ae447cc542adbc6d83587008bb28cd3b8a651d60dfab061651dbe1b86d17f4",
+    "all_send_blocks": "657ba08a0f3c9766fef9766f3c7ad30f383bfb684bed98c21ada2fd031c8d8c5",
+    "direct_vassals_dispatch": "1bcff5f0555fb554a328ccaebe4018b2483f0449a96f2c5a5c22a93a8d76c482",
+    "indirect_vassals_dispatch": "88a71c4710b2282c5a5a0b0db79021d668638fe98caedf5c389431bbebec0cf5",
+    "tributaries_dispatch": "33bf166311240eb5b384d85ecd133213e12828d97badf5a4407a31d8d1c5d2b9"
+  }
+}

@@ -1,5 +1,15 @@
 # MC-VARIANTS contract card
 
+## Compact widget correction — 2026-10-05
+
+[Source audit, layout/lifecycle contract and runtime matrix](../mods/mass-demand-conversion-compact-widget-20261005.md): user-observed pre-patch rendering failures, fixed 514×250 widget/32-high filter row/210-high native scrollbox, trigger_on_create initialization and missing/unknown-state none fallback. Eleven entries/order and OnSelect routes preserved; bounded scrolling and creation/reopen synchronization require game tests. Bundle/version metadata remain unchanged.
+
+
+## Standalone filter extension — 2026-10-05
+
+[Current implementation/audit and fixed index map](../mods/mass-demand-conversion-chance-filter-20261005.md): standalone uses its own widget and eleven always-present native entries for five visible groups. Keep group on filter changes and filter on group changes; local UI state resets to none each opening, without a saved gameplay variable. Lifecycle/reset, entry order and MP are runtime gates. The bundle remains outside this authorized change; older byte-identical-widget findings below are historical.
+
+
 Family: **Mass Demand Conversion**. Runtime: **not run**. Declaration status: **export declarations available**.
 
 [Original intent, costs, mechanics, variants and tests](../mods/mass-demand-conversion.md) · [Behavior guide](../../workspace/function-contracts.md) · [2026-10-03 audit supplement](../mods/mass-demand-conversion-audit.md) · [Native test matrix](../mods/mass-demand-conversion-tests.md)

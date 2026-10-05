@@ -1,5 +1,14 @@
 # CK3 mod update readiness
 
+Standalone MDC [compact widget correction](mods/mass-demand-conversion-compact-widget-20261005.md) addresses user-observed missing rows and overflow. Current source has 35 localization keys per language, 19 static checks and 53 native watches. The corrected GUI, unfiltered counts and MP await in-game verification; version remains 1.079.
+
+
+Standalone MDC is now **1.079** after the [eight-language localization review](mods/mass-demand-conversion-localization-20261005.md). Gameplay/widget code is unchanged by that update; GUI/percentage/MP acceptance remains pending. Earlier 1.078 references describe the notification implementation.
+
+
+Current standalone MDC [chance-filter extension (2026-10-05)](mods/mass-demand-conversion-chance-filter-20261005.md) has five visible groups, three filters and eleven fixed native entries. The source registry now monitors 49 MDC sources. Static checks pass; GUI lifecycle/order, percentage parity and multiplayer remain untested. This changes neither compatibility metadata nor the bundle.
+
+
 The initial preparation report below records the **as-installed 1.20.0.3 (Crozier)** source tree and unresolved contracts before implementation. At that historical stage no mod, installation file, launcher registration or playset was changed. Subsequently standalone MDC 1.078 was implemented with two active event overrides; see its [notification report](mods/mass-demand-conversion-notifications-20261003.md). For new update requests follow the [mandatory version-independent workflow](../handbook/mod-update-workflow.md). User-run exports are separately recorded in [runtime intake](runtime-intake.md); gameplay/GUI/MP acceptance remains pending.
 
 Research date: **2026-10-03**. All 18,710 previously indexed native text/reference hashes still match. The new workspace baseline covers **853 files**, including binary assets and pre-existing user changes. The first inventory had 851 files; two excluded-root OUTDATED markers appeared during the audit and are preserved. See [workspace observations](evidence/workspace-observations.json) for baseline reconciliation. This establishes reproducibility against the local installation; it does not establish that the installation is an unmodified Steam distribution.

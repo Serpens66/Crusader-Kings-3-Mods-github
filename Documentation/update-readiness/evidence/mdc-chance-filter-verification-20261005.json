@@ -1,0 +1,56 @@
+{
+  "date": "2026-10-05",
+  "game_version": "1.20.0.3",
+  "scope": "Standalone MDC only",
+  "static_tests": {
+    "command": "python Documentation/tools/test_mdc_chance_filter.py",
+    "passed": 16
+  },
+  "vanilla_check": {
+    "command": "python Documentation/tools/check_mod_updates.py --mod \"Mass Demand Conversion\"",
+    "unchanged": 49,
+    "engine_reference": "recorded_exports_unchanged",
+    "read_only_verified": true,
+    "local_snapshot_matches": true
+  },
+  "preservation": {
+    "initial_files": 1194,
+    "missing": [],
+    "changed_existing_files": [
+      "Documentation/update-readiness/README.md",
+      "Documentation/update-readiness/update-watch-index.json",
+      "Documentation/update-readiness/contracts/MC-CANDIDATES.md",
+      "Documentation/update-readiness/contracts/MC-DISPATCH.md",
+      "Documentation/update-readiness/contracts/MC-VARIANTS.md",
+      "Documentation/update-readiness/mods/mass-demand-conversion.md",
+      "Mass Demand Conversion/common/decisions/mod_mass_convert_subjects.txt",
+      "Mass Demand Conversion/common/script_values/mod_mass_convert_subjects_values.txt",
+      "Mass Demand Conversion/localization/english/mod_mass_convert_subjects_l_english.yml",
+      "Mass Demand Conversion/localization/french/mod_mass_convert_subjects_l_french.yml",
+      "Mass Demand Conversion/localization/german/mod_mass_convert_subjects_l_german.yml",
+      "Mass Demand Conversion/localization/korean/mod_mass_convert_subjects_l_korean.yml",
+      "Mass Demand Conversion/localization/polish/mod_mass_convert_subjects_l_polish.yml",
+      "Mass Demand Conversion/localization/russian/mod_mass_convert_subjects_l_russian.yml",
+      "Mass Demand Conversion/localization/simp_chinese/mod_mass_convert_subjects_l_simp_chinese.yml",
+      "Mass Demand Conversion/localization/spanish/mod_mass_convert_subjects_l_spanish.yml"
+    ],
+    "preexisting_user_changes_preserved": [
+      "Leave Wars/descriptor.mod",
+      "SerpInteractionsDecisions/descriptor.mod"
+    ],
+    "retained_bom_and_line_endings": true,
+    "untouched": [
+      "Standalone notification overrides and messages",
+      "Standalone release descriptors/thumbnail",
+      "Bundle and other mods",
+      "Historical baselines"
+    ]
+  },
+  "runtime": {
+    "GUI": "not run",
+    "percentage_UI_parity": "not run",
+    "gameplay": "not run",
+    "two_player_MP": "not run",
+    "compatibility_release": "not granted"
+  }
+}

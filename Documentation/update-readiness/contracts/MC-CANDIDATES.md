@@ -1,5 +1,15 @@
 # MC-CANDIDATES contract card
 
+## Compact widget and zero-count gate — 2026-10-05
+
+[Current patch and runtime matrix](../mods/mass-demand-conversion-compact-widget-20261005.md): missing GUI mode no longer hides the three unfiltered vassal/tributary rows. Counts/eligibility and send-time checks are unchanged. User-observed zero counts are not solved by a layout assertion: compare a manually eligible target at identical paused state; trace localization/actor/query context before changing rules. An 80% zero does not by itself prove eligibility failure.
+
+
+## Standalone filter extension — 2026-10-05
+
+[Current implementation/audit and pending tests](../mods/mass-demand-conversion-chance-filter-20261005.md): six additional counts use the same native threshold helper as send-time selection. Original five unfiltered counts and decision visibility are preserved. Preserve category guards and recheck each candidate before sending. Zero filtered candidates must show zero without hiding the open decision. Percentage parity with the native interaction UI is untested and remains a release gate.
+
+
 Family: **Mass Demand Conversion**. Runtime: **not run**. Declaration status: **export declarations available**.
 
 [Original intent, costs, mechanics, variants and tests](../mods/mass-demand-conversion.md) · [Behavior guide](../../workspace/function-contracts.md) · [2026-10-03 audit supplement](../mods/mass-demand-conversion-audit.md) · [Native test matrix](../mods/mass-demand-conversion-tests.md)

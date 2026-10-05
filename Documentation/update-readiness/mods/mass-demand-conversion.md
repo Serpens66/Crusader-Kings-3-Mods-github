@@ -1,5 +1,22 @@
 # Mass Demand Conversion update sheet
 
+## Current compact widget correction — 2026-10-05
+
+[Compact widget audit, source changes and runtime matrix](mass-demand-conversion-compact-widget-20261005.md): the user demonstrated missing groups and overflow in the previous GUI. Current source now uses a bounded horizontal filter row, native scrollbox, creation-time reset and none fallback, plus explicit effect-preview text. All 35 keys in eight languages and 19 static tests checked; 53 native watches registered. Corrected GUI rendering, unfiltered zero-count parity and MP remain untested. Mod version stays 1.079; earlier sections describe dated states.
+
+
+## Current standalone localization/version — 2026-10-05
+
+[Version 1.079 localization review](mass-demand-conversion-localization-20261005.md): all eight languages/34 keys checked, Korean fallback text replaced, terminology and grammar corrected. Both standalone version fields incremented; supported-version and runtime/MP status unchanged. Earlier dated findings below remain historical.
+
+
+## Current standalone chance filter — 2026-10-05
+
+The authorized [chance-filter implementation and source audit](mass-demand-conversion-chance-filter-20261005.md) adds none / at least 80% / 100% to the same five visible groups. Eleven fixed native entries carry selection to gameplay; local GUI state controls display only and resets on opening/closing. Direct/indirect vassals and tributaries use native `ai_accept` thresholds; courtiers and house remain unfiltered. Zeros count zero requests and do not hide the decision. Preserve native negotiations, existing protection policy and normal request dispatch; 100% describes immediate calculated acceptance, not completed conversion.
+
+The new dated baseline retains all 40 previous watches and adds nine file/interface watches (49 total), covering GUI templates/lifecycle/datamodel and percentage-query callers. Preserve fixed entry order and all eleven entries when maintaining the widget. Run `Documentation/tools/test_mdc_chance_filter.py` after edits; its structural checks do not replace the linked runtime matrix. GUI initialization/index ordering, percentage parity/rounding at 80/100 and concurrent two-player routing remain release blockers. Notification overrides, standalone metadata, bundle and historical baselines are preserved. Earlier sections below describe their dated states.
+
+
 Purpose: shorten repeated manual conversion requests by selecting a category of people and sending native interactions. Preserve native eligibility, refusal, consent and consequence chains. This is not forced direct conversion. Evidence: full standalone/bundle decision and count files, translations, current CONV/CONVE/RITE/INT/DEC sources and native GUI controller in [source register](../sources.md).
 
 ## Distribution differences

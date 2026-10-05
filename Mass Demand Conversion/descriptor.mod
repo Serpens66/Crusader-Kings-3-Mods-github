@@ -1,4 +1,4 @@
-version="1.078"
+version="1.079"
 tags={
 	"Decisions"
 	"Character Interactions"

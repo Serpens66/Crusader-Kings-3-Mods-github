@@ -67,51 +67,89 @@ mod_mass_convert_subjects_decision = {
         }
     }
  
+  # Fixed index contract for our widget: direct 0-2, indirect 3-5,
+  # tributaries 6-8 (none/80/100), courtiers 9, house 10. Do not hide items.
   widget = {
-		gui = "decision_view_widget_decision_option_list_controller"
-		controller = decision_option_list_controller
- 
-		item = {
-			value = mod_convert_direct_vassals
-			localization = mod_convert_direct_vassals_loc
-			ai_chance = { value = 0 } # unused
-		}
-		item = {
-			value = mod_convert_indirect_vassals
-			localization = mod_convert_indirect_vassals_loc
-			ai_chance = { value = 0 } # unused
-		}
+        gui = "mdc_decision_chance_filter"
+        controller = decision_option_list_controller
+        item = {
+            value = mod_convert_direct_vassals
+            localization = mod_convert_direct_vassals_loc
+            ai_chance = { value = 0 } # unused; player selection uses the native controller
+            is_default = yes
+        }
+        item = {
+            value = mdc_convert_direct_vassals_80
+            localization = mdc_convert_direct_vassals_80_loc
+            ai_chance = { value = 0 } # unused; player selection uses the native controller
+        }
+        item = {
+            value = mdc_convert_direct_vassals_100
+            localization = mdc_convert_direct_vassals_100_loc
+            ai_chance = { value = 0 } # unused; player selection uses the native controller
+        }
+        item = {
+            value = mod_convert_indirect_vassals
+            localization = mod_convert_indirect_vassals_loc
+            ai_chance = { value = 0 } # unused; player selection uses the native controller
+        }
+        item = {
+            value = mdc_convert_indirect_vassals_80
+            localization = mdc_convert_indirect_vassals_80_loc
+            ai_chance = { value = 0 } # unused; player selection uses the native controller
+        }
+        item = {
+            value = mdc_convert_indirect_vassals_100
+            localization = mdc_convert_indirect_vassals_100_loc
+            ai_chance = { value = 0 } # unused; player selection uses the native controller
+        }
         item = {
             value = mod_convert_tributaries
             localization = mod_convert_tributaries_loc
-            ai_chance = { value = 0 } # unused
+            ai_chance = { value = 0 } # unused; player selection uses the native controller
         }
-		item = {
-			value = mod_convert_courtiers
-			localization = mod_convert_courtiers_loc
-			ai_chance = { value = 0 } # unused
-		}
         item = {
-			value = mod_convert_house
-			localization = mod_convert_house_loc
-			ai_chance = { value = 0 } # unused
-		}
- 
-	}
- 
- 
+            value = mdc_convert_tributaries_80
+            localization = mdc_convert_tributaries_80_loc
+            ai_chance = { value = 0 } # unused; player selection uses the native controller
+        }
+        item = {
+            value = mdc_convert_tributaries_100
+            localization = mdc_convert_tributaries_100_loc
+            ai_chance = { value = 0 } # unused; player selection uses the native controller
+        }
+        item = {
+            value = mod_convert_courtiers
+            localization = mod_convert_courtiers_loc
+            ai_chance = { value = 0 } # unused; player selection uses the native controller
+        }
+        item = {
+            value = mod_convert_house
+            localization = mod_convert_house_loc
+            ai_chance = { value = 0 } # unused; player selection uses the native controller
+        }
+  }
+
+
 	effect = {
+        # Explicit preview: sending requests does not guarantee conversion.
+        custom_tooltip = mdc_mass_conversion_requests_effect
  
         if = {
-			limit = { scope:mod_convert_direct_vassals = yes }
+			limit = {
+                OR = {
+                    scope:mod_convert_direct_vassals ?= yes
+                    scope:mdc_convert_direct_vassals_80 ?= yes
+                    scope:mdc_convert_direct_vassals_100 ?= yes
+                }
+            }
 			every_vassal = { # direct vassals
                 limit = { NOT = { vassal_contract_has_flag = religiously_protected } }
                 if = {
                     limit = {
                         root = {
-                            is_character_interaction_potentially_accepted = {
-                                recipient = prev
-                                interaction = demand_conversion_vassal_ruler_interaction
+                            mdc_selected_vassal_conversion_query = {
+                                RECIPIENT = prev
                             }
                         }
                     }
@@ -126,7 +164,13 @@ mod_mass_convert_subjects_decision = {
             }
 		}
 		else_if = {
-			limit = { scope:mod_convert_indirect_vassals = yes }
+			limit = {
+                OR = {
+                    scope:mod_convert_indirect_vassals ?= yes
+                    scope:mdc_convert_indirect_vassals_80 ?= yes
+                    scope:mdc_convert_indirect_vassals_100 ?= yes
+                }
+            }
 			every_vassal_or_below = { # all vassals
                 limit = { NOT = { vassal_contract_has_flag = religiously_protected } }
                 if = {
@@ -136,9 +180,8 @@ mod_mass_convert_subjects_decision = {
                             liege = root # filter for indirect vassals, so ones we are not the liege of
                         }
                         root = {
-                            is_character_interaction_potentially_accepted = {
-                                recipient = prev
-                                interaction = demand_conversion_vassal_ruler_interaction
+                            mdc_selected_vassal_conversion_query = {
+                                RECIPIENT = prev
                             }
                         }
                     }
@@ -152,14 +195,19 @@ mod_mass_convert_subjects_decision = {
             }
 		}
         else_if = {
-            limit = { scope:mod_convert_tributaries = yes }
+            limit = {
+                OR = {
+                    scope:mod_convert_tributaries ?= yes
+                    scope:mdc_convert_tributaries_80 ?= yes
+                    scope:mdc_convert_tributaries_100 ?= yes
+                }
+            }
             every_tributary = {
                 if = {
                     limit = {
                         root = {
-                            is_character_interaction_potentially_accepted = {
-                                recipient = prev
-                                interaction = demand_conversion_vassal_ruler_interaction
+                            mdc_selected_vassal_conversion_query = {
+                                RECIPIENT = prev
                             }
                         }
                     }

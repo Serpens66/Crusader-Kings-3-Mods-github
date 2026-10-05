@@ -1,0 +1,72 @@
+{
+  "date": "2026-10-05",
+  "scope": "Standalone MDC localization only",
+  "languages": 8,
+  "keys_per_language": 34,
+  "modified_keys": {
+    "english": [
+      "mod_convert_house_loc",
+      "mod_convert_house_tooltip"
+    ],
+    "french": [
+      "mod_convert_tributaries_tooltip",
+      "mod_mass_convert_subjects_decision_confirm",
+      "mdc_chance_filter_heading",
+      "mdc_chance_filter_scope_note"
+    ],
+    "german": [
+      "mod_convert_direct_vassals_tooltip",
+      "mod_convert_indirect_vassals_tooltip",
+      "mod_convert_tributaries_tooltip",
+      "mod_convert_courtiers_tooltip",
+      "mod_convert_house_tooltip"
+    ],
+    "korean": [
+      "mod_convert_direct_vassals_tooltip",
+      "mod_convert_indirect_vassals_loc",
+      "mod_convert_indirect_vassals_tooltip",
+      "mod_convert_tributaries_tooltip",
+      "mod_convert_courtiers_loc",
+      "mod_convert_courtiers_tooltip",
+      "mod_convert_house_loc",
+      "mod_convert_house_tooltip",
+      "mod_mass_convert_subjects_decision_confirm",
+      "mdc_convert_indirect_vassals_80_loc",
+      "mdc_convert_indirect_vassals_100_loc"
+    ],
+    "polish": [
+      "mod_convert_indirect_vassals_tooltip",
+      "mod_convert_tributaries_tooltip"
+    ],
+    "russian": [
+      "mod_convert_tributaries_tooltip",
+      "mdc_chance_filter_scope_note"
+    ],
+    "simp_chinese": [
+      "mod_convert_tributaries_tooltip",
+      "mdc_chance_filter_scope_note"
+    ],
+    "spanish": [
+      "mdc_chance_filter_scope_note"
+    ]
+  },
+  "functional_tokens_unchanged": true,
+  "bom_and_line_endings_preserved": true,
+  "korean_english_literals_remaining": 0,
+  "runtime": "not run; existing GUI/percentage-parity/MP gates remain open",
+  "mod_version": "1.079",
+  "static_mdc_tests_passed": 16,
+  "previous_baseline": "update-watch-mdc-filter-20261005.json",
+  "current_baseline": "update-watch-mdc-localization-20261005.json",
+  "vanilla_watch_result": {
+    "unchanged": 49,
+    "engine_reference": "recorded_exports_unchanged"
+  },
+  "preservation": {
+    "unexpected_existing_file_changes": [],
+    "missing_files": [],
+    "historical_baselines_unchanged": true,
+    "gameplay_widget_notifications_bundle_and_unrelated_user_changes_unchanged": true,
+    "both_descriptors_only_change_version": true
+  }
+}

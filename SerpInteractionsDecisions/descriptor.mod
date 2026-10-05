@@ -4,5 +4,5 @@ tags={
 	"Character Interactions"
 }
 name="SerpInteractionsDecisions"
-supported_version="1.5.*"
+supported_version="1.20.0.3"
 remote_file_id="2638425673"

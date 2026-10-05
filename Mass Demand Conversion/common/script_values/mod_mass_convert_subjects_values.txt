@@ -99,3 +99,99 @@ mod_convert_house_number = {
         }
     }
 }
+# Fixed cutoff counts mirror the original candidate sets; no GUI state is read.
+mdc_convert_direct_vassals_80_number = {
+	value = 0
+    every_vassal = { # direct vassals
+        limit = { NOT = { vassal_contract_has_flag = religiously_protected } }
+        if = {
+            limit = {
+                root = {
+                    mdc_vassal_conversion_cutoff_query = { RECIPIENT = prev MINIMUM = 80 }
+                }
+            }
+            add = 1
+        }
+    }
+}
+
+mdc_convert_direct_vassals_100_number = {
+	value = 0
+    every_vassal = { # direct vassals
+        limit = { NOT = { vassal_contract_has_flag = religiously_protected } }
+        if = {
+            limit = {
+                root = {
+                    mdc_vassal_conversion_cutoff_query = { RECIPIENT = prev MINIMUM = 100 }
+                }
+            }
+            add = 1
+        }
+    }
+}
+
+mdc_convert_indirect_vassals_80_number = {
+	value = 0
+    every_vassal_or_below = { # all vassals
+        limit = { NOT = { vassal_contract_has_flag = religiously_protected } }
+        if = {
+            limit = {
+                exists = liege
+                NOT = {
+                    liege = root # filter for indirect vassals, so ones we are not the liege of
+                }
+                root = {
+                    mdc_vassal_conversion_cutoff_query = { RECIPIENT = prev MINIMUM = 80 }
+                }
+            }
+            add = 1
+        }
+    }
+}
+
+mdc_convert_indirect_vassals_100_number = {
+	value = 0
+    every_vassal_or_below = { # all vassals
+        limit = { NOT = { vassal_contract_has_flag = religiously_protected } }
+        if = {
+            limit = {
+                exists = liege
+                NOT = {
+                    liege = root # filter for indirect vassals, so ones we are not the liege of
+                }
+                root = {
+                    mdc_vassal_conversion_cutoff_query = { RECIPIENT = prev MINIMUM = 100 }
+                }
+            }
+            add = 1
+        }
+    }
+}
+
+mdc_convert_tributaries_80_number = {
+    value = 0
+    every_tributary = {
+        if = {
+            limit = {
+                root = {
+                    mdc_vassal_conversion_cutoff_query = { RECIPIENT = prev MINIMUM = 80 }
+                }
+            }
+            add = 1
+        }
+    }
+}
+
+mdc_convert_tributaries_100_number = {
+    value = 0
+    every_tributary = {
+        if = {
+            limit = {
+                root = {
+                    mdc_vassal_conversion_cutoff_query = { RECIPIENT = prev MINIMUM = 100 }
+                }
+            }
+            add = 1
+        }
+    }
+}

@@ -3,5 +3,5 @@ tags={
 	"Character Interactions"
 }
 name="Leave Wars"
-supported_version="1.6.*"
+supported_version="1.20.0.3"
 remote_file_id="2643946956"

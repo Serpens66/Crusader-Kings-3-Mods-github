@@ -1,0 +1,33 @@
+{
+  "date": "2026-10-05",
+  "mod_version": "1.079",
+  "static_tests_passed": 19,
+  "localization_languages": 8,
+  "keys_per_language": 35,
+  "source_watches": 53,
+  "previous_watches_preserved": 49,
+  "current_baseline": "update-watch-mdc-compact-widget-20261005.json",
+  "runtime": {
+    "old_gui": "user screenshots show failure",
+    "corrected_gui": "not run",
+    "unfiltered_count_parity": "not run",
+    "percentage_ui_parity": "not run",
+    "MP": "not run"
+  },
+  "compatibility_approval": false,
+  "vanilla_check": {
+    "unchanged": 53,
+    "engine_reference": "recorded_exports_unchanged"
+  },
+  "preservation": {
+    "unexpected_existing_file_changes": [],
+    "missing_files": [],
+    "release_metadata_unchanged": true,
+    "previous_dated_baselines_byte_preserved": true,
+    "existing_decision_bytes_preserved_except_added_tooltip": true,
+    "counts_triggers_send_notification_bundle_and_unrelated_user_changes_unchanged": true,
+    "existing_language_texts_unchanged_except_compact_captions_and_tooltip_prefix": true,
+    "BOM_and_existing_line_endings_preserved": true,
+    "diff_whitespace_check": "passed"
+  }
+}

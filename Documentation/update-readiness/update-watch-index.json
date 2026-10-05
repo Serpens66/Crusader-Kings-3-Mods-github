@@ -1,9 +1,12 @@
 {
   "schema_version": 1,
-  "current_baseline": "update-watch-leave-wars-20261003.json",
+  "current_baseline": "update-watch-mdc-compact-widget-20261005.json",
   "history": [
     "update-watch-20261003.json",
-    "update-watch-leave-wars-20261003.json"
+    "update-watch-leave-wars-20261003.json",
+    "update-watch-mdc-filter-20261005.json",
+    "update-watch-mdc-localization-20261005.json",
+    "update-watch-mdc-compact-widget-20261005.json"
   ],
   "rule": "Update pointer only after feature source review; preserve every dated baseline and per-watch version/reference."
 }
