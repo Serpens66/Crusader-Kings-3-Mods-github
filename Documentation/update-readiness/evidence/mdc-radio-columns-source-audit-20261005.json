@@ -1,0 +1,31 @@
+{
+  "date": "2026-10-05",
+  "version": "1.20.0.3",
+  "reference_commit": "0ec13350cde9e410b37a46d3616966838f4ba994",
+  "scope": "Feature source audit completed before edits: native radio-label horizontal content (radio30+spacing5+text), radio/group/text defaults and text-block overrides, unchanged bounded native recipient list/scrollbox. Fixed size/autoresize text example is in shared/buttons.gui; native radio text width override is in interaction_modify_vassal_window.gui.",
+  "native_sources": {
+    "gui/shared/buttons.gui": {
+      "sha256": "88403785a1acdacc628730aaa101a04b2ae6293e74aa706a93e0e1695f3b1a0c",
+      "reference_sha256": "88403785a1acdacc628730aaa101a04b2ae6293e74aa706a93e0e1695f3b1a0c"
+    },
+    "gui/shared/lists.gui": {
+      "sha256": "71c6dd9036ed54d53d95e6229782924325f262d208f4e971775237bd4852e5ac",
+      "reference_sha256": "71c6dd9036ed54d53d95e6229782924325f262d208f4e971775237bd4852e5ac"
+    },
+    "gui/preload/defaults.gui": {
+      "sha256": "7ba220ab2de42d68d1123353d20da55203dacf3e8fa699046cdf274d46296698",
+      "reference_sha256": "7ba220ab2de42d68d1123353d20da55203dacf3e8fa699046cdf274d46296698"
+    },
+    "gui/interaction_modify_vassal_window.gui": {
+      "sha256": "ae9bc96328c5803467868e85c8fed5e62f886409607abc0b2cabe5f6284244df",
+      "reference_sha256": "ae9bc96328c5803467868e85c8fed5e62f886409607abc0b2cabe5f6284244df"
+    },
+    "gui/decision_view_widgets/decision_view_widget_decision_option_list_controller.gui": {
+      "sha256": "23b1933c47fed9f243ccf4d70987838d18194b629e43310a459b64c7669fcb3a",
+      "reference_sha256": "23b1933c47fed9f243ccf4d70987838d18194b629e43310a459b64c7669fcb3a"
+    }
+  },
+  "change": "Only eleven recipient text overrides receive size/min/max285x30, autoresize=no and left|nobaseline alignment; native radio-label type retained.",
+  "content_width": 320,
+  "user_runtime_evidence": "808b7d31 screenshot and user confirm prior explicit scrollbox size corrects placement and shows all five groups. New common-column text geometry remains untested."
+}

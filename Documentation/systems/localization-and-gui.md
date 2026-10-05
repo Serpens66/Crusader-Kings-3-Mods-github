@@ -72,3 +72,7 @@ The [legacy GUI audit](dynasty-legacies.md) traces `DynastyHouseView.GetLegacies
 ## MDC layout investigation: mandatory failure evidence
 
 Before further MDC GUI work, read the [screenshot-backed failed-approach ledger](../update-readiness/mods/mass-demand-conversion-gui-failures-20261005.md) and [current isolated size correction](../update-readiness/mods/mass-demand-conversion-scroll-size-20261005.md). Audit inherited nominal size separately from min/max bounds and inspect the complete insertion/layout chain. Repeated source checks and Git equality did not establish renderer success. Parent anchors, flexible-space recipes and old custom Git snapshots must not be promoted to working examples from static tests alone.
+
+## User-confirmed fixed-slot decision GUI reference — 2026-10-05
+
+For MDC, use the [visually accepted fixed-slot implementation](../update-readiness/mods/mass-demand-conversion-fixed-rows-20261005.md), backed by the user's current in-game confirmation. It retains native controller bindings but removes intrinsic recipient measurement: explicit scroll viewport/content sizes, permanent group slots, zero-origin overlaid datamodel variants, and fixed radio/text coordinates. The report documents the exact dimensions, source checksum and failed alternatives. Reuse the layout mechanism with the intended parent dimensions and data contract; do not transplant offsets into a different parent without auditing its size/margins. The confirmation covers the reported appearance; broad runtime regression and gameplay/MP claims remain separate.

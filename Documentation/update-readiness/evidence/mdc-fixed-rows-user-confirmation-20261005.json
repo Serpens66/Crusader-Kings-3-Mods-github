@@ -1,0 +1,23 @@
+{
+  "date": "2026-10-05",
+  "mod": "Mass Demand Conversion",
+  "mod_version": "1.079",
+  "evidence_type": "user_reported_in_game_visual_confirmation",
+  "user_statement": "ok, es sieht jetzt gut aus, dokumentiere den funktionierenden code.",
+  "confirmed_scope": "User confirms current GUI looks correct in game following fixed-slot implementation. This establishes visual acceptance of the reported current presentation; no exhaustive transition or test matrix is claimed.",
+  "source_file": "Mass Demand Conversion/gui/decision_view_widgets/mdc_decision_chance_filter.gui",
+  "source_sha256": "ce3ffb2de8d2d4474051381594b726706ce05217824c76ab526f6620618fa65f",
+  "implementation_report": "Documentation/update-readiness/mods/mass-demand-conversion-fixed-rows-20261005.md",
+  "baseline": "Documentation/update-readiness/update-watch-mdc-fixed-rows-20261005.json",
+  "not_individually_confirmed": [
+    "first-open versus every filter/group transition and cancel/reopen",
+    "full-row click areas",
+    "all languages/long translations/large counts",
+    "increased UI scale",
+    "scrollbar and wheel with overflow",
+    "percentage threshold/UI parity and rounding",
+    "request delivery and negotiations",
+    "multiplayer selection isolation and desync"
+  ],
+  "no_code_or_metadata_change": true
+}

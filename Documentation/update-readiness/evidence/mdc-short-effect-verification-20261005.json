@@ -1,0 +1,93 @@
+{
+  "date": "2026-10-05",
+  "mod_version": "1.079",
+  "static_tests": 26,
+  "source_watches": 63,
+  "source_status": "all unchanged",
+  "changes": {
+    "Mass Demand Conversion/localization/german/mod_mass_convert_subjects_l_german.yml": {
+      "before_sha256": "ffa81574db7463d603f05ef07ccabd207569e2184037c7aa0738700250c81346",
+      "after_sha256": "4a8b47061e8d1fd293ab451e7e1b5506067de39b6ec9d9ccd04f65198e3fedc0",
+      "text": "Sendet normale Bekehrungsanfragen an die gewählten Empfänger.",
+      "other_text_unchanged": true,
+      "bom_and_line_endings_preserved": true
+    },
+    "Mass Demand Conversion/localization/english/mod_mass_convert_subjects_l_english.yml": {
+      "before_sha256": "384825d5f7c9dcbd655b693c0faac471f72fd1756807d8b946672174bc9fd9a8",
+      "after_sha256": "b3338f50e575caf1e60ec2eb981a78b31fd04dbaaf58c99b4a251ad2a1e2632a",
+      "text": "Sends standard conversion requests to the selected targets.",
+      "other_text_unchanged": true,
+      "bom_and_line_endings_preserved": true
+    },
+    "Mass Demand Conversion/localization/french/mod_mass_convert_subjects_l_french.yml": {
+      "before_sha256": "17e947efe921c8f86b675030b9278b38b668822c058ca6961a7f311de05c28e8",
+      "after_sha256": "f931373a9446ad9af1c8e6dec8ec478b5e97c3c0ff1c3718fce1072740a3227f",
+      "text": "Envoie des demandes de conversion normales aux destinataires choisis.",
+      "other_text_unchanged": true,
+      "bom_and_line_endings_preserved": true
+    },
+    "Mass Demand Conversion/localization/spanish/mod_mass_convert_subjects_l_spanish.yml": {
+      "before_sha256": "4a0bb7c4e93a75c5ea5e88ce776cdeeea6446deeda632797b985e49a422e530a",
+      "after_sha256": "53d640911ed34809147a5167833564d3b3567baf11f0adb0676be3bf4caae58e",
+      "text": "Envía solicitudes normales de conversión a los destinatarios elegidos.",
+      "other_text_unchanged": true,
+      "bom_and_line_endings_preserved": true
+    },
+    "Mass Demand Conversion/localization/russian/mod_mass_convert_subjects_l_russian.yml": {
+      "before_sha256": "4c58415432aa03a5264432e51c2503c25f8736295c662fb8de4824b729c66830",
+      "after_sha256": "41807b15cbabae2deed97382747dbc05efb60f5b26c0637a0a777b2fed9a264c",
+      "text": "Отправляет обычные просьбы об обращении выбранным персонажам.",
+      "other_text_unchanged": true,
+      "bom_and_line_endings_preserved": true
+    },
+    "Mass Demand Conversion/localization/polish/mod_mass_convert_subjects_l_polish.yml": {
+      "before_sha256": "02346f6cae9c13e06ba413be7bcbbe3f180d4f86c0fc732c7f415cb730b170cb",
+      "after_sha256": "8b20354ecefbd8f926b3c67f4646a8cd3725821c1152d618c664b20b944b8d19",
+      "text": "Wysyła zwykłe prośby o nawrócenie do wybranych postaci.",
+      "other_text_unchanged": true,
+      "bom_and_line_endings_preserved": true
+    },
+    "Mass Demand Conversion/localization/korean/mod_mass_convert_subjects_l_korean.yml": {
+      "before_sha256": "5cb6b7f7b1c6acfe9ec0a6358fad227493914aa0fe8a51fa43d876c1669d324d",
+      "after_sha256": "445aaf104f37607bb4d718c500fb37587bee3a771a23cae378383a13de0ee929",
+      "text": "선택한 대상에게 일반적인 개종 요청을 보냅니다.",
+      "other_text_unchanged": true,
+      "bom_and_line_endings_preserved": true
+    },
+    "Mass Demand Conversion/localization/simp_chinese/mod_mass_convert_subjects_l_simp_chinese.yml": {
+      "before_sha256": "59314097f4cb35a82967fc109726704d6b0f0bbc7c5a54783f169d6519c300c3",
+      "after_sha256": "261ddf8063219e90230c2d765c286e4c0069e5c3e09c63995b07e91c6bee950f",
+      "text": "向选定对象发送普通改信请求。",
+      "other_text_unchanged": true,
+      "bom_and_line_endings_preserved": true
+    }
+  },
+  "preservation": {
+    "only_eight_effect_texts_changed_in_mod": true,
+    "35_keys_per_language": true,
+    "bom_and_original_line_endings_preserved": true,
+    "gui_gameplay_metadata_bundle_unchanged": true,
+    "historical_baselines_unchanged": true,
+    "other_mod_baseline_records_unchanged": true,
+    "changed_existing_files": [
+      "Documentation/update-readiness/README.md",
+      "Documentation/update-readiness/update-watch-index.json",
+      "Documentation/update-readiness/mods/mass-demand-conversion.md",
+      "Mass Demand Conversion/localization/english/mod_mass_convert_subjects_l_english.yml",
+      "Mass Demand Conversion/localization/french/mod_mass_convert_subjects_l_french.yml",
+      "Mass Demand Conversion/localization/german/mod_mass_convert_subjects_l_german.yml",
+      "Mass Demand Conversion/localization/korean/mod_mass_convert_subjects_l_korean.yml",
+      "Mass Demand Conversion/localization/polish/mod_mass_convert_subjects_l_polish.yml",
+      "Mass Demand Conversion/localization/russian/mod_mass_convert_subjects_l_russian.yml",
+      "Mass Demand Conversion/localization/simp_chinese/mod_mass_convert_subjects_l_simp_chinese.yml",
+      "Mass Demand Conversion/localization/spanish/mod_mass_convert_subjects_l_spanish.yml"
+    ],
+    "new_files": [
+      "Documentation/update-readiness/update-watch-mdc-short-effect-20261005.json",
+      "Documentation/update-readiness/mods/mass-demand-conversion-short-effect-20261005.md",
+      "Documentation/update-readiness/evidence/mdc-short-effect-verification-20261005.json"
+    ],
+    "git_diff_check": "passed"
+  },
+  "runtime": "Short-text wrapping not tested. User-confirmed GUI reference retained; percentage/delivery/MP gates remain open."
+}

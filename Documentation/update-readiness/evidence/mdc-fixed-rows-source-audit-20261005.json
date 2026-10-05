@@ -1,0 +1,54 @@
+{
+  "date": "2026-10-05",
+  "version": "1.20.0.3",
+  "scope": "Completed native insertion, scrollbox ancestry/replacement block, button defaults/radio/text and positioned widget/datamodel examples audit before implementation. Native mechanisms are evidenced; composed MDC renderer behavior remains untested.",
+  "native_sources": {
+    "gui/shared/buttons.gui": {
+      "sha256": "88403785a1acdacc628730aaa101a04b2ae6293e74aa706a93e0e1695f3b1a0c",
+      "reference_sha256": "88403785a1acdacc628730aaa101a04b2ae6293e74aa706a93e0e1695f3b1a0c"
+    },
+    "gui/shared/lists.gui": {
+      "sha256": "71c6dd9036ed54d53d95e6229782924325f262d208f4e971775237bd4852e5ac",
+      "reference_sha256": "71c6dd9036ed54d53d95e6229782924325f262d208f4e971775237bd4852e5ac"
+    },
+    "gui/preload/defaults.gui": {
+      "sha256": "7ba220ab2de42d68d1123353d20da55203dacf3e8fa699046cdf274d46296698",
+      "reference_sha256": "7ba220ab2de42d68d1123353d20da55203dacf3e8fa699046cdf274d46296698"
+    },
+    "gui/shared/windows.gui": {
+      "sha256": "6b5759dd4d06aef88f24b86c1290de38387c3bd99b73dafac67d3e330ac06236",
+      "reference_sha256": "6b5759dd4d06aef88f24b86c1290de38387c3bd99b73dafac67d3e330ac06236"
+    },
+    "gui/window_decisions_detail.gui": {
+      "sha256": "9007f4ba7c67314fa24ea6acc1fc709a4b185d7830230ebff479892e6046a469",
+      "reference_sha256": "9007f4ba7c67314fa24ea6acc1fc709a4b185d7830230ebff479892e6046a469"
+    },
+    "gui/window_royal_court.gui": {
+      "sha256": "425cbfa044e12800a0202f37292ec26efd1ec944ba9f86e1afd1530d33d94bad",
+      "reference_sha256": "425cbfa044e12800a0202f37292ec26efd1ec944ba9f86e1afd1530d33d94bad"
+    },
+    "gui/frontend_bookmarks.gui": {
+      "sha256": "b10f7df924b7fb3e319f4dada17663d51f3c79744c8a41d6afa9d5d6ddd7c80c",
+      "reference_sha256": "b10f7df924b7fb3e319f4dada17663d51f3c79744c8a41d6afa9d5d6ddd7c80c"
+    },
+    "gui/decision_view_widgets/decision_view_widget_decision_option_list_controller.gui": {
+      "sha256": "23b1933c47fed9f243ccf4d70987838d18194b629e43310a459b64c7669fcb3a",
+      "reference_sha256": "23b1933c47fed9f243ccf4d70987838d18194b629e43310a459b64c7669fcb3a"
+    }
+  },
+  "preserved_non_scroll_root_sha256": "5ca2fbd427ed44b85c59c8e7e020218ba149acf945856e53b564e4fe77949e48",
+  "preserved_recipient_bindings": {
+    "mdc_group_direct_vassals_none": "139eb1cf029464fb99fb37c9f064b5a131774a884502ab96c7ad66c4d9af6478",
+    "mdc_group_direct_vassals_80": "139eb1cf029464fb99fb37c9f064b5a131774a884502ab96c7ad66c4d9af6478",
+    "mdc_group_direct_vassals_100": "139eb1cf029464fb99fb37c9f064b5a131774a884502ab96c7ad66c4d9af6478",
+    "mdc_group_indirect_vassals_none": "139eb1cf029464fb99fb37c9f064b5a131774a884502ab96c7ad66c4d9af6478",
+    "mdc_group_indirect_vassals_80": "139eb1cf029464fb99fb37c9f064b5a131774a884502ab96c7ad66c4d9af6478",
+    "mdc_group_indirect_vassals_100": "139eb1cf029464fb99fb37c9f064b5a131774a884502ab96c7ad66c4d9af6478",
+    "mdc_group_tributaries_none": "139eb1cf029464fb99fb37c9f064b5a131774a884502ab96c7ad66c4d9af6478",
+    "mdc_group_tributaries_80": "139eb1cf029464fb99fb37c9f064b5a131774a884502ab96c7ad66c4d9af6478",
+    "mdc_group_tributaries_100": "139eb1cf029464fb99fb37c9f064b5a131774a884502ab96c7ad66c4d9af6478",
+    "mdc_group_courtiers_any": "139eb1cf029464fb99fb37c9f064b5a131774a884502ab96c7ad66c4d9af6478",
+    "mdc_group_house_any": "139eb1cf029464fb99fb37c9f064b5a131774a884502ab96c7ad66c4d9af6478"
+  },
+  "runtime_status": "Unexecuted. Screenshot91dc2d7b/user disprove preceding fixed-caption layout: first opening and filter switches produce different alignment."
+}

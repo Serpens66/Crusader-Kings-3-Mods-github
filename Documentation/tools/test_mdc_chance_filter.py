@@ -1,5 +1,6 @@
 """Static MDC routing/regression checks. These do not execute CK3 or certify MP."""
 import hashlib
+import copy
 import json
 import re
 import sys
@@ -204,7 +205,7 @@ class FilterTests(unittest.TestCase):
             for mode in MODES:
                 node = named(self.gui, 'mdc_group_' + group + '_' + (mode if group in GROUPS[:3] else 'any'))
                 index = slice_indices(one(node, 'datamodel'))[0]
-                button = one(one(node, 'item'), 'button_radio_label')
+                button = one(one(node, 'item'), 'mdc_fixed_recipient_option')
                 self.assertIn('OnSelect(Entry.Self)', one(button, 'onclick'))
                 expected = 'mdc_convert_' + group + '_' + mode if mode != 'none' and group in GROUPS[:3] else 'mod_convert_' + group
                 self.assertEqual(self.flags[index], expected)
@@ -413,17 +414,18 @@ class FilterTests(unittest.TestCase):
             self.assertFalse(all_values(selected, 'hbox'))
             self.assertFalse(all_values(selected, 'expand'))
 
-    def test_recipient_scroll_content_matches_git_with_explicit_viewport_size(self):
-        # The user explicitly requested restoration, rather than another custom template.
+    def test_recipient_bindings_match_git_without_relying_on_git_layout(self):
         source = subprocess.check_output(['git', '-C', str(ROOT), 'show', 'a81d7f3:Mass Demand Conversion/gui/decision_view_widgets/mdc_decision_chance_filter.gui']).decode('utf-8-sig')
-        expected = one(one(parse(source), 'vbox'), 'scrollbox')
-        actual = one(one(self.gui, 'vbox'), 'scrollbox')
-        self.assertEqual(one(actual, 'size'), [('514', None), ('210', None)])
-        self.assertFalse(all_values(expected, 'size'))
-        self.assertEqual([(k, v) for k, v in actual if k != 'size'], expected)
-        self.assertFalse(any(k.startswith('types ') for k, _ in self.gui))
-        self.assertNotIn('mdc_centered_recipient_option', self.gui_text)
-        self.assertNotIn('mdc_recipient_alignment', self.gui_text)
+        old = parse(source)
+        for group in GROUPS:
+            for mode in MODES if group in GROUPS[:3] else ['any']:
+                name = 'mdc_group_' + group + '_' + mode
+                previous, current = named(old, name), named(self.gui, name)
+                self.assertEqual(one(current, 'datamodel'), one(previous, 'datamodel'))
+                old_button = one(one(previous, 'item'), 'button_radio_label')
+                button = one(one(current, 'item'), 'mdc_fixed_recipient_option')
+                for key in ['onclick', 'enabled', 'tooltip', 'blockoverride "radio"', 'blockoverride "text"']:
+                    self.assertEqual(all_values(button, key), all_values(old_button, key))
 
     def test_scrollbox_nominal_size_matches_both_limits(self):
         scroll = one(one(self.gui, 'vbox'), 'scrollbox')
@@ -435,26 +437,98 @@ class FilterTests(unittest.TestCase):
         self.assertFalse(all_values(scroll, 'parentanchor'))
         self.assertFalse(all_values(scroll, 'widgetanchor'))
 
-    def test_recipient_native_buttons_and_bindings(self):
-        root = one(self.gui, 'vbox')
-        scroll = one(root, 'scrollbox')
-        content = one(one(scroll, 'blockoverride "scrollbox_content"'), 'vbox')
-        self.assertEqual(one(content, 'ignoreinvisible'), 'yes')
-        self.assertEqual(one(content, 'spacing'), '6')
-        wrappers = all_values(content, 'vbox')
-        self.assertEqual(len(wrappers), 11)
-        self.assertEqual(sum(len(all_values(n, 'button_radio_label')) for n in walk(root)), 26)
-        for wrapper in wrappers:
-            self.assertEqual(one(wrapper, 'ignoreinvisible'), 'yes')
-            self.assertFalse(all_values(wrapper, 'layoutpolicy_horizontal'))
-            button = one(one(wrapper, 'item'), 'button_radio_label')
-            self.assertEqual(one(button, 'size'), [('470', None), ('30', None)])
-            self.assertFalse(all_values(button, 'layoutpolicy_horizontal'))
-            self.assertEqual(one(button, 'onclick'), '"[DecisionViewWidgetOptionList.OnSelect(Entry.Self)]"')
-            self.assertEqual(one(button, 'enabled'), '"[Entry.IsEnabled]"')
-            self.assertEqual(one(button, 'tooltip'), '"[Entry.GetTooltip]"')
-            self.assertEqual(one(one(button, 'blockoverride "text"'), 'text'), '"[Entry.GetName]"')
-            self.assertIn('Entry.IsSelected', one(one(button, 'blockoverride "radio"'), 'frame'))
+    def test_fixed_recipient_type_has_explicit_radio_text_columns(self):
+        types = one(self.gui, 'types MdcFixedRecipientRows')
+        button = one(types, 'type mdc_fixed_recipient_option')
+        self.assertEqual(one(button, 'base_type'), 'button_group')
+        self.assertEqual(one(button, 'using'), 'tooltip_se')
+        body = one(button, 'widget')
+        self.assertEqual(one(body, 'size'), [('320', None), ('30', None)])
+        self.assertEqual(one(body, 'position'), [('75', None), ('0', None)])
+        radio = one(body, 'button_radio')
+        text = one(body, 'text_single')
+        for node, width, x in [(button, 470, None), (body, 320, 75), (radio, 30, 0), (text, 285, 35)]:
+            for key in ['size', 'minimumsize', 'maximumsize']:
+                self.assertEqual(one(node, key), [(str(width), None), ('30', None)])
+            if x is not None:
+                for key in ['parentanchor', 'widgetanchor']:
+                    self.assertEqual(one(node, key), 'top|left')
+                self.assertEqual(one(node, 'position'), [(str(x), None), ('0', None)])
+        self.assertEqual(one(text, 'autoresize'), 'no')
+        self.assertEqual(one(text, 'align'), 'left|nobaseline')
+        self.assertEqual(one(text, 'default_format'), '"#clickable"')
+        self.assertEqual(one(text, 'alwaystransparent'), 'yes')
+        self.assertEqual(one(one(radio, 'background'), 'texture'), '"gfx/interface/buttons/button_round_big.dds"')
+        self.assertEqual(one(one(radio, 'background'), 'alpha'), '0.5')
+        self.assertTrue(all(not all_values(n, k) for n in walk(button) for k in ['flowcontainer', 'hbox', 'vbox', 'expand', 'datamodel']))
+        self.assertEqual(30 + 5 + 285, 320)
+        self.assertEqual(2 * 75 + 320, 470)
+        filters = named(self.gui, 'mdc_filter_row')
+        captions = [c for n in walk(filters) for c in all_values(n, 'blockoverride "text"')]
+        self.assertEqual(len(captions), 15)
+        self.assertTrue(all([k for k, _ in c] == ['text'] for c in captions))
+
+    def test_five_fixed_slots_and_eleven_overlapping_items(self):
+        scroll = named(self.gui, 'mdc_recipient_scroll')
+        self.assertFalse(all_values(scroll, 'blockoverride "scrollbox_content"'))
+        content = one(one(scroll, 'blockoverride "scrollbox_replace_vbox"'), 'widget')
+        for key in ['size', 'minimumsize', 'maximumsize']:
+            self.assertEqual(one(content, key), [('514', None), ('204', None)])
+        slots = all_values(content, 'widget')
+        self.assertEqual(len(slots), 5)
+        count = 0
+        for group, y, slot in zip(GROUPS, [15, 51, 87, 123, 159], slots):
+            self.assertEqual(one(slot, 'name'), '"mdc_slot_' + group + '"')
+            self.assertFalse(all_values(slot, 'visible'))
+            self.assertFalse(all_values(slot, 'datamodel'))
+            self.assertEqual(one(slot, 'position'), [('22', None), (str(y), None)])
+            wrappers = all_values(slot, 'widget')
+            self.assertEqual(len(wrappers), 3 if group in GROUPS[:3] else 1)
+            for wrapper in wrappers:
+                button = one(one(wrapper, 'item'), 'mdc_fixed_recipient_option')
+                count += 1
+                for node in [slot, wrapper, button]:
+                    for key in ['size', 'minimumsize', 'maximumsize']:
+                        self.assertEqual(one(node, key), [('470', None), ('30', None)])
+                    for key in ['parentanchor', 'widgetanchor']:
+                        self.assertEqual(one(node, key), 'top|left')
+                    self.assertFalse(all_values(node, 'layoutpolicy_horizontal'))
+                for node in [wrapper, button]:
+                    self.assertEqual(one(node, 'position'), [('0', None), ('0', None)])
+                self.assertEqual(one(button, 'onclick'), '"[DecisionViewWidgetOptionList.OnSelect(Entry.Self)]"')
+                self.assertEqual(one(button, 'enabled'), '"[Entry.IsEnabled]"')
+                self.assertEqual(one(button, 'tooltip'), '"[Entry.GetTooltip]"')
+                self.assertEqual(one(one(button, 'blockoverride "text"'), 'text'), '"[Entry.GetName]"')
+                self.assertIn('Entry.IsSelected', one(one(button, 'blockoverride "radio"'), 'frame'))
+        self.assertEqual(count, 11)
+        self.assertTrue(all(not all_values(n, k) for n in walk(content) for k in ['flowcontainer', 'hbox', 'vbox', 'expand']))
+
+    def test_source_geometry_does_not_depend_on_filter_or_label(self):
+        content = named(self.gui, 'mdc_recipient_fixed_content')
+        body = named(self.gui, 'mdc_recipient_fixed_body')
+        bx = int(one(body, 'position')[0][0])
+        geometry = []
+        for value in [None, '', 'invalid', 'none', '80', '100']:
+            frame = []
+            for slot in all_values(content, 'widget'):
+                sx, sy = [int(k) for k, _ in one(slot, 'position')]
+                active = [w for w in all_values(slot, 'widget') if not all_values(w, 'visible') or evaluate_filter(one(w, 'visible'), value)]
+                self.assertEqual(len(active), 1)
+                button = one(one(active[0], 'item'), 'mdc_fixed_recipient_option')
+                self.assertEqual(one(button, 'position'), [('0', None), ('0', None)])
+                frame.append((sx + bx, sy, sx + bx + 35, 285, 30))
+            geometry.append(frame)
+        self.assertTrue(all(frame == geometry[0] for frame in geometry))
+        self.assertEqual([r[0] for r in geometry[0]], [97] * 5)
+        self.assertEqual([r[2] for r in geometry[0]], [132] * 5)
+        self.assertEqual(97 + 320 / 2, 514 / 2)
+        # Ordinary viewport fits; the outer fixed widget cannot shift with text or filter.
+        self.assertLessEqual(22 + 470, 514 - 12)
+        self.assertLessEqual(159 + 30 + 15, 210)
+        for node in walk(content):
+            for key in ['size', 'minimumsize', 'maximumsize', 'position']:
+                for vector in all_values(node, key):
+                    self.assertTrue(all(k.isdigit() for k, _ in vector))
 
     def test_unconditional_effect_explanation_and_all_language_keys(self):
         effect = one(self.decision, 'effect')
@@ -474,6 +548,16 @@ class FilterTests(unittest.TestCase):
             for value in loc.values():
                 for key in re.findall(r'\$((?:mdc_|mod_)[^$]+)\$', value):
                     self.assertIn(key, loc)
+
+    def test_fixed_rows_preserve_filter_lifecycle_and_original_actions(self):
+        audit = json.loads(read(ROOT / 'Documentation/update-readiness/evidence/mdc-fixed-rows-source-audit-20261005.json'))
+        unchanged = [(k, v) for k, v in one(self.gui, 'vbox') if k != 'scrollbox']
+        self.assertEqual(hashlib.sha256(json.dumps(unchanged, ensure_ascii=False).encode()).hexdigest(), audit['preserved_non_scroll_root_sha256'])
+        for name, expected in audit['preserved_recipient_bindings'].items():
+            button = one(one(named(self.gui, name), 'item'), 'mdc_fixed_recipient_option')
+            fields = ['onclick', 'enabled', 'tooltip', 'blockoverride "radio"', 'blockoverride "text"']
+            actual = [(k, v) for k, v in button if k in fields]
+            self.assertEqual(hashlib.sha256(json.dumps(actual, ensure_ascii=False).encode()).hexdigest(), expected, name)
 
     def test_encoding_and_balanced_source(self):
         for p in MOD.rglob('*'):

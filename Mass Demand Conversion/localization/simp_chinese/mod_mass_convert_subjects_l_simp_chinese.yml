@@ -45,4 +45,4 @@
  mdc_convert_tributaries_100_tooltip:0 "$mod_convert_tributaries_tooltip$\n$mdc_chance_filter_100$\n$mdc_chance_filter_tooltip$"
 
  # Decision preview only; request outcomes remain native.
- mdc_mass_conversion_requests_effect:0 "向所选群体中符合条件的成员发送普通改信请求。接受与后续结果的处理方式与单独请求相同。"
+ mdc_mass_conversion_requests_effect:0 "向选定对象发送普通改信请求。"

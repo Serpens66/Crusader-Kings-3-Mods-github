@@ -31,3 +31,23 @@ The targeted correction adds **size={514 210}** while retaining both limits and 
 3. Preserve the latest screenshot-confirmed improvement; make a small isolated correction and compare behavioral bindings, not just text or brace balance.
 4. Distinguish old native controller usage (Git a2df10b) from the first custom filter layout (a81d7f3). A Git snapshot is provenance, not runtime acceptance.
 5. Test first opening, every group/filter transition, cancel/reopen, UI scale and scrolling after a full restart. Log unresolved failures without declaring success or blaming Engine internals without evidence.
+
+## Subsequent user confirmation and common-column request — 2026-10-05
+
+User screenshot808b7d31 and explicit statement confirm the isolated scrollbox size override now places the list centrally and makes all five groups visible. This upgrades the earlier size correction from unrendered to partial user-run visual confirmation. It does not prove the earlier inferred internal Engine equation, all transitions/scales/languages, gameplay or multiplayer. Earlier pending-size statements above describe the state before this confirmation.
+
+The new issue is row-to-row radio/text origin variation; reference screenshotbf7803d8 requests common columns in a centered overall block. [Current caption-only patch](mass-demand-conversion-radio-columns-20261005.md) adds identical285×30 text fields to the eleven native recipient buttons. No failed custom template, flex composition or offset recipe is restored. New column geometry is statically checked and remains untested in game.
+
+## Caption-only correction disproved; fixed slots remain untested — 2026-10-05
+
+Screenshot91dc2d7b and the user's first-opening report establish that fixed285×30 captions alone did not stabilize layout. First open is left-aligned; after filter switches the three changing group rows have a different horizontal origin from courtiers/house. Preserve this as a failed approach. Do not recommend another text-width-only patch or treat the24 passing structural checks as renderer proof.
+
+The remaining native radio-label flowcontainer and independent auto-sized datamodel wrappers are confirmed source facts; the exact internal layout/update ordering is not established. The [fixed-slot correction](mass-demand-conversion-fixed-rows-20261005.md) removes automatic measurement from the recipient placement chain: permanent slots, fixed wrappers/items and native-derived explicit radio/text coordinates. Unlike the earlier failed equal-expander type, it uses no flexible or intrinsically measured recipient container. This new composition is source-audited and statically checked, but remains untested in game. Do not add it to working examples until first-open/filter-switch/reopen and scaling tests pass.
+
+## Fixed-slot implementation visually accepted by user — 2026-10-05
+
+Following the fixed-slot patch, the user reported that it now looks good and requested documentation of the working code. The [implementation report](mass-demand-conversion-fixed-rows-20261005.md) and [dated confirmation/source checksum](../evidence/mdc-fixed-rows-user-confirmation-20261005.json) identify the visually accepted reference. Previous pending-rendering statements above describe the state before this feedback; retain them and every failed-approach record.
+
+The successful reference uses explicit514×210 scrollbox size, replaces scrollbox_replace_vbox with fixed514×204 content, places five470×30 permanent slots at22/{15,51,87,123,159}, overlaps identically sized filter variants at0/0 and positions a320×30 radio/text body at75/0 inside every row. Radio30 and text285 with gap5 share a common origin, independently of caption/count/filter. This whole chain is the accepted implementation; feedback does not establish which individual component alone fixed Engine behavior. Do not infer a proven internal layout equation or a universal defect in native flowcontainers.
+
+All-transitions, reopen, language/counter extremes, scaling and overflow-scrolling tests were not individually reported. Gameplay, percent parity and multiplayer remain open.

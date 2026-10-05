@@ -75,3 +75,7 @@ The [Contract Lab](contract-lab/README.md) and [GUI/frame lab](gui-frame-lab/REA
 **Delayed-chain limit:** the original boolean marker has no generation identity. A stale completion coinciding with a new request is not ruled out by its guards. Its short chain remains a teaching probe, not a certified robust exactly-once recipe. A generation-aware replacement is blocked pending a fully audited scope/lifetime contract and actual tests. Original mini-mod IDs and raw evidence are retained.
 
 Current six script and five UI exports are now [indexed](../reference/engine-reference.md); no re-export is needed for this build unless sources change.
+
+## Production GUI reference with user-confirmed appearance — 2026-10-05
+
+Separate from the untested teaching fixtures above, the standalone MDC [fixed recipient-row implementation](../update-readiness/mods/mass-demand-conversion-fixed-rows-20261005.md) now has user-reported successful in-game appearance. Refer to its existing production code rather than maintaining a duplicate fixture. The report explains the native controller, scrollbox replacement, fixed slots and radio/text columns and links its exact source checksum plus failure history. This limited visual acceptance does not certify every transition/scale/language, request behavior, percentage thresholds or multiplayer.

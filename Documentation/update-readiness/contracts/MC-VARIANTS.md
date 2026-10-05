@@ -1,5 +1,20 @@
 # MC-VARIANTS contract card
 
+## User-confirmed MDC layout — 2026-10-05
+
+The user confirms that the [fixed-slot recipient layout](../mods/mass-demand-conversion-fixed-rows-20261005.md) now looks correct in game. Use that code and its documented geometry as the current visual reference; preserve the failure ledger. This is visual acceptance of the reported presentation, not a complete transition/scaling/scrolling, percentage, delivery or multiplayer certification. Earlier pending-rendering statements describe pre-confirmation states.
+
+
+## Fixed recipient slots — 2026-10-05
+
+[Current fixed-slot layout](../mods/mass-demand-conversion-fixed-rows-20261005.md): latest user screenshot disproves the caption-only correction, including first-open/filter-switch differences. Five permanent slots and explicit radio/text coordinates replace automatic recipient measurement; confirmed filter/viewport and all functional bindings remain. 26 static checks;63 native watches. New rendering remains untested; read the failure ledger before reuse. Earlier dated sections describe historical states.
+
+
+## Common recipient columns — 2026-10-05
+
+[Current caption-only correction](../mods/mass-demand-conversion-radio-columns-20261005.md): user confirms preceding viewport size correction centers the list and shows all five groups. Eleven native recipient captions now have identical285×30 fixed left-aligned fields; filter/scrollbox structure and bindings retained. 24 static tests pass; new column rendering remains untested. Failure ledger records the partial user confirmation.
+
+
 ## Scrollbox nominal-size correction and failed-layout ledger — 2026-10-05
 
 [Current isolated correction](../mods/mass-demand-conversion-scroll-size-20261005.md) and [mandatory screenshot-backed failure ledger](../mods/mass-demand-conversion-gui-failures-20261005.md). Latest screenshot confirms filter placement but recipient viewport displacement. Native inherited100×100 size is now explicitly overridden514×210; no list/filter behavior change. 23 static tests pass; rendering remains untested. Read the ledger before further GUI changes.

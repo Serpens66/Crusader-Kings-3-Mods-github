@@ -533,188 +533,443 @@ vbox = {
     # Native radio-list contents retained from Git a81d7f3; viewport size overridden below.
     scrollbox = {
         name = "mdc_recipient_scroll"
-        # Override native scrollbox's 100x100 nominal size as well as its limits.
         size = { 514 210 }
         minimumsize = { 514 210 }
         maximumsize = { 514 210 }
-        blockoverride "scrollbox_content" {
-            vbox = {
-                ignoreinvisible = yes
-                spacing = 6
-                vbox = {
-                    ignoreinvisible = yes
-                    name = "mdc_group_direct_vassals_none"
-                    visible = "[Not(Or(GetVariableSystem.HasValue('mdc_conversion_filter_ui', '80'), GetVariableSystem.HasValue('mdc_conversion_filter_ui', '100')))]"
-                    datamodel = "[DataModelSkipFirst( DataModelFirst( DecisionViewWidgetOptionList.GetEntries, '(int32)1' ), '(int32)0' )]"
-                    item = {
-                        button_radio_label = {
-                            size = { 470 30 }
-                            onclick = "[DecisionViewWidgetOptionList.OnSelect(Entry.Self)]"
-                            enabled = "[Entry.IsEnabled]"
-                            tooltip = "[Entry.GetTooltip]"
-                            blockoverride "radio" { frame = "[BoolTo1And2(Entry.IsSelected)]" }
-                            blockoverride "text" { text = "[Entry.GetName]" }
+        # Replace native automatic content layout, retaining scroll mechanics/background.
+        blockoverride "scrollbox_replace_vbox" {
+            widget = {
+                name = "mdc_recipient_fixed_content"
+                size = { 514 204 }
+                minimumsize = { 514 204 }
+                maximumsize = { 514 204 }
+                parentanchor = top|left
+                widgetanchor = top|left
+                position = { 0 0 }
+                widget = {
+                    name = "mdc_slot_direct_vassals"
+                    size = { 470 30 }
+                    minimumsize = { 470 30 }
+                    maximumsize = { 470 30 }
+                    parentanchor = top|left
+                    widgetanchor = top|left
+                    position = { 22 15 }
+                    # Filter variants overlap one permanent, fixed-size slot.
+                    widget = {
+                        name = "mdc_group_direct_vassals_none"
+                        size = { 470 30 }
+                        minimumsize = { 470 30 }
+                        maximumsize = { 470 30 }
+                        parentanchor = top|left
+                        widgetanchor = top|left
+                        position = { 0 0 }
+                        visible = "[Not(Or(GetVariableSystem.HasValue('mdc_conversion_filter_ui', '80'), GetVariableSystem.HasValue('mdc_conversion_filter_ui', '100')))]"
+                        datamodel = "[DataModelSkipFirst( DataModelFirst( DecisionViewWidgetOptionList.GetEntries, '(int32)1' ), '(int32)0' )]"
+                        item = {
+                            mdc_fixed_recipient_option = {
+                                size = { 470 30 }
+                                minimumsize = { 470 30 }
+                                maximumsize = { 470 30 }
+                                parentanchor = top|left
+                                widgetanchor = top|left
+                                position = { 0 0 }
+                                onclick = "[DecisionViewWidgetOptionList.OnSelect(Entry.Self)]"
+                                enabled = "[Entry.IsEnabled]"
+                                tooltip = "[Entry.GetTooltip]"
+                                blockoverride "radio" {
+                                    frame = "[BoolTo1And2(Entry.IsSelected)]"
+                                }
+                                blockoverride "text" {
+                                    text = "[Entry.GetName]"
+                                }
+                            }
+                        }
+                    }
+                    widget = {
+                        name = "mdc_group_direct_vassals_80"
+                        size = { 470 30 }
+                        minimumsize = { 470 30 }
+                        maximumsize = { 470 30 }
+                        parentanchor = top|left
+                        widgetanchor = top|left
+                        position = { 0 0 }
+                        visible = "[GetVariableSystem.HasValue('mdc_conversion_filter_ui', '80')]"
+                        datamodel = "[DataModelSkipFirst( DataModelFirst( DecisionViewWidgetOptionList.GetEntries, '(int32)2' ), '(int32)1' )]"
+                        item = {
+                            mdc_fixed_recipient_option = {
+                                size = { 470 30 }
+                                minimumsize = { 470 30 }
+                                maximumsize = { 470 30 }
+                                parentanchor = top|left
+                                widgetanchor = top|left
+                                position = { 0 0 }
+                                onclick = "[DecisionViewWidgetOptionList.OnSelect(Entry.Self)]"
+                                enabled = "[Entry.IsEnabled]"
+                                tooltip = "[Entry.GetTooltip]"
+                                blockoverride "radio" {
+                                    frame = "[BoolTo1And2(Entry.IsSelected)]"
+                                }
+                                blockoverride "text" {
+                                    text = "[Entry.GetName]"
+                                }
+                            }
+                        }
+                    }
+                    widget = {
+                        name = "mdc_group_direct_vassals_100"
+                        size = { 470 30 }
+                        minimumsize = { 470 30 }
+                        maximumsize = { 470 30 }
+                        parentanchor = top|left
+                        widgetanchor = top|left
+                        position = { 0 0 }
+                        visible = "[GetVariableSystem.HasValue('mdc_conversion_filter_ui', '100')]"
+                        datamodel = "[DataModelSkipFirst( DataModelFirst( DecisionViewWidgetOptionList.GetEntries, '(int32)3' ), '(int32)2' )]"
+                        item = {
+                            mdc_fixed_recipient_option = {
+                                size = { 470 30 }
+                                minimumsize = { 470 30 }
+                                maximumsize = { 470 30 }
+                                parentanchor = top|left
+                                widgetanchor = top|left
+                                position = { 0 0 }
+                                onclick = "[DecisionViewWidgetOptionList.OnSelect(Entry.Self)]"
+                                enabled = "[Entry.IsEnabled]"
+                                tooltip = "[Entry.GetTooltip]"
+                                blockoverride "radio" {
+                                    frame = "[BoolTo1And2(Entry.IsSelected)]"
+                                }
+                                blockoverride "text" {
+                                    text = "[Entry.GetName]"
+                                }
+                            }
                         }
                     }
                 }
-                vbox = {
-                    ignoreinvisible = yes
-                    name = "mdc_group_direct_vassals_80"
-                    visible = "[GetVariableSystem.HasValue('mdc_conversion_filter_ui', '80')]"
-                    datamodel = "[DataModelSkipFirst( DataModelFirst( DecisionViewWidgetOptionList.GetEntries, '(int32)2' ), '(int32)1' )]"
-                    item = {
-                        button_radio_label = {
-                            size = { 470 30 }
-                            onclick = "[DecisionViewWidgetOptionList.OnSelect(Entry.Self)]"
-                            enabled = "[Entry.IsEnabled]"
-                            tooltip = "[Entry.GetTooltip]"
-                            blockoverride "radio" { frame = "[BoolTo1And2(Entry.IsSelected)]" }
-                            blockoverride "text" { text = "[Entry.GetName]" }
+                widget = {
+                    name = "mdc_slot_indirect_vassals"
+                    size = { 470 30 }
+                    minimumsize = { 470 30 }
+                    maximumsize = { 470 30 }
+                    parentanchor = top|left
+                    widgetanchor = top|left
+                    position = { 22 51 }
+                    # Filter variants overlap one permanent, fixed-size slot.
+                    widget = {
+                        name = "mdc_group_indirect_vassals_none"
+                        size = { 470 30 }
+                        minimumsize = { 470 30 }
+                        maximumsize = { 470 30 }
+                        parentanchor = top|left
+                        widgetanchor = top|left
+                        position = { 0 0 }
+                        visible = "[Not(Or(GetVariableSystem.HasValue('mdc_conversion_filter_ui', '80'), GetVariableSystem.HasValue('mdc_conversion_filter_ui', '100')))]"
+                        datamodel = "[DataModelSkipFirst( DataModelFirst( DecisionViewWidgetOptionList.GetEntries, '(int32)4' ), '(int32)3' )]"
+                        item = {
+                            mdc_fixed_recipient_option = {
+                                size = { 470 30 }
+                                minimumsize = { 470 30 }
+                                maximumsize = { 470 30 }
+                                parentanchor = top|left
+                                widgetanchor = top|left
+                                position = { 0 0 }
+                                onclick = "[DecisionViewWidgetOptionList.OnSelect(Entry.Self)]"
+                                enabled = "[Entry.IsEnabled]"
+                                tooltip = "[Entry.GetTooltip]"
+                                blockoverride "radio" {
+                                    frame = "[BoolTo1And2(Entry.IsSelected)]"
+                                }
+                                blockoverride "text" {
+                                    text = "[Entry.GetName]"
+                                }
+                            }
+                        }
+                    }
+                    widget = {
+                        name = "mdc_group_indirect_vassals_80"
+                        size = { 470 30 }
+                        minimumsize = { 470 30 }
+                        maximumsize = { 470 30 }
+                        parentanchor = top|left
+                        widgetanchor = top|left
+                        position = { 0 0 }
+                        visible = "[GetVariableSystem.HasValue('mdc_conversion_filter_ui', '80')]"
+                        datamodel = "[DataModelSkipFirst( DataModelFirst( DecisionViewWidgetOptionList.GetEntries, '(int32)5' ), '(int32)4' )]"
+                        item = {
+                            mdc_fixed_recipient_option = {
+                                size = { 470 30 }
+                                minimumsize = { 470 30 }
+                                maximumsize = { 470 30 }
+                                parentanchor = top|left
+                                widgetanchor = top|left
+                                position = { 0 0 }
+                                onclick = "[DecisionViewWidgetOptionList.OnSelect(Entry.Self)]"
+                                enabled = "[Entry.IsEnabled]"
+                                tooltip = "[Entry.GetTooltip]"
+                                blockoverride "radio" {
+                                    frame = "[BoolTo1And2(Entry.IsSelected)]"
+                                }
+                                blockoverride "text" {
+                                    text = "[Entry.GetName]"
+                                }
+                            }
+                        }
+                    }
+                    widget = {
+                        name = "mdc_group_indirect_vassals_100"
+                        size = { 470 30 }
+                        minimumsize = { 470 30 }
+                        maximumsize = { 470 30 }
+                        parentanchor = top|left
+                        widgetanchor = top|left
+                        position = { 0 0 }
+                        visible = "[GetVariableSystem.HasValue('mdc_conversion_filter_ui', '100')]"
+                        datamodel = "[DataModelSkipFirst( DataModelFirst( DecisionViewWidgetOptionList.GetEntries, '(int32)6' ), '(int32)5' )]"
+                        item = {
+                            mdc_fixed_recipient_option = {
+                                size = { 470 30 }
+                                minimumsize = { 470 30 }
+                                maximumsize = { 470 30 }
+                                parentanchor = top|left
+                                widgetanchor = top|left
+                                position = { 0 0 }
+                                onclick = "[DecisionViewWidgetOptionList.OnSelect(Entry.Self)]"
+                                enabled = "[Entry.IsEnabled]"
+                                tooltip = "[Entry.GetTooltip]"
+                                blockoverride "radio" {
+                                    frame = "[BoolTo1And2(Entry.IsSelected)]"
+                                }
+                                blockoverride "text" {
+                                    text = "[Entry.GetName]"
+                                }
+                            }
                         }
                     }
                 }
-                vbox = {
-                    ignoreinvisible = yes
-                    name = "mdc_group_direct_vassals_100"
-                    visible = "[GetVariableSystem.HasValue('mdc_conversion_filter_ui', '100')]"
-                    datamodel = "[DataModelSkipFirst( DataModelFirst( DecisionViewWidgetOptionList.GetEntries, '(int32)3' ), '(int32)2' )]"
-                    item = {
-                        button_radio_label = {
-                            size = { 470 30 }
-                            onclick = "[DecisionViewWidgetOptionList.OnSelect(Entry.Self)]"
-                            enabled = "[Entry.IsEnabled]"
-                            tooltip = "[Entry.GetTooltip]"
-                            blockoverride "radio" { frame = "[BoolTo1And2(Entry.IsSelected)]" }
-                            blockoverride "text" { text = "[Entry.GetName]" }
+                widget = {
+                    name = "mdc_slot_tributaries"
+                    size = { 470 30 }
+                    minimumsize = { 470 30 }
+                    maximumsize = { 470 30 }
+                    parentanchor = top|left
+                    widgetanchor = top|left
+                    position = { 22 87 }
+                    # Filter variants overlap one permanent, fixed-size slot.
+                    widget = {
+                        name = "mdc_group_tributaries_none"
+                        size = { 470 30 }
+                        minimumsize = { 470 30 }
+                        maximumsize = { 470 30 }
+                        parentanchor = top|left
+                        widgetanchor = top|left
+                        position = { 0 0 }
+                        visible = "[Not(Or(GetVariableSystem.HasValue('mdc_conversion_filter_ui', '80'), GetVariableSystem.HasValue('mdc_conversion_filter_ui', '100')))]"
+                        datamodel = "[DataModelSkipFirst( DataModelFirst( DecisionViewWidgetOptionList.GetEntries, '(int32)7' ), '(int32)6' )]"
+                        item = {
+                            mdc_fixed_recipient_option = {
+                                size = { 470 30 }
+                                minimumsize = { 470 30 }
+                                maximumsize = { 470 30 }
+                                parentanchor = top|left
+                                widgetanchor = top|left
+                                position = { 0 0 }
+                                onclick = "[DecisionViewWidgetOptionList.OnSelect(Entry.Self)]"
+                                enabled = "[Entry.IsEnabled]"
+                                tooltip = "[Entry.GetTooltip]"
+                                blockoverride "radio" {
+                                    frame = "[BoolTo1And2(Entry.IsSelected)]"
+                                }
+                                blockoverride "text" {
+                                    text = "[Entry.GetName]"
+                                }
+                            }
+                        }
+                    }
+                    widget = {
+                        name = "mdc_group_tributaries_80"
+                        size = { 470 30 }
+                        minimumsize = { 470 30 }
+                        maximumsize = { 470 30 }
+                        parentanchor = top|left
+                        widgetanchor = top|left
+                        position = { 0 0 }
+                        visible = "[GetVariableSystem.HasValue('mdc_conversion_filter_ui', '80')]"
+                        datamodel = "[DataModelSkipFirst( DataModelFirst( DecisionViewWidgetOptionList.GetEntries, '(int32)8' ), '(int32)7' )]"
+                        item = {
+                            mdc_fixed_recipient_option = {
+                                size = { 470 30 }
+                                minimumsize = { 470 30 }
+                                maximumsize = { 470 30 }
+                                parentanchor = top|left
+                                widgetanchor = top|left
+                                position = { 0 0 }
+                                onclick = "[DecisionViewWidgetOptionList.OnSelect(Entry.Self)]"
+                                enabled = "[Entry.IsEnabled]"
+                                tooltip = "[Entry.GetTooltip]"
+                                blockoverride "radio" {
+                                    frame = "[BoolTo1And2(Entry.IsSelected)]"
+                                }
+                                blockoverride "text" {
+                                    text = "[Entry.GetName]"
+                                }
+                            }
+                        }
+                    }
+                    widget = {
+                        name = "mdc_group_tributaries_100"
+                        size = { 470 30 }
+                        minimumsize = { 470 30 }
+                        maximumsize = { 470 30 }
+                        parentanchor = top|left
+                        widgetanchor = top|left
+                        position = { 0 0 }
+                        visible = "[GetVariableSystem.HasValue('mdc_conversion_filter_ui', '100')]"
+                        datamodel = "[DataModelSkipFirst( DataModelFirst( DecisionViewWidgetOptionList.GetEntries, '(int32)9' ), '(int32)8' )]"
+                        item = {
+                            mdc_fixed_recipient_option = {
+                                size = { 470 30 }
+                                minimumsize = { 470 30 }
+                                maximumsize = { 470 30 }
+                                parentanchor = top|left
+                                widgetanchor = top|left
+                                position = { 0 0 }
+                                onclick = "[DecisionViewWidgetOptionList.OnSelect(Entry.Self)]"
+                                enabled = "[Entry.IsEnabled]"
+                                tooltip = "[Entry.GetTooltip]"
+                                blockoverride "radio" {
+                                    frame = "[BoolTo1And2(Entry.IsSelected)]"
+                                }
+                                blockoverride "text" {
+                                    text = "[Entry.GetName]"
+                                }
+                            }
                         }
                     }
                 }
-                vbox = {
-                    ignoreinvisible = yes
-                    name = "mdc_group_indirect_vassals_none"
-                    visible = "[Not(Or(GetVariableSystem.HasValue('mdc_conversion_filter_ui', '80'), GetVariableSystem.HasValue('mdc_conversion_filter_ui', '100')))]"
-                    datamodel = "[DataModelSkipFirst( DataModelFirst( DecisionViewWidgetOptionList.GetEntries, '(int32)4' ), '(int32)3' )]"
-                    item = {
-                        button_radio_label = {
-                            size = { 470 30 }
-                            onclick = "[DecisionViewWidgetOptionList.OnSelect(Entry.Self)]"
-                            enabled = "[Entry.IsEnabled]"
-                            tooltip = "[Entry.GetTooltip]"
-                            blockoverride "radio" { frame = "[BoolTo1And2(Entry.IsSelected)]" }
-                            blockoverride "text" { text = "[Entry.GetName]" }
+                widget = {
+                    name = "mdc_slot_courtiers"
+                    size = { 470 30 }
+                    minimumsize = { 470 30 }
+                    maximumsize = { 470 30 }
+                    parentanchor = top|left
+                    widgetanchor = top|left
+                    position = { 22 123 }
+                    # Filter variants overlap one permanent, fixed-size slot.
+                    widget = {
+                        name = "mdc_group_courtiers_any"
+                        size = { 470 30 }
+                        minimumsize = { 470 30 }
+                        maximumsize = { 470 30 }
+                        parentanchor = top|left
+                        widgetanchor = top|left
+                        position = { 0 0 }
+                        datamodel = "[DataModelSkipFirst( DataModelFirst( DecisionViewWidgetOptionList.GetEntries, '(int32)10' ), '(int32)9' )]"
+                        item = {
+                            mdc_fixed_recipient_option = {
+                                size = { 470 30 }
+                                minimumsize = { 470 30 }
+                                maximumsize = { 470 30 }
+                                parentanchor = top|left
+                                widgetanchor = top|left
+                                position = { 0 0 }
+                                onclick = "[DecisionViewWidgetOptionList.OnSelect(Entry.Self)]"
+                                enabled = "[Entry.IsEnabled]"
+                                tooltip = "[Entry.GetTooltip]"
+                                blockoverride "radio" {
+                                    frame = "[BoolTo1And2(Entry.IsSelected)]"
+                                }
+                                blockoverride "text" {
+                                    text = "[Entry.GetName]"
+                                }
+                            }
                         }
                     }
                 }
-                vbox = {
-                    ignoreinvisible = yes
-                    name = "mdc_group_indirect_vassals_80"
-                    visible = "[GetVariableSystem.HasValue('mdc_conversion_filter_ui', '80')]"
-                    datamodel = "[DataModelSkipFirst( DataModelFirst( DecisionViewWidgetOptionList.GetEntries, '(int32)5' ), '(int32)4' )]"
-                    item = {
-                        button_radio_label = {
-                            size = { 470 30 }
-                            onclick = "[DecisionViewWidgetOptionList.OnSelect(Entry.Self)]"
-                            enabled = "[Entry.IsEnabled]"
-                            tooltip = "[Entry.GetTooltip]"
-                            blockoverride "radio" { frame = "[BoolTo1And2(Entry.IsSelected)]" }
-                            blockoverride "text" { text = "[Entry.GetName]" }
+                widget = {
+                    name = "mdc_slot_house"
+                    size = { 470 30 }
+                    minimumsize = { 470 30 }
+                    maximumsize = { 470 30 }
+                    parentanchor = top|left
+                    widgetanchor = top|left
+                    position = { 22 159 }
+                    # Filter variants overlap one permanent, fixed-size slot.
+                    widget = {
+                        name = "mdc_group_house_any"
+                        size = { 470 30 }
+                        minimumsize = { 470 30 }
+                        maximumsize = { 470 30 }
+                        parentanchor = top|left
+                        widgetanchor = top|left
+                        position = { 0 0 }
+                        datamodel = "[DataModelSkipFirst( DataModelFirst( DecisionViewWidgetOptionList.GetEntries, '(int32)11' ), '(int32)10' )]"
+                        item = {
+                            mdc_fixed_recipient_option = {
+                                size = { 470 30 }
+                                minimumsize = { 470 30 }
+                                maximumsize = { 470 30 }
+                                parentanchor = top|left
+                                widgetanchor = top|left
+                                position = { 0 0 }
+                                onclick = "[DecisionViewWidgetOptionList.OnSelect(Entry.Self)]"
+                                enabled = "[Entry.IsEnabled]"
+                                tooltip = "[Entry.GetTooltip]"
+                                blockoverride "radio" {
+                                    frame = "[BoolTo1And2(Entry.IsSelected)]"
+                                }
+                                blockoverride "text" {
+                                    text = "[Entry.GetName]"
+                                }
+                            }
                         }
                     }
                 }
-                vbox = {
-                    ignoreinvisible = yes
-                    name = "mdc_group_indirect_vassals_100"
-                    visible = "[GetVariableSystem.HasValue('mdc_conversion_filter_ui', '100')]"
-                    datamodel = "[DataModelSkipFirst( DataModelFirst( DecisionViewWidgetOptionList.GetEntries, '(int32)6' ), '(int32)5' )]"
-                    item = {
-                        button_radio_label = {
-                            size = { 470 30 }
-                            onclick = "[DecisionViewWidgetOptionList.OnSelect(Entry.Self)]"
-                            enabled = "[Entry.IsEnabled]"
-                            tooltip = "[Entry.GetTooltip]"
-                            blockoverride "radio" { frame = "[BoolTo1And2(Entry.IsSelected)]" }
-                            blockoverride "text" { text = "[Entry.GetName]" }
-                        }
-                    }
+            }
+        }
+    }
+}
+
+# Native button_group/radio/text presentation with no intrinsic content measurement.
+types MdcFixedRecipientRows
+{
+    type mdc_fixed_recipient_option = button_group {
+        using = tooltip_se
+        size = { 470 30 }
+        minimumsize = { 470 30 }
+        maximumsize = { 470 30 }
+        widget = {
+            name = "mdc_recipient_fixed_body"
+            size = { 320 30 }
+            minimumsize = { 320 30 }
+            maximumsize = { 320 30 }
+            parentanchor = top|left
+            widgetanchor = top|left
+            position = { 75 0 }
+            button_radio = {
+                size = { 30 30 }
+                minimumsize = { 30 30 }
+                maximumsize = { 30 30 }
+                parentanchor = top|left
+                widgetanchor = top|left
+                position = { 0 0 }
+                block "radio" {}
+                background = {
+                    texture = "gfx/interface/buttons/button_round_big.dds"
+                    alpha = 0.5
                 }
-                vbox = {
-                    ignoreinvisible = yes
-                    name = "mdc_group_tributaries_none"
-                    visible = "[Not(Or(GetVariableSystem.HasValue('mdc_conversion_filter_ui', '80'), GetVariableSystem.HasValue('mdc_conversion_filter_ui', '100')))]"
-                    datamodel = "[DataModelSkipFirst( DataModelFirst( DecisionViewWidgetOptionList.GetEntries, '(int32)7' ), '(int32)6' )]"
-                    item = {
-                        button_radio_label = {
-                            size = { 470 30 }
-                            onclick = "[DecisionViewWidgetOptionList.OnSelect(Entry.Self)]"
-                            enabled = "[Entry.IsEnabled]"
-                            tooltip = "[Entry.GetTooltip]"
-                            blockoverride "radio" { frame = "[BoolTo1And2(Entry.IsSelected)]" }
-                            blockoverride "text" { text = "[Entry.GetName]" }
-                        }
-                    }
-                }
-                vbox = {
-                    ignoreinvisible = yes
-                    name = "mdc_group_tributaries_80"
-                    visible = "[GetVariableSystem.HasValue('mdc_conversion_filter_ui', '80')]"
-                    datamodel = "[DataModelSkipFirst( DataModelFirst( DecisionViewWidgetOptionList.GetEntries, '(int32)8' ), '(int32)7' )]"
-                    item = {
-                        button_radio_label = {
-                            size = { 470 30 }
-                            onclick = "[DecisionViewWidgetOptionList.OnSelect(Entry.Self)]"
-                            enabled = "[Entry.IsEnabled]"
-                            tooltip = "[Entry.GetTooltip]"
-                            blockoverride "radio" { frame = "[BoolTo1And2(Entry.IsSelected)]" }
-                            blockoverride "text" { text = "[Entry.GetName]" }
-                        }
-                    }
-                }
-                vbox = {
-                    ignoreinvisible = yes
-                    name = "mdc_group_tributaries_100"
-                    visible = "[GetVariableSystem.HasValue('mdc_conversion_filter_ui', '100')]"
-                    datamodel = "[DataModelSkipFirst( DataModelFirst( DecisionViewWidgetOptionList.GetEntries, '(int32)9' ), '(int32)8' )]"
-                    item = {
-                        button_radio_label = {
-                            size = { 470 30 }
-                            onclick = "[DecisionViewWidgetOptionList.OnSelect(Entry.Self)]"
-                            enabled = "[Entry.IsEnabled]"
-                            tooltip = "[Entry.GetTooltip]"
-                            blockoverride "radio" { frame = "[BoolTo1And2(Entry.IsSelected)]" }
-                            blockoverride "text" { text = "[Entry.GetName]" }
-                        }
-                    }
-                }
-                vbox = {
-                    ignoreinvisible = yes
-                    name = "mdc_group_courtiers_any"
-                    datamodel = "[DataModelSkipFirst( DataModelFirst( DecisionViewWidgetOptionList.GetEntries, '(int32)10' ), '(int32)9' )]"
-                    item = {
-                        button_radio_label = {
-                            size = { 470 30 }
-                            onclick = "[DecisionViewWidgetOptionList.OnSelect(Entry.Self)]"
-                            enabled = "[Entry.IsEnabled]"
-                            tooltip = "[Entry.GetTooltip]"
-                            blockoverride "radio" { frame = "[BoolTo1And2(Entry.IsSelected)]" }
-                            blockoverride "text" { text = "[Entry.GetName]" }
-                        }
-                    }
-                }
-                vbox = {
-                    ignoreinvisible = yes
-                    name = "mdc_group_house_any"
-                    datamodel = "[DataModelSkipFirst( DataModelFirst( DecisionViewWidgetOptionList.GetEntries, '(int32)11' ), '(int32)10' )]"
-                    item = {
-                        button_radio_label = {
-                            size = { 470 30 }
-                            onclick = "[DecisionViewWidgetOptionList.OnSelect(Entry.Self)]"
-                            enabled = "[Entry.IsEnabled]"
-                            tooltip = "[Entry.GetTooltip]"
-                            blockoverride "radio" { frame = "[BoolTo1And2(Entry.IsSelected)]" }
-                            blockoverride "text" { text = "[Entry.GetName]" }
-                        }
-                    }
-                }
+            }
+            text_single = {
+                size = { 285 30 }
+                minimumsize = { 285 30 }
+                maximumsize = { 285 30 }
+                parentanchor = top|left
+                widgetanchor = top|left
+                position = { 35 0 }
+                autoresize = no
+                align = left|nobaseline
+                default_format = "#clickable"
+                alwaystransparent = yes
+                block "text" { text = "DEFAULT_TEXT" }
             }
         }
     }
