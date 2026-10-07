@@ -1,5 +1,10 @@
 # MC-DISPATCH contract card
 
+## Acceptance descriptions corrected in1.080 — 2026-10-07
+
+[Current two-notification fix](../mods/mass-demand-conversion-message-context-20261007.md): user-tested vassal acceptance did not crash but exposed recipient-name localization failure. Both overrides now supply desc in their event message call; the common type uses event_message_text. Native effects/previews and eight translations retained;28 static tests. Corrected rendering and house/mixed acceptance tests remain open; foreign crash unresolved. Engine exports1.20.0.3 are stale for installed1.20.0.4.
+
+
 ## Explicit preview only — 2026-10-05
 
 [Compact-widget patch](../mods/mass-demand-conversion-compact-widget-20261005.md) adds an unconditional custom_tooltip before the five retained send branches. It describes normal requests and subsequent native outcomes; it neither performs nor guarantees conversion. All query/send blocks are unchanged. Runtime count/delivery parity and MP remain open.

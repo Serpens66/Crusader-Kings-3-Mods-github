@@ -559,6 +559,43 @@ class FilterTests(unittest.TestCase):
             actual = [(k, v) for k, v in button if k in fields]
             self.assertEqual(hashlib.sha256(json.dumps(actual, ensure_ascii=False).encode()).hexdigest(), expected, name)
 
+    def test_both_acceptance_messages_supply_scoped_description(self):
+        message = one(parse(read(MOD / 'common/messages/mdc_conversion_messages.txt')), 'mdc_conversion_accepted_message')
+        self.assertEqual(one(message, 'desc'), 'event_message_text')
+        self.assertEqual(one(message, 'display'), 'feed')
+        self.assertEqual(one(message, 'combine_into_one'), 'yes')
+        self.assertEqual(one(message, 'tooltip'), 'event_message_effect')
+        audit = json.loads(read(ROOT / 'Documentation/update-readiness/evidence/mdc-message-context-source-audit-20261007.json'))
+        for event, contract in audit['event_contracts'].items():
+            node = one(parse(read(ROOT / contract['local_path'])), event)
+            send = one(one(node, 'immediate'), 'send_interface_message')
+            self.assertEqual(one(send, 'type'), 'mdc_conversion_accepted_message')
+            self.assertEqual(one(send, 'desc'), 'mdc_conversion_accepted_desc')
+            self.assertEqual(one(send, 'left_icon'), 'scope:recipient')
+        for p in (MOD / 'localization').rglob('*.yml'):
+            rows = re.findall(r'^ mdc_conversion_accepted_desc:0 "([^"\r\n]*)"', read(p), re.M)
+            self.assertEqual(len(rows), 1, str(p))
+            self.assertIn('[recipient.GetShortUIName]', rows[0])
+        for p in [MOD / 'descriptor.mod', ROOT / 'Mass Demand Conversion.mod']:
+            self.assertEqual(re.findall(r'^version="([^"]+)"', read(p), re.M), ['1.080'])
+            self.assertEqual(re.findall(r'^supported_version="([^"]+)"', read(p), re.M), ['1.20.*'])
+
+    def test_acceptance_description_fix_preserves_native_effects_and_previews(self):
+        audit = json.loads(read(ROOT / 'Documentation/update-readiness/evidence/mdc-message-context-source-audit-20261007.json'))
+        for event, contract in audit['event_contracts'].items():
+            obj = one(parse(read(ROOT / contract['local_path'])), event)
+            self.assertEqual(one(obj, 'type'), 'character_event')
+            self.assertEqual(one(obj, 'hidden'), 'yes')
+            self.assertEqual(one(obj, 'id_override_priority'), '1')
+            self.assertFalse(all_values(obj, 'option'))
+            self.assertFalse(all_values(obj, 'after'))
+            immediate = one(obj, 'immediate')
+            send = one(immediate, 'send_interface_message')
+            actual = [(k, v) for k, v in immediate if k != 'send_interface_message']
+            preview = [(k, v) for k, v in send if k not in ['type', 'desc', 'left_icon']]
+            self.assertEqual(json.dumps(actual, ensure_ascii=False), json.dumps(contract['gameplay'], ensure_ascii=False), event)
+            self.assertEqual(json.dumps(preview, ensure_ascii=False), json.dumps(contract['preview'], ensure_ascii=False), event)
+
     def test_encoding_and_balanced_source(self):
         for p in MOD.rglob('*'):
             if p.suffix not in ['.txt', '.yml', '.gui']:

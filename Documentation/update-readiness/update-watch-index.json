@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "current_baseline": "update-watch-mdc-short-effect-20261005.json",
+  "current_baseline": "update-watch-mdc-message-context-20261007.json",
   "history": [
     "update-watch-20261003.json",
     "update-watch-leave-wars-20261003.json",
@@ -14,7 +14,8 @@
     "update-watch-mdc-scroll-size-20261005.json",
     "update-watch-mdc-radio-columns-20261005.json",
     "update-watch-mdc-fixed-rows-20261005.json",
-    "update-watch-mdc-short-effect-20261005.json"
+    "update-watch-mdc-short-effect-20261005.json",
+    "update-watch-mdc-message-context-20261007.json"
   ],
   "rule": "Update pointer only after feature source review; preserve every dated baseline and per-watch version/reference."
 }

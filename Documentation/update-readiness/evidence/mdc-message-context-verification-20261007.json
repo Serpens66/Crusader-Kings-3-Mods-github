@@ -1,0 +1,45 @@
+{
+  "date": "2026-10-07",
+  "mod_version": "1.080",
+  "installed_game_version": "1.20.0.4",
+  "static_tests": 28,
+  "source_watches": 65,
+  "watch_status": "all unchanged",
+  "source_checker_exit": 1,
+  "source_checker_limitation": "Engine exports1.20.0.3 are stale for1.20.0.4; no release compatibility approval.",
+  "source_checker_read_only_verified": true,
+  "preservation": {
+    "original63_watches_retained": true,
+    "historical_baselines_unchanged": true,
+    "other_mod_records_unchanged": true,
+    "original26_tests_unchanged": true,
+    "script_changes_only_description_transfer_and_comments": true,
+    "native_event_effects_and_previews_preserved": true,
+    "metadata_changes_only_version_fields": true,
+    "gui_localization_gameplay_bundle_unchanged": true,
+    "encoding_and_line_endings_retained": true,
+    "changed_existing_files": [
+      "Mass Demand Conversion.mod",
+      "Mass Demand Conversion/descriptor.mod",
+      "Documentation/tools/test_mdc_chance_filter.py",
+      "Documentation/update-readiness/README.md",
+      "Documentation/update-readiness/update-watch-index.json",
+      "Documentation/update-readiness/contracts/MC-DISPATCH.md",
+      "Documentation/update-readiness/mods/mass-demand-conversion-tests.md",
+      "Documentation/update-readiness/mods/mass-demand-conversion.md",
+      "Mass Demand Conversion/common/messages/mdc_conversion_messages.txt",
+      "Mass Demand Conversion/events/interaction_events/mdc_house_conversion_notification.txt",
+      "Mass Demand Conversion/events/religion_events/accept_conversion_notification.txt"
+    ],
+    "new_files": [
+      "Documentation/update-readiness/update-watch-mdc-message-context-20261007.json",
+      "Documentation/update-readiness/evidence/mdc-message-context-source-audit-20261007.json",
+      "Documentation/update-readiness/evidence/mdc-message-context-verification-20261007.json",
+      "Documentation/update-readiness/mods/mass-demand-conversion-message-context-20261007.md"
+    ],
+    "local_documentation_links_checked": 103,
+    "git_diff_check": "passed"
+  },
+  "user_runtime_observation": "One pre-fix vassal acceptance had no crash; invalid recipient-name localization is confirmed by screenshot/log. Foreign crash remains unresolved.",
+  "post_fix_runtime_tests": "Not run: vassal/house acceptance, proper recipient names/portraits, mixed/merged feed entries/tooltips and new log errors. Existing percentage/consequence/MP gates remain open."
+}

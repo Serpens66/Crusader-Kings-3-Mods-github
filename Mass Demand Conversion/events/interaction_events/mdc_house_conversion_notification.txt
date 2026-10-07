@@ -14,6 +14,8 @@ char_interaction.0181 = {
 		# Deliver to the original event receiver; the native notifier retains its puppet guards.
 		send_interface_message = {
 			type = mdc_conversion_accepted_message
+			# Resolve the recipient description in this event context before feed rendering.
+			desc = mdc_conversion_accepted_desc
 			left_icon = scope:recipient
 			# The old EXCELLENT option only previewed conversion; do not execute it again.
 			show_as_tooltip = { demand_conversion_interaction_effect = yes }

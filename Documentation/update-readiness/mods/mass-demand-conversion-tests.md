@@ -1,5 +1,18 @@
 # Native conversion acceptance matrix
 
+## Current1.080 acceptance-description regression — 2026-10-07
+
+[Fix and user observation](mass-demand-conversion-message-context-20261007.md). A pre-fix accepted vassal request produced a feed message without a crash, but its recipient description failed. This is partial user-run coverage of MC-N01, not a complete pass. Historical1.078 tables below retain their original status; use1.080 and a full restart for the new checks.
+
+| Case | Required observation | Status |
+|---|---|---|
+| MC-DESC01 | Accepted vassal request: correct recipient name/portrait; no ERROR: or new mdc_conversion_accepted_desc log errors | not run after fix |
+| MC-DESC02 | Accepted house request: same checks; confirms the second override independently | not run |
+| MC-DESC03 | Several/mixed vassal and house acceptances: merged text, icon and tooltip remain valid; no new errors | not run |
+| MC-DESC04 | Manual accepted requests use corrected global overrides; native courtier/puppeteer notifications retain behavior | not run |
+| MC-CRASH01 | Reproduce foreign crash with supplied build/playset/save/timing and crash evidence; isolate single/bulk requests and notifications | unresolved; user reports no crash for one local vassal acceptance |
+
+
 Prepared: **2026-10-03**, for installed **1.20.0.3 (Crozier)**. All cases: **not run**. This is a test specification, not an executable probe or result. Read the [audit and remaining gates](mass-demand-conversion-audit.md) and [common test protocol](../test-protocol.md). The general own-interaction fixtures do not replace these native tests.
 
 ## Controlled comparison and recording

@@ -6,6 +6,7 @@ mdc_conversion_accepted_message = {
 	icon = "religious"
 	style = good
 	title = mdc_conversion_accepted_title
-	desc = mdc_conversion_accepted_desc
+	# Native template displays the description supplied by each event.
+	desc = event_message_text
 	tooltip = event_message_effect
 }

@@ -59,6 +59,8 @@ religious_interaction.2002 = {
 		# Current scope is the original event receiver (puppet_or_actor), not necessarily actor.
 		send_interface_message = {
 			type = mdc_conversion_accepted_message
+			# Resolve the recipient description in this event context before feed rendering.
+			desc = mdc_conversion_accepted_desc
 			left_icon = scope:recipient
 			# Native interactions already initiate conversion; these are previews only.
 			if = {

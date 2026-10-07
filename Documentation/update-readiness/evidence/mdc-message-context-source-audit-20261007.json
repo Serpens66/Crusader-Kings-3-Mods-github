@@ -1,0 +1,268 @@
+{
+  "date": "2026-10-07",
+  "installed_version": "1.20.0.4",
+  "scope": "Complete source audit for both acceptance-description transfers: message type/template, script-supplied description and recipient context, native callers and both full events. Engine export baseline1.20.0.3 is stale for installed1.20.0.4; no runtime certification.",
+  "native_sources": {
+    "common/messages/_messages.info": {
+      "sha256": "a0ad5c695a34f2be2fda1353164afdf48b7a6ce69ca2cabc9ab8d89bdcd392e4",
+      "reference_sha256": "a0ad5c695a34f2be2fda1353164afdf48b7a6ce69ca2cabc9ab8d89bdcd392e4",
+      "reference_1_20_0_3_matches_installed": true
+    },
+    "common/messages/07_ep3_messages.txt": {
+      "sha256": "7ee8e7c6de5311e81d5f2cc4ef2db00b5d1e917e3c086cabcab444a073724fc6",
+      "reference_sha256": "7ee8e7c6de5311e81d5f2cc4ef2db00b5d1e917e3c086cabcab444a073724fc6",
+      "reference_1_20_0_3_matches_installed": true
+    },
+    "common/character_interactions/06_ep3_interactions.txt": {
+      "sha256": "589fdc8db982bac55aa18617731b494fca3cf3bd69f7f6cd194e6d4c605d8f46",
+      "reference_sha256": "589fdc8db982bac55aa18617731b494fca3cf3bd69f7f6cd194e6d4c605d8f46",
+      "reference_1_20_0_3_matches_installed": true
+    },
+    "localization/english/messages_l_english.yml": {
+      "sha256": "6169d6a5735b958cd92a493dca0245e7d8eb366933fec9e3cfd440a8baf2e095",
+      "reference_sha256": "6169d6a5735b958cd92a493dca0245e7d8eb366933fec9e3cfd440a8baf2e095",
+      "reference_1_20_0_3_matches_installed": true
+    },
+    "common/character_interactions/00_religious_interactions.txt": {
+      "sha256": "63afe4538725929fb20bc20cbbbbc86705dba55a384755949431419265db0ac6",
+      "reference_sha256": "63afe4538725929fb20bc20cbbbbc86705dba55a384755949431419265db0ac6",
+      "reference_1_20_0_3_matches_installed": true
+    },
+    "events/religion_events/religious_interaction_events.txt": {
+      "sha256": "27405d1ccd6217670f5812d8cbde987ed899c04b6b7d309099e2e8fbe1809a4d",
+      "reference_sha256": "27405d1ccd6217670f5812d8cbde987ed899c04b6b7d309099e2e8fbe1809a4d",
+      "reference_1_20_0_3_matches_installed": true
+    },
+    "events/interaction_events/character_interaction_events.txt": {
+      "sha256": "46d0e436bbb9694e60e46c0c1c5ebc3ae1c14afa041a8b8cd9548bd5c3836c69",
+      "reference_sha256": "46d0e436bbb9694e60e46c0c1c5ebc3ae1c14afa041a8b8cd9548bd5c3836c69",
+      "reference_1_20_0_3_matches_installed": true
+    },
+    "common/scripted_effects/00_interaction_effects.txt": {
+      "sha256": "4247f484295988b50098a43869d4c4056b7e0855bf8d5fa6ec0755cb996d7e82",
+      "reference_sha256": "4247f484295988b50098a43869d4c4056b7e0855bf8d5fa6ec0755cb996d7e82",
+      "reference_1_20_0_3_matches_installed": true
+    },
+    "common/scripted_effects/00_religious_interaction_effects.txt": {
+      "sha256": "9ecc22104b057e3425673917acbefaa320833226dd02b9a6c3dca7475b5b0928",
+      "reference_sha256": "9ecc22104b057e3425673917acbefaa320833226dd02b9a6c3dca7475b5b0928",
+      "reference_1_20_0_3_matches_installed": true
+    }
+  },
+  "event_contracts": {
+    "religious_interaction.2002": {
+      "native_path": "events/religion_events/religious_interaction_events.txt",
+      "local_path": "Mass Demand Conversion/events/religion_events/accept_conversion_notification.txt",
+      "gameplay": [
+        [
+          "if",
+          [
+            [
+              "limit",
+              [
+                [
+                  "has_title",
+                  "title:e_minister_of_rites"
+                ]
+              ]
+            ],
+            [
+              "change_influence",
+              [
+                [
+                  "value",
+                  "minor_influence_gain"
+                ],
+                [
+                  "multiply",
+                  "scope:recipient.primary_title.tier"
+                ]
+              ]
+            ],
+            [
+              "add_piety",
+              [
+                [
+                  "value",
+                  "minor_piety_gain"
+                ],
+                [
+                  "multiply",
+                  "scope:recipient.primary_title.tier"
+                ]
+              ]
+            ]
+          ]
+        ],
+        [
+          "notify_puppeteer_of_outcome_effect",
+          [
+            [
+              "TYPE",
+              "event_toast_effect_good"
+            ],
+            [
+              "TITLE",
+              "religious_interaction.2002.toast_puppeteer"
+            ]
+          ]
+        ],
+        [
+          "if",
+          [
+            [
+              "limit",
+              [
+                [
+                  "has_government",
+                  "landless_adventurer_government"
+                ],
+                [
+                  "scope:recipient.highest_held_title_tier",
+                  "tier_barony"
+                ]
+              ]
+            ],
+            [
+              "faith",
+              [
+                [
+                  "change_fervor",
+                  [
+                    [
+                      "value",
+                      [
+                        [
+                          "add",
+                          "trivial_fervor_value"
+                        ],
+                        [
+                          "multiply",
+                          "scope:recipient.highest_held_title_tier"
+                        ]
+                      ]
+                    ],
+                    [
+                      "desc",
+                      "imperial_capital_sacked_fervor_gain"
+                    ]
+                  ]
+                ]
+              ]
+            ],
+            [
+              "add_prestige",
+              [
+                [
+                  "value",
+                  "200"
+                ],
+                [
+                  "multiply",
+                  "scope:recipient.highest_held_title_tier"
+                ],
+                [
+                  "if",
+                  [
+                    [
+                      "limit",
+                      [
+                        [
+                          "scope:recipient.highest_held_title_tier",
+                          "tier_kingdom"
+                        ]
+                      ]
+                    ],
+                    [
+                      "multiply",
+                      "2"
+                    ]
+                  ]
+                ]
+              ]
+            ]
+          ]
+        ]
+      ],
+      "preview": [
+        [
+          "if",
+          [
+            [
+              "limit",
+              [
+                [
+                  "has_government",
+                  "landless_adventurer_government"
+                ]
+              ]
+            ],
+            [
+              "show_as_tooltip",
+              [
+                [
+                  "demand_conversion_interaction_effect",
+                  "yes"
+                ]
+              ]
+            ]
+          ]
+        ],
+        [
+          "else",
+          [
+            [
+              "show_as_tooltip",
+              [
+                [
+                  "demand_conversion_vassal_ruler_interaction_effect",
+                  "yes"
+                ]
+              ]
+            ]
+          ]
+        ]
+      ]
+    },
+    "char_interaction.0181": {
+      "native_path": "events/interaction_events/character_interaction_events.txt",
+      "local_path": "Mass Demand Conversion/events/interaction_events/mdc_house_conversion_notification.txt",
+      "gameplay": [
+        [
+          "notify_puppeteer_of_outcome_effect",
+          [
+            [
+              "TYPE",
+              "event_toast_effect_good"
+            ],
+            [
+              "TITLE",
+              "char_interaction.0181.toast_puppeteer"
+            ]
+          ]
+        ]
+      ],
+      "preview": [
+        [
+          "show_as_tooltip",
+          [
+            [
+              "demand_conversion_interaction_effect",
+              "yes"
+            ]
+          ]
+        ]
+      ]
+    }
+  },
+  "user_evidence": {
+    "screenshot": "codex-clipboard-804c928b-fc20-4d6c-8972-951b18eeaa29.png",
+    "observation": "One accepted vassal request produced a feed notification without a crash; recipient name was ERROR:[recipient.GetShortUIName]. House failure is structurally inferred from shared type, not runtime-observed.",
+    "log_messages": [
+      "Failed to find type 'recipient' in 'recipient.GetShortUIName'.",
+      "Could not find promote for 'recipient' in 'recipient.GetShortUIName'.",
+      "Data error in loc string 'mdc_conversion_accepted_desc'"
+    ],
+    "foreign_crash": "Unresolved; not reproduced by this single acceptance test."
+  }
+}
