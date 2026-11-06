@@ -96,3 +96,7 @@ Current native script values use interaction queries outside opened interactions
 ## Legacy AI and story ownership supplement
 
 [Dynasty legacies](../systems/dynasty-legacies.md) demonstrates a numeric `ai_chance` reader, named phase-duration values and an explicitly enumerated native AI policy. Its weight is not a percentage. [Story guidance](../reference/wiki-extensions.md) distinguishes a story root, owner-death hook and cleanup from automatic cross-generation persistence or exactly-once execution. Both retain pending runtime tests.
+
+## News update — 2026-11-03
+
+The forthcoming [Variable Maps announcement](../systems/silk-and-silver-preview.md) describes associative data beyond variables/lists. It does not establish CK3 map syntax, supported types, ordering or lifetime. Existing ownership/cleanup rules remain until matched release files and exports are audited. [Released story-tracker guidance](../systems/news-modding-2025-2026.md) separately covers visualization and historical state ownership.

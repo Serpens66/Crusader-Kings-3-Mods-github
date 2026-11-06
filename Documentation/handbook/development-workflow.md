@@ -64,3 +64,7 @@ Follow the [mandatory mod-update workflow](mod-update-workflow.md). Recheck laun
 ## General Crozier source supplement — 2026-10-03
 
 Use the [Crozier migration contracts](../systems/crozier-migration.md), [diagnostic/reload boundaries](../systems/crozier-gui-tools.md), and [coverage ledger](../research/crozier-source-coverage.md) for current schema changes. Event and character-history priority fields are distinct. No new diagnostic launch or tool installation was performed.
+
+## News update — 2026-11-03
+
+Use the [official-news report](../research/game-news-20261103.md) to distinguish installed 1.20.1.2, old 1.20.0.3 dumps and announced 1.21 facilities. Preview symbols and old Wiki tables are discovery routes; neither is an engine capability test. Preserve dated baselines and write new results separately rather than relabelling old exports. Public script-profiler discussion does not expose every internal tool pictured in a diary.

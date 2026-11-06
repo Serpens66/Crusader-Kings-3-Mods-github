@@ -69,3 +69,7 @@ No migration, lifecycle, reload or multiplayer test ran here. For each actual mo
 ## Legacy overrides and added native branches
 
 The [legacy comparison](dynasty-legacies.md) adds concrete 1.19.0.6→1.20.0.3 consequences: PAM track/perks, surrounding-character Iberian struggle branches, administrative-mechanic checks, `faith_character_modifier`, rite-cost and herald-trait changes. Historical Less Restrictive full files must preserve these current native branches in any future port. This source finding does not update an existing mod or close its runtime acceptance gates.
+
+## News update — 2026-11-03
+
+[Released findings](news-modding-2025-2026.md) extend the dated baseline to narrow installed 1.20.1.2 source observations; current whole-file hashes are separate from the original 1.20.0.3 exports. [Future migration](silk-and-silver-preview.md) maps announced economy/district/history/government changes by context, without editing current mods or treating preview names as current contracts.

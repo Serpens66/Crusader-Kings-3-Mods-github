@@ -2,7 +2,7 @@
 
 This is a working reference for building new Crusader Kings III mods in this workspace. Start here in a new session. The main language is English; script identifiers remain unchanged.
 
-**Research date:** 2026-10-03. **Installed launcher version:** 1.20.0.3 (Crozier). This is an installation-specific baseline, not a claim about the newest public release. Old user logs identify 1.16.3 and are not current API evidence.
+**Historical research baseline:** 2026-10-03, launcher version **1.20.0.3 (Crozier)**. **Latest installation check:** 2026-11-03, **1.20.1.2 (Crozier)**. Engine exports remain versioned 1.20.0.3; existing chapters are not blanket revalidated. See the [official news supplement](research/game-news-20261103.md). This is an installation-specific baseline, not a claim about the newest public release. Old user logs identify 1.16.3 and are not current API evidence.
 
 ## Reading and retrieval map
 
@@ -68,3 +68,7 @@ Read [Dynasty legacy contracts](systems/dynasty-legacies.md) for current track/p
 ## Leave Wars standalone update — 2026-10-03
 
 [Current implementation and source audit](update-readiness/mods/leave-wars-update-20261003.md), [structural regression evidence](update-readiness/evidence/leave-wars-verification-20261003.json) and [pending runtime acceptance](update-readiness/mods/leave-wars-tests.md). Only standalone was updated; bundle and compatibility metadata remain unchanged. The [baseline index](update-readiness/update-watch-index.json) now selects the standalone-audited source record while preserving all historical and other-mod baselines.
+
+## Official news supplement — 2026-11-03
+
+[Released-news findings](systems/news-modding-2025-2026.md) integrate official 2025–2026 modding guidance with current source evidence and historical Wiki/guide limits. [Silk & Silver preview](systems/silk-and-silver-preview.md) keeps announced 1.21 trade/district/road/data-storage changes separate from installed Crozier. The [research report](research/game-news-20261103.md) and [107-article ledger](research/game-news-20261103/article-coverage.md) record sources, conflicts, incomplete articles and tests still needed.

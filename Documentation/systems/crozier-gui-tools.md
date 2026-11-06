@@ -57,3 +57,7 @@ The previously found Wiki effect/trigger mirrors repeat historical exported decl
 ## Legacy-window source supplement
 
 [Scrollable Legacies history](dynasty-legacies.md) documents a content scrollbox while retaining grid/item data bindings and native tooltip/progress consumers. Current native house and legacy windows already contain relevant scroll layouts. Their exported functions include unregistered result types; container presence does not prove frame correctness, unlimited item performance or compatibility with an entire historical replacement window.
+
+## News update — 2026-11-03
+
+The [news supplement](news-modding-2025-2026.md) separates native concept-tooltip/portrait-schema evidence from release-only functions, internal profiling screenshots and current export gaps. The [preview](silk-and-silver-preview.md) records upcoming road/spline and audio/visual production surfaces without running generators or installing exporters. Earlier asset/frame/render blockers remain.

@@ -115,3 +115,7 @@ Detailed current chapters now cover [Religion and rites](religion-rites.md), [Pu
 ## Complete archived-topic reconciliation
 
 The [Wiki supplement](../reference/wiki-extensions.md) adds council/task, history, government, holding, flavorization, story, terrain/struggle and art/font/exporter research routes, with historical version and current-audit limits. [Dynasty legacies](dynasty-legacies.md) supplies the focused current schema, complete third-party source map and concrete pending tests. No independent map/audio feature was introduced.
+
+## News update — 2026-11-03
+
+[Released-news guidance](news-modding-2025-2026.md) adds Situations versus Struggles, subject-contract callback scopes, overlord/domicile ownership, story visualization, cached/filter performance and portrait/audio boundaries. The [Silk & Silver preview](silk-and-silver-preview.md) describes future districts/trade/roads and migrations; do not apply those scopes or renames to current Crozier from this announcement alone. The existing subsystem examples retain their dated evidence.

@@ -45,3 +45,7 @@ The current datatype index retains both the promoted `PdxGuiWidget.MakeDecisionT
 ## Tests to prepare after a feature audit
 
 Cover zero/one/many items, missing actor or selected object, invalid visible items, changed resources and ownership between display and action, default selection and both AI selection paths. Cover puppet acquisition/removal, effective actor versus payer, daily invalidation, player switch, notifications and two-player simultaneous use. The source-informed selector description is not a tested reusable mod template.
+
+## News update — 2026-11-03
+
+The [released supplement](news-modding-2025-2026.md) records later interaction UI/puppet-sender/secondary-recipient fixes without promoting them to a tested routing contract. The [preview](silk-and-silver-preview.md) announces four more decision pickers and new trade callbacks; controller, root, selected object, optional target and destruction lifetime still require released definitions and tests.

@@ -53,3 +53,7 @@ The [lease schema](crozier-migration.md) describes both vassal-based and clerica
 ## Acceptance boundary
 
 No religion feature or example was game-tested here. For implementation, complete the selected feature's Vanilla audit, then cover every supported bookmark/DLC combination, uncreated/moved Rites, doctrine locks, selection state, absent heads, site placement/benefits, parent-change callbacks and save/reload. The [native conversion research](../update-readiness/mods/mass-demand-conversion-recheck.md) illustrates why a positive query or a late scope fallback cannot certify all command stages.
+
+## News update — 2026-11-03
+
+Installed version is now 1.20.1.2; [the dated supplement](news-modding-2025-2026.md) documents current `history` versus `create` rite fields, `can_change_faith`, reform-faith registration and announced doctrine triggers. Old dumps cannot establish the new engine signatures; release balance/callback changes require a new feature audit before adopting older worksheet expectations. No conversion runtime blocker is cleared here.

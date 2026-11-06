@@ -1,0 +1,17 @@
+[
+  {
+    "url": "https://forum.paradoxplaza.com/forum/developer-diary/dev-diary-188-art-music-modding-achievements.1863996/",
+    "date": "2026-11-03",
+    "http_status": 200,
+    "sha256": "32ed63159c77e21ee19ca1b9aa3213ccf0218eb59539560b132a8e68ef0e18ea",
+    "bytes": 3038,
+    "status": "requires browser challenge; full post and developer replies unverified"
+  },
+  {
+    "url": "https://forum.paradoxplaza.com/forum/threads/tinto-talks-extra-modding-in-1-1-rossbach.1899358/",
+    "retrieved_utc": "2026-11-03T18:23:05.984923+00:00",
+    "published_date": "2026-02-05",
+    "status": "official article readable via browser research; EU5 scope only",
+    "topics": "Variable Maps conceptual cross-game reference; no CK3 syntax adopted"
+  }
+]

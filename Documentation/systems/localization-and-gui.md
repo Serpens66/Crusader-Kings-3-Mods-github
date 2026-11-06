@@ -76,3 +76,7 @@ Before further MDC GUI work, read the [screenshot-backed failed-approach ledger]
 ## User-confirmed fixed-slot decision GUI reference — 2026-10-05
 
 For MDC, use the [visually accepted fixed-slot implementation](../update-readiness/mods/mass-demand-conversion-fixed-rows-20261005.md), backed by the user's current in-game confirmation. It retains native controller bindings but removes intrinsic recipient measurement: explicit scroll viewport/content sizes, permanent group slots, zero-origin overlaid datamodel variants, and fixed radio/text coordinates. The report documents the exact dimensions, source checksum and failed alternatives. Reuse the layout mechanism with the intended parent dimensions and data contract; do not transplant offsets into a different parent without auditing its size/margins. The confirmation covers the reported appearance; broad runtime regression and gameplay/MP claims remain separate.
+
+## News update — 2026-11-03
+
+[Released-news guidance](news-modding-2025-2026.md) connects native `GetGameConcept` contexts with the concept-tooltip template and distinguishes optional council targets and historical input bindings. [Announced GUI/data changes](silk-and-silver-preview.md) retain unresolved `GetModiferValue` spelling, new selection types and scope arguments. Do not auto-correct names or infer types from a preview. Rendering and MP tests remain open.

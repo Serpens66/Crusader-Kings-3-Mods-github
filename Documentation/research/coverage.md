@@ -72,3 +72,14 @@ The [Crozier coverage ledger](crozier-source-coverage.md) assigns 60 discovery t
 | Base integration | Existing locked reference reused, checkout and reports preserved | Existing history/lookup CLI | Historical sources do not override installed contracts |
 
 See [new verification](jesec/integration-verification.json). Existing 43 function sheets and runtime blockers are unchanged; this supplement adds research evidence, not successful game tests.
+
+## Official news reconciliation — 2026-11-03
+
+| Area | Source/static coverage | Remaining boundary |
+|---|---|---|
+| 2025–2026 official entries | 103 entries plus four targeted older diaries; [per-article ledger](game-news-20261103/article-coverage.md) and exact source hashes | Feed-only articles can be abbreviated; #188 full post/replies inaccessible |
+| Installed 1.20.1.2 | Current .info/definitions/callers/helpers/localization/GUI audit; [released guide](../systems/news-modding-2025-2026.md) | Old 1.20.0.3 exports not retyped; missing primitive signatures and runtime enforcement remain open |
+| Future 1.21 / Silk & Silver | Full #9 technical chain, scope transitions, dependency and rename map; [preview](../systems/silk-and-silver-preview.md) | Released files, fresh exports and actual game/GUI/MP/audio tests needed |
+| Art/audio/performance | Production principles, current narrow sound consumer, profiler/public-internal distinction | No exporter/tool-format certification, asset render/playback or benchmark |
+
+[New static/preservation results](game-news-20261103/verification.json) are separate from old reports and their baseline drift. No existing function test is marked passed by this research.
