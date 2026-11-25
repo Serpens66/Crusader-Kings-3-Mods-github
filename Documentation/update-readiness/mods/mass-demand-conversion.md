@@ -1,5 +1,10 @@
 # Mass Demand Conversion update sheet
 
+## Florin source review and1.081 target — 2026-11-25
+
+[Current source audit and maintenance result](mass-demand-conversion-florin-20261125.md). Current standalone is1.081 with supported_version1.21.* as target declaration, not a new runtime certification. Both acceptance overrides/all4 callers and3 delegated interactions are unchanged. Three native helper/acceptance/validity changes and later family/study changes are inherited through delegation. GUI and35 keys in8 languages retained.69 pinned source watches and28 static tests; Engine exports1.20.0.3 and open game/MP/name-rendering gates remain.
+
+
 ## Acceptance descriptions corrected in1.080 — 2026-10-07
 
 [Current two-notification fix](mass-demand-conversion-message-context-20261007.md): user-tested vassal acceptance did not crash but exposed recipient-name localization failure. Both overrides now supply desc in their event message call; the common type uses event_message_text. Native effects/previews and eight translations retained;28 static tests. Corrected rendering and house/mixed acceptance tests remain open; foreign crash unresolved. Engine exports1.20.0.3 are stale for installed1.20.0.4.

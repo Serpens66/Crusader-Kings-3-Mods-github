@@ -1,5 +1,23 @@
 # Native conversion acceptance matrix
 
+## Florin1.21 regression matrix — 2026-11-25
+
+[Current1.081 source review](mass-demand-conversion-florin-20261125.md). All cases below are **not run on1.21.0.3**. The metadata declaration1.21.* is the user's target, not a test result. Existing historical screenshots and one accepted pre-fix vassal request remain partial evidence only; the foreign crash is unresolved. Current Engine exports still describe1.20.0.3.
+
+| Case | Required observation | Status |
+|---|---|---|
+| MC-F01 | Full restart: first-open/reopen, five groups, three filters, selected marks and group/filter retention; UI scale, text length, scrolling | not run |
+| MC-F02 | Same paused state: native manual eligibility versus none-mode count; clerical-region capital with matching/different faith; religious protection unchanged | not run |
+| MC-F03 | Requester vs target-liege ecclesiastical domicile bonuses; native UI versus ai_accept thresholds around80/100 and rounding, without extra hook/influence/payment | not run |
+| MC-F04 | Accept/decline for all groups; correctly named vassal/house feeds; repeated/mixed acceptances merge and tooltip previews do not execute extra conversion/rewards | not run |
+| MC-F05 | Confession conversion penalty matches conversion flag and specific target, and native cleanup removes both variables once | not run |
+| MC-F06 | Adult/child family conversion: rite assigned natively; knowledge penalties only for adults; baptism check uses each converting character rather than unrelated event root | not run |
+| MC-F07 | Faith-study promise, imprisoned/changed teacher, playable/nonplayable learner; correct fallback, saved progress/general modifiers and old teacher modifier removal; save/reload | not run |
+| MC-F08 | Scope/requester/puppet message routing, correct costs and exactly-once rewards;2 players choose different groups/filters simultaneously without OOS | not run |
+
+Later secret-faith pressure event.2000 adds native fallback target discovery; record it only as downstream native coverage when relevant, without expanding MDC into a separate feature. Scheme-success bonus changes are not demand-acceptance percentages.
+
+
 ## Current1.080 acceptance-description regression — 2026-10-07
 
 [Fix and user observation](mass-demand-conversion-message-context-20261007.md). A pre-fix accepted vassal request produced a feed message without a crash, but its recipient description failed. This is partial user-run coverage of MC-N01, not a complete pass. Historical1.078 tables below retain their original status; use1.080 and a full restart for the new checks.

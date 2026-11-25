@@ -1,0 +1,65 @@
+{
+  "date": "2026-11-25",
+  "mod": "Mass Demand Conversion",
+  "mod_version": "1.081",
+  "supported_version": "1.21.*",
+  "metadata_status": "User-authorized target declaration, not runtime compatibility/MP certification.",
+  "installed_game_version": "1.21.0.3",
+  "static_tests": 28,
+  "source_watches": 69,
+  "refreshed_previous_watches": 65,
+  "added_acceptance_dependency_watches": 4,
+  "verified_source_paths": 54,
+  "reference_commit": "e529e0063a4f41786380fa2827c01736d9c14d15",
+  "reference_tag": "base/1.21.0.3",
+  "preservation": {
+    "existing_changed_files": [
+      "Mass Demand Conversion.mod",
+      "Mass Demand Conversion/descriptor.mod",
+      "Documentation/tools/test_mdc_chance_filter.py",
+      "Documentation/update-readiness/README.md",
+      "Documentation/update-readiness/update-watch-index.json",
+      "Documentation/update-readiness/contracts/MC-CANDIDATES.md",
+      "Documentation/update-readiness/contracts/MC-DISPATCH.md",
+      "Documentation/update-readiness/contracts/MC-VARIANTS.md",
+      "Documentation/update-readiness/mods/mass-demand-conversion-tests.md",
+      "Documentation/update-readiness/mods/mass-demand-conversion.md"
+    ],
+    "new_files": [
+      "Documentation/update-readiness/update-watch-mdc-florin-20261125.json",
+      "Documentation/update-readiness/evidence/mdc-florin-source-audit-20261125.json",
+      "Documentation/update-readiness/evidence/mdc-florin-verification-20261125.json",
+      "Documentation/update-readiness/mods/mass-demand-conversion-florin-20261125.md"
+    ],
+    "only_descriptor_version_and_supported_version_changed_in_mod": true,
+    "only_metadata_assertions_changed_in_tests": true,
+    "other_mod_watch_records_unchanged": true,
+    "historical_baselines_unchanged": true,
+    "reference_checkout_and_working_tree_unchanged": true,
+    "gui_gameplay_events_localization_bundle_unchanged": true,
+    "encoding_and_line_endings_preserved": true,
+    "local_documentation_links_checked": 146,
+    "git_diff_check": "passed"
+  },
+  "runtime_tests": "Not run on1.21: fresh Engine/GUI exports, first-open/group/filter/reopen/scaling/scrolling, count/manual eligibility and80/100 rounding/UI parity, both correct recipient names/merged feeds, rewards/puppets/conversion/concession/study lifecycle/save-reload, concurrent2-player/OOS. Foreign crash unresolved.",
+  "historical_evidence": "Earlier user GUI appearance and one pre-fix accepted vassal without crash retain their limited original scope; do not promote to1.21 runtime passes.",
+  "before_source_check_counts": {
+    "reference_changed": 23,
+    "file_changed_object_unchanged": 15,
+    "object_changed": 3,
+    "unchanged": 14,
+    "file_changed": 10
+  },
+  "after_source_check_counts": {
+    "unchanged": 69
+  },
+  "source_checker_exit": 1,
+  "source_checker_read_only_verified": true,
+  "source_checker_limitation": "All69 registered watches unchanged and local hashes match, but exported Engine reference1.20.0.3 is stale for installed1.21.0.3; exit1 retains this open review gate.",
+  "engine_reference": {
+    "version": "1.20.0.3",
+    "status": "stale_for_installed_version",
+    "changed_or_missing_exports": []
+  },
+  "independent_review": "Read-only second-agent review found no unintended descriptor/test/mod/baseline changes; no runtime or compatibility certification inferred."
+}

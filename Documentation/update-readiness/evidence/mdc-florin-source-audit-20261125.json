@@ -1,0 +1,925 @@
+{
+  "date": "2026-11-25",
+  "installed_version": "1.21.0.3",
+  "previous_baseline": "update-watch-mdc-message-context-20261007.json",
+  "previous_mod_version": "1.080",
+  "target_mod_version": "1.081",
+  "target_supported_version": "1.21.*",
+  "scope": "Completed feature source audit across two complete event overrides/all4 native callers, three delegated interactions and changed validity/acceptance/conversion/study dependencies; used GUI/controller/lifecycle/message/localization contracts. No gameplay/event/GUI patch demonstrated.",
+  "comparison_reference": {
+    "repository": ".reference-cache/ck3-mod-base",
+    "commit": "e529e0063a4f41786380fa2827c01736d9c14d15",
+    "tree_prefix": "base/game",
+    "tag": "base/1.21.0.3",
+    "authority": "Third-party source-history mirror verified byte-for-byte against installed files; not independently authenticated Steam depot content."
+  },
+  "files": {
+    "common/character_interactions/_character_interactions.info": {
+      "installed_sha256": "69162c58ac00485d1fbb6d2d71afc5d7d9c7877a3f4bb4cb619eda2c7ff233f2",
+      "reference_sha256": "69162c58ac00485d1fbb6d2d71afc5d7d9c7877a3f4bb4cb619eda2c7ff233f2",
+      "reference_matches_installed": true
+    },
+    "common/decisions/_decisions.info": {
+      "installed_sha256": "5159b67fd6a72125904f2a0bdc90ff3af499d24deca7bef4a4930b1f531c879a",
+      "reference_sha256": "5159b67fd6a72125904f2a0bdc90ff3af499d24deca7bef4a4930b1f531c879a",
+      "reference_matches_installed": true
+    },
+    "common/messages/_messages.info": {
+      "installed_sha256": "1432438e943968e42e8bfed77621a53f1ce277677096386c500cf30607c37241",
+      "reference_sha256": "1432438e943968e42e8bfed77621a53f1ce277677096386c500cf30607c37241",
+      "reference_matches_installed": true
+    },
+    "events/_events.info": {
+      "installed_sha256": "25be15adcf8a02f44996369e1d479c8fe3be96ed807df703ad4c0fe532ea1e61",
+      "reference_sha256": "25be15adcf8a02f44996369e1d479c8fe3be96ed807df703ad4c0fe532ea1e61",
+      "reference_matches_installed": true
+    },
+    "common/scripted_effects/00_religious_interaction_effects.txt": {
+      "installed_sha256": "668977968dd5f36cabcba25517770cb8260b60ceb8d4b21a57b5416e48a1e4ef",
+      "reference_sha256": "668977968dd5f36cabcba25517770cb8260b60ceb8d4b21a57b5416e48a1e4ef",
+      "reference_matches_installed": true
+    },
+    "common/scripted_effects/00_interaction_effects.txt": {
+      "installed_sha256": "26151bd9f91cf66d79297d2fe20d8ae5b919d7e83a5fac81e9c93bbea2388465",
+      "reference_sha256": "26151bd9f91cf66d79297d2fe20d8ae5b919d7e83a5fac81e9c93bbea2388465",
+      "reference_matches_installed": true
+    },
+    "common/script_values/07_ep3_values.txt": {
+      "installed_sha256": "d435b7d2952883df210600a688782862dfcbc181a8d6dc5e162df789cd86e3c1",
+      "reference_sha256": "d435b7d2952883df210600a688782862dfcbc181a8d6dc5e162df789cd86e3c1",
+      "reference_matches_installed": true
+    },
+    "common/script_values/00_basic_values.txt": {
+      "installed_sha256": "e02fa69743396b862311e3ba85007c5ad2cb37ec06917eba2945a3d634dd490a",
+      "reference_sha256": "e02fa69743396b862311e3ba85007c5ad2cb37ec06917eba2945a3d634dd490a",
+      "reference_matches_installed": true
+    },
+    "common/scripted_modifiers/00_religion_scripted_modifiers.txt": {
+      "installed_sha256": "ee407f928f7de6465ea292774fa2cc1fda98ecc0eb7107ed1c037e860209f180",
+      "reference_sha256": "ee407f928f7de6465ea292774fa2cc1fda98ecc0eb7107ed1c037e860209f180",
+      "reference_matches_installed": true
+    },
+    "common/scripted_triggers/00_religious_triggers.txt": {
+      "installed_sha256": "50fa9d72741acd616b5e26e7238eefbbc1f2989eb608543c83220e539843f5ef",
+      "reference_sha256": "50fa9d72741acd616b5e26e7238eefbbc1f2989eb608543c83220e539843f5ef",
+      "reference_matches_installed": true
+    },
+    "common/character_interactions/00_religious_interactions.txt": {
+      "installed_sha256": "9ac329caf86a4c52548dd06c9ee019a0c73c8572544c7836401555b0edd86fea",
+      "reference_sha256": "9ac329caf86a4c52548dd06c9ee019a0c73c8572544c7836401555b0edd86fea",
+      "reference_matches_installed": true
+    },
+    "common/messages/00_messages.txt": {
+      "installed_sha256": "bd50b0859f3769bfbd2d592354c4a0b6883bf30be013240347a66589830c0730",
+      "reference_sha256": "bd50b0859f3769bfbd2d592354c4a0b6883bf30be013240347a66589830c0730",
+      "reference_matches_installed": true
+    },
+    "common/messages/01_religious_messages.txt": {
+      "installed_sha256": "79dc8d31aad5e2ac7086384289ead6b44e3976f2c02bc8db7a533ce4c27a0f50",
+      "reference_sha256": "79dc8d31aad5e2ac7086384289ead6b44e3976f2c02bc8db7a533ce4c27a0f50",
+      "reference_matches_installed": true
+    },
+    "common/on_action/schemes/study_faith_on_actions.txt": {
+      "installed_sha256": "e6a33f4674f5e25d57faaa8d781cdba873591f884e08f5aca543bc54481d0623",
+      "reference_sha256": "e6a33f4674f5e25d57faaa8d781cdba873591f884e08f5aca543bc54481d0623",
+      "reference_matches_installed": true
+    },
+    "common/schemes/scheme_types/study_faith_scheme.txt": {
+      "installed_sha256": "75d4e3deb56f36a04ad1fed9ce9eff17991a298cd4693c1d1988a937886cc4f9",
+      "reference_sha256": "75d4e3deb56f36a04ad1fed9ce9eff17991a298cd4693c1d1988a937886cc4f9",
+      "reference_matches_installed": true
+    },
+    "common/scripted_effects/11_dlc_pam_scripted_effects.txt": {
+      "installed_sha256": "6d2278c57bd379c1d40ddae4c406a3b9859727a1fef1ff60237ea90257c58d0e",
+      "reference_sha256": "6d2278c57bd379c1d40ddae4c406a3b9859727a1fef1ff60237ea90257c58d0e",
+      "reference_matches_installed": true
+    },
+    "events/religion_events/false_conversion_events.txt": {
+      "installed_sha256": "40c548632ab354078a7f1ed04e15039538842d90935d380051adf645fac90f6d",
+      "reference_sha256": "40c548632ab354078a7f1ed04e15039538842d90935d380051adf645fac90f6d",
+      "reference_matches_installed": true
+    },
+    "events/scheme_events/study_faith_scheme/study_faith_outcome_events.txt": {
+      "installed_sha256": "d12ae992ad8cc5c0ed2429de6d21b6b803ed84ee9fdf9dd1fd599a0f0ef6ec55",
+      "reference_sha256": "d12ae992ad8cc5c0ed2429de6d21b6b803ed84ee9fdf9dd1fd599a0f0ef6ec55",
+      "reference_matches_installed": true
+    },
+    "gui/decision_view_widgets/decision_view_widget_decision_option_list_controller.gui": {
+      "installed_sha256": "23b1933c47fed9f243ccf4d70987838d18194b629e43310a459b64c7669fcb3a",
+      "reference_sha256": "23b1933c47fed9f243ccf4d70987838d18194b629e43310a459b64c7669fcb3a",
+      "reference_matches_installed": true
+    },
+    "localization/english/messages_l_english.yml": {
+      "installed_sha256": "5affe707d562c2dbc10afcb8e856fc4966c32cbb0163aff06963da006f7de0be",
+      "reference_sha256": "5affe707d562c2dbc10afcb8e856fc4966c32cbb0163aff06963da006f7de0be",
+      "reference_matches_installed": true
+    },
+    "localization/french/messages_l_french.yml": {
+      "installed_sha256": "5a08ae946d759b3679616f57f1e199fec11e9afca3d14af973f3e238f298ad6a",
+      "reference_sha256": "5a08ae946d759b3679616f57f1e199fec11e9afca3d14af973f3e238f298ad6a",
+      "reference_matches_installed": true
+    },
+    "localization/german/messages_l_german.yml": {
+      "installed_sha256": "45cfed38aa24a7a1b1510636a3d2c4d6f467dce025360c8f35bb9f7b67e42596",
+      "reference_sha256": "45cfed38aa24a7a1b1510636a3d2c4d6f467dce025360c8f35bb9f7b67e42596",
+      "reference_matches_installed": true
+    },
+    "localization/korean/messages_l_korean.yml": {
+      "installed_sha256": "c7e96bec9a3c48234c808d018629420e33e1c62c062efccaad590a2d3bc09a55",
+      "reference_sha256": "c7e96bec9a3c48234c808d018629420e33e1c62c062efccaad590a2d3bc09a55",
+      "reference_matches_installed": true
+    },
+    "localization/polish/messages_l_polish.yml": {
+      "installed_sha256": "8aa5e25592bb50bc52bd773ca9439bd09ab04407c47eaaf0103e508ddb8331d3",
+      "reference_sha256": "8aa5e25592bb50bc52bd773ca9439bd09ab04407c47eaaf0103e508ddb8331d3",
+      "reference_matches_installed": true
+    },
+    "localization/russian/messages_l_russian.yml": {
+      "installed_sha256": "b78e41c336f013072ca4adc2d46f283d4bd83c9e886e829f6286b7a4e7860d63",
+      "reference_sha256": "b78e41c336f013072ca4adc2d46f283d4bd83c9e886e829f6286b7a4e7860d63",
+      "reference_matches_installed": true
+    },
+    "localization/simp_chinese/messages_l_simp_chinese.yml": {
+      "installed_sha256": "e9be906baca98cb2e0f16d7db01bb3abad4873fe96cbb1a310d83c973d8537ae",
+      "reference_sha256": "e9be906baca98cb2e0f16d7db01bb3abad4873fe96cbb1a310d83c973d8537ae",
+      "reference_matches_installed": true
+    },
+    "localization/spanish/messages_l_spanish.yml": {
+      "installed_sha256": "fcc5f08256b471829076effd9fe8c4fa74cc6c04594f81f9fc6b41a22e20758e",
+      "reference_sha256": "fcc5f08256b471829076effd9fe8c4fa74cc6c04594f81f9fc6b41a22e20758e",
+      "reference_matches_installed": true
+    },
+    "events/interaction_events/character_interaction_events.txt": {
+      "installed_sha256": "3b03666c4b4f06ae7717d0c614f4c6dad0f4fc4e03925c51a43076045aa4f214",
+      "reference_sha256": "3b03666c4b4f06ae7717d0c614f4c6dad0f4fc4e03925c51a43076045aa4f214",
+      "reference_matches_installed": true
+    },
+    "events/religion_events/religious_interaction_events.txt": {
+      "installed_sha256": "27405d1ccd6217670f5812d8cbde987ed899c04b6b7d309099e2e8fbe1809a4d",
+      "reference_sha256": "27405d1ccd6217670f5812d8cbde987ed899c04b6b7d309099e2e8fbe1809a4d",
+      "reference_matches_installed": true
+    },
+    "gui/window_decisions_detail.gui": {
+      "installed_sha256": "25cba57a7fdf1eba5aa0f2ac47a4116c9df504f3dbf709a31134941066fcab66",
+      "reference_sha256": "25cba57a7fdf1eba5aa0f2ac47a4116c9df504f3dbf709a31134941066fcab66",
+      "reference_matches_installed": true
+    },
+    "gui/shared/buttons.gui": {
+      "installed_sha256": "0a9dd1f124f0f9c74e8ef4b62cbd170318b1e1180f67ba235869580271c41014",
+      "reference_sha256": "0a9dd1f124f0f9c74e8ef4b62cbd170318b1e1180f67ba235869580271c41014",
+      "reference_matches_installed": true
+    },
+    "gui/frontend_mp_game_setup.gui": {
+      "installed_sha256": "f478edc35149b324b5cfd3a123770fb5f0d2ff1df7c8ab1a9d4390bb08ae01d5",
+      "reference_sha256": "f478edc35149b324b5cfd3a123770fb5f0d2ff1df7c8ab1a9d4390bb08ae01d5",
+      "reference_matches_installed": true,
+      "coverage": "Additional read/audit dependency; retain pending runtime tests."
+    },
+    "gui/activity_window_widgets/chariot_race_progress_to_victory_widget.gui": {
+      "installed_sha256": "04281b90dbe56774e1749af159f108c1ea82f7f0b58e73e49d091fe2c2f9df33",
+      "reference_sha256": "04281b90dbe56774e1749af159f108c1ea82f7f0b58e73e49d091fe2c2f9df33",
+      "reference_matches_installed": true,
+      "coverage": "Additional read/audit dependency; retain pending runtime tests."
+    },
+    "common/script_values/02_religion_values.txt": {
+      "installed_sha256": "bb7e4fbaa87711003f36d7f0f2d036e9572219ae4cbee49f060b3bec84d72fee",
+      "reference_sha256": "bb7e4fbaa87711003f36d7f0f2d036e9572219ae4cbee49f060b3bec84d72fee",
+      "reference_matches_installed": true
+    },
+    "common/scripted_triggers/pam_scripted_triggers.txt": {
+      "installed_sha256": "b6b2ed8a96b3fddf6a9fe4c0dabab515e8bf5ea6c64ad026785471f719565eef",
+      "reference_sha256": "b6b2ed8a96b3fddf6a9fe4c0dabab515e8bf5ea6c64ad026785471f719565eef",
+      "reference_matches_installed": true
+    },
+    "common/customizable_localization/pam_sway_to_rite_custom_loc.txt": {
+      "installed_sha256": "111cd99b3a75e5929c37f1f7314d857634054f2b08a47a034abd9919c298cf66",
+      "reference_sha256": "111cd99b3a75e5929c37f1f7314d857634054f2b08a47a034abd9919c298cf66",
+      "reference_matches_installed": true
+    },
+    "gui/shared/lists.gui": {
+      "installed_sha256": "bd63e3f8de9fb2a6fad6fb88db3d004eb485ae6096b497efecc59356bbdcfe69",
+      "reference_sha256": "bd63e3f8de9fb2a6fad6fb88db3d004eb485ae6096b497efecc59356bbdcfe69",
+      "reference_matches_installed": true
+    },
+    "gui/event_window_widgets/event_window_widget_name_pope.gui": {
+      "installed_sha256": "276f26914fa63bb72810efeca8ce8ab1782410bc3eb6ee075104eba2ca3f2e9d",
+      "reference_sha256": "276f26914fa63bb72810efeca8ce8ab1782410bc3eb6ee075104eba2ca3f2e9d",
+      "reference_matches_installed": true,
+      "coverage": "Additional read/audit dependency; retain pending runtime tests."
+    },
+    "gui/window_admin_vassal_detail.gui": {
+      "installed_sha256": "0e539817c49d334841bdf4895dd7eb33817bcafb045c3ffe7c83f4a7d0cc4f90",
+      "reference_sha256": "0e539817c49d334841bdf4895dd7eb33817bcafb045c3ffe7c83f4a7d0cc4f90",
+      "reference_matches_installed": true
+    },
+    "common/decisions/00_guest_decisions.txt": {
+      "installed_sha256": "bee3f5dc829fdcdff62584a887285b36653fa7c8e92f688c11ef5d0b1465600c",
+      "reference_sha256": "bee3f5dc829fdcdff62584a887285b36653fa7c8e92f688c11ef5d0b1465600c",
+      "reference_matches_installed": true
+    },
+    "gui/shared/windows.gui": {
+      "installed_sha256": "4e2521da33c32b591e6c61fdcc2597c46caa8db20ca04df4c6024309a6955056",
+      "reference_sha256": "4e2521da33c32b591e6c61fdcc2597c46caa8db20ca04df4c6024309a6955056",
+      "reference_matches_installed": true
+    },
+    "gui/shared/progressbars.gui": {
+      "installed_sha256": "02605ff7e2bda67768e52c978c3d3de14116912d1ab0845e463b5d8c02525d47",
+      "reference_sha256": "02605ff7e2bda67768e52c978c3d3de14116912d1ab0845e463b5d8c02525d47",
+      "reference_matches_installed": true
+    },
+    "gui/preload/defaults.gui": {
+      "installed_sha256": "7ba220ab2de42d68d1123353d20da55203dacf3e8fa699046cdf274d46296698",
+      "reference_sha256": "7ba220ab2de42d68d1123353d20da55203dacf3e8fa699046cdf274d46296698",
+      "reference_matches_installed": true
+    },
+    "gui/window_activity_intent_selection.gui": {
+      "installed_sha256": "07b09863a0064aad7abe1e061a93c979b5edcbc662cb8918a535c3a33a93a91a",
+      "reference_sha256": "07b09863a0064aad7abe1e061a93c979b5edcbc662cb8918a535c3a33a93a91a",
+      "reference_matches_installed": true
+    },
+    "gui/map_icon_layer.gui": {
+      "installed_sha256": "f337e532d299cdc3b90397151d1fa9107e70932d5b72da03f1eaa7f596916675",
+      "reference_sha256": "f337e532d299cdc3b90397151d1fa9107e70932d5b72da03f1eaa7f596916675",
+      "reference_matches_installed": true
+    },
+    "gui/window_royal_court.gui": {
+      "installed_sha256": "5dcee1c66ba6de3fc12c2033f358ccdb43b697929954303b34ad0c7559af3da9",
+      "reference_sha256": "5dcee1c66ba6de3fc12c2033f358ccdb43b697929954303b34ad0c7559af3da9",
+      "reference_matches_installed": true
+    },
+    "gui/achievements/popup.gui": {
+      "installed_sha256": "3d448281fdcfcd5d519d027588917c756a9d739718a7c7d373fa2f9368b89db6",
+      "reference_sha256": "3d448281fdcfcd5d519d027588917c756a9d739718a7c7d373fa2f9368b89db6",
+      "reference_matches_installed": true
+    },
+    "gui/decision_view_widgets/decision_view_widget_option_list_generic.gui": {
+      "installed_sha256": "6c378fc5c4acc9289f7947a994d85c89cdc9eeb8ae4eeac2850d92598a960e53",
+      "reference_sha256": "6c378fc5c4acc9289f7947a994d85c89cdc9eeb8ae4eeac2850d92598a960e53",
+      "reference_matches_installed": true
+    },
+    "gui/interaction_modify_vassal_window.gui": {
+      "installed_sha256": "1f25fd0b6a6717a8d9246637651c9f52cc50db7e4a127b9457818646cb74b8ef",
+      "reference_sha256": "1f25fd0b6a6717a8d9246637651c9f52cc50db7e4a127b9457818646cb74b8ef",
+      "reference_matches_installed": true
+    },
+    "gui/frontend_bookmarks.gui": {
+      "installed_sha256": "921b6e34db65e235e6159294f16664b98228065d50b26dbe203bc01f5bd699dd",
+      "reference_sha256": "921b6e34db65e235e6159294f16664b98228065d50b26dbe203bc01f5bd699dd",
+      "reference_matches_installed": true
+    },
+    "common/messages/07_ep3_messages.txt": {
+      "installed_sha256": "7ee8e7c6de5311e81d5f2cc4ef2db00b5d1e917e3c086cabcab444a073724fc6",
+      "reference_sha256": "7ee8e7c6de5311e81d5f2cc4ef2db00b5d1e917e3c086cabcab444a073724fc6",
+      "reference_matches_installed": true
+    },
+    "common/character_interactions/06_ep3_interactions.txt": {
+      "installed_sha256": "4c9a0aae9d153967f0e01c5351615cb86281adc1caf94e2bd179d5023bc213f4",
+      "reference_sha256": "4c9a0aae9d153967f0e01c5351615cb86281adc1caf94e2bd179d5023bc213f4",
+      "reference_matches_installed": true
+    },
+    "common/scripted_modifiers/pam_scripted_modifiers.txt": {
+      "installed_sha256": "f0ee9a1035cf96b5165ff7ceb9e79e29e06c594546b1620c4a3c03f9d466af4e",
+      "reference_sha256": "f0ee9a1035cf96b5165ff7ceb9e79e29e06c594546b1620c4a3c03f9d466af4e",
+      "reference_matches_installed": true,
+      "coverage": "Additional read/audit dependency; retain pending runtime tests."
+    },
+    "common/script_values/pam_values.txt": {
+      "installed_sha256": "cc8d6b7653762213c0891caa8f8a7c867b0fb92634eaa911c9a24ef7ffaf3cf6",
+      "reference_sha256": "cc8d6b7653762213c0891caa8f8a7c867b0fb92634eaa911c9a24ef7ffaf3cf6",
+      "reference_matches_installed": true,
+      "coverage": "Additional read/audit dependency; retain pending runtime tests."
+    }
+  },
+  "watches": [
+    {
+      "id": "MC-CONTRACTS:common/character_interactions/_character_interactions.info",
+      "native_path": "common/character_interactions/_character_interactions.info",
+      "kind": "text",
+      "symbol": null,
+      "source_sha256": "69162c58ac00485d1fbb6d2d71afc5d7d9c7877a3f4bb4cb619eda2c7ff233f2"
+    },
+    {
+      "id": "MC-CONTRACTS:common/decisions/_decisions.info",
+      "native_path": "common/decisions/_decisions.info",
+      "kind": "text",
+      "symbol": null,
+      "source_sha256": "5159b67fd6a72125904f2a0bdc90ff3af499d24deca7bef4a4930b1f531c879a"
+    },
+    {
+      "id": "MC-CONTRACTS:common/messages/_messages.info",
+      "native_path": "common/messages/_messages.info",
+      "kind": "text",
+      "symbol": null,
+      "source_sha256": "1432438e943968e42e8bfed77621a53f1ce277677096386c500cf30607c37241"
+    },
+    {
+      "id": "MC-CONTRACTS:events/_events.info",
+      "native_path": "events/_events.info",
+      "kind": "text",
+      "symbol": null,
+      "source_sha256": "25be15adcf8a02f44996369e1d479c8fe3be96ed807df703ad4c0fe532ea1e61"
+    },
+    {
+      "id": "MC-DEPENDENCIES:convert_family_to_faith_effect",
+      "native_path": "common/scripted_effects/00_religious_interaction_effects.txt",
+      "kind": "object",
+      "symbol": "convert_family_to_faith_effect",
+      "source_sha256": "668977968dd5f36cabcba25517770cb8260b60ceb8d4b21a57b5416e48a1e4ef",
+      "current_line": 1138,
+      "object_token_sha256": "2227f8caad0c9286f603d40a91b333c2ee5529eb4eb2d194f6841a54eaace294",
+      "object_text_sha256": "8f38fa538616c8edb45521fbea31806ae492155dde726442bf8de2d81a871d7a",
+      "semantic_change": false
+    },
+    {
+      "id": "MC-DEPENDENCIES:demand_conversion_interaction_effect",
+      "native_path": "common/scripted_effects/00_religious_interaction_effects.txt",
+      "kind": "object",
+      "symbol": "demand_conversion_interaction_effect",
+      "source_sha256": "668977968dd5f36cabcba25517770cb8260b60ceb8d4b21a57b5416e48a1e4ef",
+      "current_line": 1067,
+      "object_token_sha256": "35dad2ca467e1c745f72364f1ad452983491f40e498777bf0c90d8235e157e3b",
+      "object_text_sha256": "b6fec162640d5f42bf10febd03d53af80e992002606fe80e8525c278f0a0615a",
+      "semantic_change": true
+    },
+    {
+      "id": "MC-DEPENDENCIES:demand_conversion_vassal_ruler_interaction_effect",
+      "native_path": "common/scripted_effects/00_interaction_effects.txt",
+      "kind": "object",
+      "symbol": "demand_conversion_vassal_ruler_interaction_effect",
+      "source_sha256": "26151bd9f91cf66d79297d2fe20d8ae5b919d7e83a5fac81e9c93bbea2388465",
+      "current_line": 4938,
+      "object_token_sha256": "3eef1161a896b3588e537686bf8ba579bb8215a150dd44ce79d1215dc36c9fc3",
+      "object_text_sha256": "ab5c50b6cf49723b7c50b54bc3df74aac283b94b8cfb741808eb278916e1ebc0",
+      "semantic_change": false
+    },
+    {
+      "id": "MC-DEPENDENCIES:grab_spouses_and_family_to_convert_effect",
+      "native_path": "common/scripted_effects/00_religious_interaction_effects.txt",
+      "kind": "object",
+      "symbol": "grab_spouses_and_family_to_convert_effect",
+      "source_sha256": "668977968dd5f36cabcba25517770cb8260b60ceb8d4b21a57b5416e48a1e4ef",
+      "current_line": 1005,
+      "object_token_sha256": "230d7b48e53e13940061e698a52f533ab1604a21ec848361f17358cffec7003c",
+      "object_text_sha256": "67fd7c302c7274657d93a64e32f65e1b621c9e5dabe8672f6251756c298f2e54",
+      "semantic_change": false
+    },
+    {
+      "id": "MC-DEPENDENCIES:minor_influence_gain",
+      "native_path": "common/script_values/07_ep3_values.txt",
+      "kind": "object",
+      "symbol": "minor_influence_gain",
+      "source_sha256": "d435b7d2952883df210600a688782862dfcbc181a8d6dc5e162df789cd86e3c1",
+      "current_line": 38,
+      "object_token_sha256": "3b59546e17180c3afa647b59dbbc9015e8e5c500581065a5d54b8077578cc645",
+      "object_text_sha256": "914ebcd5b360959bdcf65d45decc8f51ce406d443115928748b6f6fa78672506",
+      "semantic_change": false
+    },
+    {
+      "id": "MC-DEPENDENCIES:minor_influence_value",
+      "native_path": "common/script_values/07_ep3_values.txt",
+      "kind": "object",
+      "symbol": "minor_influence_value",
+      "source_sha256": "d435b7d2952883df210600a688782862dfcbc181a8d6dc5e162df789cd86e3c1",
+      "current_line": 5,
+      "object_token_sha256": "2aa204e7160069609a0b863975117ad6774ece7113951ea88007468e83582f78",
+      "object_text_sha256": "207a86a4df65c30ea2d9f56baf08107b2464858f57fa2c7d26f4ff9beb08e17a",
+      "semantic_change": false
+    },
+    {
+      "id": "MC-DEPENDENCIES:minor_piety_gain",
+      "native_path": "common/script_values/00_basic_values.txt",
+      "kind": "object",
+      "symbol": "minor_piety_gain",
+      "source_sha256": "e02fa69743396b862311e3ba85007c5ad2cb37ec06917eba2945a3d634dd490a",
+      "current_line": 1215,
+      "object_token_sha256": "3143fbcd191b64394cc5fb68e6bcde5493c5ed035ed9aca9a6c6c5a6a7f96d35",
+      "object_text_sha256": "2ac47b551bd5ff16a02b4bf3131cbc852d5c732e07215b4df63a07ddfeadde0b",
+      "semantic_change": false
+    },
+    {
+      "id": "MC-DEPENDENCIES:minor_piety_value",
+      "native_path": "common/script_values/00_basic_values.txt",
+      "kind": "object",
+      "symbol": "minor_piety_value",
+      "source_sha256": "e02fa69743396b862311e3ba85007c5ad2cb37ec06917eba2945a3d634dd490a",
+      "current_line": 1182,
+      "object_token_sha256": "643703f77271f3964d646c0e5f8203acbfb5ec37528ba2db41096643858c7375",
+      "object_text_sha256": "d6d0be1c449bbfb70e933f620b11e793861de5a3589e3abe72f6ef1c87b44561",
+      "semantic_change": false
+    },
+    {
+      "id": "MC-DEPENDENCIES:notify_puppeteer_of_outcome_effect",
+      "native_path": "common/scripted_effects/00_interaction_effects.txt",
+      "kind": "object",
+      "symbol": "notify_puppeteer_of_outcome_effect",
+      "source_sha256": "26151bd9f91cf66d79297d2fe20d8ae5b919d7e83a5fac81e9c93bbea2388465",
+      "current_line": 15,
+      "object_token_sha256": "259461e8b58c46b81e6480fdd50ee91af9558931fb454886be139fa8486b0676",
+      "object_text_sha256": "7b451357a19de268dc93fc1a015f8058b7cc655a3fd77334959568fa4dc49262",
+      "semantic_change": false
+    },
+    {
+      "id": "MC-DEPENDENCIES:religion_demand_conversion_default_modifier",
+      "native_path": "common/scripted_modifiers/00_religion_scripted_modifiers.txt",
+      "kind": "object",
+      "symbol": "religion_demand_conversion_default_modifier",
+      "source_sha256": "ee407f928f7de6465ea292774fa2cc1fda98ecc0eb7107ed1c037e860209f180",
+      "current_line": 26,
+      "object_token_sha256": "97132cfdebbee32477efd15861c288d60dea220228eb327ed6a76504d6a8c099",
+      "object_text_sha256": "3d85a1d88c1740b6add983bb41da67042286683e69e167e2bd970831cd8de78d",
+      "semantic_change": true
+    },
+    {
+      "id": "MC-DEPENDENCIES:trivial_fervor_value",
+      "native_path": "common/script_values/00_basic_values.txt",
+      "kind": "object",
+      "symbol": "trivial_fervor_value",
+      "source_sha256": "e02fa69743396b862311e3ba85007c5ad2cb37ec06917eba2945a3d634dd490a",
+      "current_line": 1351,
+      "object_token_sha256": "c5f6e686ee9a05a82049604788bfd5c2b64248b00239990ee8ce0cc98922e26d",
+      "object_text_sha256": "06efa172a588034bd458443cbe680113812cd2010dd11e0cfaa780c8c20bdafd",
+      "semantic_change": false
+    },
+    {
+      "id": "MC-DEPENDENCIES:valid_demand_conversion_conditions_trigger",
+      "native_path": "common/scripted_triggers/00_religious_triggers.txt",
+      "kind": "object",
+      "symbol": "valid_demand_conversion_conditions_trigger",
+      "source_sha256": "50fa9d72741acd616b5e26e7238eefbbc1f2989eb608543c83220e539843f5ef",
+      "current_line": 1203,
+      "object_token_sha256": "d6e542d2e18b538d4e036aad90bead15465b256488f9b760e4293c0fb0afd9a3",
+      "object_text_sha256": "2e4fb8072cbf92f6455f59acf1b03b072ca74c5b68d00df3a4ec590cb0be4297",
+      "semantic_change": true
+    },
+    {
+      "id": "MC-DISPATCH:ask_for_conversion_courtier_interaction",
+      "native_path": "common/character_interactions/00_religious_interactions.txt",
+      "kind": "object",
+      "symbol": "ask_for_conversion_courtier_interaction",
+      "source_sha256": "9ac329caf86a4c52548dd06c9ee019a0c73c8572544c7836401555b0edd86fea",
+      "current_line": 159,
+      "object_token_sha256": "cd16934e9eac657ae17f24fae01d0d7a63990a85865f3f89eb75dff2b30bcbad",
+      "object_text_sha256": "2763aaf645217fb00612a821c53c8e4720529d741aaeec438ff70e0989345127",
+      "semantic_change": false
+    },
+    {
+      "id": "MC-DISPATCH:attempt_conversion_of_local_ruler_interaction",
+      "native_path": "common/character_interactions/00_religious_interactions.txt",
+      "kind": "object",
+      "symbol": "attempt_conversion_of_local_ruler_interaction",
+      "source_sha256": "9ac329caf86a4c52548dd06c9ee019a0c73c8572544c7836401555b0edd86fea",
+      "current_line": 8674,
+      "object_token_sha256": "d8ff642fc10a8060d1898682efb7f368354607da617c681241b2c1fb2a4e5554",
+      "object_text_sha256": "cae8aa69256981a0b1eb6edb4c468cec275400d0a151a0c18b3ca0ff0b7e89ad",
+      "semantic_change": false
+    },
+    {
+      "id": "MC-DISPATCH:demand_conversion_interaction",
+      "native_path": "common/character_interactions/00_religious_interactions.txt",
+      "kind": "object",
+      "symbol": "demand_conversion_interaction",
+      "source_sha256": "9ac329caf86a4c52548dd06c9ee019a0c73c8572544c7836401555b0edd86fea",
+      "current_line": 509,
+      "object_token_sha256": "9055e4bae61b03a4da125733e2e07fb7630a245d42e3f06dd9176789791dc7b3",
+      "object_text_sha256": "cc706c2bafc3bba3f31e4a568ade24a02e900f46de0e544c6de3911403a55a6d",
+      "semantic_change": false
+    },
+    {
+      "id": "MC-DISPATCH:demand_conversion_minister_rites_interaction",
+      "native_path": "common/character_interactions/00_religious_interactions.txt",
+      "kind": "object",
+      "symbol": "demand_conversion_minister_rites_interaction",
+      "source_sha256": "9ac329caf86a4c52548dd06c9ee019a0c73c8572544c7836401555b0edd86fea",
+      "current_line": 1693,
+      "object_token_sha256": "f681e70c168ed5c139d3abe260405cabbcc35721ca0b155ca7d0d65a199cc96c",
+      "object_text_sha256": "0359e4c7aaaad5e2fa8db6f38733903dee481f04b89d3ee3e99cd9dd620a204f",
+      "semantic_change": false
+    },
+    {
+      "id": "MC-DISPATCH:demand_conversion_vassal_ruler_interaction",
+      "native_path": "common/character_interactions/00_religious_interactions.txt",
+      "kind": "object",
+      "symbol": "demand_conversion_vassal_ruler_interaction",
+      "source_sha256": "9ac329caf86a4c52548dd06c9ee019a0c73c8572544c7836401555b0edd86fea",
+      "current_line": 781,
+      "object_token_sha256": "54d75e3241238ba6ef9cbb746253f23cb5442db3e7b847d7e64523eb6aee3292",
+      "object_text_sha256": "443f398f1e90216a1ad52fc6de66ddfc5955fd5e4158b6f40b5e65beabab60bb",
+      "semantic_change": false
+    },
+    {
+      "id": "MC-LIFECYCLE:common/messages/00_messages.txt",
+      "native_path": "common/messages/00_messages.txt",
+      "kind": "file",
+      "symbol": null,
+      "source_sha256": "bd50b0859f3769bfbd2d592354c4a0b6883bf30be013240347a66589830c0730"
+    },
+    {
+      "id": "MC-LIFECYCLE:common/messages/01_religious_messages.txt",
+      "native_path": "common/messages/01_religious_messages.txt",
+      "kind": "file",
+      "symbol": null,
+      "source_sha256": "79dc8d31aad5e2ac7086384289ead6b44e3976f2c02bc8db7a533ce4c27a0f50"
+    },
+    {
+      "id": "MC-LIFECYCLE:common/on_action/schemes/study_faith_on_actions.txt",
+      "native_path": "common/on_action/schemes/study_faith_on_actions.txt",
+      "kind": "file",
+      "symbol": null,
+      "source_sha256": "e6a33f4674f5e25d57faaa8d781cdba873591f884e08f5aca543bc54481d0623"
+    },
+    {
+      "id": "MC-LIFECYCLE:common/schemes/scheme_types/study_faith_scheme.txt",
+      "native_path": "common/schemes/scheme_types/study_faith_scheme.txt",
+      "kind": "file",
+      "symbol": null,
+      "source_sha256": "75d4e3deb56f36a04ad1fed9ce9eff17991a298cd4693c1d1988a937886cc4f9"
+    },
+    {
+      "id": "MC-LIFECYCLE:common/scripted_effects/11_dlc_pam_scripted_effects.txt",
+      "native_path": "common/scripted_effects/11_dlc_pam_scripted_effects.txt",
+      "kind": "file",
+      "symbol": null,
+      "source_sha256": "6d2278c57bd379c1d40ddae4c406a3b9859727a1fef1ff60237ea90257c58d0e"
+    },
+    {
+      "id": "MC-LIFECYCLE:events/religion_events/false_conversion_events.txt",
+      "native_path": "events/religion_events/false_conversion_events.txt",
+      "kind": "file",
+      "symbol": null,
+      "source_sha256": "40c548632ab354078a7f1ed04e15039538842d90935d380051adf645fac90f6d"
+    },
+    {
+      "id": "MC-LIFECYCLE:events/scheme_events/study_faith_scheme/study_faith_outcome_events.txt",
+      "native_path": "events/scheme_events/study_faith_scheme/study_faith_outcome_events.txt",
+      "kind": "file",
+      "symbol": null,
+      "source_sha256": "d12ae992ad8cc5c0ed2429de6d21b6b803ed84ee9fdf9dd1fd599a0f0ef6ec55"
+    },
+    {
+      "id": "MC-LIFECYCLE:gui/decision_view_widgets/decision_view_widget_decision_option_list_controller.gui",
+      "native_path": "gui/decision_view_widgets/decision_view_widget_decision_option_list_controller.gui",
+      "kind": "file",
+      "symbol": null,
+      "source_sha256": "23b1933c47fed9f243ccf4d70987838d18194b629e43310a459b64c7669fcb3a"
+    },
+    {
+      "id": "MC-LOCALIZATION:localization/english/messages_l_english.yml",
+      "native_path": "localization/english/messages_l_english.yml",
+      "kind": "text",
+      "symbol": null,
+      "source_sha256": "5affe707d562c2dbc10afcb8e856fc4966c32cbb0163aff06963da006f7de0be"
+    },
+    {
+      "id": "MC-LOCALIZATION:localization/french/messages_l_french.yml",
+      "native_path": "localization/french/messages_l_french.yml",
+      "kind": "text",
+      "symbol": null,
+      "source_sha256": "5a08ae946d759b3679616f57f1e199fec11e9afca3d14af973f3e238f298ad6a"
+    },
+    {
+      "id": "MC-LOCALIZATION:localization/german/messages_l_german.yml",
+      "native_path": "localization/german/messages_l_german.yml",
+      "kind": "text",
+      "symbol": null,
+      "source_sha256": "45cfed38aa24a7a1b1510636a3d2c4d6f467dce025360c8f35bb9f7b67e42596"
+    },
+    {
+      "id": "MC-LOCALIZATION:localization/korean/messages_l_korean.yml",
+      "native_path": "localization/korean/messages_l_korean.yml",
+      "kind": "text",
+      "symbol": null,
+      "source_sha256": "c7e96bec9a3c48234c808d018629420e33e1c62c062efccaad590a2d3bc09a55"
+    },
+    {
+      "id": "MC-LOCALIZATION:localization/polish/messages_l_polish.yml",
+      "native_path": "localization/polish/messages_l_polish.yml",
+      "kind": "text",
+      "symbol": null,
+      "source_sha256": "8aa5e25592bb50bc52bd773ca9439bd09ab04407c47eaaf0103e508ddb8331d3"
+    },
+    {
+      "id": "MC-LOCALIZATION:localization/russian/messages_l_russian.yml",
+      "native_path": "localization/russian/messages_l_russian.yml",
+      "kind": "text",
+      "symbol": null,
+      "source_sha256": "b78e41c336f013072ca4adc2d46f283d4bd83c9e886e829f6286b7a4e7860d63"
+    },
+    {
+      "id": "MC-LOCALIZATION:localization/simp_chinese/messages_l_simp_chinese.yml",
+      "native_path": "localization/simp_chinese/messages_l_simp_chinese.yml",
+      "kind": "text",
+      "symbol": null,
+      "source_sha256": "e9be906baca98cb2e0f16d7db01bb3abad4873fe96cbb1a310d83c973d8537ae"
+    },
+    {
+      "id": "MC-LOCALIZATION:localization/spanish/messages_l_spanish.yml",
+      "native_path": "localization/spanish/messages_l_spanish.yml",
+      "kind": "text",
+      "symbol": null,
+      "source_sha256": "fcc5f08256b471829076effd9fe8c4fa74cc6c04594f81f9fc6b41a22e20758e"
+    },
+    {
+      "id": "MC-NOTIFICATIONS:all-callers",
+      "native_path": "common/character_interactions/00_religious_interactions.txt",
+      "kind": "callers",
+      "symbol": null,
+      "source_sha256": "9ac329caf86a4c52548dd06c9ee019a0c73c8572544c7836401555b0edd86fea"
+    },
+    {
+      "id": "MC-NOTIFICATIONS:char_interaction.0181",
+      "native_path": "events/interaction_events/character_interaction_events.txt",
+      "kind": "object",
+      "symbol": "char_interaction.0181",
+      "source_sha256": "3b03666c4b4f06ae7717d0c614f4c6dad0f4fc4e03925c51a43076045aa4f214",
+      "current_line": 1459,
+      "object_token_sha256": "225ca108d033c4820ca29457439398316f80e64de5c4cea900aa01c6967259a1",
+      "object_text_sha256": "28a643273312b9914af37e09b5d517511055052d20f48a09d4bfff6892e83ea7",
+      "semantic_change": false
+    },
+    {
+      "id": "MC-NOTIFICATIONS:religious_interaction.2002",
+      "native_path": "events/religion_events/religious_interaction_events.txt",
+      "kind": "object",
+      "symbol": "religious_interaction.2002",
+      "source_sha256": "27405d1ccd6217670f5812d8cbde987ed899c04b6b7d309099e2e8fbe1809a4d",
+      "current_line": 1271,
+      "object_token_sha256": "75d618ba242814ecc062cdbbc430ea061a3c3a7e82613d14dfe4fdbf72665808",
+      "object_text_sha256": "2e67c03ec063272bb015950593bef628624bf1c0597e65445e7c902bab201f34",
+      "semantic_change": false
+    },
+    {
+      "id": "MC-FILTER:gui/window_decisions_detail.gui",
+      "native_path": "gui/window_decisions_detail.gui",
+      "kind": "text",
+      "symbol": null,
+      "source_sha256": "25cba57a7fdf1eba5aa0f2ac47a4116c9df504f3dbf709a31134941066fcab66"
+    },
+    {
+      "id": "MC-FILTER:gui/shared/buttons.gui",
+      "native_path": "gui/shared/buttons.gui",
+      "kind": "text",
+      "symbol": null,
+      "source_sha256": "0a9dd1f124f0f9c74e8ef4b62cbd170318b1e1180f67ba235869580271c41014"
+    },
+    {
+      "id": "MC-FILTER:gui/frontend_mp_game_setup.gui",
+      "native_path": "gui/frontend_mp_game_setup.gui",
+      "kind": "text",
+      "symbol": null,
+      "source_sha256": "f478edc35149b324b5cfd3a123770fb5f0d2ff1df7c8ab1a9d4390bb08ae01d5"
+    },
+    {
+      "id": "MC-FILTER:gui/activity_window_widgets/chariot_race_progress_to_victory_widget.gui",
+      "native_path": "gui/activity_window_widgets/chariot_race_progress_to_victory_widget.gui",
+      "kind": "text",
+      "symbol": null,
+      "source_sha256": "04281b90dbe56774e1749af159f108c1ea82f7f0b58e73e49d091fe2c2f9df33"
+    },
+    {
+      "id": "MC-FILTER:common/character_interactions/00_religious_interactions.txt",
+      "native_path": "common/character_interactions/00_religious_interactions.txt",
+      "kind": "file",
+      "symbol": null,
+      "source_sha256": "9ac329caf86a4c52548dd06c9ee019a0c73c8572544c7836401555b0edd86fea"
+    },
+    {
+      "id": "MC-FILTER:common/scripted_modifiers/00_religion_scripted_modifiers.txt",
+      "native_path": "common/scripted_modifiers/00_religion_scripted_modifiers.txt",
+      "kind": "file",
+      "symbol": null,
+      "source_sha256": "ee407f928f7de6465ea292774fa2cc1fda98ecc0eb7107ed1c037e860209f180"
+    },
+    {
+      "id": "MC-FILTER:common/script_values/02_religion_values.txt",
+      "native_path": "common/script_values/02_religion_values.txt",
+      "kind": "file",
+      "symbol": null,
+      "source_sha256": "bb7e4fbaa87711003f36d7f0f2d036e9572219ae4cbee49f060b3bec84d72fee"
+    },
+    {
+      "id": "MC-FILTER:common/scripted_triggers/pam_scripted_triggers.txt",
+      "native_path": "common/scripted_triggers/pam_scripted_triggers.txt",
+      "kind": "file",
+      "symbol": null,
+      "source_sha256": "b6b2ed8a96b3fddf6a9fe4c0dabab515e8bf5ea6c64ad026785471f719565eef"
+    },
+    {
+      "id": "MC-FILTER:common/customizable_localization/pam_sway_to_rite_custom_loc.txt",
+      "native_path": "common/customizable_localization/pam_sway_to_rite_custom_loc.txt",
+      "kind": "file",
+      "symbol": null,
+      "source_sha256": "111cd99b3a75e5929c37f1f7314d857634054f2b08a47a034abd9919c298cf66"
+    },
+    {
+      "id": "MC-COMPACT:gui/shared/lists.gui",
+      "native_path": "gui/shared/lists.gui",
+      "kind": "text",
+      "symbol": null,
+      "source_sha256": "bd63e3f8de9fb2a6fad6fb88db3d004eb485ae6096b497efecc59356bbdcfe69"
+    },
+    {
+      "id": "MC-COMPACT:gui/event_window_widgets/event_window_widget_name_pope.gui",
+      "native_path": "gui/event_window_widgets/event_window_widget_name_pope.gui",
+      "kind": "text",
+      "symbol": null,
+      "source_sha256": "276f26914fa63bb72810efeca8ce8ab1782410bc3eb6ee075104eba2ca3f2e9d"
+    },
+    {
+      "id": "MC-COMPACT:gui/window_admin_vassal_detail.gui",
+      "native_path": "gui/window_admin_vassal_detail.gui",
+      "kind": "text",
+      "symbol": null,
+      "source_sha256": "0e539817c49d334841bdf4895dd7eb33817bcafb045c3ffe7c83f4a7d0cc4f90"
+    },
+    {
+      "id": "MC-COMPACT:common/decisions/00_guest_decisions.txt",
+      "native_path": "common/decisions/00_guest_decisions.txt",
+      "kind": "file",
+      "symbol": null,
+      "source_sha256": "bee3f5dc829fdcdff62584a887285b36653fa7c8e92f688c11ef5d0b1465600c"
+    },
+    {
+      "id": "MC-ALIGN:gui/shared/windows.gui",
+      "native_path": "gui/shared/windows.gui",
+      "kind": "text",
+      "symbol": null,
+      "source_sha256": "4e2521da33c32b591e6c61fdcc2597c46caa8db20ca04df4c6024309a6955056"
+    },
+    {
+      "id": "MC-CENTER:gui/shared/progressbars.gui",
+      "native_path": "gui/shared/progressbars.gui",
+      "kind": "text",
+      "symbol": null,
+      "source_sha256": "02605ff7e2bda67768e52c978c3d3de14116912d1ab0845e463b5d8c02525d47"
+    },
+    {
+      "id": "MC-CENTER:gui/preload/defaults.gui",
+      "native_path": "gui/preload/defaults.gui",
+      "kind": "text",
+      "symbol": null,
+      "source_sha256": "7ba220ab2de42d68d1123353d20da55203dacf3e8fa699046cdf274d46296698"
+    },
+    {
+      "id": "MC-FLEX:gui/window_activity_intent_selection.gui",
+      "native_path": "gui/window_activity_intent_selection.gui",
+      "kind": "text",
+      "symbol": null,
+      "source_sha256": "07b09863a0064aad7abe1e061a93c979b5edcbc662cb8918a535c3a33a93a91a"
+    },
+    {
+      "id": "MC-FLEX:gui/map_icon_layer.gui",
+      "native_path": "gui/map_icon_layer.gui",
+      "kind": "text",
+      "symbol": null,
+      "source_sha256": "f337e532d299cdc3b90397151d1fa9107e70932d5b72da03f1eaa7f596916675"
+    },
+    {
+      "id": "MC-RESTORE:gui/window_royal_court.gui",
+      "native_path": "gui/window_royal_court.gui",
+      "kind": "text",
+      "symbol": null,
+      "source_sha256": "5dcee1c66ba6de3fc12c2033f358ccdb43b697929954303b34ad0c7559af3da9"
+    },
+    {
+      "id": "MC-RESTORE:gui/achievements/popup.gui",
+      "native_path": "gui/achievements/popup.gui",
+      "kind": "text",
+      "symbol": null,
+      "source_sha256": "3d448281fdcfcd5d519d027588917c756a9d739718a7c7d373fa2f9368b89db6"
+    },
+    {
+      "id": "MC-SIZE:gui/decision_view_widgets/decision_view_widget_option_list_generic.gui",
+      "native_path": "gui/decision_view_widgets/decision_view_widget_option_list_generic.gui",
+      "kind": "text",
+      "symbol": null,
+      "source_sha256": "6c378fc5c4acc9289f7947a994d85c89cdc9eeb8ae4eeac2850d92598a960e53"
+    },
+    {
+      "id": "MC-COLUMNS:gui/interaction_modify_vassal_window.gui",
+      "native_path": "gui/interaction_modify_vassal_window.gui",
+      "kind": "text",
+      "symbol": null,
+      "source_sha256": "1f25fd0b6a6717a8d9246637651c9f52cc50db7e4a127b9457818646cb74b8ef"
+    },
+    {
+      "id": "MC-FIXED-ROWS:gui/frontend_bookmarks.gui",
+      "native_path": "gui/frontend_bookmarks.gui",
+      "kind": "text",
+      "symbol": null,
+      "source_sha256": "921b6e34db65e235e6159294f16664b98228065d50b26dbe203bc01f5bd699dd"
+    },
+    {
+      "id": "MC-MESSAGE-CONTEXT:common/messages/07_ep3_messages.txt",
+      "native_path": "common/messages/07_ep3_messages.txt",
+      "kind": "text",
+      "symbol": null,
+      "source_sha256": "7ee8e7c6de5311e81d5f2cc4ef2db00b5d1e917e3c086cabcab444a073724fc6"
+    },
+    {
+      "id": "MC-MESSAGE-CONTEXT:common/character_interactions/06_ep3_interactions.txt",
+      "native_path": "common/character_interactions/06_ep3_interactions.txt",
+      "kind": "text",
+      "symbol": null,
+      "source_sha256": "4c9a0aae9d153967f0e01c5351615cb86281adc1caf94e2bd179d5023bc213f4"
+    },
+    {
+      "id": "MC-FLORIN:ecclesiastical_domicile_cathedral_awe_modifier",
+      "feature": "MC-FLORIN",
+      "surface": "native_acceptance_dependency",
+      "kind": "object",
+      "native_path": "common/scripted_modifiers/pam_scripted_modifiers.txt",
+      "symbol": "ecclesiastical_domicile_cathedral_awe_modifier",
+      "baseline_version": "1.21.0.3",
+      "source_sha256": "f0ee9a1035cf96b5165ff7ceb9e79e29e06c594546b1620c4a3c03f9d466af4e",
+      "installed_source_sha256": "f0ee9a1035cf96b5165ff7ceb9e79e29e06c594546b1620c4a3c03f9d466af4e",
+      "audit_scope": "2026-11-25: audited unchanged native domicile acceptance dependency; retain native ai_accept query and do not copy the formula.",
+      "object_token_sha256": "49d6b55f4308226f8b434884a326f5e7518ea67dda6e0efffb3f40c92623142f",
+      "baseline_lines": [
+        8,
+        27
+      ]
+    },
+    {
+      "id": "MC-FLORIN:ecclesiastical_domicile_increase_conversion_acceptance_1",
+      "feature": "MC-FLORIN",
+      "surface": "native_acceptance_dependency",
+      "kind": "object",
+      "native_path": "common/script_values/pam_values.txt",
+      "symbol": "ecclesiastical_domicile_increase_conversion_acceptance_1",
+      "baseline_version": "1.21.0.3",
+      "source_sha256": "cc8d6b7653762213c0891caa8f8a7c867b0fb92634eaa911c9a24ef7ffaf3cf6",
+      "installed_source_sha256": "cc8d6b7653762213c0891caa8f8a7c867b0fb92634eaa911c9a24ef7ffaf3cf6",
+      "audit_scope": "2026-11-25: audited unchanged native domicile acceptance dependency; retain native ai_accept query and do not copy the formula.",
+      "object_token_sha256": "bd41df3d1fb59dcf3327057da5b6b73f9007e3564f1956ee0f15bbc4fedc99a7",
+      "baseline_lines": [
+        8617,
+        8617
+      ]
+    },
+    {
+      "id": "MC-FLORIN:ecclesiastical_domicile_increase_conversion_acceptance_2",
+      "feature": "MC-FLORIN",
+      "surface": "native_acceptance_dependency",
+      "kind": "object",
+      "native_path": "common/script_values/pam_values.txt",
+      "symbol": "ecclesiastical_domicile_increase_conversion_acceptance_2",
+      "baseline_version": "1.21.0.3",
+      "source_sha256": "cc8d6b7653762213c0891caa8f8a7c867b0fb92634eaa911c9a24ef7ffaf3cf6",
+      "installed_source_sha256": "cc8d6b7653762213c0891caa8f8a7c867b0fb92634eaa911c9a24ef7ffaf3cf6",
+      "audit_scope": "2026-11-25: audited unchanged native domicile acceptance dependency; retain native ai_accept query and do not copy the formula.",
+      "object_token_sha256": "4d71c75576f6ecd99d15777ef1285a4962d04d0380497509e8794f1477fc325c",
+      "baseline_lines": [
+        8618,
+        8618
+      ]
+    },
+    {
+      "id": "MC-FLORIN:ecclesiastical_domicile_increase_conversion_acceptance_3",
+      "feature": "MC-FLORIN",
+      "surface": "native_acceptance_dependency",
+      "kind": "object",
+      "native_path": "common/script_values/pam_values.txt",
+      "symbol": "ecclesiastical_domicile_increase_conversion_acceptance_3",
+      "baseline_version": "1.21.0.3",
+      "source_sha256": "cc8d6b7653762213c0891caa8f8a7c867b0fb92634eaa911c9a24ef7ffaf3cf6",
+      "installed_source_sha256": "cc8d6b7653762213c0891caa8f8a7c867b0fb92634eaa911c9a24ef7ffaf3cf6",
+      "audit_scope": "2026-11-25: audited unchanged native domicile acceptance dependency; retain native ai_accept query and do not copy the formula.",
+      "object_token_sha256": "8582673f7a0b046ef72cc94f208687f3d75e2d923e802e60d8a94cdb981d87fc",
+      "baseline_lines": [
+        8619,
+        8619
+      ]
+    }
+  ],
+  "semantic_object_changes": [
+    "MC-DEPENDENCIES:demand_conversion_interaction_effect",
+    "MC-DEPENDENCIES:religion_demand_conversion_default_modifier",
+    "MC-DEPENDENCIES:valid_demand_conversion_conditions_trigger"
+  ],
+  "source_decisions": {
+    "event_overrides": "Both complete native definitions unchanged; preserve all rewards, previews, puppet notifier and global receiver routing.",
+    "interactions": "The3 delegated conversion interaction objects and all4 event caller objects are unchanged; preserve native OnSelect/threshold/query/send scopes.",
+    "confession": "Native helper uses flag:conversion plus pam_confession_penalty_target; delegated automatically.",
+    "eligibility": "Native valid_demand_conversion_conditions_trigger now rejects clerical region holders with incompatible capital faith and safely handles optional domicile; delegated automatically. Do not loosen protection rules to recover excluded candidates.",
+    "acceptance": "Native domicile bonuses also consider requester domicile; actual native ai_accept query remains authoritative.",
+    "lifecycle": "Native conversion adult-only knowledge penalties/baptism scope correction and study invalidation/modifier restoration/nonplayable fallback remain native. Scheme-success bonuses are not demand acceptance percentages.",
+    "gui": "Used native types/controllers token-identical despite unrelated file changes; preserve user-confirmed fixed slots and local display state.",
+    "localization": "35 keys in all8 languages and native concept references retained; event_message_text/$DESCRIPTION$ pipeline remains valid at source level."
+  },
+  "limits": [
+    "Metadata target declaration is explicitly authorized; not runtime certification.",
+    "Engine exports remain1.20.0.3 and are stale for1.21.0.3; current native caller evidence is not fresh binary export evidence.",
+    "Rendering/percent/UI parity, both corrected names, consequences/rewards, delayed lifecycle, save/reload and two-player tests remain unperformed for1.21.",
+    "Foreign user crash remains unresolved; earlier one-vassal acceptance without crash is not general crash clearance."
+  ],
+  "official_release": "https://store.steampowered.com/news/app/1158310/view/699907769355993654?l=english",
+  "baseline_watch_count": 69,
+  "additional_acceptance_watch_count": 4,
+  "before_source_check_counts": {
+    "reference_changed": 23,
+    "file_changed_object_unchanged": 15,
+    "object_changed": 3,
+    "unchanged": 14,
+    "file_changed": 10
+  }
+}

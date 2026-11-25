@@ -1,5 +1,10 @@
 # MC-DISPATCH contract card
 
+## Florin source review and1.081 target — 2026-11-25
+
+[Current source audit and maintenance result](../mods/mass-demand-conversion-florin-20261125.md). Both complete acceptance overrides/all4 native callers and3 delegated conversion interactions remain unchanged in1.21.0.3; message desc pipeline stays source-conform. Changed confession cleanup and native family/adult/baptism/study lifecycle stay delegated. Do not duplicate conversion or rewrite scopes.1.081/1.21.* metadata is only the authorized target declaration; G01/G02/G03/G05 and current-name rendering remain open.
+
+
 ## Acceptance descriptions corrected in1.080 — 2026-10-07
 
 [Current two-notification fix](../mods/mass-demand-conversion-message-context-20261007.md): user-tested vassal acceptance did not crash but exposed recipient-name localization failure. Both overrides now supply desc in their event message call; the common type uses event_message_text. Native effects/previews and eight translations retained;28 static tests. Corrected rendering and house/mixed acceptance tests remain open; foreign crash unresolved. Engine exports1.20.0.3 are stale for installed1.20.0.4.

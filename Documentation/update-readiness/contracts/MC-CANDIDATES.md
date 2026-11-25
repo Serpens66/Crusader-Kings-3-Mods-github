@@ -1,5 +1,10 @@
 # MC-CANDIDATES contract card
 
+## Florin source review and1.081 target — 2026-11-25
+
+[Current source audit and maintenance result](../mods/mass-demand-conversion-florin-20261125.md). The shared native validity trigger now safely accesses optional domicile and excludes clerical-region holders with capital faith different from the requester. The native acceptance modifier also recognizes requester domicile through OR, without applying the same modifier twice. Preserve native query/ai_accept/send checks, five groups and stronger mod religious-protection policy; do not recreate formulas or loosen rules to recover changed counts. Query/UI/count/runtime gates remain open.
+
+
 ## Compact widget and zero-count gate — 2026-10-05
 
 [Current patch and runtime matrix](../mods/mass-demand-conversion-compact-widget-20261005.md): missing GUI mode no longer hides the three unfiltered vassal/tributary rows. Counts/eligibility and send-time checks are unchanged. User-observed zero counts are not solved by a layout assertion: compare a manually eligible target at identical paused state; trace localization/actor/query context before changing rules. An 80% zero does not by itself prove eligibility failure.

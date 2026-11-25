@@ -577,8 +577,8 @@ class FilterTests(unittest.TestCase):
             self.assertEqual(len(rows), 1, str(p))
             self.assertIn('[recipient.GetShortUIName]', rows[0])
         for p in [MOD / 'descriptor.mod', ROOT / 'Mass Demand Conversion.mod']:
-            self.assertEqual(re.findall(r'^version="([^"]+)"', read(p), re.M), ['1.080'])
-            self.assertEqual(re.findall(r'^supported_version="([^"]+)"', read(p), re.M), ['1.20.*'])
+            self.assertEqual(re.findall(r'^version="([^"]+)"', read(p), re.M), ['1.081'])
+            self.assertEqual(re.findall(r'^supported_version="([^"]+)"', read(p), re.M), ['1.21.*'])
 
     def test_acceptance_description_fix_preserves_native_effects_and_previews(self):
         audit = json.loads(read(ROOT / 'Documentation/update-readiness/evidence/mdc-message-context-source-audit-20261007.json'))

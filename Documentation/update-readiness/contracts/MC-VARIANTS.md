@@ -1,5 +1,10 @@
 # MC-VARIANTS contract card
 
+## Florin source review and1.081 target — 2026-11-25
+
+[Current source audit and maintenance result](../mods/mass-demand-conversion-florin-20261125.md). Native used decision controller, radio/button/scrollbox types and custom-widget insertion contracts remain unchanged. Preserve user-confirmed514x210 viewport,514x204 content/fixed slots and common radio/text columns. New approval feature defaults to no and does not require changing MDC. Only standalone metadata becomes1.081/1.21.*; bundle unchanged; source conformity does not certify1.21 rendering or multiplayer.
+
+
 ## User-confirmed MDC layout — 2026-10-05
 
 The user confirms that the [fixed-slot recipient layout](../mods/mass-demand-conversion-fixed-rows-20261005.md) now looks correct in game. Use that code and its documented geometry as the current visual reference; preserve the failure ledger. This is visual acceptance of the reported presentation, not a complete transition/scaling/scrolling, percentage, delivery or multiplayer certification. Earlier pending-rendering statements describe pre-confirmation states.
